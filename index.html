@@ -415,7 +415,7 @@
     allyServer: "all", allyQuery: "",
     cmdServer: "all", cmdQuery: "", cmdLimit: 100,
     trendsTable: {}, profile: null,
-    activeOnly: false,
+    activeOnly: true,
   };
   const store = {};         // eventId -> {meta, alliances, rankings}
   let index = null;         // cross-event lookups, built once every event is loaded
@@ -733,7 +733,7 @@
     if (filt[0] !== "all") u.searchParams.set("srv", filt[0]);
     if (filt[1]) u.searchParams.set("q", filt[1]);
     if (document.documentElement.dataset.theme === "light") u.searchParams.set("theme", "light");
-    if (state.activeOnly) u.searchParams.set("active", "1");
+    if (!state.activeOnly) u.searchParams.set("active", "0");
     if (state.profile) u.searchParams.set(state.profile.type, keyToUrl(state.profile.key));
     return u;
   }
@@ -754,7 +754,8 @@
     state.allyServer = state.tab === "alliances" ? srv : "all"; state.allyQuery = state.tab === "alliances" ? q : "";
     state.cmdServer = state.tab === "commanders" ? srv : "all"; state.cmdQuery = state.tab === "commanders" ? q : ""; state.cmdLimit = 100;
     let savedActive = null; try { savedActive = localStorage.getItem("s117.active"); } catch (e) {}
-    state.activeOnly = p.has("active") ? p.get("active") === "1" : savedActive === "1";
+    // Active players only is the default; a link or the viewer's own choice can turn it off
+    state.activeOnly = p.has("active") ? p.get("active") !== "0" : savedActive !== "0";
   }
   function openProfileFromUrl(p) {
     const c = keyFromUrl(p.get("c")), a = keyFromUrl(p.get("a"));
