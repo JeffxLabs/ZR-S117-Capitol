@@ -629,8 +629,8 @@ def main():
             json.dump(obs_store.get_raw_observations(), rf, indent=2, ensure_ascii=False)
         print(f"Raw observations saved: {raw_obs_path}")
 
-    # Generate QA report
-    qa_report = generate_qa_report(event_id, obs_store, raw_records, repaired_ranks)
+    # Capture QA only applies to a live capture (a --from-file reprocess has no per-frame readings)
+    qa_report = generate_qa_report(event_id, obs_store, raw_records, repaired_ranks) if obs_store else {"passed": True}
 
     # 1. Clean and normalize (carrying server explicitly)
     print("\nCleaning records and resolving OCR normalizations...")

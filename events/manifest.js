@@ -10,7 +10,7 @@ window.EVENTS_MANIFEST = [
     "total_points": 324735064,
     "top_alliance": "[P1MP] JU1CE",
     "top_commander": "TheRequiem",
-    "data_version": "7c3bdb64ff"
+    "data_version": "ad820f09e2"
   },
   {
     "id": "2026-09-19-s117-vs-s119",
