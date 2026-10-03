@@ -741,9 +741,9 @@
       const p = prevA(a), rk = filtered ? a.server_rank : a.rank;
       return `<tr class="clickable" data-open-a="${esc(aKey(a))}" tabindex="0">
         <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? overall(a.rank) : ""}</td>
-        <td class="name-cell">${esc(a.alliance)}<span class="sub"><span class="show-sm">${serverPill(a.server, null, true)}<span class="num">${fmt(a.members_count)}</span> · </span>${esc(displayName(a.top_commander))}</span></td>
+        <td class="name-cell">${esc(a.alliance)}<span class="sub"><span class="show-sm">${serverPill(a.server, null, true)}<span class="num">${fmt(a.members_count)}</span>${p ? ` ${deltaHtml(a.members_count, p.members_count)}` : ""} · </span>${esc(displayName(a.top_commander))}</span></td>
         <td class="hide-sm">${serverPill(a.server)}</td>
-        <td class="r num hide-sm">${fmt(a.members_count)}</td>
+        <td class="r num hide-sm">${fmt(a.members_count)}${p ? `<span class="sub">${deltaHtml(a.members_count, p.members_count)}</span>` : ""}</td>
         <td class="r num"><b>${fmt(a.total_points)}</b><span class="sub">${sameSidePointsDelta("a", aKey(a), a.server, a.total_points, "total_points")}${pd ? `<span class="show-sm"> ${p ? rankMoveHtml(a.rank, p.rank) : `<span class="pill pill-new">${esc(t("new_badge"))}</span>`}</span>` : ""}</span></td>
         <td class="r num hide-sm">${fmt(a.avg_points)}</td>
         <td class="r hide-sm">${pd ? (p ? rankMoveHtml(a.rank, p.rank) : `<span class="pill pill-new">${esc(t("new_badge"))}</span>`) : "—"}</td>
