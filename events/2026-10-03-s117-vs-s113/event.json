@@ -1,0 +1,24 @@
+{
+  "id": "2026-10-03-s117-vs-s113",
+  "title": "Capitol War: Server 117 vs Server 113",
+  "date": "2026-10-03",
+  "home_server": "117",
+  "opponent_server": "113",
+  "total_players": 630,
+  "total_points": 324735064,
+  "unique_alliances": 73,
+  "servers": {
+    "117": {
+      "name": "Server 117 (Home)",
+      "players": 193,
+      "points": 160650505,
+      "point_share_pct": 49.47
+    },
+    "113": {
+      "name": "Server 113 (Visiting)",
+      "players": 437,
+      "points": 164084559,
+      "point_share_pct": 50.53
+    }
+  }
+}
