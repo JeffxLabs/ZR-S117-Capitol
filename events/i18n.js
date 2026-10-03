@@ -137,7 +137,10 @@ window.I18N = {
     "tier_top": "Top {n}",
     "col_tier": "Tier",
     "col_gap": "Difference",
-    "depth_more": "Chart and table"
+    "depth_more": "Chart and table",
+    "tier_tip_top": "Each server's {n} highest-scoring players (server ranks 1–{n})",
+    "tier_tip_range": "Players ranked {a}–{b} within their own server",
+    "tier_tip_rest": "Players ranked {a} or lower within their own server"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -276,7 +279,10 @@ window.I18N = {
     "tier_top": "Top {n}",
     "col_tier": "Tranche",
     "col_gap": "Écart",
-    "depth_more": "Graphique et tableau"
+    "depth_more": "Graphique et tableau",
+    "tier_tip_top": "Les {n} meilleurs joueurs de chaque serveur (rangs serveur 1–{n})",
+    "tier_tip_range": "Joueurs classés {a}–{b} au sein de leur serveur",
+    "tier_tip_rest": "Joueurs classés {a} ou au-delà au sein de leur serveur"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -415,7 +421,10 @@ window.I18N = {
     "tier_top": "Топ-{n}",
     "col_tier": "Группа",
     "col_gap": "Разница",
-    "depth_more": "График и таблица"
+    "depth_more": "График и таблица",
+    "tier_tip_top": "{n} лучших игроков каждого сервера (места 1–{n} на сервере)",
+    "tier_tip_range": "Игроки на местах {a}–{b} внутри своего сервера",
+    "tier_tip_rest": "Игроки на месте {a} и ниже внутри своего сервера"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -554,7 +563,10 @@ window.I18N = {
     "tier_top": "İlk {n}",
     "col_tier": "Dilim",
     "col_gap": "Fark",
-    "depth_more": "Grafik ve tablo"
+    "depth_more": "Grafik ve tablo",
+    "tier_tip_top": "Her sunucunun en yüksek puanlı {n} oyuncusu (sunucu sırası 1–{n})",
+    "tier_tip_range": "Kendi sunucusunda {a}–{b}. sıradaki oyuncular",
+    "tier_tip_rest": "Kendi sunucusunda {a}. sıra ve altındaki oyuncular"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -693,7 +705,10 @@ window.I18N = {
     "tier_top": "Top {n}",
     "col_tier": "Przedział",
     "col_gap": "Różnica",
-    "depth_more": "Wykres i tabela"
+    "depth_more": "Wykres i tabela",
+    "tier_tip_top": "{n} najlepszych graczy każdego serwera (miejsca 1–{n} na serwerze)",
+    "tier_tip_range": "Gracze na miejscach {a}–{b} w obrębie swojego serwera",
+    "tier_tip_rest": "Gracze od miejsca {a} w dół w obrębie swojego serwera"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -832,7 +847,10 @@ window.I18N = {
     "tier_top": "Top {n}",
     "col_tier": "Tramo",
     "col_gap": "Diferencia",
-    "depth_more": "Gráfico y tabla"
+    "depth_more": "Gráfico y tabla",
+    "tier_tip_top": "Los {n} jugadores con más puntos de cada servidor (puestos 1–{n} del servidor)",
+    "tier_tip_range": "Jugadores en los puestos {a}–{b} de su propio servidor",
+    "tier_tip_rest": "Jugadores del puesto {a} en adelante en su propio servidor"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -971,7 +989,10 @@ window.I18N = {
     "tier_top": "Top {n}",
     "col_tier": "Escalão",
     "col_gap": "Diferença",
-    "depth_more": "Gráfico e tabela"
+    "depth_more": "Gráfico e tabela",
+    "tier_tip_top": "Os {n} jogadores com mais pontos de cada servidor (posições 1–{n} no servidor)",
+    "tier_tip_range": "Jogadores nas posições {a}–{b} do próprio servidor",
+    "tier_tip_rest": "Jogadores da posição {a} em diante no próprio servidor"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -1110,7 +1131,10 @@ window.I18N = {
     "tier_top": "Top {n}",
     "col_tier": "Stufe",
     "col_gap": "Differenz",
-    "depth_more": "Diagramm und Tabelle"
+    "depth_more": "Diagramm und Tabelle",
+    "tier_tip_top": "Die {n} punktstärksten Spieler jedes Servers (Serverränge 1–{n})",
+    "tier_tip_range": "Spieler auf den Rängen {a}–{b} ihres eigenen Servers",
+    "tier_tip_rest": "Spieler ab Rang {a} ihres eigenen Servers"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -1249,7 +1273,10 @@ window.I18N = {
     "tier_top": "상위 {n}",
     "col_tier": "구간",
     "col_gap": "차이",
-    "depth_more": "차트와 표"
+    "depth_more": "차트와 표",
+    "tier_tip_top": "각 서버의 상위 {n}명 (서버 순위 1–{n}위)",
+    "tier_tip_range": "자기 서버 안에서 {a}–{b}위인 플레이어",
+    "tier_tip_rest": "자기 서버 안에서 {a}위 이하인 플레이어"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -1388,7 +1415,10 @@ window.I18N = {
     "tier_top": "前 {n}",
     "col_tier": "区间",
     "col_gap": "差值",
-    "depth_more": "图表和表格"
+    "depth_more": "图表和表格",
+    "tier_tip_top": "各服务器积分最高的 {n} 名玩家（服务器排名 1–{n}）",
+    "tier_tip_range": "在本服务器内排名 {a}–{b} 的玩家",
+    "tier_tip_rest": "在本服务器内排名 {a} 及以后的玩家"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};
