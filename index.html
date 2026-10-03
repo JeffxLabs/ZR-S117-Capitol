@@ -430,8 +430,8 @@
   function vsSameSide(eventId, server, base) {
     const side = sideOf(EVENTS.find(e => e.id === eventId) || {}, server);
     if (!side) return "";
-    return base ? `<span class="dim">${esc(t("vs_last_day", { day: dayWord(side), date: fmtDateShort(base.date) }))}</span>`
-                : `<span class="dim">${esc(t("no_last_day", { day: dayWord(side) }))}</span>`;
+    // Without a same-side baseline the tile simply shows no comparison line
+    return base ? `<span class="dim">${esc(t("vs_last_day", { day: dayWord(side), date: fmtDateShort(base.date) }))}</span>` : "";
   }
   const sideHtml = side => side ? `<span class="side"><span aria-hidden="true">${roleIcon(side)}</span>${esc(t("role_" + side))}</span>` : "";
   const sideShort = side => side ? `${roleIcon(side)} ${t("role_" + side)}` : "";
@@ -657,7 +657,7 @@
     const empty = { points: 0, players: 0, point_share_pct: 0 };
     const home = servers[r.home] || empty, opp = servers[r.opp] || empty;
     const others = r.others.reduce((a, k) => ({ points: a.points + servers[k].points, pct: a.pct + servers[k].point_share_pct }), { points: 0, pct: 0 });
-    const vsPrev = EVENTS.length > 1 ? vsSameSide(state.eventId, r.home, base) : `<span class="dim">${esc(t("first_event"))}</span>`;
+    const vsPrev = vsSameSide(state.eventId, r.home, base);
     const top = d.rankings[0];
     const tiles = [
       tile(t("kpi_points"), fmt(m.total_points), pm ? `${deltaHtml(m.total_points, pm.total_points, { compact: true })} ${vsPrev}` : vsPrev),
