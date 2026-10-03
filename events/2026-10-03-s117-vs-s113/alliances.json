@@ -686,13 +686,13 @@
     "server_rank": 1
   },
   {
-    "alliance": "[OBS] ZeroBullsht",
-    "tag": "OBS",
+    "alliance": "[0BS] ZeroBullsht",
+    "tag": "0BS",
     "name": "ZeroBullsht",
     "server": "113",
-    "members_count": 47,
-    "total_points": 29053989,
-    "avg_points": 618169,
+    "members_count": 49,
+    "total_points": 29874926,
+    "avg_points": 609692,
     "top_commander": "ellizoor",
     "top_points": 1650997,
     "top_rank": 27,
@@ -836,6 +836,12 @@
         "server": "113"
       },
       {
+        "rank": 216,
+        "commander": "MxBlade",
+        "points": 552830,
+        "server": "113"
+      },
+      {
         "rank": 224,
         "commander": "Cmoneyy",
         "points": 528667,
@@ -905,6 +911,12 @@
         "rank": 325,
         "commander": "zmikezz",
         "points": 270934,
+        "server": "113"
+      },
+      {
+        "rank": 327,
+        "commander": "CULERO",
+        "points": 268107,
         "server": "113"
       },
       {
@@ -3404,34 +3416,6 @@
     "server_rank": 14
   },
   {
-    "alliance": "[0BS] ZeroBullsht",
-    "tag": "0BS",
-    "name": "ZeroBullsht",
-    "server": "113",
-    "members_count": 2,
-    "total_points": 820937,
-    "avg_points": 410468,
-    "top_commander": "MxBlade",
-    "top_points": 552830,
-    "top_rank": 216,
-    "members": [
-      {
-        "rank": 216,
-        "commander": "MxBlade",
-        "points": 552830,
-        "server": "113"
-      },
-      {
-        "rank": 327,
-        "commander": "CULERO",
-        "points": 268107,
-        "server": "113"
-      }
-    ],
-    "rank": 24,
-    "server_rank": 15
-  },
-  {
     "alliance": "[DSM] DarkStorm",
     "tag": "DSM",
     "name": "DarkStorm",
@@ -3456,7 +3440,7 @@
         "server": "117"
       }
     ],
-    "rank": 25,
+    "rank": 24,
     "server_rank": 10
   },
   {
@@ -3508,8 +3492,8 @@
         "server": "113"
       }
     ],
-    "rank": 26,
-    "server_rank": 16
+    "rank": 25,
+    "server_rank": 15
   },
   {
     "alliance": "[CHOD] ChodeRippas",
@@ -3536,8 +3520,8 @@
         "server": "113"
       }
     ],
-    "rank": 27,
-    "server_rank": 17
+    "rank": 26,
+    "server_rank": 16
   },
   {
     "alliance": "[Ktq] TheGoats",
@@ -3558,7 +3542,7 @@
         "server": "117"
       }
     ],
-    "rank": 28,
+    "rank": 27,
     "server_rank": 11
   },
   {
@@ -3580,7 +3564,7 @@
         "server": "117"
       }
     ],
-    "rank": 29,
+    "rank": 28,
     "server_rank": 12
   },
   {
@@ -3608,7 +3592,7 @@
         "server": "113"
       }
     ],
-    "rank": 30,
+    "rank": 29,
     "server_rank": 13
   },
   {
@@ -3630,8 +3614,8 @@
         "server": "113"
       }
     ],
-    "rank": 31,
-    "server_rank": 18
+    "rank": 30,
+    "server_rank": 17
   },
   {
     "alliance": "[Amor] Jesuseocaminho",
@@ -3652,8 +3636,8 @@
         "server": "113"
       }
     ],
-    "rank": 32,
-    "server_rank": 19
+    "rank": 31,
+    "server_rank": 18
   },
   {
     "alliance": "[PHOE] BlackPhoenix",
@@ -3698,8 +3682,8 @@
         "server": "113"
       }
     ],
-    "rank": 33,
-    "server_rank": 20
+    "rank": 32,
+    "server_rank": 19
   },
   {
     "alliance": "[KORM] КорпорацияКорм",
@@ -3744,8 +3728,8 @@
         "server": "113"
       }
     ],
-    "rank": 34,
-    "server_rank": 21
+    "rank": 33,
+    "server_rank": 20
   },
   {
     "alliance": "[Geuj] hehrb",
@@ -3778,8 +3762,8 @@
         "server": "113"
       }
     ],
-    "rank": 35,
-    "server_rank": 22
+    "rank": 34,
+    "server_rank": 21
   },
   {
     "alliance": "[usar] USAUKKKA",
@@ -3824,8 +3808,8 @@
         "server": "113"
       }
     ],
-    "rank": 36,
-    "server_rank": 23
+    "rank": 35,
+    "server_rank": 22
   },
   {
     "alliance": "[zZZ] ZombiZ",
@@ -3858,8 +3842,8 @@
         "server": "113"
       }
     ],
-    "rank": 37,
-    "server_rank": 24
+    "rank": 36,
+    "server_rank": 23
   },
   {
     "alliance": "[113] MEXICO113",
@@ -3880,8 +3864,8 @@
         "server": "113"
       }
     ],
-    "rank": 38,
-    "server_rank": 25
+    "rank": 37,
+    "server_rank": 24
   },
   {
     "alliance": "[IHA] USALJ",
@@ -3926,8 +3910,8 @@
         "server": "113"
       }
     ],
-    "rank": 39,
-    "server_rank": 26
+    "rank": 38,
+    "server_rank": 25
   },
   {
     "alliance": "[TNP] TheNightPorter",
@@ -3960,8 +3944,8 @@
         "server": "113"
       }
     ],
-    "rank": 40,
-    "server_rank": 27
+    "rank": 39,
+    "server_rank": 26
   },
   {
     "alliance": "[Cue] cuervos",
@@ -3988,8 +3972,8 @@
         "server": "113"
       }
     ],
-    "rank": 41,
-    "server_rank": 28
+    "rank": 40,
+    "server_rank": 27
   },
   {
     "alliance": "[SJZ] USAWM250",
@@ -4016,8 +4000,8 @@
         "server": "113"
       }
     ],
-    "rank": 42,
-    "server_rank": 29
+    "rank": 41,
+    "server_rank": 28
   },
   {
     "alliance": "[Boob] Lovers",
@@ -4050,8 +4034,8 @@
         "server": "113"
       }
     ],
-    "rank": 43,
-    "server_rank": 30
+    "rank": 42,
+    "server_rank": 29
   },
   {
     "alliance": "[5150] TheCrossingRivers",
@@ -4078,8 +4062,8 @@
         "server": "113"
       }
     ],
-    "rank": 44,
-    "server_rank": 31
+    "rank": 43,
+    "server_rank": 30
   },
   {
     "alliance": "[Sbzh] Выжившие26",
@@ -4100,8 +4084,8 @@
         "server": "113"
       }
     ],
-    "rank": 45,
-    "server_rank": 32
+    "rank": 44,
+    "server_rank": 31
   },
   {
     "alliance": "[TBL] TheRochesterLamp",
@@ -4122,8 +4106,8 @@
         "server": "113"
       }
     ],
-    "rank": 46,
-    "server_rank": 33
+    "rank": 45,
+    "server_rank": 32
   },
   {
     "alliance": "[MKMA] DELIVERANCE",
@@ -4174,8 +4158,8 @@
         "server": "113"
       }
     ],
-    "rank": 47,
-    "server_rank": 34
+    "rank": 46,
+    "server_rank": 33
   },
   {
     "alliance": "[pART] PartizanGrobari",
@@ -4196,7 +4180,7 @@
         "server": "117"
       }
     ],
-    "rank": 48,
+    "rank": 47,
     "server_rank": 14
   },
   {
@@ -4218,8 +4202,8 @@
         "server": "113"
       }
     ],
-    "rank": 49,
-    "server_rank": 35
+    "rank": 48,
+    "server_rank": 34
   },
   {
     "alliance": "[bkvf] USAUSAAA",
@@ -4246,8 +4230,8 @@
         "server": "113"
       }
     ],
-    "rank": 50,
-    "server_rank": 36
+    "rank": 49,
+    "server_rank": 35
   },
   {
     "alliance": "[Mind] 김독자컴퍼니",
@@ -4304,8 +4288,8 @@
         "server": "113"
       }
     ],
-    "rank": 51,
-    "server_rank": 37
+    "rank": 50,
+    "server_rank": 36
   },
   {
     "alliance": "[Jsib] aksjf",
@@ -4356,8 +4340,8 @@
         "server": "113"
       }
     ],
-    "rank": 52,
-    "server_rank": 38
+    "rank": 51,
+    "server_rank": 37
   },
   {
     "alliance": "[TML] Tamerlan",
@@ -4384,8 +4368,8 @@
         "server": "113"
       }
     ],
-    "rank": 53,
-    "server_rank": 39
+    "rank": 52,
+    "server_rank": 38
   },
   {
     "alliance": "[CCC] AntiZombieAlliance",
@@ -4412,8 +4396,8 @@
         "server": "113"
       }
     ],
-    "rank": 54,
-    "server_rank": 40
+    "rank": 53,
+    "server_rank": 39
   },
   {
     "alliance": "[ORY] WorldCupchampion",
@@ -4452,8 +4436,8 @@
         "server": "113"
       }
     ],
-    "rank": 55,
-    "server_rank": 41
+    "rank": 54,
+    "server_rank": 40
   },
   {
     "alliance": "[AFS] AntiFoxxerSquad",
@@ -4480,8 +4464,8 @@
         "server": "113"
       }
     ],
-    "rank": 56,
-    "server_rank": 42
+    "rank": 55,
+    "server_rank": 41
   },
   {
     "alliance": "[ital] ITALIA",
@@ -4502,8 +4486,8 @@
         "server": "113"
       }
     ],
-    "rank": 57,
-    "server_rank": 43
+    "rank": 56,
+    "server_rank": 42
   },
   {
     "alliance": "[CCCC] CCCCCCCCCCCCCCCCCCCC",
@@ -4536,8 +4520,8 @@
         "server": "113"
       }
     ],
-    "rank": 58,
-    "server_rank": 44
+    "rank": 57,
+    "server_rank": 43
   },
   {
     "alliance": "[KDD] DragonsDen",
@@ -4570,8 +4554,8 @@
         "server": "113"
       }
     ],
-    "rank": 59,
-    "server_rank": 45
+    "rank": 58,
+    "server_rank": 44
   },
   {
     "alliance": "[USMF] forte",
@@ -4598,8 +4582,8 @@
         "server": "113"
       }
     ],
-    "rank": 60,
-    "server_rank": 46
+    "rank": 59,
+    "server_rank": 45
   },
   {
     "alliance": "[SKV] SkullEdgeVangurd",
@@ -4644,8 +4628,8 @@
         "server": "113"
       }
     ],
-    "rank": 61,
-    "server_rank": 47
+    "rank": 60,
+    "server_rank": 46
   },
   {
     "alliance": "[Str1] Stary",
@@ -4684,8 +4668,8 @@
         "server": "113"
       }
     ],
-    "rank": 62,
-    "server_rank": 48
+    "rank": 61,
+    "server_rank": 47
   },
   {
     "alliance": "[Fr01] Frenchy",
@@ -4706,8 +4690,8 @@
         "server": "113"
       }
     ],
-    "rank": 63,
-    "server_rank": 49
+    "rank": 62,
+    "server_rank": 48
   },
   {
     "alliance": "[Niki] НИКТОКРОМЕНАС",
@@ -4728,8 +4712,8 @@
         "server": "113"
       }
     ],
-    "rank": 64,
-    "server_rank": 50
+    "rank": 63,
+    "server_rank": 49
   },
   {
     "alliance": "[HCTS] HECTORS",
@@ -4750,8 +4734,8 @@
         "server": "113"
       }
     ],
-    "rank": 65,
-    "server_rank": 51
+    "rank": 64,
+    "server_rank": 50
   },
   {
     "alliance": "[RCM] Reincarnations",
@@ -4778,8 +4762,8 @@
         "server": "113"
       }
     ],
-    "rank": 66,
-    "server_rank": 52
+    "rank": 65,
+    "server_rank": 51
   },
   {
     "alliance": "[Pop] Brainless",
@@ -4806,8 +4790,8 @@
         "server": "113"
       }
     ],
-    "rank": 67,
-    "server_rank": 53
+    "rank": 66,
+    "server_rank": 52
   },
   {
     "alliance": "[imp] IMPERIAL",
@@ -4828,8 +4812,8 @@
         "server": "113"
       }
     ],
-    "rank": 68,
-    "server_rank": 54
+    "rank": 67,
+    "server_rank": 53
   },
   {
     "alliance": "[DAB] dabwkg",
@@ -4850,8 +4834,8 @@
         "server": "113"
       }
     ],
-    "rank": 69,
-    "server_rank": 55
+    "rank": 68,
+    "server_rank": 54
   },
   {
     "alliance": "[MRV] RAVEN",
@@ -4872,8 +4856,8 @@
         "server": "113"
       }
     ],
-    "rank": 70,
-    "server_rank": 56
+    "rank": 69,
+    "server_rank": 55
   },
   {
     "alliance": "[rcc] Rcccc",
@@ -4894,8 +4878,8 @@
         "server": "113"
       }
     ],
-    "rank": 71,
-    "server_rank": 57
+    "rank": 70,
+    "server_rank": 56
   },
   {
     "alliance": "[OSA] OdinsAssembly",
@@ -4922,8 +4906,8 @@
         "server": "113"
       }
     ],
-    "rank": 72,
-    "server_rank": 58
+    "rank": 71,
+    "server_rank": 57
   },
   {
     "alliance": "[wks] Wastelandkings",
@@ -4944,7 +4928,7 @@
         "server": "113"
       }
     ],
-    "rank": 73,
-    "server_rank": 59
+    "rank": 72,
+    "server_rank": 58
   }
 ]

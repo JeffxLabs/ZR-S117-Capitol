@@ -24,8 +24,46 @@ ALLIANCE_NORMALIZATION_MAP = {
     "[19o] CandyClub": "[190] CandyClub",
     "[1BİR] XOXOX": "[1BiR] XOXOX",
     "[TІOX] ПоХуисты": "[TIOX] ПоХуисты",
-    "Df] 아무이름이나붙이기": "[Df] 아무이름이나붙이기"
+    "Df] 아무이름이나붙이기": "[Df] 아무이름이나붙이기",
+    "[OBS] ZeroBullsht": "[0BS] ZeroBullsht",
+    "[Geujl hehrb": "[Geuj] hehrb",
+    "[|HA] USAL]": "[IHA] USALJ",
+    "[|HA] USALJ": "[IHA] USALJ",
+    "[IHA] USAL)": "[IHA] USALJ",
+    "Usib] aksjf": "[Jsib] aksjf",
+    "[sib] aksjf": "[Jsib] aksjf",
+    "ICCCC] CCCCCCCCCCCCCCCCCCCC": "[CCCC] CCCCCCCCCCCCCCCCCCCC",
+    "USMF] forte": "[USMF] forte",
+    "[zZZ] Zombiz": "[zZZ] ZombiZ"
 }
+
+_LOOKALIKE = str.maketrans({"0": "o", "O": "o", "1": "l", "I": "l", "i": "l", "|": "l", "!": "l"})
+
+def _alliance_key(alliance):
+    return re.sub(r'[\s\[\]()]', '', alliance).translate(_LOOKALIKE).lower()
+
+def consolidate_alliance_variants(records):
+    """Merge alliances that differ only by OCR look-alike characters (O/0, I/l/1/|)
+    into the most frequent spelling. Returns a list of (variant, canonical, count)."""
+    groups = {}
+    for r in records:
+        if r["alliance"] != "No Alliance":
+            groups.setdefault(_alliance_key(r["alliance"]), {}).setdefault(r["alliance"], 0)
+            groups[_alliance_key(r["alliance"])][r["alliance"]] += 1
+    merged = []
+    for variants in groups.values():
+        if len(variants) < 2:
+            continue
+        canonical = max(variants, key=variants.get)
+        for v, n in variants.items():
+            if v != canonical:
+                merged.append((v, canonical, n))
+    lookup = {v: c for v, c, _ in merged}
+    for r in records:
+        if r["alliance"] in lookup:
+            r["alliance"] = lookup[r["alliance"]]
+            r["alliance_tag"], r["alliance_name"] = parse_tag_and_name(r["alliance"])
+    return merged
 
 def parse_tag_and_name(alliance_str):
     if not alliance_str:

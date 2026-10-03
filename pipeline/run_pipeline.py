@@ -14,7 +14,7 @@ import shutil
 import argparse
 import subprocess
 import threading
-from cleaner import clean_player_record, validate_dataset
+from cleaner import clean_player_record, validate_dataset, consolidate_alliance_variants
 from processor import publish_event
 
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -251,6 +251,8 @@ def main():
     # 1. Clean and normalize
     print("\nCleaning records and resolving OCR normalizations...")
     cleaned_records = [clean_player_record(r, home_server=args.home, visiting_server=args.opponent) for r in raw_records]
+    for variant, canonical, n in consolidate_alliance_variants(cleaned_records):
+        print(f"  [alliance merge] {variant!r} -> {canonical!r} ({n} rows)")
 
     # 2. Validate integrity
     errors = validate_dataset(cleaned_records)
