@@ -434,7 +434,7 @@
   }
   const sideHtml = side => side ? `<span class="side"><span aria-hidden="true">${roleIcon(side)}</span>${esc(t("role_" + side))}</span>` : "";
   const sideShort = side => side ? `${roleIcon(side)} ${t("role_" + side)}` : "";
-  const sideKey = () => `<div class="legend"><span class="key"><span class="swatch-solid"></span>${esc(t("legend_attacking"))}</span><span class="key"><span class="swatch-hatch"></span>${esc(t("legend_defending"))}</span></div>`;
+  const sideKey = () => `<div class="legend"><span class="key"><span class="swatch-solid"></span>${esc(t("role_attacking"))}</span><span class="key"><span class="swatch-hatch"></span>${esc(t("role_defending"))}</span></div>`;
   const serverPill = (server, meta, xs) => `<span class="pill pill-${serverClass(server, meta)}${xs ? " pill-xs" : ""}">S${esc(server)}</span>`;
   const roleIcon = role => role === "defending" ? "🛡️" : "⚔️";
 
