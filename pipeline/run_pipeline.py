@@ -17,10 +17,10 @@ import threading
 from datetime import datetime, timezone
 from cleaner import clean_player_record, validate_dataset, consolidate_alliance_variants
 from processor import publish_event
+from screenshots import staging_dir, archive_screenshots
 
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(PIPELINE_DIR)
-SCRATCH_DIR = os.path.join(PIPELINE_DIR, "scratch")
 OCR_SRC = os.path.join(PIPELINE_DIR, "vision_ocr.swift")
 OCR_BIN = os.path.join(PIPELINE_DIR, "vision_ocr")
 
@@ -148,8 +148,9 @@ def parse_items_to_rows(items, max_known_rank):
         })
     return rows
 
-def capture_leaderboard(adb, device, max_frames=450):
-    os.makedirs(SCRATCH_DIR, exist_ok=True)
+def capture_leaderboard(adb, device, frames_dir, max_frames=450):
+    """Capture the leaderboard. Every frame is kept full-size in frames_dir (local staging)."""
+    os.makedirs(frames_dir, exist_ok=True)
     print("\nStarting high-speed pipelined leaderboard extraction...")
     t_start = time.time()
     started_at = datetime.now().astimezone()
@@ -159,7 +160,7 @@ def capture_leaderboard(adb, device, max_frames=450):
     stuck_count = 0
 
     for frame in range(max_frames):
-        img_path = os.path.join(SCRATCH_DIR, f"frame_{frame % 2}.png")
+        img_path = os.path.join(frames_dir, f"frame_{frame + 1:04d}.png")
         screencap(adb, device, img_path)
 
         # Launch swipe concurrently
@@ -229,12 +230,14 @@ def capture_leaderboard(adb, device, max_frames=450):
     }
     return raw_results, capture_info
 
-def write_capture_record(event_id, capture_info):
-    """Store capture timing next to the event data. Not referenced by index.html, so it is
-    kept in the repo without being shown on the GitHub Pages dashboard."""
+def write_capture_record(event_id, capture_info, screenshots=None):
+    """Store capture timing (and the archived screenshot list) next to the event data. Not
+    referenced by index.html, so it is kept in the repo without being shown on the dashboard."""
     path = os.path.join(BASE_DIR, "events", event_id, "capture.json")
     record = {"event_id": event_id, "passes": [capture_info],
               "method": "pipeline/run_pipeline.py live ADB capture (BlueStacks) + Apple Vision OCR"}
+    if screenshots:
+        record["screenshots"] = screenshots
     with open(path, "w", encoding="utf-8") as f:
         json.dump(record, f, indent=2, ensure_ascii=False)
         f.write("\n")
@@ -273,7 +276,11 @@ def main():
         if not args.no_rewind:
             scroll_to_top(adb, device)
 
-        raw_records, capture_info = capture_leaderboard(adb, device)
+        frames_dir = staging_dir(event_id)
+        for old in os.listdir(frames_dir):
+            if old.startswith("frame_"):
+                os.remove(os.path.join(frames_dir, old))
+        raw_records, capture_info = capture_leaderboard(adb, device, frames_dir)
 
     # 1. Clean and normalize
     print("\nCleaning records and resolving OCR normalizations...")
@@ -302,7 +309,13 @@ def main():
         home_role=args.home_role
     )
     if capture_info:
-        write_capture_record(event_id, capture_info)
+        frames = sorted(f for f in os.listdir(frames_dir) if f.startswith("frame_") and f.endswith(".png"))
+        print(f"Archiving {len(frames)} compressed screenshots to events/{event_id}/screenshots/ ...")
+        shots = archive_screenshots(
+            [(os.path.join(frames_dir, f), f[:-4], "capture-frame") for f in frames],
+            os.path.join(BASE_DIR, "events", event_id))
+        write_capture_record(event_id, capture_info, shots)
+        print(f"Full-size frames kept locally in {frames_dir} (auto-deleted after a few days by the cleanup agent).")
     else:
         print("Reprocessed from file: existing capture.json (if any) left unchanged.")
 

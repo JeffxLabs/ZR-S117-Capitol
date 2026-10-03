@@ -19,5 +19,168 @@
     }
   ],
   "method": "Earlier extract_rankings.py ADB capture (BlueStacks) + Apple Vision OCR",
-  "timestamp_source": "Reconstructed from capture frame file times (frame_*.png, tail_frame_*.png) in the original capture session's scratch folder; consistent with commits 9de6e0e (12:40:03 EDT) and 65f9dd2 (12:44:55 EDT)."
+  "timestamp_source": "Reconstructed from capture frame file times (frame_*.png, tail_frame_*.png) in the original capture session's scratch folder; consistent with commits 9de6e0e (12:40:03 EDT) and 65f9dd2 (12:44:55 EDT).",
+  "screenshots": [
+    {
+      "file": "screenshots/screen.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:30:49-04:00"
+    },
+    {
+      "file": "screenshots/media_1789835451244.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:30:51-04:00"
+    },
+    {
+      "file": "screenshots/screen_scroll2.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:31:20-04:00"
+    },
+    {
+      "file": "screenshots/screen_top.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:31:26-04:00"
+    },
+    {
+      "file": "screenshots/test_0.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:03-04:00"
+    },
+    {
+      "file": "screenshots/test_1.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:05-04:00"
+    },
+    {
+      "file": "screenshots/test_2.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:07-04:00"
+    },
+    {
+      "file": "screenshots/test_3.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:09-04:00"
+    },
+    {
+      "file": "screenshots/test_4.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:11-04:00"
+    },
+    {
+      "file": "screenshots/speed_test.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:45-04:00"
+    },
+    {
+      "file": "screenshots/test_dur_400.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:50-04:00"
+    },
+    {
+      "file": "screenshots/test_dur_500.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:52-04:00"
+    },
+    {
+      "file": "screenshots/test_dur_600.webp",
+      "kind": "setup",
+      "taken_at": "2026-09-19T12:32:53-04:00"
+    },
+    {
+      "file": "screenshots/check_top.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T12:33:10-04:00"
+    },
+    {
+      "file": "screenshots/pipe_frame_0.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:33:31-04:00"
+    },
+    {
+      "file": "screenshots/pipe_frame_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:33:32-04:00"
+    },
+    {
+      "file": "screenshots/frame_0.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:38:32-04:00"
+    },
+    {
+      "file": "screenshots/frame_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:38:33-04:00"
+    },
+    {
+      "file": "screenshots/final_screen.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T12:38:45-04:00"
+    },
+    {
+      "file": "screenshots/current_state.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T12:41:55-04:00"
+    },
+    {
+      "file": "screenshots/scroll_more.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T12:42:01-04:00"
+    },
+    {
+      "file": "screenshots/cont_0.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:42:10-04:00"
+    },
+    {
+      "file": "screenshots/cont_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:42:12-04:00"
+    },
+    {
+      "file": "screenshots/cont_2.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:42:14-04:00"
+    },
+    {
+      "file": "screenshots/cont_3.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:42:15-04:00"
+    },
+    {
+      "file": "screenshots/cont_4.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:42:17-04:00"
+    },
+    {
+      "file": "screenshots/probe.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T12:43:03-04:00"
+    },
+    {
+      "file": "screenshots/check_rewind.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T12:43:28-04:00"
+    },
+    {
+      "file": "screenshots/tail_frame_0.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:44:35-04:00"
+    },
+    {
+      "file": "screenshots/tail_frame_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-09-19T12:44:36-04:00"
+    },
+    {
+      "file": "screenshots/seek_163.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T13:02:47-04:00"
+    },
+    {
+      "file": "screenshots/after_back.webp",
+      "kind": "verification",
+      "taken_at": "2026-09-19T13:02:54-04:00"
+    }
+  ],
+  "screenshots_note": "Full frame-by-frame sequence was not retained for this event (the capture tool reused two frame files). Archived here: every screenshot that still existed locally, compressed to 720px WebP."
 }
