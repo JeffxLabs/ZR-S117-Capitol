@@ -111,3 +111,30 @@ git push origin main
   ```sh
   python3 pipeline/run_pipeline.py --from-file events/2026-09-19-s117-vs-s119/rankings.json
   ```
+
+---
+
+## Hands-off run (Apparatchik pause, navigation, QA)
+
+One-time setup: pair the pipeline with Apparatchik (issue a code in the Apparatchik Mac app, as for the Android phone):
+```sh
+python3 pipeline/apparatchik_control.py pair <6-digit code>   # credential stored in the macOS login Keychain
+python3 pipeline/apparatchik_control.py status
+```
+
+Then a full run is just:
+```sh
+python3 pipeline/run_pipeline.py --opponent 113 --home-role attacking
+```
+It will:
+1. Pause Apparatchik monitoring with a timed safety pause (about 2x the expected run time). If you had already paused it yourself, it stays paused and is not resumed.
+2. Back out of whatever is open, then tap **Expedition Frenzy**, the **Capitol Conquest** tab, then **Rankings** (each label found by OCR).
+3. Rewind to rank 1 (checked against real rank digits), then capture with overlapping swipes. Rank numbers come from where each row sits on screen, and every reading of every rank is kept and voted on.
+4. Handle the notification banner: it always appears at the same screen height. Rows under it are marked unreliable and never outvote clean reads, and the frame is re-captured after the banner clears.
+5. Repair pass: scroll back to any missing, conflicting or out-of-order rank and re-read it (up to 2 rounds).
+6. Back out to the world map and tap **RETURN TO CITY**, then resume Apparatchik straight away (the timed pause is only a fallback if the pipeline crashes).
+7. Write `events/<id>/capture_qa.json` and exit non-zero if any rank is missing or unresolved (`--allow-incomplete` overrides).
+
+Other flags: `--no-apparatchik` (do not pause/resume), `--no-navigate` (Rankings already open; stay there), `--swipe-px` (default 420), `--settle-sec`.
+
+Tests (no emulator needed; real OCR fixtures checked against the verified 2026-10-03 data): `cd pipeline && python3 -m unittest discover -s tests -v`

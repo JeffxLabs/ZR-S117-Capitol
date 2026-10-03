@@ -138,23 +138,7 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
         f.write(f"  rankings: {json.dumps(players, ensure_ascii=False)}\n")
         f.write("};\n")
 
-    # Update active data pointers
-    data_dir = os.path.join(BASE_DIR, "data")
-    os.makedirs(data_dir, exist_ok=True)
-    with open(os.path.join(data_dir, "capitol_event_rankings.json"), "w", encoding="utf-8") as f:
-        json.dump(players, f, indent=2, ensure_ascii=False)
-    with open(os.path.join(data_dir, "capitol_event_rankings.csv"), "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["Rank", "Server_Rank", "Commander", "Alliance", "Server", "Points"])
-        for p in players:
-            writer.writerow([p["rank"], p["server_rank"], p["commander"], p["alliance"], f"S{p['server']}", p["points"]])
-    with open(os.path.join(data_dir, "alliance_summary.csv"), "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["Rank", "Server_Rank", "Alliance", "Server", "Members", "Total Points", "Avg Points/Player", "Top Commander", "Top Commander Points"])
-        for a in alliances:
-            writer.writerow([a["rank"], a["server_rank"], a["alliance"], f"S{a['server']}", a["members_count"], a["total_points"], a["avg_points"], a["top_commander"], a["top_points"]])
-
-    # Update Manifest
+    # Load Manifest
     manifest_path = os.path.join(BASE_DIR, "events", "manifest.json")
     manifest = []
     if os.path.exists(manifest_path):
@@ -163,6 +147,28 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
                 manifest = json.load(mf)
         except Exception:
             manifest = []
+
+    # Update active data pointers only when this event's date is the newest in the manifest
+    existing_dates = [e["date"] for e in manifest if "date" in e]
+    is_newest = (not existing_dates) or (date_str >= max(existing_dates))
+
+    if is_newest:
+        data_dir = os.path.join(BASE_DIR, "data")
+        os.makedirs(data_dir, exist_ok=True)
+        with open(os.path.join(data_dir, "capitol_event_rankings.json"), "w", encoding="utf-8") as f:
+            json.dump(players, f, indent=2, ensure_ascii=False)
+        with open(os.path.join(data_dir, "capitol_event_rankings.csv"), "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["Rank", "Server_Rank", "Commander", "Alliance", "Server", "Points"])
+            for p in players:
+                writer.writerow([p["rank"], p["server_rank"], p["commander"], p["alliance"], f"S{p['server']}", p["points"]])
+        with open(os.path.join(data_dir, "alliance_summary.csv"), "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["Rank", "Server_Rank", "Alliance", "Server", "Members", "Total Points", "Avg Points/Player", "Top Commander", "Top Commander Points"])
+            for a in alliances:
+                writer.writerow([a["rank"], a["server_rank"], a["alliance"], f"S{a['server']}", a["members_count"], a["total_points"], a["avg_points"], a["top_commander"], a["top_points"]])
+    else:
+        print(f"Notice: Event date {date_str} is not newest in manifest (latest: {max(existing_dates)}). Skipping data/ pointers update.")
 
     summary_entry = {
         "id": event_id,

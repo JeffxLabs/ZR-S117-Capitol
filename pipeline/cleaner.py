@@ -79,28 +79,22 @@ def clean_player_record(record, home_server="117", visiting_server="119"):
     raw_ally = record.get("alliance", "").strip()
     pts = record.get("points")
 
-    # Detect server directly from raw alliance string BEFORE stripping
-    if f"S{visiting_server}" in raw_ally or visiting_server in raw_ally:
-        server = visiting_server
-    elif "S113" in raw_ally or "113" in raw_ally:
-        server = "113"
-    elif f"S{home_server}" in raw_ally:
-        server = home_server
+    # 1. Determine server: take explicit server if present in record (None/'' -> home)
+    rec_server = record.get("server")
+    if rec_server is not None and str(rec_server).strip() != "":
+        srv_str = str(rec_server).strip()
+        if srv_str.startswith("S") or srv_str.startswith("s"):
+            srv_str = srv_str[1:]
+        server = srv_str if srv_str else home_server
     else:
-        # Unlabelled alliances belong to home server
-        server = home_server
+        # Fall back to trailing S\d+ on the alliance string for legacy raw files
+        m = re.search(r'\bS(\d{2,4})\s*$', raw_ally)
+        if m:
+            server = m.group(1)
+        else:
+            server = home_server
 
-    # Handle shifted commander/alliance rows if OCR missed player name on top line
-    if rank == 163 and cmd.startswith("[STLG]"):
-        cmd = "Commander_163"
-        raw_ally = "[STLG] SteelLegion S119"
-        server = visiting_server
-    elif rank == 168 and cmd.startswith("[TSR2]"):
-        cmd = "Commander_168"
-        raw_ally = "[TSR2] TheShardofReality2 S119"
-        server = visiting_server
-
-    # Strip trailing server identifier (e.g. S119)
+    # Strip trailing server identifier (e.g. S119 or S113)
     clean_ally = re.sub(r'\s*S\d+\s*$', '', raw_ally).strip()
     norm_ally = ALLIANCE_NORMALIZATION_MAP.get(clean_ally, clean_ally)
 
