@@ -29,7 +29,7 @@ KEYS = [
     "trends_note", "trends_need_two", "legend_home", "legend_opponent", "show_table", "hide_table", "events_n",
     "data_title", "dl_rankings_csv", "dl_rankings_json", "dl_alliances_csv", "method_title", "method_p1",
     "footer", "name_unreadable", "pts", "this_event", "best_rank", "events_played",
-    "theme_day", "theme_night", "legend_attacking", "legend_defending", "avg_attacking", "avg_defending", "col_side", "compare_note", "players_n", "roster_change_note", "n_events_one", "n_events_other",
+    "theme_day", "theme_night", "legend_attacking", "legend_defending", "avg_attacking", "avg_defending", "col_side", "compare_note", "players_n", "roster_change_note", "n_events_one", "n_events_other", "day_attacking", "day_defending", "vs_last_day", "no_last_day", "compare_note_pts", "compare_note_none", "compare_note_rank", "col_pts_same_side", "col_rank_prev", "trends_by_side", "side_events", "roster_change_note2", "copy_link", "link_copied",
 ]
 
 T = {
@@ -60,6 +60,8 @@ T = {
     "Switch to day mode", "Switch to night mode", "Solid: attacking", "Hatched: defending", "Avg when attacking", "Avg when defending", "Side", "Changes compare with {date} · S{home} {side} vs S{opp}",
     "{n} players", "Change in position within the alliance since {date}.",
     "{n} event", "{n} events",
+    "attacking day", "defending day", "vs last {day} ({date})", "No earlier {day} to compare", "Points changes compare with the last {day} ({date}).", "No earlier {day} yet, so points changes are not shown.", "Rank changes compare with {date} ({day}).", "Points vs same side", "Rank vs previous", "S{home} by side", "Events", "Change in position within the alliance since {date} ({day}).",
+    "Copy link", "Link copied",
 ],
 "fr": [
     "Z Route: Redemption — Renseignement S117", "S117 Intel", "Analyse de la Guerre du Capitole", "Événement", "Langue",
@@ -88,6 +90,8 @@ T = {
     "Passer en mode jour", "Passer en mode nuit", "Plein : attaque", "Hachuré : défense", "Moy. en attaque", "Moy. en défense", "Camp", "Variations par rapport au {date} · S{home} {side} contre S{opp}",
     "{n} joueurs", "Évolution de la place au sein de l'alliance depuis le {date}.",
     "{n} événement", "{n} événements",
+    "jour d'attaque", "jour de défense", "vs dernier {day} ({date})", "Aucun {day} antérieur pour comparer", "Les variations de points comparent avec le dernier {day} ({date}).", "Pas encore de {day} antérieur : les variations de points ne sont pas affichées.", "Les variations de rang comparent avec le {date} ({day}).", "Points vs même camp", "Rang vs précédent", "S{home} par camp", "Événements", "Évolution de la place dans l'alliance depuis le {date} ({day}).",
+    "Copier le lien", "Lien copié",
 ],
 "ru": [
     "Z Route: Redemption — Разведка S117", "S117 Intel", "Аналитика Битвы за Капитолий", "Событие", "Язык",
@@ -116,6 +120,8 @@ T = {
     "Дневной режим", "Ночной режим", "Сплошная: атака", "Штриховка: оборона", "Сред. в атаке", "Сред. в обороне", "Сторона", "Изменения относительно {date} · S{home}: {side}, против S{opp}",
     "Игроков: {n}", "Изменение места внутри альянса с {date}.",
     "Событий: {n}", "Событий: {n}",
+    "день атаки", "день обороны", "к {date} ({day})", "Нет более раннего события типа «{day}»", "Изменения очков — относительно последнего события типа «{day}» ({date}).", "Более раннего события типа «{day}» пока нет, поэтому изменения очков не показаны.", "Изменения мест — относительно {date} ({day}).", "Очки к той же стороне", "Место к прошлому", "S{home} по сторонам", "События", "Изменение места в альянсе с {date} ({day}).",
+    "Копировать ссылку", "Ссылка скопирована",
 ],
 "tr": [
     "Z Route: Redemption — S117 İstihbarat", "S117 Intel", "Başkent Savaşı analizi", "Etkinlik", "Dil",
@@ -144,6 +150,8 @@ T = {
     "Gündüz moduna geç", "Gece moduna geç", "Düz: saldıran", "Taralı: savunan", "Saldırıda ort.", "Savunmada ort.", "Taraf", "Değişimler {date} ile karşılaştırılır · S{home} {side}, rakip S{opp}",
     "{n} oyuncu", "{date} tarihinden bu yana ittifak içi sıra değişimi.",
     "{n} etkinlik", "{n} etkinlik",
+    "saldırı günü", "savunma günü", "son {day} ile ({date})", "Karşılaştırılacak önceki {day} yok", "Puan değişimleri son {day} ({date}) ile karşılaştırılır.", "Henüz önceki {day} yok; puan değişimleri gösterilmiyor.", "Sıra değişimleri {date} ({day}) ile karşılaştırılır.", "Aynı tarafa göre puan", "Öncekine göre sıra", "Tarafa göre S{home}", "Etkinlik", "{date} ({day}) tarihinden bu yana ittifak içi sıra değişimi.",
+    "Bağlantıyı kopyala", "Bağlantı kopyalandı",
 ],
 "pl": [
     "Z Route: Redemption — Wywiad S117", "S117 Intel", "Analityka Wojny o Kapitol", "Wydarzenie", "Język",
@@ -172,6 +180,8 @@ T = {
     "Tryb dzienny", "Tryb nocny", "Pełne: atak", "Kreskowane: obrona", "Śr. w ataku", "Śr. w obronie", "Strona", "Zmiany względem {date} · S{home}: {side}, przeciw S{opp}",
     "Graczy: {n}", "Zmiana miejsca w sojuszu od {date}.",
     "Wydarzeń: {n}", "Wydarzeń: {n}",
+    "dzień ataku", "dzień obrony", "vs ostatni {day} ({date})", "Brak wcześniejszego dnia: {day}", "Zmiany punktów porównywane z ostatnim dniem: {day} ({date}).", "Brak jeszcze wcześniejszego dnia: {day}, więc zmiany punktów nie są pokazywane.", "Zmiany miejsc porównywane z {date} ({day}).", "Punkty vs ta sama strona", "Miejsce vs poprzednie", "S{home} według strony", "Wydarzenia", "Zmiana miejsca w sojuszu od {date} ({day}).",
+    "Kopiuj link", "Skopiowano link",
 ],
 "es": [
     "Z Route: Redemption — Inteligencia S117", "S117 Intel", "Análisis de la Guerra del Capitolio", "Evento", "Idioma",
@@ -200,6 +210,8 @@ T = {
     "Cambiar a modo día", "Cambiar a modo noche", "Sólido: atacante", "Rayado: defensor", "Media atacando", "Media defendiendo", "Bando", "Cambios respecto al {date} · S{home} {side} contra S{opp}",
     "{n} jugadores", "Cambio de puesto dentro de la alianza desde el {date}.",
     "{n} evento", "{n} eventos",
+    "día de ataque", "día de defensa", "vs último {day} ({date})", "No hay un {day} anterior para comparar", "Los cambios de puntos se comparan con el último {day} ({date}).", "Aún no hay un {day} anterior, así que no se muestran cambios de puntos.", "Los cambios de puesto se comparan con el {date} ({day}).", "Puntos vs mismo bando", "Puesto vs anterior", "S{home} por bando", "Eventos", "Cambio de puesto dentro de la alianza desde el {date} ({day}).",
+    "Copiar enlace", "Enlace copiado",
 ],
 "pt": [
     "Z Route: Redemption — Inteligência S117", "S117 Intel", "Análise da Guerra do Capitólio", "Evento", "Idioma",
@@ -228,6 +240,8 @@ T = {
     "Mudar para modo dia", "Mudar para modo noite", "Sólido: atacante", "Tracejado: defensor", "Média a atacar", "Média a defender", "Lado", "Variações face a {date} · S{home} {side} contra S{opp}",
     "{n} jogadores", "Variação da posição dentro da aliança desde {date}.",
     "{n} evento", "{n} eventos",
+    "dia de ataque", "dia de defesa", "vs último {day} ({date})", "Sem {day} anterior para comparar", "As variações de pontos comparam com o último {day} ({date}).", "Ainda não há um {day} anterior, por isso as variações de pontos não são mostradas.", "As variações de posição comparam com {date} ({day}).", "Pontos vs mesmo lado", "Posição vs anterior", "S{home} por lado", "Eventos", "Variação da posição na aliança desde {date} ({day}).",
+    "Copiar ligação", "Ligação copiada",
 ],
 "de": [
     "Z Route: Redemption — S117 Aufklärung", "S117 Intel", "Analyse des Kapitolkriegs", "Event", "Sprache",
@@ -256,6 +270,8 @@ T = {
     "Tagmodus", "Nachtmodus", "Voll: Angriff", "Schraffiert: Verteidigung", "Ø im Angriff", "Ø in der Verteidigung", "Seite", "Änderungen ggü. {date} · S{home} {side} gegen S{opp}",
     "{n} Spieler", "Veränderung der Position innerhalb der Allianz seit {date}.",
     "{n} Event", "{n} Events",
+    "Angriffstag", "Verteidigungstag", "ggü. letztem {day} ({date})", "Kein früherer {day} zum Vergleich", "Punkteänderungen beziehen sich auf den letzten {day} ({date}).", "Noch kein früherer {day}, daher werden keine Punkteänderungen angezeigt.", "Rangänderungen beziehen sich auf {date} ({day}).", "Punkte ggü. gleicher Seite", "Rang ggü. vorher", "S{home} nach Seite", "Events", "Positionsänderung innerhalb der Allianz seit {date} ({day}).",
+    "Link kopieren", "Link kopiert",
 ],
 "ko": [
     "Z Route: Redemption — S117 인텔", "S117 인텔", "캐피톨 전쟁 분석", "이벤트", "언어",
@@ -284,6 +300,8 @@ T = {
     "주간 모드로 전환", "야간 모드로 전환", "채움: 공격", "빗금: 수비", "공격 시 평균", "수비 시 평균", "진영", "{date} 대비 변화 · S{home} {side}, 상대 S{opp}",
     "{n}명 참가", "{date} 이후 연맹 내 순위 변화.",
     "이벤트 {n}개", "이벤트 {n}개",
+    "공격일", "수비일", "직전 {day} 대비 ({date})", "비교할 이전 {day} 없음", "포인트 변화는 직전 {day}({date})와 비교합니다.", "이전 {day}이(가) 아직 없어 포인트 변화는 표시하지 않습니다.", "순위 변화는 {date}({day})와 비교합니다.", "같은 진영 대비 포인트", "이전 대비 순위", "진영별 S{home}", "이벤트", "{date}({day}) 이후 연맹 내 순위 변화.",
+    "링크 복사", "링크 복사됨",
 ],
 "zh": [
     "Z Route: Redemption — S117 情报", "S117 情报", "国会大厦之战分析", "活动", "语言",
@@ -312,6 +330,8 @@ T = {
     "切换到日间模式", "切换到夜间模式", "实心：进攻", "斜纹：防守", "进攻时平均", "防守时平均", "阵营", "与 {date} 相比 · S{home} {side}，对手 S{opp}",
     "{n} 名玩家", "自 {date} 以来在联盟内的排名变化。",
     "{n} 个活动", "{n} 个活动",
+    "进攻日", "防守日", "对比上一个{day}（{date}）", "没有更早的{day}可供比较", "积分变化与上一个{day}（{date}）比较。", "尚无更早的{day}，因此不显示积分变化。", "排名变化与 {date}（{day}）比较。", "同阵营积分对比", "排名对比上次", "S{home} 按阵营", "活动", "自 {date}（{day}）以来在联盟内的排名变化。",
+    "复制链接", "链接已复制",
 ],
 }
 

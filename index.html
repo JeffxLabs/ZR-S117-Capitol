@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#000000">
   <meta name="color-scheme" content="dark light">
-  <script>try{var th=localStorage.getItem("s117.theme");if(th==="light"||th==="dark")document.documentElement.dataset.theme=th;}catch(e){}</script>
+  <script>try{var th=new URLSearchParams(location.search).get("theme")||localStorage.getItem("s117.theme");if(th==="light"||th==="dark")document.documentElement.dataset.theme=th;}catch(e){}</script>
   <title>S117 Capitol War Intel</title>
   <meta name="description" content="Capitol War rankings, alliances and cross-event trends for Server 117 in Z Route: Redemption.">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -259,6 +259,7 @@
     .side { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; font-size: 12.5px; color: var(--text-2); }
     .swatch-hatch { width: 12px; height: 10px; border-radius: 2px; display: inline-block; background: repeating-linear-gradient(45deg, var(--text-2) 0 2px, transparent 2px 4px); border: 1px solid var(--text-3); }
     .swatch-solid { width: 12px; height: 10px; border-radius: 2px; display: inline-block; background: var(--text-2); }
+    .icon-btn[data-done] { border-color: var(--up); color: var(--up); }
     .icon-btn { margin-left: auto; width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); cursor: pointer; display: grid; place-items: center; flex: none; }
     .drawer .tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
     .drawer .tile-value { font-size: clamp(18px, 5vw, 22px); white-space: nowrap; }
@@ -339,7 +340,10 @@
         <h2 id="drawerTitle"></h2>
         <div class="event-meta" id="drawerMeta" style="margin-top:8px"></div>
       </div>
-      <button class="icon-btn" id="drawerClose" data-i18n-aria="close" aria-label="Close">
+      <button class="icon-btn" id="drawerCopy" data-i18n-aria="copy_link" aria-label="Copy link" style="margin-left:auto">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+      </button>
+      <button class="icon-btn" id="drawerClose" data-i18n-aria="close" aria-label="Close" style="margin-left:0">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
     </div>
@@ -412,6 +416,22 @@
     const r = roles(m);
     return String(server) === r.home ? r.homeRole : String(server) === r.opp ? r.oppRole : null;
   }
+  // Points run systematically higher or lower on attacking vs defending days, so points-based changes
+  // only compare with the most recent earlier event where that server fought on the SAME side.
+  // Rank/position changes (relative within a day) compare with the immediately previous event.
+  function sameSideBaseline(eventId, server) {
+    const i = EVENTS.findIndex(e => e.id === eventId); if (i < 0) return null;
+    const side = sideOf(EVENTS[i], server); if (!side) return null;
+    for (let j = i - 1; j >= 0; j--) if (store[EVENTS[j].id] && sideOf(EVENTS[j], server) === side) return EVENTS[j];
+    return null;
+  }
+  const dayWord = side => side ? t("day_" + side) : "";
+  function vsSameSide(eventId, server, base) {
+    const side = sideOf(EVENTS.find(e => e.id === eventId) || {}, server);
+    if (!side) return "";
+    return base ? `<span class="dim">${esc(t("vs_last_day", { day: dayWord(side), date: fmtDateShort(base.date) }))}</span>`
+                : `<span class="dim">${esc(t("no_last_day", { day: dayWord(side) }))}</span>`;
+  }
   const sideHtml = side => side ? `<span class="side"><span aria-hidden="true">${roleIcon(side)}</span>${esc(t("role_" + side))}</span>` : "";
   const sideShort = side => side ? `${roleIcon(side)} ${t("role_" + side)}` : "";
   const sideKey = () => `<div class="legend"><span class="key"><span class="swatch-solid"></span>${esc(t("legend_attacking"))}</span><span class="key"><span class="swatch-hatch"></span>${esc(t("legend_defending"))}</span></div>`;
@@ -430,6 +450,8 @@
   // Commanders match across events by server + name (ignoring decorative symbols); alliances by server + tag
   const cKey = p => `${p.server}|${nameKey(p.commander)}`;
   const aKey = a => `${a.server}|${(a.tag || a.alliance || "").toLowerCase()}`;
+  const keyToUrl = k => k.replace("|", ".");
+  const keyFromUrl = v => v ? (v.includes("|") ? v : v.replace(".", "|")) : null;
   const allyTag = s => { const m = /^\[([^\]]+)\]/.exec(s || ""); return m ? m[1] : ""; };
 
   function buildIndex() {
@@ -571,32 +593,68 @@
     document.getElementById("eventMeta").innerHTML = parts.join("");
   }
   function setTab(tab, sync = true) {
+    if (sync && tab !== state.tab && state.profile) { state.profile = null; drawer.classList.contains("open") && closeDrawer(true); }
     state.tab = tab;
     document.querySelectorAll(".tab").forEach(b => { const on = b.dataset.tab === tab; b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1; });
     document.querySelectorAll(".view").forEach(v => { v.hidden = v.id !== "view-" + tab; });
     renderTab();
-    if (sync) syncUrl();
+    if (sync) syncUrl(true);
   }
-  function syncUrl() {
+  // Every view is addressable: ?event= &tab= &lang= &theme= &srv= (server filter) &q= (filter text) &c= / &a= (profile)
+  function viewUrl() {
+    const u = new URL(location.href);
+    ["event", "tab", "lang", "l", "theme", "srv", "q", "c", "a"].forEach(k => u.searchParams.delete(k));
+    u.searchParams.set("event", state.eventId);
+    if (state.tab !== "overview") u.searchParams.set("tab", state.tab);
+    u.searchParams.set("lang", state.lang);
+    const filt = state.tab === "alliances" ? [state.allyServer, state.allyQuery] : state.tab === "commanders" ? [state.cmdServer, state.cmdQuery] : ["all", ""];
+    if (filt[0] !== "all") u.searchParams.set("srv", filt[0]);
+    if (filt[1]) u.searchParams.set("q", filt[1]);
+    if (document.documentElement.dataset.theme === "light") u.searchParams.set("theme", "light");
+    if (state.profile) u.searchParams.set(state.profile.type, keyToUrl(state.profile.key));
+    return u;
+  }
+  let restoring = false;
+  function syncUrl(push) {
+    if (restoring) return;
     try {
-      const u = new URL(location.href);
-      u.searchParams.set("event", state.eventId);
-      state.tab === "overview" ? u.searchParams.delete("tab") : u.searchParams.set("tab", state.tab);
-      u.searchParams.set("lang", state.lang);
-      u.searchParams.delete("c"); u.searchParams.delete("a"); u.searchParams.delete("l");
-      if (state.profile) u.searchParams.set(state.profile.type, state.profile.key);
-      history.replaceState(null, "", u);
+      const u = viewUrl();
+      if (u.href === location.href) return;
+      push ? history.pushState(null, "", u) : history.replaceState(null, "", u);
     } catch (e) {}
   }
+  function readUrlState(p) {
+    const aliases = { players: "commanders", export: "data" }, qTab = aliases[p.get("tab")] || p.get("tab");
+    state.tab = ["overview", "alliances", "commanders", "trends", "data"].includes(qTab) ? qTab : "overview";
+    state.eventId = (EVENTS.find(e => e.id === p.get("event")) || EVENTS[EVENTS.length - 1] || {}).id;
+    const srv = p.get("srv") || "all", q = p.get("q") || "";
+    state.allyServer = state.tab === "alliances" ? srv : "all"; state.allyQuery = state.tab === "alliances" ? q : "";
+    state.cmdServer = state.tab === "commanders" ? srv : "all"; state.cmdQuery = state.tab === "commanders" ? q : ""; state.cmdLimit = 100;
+  }
+  function openProfileFromUrl(p) {
+    const c = keyFromUrl(p.get("c")), a = keyFromUrl(p.get("a"));
+    if (c) openCommander(c); else if (a) openAlliance(a);
+    else if (drawer.classList.contains("open")) closeDrawer(true);
+  }
+  window.addEventListener("popstate", () => {
+    const p = new URLSearchParams(location.search);
+    restoring = true;
+    readUrlState(p);
+    const lang = (p.get("lang") || "").toLowerCase();
+    if (I18N[lang]) state.lang = lang;
+    const th = p.get("theme"); applyTheme(th === "light" ? "light" : (th === "dark" ? "dark" : document.documentElement.dataset.theme));
+    loadEvent(state.eventId).then(() => { renderAll(); openProfileFromUrl(p); restoring = false; });
+  });
 
   // ---------- overview ----------
   function renderOverview() {
-    const d = ev(), m = d.meta, r = roles(), prev = prevEventOf(state.eventId), pm = prev && store[prev.id] && store[prev.id].meta;
+    const d = ev(), m = d.meta, r = roles();
+    const base = sameSideBaseline(state.eventId, r.home), pm = base && store[base.id].meta;
     const servers = m.servers || {};
     const empty = { points: 0, players: 0, point_share_pct: 0 };
     const home = servers[r.home] || empty, opp = servers[r.opp] || empty;
     const others = r.others.reduce((a, k) => ({ points: a.points + servers[k].points, pct: a.pct + servers[k].point_share_pct }), { points: 0, pct: 0 });
-    const vsPrev = pm ? `<span class="dim">${esc(t("vs_prev", { date: fmtDateShort(pm.date) }))}</span>` : `<span class="dim">${esc(t("first_event"))}</span>`;
+    const vsPrev = EVENTS.length > 1 ? vsSameSide(state.eventId, r.home, base) : `<span class="dim">${esc(t("first_event"))}</span>`;
     const top = d.rankings[0];
     const tiles = [
       tile(t("kpi_points"), fmt(m.total_points), pm ? `${deltaHtml(m.total_points, pm.total_points, { compact: true })} ${vsPrev}` : vsPrev),
@@ -619,13 +677,14 @@
     const card = (srv, s, cls, role) => {
       const topA = d.alliances.find(a => a.server === srv);
       const avg = s.players ? Math.round(s.points / s.players) : 0;
-      const prevS = pm && pm.servers && pm.servers[srv];
+      const sBase = sameSideBaseline(state.eventId, srv), sm = sBase && store[sBase.id].meta;
+      const prevS = sm && sm.servers && sm.servers[srv];
       return `<div class="card server-card ${cls}">
         <h3><span>${esc(t("server_n", { n: srv }))}${role ? ` · ${esc(t("role_" + role))}` : ""}</span>${serverPill(srv)}</h3>
         <div class="stats">
           <div class="stat"><div class="l">${esc(t("total_points"))}</div><div class="v num">${fmt(s.points)}</div><div class="l">${esc(t("share_of_points", { p: fmtPct(s.point_share_pct / 100) }))}</div></div>
           <div class="stat"><div class="l">${esc(t("participants"))}</div><div class="v num">${fmt(s.players)}</div><div class="l">${esc(t("share_of_roster", { p: fmtPct(m.total_players ? s.players / m.total_players : 0) }))}</div></div>
-          <div class="stat"><div class="l">${esc(t("avg_per_player"))}</div><div class="v num">${fmt(avg)}</div>${prevS && prevS.players ? `<div class="l">${deltaHtml(avg, Math.round(prevS.points / prevS.players), { compact: true })} ${vsPrev}</div>` : ""}</div>
+          <div class="stat"><div class="l">${esc(t("avg_per_player"))}</div><div class="v num">${fmt(avg)}</div>${prevS && prevS.players ? `<div class="l">${deltaHtml(avg, Math.round(prevS.points / prevS.players), { compact: true })} ${vsSameSide(state.eventId, srv, sBase)}</div>` : ""}</div>
           <div class="stat"><div class="l">${esc(t("top_alliance"))}</div>${topA ? `<button class="link-btn" style="color:var(--gold);font-weight:650;text-decoration:none;padding:0;font-size:17px;text-align:left" data-open-a="${esc(aKey(topA))}">${esc(topA.alliance)}</button><div class="l num">${fmtCompact(topA.total_points)} ${esc(t("pts"))}</div>` : "—"}</div>
         </div></div>`;
     };
@@ -659,8 +718,16 @@
   }
   function prevNote() {
     const prev = prevEventOf(state.eventId); if (!prev || !store[prev.id]) return "";
-    const r = roles(), side = sideOf(prev, r.home);
-    return `<p class="note" style="margin:0 0 10px">${esc(t("compare_note", { date: fmtDate(prev.date), home: r.home, side: side ? t("role_" + side) : "", opp: prev.opponent_server }))}</p>`;
+    const r = roles(), side = sideOf(EVENTS.find(e => e.id === state.eventId), r.home), base = sameSideBaseline(state.eventId, r.home);
+    const pts = base ? t("compare_note_pts", { day: dayWord(side), date: fmtDate(base.date) }) : t("compare_note_none", { day: dayWord(side) });
+    const rank = t("compare_note_rank", { date: fmtDate(prev.date), day: dayWord(sideOf(prev, r.home)) });
+    return `<p class="note" style="margin:0 0 10px">S${esc(r.home)}: ${esc(pts)} ${esc(rank)}</p>`;
+  }
+  // Points change for an entity against its same-side baseline (empty when there is none)
+  function sameSidePointsDelta(byEvKind, key, server, value, field) {
+    const base = sameSideBaseline(state.eventId, server); if (!base || !index) return "";
+    const v = (index[byEvKind][key] || {})[base.id];
+    return v ? deltaHtml(value, v[field], { compact: true }) : "";
   }
   function renderAlliances() {
     const d = ev(), prev = prevEventOf(state.eventId), pd = prev && store[prev.id];
@@ -674,9 +741,9 @@
         <td class="name-cell">${esc(a.alliance)}<span class="sub"><span class="show-sm">${serverPill(a.server, null, true)}<span class="num">${fmt(a.members_count)}</span> · </span>${esc(displayName(a.top_commander))}</span></td>
         <td class="hide-sm">${serverPill(a.server)}</td>
         <td class="r num hide-sm">${fmt(a.members_count)}</td>
-        <td class="r num"><b>${fmt(a.total_points)}</b>${pd ? `<span class="sub">${p ? deltaHtml(a.total_points, p.total_points, { compact: true }) : `<span class="pill pill-new">${esc(t("new_badge"))}</span>`}</span>` : ""}</td>
+        <td class="r num"><b>${fmt(a.total_points)}</b><span class="sub">${sameSidePointsDelta("a", aKey(a), a.server, a.total_points, "total_points")}${pd ? `<span class="show-sm"> ${p ? rankMoveHtml(a.rank, p.rank) : `<span class="pill pill-new">${esc(t("new_badge"))}</span>`}</span>` : ""}</span></td>
         <td class="r num hide-sm">${fmt(a.avg_points)}</td>
-        <td class="r hide-sm">${pd ? (p ? rankMoveHtml(a.rank, p.rank) : "") : "—"}</td>
+        <td class="r hide-sm">${pd ? (p ? rankMoveHtml(a.rank, p.rank) : `<span class="pill pill-new">${esc(t("new_badge"))}</span>`) : "—"}</td>
       </tr>`;
     }).join("");
     document.getElementById("view-alliances").innerHTML = `
@@ -689,9 +756,9 @@
       ${prevNote()}${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
       <div class="table-wrap"><table>
         <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_alliance"))}</th><th class="hide-sm">${esc(t("col_server"))}</th>
-        <th class="r hide-sm">${esc(t("col_members"))}</th><th class="r">${esc(t("col_total"))}</th><th class="r hide-sm">${esc(t("col_avg"))}</th><th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead>
+        <th class="r hide-sm">${esc(t("col_members"))}</th><th class="r">${esc(t("col_total"))}</th><th class="r hide-sm">${esc(t("col_avg"))}</th><th class="r hide-sm">${esc(t("col_rank_prev"))}</th></tr></thead>
         <tbody>${rows}</tbody></table></div>`;
-    liveFilter("allyQuery", v => { state.allyQuery = v; renderAlliances(); });
+    liveFilter("allyQuery", v => { state.allyQuery = v; renderAlliances(); syncUrl(false); });
   }
 
   // ---------- commanders ----------
@@ -707,7 +774,7 @@
         <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? `<span class="overall">(${p.rank})</span>` : ""}</td>
         <td class="name-cell">${esc(displayName(p.commander))}<span class="sub"><span class="show-sm">${serverPill(p.server, null, true)}</span>${esc(p.alliance || "")}</span></td>
         <td class="hide-sm">${serverPill(p.server)}</td>
-        <td class="r num"><b>${fmt(p.points)}</b>${pd ? `<span class="sub"><span class="hide-sm">${pp ? deltaHtml(p.points, pp.points, { compact: true }) : ""}</span><span class="show-sm">${rankMoveHtml(p.rank, pp ? pp.rank : null)}</span></span>` : ""}</td>
+        <td class="r num"><b>${fmt(p.points)}</b>${pd ? `<span class="sub"><span class="hide-sm">${sameSidePointsDelta("c", cKey(p), p.server, p.points, "points")}</span><span class="show-sm">${rankMoveHtml(p.rank, pp ? pp.rank : null)}</span></span>` : ""}</td>
         <td class="r hide-sm">${pd ? rankMoveHtml(p.rank, pp ? pp.rank : null) : "—"}</td>
       </tr>`;
     }).join("");
@@ -721,11 +788,11 @@
       ${prevNote()}${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
       <div class="table-wrap"><table>
         <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_commander"))}</th><th class="hide-sm">${esc(t("col_server"))}</th>
-        <th class="r">${esc(t("col_points"))}</th><th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead>
+        <th class="r">${esc(t("col_points"))}</th><th class="r hide-sm">${esc(t("col_rank_prev"))}</th></tr></thead>
         <tbody>${rows}</tbody></table>
         ${list.length > shown.length ? `<div class="more-row"><button class="btn" id="cmdMore">${esc(t("load_more"))} · ${fmt(shown.length)} / ${fmt(list.length)}</button></div>` : ""}
       </div>`;
-    liveFilter("cmdQuery", v => { state.cmdQuery = v; state.cmdLimit = 100; renderCommanders(); });
+    liveFilter("cmdQuery", v => { state.cmdQuery = v; state.cmdLimit = 100; renderCommanders(); syncUrl(false); });
     const more = document.getElementById("cmdMore");
     if (more) more.addEventListener("click", () => { state.cmdLimit += 200; renderCommanders(); });
   }
@@ -753,6 +820,14 @@
     const valRow = (label, vals) => `<tr><td>${esc(label)}</td>${vals.map(v => `<td class="r num">${fmt(v)}</td>`).join("")}</tr>`;
 
     const lastId = loaded[loaded.length - 1].id;
+    const baseE = sameSideBaseline(lastId, homeSrv), baseIdx = baseE ? loaded.findIndex(e => e.id === baseE.id) : -1;
+    const lastSide = sideOf(loaded[loaded.length - 1], homeSrv);
+    const bySide = ["attacking", "defending"].map(side => {
+      const evs = loaded.filter(e => sideOf(e, e.home_server) === side);
+      const pts = evs.map(e => (S(e)[e.home_server] || {}).points || 0), ppl = evs.map(e => (S(e)[e.home_server] || {}).players || 0);
+      const avg = a => a.length ? Math.round(a.reduce((x, y) => x + y, 0) / a.length) : null;
+      return { side, n: evs.length, pts: avg(pts), ppl: avg(ppl), per: evs.length ? Math.round(pts.reduce((x, y) => x + y, 0) / Math.max(1, ppl.reduce((x, y) => x + y, 0))) : null };
+    });
     const allyRows = Object.entries(index.a).filter(([k, byEv]) => k.startsWith(homeSrv + "|") && !Object.values(byEv).some(a => a.alliance === "No Alliance")).map(([k, byEv]) => {
       const vals = loaded.map(e => byEv[e.id] ? byEv[e.id].total_points : null);
       const ref = byEv[lastId] || Object.values(byEv).pop();
@@ -773,15 +848,19 @@
         <div class="card"><h2>${esc(t("trends_participation"))}</h2>${legend}<div class="chart" id="chN"></div>
           ${dataTable("n", valRow(homeLabel, homeN) + valRow(oppLabel, oppN))}</div>
       </div>
+      <div class="card section"><h2>${esc(t("trends_by_side", { home: homeSrv }))}</h2>
+        <div class="table-wrap" style="border:0"><table><thead><tr><th>${esc(t("col_side"))}</th><th class="r">${esc(t("side_events"))}</th><th class="r">${esc(t("total_points"))}</th><th class="r">${esc(t("participants"))}</th><th class="r hide-sm">${esc(t("avg_per_player"))}</th></tr></thead>
+        <tbody>${bySide.map(b => `<tr><td>${sideHtml(b.side)}</td><td class="r num">${fmt(b.n)}</td><td class="r num">${b.pts != null ? fmt(b.pts) : "—"}</td><td class="r num">${b.ppl != null ? fmt(b.ppl) : "—"}</td><td class="r num hide-sm">${b.per != null ? fmt(b.per) : "—"}</td></tr>`).join("")}</tbody></table></div>
+        <p class="note">${esc(baseE ? t("compare_note_pts", { day: dayWord(lastSide), date: fmtDate(baseE.date) }) : t("compare_note_none", { day: dayWord(lastSide) }))}</p></div>
       <div class="card section trend-card"><h2>${esc(t("trends_top_alliances", { home: homeSrv }))}</h2>
-        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_alliance"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead><tbody>
-        ${allyRows.map(r => { const a = r.vals[r.vals.length - 1], b = r.vals[r.vals.length - 2];
+        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_alliance"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_pts_same_side"))}</th></tr></thead><tbody>
+        ${allyRows.map(r => { const a = r.vals[r.vals.length - 1], b = baseIdx >= 0 ? r.vals[baseIdx] : null;
           return `<tr class="clickable" data-open-a="${esc(r.k)}" tabindex="0"><td class="name-cell">${esc(r.name)}</td>${r.vals.map(v => v == null ? `<td class="r dim">—</td>` :
           `<td class="r num">${fmtCompact(v)}<span class="inline-bar"><span style="width:${(v / maxA * 100).toFixed(1)}%;background:var(--home)"></span></span></td>`).join("")}
-          <td class="r hide-sm">${a != null && b != null ? deltaHtml(a, b, { compact: true }) : (a != null ? `<span class="pill pill-new">${esc(t("new_badge"))}</span>` : "")}</td></tr>`; }).join("")}
+          <td class="r hide-sm">${a != null && b != null ? deltaHtml(a, b, { compact: true }) : `<span class="dim">—</span>`}</td></tr>`; }).join("")}
         </tbody></table></div></div>
       <div class="card section trend-card"><h2>${esc(t("trends_top_commanders", { home: homeSrv }))}</h2>
-        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_commander"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead><tbody>
+        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_commander"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_rank_prev"))}</th></tr></thead><tbody>
         ${cmdRows.map(r => { const a = r.cells[r.cells.length - 1], b = r.cells[r.cells.length - 2];
           return `<tr class="clickable" data-open-c="${esc(r.k)}" tabindex="0"><td class="name-cell">${esc(r.ref.commander)}<span class="sub">${esc(r.ref.alliance || "")}</span></td>
           ${r.cells.map(c => c ? `<td class="r num">${fmtCompact(c.points)}<span class="sub">#${c.rank}</span></td>` : `<td class="r dim">${esc(t("not_placed"))}</td>`).join("")}
@@ -819,9 +898,9 @@
     drawer.querySelector(".drawer-body").scrollTop = 0;
     setTimeout(() => document.getElementById("drawerClose").focus({ preventScroll: true }), 30);
   }
-  function closeDrawer() {
+  function closeDrawer(silent) {
     drawer.classList.remove("open"); scrim.classList.remove("open"); drawer.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = ""; state.profile = null; hideTip(); syncUrl();
+    document.body.style.overflow = ""; state.profile = null; hideTip(); if (!silent) syncUrl(true);
     if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
   }
   const loadedEvents = () => EVENTS.filter(e => store[e.id]);
@@ -849,7 +928,7 @@
     const cur = byEv[state.eventId] || ev().rankings.find(p => cKey(p) === key);
     const any = cur || Object.values(byEv).pop();
     if (!any) return;
-    state.profile = { type: "c", key }; syncUrl();
+    state.profile = { type: "c", key }; syncUrl(true);
     document.getElementById("drawerKind").textContent = t("profile_commander");
     document.getElementById("drawerTitle").textContent = displayName(any.commander);
     const allyK = aKey({ server: any.server, tag: allyTag(any.alliance), alliance: any.alliance });
@@ -863,7 +942,8 @@
     document.getElementById("drawerBody").innerHTML = `
       <div class="grid tiles">
         ${tile(t("this_event"), cur ? `#${cur.server_rank} <span class="dim" style="font-size:15px">(${cur.rank})</span>` : "—", cur ? (prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : esc(t("col_server_rank"))) : esc(t("not_placed")))}
-        ${tile(t("col_points"), cur ? fmt(cur.points) : "—", cur && prevV ? deltaHtml(cur.points, prevV.points, { compact: true }) : "")}
+        ${tile(t("col_points"), cur ? fmt(cur.points) : "—", cur ? (() => { const b = sameSideBaseline(state.eventId, any.server), bv = b && byEv[b.id];
+            return EVENTS.length > 1 ? `${bv ? deltaHtml(cur.points, bv.points, { compact: true }) + " " : ""}${vsSameSide(state.eventId, any.server, bv ? b : null)}` : ""; })() : "")}
         ${tile(t("col_share"), share || "—", "")}
         ${tile(t("events_played"), `${played.length} / ${hist.length}`, best ? `${esc(t("best_rank"))}: #${best}` : "")}
         ${sideTiles(sideAverages(hist, any.server, v => v.points))}
@@ -883,7 +963,7 @@
     const cur = byEv[state.eventId] || ev().alliances.find(a => aKey(a) === key);
     const any = cur || Object.values(byEv).pop();
     if (!any) return;
-    state.profile = { type: "a", key }; syncUrl();
+    state.profile = { type: "a", key }; syncUrl(true);
     document.getElementById("drawerKind").textContent = t("profile_alliance");
     document.getElementById("drawerTitle").textContent = any.alliance;
     document.getElementById("drawerMeta").innerHTML = serverPill(any.server);
@@ -896,9 +976,11 @@
     document.getElementById("drawerBody").innerHTML = `
       <div class="grid tiles">
         ${tile(t("this_event"), cur ? `#${cur.server_rank} <span class="dim" style="font-size:15px">(${cur.rank})</span>` : "—", cur && prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : "")}
-        ${tile(t("col_total"), cur ? fmt(cur.total_points) : "—", cur && prevV ? deltaHtml(cur.total_points, prevV.total_points, { compact: true }) : "")}
-        ${tile(t("col_members"), cur ? fmt(cur.members_count) : "—", cur && prevV ? deltaHtml(cur.members_count, prevV.members_count) : "")}
-        ${tile(t("col_avg"), cur ? fmt(cur.avg_points) : "—", cur && prevV ? deltaHtml(cur.avg_points, prevV.avg_points, { compact: true }) : "")}
+        ${(() => { const b = sameSideBaseline(state.eventId, any.server), bv = b && byEv[b.id], note = EVENTS.length > 1 ? vsSameSide(state.eventId, any.server, bv ? b : null) : "";
+          const sub = (field, compact) => cur ? `${bv ? deltaHtml(cur[field], bv[field], { compact }) + " " : ""}${note}` : "";
+          return tile(t("col_total"), cur ? fmt(cur.total_points) : "—", sub("total_points", true))
+            + tile(t("col_members"), cur ? fmt(cur.members_count) : "—", sub("members_count", false))
+            + tile(t("col_avg"), cur ? fmt(cur.avg_points) : "—", sub("avg_points", true)); })()}
         ${sideTiles(sideAverages(hist, any.server, v => v.total_points))}
       </div>
       <div class="card"><h3>${esc(t("history_alliance_points"))}</h3>${sideKey()}<div class="chart" id="chHist"></div>
@@ -912,7 +994,7 @@
           <td class="name-cell">${esc(displayName(m.commander))}</td>
           <td class="r num">${fmt(m.points)}<span class="sub" title="${esc(t("col_share"))}">${cur.total_points ? (m.points / cur.total_points < 0.0005 ? "&lt;0.1%" : fmtPct(m.points / cur.total_points)) : ""}</span></td>
           ${prevE ? `<td class="r">${rankMoveHtml(i + 1, prevPosOf(m))}</td>` : ""}</tr>`).join("")}</tbody></table></div>
-        ${prevE ? `<p class="note" style="padding:0 14px 12px">${esc(t("roster_change_note", { date: fmtDate(prevE.date) }))}</p>` : ""}</div>` : ""}`;
+        ${prevE ? `<p class="note" style="padding:0 14px 12px">${esc(t("roster_change_note2", { date: fmtDate(prevE.date), day: dayWord(sideOf(prevE, any.server)) || "—" }))}</p>` : ""}</div>` : ""}`;
     openDrawer();
     historyChart(document.getElementById("chHist"), hist, any.alliance, serverColor(any.server), v => v.total_points,
       h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${h.v.rank})<br>${esc(fmt(h.v.total_points))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(h.v.members_count) }))}`,
@@ -959,8 +1041,8 @@
     const c = e.target.closest("[data-open-c]"); if (c) { openCommander(c.dataset.openC); return; }
     const a = e.target.closest("[data-open-a]"); if (a) { openAlliance(a.dataset.openA); return; }
     const g = e.target.closest("[data-goto]"); if (g) { if (g.dataset.server) state.allyServer = g.dataset.server; setTab(g.dataset.goto); document.querySelector(".tabs-bar").scrollIntoView({ block: "start" }); return; }
-    const as = e.target.closest("[data-ally-srv]"); if (as) { state.allyServer = as.dataset.allySrv; renderAlliances(); return; }
-    const cs = e.target.closest("[data-cmd-srv]"); if (cs) { state.cmdServer = cs.dataset.cmdSrv; state.cmdLimit = 100; renderCommanders(); return; }
+    const as = e.target.closest("[data-ally-srv]"); if (as) { state.allyServer = as.dataset.allySrv; renderAlliances(); syncUrl(true); return; }
+    const cs = e.target.closest("[data-cmd-srv]"); if (cs) { state.cmdServer = cs.dataset.cmdSrv; state.cmdLimit = 100; renderCommanders(); syncUrl(true); return; }
     const tt = e.target.closest("[data-toggle-table]"); if (tt) { state.trendsTable[tt.dataset.toggleTable] = !state.trendsTable[tt.dataset.toggleTable]; renderTrends(); return; }
     const fl = e.target.closest("#footerLangs [data-lang]"); if (fl) setLanguage(fl.dataset.lang);
   });
@@ -968,8 +1050,12 @@
     if (e.key === "Escape" && drawer.classList.contains("open")) closeDrawer();
     if ((e.key === "Enter" || e.key === " ") && e.target.matches("tr[data-open-c], tr[data-open-a]")) { e.preventDefault(); e.target.click(); }
   });
-  document.getElementById("drawerClose").addEventListener("click", closeDrawer);
-  scrim.addEventListener("click", closeDrawer);
+  document.getElementById("drawerClose").addEventListener("click", () => closeDrawer());
+  scrim.addEventListener("click", () => closeDrawer());
+  document.getElementById("drawerCopy").addEventListener("click", () => {
+    const btn = document.getElementById("drawerCopy"), done = () => { btn.dataset.done = "1"; btn.title = t("link_copied"); setTimeout(() => { delete btn.dataset.done; btn.title = t("copy_link"); }, 1600); };
+    if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(done, () => {}); else done();
+  });
   document.getElementById("tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (b) setTab(b.dataset.tab); });
   document.getElementById("tabs").addEventListener("keydown", e => {
     if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
@@ -989,7 +1075,7 @@
   themeBtn.addEventListener("click", () => {
     const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
     try { localStorage.setItem("s117.theme", next); } catch (e) {}
-    applyTheme(next);
+    applyTheme(next); syncUrl(false);
   });
   document.getElementById("langSelect").addEventListener("change", e => setLanguage(e.target.value));
 
@@ -999,25 +1085,22 @@
     try { localStorage.setItem("s117.lang", lang); } catch (e) {}
     const profile = state.profile;
     renderAll();
-    if (profile) (profile.type === "c" ? openCommander : openAlliance)(profile.key);
+    if (profile) { restoring = true; (profile.type === "c" ? openCommander : openAlliance)(profile.key); restoring = false; syncUrl(false); }
   }
   function selectEvent(id) {
-    state.eventId = id; state.allyServer = "all"; state.cmdServer = "all"; state.cmdLimit = 100;
-    if (drawer.classList.contains("open")) closeDrawer();
-    loadEvent(id).then(renderAll);
+    state.eventId = id; state.allyServer = "all"; state.cmdServer = "all"; state.allyQuery = ""; state.cmdQuery = ""; state.cmdLimit = 100;
+    if (drawer.classList.contains("open")) closeDrawer(true);
+    loadEvent(id).then(() => { renderAll(); syncUrl(true); });
   }
   function renderTab() {
     charts.length = 0;
     ({ overview: renderOverview, alliances: renderAlliances, commanders: renderCommanders, trends: renderTrends, data: renderData }[state.tab] || renderOverview)();
   }
-  function renderAll() { applyStaticText(); applyTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark"); renderEventBar(); setTab(state.tab, false); syncUrl(); }
+  function renderAll() { applyStaticText(); applyTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark"); renderEventBar(); setTab(state.tab, false); syncUrl(false); }
 
   // ---------- boot ----------
   state.lang = detectLanguage();
-  const latest = EVENTS[EVENTS.length - 1];
-  state.eventId = (EVENTS.find(e => e.id === params.get("event")) || latest || {}).id;
-  const aliases = { players: "commanders", export: "data" }, qTab = aliases[params.get("tab")] || params.get("tab");
-  state.tab = ["overview", "alliances", "commanders", "trends", "data"].includes(qTab) ? qTab : "overview";
+  readUrlState(params);
   if (!state.eventId) { document.getElementById("view-overview").textContent = "No events published yet."; return; }
   loadEvent(state.eventId).then(() => {
     renderAll();
@@ -1025,8 +1108,7 @@
   }).then(() => {
     index = buildIndex();
     renderTab();   // vs-previous deltas and trends need every event
-    const c = params.get("c"), a = params.get("a");
-    if (c) openCommander(c); else if (a) openAlliance(a);
+    restoring = true; openProfileFromUrl(params); restoring = false; syncUrl(false);
   });
 })();
 </script>

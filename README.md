@@ -87,7 +87,7 @@ The dataset captures **1,398 unique commanders**, **140 alliances**, and **773,0
 ## Repository Structure
 
 ```
-s117-zroute-redemption/
+ZR-S117-Capitol/
 ├── index.html                           # Single-page interactive GitHub Pages dashboard
 ├── .nojekyll                            # Enables direct static asset serving on GitHub Pages
 ├── README.md                            # Documentation and statistical summary
@@ -127,7 +127,7 @@ s117-zroute-redemption/
 ## Interactive Dashboard
 
 View the interactive web app on GitHub Pages:
-[https://jeffxlabs.github.io/s117-zroute-redemption/](https://jeffxlabs.github.io/s117-zroute-redemption/)
+[https://jeffxlabs.github.io/ZR-S117-Capitol/](https://jeffxlabs.github.io/ZR-S117-Capitol/)
 
 Or run the terminal summary:
 
