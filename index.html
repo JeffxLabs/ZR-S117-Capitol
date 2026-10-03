@@ -215,6 +215,7 @@
     .name-cell { font-weight: 600; overflow-wrap: anywhere; }
     .sub { display: block; font-size: 12.5px; color: var(--text-3); font-weight: 400; }
     .rank-cell { white-space: nowrap; }
+    .ov-tip { cursor: help; text-decoration: underline dotted; text-decoration-color: var(--line-3); text-underline-offset: 3px; }
     .rank-cell .overall { color: var(--text-3); font-size: 12.5px; margin-left: 4px; }
     .more-row { display: flex; justify-content: center; padding: 14px; border-top: 1px solid var(--line); }
     .show-sm { display: none; }
@@ -469,6 +470,8 @@
   const allyOfPlayer = (p, eventId) => store[eventId].alliances.find(a => a.alliance === p.alliance && a.server === p.server) || null;
 
   // ---------- small render helpers ----------
+  // Bracketed number = overall rank across all servers (hover explains it)
+  const overall = (r, cls = "overall", style = "") => `<span class="${cls} ov-tip"${style ? ` style="${style}"` : ""} title="${esc(t("overall_tip"))}">(${r})</span>`;
   const rankClass = r => r === 1 ? "m1" : r === 2 ? "m2" : r === 3 ? "m3" : "";
   function deltaHtml(cur, prev, { compact = false } = {}) {
     if (prev == null || cur == null) return "";
@@ -737,7 +740,7 @@
     const rows = list.map(a => {
       const p = prevA(a), rk = filtered ? a.server_rank : a.rank;
       return `<tr class="clickable" data-open-a="${esc(aKey(a))}" tabindex="0">
-        <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? `<span class="overall">(${a.rank})</span>` : ""}</td>
+        <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? overall(a.rank) : ""}</td>
         <td class="name-cell">${esc(a.alliance)}<span class="sub"><span class="show-sm">${serverPill(a.server, null, true)}<span class="num">${fmt(a.members_count)}</span> · </span>${esc(displayName(a.top_commander))}</span></td>
         <td class="hide-sm">${serverPill(a.server)}</td>
         <td class="r num hide-sm">${fmt(a.members_count)}</td>
@@ -771,7 +774,7 @@
       const pp = (pd && index) ? (index.c[cKey(p)] || {})[prev.id] : null;
       const rk = filtered ? p.server_rank : p.rank;
       return `<tr class="clickable" data-open-c="${esc(cKey(p))}" tabindex="0">
-        <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? `<span class="overall">(${p.rank})</span>` : ""}</td>
+        <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? overall(p.rank) : ""}</td>
         <td class="name-cell">${esc(displayName(p.commander))}<span class="sub"><span class="show-sm">${serverPill(p.server, null, true)}</span>${esc(p.alliance || "")}</span></td>
         <td class="hide-sm">${serverPill(p.server)}</td>
         <td class="r num"><b>${fmt(p.points)}</b>${pd ? `<span class="sub"><span class="hide-sm">${sameSidePointsDelta("c", cKey(p), p.server, p.points, "points")}</span><span class="show-sm">${rankMoveHtml(p.rank, pp ? pp.rank : null)}</span></span>` : ""}</td>
@@ -941,7 +944,7 @@
     const prevE = prevEventOf(state.eventId), prevV = prevE ? byEv[prevE.id] : null;
     document.getElementById("drawerBody").innerHTML = `
       <div class="grid tiles">
-        ${tile(t("this_event"), cur ? `#${cur.server_rank} <span class="dim" style="font-size:15px">(${cur.rank})</span>` : "—", cur ? (prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : esc(t("col_server_rank"))) : esc(t("not_placed")))}
+        ${tile(t("this_event"), cur ? `#${cur.server_rank} ${overall(cur.rank, "dim", "font-size:15px")}` : "—", cur ? (prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : esc(t("col_server_rank"))) : esc(t("not_placed")))}
         ${tile(t("col_points"), cur ? fmt(cur.points) : "—", cur ? (() => { const b = sameSideBaseline(state.eventId, any.server), bv = b && byEv[b.id];
             return EVENTS.length > 1 ? `${bv ? deltaHtml(cur.points, bv.points, { compact: true }) + " " : ""}${vsSameSide(state.eventId, any.server, bv ? b : null)}` : ""; })() : "")}
         ${tile(t("col_share"), share || "—", "")}
@@ -952,11 +955,11 @@
       <div class="card" style="padding:0"><div class="table-wrap" style="border:0"><table>
         <thead><tr><th>${esc(t("col_event"))}</th><th>${esc(t("col_side"))}</th><th class="r">${esc(t("col_rank"))}</th><th class="r">${esc(t("col_points"))}</th><th class="hide-sm">${esc(t("col_alliance"))}</th></tr></thead>
         <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td><td>${sideHtml(sideOf(h.e, any.server))}</td>
-          ${h.v ? `<td class="r num">#${h.v.server_rank} <span class="dim">(${h.v.rank})</span></td><td class="r num">${fmt(h.v.points)}</td><td class="hide-sm">${esc(h.v.alliance || "")}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody>
+          ${h.v ? `<td class="r num">#${h.v.server_rank} ${overall(h.v.rank, "dim")}</td><td class="r num">${fmt(h.v.points)}</td><td class="hide-sm">${esc(h.v.alliance || "")}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody>
       </table></div></div>`;
     openDrawer();
     historyChart(document.getElementById("chHist"), hist, displayName(any.commander), serverColor(any.server), v => v.points,
-      h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${h.v.rank})<br>${esc(fmt(h.v.points))} ${esc(t("pts"))}`, any.server);
+      h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${esc(t("overall_short", { n: h.v.rank }))})<br>${esc(fmt(h.v.points))} ${esc(t("pts"))}`, any.server);
   }
   function openAlliance(key) {
     const byEv = (index && index.a[key]) || {};
@@ -975,7 +978,7 @@
     const prevPosOf = m => prevPos[nameKey(m.commander)] != null ? prevPos[nameKey(m.commander)] : null;
     document.getElementById("drawerBody").innerHTML = `
       <div class="grid tiles">
-        ${tile(t("this_event"), cur ? `#${cur.server_rank} <span class="dim" style="font-size:15px">(${cur.rank})</span>` : "—", cur && prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : "")}
+        ${tile(t("this_event"), cur ? `#${cur.server_rank} ${overall(cur.rank, "dim", "font-size:15px")}` : "—", cur && prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : "")}
         ${(() => { const b = sameSideBaseline(state.eventId, any.server), bv = b && byEv[b.id], note = EVENTS.length > 1 ? vsSameSide(state.eventId, any.server, bv ? b : null) : "";
           const sub = (field, compact) => cur ? `${bv ? deltaHtml(cur[field], bv[field], { compact }) + " " : ""}${note}` : "";
           return tile(t("col_total"), cur ? fmt(cur.total_points) : "—", sub("total_points", true))
@@ -986,18 +989,18 @@
       <div class="card"><h3>${esc(t("history_alliance_points"))}</h3>${sideKey()}<div class="chart" id="chHist"></div>
         <div class="table-wrap" style="border:0;margin-top:8px"><table><thead><tr><th>${esc(t("col_event"))}</th><th>${esc(t("col_side"))}</th><th class="r">${esc(t("col_rank"))}</th><th class="r">${esc(t("col_total"))}</th><th class="r hide-sm">${esc(t("col_members"))}</th></tr></thead>
         <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td><td>${sideHtml(sideOf(h.e, any.server))}</td>
-          ${h.v ? `<td class="r num">#${h.v.server_rank} <span class="dim">(${h.v.rank})</span></td><td class="r num">${fmt(h.v.total_points)}</td><td class="r num hide-sm">${fmt(h.v.members_count)}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody></table></div></div>
+          ${h.v ? `<td class="r num">#${h.v.server_rank} ${overall(h.v.rank, "dim")}</td><td class="r num">${fmt(h.v.total_points)}</td><td class="r num hide-sm">${fmt(h.v.members_count)}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody></table></div></div>
       ${cur ? `<div class="card" style="padding:0"><h3 style="padding:14px 14px 0">${esc(t("roster_title"))}</h3><div class="table-wrap" style="border:0"><table>
         <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_commander"))}</th><th class="r">${esc(t("col_points"))}</th>${prevE ? `<th class="r">${esc(t("col_change"))}</th>` : ""}</tr></thead>
         <tbody>${cur.members.map((m, i) => `<tr class="clickable" data-open-c="${esc(cKey({ server: any.server, commander: m.commander }))}" tabindex="0">
-          <td class="rank-cell"><span class="rk ${rankClass(i + 1)}">#${i + 1}</span><span class="overall">(${m.rank})</span></td>
+          <td class="rank-cell"><span class="rk ${rankClass(i + 1)}">#${i + 1}</span>${overall(m.rank)}</td>
           <td class="name-cell">${esc(displayName(m.commander))}</td>
           <td class="r num">${fmt(m.points)}<span class="sub" title="${esc(t("col_share"))}">${cur.total_points ? (m.points / cur.total_points < 0.0005 ? "&lt;0.1%" : fmtPct(m.points / cur.total_points)) : ""}</span></td>
           ${prevE ? `<td class="r">${rankMoveHtml(i + 1, prevPosOf(m))}</td>` : ""}</tr>`).join("")}</tbody></table></div>
         ${prevE ? `<p class="note" style="padding:0 14px 12px">${esc(t("roster_change_note2", { date: fmtDate(prevE.date), day: dayWord(sideOf(prevE, any.server)) || "—" }))}</p>` : ""}</div>` : ""}`;
     openDrawer();
     historyChart(document.getElementById("chHist"), hist, any.alliance, serverColor(any.server), v => v.total_points,
-      h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${h.v.rank})<br>${esc(fmt(h.v.total_points))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(h.v.members_count) }))}`,
+      h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${esc(t("overall_short", { n: h.v.rank }))})<br>${esc(fmt(h.v.total_points))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(h.v.members_count) }))}`,
       any.server, v => t("players_n", { n: fmt(v.members_count) }));
   }
 

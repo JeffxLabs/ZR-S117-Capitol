@@ -116,7 +116,9 @@ window.I18N = {
     "side_events": "Events",
     "roster_change_note2": "Change in position within the alliance since {date} ({day}).",
     "copy_link": "Copy link",
-    "link_copied": "Link copied"
+    "link_copied": "Link copied",
+    "overall_tip": "Overall rank, all servers",
+    "overall_short": "#{n} overall"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -234,7 +236,9 @@ window.I18N = {
     "side_events": "Événements",
     "roster_change_note2": "Évolution de la place dans l'alliance depuis le {date} ({day}).",
     "copy_link": "Copier le lien",
-    "link_copied": "Lien copié"
+    "link_copied": "Lien copié",
+    "overall_tip": "Rang général, tous serveurs",
+    "overall_short": "#{n} au général"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -352,7 +356,9 @@ window.I18N = {
     "side_events": "События",
     "roster_change_note2": "Изменение места в альянсе с {date} ({day}).",
     "copy_link": "Копировать ссылку",
-    "link_copied": "Ссылка скопирована"
+    "link_copied": "Ссылка скопирована",
+    "overall_tip": "Общее место, все серверы",
+    "overall_short": "#{n} в общем"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -470,7 +476,9 @@ window.I18N = {
     "side_events": "Etkinlik",
     "roster_change_note2": "{date} ({day}) tarihinden bu yana ittifak içi sıra değişimi.",
     "copy_link": "Bağlantıyı kopyala",
-    "link_copied": "Bağlantı kopyalandı"
+    "link_copied": "Bağlantı kopyalandı",
+    "overall_tip": "Genel sıra, tüm sunucular",
+    "overall_short": "genel #{n}"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -588,7 +596,9 @@ window.I18N = {
     "side_events": "Wydarzenia",
     "roster_change_note2": "Zmiana miejsca w sojuszu od {date} ({day}).",
     "copy_link": "Kopiuj link",
-    "link_copied": "Skopiowano link"
+    "link_copied": "Skopiowano link",
+    "overall_tip": "Miejsce ogólne, wszystkie serwery",
+    "overall_short": "#{n} ogólnie"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -706,7 +716,9 @@ window.I18N = {
     "side_events": "Eventos",
     "roster_change_note2": "Cambio de puesto dentro de la alianza desde el {date} ({day}).",
     "copy_link": "Copiar enlace",
-    "link_copied": "Enlace copiado"
+    "link_copied": "Enlace copiado",
+    "overall_tip": "Puesto general, todos los servidores",
+    "overall_short": "#{n} general"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -824,7 +836,9 @@ window.I18N = {
     "side_events": "Eventos",
     "roster_change_note2": "Variação da posição na aliança desde {date} ({day}).",
     "copy_link": "Copiar ligação",
-    "link_copied": "Ligação copiada"
+    "link_copied": "Ligação copiada",
+    "overall_tip": "Posição geral, todos os servidores",
+    "overall_short": "#{n} geral"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -942,7 +956,9 @@ window.I18N = {
     "side_events": "Events",
     "roster_change_note2": "Positionsänderung innerhalb der Allianz seit {date} ({day}).",
     "copy_link": "Link kopieren",
-    "link_copied": "Link kopiert"
+    "link_copied": "Link kopiert",
+    "overall_tip": "Gesamtrang, alle Server",
+    "overall_short": "#{n} gesamt"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -1060,7 +1076,9 @@ window.I18N = {
     "side_events": "이벤트",
     "roster_change_note2": "{date}({day}) 이후 연맹 내 순위 변화.",
     "copy_link": "링크 복사",
-    "link_copied": "링크 복사됨"
+    "link_copied": "링크 복사됨",
+    "overall_tip": "전체 순위 (모든 서버)",
+    "overall_short": "전체 #{n}"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -1178,7 +1196,9 @@ window.I18N = {
     "side_events": "活动",
     "roster_change_note2": "自 {date}（{day}）以来在联盟内的排名变化。",
     "copy_link": "复制链接",
-    "link_copied": "链接已复制"
+    "link_copied": "链接已复制",
+    "overall_tip": "总排名（所有服务器）",
+    "overall_short": "总排名 #{n}"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};
