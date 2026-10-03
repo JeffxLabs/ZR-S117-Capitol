@@ -29,7 +29,7 @@ KEYS = [
     "trends_note", "trends_need_two", "legend_home", "legend_opponent", "show_table", "hide_table", "events_n",
     "data_title", "dl_rankings_csv", "dl_rankings_json", "dl_alliances_csv", "method_title", "method_p1",
     "footer", "name_unreadable", "pts", "this_event", "best_rank", "events_played",
-    "theme_day", "theme_night", "legend_attacking", "legend_defending", "avg_attacking", "avg_defending", "col_side", "compare_note", "players_n", "roster_change_note", "n_events_one", "n_events_other", "day_attacking", "day_defending", "vs_last_day", "no_last_day", "compare_note_pts", "compare_note_none", "compare_note_rank", "col_pts_same_side", "col_rank_prev", "trends_by_side", "side_events", "roster_change_note2", "copy_link", "link_copied", "overall_tip", "overall_short", "vs_prev_day", "compare_note_prev", "compare_note_side", "side_summary_note", "history_alliance_players", "back_to", "skip_to_content", "sr_up", "sr_down", "sr_same", "search_results_n", "active_toggle", "active_hint", "depth_title", "depth_note", "tier_top", "col_tier", "col_gap",
+    "theme_day", "theme_night", "legend_attacking", "legend_defending", "avg_attacking", "avg_defending", "col_side", "compare_note", "players_n", "roster_change_note", "n_events_one", "n_events_other", "day_attacking", "day_defending", "vs_last_day", "no_last_day", "compare_note_pts", "compare_note_none", "compare_note_rank", "col_pts_same_side", "col_rank_prev", "trends_by_side", "side_events", "roster_change_note2", "copy_link", "link_copied", "overall_tip", "overall_short", "vs_prev_day", "compare_note_prev", "compare_note_side", "side_summary_note", "history_alliance_players", "back_to", "skip_to_content", "sr_up", "sr_down", "sr_same", "search_results_n", "active_toggle", "active_hint", "depth_title", "depth_note", "tier_top", "col_tier", "col_gap", "depth_more",
 ]
 
 T = {
@@ -68,6 +68,7 @@ T = {
     "Back to {name}",
     "Skip to content", "increase of {n}", "decrease of {n}", "no change", "{n} results",
     "Active players only", "{n}+ points", "Points by rank tier", "Each server's players are ranked within their own server. Difference = S{home} minus the opponent.", "Top {n}", "Tier", "Difference",
+    "Chart and table",
 ],
 "fr": [
     "Z Route: Redemption — Renseignement S117", "S117 Intel", "Analyse de la Guerre du Capitole", "Événement", "Langue",
@@ -104,6 +105,7 @@ T = {
     "Retour à {name}",
     "Aller au contenu", "hausse de {n}", "baisse de {n}", "inchangé", "{n} résultats",
     "Joueurs actifs uniquement", "{n}+ points", "Points par tranche de rang", "Les joueurs sont classés au sein de leur propre serveur. Écart = S{home} moins l'adversaire.", "Top {n}", "Tranche", "Écart",
+    "Graphique et tableau",
 ],
 "ru": [
     "Z Route: Redemption — Разведка S117", "S117 Intel", "Аналитика Битвы за Капитолий", "Событие", "Язык",
@@ -140,6 +142,7 @@ T = {
     "Назад: {name}",
     "Перейти к содержимому", "рост на {n}", "снижение на {n}", "без изменений", "Результатов: {n}",
     "Только активные игроки", "от {n} очков", "Очки по группам мест", "Игроки ранжируются внутри своего сервера. Разница = S{home} минус противник.", "Топ-{n}", "Группа", "Разница",
+    "График и таблица",
 ],
 "tr": [
     "Z Route: Redemption — S117 İstihbarat", "S117 Intel", "Başkent Savaşı analizi", "Etkinlik", "Dil",
@@ -176,6 +179,7 @@ T = {
     "{name} sayfasına dön",
     "İçeriğe geç", "{n} artış", "{n} azalış", "değişiklik yok", "{n} sonuç",
     "Yalnızca aktif oyuncular", "{n}+ puan", "Sıra dilimine göre puan", "Oyuncular kendi sunucuları içinde sıralanır. Fark = S{home} eksi rakip.", "İlk {n}", "Dilim", "Fark",
+    "Grafik ve tablo",
 ],
 "pl": [
     "Z Route: Redemption — Wywiad S117", "S117 Intel", "Analityka Wojny o Kapitol", "Wydarzenie", "Język",
@@ -212,6 +216,7 @@ T = {
     "Wróć do {name}",
     "Przejdź do treści", "wzrost o {n}", "spadek o {n}", "bez zmian", "Wyniki: {n}",
     "Tylko aktywni gracze", "{n}+ pkt", "Punkty według przedziałów miejsc", "Gracze są klasyfikowani w obrębie własnego serwera. Różnica = S{home} minus przeciwnik.", "Top {n}", "Przedział", "Różnica",
+    "Wykres i tabela",
 ],
 "es": [
     "Z Route: Redemption — Inteligencia S117", "S117 Intel", "Análisis de la Guerra del Capitolio", "Evento", "Idioma",
@@ -248,6 +253,7 @@ T = {
     "Volver a {name}",
     "Saltar al contenido", "aumento de {n}", "descenso de {n}", "sin cambios", "{n} resultados",
     "Solo jugadores activos", "{n}+ puntos", "Puntos por tramo de puesto", "Los jugadores se clasifican dentro de su propio servidor. Diferencia = S{home} menos el rival.", "Top {n}", "Tramo", "Diferencia",
+    "Gráfico y tabla",
 ],
 "pt": [
     "Z Route: Redemption — Inteligência S117", "S117 Intel", "Análise da Guerra do Capitólio", "Evento", "Idioma",
@@ -284,6 +290,7 @@ T = {
     "Voltar a {name}",
     "Saltar para o conteúdo", "aumento de {n}", "descida de {n}", "sem alteração", "{n} resultados",
     "Apenas jogadores ativos", "{n}+ pontos", "Pontos por escalão de posição", "Os jogadores são classificados dentro do próprio servidor. Diferença = S{home} menos o adversário.", "Top {n}", "Escalão", "Diferença",
+    "Gráfico e tabela",
 ],
 "de": [
     "Z Route: Redemption — S117 Aufklärung", "S117 Intel", "Analyse des Kapitolkriegs", "Event", "Sprache",
@@ -320,6 +327,7 @@ T = {
     "Zurück zu {name}",
     "Zum Inhalt springen", "Anstieg um {n}", "Rückgang um {n}", "unverändert", "{n} Ergebnisse",
     "Nur aktive Spieler", "ab {n} Punkten", "Punkte nach Rangstufe", "Spieler werden innerhalb ihres eigenen Servers gereiht. Differenz = S{home} minus Gegner.", "Top {n}", "Stufe", "Differenz",
+    "Diagramm und Tabelle",
 ],
 "ko": [
     "Z Route: Redemption — S117 인텔", "S117 인텔", "캐피톨 전쟁 분석", "이벤트", "언어",
@@ -356,6 +364,7 @@ T = {
     "{name}(으)로 돌아가기",
     "본문으로 건너뛰기", "{n} 증가", "{n} 감소", "변동 없음", "결과 {n}개",
     "활성 플레이어만", "{n}점 이상", "순위 구간별 포인트", "각 서버 안에서 순위를 매깁니다. 차이 = S{home} − 상대.", "상위 {n}", "구간", "차이",
+    "차트와 표",
 ],
 "zh": [
     "Z Route: Redemption — S117 情报", "S117 情报", "国会大厦之战分析", "活动", "语言",
@@ -392,6 +401,7 @@ T = {
     "返回 {name}",
     "跳到主要内容", "增加 {n}", "减少 {n}", "无变化", "{n} 个结果",
     "仅显示活跃玩家", "{n} 分以上", "按排名区间的积分", "玩家在各自服务器内排名。差值 = S{home} 减去对手。", "前 {n}", "区间", "差值",
+    "图表和表格",
 ],
 }
 

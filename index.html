@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="events/i18n.js?v=f28edf57eb"></script>
+  <script src="events/i18n.js?v=8c3454e7bc"></script>
   <script src="events/aliases.js?v=8518d9bcff"></script>
   <script src="events/manifest.js?v=8ae1bb5ccb"></script>
   <script>
@@ -269,6 +269,20 @@
     .link-btn { background: none; border: 0; color: var(--text-2); cursor: pointer; padding: 6px 0; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
     .trend-table .name-cell { min-width: 8.5em; overflow-wrap: normal; word-break: normal; }
     @media (max-width: 720px) { .trend-card { padding: 14px 10px; } }
+    .depth .legend { margin-bottom: 10px; }
+    .tier-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px 16px; }
+    @media (max-width: 560px) { .tier-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .tier-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; font-size: 13.5px; }
+    .tier-l { color: var(--text-2); font-weight: 600; white-space: nowrap; }
+    .tier-meter { display: flex; gap: 2px; height: 8px; margin: 6px 0 4px; border-radius: 3px; overflow: hidden; background: var(--surface-2); }
+    .tier-meter span { display: block; height: 100%; }
+    .tier-sub { font-size: 12px; color: var(--text-3); }
+    .depth details { margin-top: 12px; }
+    .depth summary { cursor: pointer; color: var(--text-2); font-size: 13.5px; font-weight: 600; width: max-content; list-style: none; display: inline-flex; align-items: center; gap: 6px; padding: 4px 0; }
+    .depth summary::-webkit-details-marker { display: none; }
+    .depth summary::before { content: "▸"; font-size: 12px; transition: transform .15s; }
+    .depth details[open] summary::before { transform: rotate(90deg); }
+    .depth summary:hover { color: var(--text); }
     .inline-bar { display: block; height: 4px; margin-top: 4px; background: var(--surface-2); border-radius: 2px; min-width: 48px; }
     .inline-bar span { display: block; height: 100%; border-radius: 0 2px 2px 0; }
 
@@ -758,7 +772,8 @@
   });
 
   // ---------- overview ----------
-  // Depth: each server's points by rank tier (players ranked within their own server)
+  // Depth: each server's points by rank tier (players ranked within their own server).
+  // Compact strip by default; chart + table in an expander (open state remembered per viewer).
   function depthCard() {
     const d = ev(), r = roles(); if (!r.opp) return "";
     const tiers = [[1, 10], [11, 50], [51, 100], [101, Infinity]];
@@ -766,21 +781,36 @@
     const sum = srv => tiers.map(([a, b]) => d.rankings.filter(p => p.server === srv && p.server_rank >= a && p.server_rank <= b).reduce((x, p) => x + p.points, 0));
     const cnt = srv => tiers.map(([a, b]) => d.rankings.filter(p => p.server === srv && p.server_rank >= a && p.server_rank <= b && (!state.activeOnly || isActive(p))).length);
     const H = sum(r.home), O = sum(r.opp), HN = cnt(r.home), ON = cnt(r.opp);
-    setTimeout(() => {
-      const el = document.getElementById("chDepth"); if (!el) return;
+    let open = false; try { open = localStorage.getItem("s117.depthOpen") === "1"; } catch (e) {}
+    const drawChart = () => {
+      const el = document.getElementById("chDepth"); if (!el || !el.offsetWidth) return;
       registerChart(el, () => columnChart(el, tiers.map(tr => ({ label: label(tr) })),
         [{ label: `S${r.home}`, color: "var(--home)", values: H, hatch: H.map(() => r.homeRole === "defending"),
            tips: tiers.map((tr, i) => `<b>S${esc(r.home)} · ${esc(label(tr))}</b><br>${esc(fmt(H[i]))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(HN[i]) }))}`) },
          { label: `S${r.opp}`, color: "var(--opp)", values: O, hatch: O.map(() => r.oppRole === "defending"),
            tips: tiers.map((tr, i) => `<b>S${esc(r.opp)} · ${esc(label(tr))}</b><br>${esc(fmt(O[i]))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(ON[i]) }))}`) }], { height: 220 }));
+    };
+    setTimeout(() => {
+      const det = document.getElementById("depthDetails"); if (!det) return;
+      det.addEventListener("toggle", () => { try { localStorage.setItem("s117.depthOpen", det.open ? "1" : "0"); } catch (e) {} if (det.open) { drawChart(); labelTables(det); } });
+      if (det.open) drawChart();
     }, 0);
-    return `<div class="card section"><h2>${esc(t("depth_title"))}</h2>
+    const strip = tiers.map((tr, i) => {
+      const tot = H[i] + O[i] || 1;
+      return `<div class="tier">
+        <div class="tier-head"><span class="tier-l">${esc(label(tr))}</span>${deltaHtml(H[i], O[i], { compact: true })}</div>
+        <div class="tier-meter" role="img" aria-label="S${esc(r.home)} ${esc(fmtCompact(H[i]))}, S${esc(r.opp)} ${esc(fmtCompact(O[i]))}"><span style="width:${(H[i] / tot * 100).toFixed(1)}%;background:var(--home)"></span><span style="width:${(O[i] / tot * 100).toFixed(1)}%;background:var(--opp)"></span></div>
+        <div class="tier-sub num" aria-hidden="true">${esc(fmtCompact(H[i]))} · ${esc(fmtCompact(O[i]))}</div></div>`;
+    }).join("");
+    return `<div class="card section depth"><h2>${esc(t("depth_title"))}</h2>
       ${legendHtml([{ color: "var(--home)", label: `S${r.home}` + (r.homeRole ? ` · ${t("role_" + r.homeRole)}` : "") }, { color: "var(--opp)", label: `S${r.opp}` + (r.oppRole ? ` · ${t("role_" + r.oppRole)}` : "") }])}
-      <div class="chart" id="chDepth"></div>
+      <div class="tier-strip">${strip}</div>
+      <details id="depthDetails"${open ? " open" : ""}><summary>${esc(t("depth_more"))}</summary>
+      <div class="chart" id="chDepth" style="margin-top:8px"></div>
       <div class="table-wrap" style="border:0;margin-top:8px"><table><thead><tr><th scope="col">${esc(t("col_tier"))}</th><th scope="col" class="r">S${esc(r.home)}</th><th scope="col" class="r">S${esc(r.opp)}</th><th scope="col" class="r">${esc(t("col_gap"))}</th></tr></thead>
       <tbody>${tiers.map((tr, i) => `<tr><td>${esc(label(tr))}</td><td class="r num">${fmt(H[i])}<span class="sub">${esc(t("players_n", { n: fmt(HN[i]) }))}</span></td><td class="r num">${fmt(O[i])}<span class="sub">${esc(t("players_n", { n: fmt(ON[i]) }))}</span></td><td class="r">${deltaHtml(H[i], O[i], { compact: true })}</td></tr>`).join("")}
       <tr><td><b>${esc(t("total_points"))}</b></td><td class="r num"><b>${fmt(H.reduce((a, b) => a + b, 0))}</b></td><td class="r num"><b>${fmt(O.reduce((a, b) => a + b, 0))}</b></td><td class="r">${deltaHtml(H.reduce((a, b) => a + b, 0), O.reduce((a, b) => a + b, 0), { compact: true })}</td></tr></tbody></table></div>
-      <p class="note">${esc(t("depth_note", { home: r.home }))}</p></div>`;
+      <p class="note">${esc(t("depth_note", { home: r.home }))}</p></details></div>`;
   }
   function renderOverview() {
     const d = ev(), m = d.meta, r = roles();

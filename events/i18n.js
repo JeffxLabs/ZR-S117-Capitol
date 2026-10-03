@@ -136,7 +136,8 @@ window.I18N = {
     "depth_note": "Each server's players are ranked within their own server. Difference = S{home} minus the opponent.",
     "tier_top": "Top {n}",
     "col_tier": "Tier",
-    "col_gap": "Difference"
+    "col_gap": "Difference",
+    "depth_more": "Chart and table"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -274,7 +275,8 @@ window.I18N = {
     "depth_note": "Les joueurs sont classés au sein de leur propre serveur. Écart = S{home} moins l'adversaire.",
     "tier_top": "Top {n}",
     "col_tier": "Tranche",
-    "col_gap": "Écart"
+    "col_gap": "Écart",
+    "depth_more": "Graphique et tableau"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -412,7 +414,8 @@ window.I18N = {
     "depth_note": "Игроки ранжируются внутри своего сервера. Разница = S{home} минус противник.",
     "tier_top": "Топ-{n}",
     "col_tier": "Группа",
-    "col_gap": "Разница"
+    "col_gap": "Разница",
+    "depth_more": "График и таблица"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -550,7 +553,8 @@ window.I18N = {
     "depth_note": "Oyuncular kendi sunucuları içinde sıralanır. Fark = S{home} eksi rakip.",
     "tier_top": "İlk {n}",
     "col_tier": "Dilim",
-    "col_gap": "Fark"
+    "col_gap": "Fark",
+    "depth_more": "Grafik ve tablo"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -688,7 +692,8 @@ window.I18N = {
     "depth_note": "Gracze są klasyfikowani w obrębie własnego serwera. Różnica = S{home} minus przeciwnik.",
     "tier_top": "Top {n}",
     "col_tier": "Przedział",
-    "col_gap": "Różnica"
+    "col_gap": "Różnica",
+    "depth_more": "Wykres i tabela"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -826,7 +831,8 @@ window.I18N = {
     "depth_note": "Los jugadores se clasifican dentro de su propio servidor. Diferencia = S{home} menos el rival.",
     "tier_top": "Top {n}",
     "col_tier": "Tramo",
-    "col_gap": "Diferencia"
+    "col_gap": "Diferencia",
+    "depth_more": "Gráfico y tabla"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -964,7 +970,8 @@ window.I18N = {
     "depth_note": "Os jogadores são classificados dentro do próprio servidor. Diferença = S{home} menos o adversário.",
     "tier_top": "Top {n}",
     "col_tier": "Escalão",
-    "col_gap": "Diferença"
+    "col_gap": "Diferença",
+    "depth_more": "Gráfico e tabela"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -1102,7 +1109,8 @@ window.I18N = {
     "depth_note": "Spieler werden innerhalb ihres eigenen Servers gereiht. Differenz = S{home} minus Gegner.",
     "tier_top": "Top {n}",
     "col_tier": "Stufe",
-    "col_gap": "Differenz"
+    "col_gap": "Differenz",
+    "depth_more": "Diagramm und Tabelle"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -1240,7 +1248,8 @@ window.I18N = {
     "depth_note": "각 서버 안에서 순위를 매깁니다. 차이 = S{home} − 상대.",
     "tier_top": "상위 {n}",
     "col_tier": "구간",
-    "col_gap": "차이"
+    "col_gap": "차이",
+    "depth_more": "차트와 표"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -1378,7 +1387,8 @@ window.I18N = {
     "depth_note": "玩家在各自服务器内排名。差值 = S{home} 减去对手。",
     "tier_top": "前 {n}",
     "col_tier": "区间",
-    "col_gap": "差值"
+    "col_gap": "差值",
+    "depth_more": "图表和表格"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};
