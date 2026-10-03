@@ -221,6 +221,8 @@ def main():
     parser.add_argument("--date", default="2026-09-19", help="Event date (YYYY-MM-DD)")
     parser.add_argument("--home", default="117", help="Home server number (default: 117)")
     parser.add_argument("--opponent", default="119", help="Opponent server number (default: 119)")
+    parser.add_argument("--home-role", required=True, choices=["attacking", "defending"],
+                        help="Whether the home server is attacking or defending the Capitol this event")
     parser.add_argument("--device", default=None, help="ADB device ID (default: auto-detect)")
     parser.add_argument("--no-rewind", action="store_true", help="Skip scrolling back to top")
     parser.add_argument("--from-file", default=None, help="Skip capture and process from existing raw JSON file")
@@ -271,7 +273,8 @@ def main():
         date_str=args.date,
         home_server=args.home,
         opponent_server=args.opponent,
-        players=cleaned_records
+        players=cleaned_records,
+        home_role=args.home_role
     )
 
     print("\n" + "=" * 80)

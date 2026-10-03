@@ -4,18 +4,19 @@
   "date": "2026-09-19",
   "home_server": "117",
   "opponent_server": "119",
+  "home_role": "defending",
   "total_players": 1398,
   "total_points": 773073925,
   "unique_alliances": 140,
   "servers": {
     "117": {
-      "name": "Server 117 (Home)",
+      "name": "Server 117 (Defending)",
       "players": 881,
       "points": 270561864,
       "point_share_pct": 35.0
     },
     "119": {
-      "name": "Server 119 (Visiting)",
+      "name": "Server 119 (Attacking)",
       "players": 498,
       "points": 500233739,
       "point_share_pct": 64.71

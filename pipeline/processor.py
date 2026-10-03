@@ -10,7 +10,8 @@ from collections import defaultdict, Counter
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def publish_event(event_id, title, date_str, home_server, opponent_server, players):
+def publish_event(event_id, title, date_str, home_server, opponent_server, players, home_role="defending"):
+    opp_role = "attacking" if home_role == "defending" else "defending"
     event_dir = os.path.join(BASE_DIR, "events", event_id)
     os.makedirs(event_dir, exist_ok=True)
 
@@ -91,6 +92,7 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
         "date": date_str,
         "home_server": home_server,
         "opponent_server": opponent_server,
+        "home_role": home_role,
         "total_players": len(players),
         "total_points": total_pts,
         "unique_alliances": len(alliances),
@@ -98,8 +100,8 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
     }
 
     for srv_code, sdata in server_totals.items():
-        name_label = f"Server {srv_code} (Home)" if srv_code == home_server else (
-            f"Server {srv_code} (Visiting)" if srv_code == opponent_server else f"Server {srv_code} (Cross-server)"
+        name_label = f"Server {srv_code} ({home_role.title()})" if srv_code == home_server else (
+            f"Server {srv_code} ({opp_role.title()})" if srv_code == opponent_server else f"Server {srv_code} (Cross-server)"
         )
         event_meta["servers"][srv_code] = {
             "name": name_label,
@@ -168,6 +170,7 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
         "date": date_str,
         "home_server": home_server,
         "opponent_server": opponent_server,
+        "home_role": home_role,
         "total_players": len(players),
         "total_points": total_pts,
         "top_alliance": alliances[0]["alliance"] if alliances else "",

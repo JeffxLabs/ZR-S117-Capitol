@@ -50,7 +50,7 @@ flowchart TD
 2. Run the pipeline from the repository root:
 
 ```sh
-python3 pipeline/run_pipeline.py --date "2026-10-03" --opponent "120"
+python3 pipeline/run_pipeline.py --date "2026-10-03" --opponent "113" --home-role attacking
 ```
 
 The pipeline will:
@@ -80,6 +80,7 @@ git push origin main
 | `--date` | `Today` | Date of the Capitol event (`YYYY-MM-DD`). |
 | `--opponent` | `119` | Opponent server number (e.g. `119`, `120`). |
 | `--home` | `117` | Home server number (default: `117`). |
+| `--home-role` | *(required)* | `attacking` or `defending`: S117's side in this Capitol War. The opponent gets the other role. |
 | `--device` | Auto | ADB device identifier (auto-detects BlueStacks). |
 | `--no-rewind` | False | Skip scrolling back to Rank 1 before starting. |
 | `--from-file` | None | Skip capture and reprocess an existing raw JSON file. |

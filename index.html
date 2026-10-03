@@ -797,13 +797,13 @@
       <!-- Server vs Server Battle Balance -->
       <div class="war-meter-card">
         <div class="war-meter-header">
-          <span style="color: #fb7185;">⚔️ Server <span class="srv-opp-num">119</span>: <span id="s119PtsHeader">500.2M (64.7%)</span></span>
+          <span style="color: #22d3ee;"><span class="srv-home-icon">🛡️</span> Server <span class="srv-home-num">117</span>: <span id="s117PtsHeader">270.6M (35.0%)</span></span>
           <span id="pointsDominanceLabel" style="color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase;" data-i18n="points_dominance">Points Dominance</span>
-          <span style="color: #22d3ee;">🛡️ Server <span class="srv-home-num">117</span>: <span id="s117PtsHeader">270.6M (35.0%)</span></span>
+          <span style="color: #fb7185;"><span class="srv-opp-icon">⚔️</span> Server <span class="srv-opp-num">119</span>: <span id="s119PtsHeader">500.2M (64.7%)</span></span>
         </div>
         <div class="bar-container">
-          <div class="bar-seg seg-s119" id="barS119" style="width: 64.7%;">64.7%</div>
           <div class="bar-seg seg-s117" id="barS117" style="width: 35.0%;">35.0%</div>
+          <div class="bar-seg seg-s119" id="barS119" style="width: 64.7%;">64.7%</div>
           <div class="bar-seg seg-s113" id="barS113" style="width: 0.3%;">0.3%</div>
         </div>
       </div>
@@ -844,8 +844,8 @@
             </div>
             <div>
               <div class="kpi-label" data-i18n="card_top_alliance">Top Alliance</div>
-              <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);">[P1MP] JU1CE</div>
-              <div class="kpi-sub">96.46M Points</div>
+              <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);" id="s117TopAlly">[P1MP] JU1CE</div>
+              <div class="kpi-sub" id="s117TopAllyPts">96.46M Points</div>
             </div>
           </div>
         </div>
@@ -873,8 +873,8 @@
             </div>
             <div>
               <div class="kpi-label" data-i18n="card_top_alliance">Top Alliance</div>
-              <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);">[DOOM] Armageddon</div>
-              <div class="kpi-sub">90.72M Points</div>
+              <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);" id="s119TopAlly">[DOOM] Armageddon</div>
+              <div class="kpi-sub" id="s119TopAllyPts">90.72M Points</div>
             </div>
           </div>
         </div>
@@ -888,7 +888,7 @@
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
             <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);" data-i18n="top10_s117">Top 10 Server 117 Alliances</h4>
-            <span class="server-pill pill-117" data-i18n="home_label">Home</span>
+            <span class="server-pill pill-117" data-i18n="home_label" data-role-of="home">Home</span>
           </div>
           <table>
             <thead>
@@ -908,7 +908,7 @@
         <div class="table-container">
           <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
             <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);" data-i18n="top10_s119">Top 10 Server 119 Alliances</h4>
-            <span class="server-pill pill-119" data-i18n="visiting_label">Visiting</span>
+            <span class="server-pill pill-119" data-i18n="visiting_label" data-role-of="opp">Visiting</span>
           </div>
           <table>
             <thead>
@@ -936,7 +936,7 @@
         <div class="filter-group" id="allianceServerFilters">
           <button class="filter-btn active" data-server="all" data-i18n="filter_all_servers">All Servers</button>
         </div>
-        <a href="data/alliance_summary.csv" download class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
+        <a href="data/alliance_summary.csv" download data-event-file="alliances.csv" class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
       </div>
 
       <div class="table-container">
@@ -970,7 +970,7 @@
         <div style="font-size: 0.85rem; color: var(--text-muted);">
           <span data-i18n="showing_text">Showing</span> <span id="filteredPlayerCount" style="color: #fff; font-weight: 700;">1,398</span> <span data-i18n="commanders_word">commanders</span>
         </div>
-        <a href="data/capitol_event_rankings.csv" download class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
+        <a href="data/capitol_event_rankings.csv" download data-event-file="rankings.csv" class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
       </div>
 
       <div class="table-container">
@@ -999,19 +999,19 @@
         <div class="kpi-card">
           <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent);" data-i18n="exp_csv_title">📊 Complete CSV Roster</h4>
           <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_csv_desc">Spreadsheet containing all 1,398 commanders with ranks, names, alliances, and point scores.</p>
-          <a href="data/capitol_event_rankings.csv" download class="btn-download">Download rankings.csv</a>
+          <a href="data/capitol_event_rankings.csv" download data-event-file="rankings.csv" class="btn-download">Download rankings.csv</a>
         </div>
 
         <div class="kpi-card">
           <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--gold);" data-i18n="exp_json_title">📦 Structured JSON Dataset</h4>
           <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_json_desc">Machine-readable JSON dataset for analytical pipelines, solvers, and simulation models.</p>
-          <a href="data/capitol_event_rankings.json" download class="btn-download">Download rankings.json</a>
+          <a href="data/capitol_event_rankings.json" download data-event-file="rankings.json" class="btn-download">Download rankings.json</a>
         </div>
 
         <div class="kpi-card">
           <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--s117-cyan);" data-i18n="exp_allies_title">🛡️ Alliance Standings CSV</h4>
           <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_allies_desc">Alliance level aggregations including total points, member counts, and average points per player.</p>
-          <a href="data/alliance_summary.csv" download class="btn-download">Download alliance_summary.csv</a>
+          <a href="data/alliance_summary.csv" download data-event-file="alliances.csv" class="btn-download">Download alliance_summary.csv</a>
         </div>
 
       </div>
@@ -1129,6 +1129,45 @@
       const opp = String(m.opponent_server || "119");
       const others = Object.keys(m.servers || {}).filter(s => s !== home && s !== opp).sort();
       return { home, opp, others, all: [home, opp, ...others] };
+    }
+
+    // "defending" / "attacking" for a server in the active event (null for cross-server or unknown)
+    function roleOf(server) {
+      const { home, opp } = serverRoles();
+      const homeRole = (eventData.meta || {}).home_role;
+      if (!homeRole) return null;
+      const oppRole = homeRole === "defending" ? "attacking" : "defending";
+      return server === home ? homeRole : server === opp ? oppRole : null;
+    }
+
+    function roleIcon(role, fallback) {
+      return role === "defending" ? "🛡️" : role === "attacking" ? "⚔️" : fallback;
+    }
+
+    // Replace Home/Visiting wording with the event's Defending/Attacking roles
+    function applyRoleLabels() {
+      const { home, opp } = serverRoles();
+      const homeRole = roleOf(home), oppRole = roleOf(opp);
+      document.querySelectorAll(".srv-home-icon").forEach(el => el.textContent = roleIcon(homeRole, "🛡️"));
+      document.querySelectorAll(".srv-opp-icon").forEach(el => el.textContent = roleIcon(oppRole, "⚔️"));
+      if (!homeRole) return;
+      const withRole = (str, role) => (str || "").replace(/\(([^()]*)\)\s*$/, `(${t("role_" + role)})`);
+      document.getElementById("tagHome").textContent = `${roleIcon(homeRole)} S${home} (${t("role_" + homeRole)})`;
+      document.getElementById("tagVisiting").textContent = `${roleIcon(oppRole)} S${opp} (${t("role_" + oppRole)})`;
+      const homeTitle = document.getElementById("s117ServerTitle");
+      const oppTitle = document.getElementById("s119ServerTitle");
+      homeTitle.textContent = withRole(homeTitle.textContent, homeRole);
+      oppTitle.textContent = withRole(oppTitle.textContent, oppRole);
+      document.querySelectorAll("[data-role-of]").forEach(el => {
+        el.textContent = t("role_" + (el.dataset.roleOf === "home" ? homeRole : oppRole));
+      });
+    }
+
+    // Translated copy quotes the first event's 1,398 commanders; show the active event's count
+    function localizeCounts(str) {
+      const n = (eventData.meta || {}).total_players;
+      if (!str || !n) return str;
+      return str.replace(/1[,.\s\u00a0\u202f]?398/g, formatNumber(n));
     }
 
     function pillClass(server) {
@@ -1259,7 +1298,7 @@
       populateEventSelect();
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
-        const val = localizeServers(t(key));
+        const val = localizeCounts(localizeServers(t(key)));
         if (val) el.textContent = val;
       });
       document.querySelectorAll("[data-i18n-ph]").forEach(el => {
@@ -1280,6 +1319,14 @@
         } else if (t("event_title")) {
           eventTitleEl.textContent = t("event_title");
         }
+      }
+
+      applyRoleLabels();
+      if (eventData.meta && eventData.meta.id) {
+        document.querySelectorAll("[data-event-file]").forEach(a => {
+          a.href = `events/${eventData.meta.id}/${a.dataset.eventFile}`;
+          a.setAttribute("download", `${eventData.meta.id}-${a.dataset.eventFile}`);
+        });
       }
 
       // Update page title
@@ -1410,6 +1457,13 @@
       document.getElementById("s119TotalPts").textContent = formatNumber(s119.points);
       document.getElementById("s119Players").textContent = formatNumber(s119.players);
       document.getElementById("s119AvgPts").textContent = formatNumber(avg(s119));
+
+      const topAlly = srv => eventData.alliances.find(a => a.server === srv);
+      [["s117", roles.home], ["s119", roles.opp]].forEach(([slot, srv]) => {
+        const a = topAlly(srv);
+        document.getElementById(slot + "TopAlly").textContent = a ? a.alliance : "—";
+        document.getElementById(slot + "TopAllyPts").textContent = a ? `${(a.total_points / 1e6).toFixed(2)}M Points` : "";
+      });
 
       const s119Share = document.getElementById("s119SharePct");
       if (s119Share) s119Share.textContent = s119.point_share_pct + "%";
@@ -1571,7 +1625,9 @@
       const ally = eventData.alliances.find(a => a.alliance === allyName);
       if (!ally) return;
 
-      const serverType = ally.server === serverRoles().home ? `(${t("home_label")})` : `(${t("visiting_label")})`;
+      const allyRole = roleOf(ally.server);
+      const serverType = allyRole ? `(${t("role_" + allyRole)})`
+        : ally.server === serverRoles().home ? `(${t("home_label")})` : `(${t("visiting_label")})`;
       document.getElementById("modalAllyTitle").textContent = ally.alliance;
       document.getElementById("modalAllyServer").textContent = `Server ${ally.server} ${serverType}`;
       document.getElementById("modalMemberCount").textContent = formatNumber(ally.members_count);
