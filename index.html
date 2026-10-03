@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="events/i18n.js?v=1259fd564a"></script>
+  <script src="events/i18n.js?v=12bec6dd5f"></script>
   <script src="events/manifest.js?v=8ae1bb5ccb"></script>
   <script>
     // Preload every event in the manifest (offline/file:// support); new events need no edits here.
@@ -254,6 +254,9 @@
     .drawer.open { transform: none; visibility: visible; }
     .drawer-head { display: flex; gap: 12px; align-items: flex-start; padding: 16px; padding-top: calc(16px + env(safe-area-inset-top)); border-bottom: 1px solid var(--line); }
     .drawer-head h2 { margin: 0; font: 700 22px/1.2 var(--font-display); overflow-wrap: anywhere; }
+    .drawer-back { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; background: none; border: 0; padding: 4px 0 8px; color: var(--home-ink); font-weight: 600; font-size: 13.5px; cursor: pointer; }
+    .drawer-back:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .drawer-back span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .drawer-kind { font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: .08em; }
     .drawer-body { overflow-y: auto; padding: 16px; display: grid; gap: 14px; align-content: start; padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
     .theme-btn { width: 38px; height: 38px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); cursor: pointer; display: grid; place-items: center; flex: none; color: var(--text-2); }
@@ -339,6 +342,7 @@
   <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
     <div class="drawer-head">
       <div style="min-width:0">
+        <button type="button" class="drawer-back" id="drawerBack" hidden></button>
         <div class="drawer-kind" id="drawerKind"></div>
         <h2 id="drawerTitle"></h2>
         <div class="event-meta" id="drawerMeta" style="margin-top:8px"></div>
@@ -894,16 +898,39 @@
   // ---------- profiles (drawer on desktop, full-screen sheet on phones) ----------
   const drawer = document.getElementById("drawer"), scrim = document.getElementById("scrim");
   let lastFocus = null;
-  function openDrawer() {
+  // Trail of profiles opened from inside the panel (alliance -> player -> ...), for the back link.
+  // Each profile also has its own browser-history entry, so the back link simply goes back in history.
+  const trail = [];
+  function noteTrail(next) {
+    if (restoring) {   // browser back/forward: pop when returning to the previous profile, else reset
+      const top = trail[trail.length - 1];
+      if (top && top.type === next.type && top.key === next.key) { const e = trail.pop(); return e.scroll; }
+      if (drawer.classList.contains("open") && state.profile) {   // forward into a deeper profile
+        trail.push({ ...state.profile, title: document.getElementById("drawerTitle").textContent, scroll: drawer.querySelector(".drawer-body").scrollTop });
+      } else trail.length = 0;
+      return 0;
+    }
+    if (drawer.classList.contains("open") && state.profile && !(state.profile.type === next.type && state.profile.key === next.key))
+      trail.push({ ...state.profile, title: document.getElementById("drawerTitle").textContent, scroll: drawer.querySelector(".drawer-body").scrollTop });
+    return 0;
+  }
+  function renderBackLink() {
+    const b = document.getElementById("drawerBack"), top = trail[trail.length - 1];
+    b.hidden = !top;
+    if (top) { b.innerHTML = `<span aria-hidden="true">←</span><span>${esc(top.title)}</span>`; b.setAttribute("aria-label", t("back_to", { name: top.title })); }
+  }
+  document.getElementById("drawerBack").addEventListener("click", () => history.back());
+  function openDrawer(scroll = 0) {
     if (!drawer.classList.contains("open")) lastFocus = document.activeElement;
     drawer.classList.add("open"); scrim.classList.add("open"); drawer.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
-    drawer.querySelector(".drawer-body").scrollTop = 0;
+    renderBackLink();
+    drawer.querySelector(".drawer-body").scrollTop = scroll;
     setTimeout(() => document.getElementById("drawerClose").focus({ preventScroll: true }), 30);
   }
   function closeDrawer(silent) {
     drawer.classList.remove("open"); scrim.classList.remove("open"); drawer.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = ""; state.profile = null; hideTip(); if (!silent) syncUrl(true);
+    document.body.style.overflow = ""; state.profile = null; trail.length = 0; hideTip(); if (!silent) syncUrl(true);
     if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
   }
   const loadedEvents = () => EVENTS.filter(e => store[e.id]);
@@ -931,6 +958,7 @@
     const cur = byEv[state.eventId] || ev().rankings.find(p => cKey(p) === key);
     const any = cur || Object.values(byEv).pop();
     if (!any) return;
+    const backScroll = noteTrail({ type: "c", key });
     state.profile = { type: "c", key }; syncUrl(true);
     document.getElementById("drawerKind").textContent = t("profile_commander");
     document.getElementById("drawerTitle").textContent = displayName(any.commander);
@@ -957,7 +985,7 @@
         <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td><td>${sideHtml(sideOf(h.e, any.server))}</td>
           ${h.v ? `<td class="r num">#${h.v.server_rank} ${overall(h.v.rank, "dim")}</td><td class="r num">${fmt(h.v.points)}</td><td class="hide-sm">${esc(h.v.alliance || "")}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody>
       </table></div></div>`;
-    openDrawer();
+    openDrawer(backScroll);
     historyChart(document.getElementById("chHist"), hist, displayName(any.commander), serverColor(any.server), v => v.points,
       h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${esc(t("overall_short", { n: h.v.rank }))})<br>${esc(fmt(h.v.points))} ${esc(t("pts"))}`, any.server);
   }
@@ -966,6 +994,7 @@
     const cur = byEv[state.eventId] || ev().alliances.find(a => aKey(a) === key);
     const any = cur || Object.values(byEv).pop();
     if (!any) return;
+    const backScroll = noteTrail({ type: "a", key });
     state.profile = { type: "a", key }; syncUrl(true);
     document.getElementById("drawerKind").textContent = t("profile_alliance");
     document.getElementById("drawerTitle").textContent = any.alliance;
@@ -999,7 +1028,7 @@
           <td class="r num">${fmt(m.points)}<span class="sub" title="${esc(t("col_share"))}">${cur.total_points ? (m.points / cur.total_points < 0.0005 ? "&lt;0.1%" : fmtPct(m.points / cur.total_points)) : ""}</span></td>
           ${prevE ? `<td class="r">${rankMoveHtml(i + 1, prevPosOf(m))}</td>` : ""}</tr>`).join("")}</tbody></table></div>
         ${prevE ? `<p class="note" style="padding:0 14px 12px">${esc(t("roster_change_note2", { date: fmtDate(prevE.date), day: dayWord(sideOf(prevE, any.server)) || "—" }))}</p>` : ""}</div>` : ""}`;
-    openDrawer();
+    openDrawer(backScroll);
     historyChart(document.getElementById("chHist"), hist, any.alliance, serverColor(any.server), v => v.total_points,
       h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${esc(t("overall_short", { n: h.v.rank }))})<br>${esc(fmt(h.v.total_points))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(h.v.members_count) }))}`,
       any.server);
