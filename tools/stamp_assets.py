@@ -38,7 +38,7 @@ def stamp():
     index_path = os.path.join(BASE, "index.html")
     with open(index_path, encoding="utf-8") as f:
         html = f.read()
-    for name in ("i18n.js", "manifest.js"):
+    for name in ("i18n.js", "manifest.js", "aliases.js"):
         html = re.sub(r'(events/%s)\?v=[^"]*' % re.escape(name), r'\1?v=' + _hash(os.path.join(events, name)), html)
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(html)

@@ -129,7 +129,14 @@ window.I18N = {
     "sr_up": "increase of {n}",
     "sr_down": "decrease of {n}",
     "sr_same": "no change",
-    "search_results_n": "{n} results"
+    "search_results_n": "{n} results",
+    "active_toggle": "Active players only",
+    "active_hint": "{n}+ points",
+    "depth_title": "Points by rank tier",
+    "depth_note": "Each server's players are ranked within their own server. Difference = S{home} minus the opponent.",
+    "tier_top": "Top {n}",
+    "col_tier": "Tier",
+    "col_gap": "Difference"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -260,7 +267,14 @@ window.I18N = {
     "sr_up": "hausse de {n}",
     "sr_down": "baisse de {n}",
     "sr_same": "inchangé",
-    "search_results_n": "{n} résultats"
+    "search_results_n": "{n} résultats",
+    "active_toggle": "Joueurs actifs uniquement",
+    "active_hint": "{n}+ points",
+    "depth_title": "Points par tranche de rang",
+    "depth_note": "Les joueurs sont classés au sein de leur propre serveur. Écart = S{home} moins l'adversaire.",
+    "tier_top": "Top {n}",
+    "col_tier": "Tranche",
+    "col_gap": "Écart"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -391,7 +405,14 @@ window.I18N = {
     "sr_up": "рост на {n}",
     "sr_down": "снижение на {n}",
     "sr_same": "без изменений",
-    "search_results_n": "Результатов: {n}"
+    "search_results_n": "Результатов: {n}",
+    "active_toggle": "Только активные игроки",
+    "active_hint": "от {n} очков",
+    "depth_title": "Очки по группам мест",
+    "depth_note": "Игроки ранжируются внутри своего сервера. Разница = S{home} минус противник.",
+    "tier_top": "Топ-{n}",
+    "col_tier": "Группа",
+    "col_gap": "Разница"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -522,7 +543,14 @@ window.I18N = {
     "sr_up": "{n} artış",
     "sr_down": "{n} azalış",
     "sr_same": "değişiklik yok",
-    "search_results_n": "{n} sonuç"
+    "search_results_n": "{n} sonuç",
+    "active_toggle": "Yalnızca aktif oyuncular",
+    "active_hint": "{n}+ puan",
+    "depth_title": "Sıra dilimine göre puan",
+    "depth_note": "Oyuncular kendi sunucuları içinde sıralanır. Fark = S{home} eksi rakip.",
+    "tier_top": "İlk {n}",
+    "col_tier": "Dilim",
+    "col_gap": "Fark"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -653,7 +681,14 @@ window.I18N = {
     "sr_up": "wzrost o {n}",
     "sr_down": "spadek o {n}",
     "sr_same": "bez zmian",
-    "search_results_n": "Wyniki: {n}"
+    "search_results_n": "Wyniki: {n}",
+    "active_toggle": "Tylko aktywni gracze",
+    "active_hint": "{n}+ pkt",
+    "depth_title": "Punkty według przedziałów miejsc",
+    "depth_note": "Gracze są klasyfikowani w obrębie własnego serwera. Różnica = S{home} minus przeciwnik.",
+    "tier_top": "Top {n}",
+    "col_tier": "Przedział",
+    "col_gap": "Różnica"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -784,7 +819,14 @@ window.I18N = {
     "sr_up": "aumento de {n}",
     "sr_down": "descenso de {n}",
     "sr_same": "sin cambios",
-    "search_results_n": "{n} resultados"
+    "search_results_n": "{n} resultados",
+    "active_toggle": "Solo jugadores activos",
+    "active_hint": "{n}+ puntos",
+    "depth_title": "Puntos por tramo de puesto",
+    "depth_note": "Los jugadores se clasifican dentro de su propio servidor. Diferencia = S{home} menos el rival.",
+    "tier_top": "Top {n}",
+    "col_tier": "Tramo",
+    "col_gap": "Diferencia"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -915,7 +957,14 @@ window.I18N = {
     "sr_up": "aumento de {n}",
     "sr_down": "descida de {n}",
     "sr_same": "sem alteração",
-    "search_results_n": "{n} resultados"
+    "search_results_n": "{n} resultados",
+    "active_toggle": "Apenas jogadores ativos",
+    "active_hint": "{n}+ pontos",
+    "depth_title": "Pontos por escalão de posição",
+    "depth_note": "Os jogadores são classificados dentro do próprio servidor. Diferença = S{home} menos o adversário.",
+    "tier_top": "Top {n}",
+    "col_tier": "Escalão",
+    "col_gap": "Diferença"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -1046,7 +1095,14 @@ window.I18N = {
     "sr_up": "Anstieg um {n}",
     "sr_down": "Rückgang um {n}",
     "sr_same": "unverändert",
-    "search_results_n": "{n} Ergebnisse"
+    "search_results_n": "{n} Ergebnisse",
+    "active_toggle": "Nur aktive Spieler",
+    "active_hint": "ab {n} Punkten",
+    "depth_title": "Punkte nach Rangstufe",
+    "depth_note": "Spieler werden innerhalb ihres eigenen Servers gereiht. Differenz = S{home} minus Gegner.",
+    "tier_top": "Top {n}",
+    "col_tier": "Stufe",
+    "col_gap": "Differenz"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -1177,7 +1233,14 @@ window.I18N = {
     "sr_up": "{n} 증가",
     "sr_down": "{n} 감소",
     "sr_same": "변동 없음",
-    "search_results_n": "결과 {n}개"
+    "search_results_n": "결과 {n}개",
+    "active_toggle": "활성 플레이어만",
+    "active_hint": "{n}점 이상",
+    "depth_title": "순위 구간별 포인트",
+    "depth_note": "각 서버 안에서 순위를 매깁니다. 차이 = S{home} − 상대.",
+    "tier_top": "상위 {n}",
+    "col_tier": "구간",
+    "col_gap": "차이"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -1308,7 +1371,14 @@ window.I18N = {
     "sr_up": "增加 {n}",
     "sr_down": "减少 {n}",
     "sr_same": "无变化",
-    "search_results_n": "{n} 个结果"
+    "search_results_n": "{n} 个结果",
+    "active_toggle": "仅显示活跃玩家",
+    "active_hint": "{n} 分以上",
+    "depth_title": "按排名区间的积分",
+    "depth_note": "玩家在各自服务器内排名。差值 = S{home} 减去对手。",
+    "tier_top": "前 {n}",
+    "col_tier": "区间",
+    "col_gap": "差值"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};
