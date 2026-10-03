@@ -495,6 +495,8 @@ def main():
     parser.add_argument("--allow-incomplete", action="store_true", help="Allow pipeline to succeed even if QA validation fails")
     parser.add_argument("--no-apparatchik", action="store_true",
                         help="Do not pause/resume Apparatchik monitoring (only if it is not driving this emulator)")
+    parser.add_argument("--nav-test", action="store_true",
+                        help="Only test navigation: pause Apparatchik, open the Rankings list, return to the city, resume")
     parser.add_argument("--no-navigate", action="store_true",
                         help="Assume the Rankings list is already open and do not return to the city afterwards")
     args = parser.parse_args()
@@ -507,6 +509,23 @@ def main():
     obs_store = None
     repaired_ranks: Set[int] = set()
     frames_dir = staging_dir(event_id)
+
+    if args.nav_test:
+        adb = find_adb()
+        check_and_compile_ocr()
+        device = args.device or auto_detect_device(adb)
+        try:
+            with (contextlib.nullcontext() if args.no_apparatchik else monitoring_paused(10)):
+                nav = Navigator(adb, device, frames_dir)
+                try:
+                    nav.go_to_rankings()
+                    print("Navigation test: Rankings list reached.")
+                finally:
+                    nav.return_to_city()
+        except (ApparatchikError, NavigationError) as e:
+            print(f"Error: {e}")
+            sys.exit(1)
+        return
 
     if args.from_file:
         print(f"Loading existing raw records from: {args.from_file}")

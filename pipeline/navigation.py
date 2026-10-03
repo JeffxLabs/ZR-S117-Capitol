@@ -97,12 +97,15 @@ class Navigator:
         return s.has(r"^RANKINGS$") and s.find(r"^Commander$") and s.find(r"^Points$")
 
     @staticmethod
-    def is_capitol_page(s):
-        return s.find(r"^Rankings$", region=(0.5, 1.0, 0.85, 1.0)) and (s.find(r"President") or s.find(r"State Time"))
+    def conquest_tab(s):
+        return (s.find(r"Capit[ao]l\s*Conquest", region=(0.3, 1.0, 0.0, 0.3))
+                or s.find(r"^Capit[ao]l$", region=(0.3, 1.0, 0.0, 0.3))
+                or s.find(r"Conquest", region=(0.3, 1.0, 0.0, 0.3)))
 
     @staticmethod
-    def conquest_tab(s):
-        return s.find(r"Capit[ao]l\s*Conquest")
+    def conquest_rankings_button(s):
+        # A "Rankings" button below the page header (the header itself reads RANKINGS only on the list page)
+        return s.find(r"^Rankings?$", region=(0.0, 1.0, 0.12, 1.0))
 
     @staticmethod
     def expedition_icon(s):
@@ -123,33 +126,49 @@ class Navigator:
         return bool(s.find(r"^Alliance$") and (s.find(r"^Mail$") or s.find(r"^Bag$")))
 
     # ----- flows -----
-    def go_to_rankings(self, max_steps=15):
-        self.log("Navigating to Capitol Conquest > Rankings ...")
-        for _ in range(max_steps):
-            s = self.read("to_rankings")
-            if self.is_rankings(s):
-                self.log("  on the Rankings list")
-                return True
-            cancel = self.exit_dialog_cancel(s)
-            if cancel:
-                self.tap(s, cancel, "Cancel (exit dialog)")
-                continue
-            if self.is_capitol_page(s):
-                self.tap(s, s.find(r"^Rankings$", region=(0.5, 1.0, 0.85, 1.0)), "Rankings")
-                continue
-            tab = self.conquest_tab(s)
-            if tab:
-                self.tap(s, tab, "Capitol Conquest tab", wait=2.5)
-                # The tab may already be selected; if the page did not change, the
-                # Rankings button check above handles it on the next read.
-                continue
-            icon = self.expedition_icon(s)
-            if icon:
-                self.tap(s, icon, "Expedition Frenzy", wait=3.0)
-                continue
-            self.back()
-        raise NavigationError(f"Could not reach the Rankings list in {max_steps} steps "
-                              f"(last screen: {s.path})")
+    def _read_until(self, label, check, tries=4, wait=1.5):
+        """Re-read the screen until check(screen) returns something (pages can take a moment to load)."""
+        s = None
+        for _ in range(tries):
+            s = self.read(label)
+            found = check(s)
+            if found:
+                return s, found
+            time.sleep(wait)
+        return s, None
+
+    def go_to_rankings(self):
+        """Fixed path only: main city screen -> Expedition Frenzy -> Capitol Conquest tab -> Rankings.
+        (The Rankings button on the cabinet/President screen opens the server-wide rankings,
+        so no shortcut from other pages is taken.) Any unexpected screen raises NavigationError."""
+        self.log("Navigating: main screen > Expedition Frenzy > Capitol Conquest > Rankings ...")
+        self.return_to_city()
+
+        s, icon = self._read_until("main", self.expedition_icon)
+        if not icon:
+            raise NavigationError(f"'Expedition Frenzy' not found on the main screen ({s.path})")
+        self.tap(s, icon, "Expedition Frenzy", wait=3.0)
+
+        s, tab = self._read_until("expedition_frenzy", self.conquest_tab)
+        if not tab:
+            raise NavigationError(f"'Capitol Conquest' tab not found in Expedition Frenzy ({s.path})")
+        self.tap(s, tab, "Capitol Conquest tab", wait=3.0)
+
+        s, btn = self._read_until("capitol_conquest", self.conquest_rankings_button)
+        if not btn:
+            raise NavigationError(f"'Rankings' button not found on the Capitol Conquest tab ({s.path})")
+        self.tap(s, btn, "Rankings", wait=3.0)
+
+        s, ok = self._read_until("rankings", self.is_rankings)
+        if not ok:
+            tab_btn = s.find(r"^Ranking$", region=(0.0, 0.5, 0.0, 0.15))
+            if tab_btn and s.find(r"^RANKINGS$"):
+                self.tap(s, tab_btn, "Ranking tab")
+                s, ok = self._read_until("rankings", self.is_rankings)
+        if not ok:
+            raise NavigationError(f"Rankings page did not show the Rank/Commander/Points list ({s.path})")
+        self.log("  on the Capitol Conquest Rankings list")
+        return True
 
     def return_to_city(self, max_steps=12):
         self.log("Returning to city view ...")
