@@ -38,7 +38,12 @@ class ApparatchikError(RuntimeError):
     pass
 
 
-# ---------- credential storage (macOS Keychain) ----------
+# ---------- credential storage (macOS Keychain, else a private file) ----------
+# The login Keychain is not reachable from non-GUI sessions (tmux/ssh: `security` exits 36),
+# so fall back to a 0600 file outside the repo. Secrets are never put in error messages.
+import os
+CRED_FILE = os.path.expanduser("~/.config/s117-zroute-pipeline/apparatchik.json")
+
 
 def _load_credentials():
     try:
@@ -47,13 +52,26 @@ def _load_credentials():
                              check=True, capture_output=True, text=True).stdout.strip()
         return json.loads(out)
     except (subprocess.CalledProcessError, json.JSONDecodeError):
+        pass
+    try:
+        with open(CRED_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
         return None
 
 
 def _save_credentials(data):
-    subprocess.run(["security", "add-generic-password", "-U", "-s", KEYCHAIN_SERVICE,
-                    "-a", KEYCHAIN_ACCOUNT, "-w", json.dumps(data)],
-                   check=True, capture_output=True)
+    """Returns where the credential was stored."""
+    r = subprocess.run(["security", "add-generic-password", "-U", "-s", KEYCHAIN_SERVICE,
+                        "-a", KEYCHAIN_ACCOUNT, "-w", json.dumps(data)], capture_output=True)
+    if r.returncode == 0:
+        return "the login Keychain"
+    os.makedirs(os.path.dirname(CRED_FILE), mode=0o700, exist_ok=True)
+    fd = os.open(CRED_FILE, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        json.dump(data, f)
+    os.chmod(CRED_FILE, 0o600)
+    return f"{CRED_FILE} (mode 600; Keychain not available in this session, security exit {r.returncode})"
 
 
 # ---------- TLS transport with certificate pinning ----------
@@ -102,9 +120,9 @@ def pair(code):
         raise ApparatchikError(f"Pairing failed: {data.get('error', resp.status)}")
     if data.get("fingerprint") and data["fingerprint"].lower() != observed:
         raise ApparatchikError("Server-reported fingerprint does not match the TLS certificate; not saving")
-    _save_credentials({"credential": data["credential"], "clientId": data.get("clientId"),
-                       "fingerprint": observed})
-    return data.get("clientId")
+    where = _save_credentials({"credential": data["credential"], "clientId": data.get("clientId"),
+                               "fingerprint": observed})
+    return data.get("clientId"), where
 
 
 # ---------- state & control ----------
@@ -187,8 +205,8 @@ def monitoring_paused(minutes, log=print):
 
 def main(argv):
     if len(argv) >= 2 and argv[0] == "pair":
-        client = pair(argv[1])
-        print(f"Paired with Apparatchik (client {client}); credential stored in the login Keychain.")
+        client, where = pair(argv[1])
+        print(f"Paired with Apparatchik (client {client}); credential stored in {where}.")
     elif argv[:1] == ["status"]:
         if not is_installed_and_running():
             print("Apparatchik remote control not reachable.")

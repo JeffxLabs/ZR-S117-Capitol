@@ -118,7 +118,7 @@ git push origin main
 
 One-time setup: pair the pipeline with Apparatchik (issue a code in the Apparatchik Mac app, as for the Android phone):
 ```sh
-python3 pipeline/apparatchik_control.py pair <6-digit code>   # credential stored in the macOS login Keychain
+python3 pipeline/apparatchik_control.py pair <6-digit code>   # credential stored in the macOS login Keychain, or ~/.config/s117-zroute-pipeline/ (mode 600) when the Keychain is unavailable (tmux/ssh)
 python3 pipeline/apparatchik_control.py status
 ```
 
