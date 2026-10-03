@@ -29,6 +29,7 @@ KEYS = [
     "trends_note", "trends_need_two", "legend_home", "legend_opponent", "show_table", "hide_table", "events_n",
     "data_title", "dl_rankings_csv", "dl_rankings_json", "dl_alliances_csv", "method_title", "method_p1",
     "footer", "name_unreadable", "pts", "this_event", "best_rank", "events_played",
+    "theme_day", "theme_night", "legend_attacking", "legend_defending", "avg_attacking", "avg_defending", "col_side", "compare_note", "players_n", "roster_change_note", "n_events_one", "n_events_other",
 ]
 
 T = {
@@ -56,6 +57,9 @@ T = {
     "The leaderboard is captured from the game client and read with on-device text recognition. Every rank is read more than once, notification banners are filtered out, and the result is checked for missing ranks and point order before publishing.",
     "Z Route: Redemption Capitol War intelligence · Server 117 · maintained by", "(name unreadable)", "pts",
     "This event", "Best rank", "Events played",
+    "Switch to day mode", "Switch to night mode", "Solid: attacking", "Hatched: defending", "Avg when attacking", "Avg when defending", "Side", "Changes compare with {date} · S{home} {side} vs S{opp}",
+    "{n} players", "Change in position within the alliance since {date}.",
+    "{n} event", "{n} events",
 ],
 "fr": [
     "Z Route: Redemption — Renseignement S117", "S117 Intel", "Analyse de la Guerre du Capitole", "Événement", "Langue",
@@ -81,6 +85,9 @@ T = {
     "Le classement est capturé depuis le client du jeu et lu par reconnaissance de texte sur l'appareil. Chaque rang est lu plusieurs fois, les bannières de notification sont filtrées, et le résultat est vérifié (rangs manquants, ordre des points) avant publication.",
     "Z Route: Redemption — Renseignement Guerre du Capitole · Serveur 117 · maintenu par", "(nom illisible)", "pts",
     "Cet événement", "Meilleur rang", "Événements joués",
+    "Passer en mode jour", "Passer en mode nuit", "Plein : attaque", "Hachuré : défense", "Moy. en attaque", "Moy. en défense", "Camp", "Variations par rapport au {date} · S{home} {side} contre S{opp}",
+    "{n} joueurs", "Évolution de la place au sein de l'alliance depuis le {date}.",
+    "{n} événement", "{n} événements",
 ],
 "ru": [
     "Z Route: Redemption — Разведка S117", "S117 Intel", "Аналитика Битвы за Капитолий", "Событие", "Язык",
@@ -106,6 +113,9 @@ T = {
     "Таблица лидеров снимается с игрового клиента и распознаётся на устройстве. Каждое место считывается несколько раз, баннеры уведомлений отфильтровываются, а результат проверяется на пропуски и порядок очков перед публикацией.",
     "Z Route: Redemption — разведка Битвы за Капитолий · Сервер 117 · поддерживает", "(имя не распознано)", "оч.",
     "Это событие", "Лучшее место", "Событий сыграно",
+    "Дневной режим", "Ночной режим", "Сплошная: атака", "Штриховка: оборона", "Сред. в атаке", "Сред. в обороне", "Сторона", "Изменения относительно {date} · S{home}: {side}, против S{opp}",
+    "Игроков: {n}", "Изменение места внутри альянса с {date}.",
+    "Событий: {n}", "Событий: {n}",
 ],
 "tr": [
     "Z Route: Redemption — S117 İstihbarat", "S117 Intel", "Başkent Savaşı analizi", "Etkinlik", "Dil",
@@ -131,6 +141,9 @@ T = {
     "Sıralama oyun istemcisinden alınır ve cihaz üzerinde metin tanıma ile okunur. Her sıra birden fazla kez okunur, bildirim afişleri ayıklanır ve sonuç yayından önce eksik sıra ve puan sırası açısından denetlenir.",
     "Z Route: Redemption Başkent Savaşı istihbaratı · Sunucu 117 · bakımı yapan", "(isim okunamadı)", "puan",
     "Bu etkinlik", "En iyi sıra", "Oynanan etkinlik",
+    "Gündüz moduna geç", "Gece moduna geç", "Düz: saldıran", "Taralı: savunan", "Saldırıda ort.", "Savunmada ort.", "Taraf", "Değişimler {date} ile karşılaştırılır · S{home} {side}, rakip S{opp}",
+    "{n} oyuncu", "{date} tarihinden bu yana ittifak içi sıra değişimi.",
+    "{n} etkinlik", "{n} etkinlik",
 ],
 "pl": [
     "Z Route: Redemption — Wywiad S117", "S117 Intel", "Analityka Wojny o Kapitol", "Wydarzenie", "Język",
@@ -156,6 +169,9 @@ T = {
     "Ranking jest przechwytywany z klienta gry i odczytywany lokalnym rozpoznawaniem tekstu. Każde miejsce jest czytane kilka razy, banery powiadomień są odfiltrowywane, a wynik jest sprawdzany pod kątem brakujących miejsc i kolejności punktów przed publikacją.",
     "Z Route: Redemption — wywiad Wojny o Kapitol · Serwer 117 · prowadzi", "(nieczytelna nazwa)", "pkt",
     "To wydarzenie", "Najlepsze miejsce", "Rozegrane wydarzenia",
+    "Tryb dzienny", "Tryb nocny", "Pełne: atak", "Kreskowane: obrona", "Śr. w ataku", "Śr. w obronie", "Strona", "Zmiany względem {date} · S{home}: {side}, przeciw S{opp}",
+    "Graczy: {n}", "Zmiana miejsca w sojuszu od {date}.",
+    "Wydarzeń: {n}", "Wydarzeń: {n}",
 ],
 "es": [
     "Z Route: Redemption — Inteligencia S117", "S117 Intel", "Análisis de la Guerra del Capitolio", "Evento", "Idioma",
@@ -181,6 +197,9 @@ T = {
     "La clasificación se captura desde el cliente del juego y se lee con reconocimiento de texto en el dispositivo. Cada puesto se lee varias veces, se filtran los avisos emergentes y el resultado se revisa (puestos faltantes y orden de puntos) antes de publicarse.",
     "Z Route: Redemption — inteligencia de la Guerra del Capitolio · Servidor 117 · mantenido por", "(nombre ilegible)", "pts",
     "Este evento", "Mejor puesto", "Eventos jugados",
+    "Cambiar a modo día", "Cambiar a modo noche", "Sólido: atacante", "Rayado: defensor", "Media atacando", "Media defendiendo", "Bando", "Cambios respecto al {date} · S{home} {side} contra S{opp}",
+    "{n} jugadores", "Cambio de puesto dentro de la alianza desde el {date}.",
+    "{n} evento", "{n} eventos",
 ],
 "pt": [
     "Z Route: Redemption — Inteligência S117", "S117 Intel", "Análise da Guerra do Capitólio", "Evento", "Idioma",
@@ -206,6 +225,9 @@ T = {
     "A classificação é capturada a partir do cliente do jogo e lida com reconhecimento de texto no dispositivo. Cada posição é lida mais de uma vez, os avisos de notificação são filtrados e o resultado é verificado (posições em falta e ordem dos pontos) antes da publicação.",
     "Z Route: Redemption — inteligência da Guerra do Capitólio · Servidor 117 · mantido por", "(nome ilegível)", "pts",
     "Este evento", "Melhor posição", "Eventos jogados",
+    "Mudar para modo dia", "Mudar para modo noite", "Sólido: atacante", "Tracejado: defensor", "Média a atacar", "Média a defender", "Lado", "Variações face a {date} · S{home} {side} contra S{opp}",
+    "{n} jogadores", "Variação da posição dentro da aliança desde {date}.",
+    "{n} evento", "{n} eventos",
 ],
 "de": [
     "Z Route: Redemption — S117 Aufklärung", "S117 Intel", "Analyse des Kapitolkriegs", "Event", "Sprache",
@@ -231,6 +253,9 @@ T = {
     "Die Rangliste wird aus dem Spielclient erfasst und per Texterkennung auf dem Gerät gelesen. Jeder Rang wird mehrfach gelesen, Benachrichtigungsbanner werden herausgefiltert, und das Ergebnis wird vor der Veröffentlichung auf fehlende Ränge und Punktereihenfolge geprüft.",
     "Z Route: Redemption — Kapitolkrieg-Aufklärung · Server 117 · betreut von", "(Name unlesbar)", "Pkt.",
     "Dieses Event", "Bester Rang", "Gespielte Events",
+    "Tagmodus", "Nachtmodus", "Voll: Angriff", "Schraffiert: Verteidigung", "Ø im Angriff", "Ø in der Verteidigung", "Seite", "Änderungen ggü. {date} · S{home} {side} gegen S{opp}",
+    "{n} Spieler", "Veränderung der Position innerhalb der Allianz seit {date}.",
+    "{n} Event", "{n} Events",
 ],
 "ko": [
     "Z Route: Redemption — S117 인텔", "S117 인텔", "캐피톨 전쟁 분석", "이벤트", "언어",
@@ -256,6 +281,9 @@ T = {
     "순위표는 게임 클라이언트에서 캡처하여 기기 내 문자 인식으로 읽습니다. 모든 순위를 여러 번 읽고, 알림 배너를 걸러내며, 게시 전에 누락된 순위와 포인트 순서를 확인합니다.",
     "Z Route: Redemption 캐피톨 전쟁 인텔 · 서버 117 · 관리자", "(이름 인식 불가)", "점",
     "이번 이벤트", "최고 순위", "참가 이벤트",
+    "주간 모드로 전환", "야간 모드로 전환", "채움: 공격", "빗금: 수비", "공격 시 평균", "수비 시 평균", "진영", "{date} 대비 변화 · S{home} {side}, 상대 S{opp}",
+    "{n}명 참가", "{date} 이후 연맹 내 순위 변화.",
+    "이벤트 {n}개", "이벤트 {n}개",
 ],
 "zh": [
     "Z Route: Redemption — S117 情报", "S117 情报", "国会大厦之战分析", "活动", "语言",
@@ -281,6 +309,9 @@ T = {
     "排行榜从游戏客户端截取，并通过设备端文字识别读取。每个名次都会读取多次，过滤通知横幅，并在发布前检查是否缺少名次以及积分顺序。",
     "Z Route: Redemption 国会大厦之战情报 · 服务器 117 · 维护者", "（名称无法识别）", "分",
     "本次活动", "最佳排名", "参加活动数",
+    "切换到日间模式", "切换到夜间模式", "实心：进攻", "斜纹：防守", "进攻时平均", "防守时平均", "阵营", "与 {date} 相比 · S{home} {side}，对手 S{opp}",
+    "{n} 名玩家", "自 {date} 以来在联盟内的排名变化。",
+    "{n} 个活动", "{n} 个活动",
 ],
 }
 

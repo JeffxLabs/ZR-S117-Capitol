@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#000000">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="dark light">
+  <script>try{var th=localStorage.getItem("s117.theme");if(th==="light"||th==="dark")document.documentElement.dataset.theme=th;}catch(e){}</script>
   <title>S117 Capitol War Intel</title>
   <meta name="description" content="Capitol War rankings, alliances and cross-event trends for Server 117 in Z Route: Redemption.">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -44,8 +45,41 @@
       --down: #f0605a;
       --radius: 10px;
       --header-h: 56px;
+      --line-3: #3d3d3d;
+      --header-bg: rgba(0,0,0,.92);
+      --tooltip-bg: #161616;
+      --scrim: rgba(0,0,0,.72);
+      --silver: #cfd6de;
+      --bronze: #d9935b;
       --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       --font-display: 'Chakra Petch', var(--font);
+    }
+    /* Day mode: its own steps, validated on white (contrast >= 3:1, CVD-separated) */
+    :root[data-theme="light"] {
+      color-scheme: light;
+      --bg: #f4f4f2;
+      --surface: #ffffff;
+      --surface-2: #efefec;
+      --line: #e2e2de;
+      --line-2: #cfcfca;
+      --line-3: #a9a9a4;
+      --text: #111111;
+      --text-2: #4f4e4a;
+      --text-3: #75746f;
+      --home: #0f87a3;
+      --opp: #d93b40;
+      --cross: #7b5fd6;
+      --home-ink: #0b6f87;
+      --opp-ink: #b8262c;
+      --cross-ink: #5d43b8;
+      --gold: #9a6400;
+      --up: #1a7f37;
+      --down: #c4202a;
+      --header-bg: rgba(244,244,242,.94);
+      --tooltip-bg: #ffffff;
+      --scrim: rgba(20,20,20,.45);
+      --silver: #6b7682;
+      --bronze: #a8602a;
     }
     * { box-sizing: border-box; }
     html { -webkit-text-size-adjust: 100%; }
@@ -63,11 +97,10 @@
     :focus-visible { outline: 2px solid var(--home-ink); outline-offset: 2px; border-radius: 4px; }
 
     /* Header */
-    .site-header { position: sticky; top: 0; z-index: 40; background: rgba(0,0,0,.92); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+    .site-header { position: sticky; top: 0; z-index: 40; background: var(--header-bg); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
     .header-row { display: flex; align-items: center; gap: 10px 12px; min-height: var(--header-h); flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
     .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); min-width: 0; flex: 1 1 auto; }
-    .brand-mark { width: 32px; height: 32px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--line-2); display: grid; place-items: center; font: 700 14px var(--font-display); color: var(--home-ink); flex: none; }
-    .brand-text { min-width: 0; display: block; }
+        .brand-text { min-width: 0; display: block; }
     .brand-name { display: block; font: 700 16px/1.15 var(--font-display); letter-spacing: .02em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .brand-sub { display: block; font-size: 12px; color: var(--text-3); }
     .controls { display: flex; gap: 8px; align-items: center; flex: 0 1 auto; min-width: 0; }
@@ -77,7 +110,7 @@
     .select { padding-right: 30px; appearance: none; -webkit-appearance: none; cursor: pointer; max-width: 100%; text-overflow: ellipsis;
       background-image: linear-gradient(45deg, transparent 50%, var(--text-2) 50%), linear-gradient(135deg, var(--text-2) 50%, transparent 50%);
       background-position: calc(100% - 16px) 16px, calc(100% - 11px) 16px; background-size: 5px 5px; background-repeat: no-repeat; }
-    .select:hover, .input:hover { border-color: #3d3d3d; }
+    .select:hover, .input:hover { border-color: var(--line-3); }
     .search { position: relative; }
     .search .input { width: clamp(200px, 22vw, 300px); padding-left: 34px; }
     .search svg { position: absolute; left: 11px; top: 11px; color: var(--text-3); pointer-events: none; }
@@ -155,7 +188,7 @@
     .rank-list .bar { grid-column: 2 / 4; height: 4px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
     .rank-list .bar span { display: block; height: 100%; border-radius: 0 2px 2px 0; }
     .rk { font-weight: 650; color: var(--text-2); }
-    .rk.m1 { color: var(--gold); } .rk.m2 { color: #cfd6de; } .rk.m3 { color: #d9935b; }
+    .rk.m1 { color: var(--gold); } .rk.m2 { color: var(--silver); } .rk.m3 { color: var(--bronze); }
     .ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 
     /* Toolbars & segmented controls */
@@ -166,7 +199,7 @@
     .segmented button + button { border-left: 1px solid var(--line-2); }
     .segmented button[aria-pressed="true"] { background: var(--surface-2); color: var(--text); }
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 38px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600; font-size: 13.5px; cursor: pointer; }
-    .btn:hover { border-color: #3d3d3d; background: var(--surface-2); }
+    .btn:hover { border-color: var(--line-3); background: var(--surface-2); }
     .count { margin-left: auto; color: var(--text-2); font-size: 13.5px; }
     @media (max-width: 720px) { .toolbar .input { max-width: none; flex-basis: 100%; } .count { margin-left: 0; } }
 
@@ -202,7 +235,7 @@
     .chart .hit:focus { outline: none; }
     .chart .bar-group:hover .bar-mark, .chart .hit:focus + .bar-mark { opacity: .8; }
     .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--text-2); margin: 0 0 8px; }
-    .tooltip { position: fixed; z-index: 80; pointer-events: none; background: #161616; border: 1px solid var(--line-2); border-radius: 8px; padding: 8px 10px; font-size: 13px; line-height: 1.4; max-width: 260px; display: none; }
+    .tooltip { position: fixed; z-index: 80; pointer-events: none; background: var(--tooltip-bg); border: 1px solid var(--line-2); border-radius: 8px; padding: 8px 10px; box-shadow: 0 4px 16px rgba(0,0,0,.12); font-size: 13px; line-height: 1.4; max-width: 260px; display: none; }
     .chart-table { margin-top: 10px; }
     .link-btn { background: none; border: 0; color: var(--text-2); cursor: pointer; padding: 6px 0; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
     .trend-table .name-cell { min-width: 8.5em; overflow-wrap: normal; word-break: normal; }
@@ -211,7 +244,7 @@
     .inline-bar span { display: block; height: 100%; border-radius: 0 2px 2px 0; }
 
     /* Profile drawer / sheet */
-    .scrim { position: fixed; inset: 0; background: rgba(0,0,0,.72); z-index: 70; display: none; }
+    .scrim { position: fixed; inset: 0; background: var(--scrim); z-index: 70; display: none; }
     .scrim.open { display: block; }
     .drawer { position: fixed; z-index: 75; top: 0; right: 0; bottom: 0; width: min(580px, 100vw); background: var(--bg); border-left: 1px solid var(--line-2);
       transform: translateX(100%); transition: transform .2s ease; display: flex; flex-direction: column; visibility: hidden; }
@@ -220,9 +253,16 @@
     .drawer-head h2 { margin: 0; font: 700 22px/1.2 var(--font-display); overflow-wrap: anywhere; }
     .drawer-kind { font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: .08em; }
     .drawer-body { overflow-y: auto; padding: 16px; display: grid; gap: 14px; align-content: start; padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+    .theme-btn { width: 38px; height: 38px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); cursor: pointer; display: grid; place-items: center; flex: none; color: var(--text-2); }
+    .theme-btn:hover { border-color: var(--line-3); color: var(--text); }
+    .theme-btn .sun { display: none; } :root[data-theme="light"] .theme-btn .sun { display: block; } :root[data-theme="light"] .theme-btn .moon { display: none; }
+    .side { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; font-size: 12.5px; color: var(--text-2); }
+    .swatch-hatch { width: 12px; height: 10px; border-radius: 2px; display: inline-block; background: repeating-linear-gradient(45deg, var(--text-2) 0 2px, transparent 2px 4px); border: 1px solid var(--text-3); }
+    .swatch-solid { width: 12px; height: 10px; border-radius: 2px; display: inline-block; background: var(--text-2); }
     .icon-btn { margin-left: auto; width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); cursor: pointer; display: grid; place-items: center; flex: none; }
-    .drawer .tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
-    .drawer .tile-value { font-size: 22px; white-space: nowrap; }
+    .drawer .tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
+    .drawer .tile-value { font-size: clamp(18px, 5vw, 22px); white-space: nowrap; }
+    .drawer .card { padding: 14px; }
     @media (max-width: 600px) { .drawer { border-left: 0; } }
 
     footer { border-top: 1px solid var(--line); padding-top: 20px; padding-bottom: calc(28px + env(safe-area-inset-bottom)); color: var(--text-3); font-size: 13px; }
@@ -237,7 +277,6 @@
   <header class="site-header" id="siteHeader">
     <div class="wrap header-row">
       <a class="brand" href="./">
-        <span class="brand-mark" aria-hidden="true">ZR</span>
         <span class="brand-text">
           <span class="brand-name" data-i18n="brand_title">Z Route: Redemption — S117 Intel</span>
           <span class="brand-sub" data-i18n="brand_subtitle">Capitol War analytics</span>
@@ -253,6 +292,10 @@
         <select id="eventSelect" class="select"></select>
         <label class="sr-only" for="langSelect" data-i18n="language_label">Language</label>
         <select id="langSelect" class="select"></select>
+        <button type="button" class="theme-btn" id="themeToggle" aria-pressed="false">
+          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
       </div>
     </div>
   </header>
@@ -362,7 +405,16 @@
     const r = roles(meta);
     return String(server) === r.home ? "home" : String(server) === r.opp ? "opp" : "cross";
   }
-  const serverColor = (server, meta) => ({ home: "#1aa3c2", opp: "#e5484d", cross: "#9b7bea" })[serverClass(server, meta)];
+  const serverColor = (server, meta) => `var(--${serverClass(server, meta)})`;
+  // Which side a server fought on in an event: "attacking" | "defending" | null (cross-server / unknown)
+  function sideOf(e, server) {
+    const m = (store[e.id] && store[e.id].meta) || e;
+    const r = roles(m);
+    return String(server) === r.home ? r.homeRole : String(server) === r.opp ? r.oppRole : null;
+  }
+  const sideHtml = side => side ? `<span class="side"><span aria-hidden="true">${roleIcon(side)}</span>${esc(t("role_" + side))}</span>` : "";
+  const sideShort = side => side ? `${roleIcon(side)} ${t("role_" + side)}` : "";
+  const sideKey = () => `<div class="legend"><span class="key"><span class="swatch-solid"></span>${esc(t("legend_attacking"))}</span><span class="key"><span class="swatch-hatch"></span>${esc(t("legend_defending"))}</span></div>`;
   const serverPill = (server, meta, xs) => `<span class="pill pill-${serverClass(server, meta)}${xs ? " pill-xs" : ""}">S${esc(server)}</span>`;
   const roleIcon = role => role === "defending" ? "🛡️" : "⚔️";
 
@@ -413,6 +465,7 @@
     const label = d > 0 ? t("moved_up", { n: d }) : t("moved_down", { n: -d });
     return `<span class="delta ${d > 0 ? "up" : "down"}" title="${esc(label)}"><span aria-hidden="true">${d > 0 ? "▲" : "▼"} ${fmt(Math.abs(d))}</span><span class="sr-only">${esc(label)}</span></span>`;
   }
+  const nEvents = n => t(new Intl.PluralRules(locale()).select(n) === "one" ? "n_events_one" : "n_events_other", { n: fmt(n) });
   const tile = (label, value, sub, cls = "") =>
     `<div class="card"><div class="tile-label">${esc(label)}</div><div class="tile-value ${cls}">${value}</div><div class="tile-sub">${sub || ""}</div></div>`;
 
@@ -434,16 +487,20 @@
     r = Math.min(r, w / 2, h);
     return `M${x},${y + h}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h}Z`;
   }
-  /** Grouped column chart. groups: [{label, sub}]; series: [{label, color, values, tips}] */
+  let chartSeq = 0;
+  /** Grouped column chart. groups: [{label, sub}]; series: [{label, color (CSS colour or var), values, tips, hatch: [bool]}]
+      Hatched bars mark the defending side (texture is the secondary channel, colour stays the server). */
   function columnChart(el, groups, series, { height = 230 } = {}) {
+    const cid = "c" + (++chartSeq);
     const W = Math.max(260, Math.floor(el.clientWidth || 600)), H = height;
-    const m = { l: 50, r: 8, t: 22, b: groups.some(g => g.sub) ? 40 : 26 };
+    const m = { l: 50, r: 8, t: 22, b: groups.some(g => g.sub2) ? 56 : groups.some(g => g.sub) ? 40 : 26 };
     const pw = W - m.l - m.r, ph = H - m.t - m.b;
     const max = niceMax(Math.max(0, ...series.flatMap(s => s.values.filter(v => v != null))) * 1.08);
     const band = pw / groups.length, gap = 2;
     const bw = Math.min(24, Math.max(6, (band * 0.62 - gap * (series.length - 1)) / series.length));
     const y = v => m.t + ph - (v / max) * ph;
-    let svg = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true">`;
+    let svg = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true"><defs>${series.map((s, si) =>
+      `<pattern id="${cid}-h${si}" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)"><rect width="6" height="6" style="fill:${s.color};opacity:.28"/><rect width="3" height="6" style="fill:${s.color}"/></pattern>`).join("")}</defs>`;
     for (let i = 0; i <= 4; i++) {
       const v = max * i / 4, yy = y(v);
       svg += `<line class="grid-line" x1="${m.l}" x2="${W - m.r}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.l - 8}" y="${yy + 4}" text-anchor="end">${esc(fmtCompact(v))}</text>`;
@@ -457,7 +514,8 @@
         const x = gx + si * (bw + gap), yy = y(v), h = Math.max(1, m.t + ph - yy);
         const tipHtml = s.tips ? s.tips[gi] : `<b>${esc(s.label)}</b><br>${esc(g.label)}: ${esc(fmt(v))}`;
         svg += `<g class="bar-group"><rect class="hit" x="${x - 4}" y="${m.t}" width="${bw + 8}" height="${ph}" tabindex="0" data-tip="${esc(tipHtml)}"></rect>`;
-        svg += `<path class="bar-mark" d="${barPath(x, yy, bw, h, 4)}" fill="${s.color}"/></g>`;
+        const fill = s.hatch && s.hatch[gi] ? `url(#${cid}-h${si})` : s.color;
+        svg += `<path class="bar-mark" d="${barPath(x, yy, bw, h, 4)}" style="fill:${fill}"/></g>`;
         // A cap label is drawn only where it fits over its own bar; the tooltip and data table carry the rest
         const capText = fmtCompact(v), capW = capText.length * 6.8;
         if (labelCap(gi) && (series.length === 1 || capW <= bw + gap + 2)) svg += `<text class="cap" x="${x + bw / 2}" y="${yy - 6}" text-anchor="middle">${esc(capText)}</text>`;
@@ -465,6 +523,7 @@
       const cx = m.l + band * gi + band / 2;
       svg += `<text x="${cx}" y="${H - m.b + 16}" text-anchor="middle">${esc(g.label)}</text>`;
       if (g.sub) svg += `<text class="axis-label" x="${cx}" y="${H - m.b + 31}" text-anchor="middle">${esc(g.sub)}</text>`;
+      if (g.sub2) svg += `<text class="axis-label" x="${cx}" y="${H - m.b + 46}" text-anchor="middle">${esc(g.sub2)}</text>`;
     });
     el.innerHTML = svg + `</svg>`;
     el.querySelectorAll(".hit").forEach(h => {
@@ -598,6 +657,11 @@
     const qi = document.getElementById(id);
     qi.addEventListener("input", () => { const v = qi.value, pos = qi.selectionStart; onChange(v.trim()); const n = document.getElementById(id); n.focus(); n.setSelectionRange(pos, pos); });
   }
+  function prevNote() {
+    const prev = prevEventOf(state.eventId); if (!prev || !store[prev.id]) return "";
+    const r = roles(), side = sideOf(prev, r.home);
+    return `<p class="note" style="margin:0 0 10px">${esc(t("compare_note", { date: fmtDate(prev.date), home: r.home, side: side ? t("role_" + side) : "", opp: prev.opponent_server }))}</p>`;
+  }
   function renderAlliances() {
     const d = ev(), prev = prevEventOf(state.eventId), pd = prev && store[prev.id];
     const q = state.allyQuery.toLowerCase(), filtered = state.allyServer !== "all";
@@ -622,7 +686,7 @@
         <span class="count">${esc(t("showing_alliances", { n: fmt(list.length) }))}</span>
         <a class="btn" href="events/${esc(state.eventId)}/alliances.csv" download="${esc(state.eventId)}-alliances.csv">${esc(t("download_csv"))}</a>
       </div>
-      ${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
+      ${prevNote()}${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
       <div class="table-wrap"><table>
         <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_alliance"))}</th><th class="hide-sm">${esc(t("col_server"))}</th>
         <th class="r hide-sm">${esc(t("col_members"))}</th><th class="r">${esc(t("col_total"))}</th><th class="r hide-sm">${esc(t("col_avg"))}</th><th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead>
@@ -654,7 +718,7 @@
         <span class="count">${esc(t("showing_commanders", { n: fmt(list.length) }))}</span>
         <a class="btn" href="events/${esc(state.eventId)}/rankings.csv" download="${esc(state.eventId)}-rankings.csv">${esc(t("download_csv"))}</a>
       </div>
-      ${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
+      ${prevNote()}${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
       <div class="table-wrap"><table>
         <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_commander"))}</th><th class="hide-sm">${esc(t("col_server"))}</th>
         <th class="r">${esc(t("col_points"))}</th><th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead>
@@ -674,16 +738,16 @@
       el.innerHTML = `<div class="card"><p class="muted" style="margin:0">${esc(t("trends_need_two"))}</p></div>`;
       return;
     }
-    const groups = loaded.map(e => ({ label: fmtDateShort(e.date), sub: `vs S${e.opponent_server}` }));
     const homeSrv = String(loaded[loaded.length - 1].home_server || "117");
+    const groups = loaded.map(e => ({ label: fmtDateShort(e.date), sub: `${sideShort(sideOf(e, e.home_server))} · vs S${e.opponent_server}` }));
     const S = e => store[e.id].meta.servers || {};
     const series = (srvOf, field) => loaded.map(e => (S(e)[srvOf(e)] || {})[field] || 0);
     const homePts = series(e => e.home_server, "points"), oppPts = series(e => e.opponent_server, "points");
     const homeN = series(e => e.home_server, "players"), oppN = series(e => e.opponent_server, "players");
-    const tips = (srvOf, vals) => loaded.map((e, i) => `<b>S${esc(srvOf(e))}</b> · ${esc(fmtDate(e.date))}<br><span class="num">${esc(fmt(vals[i]))}</span>`);
+    const tips = (srvOf, vals) => loaded.map((e, i) => `<b>S${esc(srvOf(e))}</b> · ${esc(sideShort(sideOf(e, srvOf(e))))}<br>${esc(fmtDate(e.date))}: <span class="num">${esc(fmt(vals[i]))}</span>`);
     const homeLabel = t("legend_home", { n: homeSrv }), oppLabel = t("legend_opponent");
-    const legend = legendHtml([{ color: "var(--home)", label: homeLabel }, { color: "var(--opp)", label: oppLabel }]);
-    const evHead = loaded.map(e => `<th class="r">${esc(fmtDateShort(e.date))}<span class="sub" style="text-transform:none;letter-spacing:0">vs S${esc(e.opponent_server)}</span></th>`).join("");
+    const legend = legendHtml([{ color: "var(--home)", label: homeLabel }, { color: "var(--opp)", label: oppLabel }]) + sideKey();
+    const evHead = loaded.map(e => `<th class="r">${esc(fmtDateShort(e.date))}<span class="sub" style="text-transform:none;letter-spacing:0">${sideHtml(sideOf(e, e.home_server))} · vs S${esc(e.opponent_server)}</span></th>`).join("");
     const dataTable = (key, rowsHtml) => `<div class="chart-table" ${state.trendsTable[key] ? "" : "hidden"}><div class="table-wrap"><table><thead><tr><th>${esc(t("col_server"))}</th>${evHead}</tr></thead><tbody>${rowsHtml}</tbody></table></div></div>
       <button class="link-btn" data-toggle-table="${key}" aria-expanded="${!!state.trendsTable[key]}">${esc(state.trendsTable[key] ? t("hide_table") : t("show_table"))}</button>`;
     const valRow = (label, vals) => `<tr><td>${esc(label)}</td>${vals.map(v => `<td class="r num">${fmt(v)}</td>`).join("")}</tr>`;
@@ -724,8 +788,8 @@
           <td class="r hide-sm">${a && b ? rankMoveHtml(a.rank, b.rank) : ""}</td></tr>`; }).join("")}
         </tbody></table></div></div>`;
     const ch = (id, h, o) => registerChart(document.getElementById(id), () => columnChart(document.getElementById(id), groups,
-      [{ label: homeLabel, color: "#1aa3c2", values: h, tips: tips(e => e.home_server, h) },
-       { label: oppLabel, color: "#e5484d", values: o, tips: tips(e => e.opponent_server, o) }]));
+      [{ label: homeLabel, color: "var(--home)", values: h, tips: tips(e => e.home_server, h), hatch: loaded.map(e => sideOf(e, e.home_server) === "defending") },
+       { label: oppLabel, color: "var(--opp)", values: o, tips: tips(e => e.opponent_server, o), hatch: loaded.map(e => sideOf(e, e.opponent_server) === "defending") }]));
     ch("chPts", homePts, oppPts);
     ch("chN", homeN, oppN);
   }
@@ -761,9 +825,24 @@
     if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
   }
   const loadedEvents = () => EVENTS.filter(e => store[e.id]);
-  function historyChart(el, hist, label, color, valueOf, tipOf) {
-    registerChart(el, () => columnChart(el, hist.map(h => ({ label: fmtDateShort(h.e.date), sub: `vs S${h.e.opponent_server}` })),
-      [{ label, color, values: hist.map(h => h.v ? valueOf(h.v) : null), tips: hist.map(h => h.v ? tipOf(h) : "") }], { height: 200 }));
+  function historyChart(el, hist, label, color, valueOf, tipOf, server, sub2Of) {
+    registerChart(el, () => columnChart(el, hist.map(h => ({ label: fmtDateShort(h.e.date), sub: `${sideShort(sideOf(h.e, server))} · vs S${h.e.opponent_server}`,
+                                                           sub2: sub2Of && h.v ? sub2Of(h.v) : "" })),
+      [{ label, color, values: hist.map(h => h.v ? valueOf(h.v) : null), tips: hist.map(h => h.v ? tipOf(h) : ""),
+         hatch: hist.map(h => sideOf(h.e, server) === "defending") }], { height: 210 }));
+  }
+  // Average of a value per side across the events played
+  function sideAverages(hist, server, valueOf) {
+    const out = {};
+    for (const side of ["attacking", "defending"]) {
+      const vals = hist.filter(h => h.v && sideOf(h.e, server) === side).map(h => valueOf(h.v));
+      out[side] = vals.length ? { avg: Math.round(vals.reduce((a, b) => a + b, 0) / vals.length), n: vals.length, best: vals } : null;
+    }
+    return out;
+  }
+  function sideTiles(avgs, unit) {
+    return ["attacking", "defending"].map(side => tile(t("avg_" + side), avgs[side] ? fmt(avgs[side].avg) : "—",
+      `<span aria-hidden="true">${roleIcon(side)}</span> ${esc(nEvents(avgs[side] ? avgs[side].n : 0))}`)).join("");
   }
   function openCommander(key) {
     const byEv = (index && index.c[key]) || {};
@@ -787,16 +866,17 @@
         ${tile(t("col_points"), cur ? fmt(cur.points) : "—", cur && prevV ? deltaHtml(cur.points, prevV.points, { compact: true }) : "")}
         ${tile(t("col_share"), share || "—", "")}
         ${tile(t("events_played"), `${played.length} / ${hist.length}`, best ? `${esc(t("best_rank"))}: #${best}` : "")}
+        ${sideTiles(sideAverages(hist, any.server, v => v.points))}
       </div>
-      <div class="card"><h3>${esc(t("history_points"))}</h3><div class="chart" id="chHist"></div></div>
+      <div class="card"><h3>${esc(t("history_points"))}</h3>${sideKey()}<div class="chart" id="chHist"></div></div>
       <div class="card" style="padding:0"><div class="table-wrap" style="border:0"><table>
-        <thead><tr><th>${esc(t("col_event"))}</th><th class="r">${esc(t("col_rank"))}</th><th class="r">${esc(t("col_points"))}</th><th class="hide-sm">${esc(t("col_alliance"))}</th></tr></thead>
-        <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td>
+        <thead><tr><th>${esc(t("col_event"))}</th><th>${esc(t("col_side"))}</th><th class="r">${esc(t("col_rank"))}</th><th class="r">${esc(t("col_points"))}</th><th class="hide-sm">${esc(t("col_alliance"))}</th></tr></thead>
+        <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td><td>${sideHtml(sideOf(h.e, any.server))}</td>
           ${h.v ? `<td class="r num">#${h.v.server_rank} <span class="dim">(${h.v.rank})</span></td><td class="r num">${fmt(h.v.points)}</td><td class="hide-sm">${esc(h.v.alliance || "")}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody>
       </table></div></div>`;
     openDrawer();
     historyChart(document.getElementById("chHist"), hist, displayName(any.commander), serverColor(any.server), v => v.points,
-      h => `<b>${esc(fmtDate(h.e.date))}</b><br>#${h.v.server_rank} (${h.v.rank}) · ${esc(fmt(h.v.points))} ${esc(t("pts"))}`);
+      h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${h.v.rank})<br>${esc(fmt(h.v.points))} ${esc(t("pts"))}`, any.server);
   }
   function openAlliance(key) {
     const byEv = (index && index.a[key]) || {};
@@ -809,25 +889,34 @@
     document.getElementById("drawerMeta").innerHTML = serverPill(any.server);
     const hist = loadedEvents().map(e => ({ e, v: byEv[e.id] || (e.id === state.eventId ? cur : null) || null }));
     const prevE = prevEventOf(state.eventId), prevV = prevE ? byEv[prevE.id] : null;
-    const prevRankOf = m => { if (!prevE || !index) return null; const p = (index.c[cKey({ server: any.server, commander: m.commander })] || {})[prevE.id]; return p ? p.rank : null; };
+    // Roster change compares each member's position within this alliance with their position in it last event
+    const prevPos = {};
+    if (prevV && prevV.members) prevV.members.forEach((m, i) => { prevPos[nameKey(m.commander)] = i + 1; });
+    const prevPosOf = m => prevPos[nameKey(m.commander)] != null ? prevPos[nameKey(m.commander)] : null;
     document.getElementById("drawerBody").innerHTML = `
       <div class="grid tiles">
         ${tile(t("this_event"), cur ? `#${cur.server_rank} <span class="dim" style="font-size:15px">(${cur.rank})</span>` : "—", cur && prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : "")}
         ${tile(t("col_total"), cur ? fmt(cur.total_points) : "—", cur && prevV ? deltaHtml(cur.total_points, prevV.total_points, { compact: true }) : "")}
         ${tile(t("col_members"), cur ? fmt(cur.members_count) : "—", cur && prevV ? deltaHtml(cur.members_count, prevV.members_count) : "")}
         ${tile(t("col_avg"), cur ? fmt(cur.avg_points) : "—", cur && prevV ? deltaHtml(cur.avg_points, prevV.avg_points, { compact: true }) : "")}
+        ${sideTiles(sideAverages(hist, any.server, v => v.total_points))}
       </div>
-      <div class="card"><h3>${esc(t("history_alliance_points"))}</h3><div class="chart" id="chHist"></div></div>
+      <div class="card"><h3>${esc(t("history_alliance_points"))}</h3>${sideKey()}<div class="chart" id="chHist"></div>
+        <div class="table-wrap" style="border:0;margin-top:8px"><table><thead><tr><th>${esc(t("col_event"))}</th><th>${esc(t("col_side"))}</th><th class="r">${esc(t("col_rank"))}</th><th class="r">${esc(t("col_total"))}</th><th class="r hide-sm">${esc(t("col_members"))}</th></tr></thead>
+        <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td><td>${sideHtml(sideOf(h.e, any.server))}</td>
+          ${h.v ? `<td class="r num">#${h.v.server_rank} <span class="dim">(${h.v.rank})</span></td><td class="r num">${fmt(h.v.total_points)}</td><td class="r num hide-sm">${fmt(h.v.members_count)}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody></table></div></div>
       ${cur ? `<div class="card" style="padding:0"><h3 style="padding:14px 14px 0">${esc(t("roster_title"))}</h3><div class="table-wrap" style="border:0"><table>
         <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_commander"))}</th><th class="r">${esc(t("col_points"))}</th>${prevE ? `<th class="r">${esc(t("col_change"))}</th>` : ""}</tr></thead>
         <tbody>${cur.members.map((m, i) => `<tr class="clickable" data-open-c="${esc(cKey({ server: any.server, commander: m.commander }))}" tabindex="0">
           <td class="rank-cell"><span class="rk ${rankClass(i + 1)}">#${i + 1}</span><span class="overall">(${m.rank})</span></td>
           <td class="name-cell">${esc(displayName(m.commander))}</td>
           <td class="r num">${fmt(m.points)}<span class="sub" title="${esc(t("col_share"))}">${cur.total_points ? (m.points / cur.total_points < 0.0005 ? "&lt;0.1%" : fmtPct(m.points / cur.total_points)) : ""}</span></td>
-          ${prevE ? `<td class="r">${rankMoveHtml(m.rank, prevRankOf(m))}</td>` : ""}</tr>`).join("")}</tbody></table></div></div>` : ""}`;
+          ${prevE ? `<td class="r">${rankMoveHtml(i + 1, prevPosOf(m))}</td>` : ""}</tr>`).join("")}</tbody></table></div>
+        ${prevE ? `<p class="note" style="padding:0 14px 12px">${esc(t("roster_change_note", { date: fmtDate(prevE.date) }))}</p>` : ""}</div>` : ""}`;
     openDrawer();
     historyChart(document.getElementById("chHist"), hist, any.alliance, serverColor(any.server), v => v.total_points,
-      h => `<b>${esc(fmtDate(h.e.date))}</b><br>#${h.v.server_rank} (${h.v.rank}) · ${esc(fmt(h.v.total_points))} ${esc(t("pts"))}<br>${esc(t("col_members"))}: ${esc(fmt(h.v.members_count))}`);
+      h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${h.v.rank})<br>${esc(fmt(h.v.total_points))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(h.v.members_count) }))}`,
+      any.server, v => t("players_n", { n: fmt(v.members_count) }));
   }
 
   // ---------- global search ----------
@@ -889,6 +978,19 @@
     setTab(n.dataset.tab); n.focus();
   });
   document.getElementById("eventSelect").addEventListener("change", e => selectEvent(e.target.value));
+  const themeBtn = document.getElementById("themeToggle");
+  function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    themeBtn.setAttribute("aria-pressed", theme === "light");
+    const label = theme === "light" ? t("theme_night") : t("theme_day");
+    themeBtn.setAttribute("aria-label", label); themeBtn.title = label;
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", theme === "light" ? "#f4f4f2" : "#000000");
+  }
+  themeBtn.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    try { localStorage.setItem("s117.theme", next); } catch (e) {}
+    applyTheme(next);
+  });
   document.getElementById("langSelect").addEventListener("change", e => setLanguage(e.target.value));
 
   function setLanguage(lang) {
@@ -908,7 +1010,7 @@
     charts.length = 0;
     ({ overview: renderOverview, alliances: renderAlliances, commanders: renderCommanders, trends: renderTrends, data: renderData }[state.tab] || renderOverview)();
   }
-  function renderAll() { applyStaticText(); renderEventBar(); setTab(state.tab, false); syncUrl(); }
+  function renderAll() { applyStaticText(); applyTheme(document.documentElement.dataset.theme === "light" ? "light" : "dark"); renderEventBar(); setTab(state.tab, false); syncUrl(); }
 
   // ---------- boot ----------
   state.lang = detectLanguage();

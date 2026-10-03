@@ -90,7 +90,19 @@ window.I18N = {
     "pts": "pts",
     "this_event": "This event",
     "best_rank": "Best rank",
-    "events_played": "Events played"
+    "events_played": "Events played",
+    "theme_day": "Switch to day mode",
+    "theme_night": "Switch to night mode",
+    "legend_attacking": "Solid: attacking",
+    "legend_defending": "Hatched: defending",
+    "avg_attacking": "Avg when attacking",
+    "avg_defending": "Avg when defending",
+    "col_side": "Side",
+    "compare_note": "Changes compare with {date} · S{home} {side} vs S{opp}",
+    "players_n": "{n} players",
+    "roster_change_note": "Change in position within the alliance since {date}.",
+    "n_events_one": "{n} event",
+    "n_events_other": "{n} events"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -182,7 +194,19 @@ window.I18N = {
     "pts": "pts",
     "this_event": "Cet événement",
     "best_rank": "Meilleur rang",
-    "events_played": "Événements joués"
+    "events_played": "Événements joués",
+    "theme_day": "Passer en mode jour",
+    "theme_night": "Passer en mode nuit",
+    "legend_attacking": "Plein : attaque",
+    "legend_defending": "Hachuré : défense",
+    "avg_attacking": "Moy. en attaque",
+    "avg_defending": "Moy. en défense",
+    "col_side": "Camp",
+    "compare_note": "Variations par rapport au {date} · S{home} {side} contre S{opp}",
+    "players_n": "{n} joueurs",
+    "roster_change_note": "Évolution de la place au sein de l'alliance depuis le {date}.",
+    "n_events_one": "{n} événement",
+    "n_events_other": "{n} événements"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -274,7 +298,19 @@ window.I18N = {
     "pts": "оч.",
     "this_event": "Это событие",
     "best_rank": "Лучшее место",
-    "events_played": "Событий сыграно"
+    "events_played": "Событий сыграно",
+    "theme_day": "Дневной режим",
+    "theme_night": "Ночной режим",
+    "legend_attacking": "Сплошная: атака",
+    "legend_defending": "Штриховка: оборона",
+    "avg_attacking": "Сред. в атаке",
+    "avg_defending": "Сред. в обороне",
+    "col_side": "Сторона",
+    "compare_note": "Изменения относительно {date} · S{home}: {side}, против S{opp}",
+    "players_n": "Игроков: {n}",
+    "roster_change_note": "Изменение места внутри альянса с {date}.",
+    "n_events_one": "Событий: {n}",
+    "n_events_other": "Событий: {n}"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -366,7 +402,19 @@ window.I18N = {
     "pts": "puan",
     "this_event": "Bu etkinlik",
     "best_rank": "En iyi sıra",
-    "events_played": "Oynanan etkinlik"
+    "events_played": "Oynanan etkinlik",
+    "theme_day": "Gündüz moduna geç",
+    "theme_night": "Gece moduna geç",
+    "legend_attacking": "Düz: saldıran",
+    "legend_defending": "Taralı: savunan",
+    "avg_attacking": "Saldırıda ort.",
+    "avg_defending": "Savunmada ort.",
+    "col_side": "Taraf",
+    "compare_note": "Değişimler {date} ile karşılaştırılır · S{home} {side}, rakip S{opp}",
+    "players_n": "{n} oyuncu",
+    "roster_change_note": "{date} tarihinden bu yana ittifak içi sıra değişimi.",
+    "n_events_one": "{n} etkinlik",
+    "n_events_other": "{n} etkinlik"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -458,7 +506,19 @@ window.I18N = {
     "pts": "pkt",
     "this_event": "To wydarzenie",
     "best_rank": "Najlepsze miejsce",
-    "events_played": "Rozegrane wydarzenia"
+    "events_played": "Rozegrane wydarzenia",
+    "theme_day": "Tryb dzienny",
+    "theme_night": "Tryb nocny",
+    "legend_attacking": "Pełne: atak",
+    "legend_defending": "Kreskowane: obrona",
+    "avg_attacking": "Śr. w ataku",
+    "avg_defending": "Śr. w obronie",
+    "col_side": "Strona",
+    "compare_note": "Zmiany względem {date} · S{home}: {side}, przeciw S{opp}",
+    "players_n": "Graczy: {n}",
+    "roster_change_note": "Zmiana miejsca w sojuszu od {date}.",
+    "n_events_one": "Wydarzeń: {n}",
+    "n_events_other": "Wydarzeń: {n}"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -550,7 +610,19 @@ window.I18N = {
     "pts": "pts",
     "this_event": "Este evento",
     "best_rank": "Mejor puesto",
-    "events_played": "Eventos jugados"
+    "events_played": "Eventos jugados",
+    "theme_day": "Cambiar a modo día",
+    "theme_night": "Cambiar a modo noche",
+    "legend_attacking": "Sólido: atacante",
+    "legend_defending": "Rayado: defensor",
+    "avg_attacking": "Media atacando",
+    "avg_defending": "Media defendiendo",
+    "col_side": "Bando",
+    "compare_note": "Cambios respecto al {date} · S{home} {side} contra S{opp}",
+    "players_n": "{n} jugadores",
+    "roster_change_note": "Cambio de puesto dentro de la alianza desde el {date}.",
+    "n_events_one": "{n} evento",
+    "n_events_other": "{n} eventos"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -642,7 +714,19 @@ window.I18N = {
     "pts": "pts",
     "this_event": "Este evento",
     "best_rank": "Melhor posição",
-    "events_played": "Eventos jogados"
+    "events_played": "Eventos jogados",
+    "theme_day": "Mudar para modo dia",
+    "theme_night": "Mudar para modo noite",
+    "legend_attacking": "Sólido: atacante",
+    "legend_defending": "Tracejado: defensor",
+    "avg_attacking": "Média a atacar",
+    "avg_defending": "Média a defender",
+    "col_side": "Lado",
+    "compare_note": "Variações face a {date} · S{home} {side} contra S{opp}",
+    "players_n": "{n} jogadores",
+    "roster_change_note": "Variação da posição dentro da aliança desde {date}.",
+    "n_events_one": "{n} evento",
+    "n_events_other": "{n} eventos"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -734,7 +818,19 @@ window.I18N = {
     "pts": "Pkt.",
     "this_event": "Dieses Event",
     "best_rank": "Bester Rang",
-    "events_played": "Gespielte Events"
+    "events_played": "Gespielte Events",
+    "theme_day": "Tagmodus",
+    "theme_night": "Nachtmodus",
+    "legend_attacking": "Voll: Angriff",
+    "legend_defending": "Schraffiert: Verteidigung",
+    "avg_attacking": "Ø im Angriff",
+    "avg_defending": "Ø in der Verteidigung",
+    "col_side": "Seite",
+    "compare_note": "Änderungen ggü. {date} · S{home} {side} gegen S{opp}",
+    "players_n": "{n} Spieler",
+    "roster_change_note": "Veränderung der Position innerhalb der Allianz seit {date}.",
+    "n_events_one": "{n} Event",
+    "n_events_other": "{n} Events"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -826,7 +922,19 @@ window.I18N = {
     "pts": "점",
     "this_event": "이번 이벤트",
     "best_rank": "최고 순위",
-    "events_played": "참가 이벤트"
+    "events_played": "참가 이벤트",
+    "theme_day": "주간 모드로 전환",
+    "theme_night": "야간 모드로 전환",
+    "legend_attacking": "채움: 공격",
+    "legend_defending": "빗금: 수비",
+    "avg_attacking": "공격 시 평균",
+    "avg_defending": "수비 시 평균",
+    "col_side": "진영",
+    "compare_note": "{date} 대비 변화 · S{home} {side}, 상대 S{opp}",
+    "players_n": "{n}명 참가",
+    "roster_change_note": "{date} 이후 연맹 내 순위 변화.",
+    "n_events_one": "이벤트 {n}개",
+    "n_events_other": "이벤트 {n}개"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -918,7 +1026,19 @@ window.I18N = {
     "pts": "分",
     "this_event": "本次活动",
     "best_rank": "最佳排名",
-    "events_played": "参加活动数"
+    "events_played": "参加活动数",
+    "theme_day": "切换到日间模式",
+    "theme_night": "切换到夜间模式",
+    "legend_attacking": "实心：进攻",
+    "legend_defending": "斜纹：防守",
+    "avg_attacking": "进攻时平均",
+    "avg_defending": "防守时平均",
+    "col_side": "阵营",
+    "compare_note": "与 {date} 相比 · S{home} {side}，对手 S{opp}",
+    "players_n": "{n} 名玩家",
+    "roster_change_note": "自 {date} 以来在联盟内的排名变化。",
+    "n_events_one": "{n} 个活动",
+    "n_events_other": "{n} 个活动"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};
