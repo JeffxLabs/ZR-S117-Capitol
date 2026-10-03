@@ -790,16 +790,16 @@
         <div class="kpi-card">
           <div class="kpi-label" data-i18n="kpi_top_contributor">#1 Top Contributor</div>
           <div class="kpi-val" id="topCommanderVal" style="color: var(--gold); font-size: 1.35rem;">TheRequiem</div>
-          <div class="kpi-sub">[P1MP] JU1CE (16.65M pts)</div>
+          <div class="kpi-sub" id="topCommanderSub">[P1MP] JU1CE (16.65M pts)</div>
         </div>
       </div>
 
       <!-- Server vs Server Battle Balance -->
       <div class="war-meter-card">
         <div class="war-meter-header">
-          <span style="color: #fb7185;">⚔️ Server 119: <span id="s119PtsHeader">500.2M (64.7%)</span></span>
+          <span style="color: #fb7185;">⚔️ Server <span class="srv-opp-num">119</span>: <span id="s119PtsHeader">500.2M (64.7%)</span></span>
           <span id="pointsDominanceLabel" style="color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase;" data-i18n="points_dominance">Points Dominance</span>
-          <span style="color: #22d3ee;">🛡️ Server 117: <span id="s117PtsHeader">270.6M (35.0%)</span></span>
+          <span style="color: #22d3ee;">🛡️ Server <span class="srv-home-num">117</span>: <span id="s117PtsHeader">270.6M (35.0%)</span></span>
         </div>
         <div class="bar-container">
           <div class="bar-seg seg-s119" id="barS119" style="width: 64.7%;">64.7%</div>
@@ -825,7 +825,7 @@
         <div class="kpi-card" style="border-left: 4px solid var(--s117-cyan);">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
             <h3 id="s117ServerTitle" style="color: var(--s117-cyan); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;" data-i18n="server_117_title">Server 117 (Home)</h3>
-            <span class="server-pill pill-117">S117</span>
+            <span class="server-pill pill-117 srv-home-tag">S117</span>
           </div>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem;">
             <div>
@@ -854,7 +854,7 @@
         <div class="kpi-card" style="border-left: 4px solid var(--s119-rose);">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
             <h3 id="s119ServerTitle" style="color: var(--s119-rose); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;" data-i18n="server_119_title">Server 119 (Visiting)</h3>
-            <span class="server-pill pill-119">S119</span>
+            <span class="server-pill pill-119 srv-opp-tag">S119</span>
           </div>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem;">
             <div>
@@ -933,11 +933,8 @@
         <div class="search-box">
           <input type="text" id="allianceSearch" class="search-input" placeholder="Search alliance name or tag..." data-i18n-ph="search_alliance_ph">
         </div>
-        <div class="filter-group">
+        <div class="filter-group" id="allianceServerFilters">
           <button class="filter-btn active" data-server="all" data-i18n="filter_all_servers">All Servers</button>
-          <button class="filter-btn" data-server="117">Server 117</button>
-          <button class="filter-btn" data-server="119">Server 119</button>
-          <button class="filter-btn" data-server="113">Server 113</button>
         </div>
         <a href="data/alliance_summary.csv" download class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
       </div>
@@ -967,11 +964,8 @@
         <div class="search-box">
           <input type="text" id="playerSearch" class="search-input" placeholder="Search player name or alliance..." data-i18n-ph="search_player_ph">
         </div>
-        <div class="filter-group">
+        <div class="filter-group" id="playerServerFilters">
           <button class="filter-btn player-srv-filter active" data-player-srv="all" data-i18n="filter_all_servers">All Servers</button>
-          <button class="filter-btn player-srv-filter" data-player-srv="117">Server 117</button>
-          <button class="filter-btn player-srv-filter" data-player-srv="119">Server 119</button>
-          <button class="filter-btn player-srv-filter" data-player-srv="113">Server 113</button>
         </div>
         <div style="font-size: 0.85rem; color: var(--text-muted);">
           <span data-i18n="showing_text">Showing</span> <span id="filteredPlayerCount" style="color: #fff; font-weight: 700;">1,398</span> <span data-i18n="commanders_word">commanders</span>
@@ -1126,6 +1120,28 @@
     let allianceSearchQuery = "";
     let playerSearchQuery = "";
     let currentLang = "en";
+    let loadToken = 0;
+
+    // Server roles for the active event: home, opponent, and any cross-server participants.
+    function serverRoles() {
+      const m = eventData.meta || {};
+      const home = String(m.home_server || "117");
+      const opp = String(m.opponent_server || "119");
+      const others = Object.keys(m.servers || {}).filter(s => s !== home && s !== opp).sort();
+      return { home, opp, others, all: [home, opp, ...others] };
+    }
+
+    function pillClass(server) {
+      const { home, opp } = serverRoles();
+      return server === home ? "pill-117" : server === opp ? "pill-119" : "pill-113";
+    }
+
+    // Translations are written for S117 vs S119; rewrite those numbers for the active event.
+    function localizeServers(str) {
+      if (!str) return str;
+      const { home, opp } = serverRoles();
+      return str.replace(/(?<!\d)(117|119)(?!\d)/g, n => n === "117" ? home : opp);
+    }
 
     // Localization & URL helpers
     function getRequestedLanguage() {
@@ -1243,7 +1259,7 @@
       populateEventSelect();
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
-        const val = t(key);
+        const val = localizeServers(t(key));
         if (val) el.textContent = val;
       });
       document.querySelectorAll("[data-i18n-ph]").forEach(el => {
@@ -1267,7 +1283,7 @@
       }
 
       // Update page title
-      document.title = `${t("brand_title")} — ${t("event_title") || "Capitol War"}`;
+      document.title = `${localizeServers(t("brand_title"))} — ${(eventTitleEl && eventTitleEl.textContent) || "Capitol War"}`;
     }
 
     function formatNumber(num) {
@@ -1278,6 +1294,7 @@
     // Load data
     function loadEventData(eventId) {
       // Check if preloaded in window (offline/file:// support)
+      const token = ++loadToken;
       const varName = "EVENT_" + eventId.replace(/-/g, "_");
       if (window[varName]) {
         eventData = window[varName];
@@ -1285,28 +1302,18 @@
         return;
       }
 
-      // Otherwise fetch via HTTP
-      fetch(`events/${eventId}/event.json`)
-        .then(r => r.json())
-        .then(meta => {
-          eventData.meta = meta;
-          return Promise.all([
-            fetch(`events/${eventId}/alliances.json`).then(r => r.json()),
-            fetch(`events/${eventId}/rankings.json`).then(r => r.json())
-          ]);
-        })
-        .then(([alliances, rankings]) => {
-          eventData.alliances = alliances;
-          eventData.rankings = rankings;
+      // Otherwise fetch via HTTP into a fresh object so other events' data is never overwritten
+      Promise.all([
+        fetch(`events/${eventId}/event.json`).then(r => r.json()),
+        fetch(`events/${eventId}/alliances.json`).then(r => r.json()),
+        fetch(`events/${eventId}/rankings.json`).then(r => r.json())
+      ])
+        .then(([meta, alliances, rankings]) => {
+          if (token !== loadToken) return; // a newer selection superseded this load
+          eventData = window[varName] = { meta, alliances, rankings };
           initDashboard();
         })
-        .catch(err => {
-          console.warn("Fetch failed, falling back to window cache if present:", err);
-          if (window.EVENT_2026_09_19_s117_vs_s119) {
-            eventData = window.EVENT_2026_09_19_s117_vs_s119;
-            initDashboard();
-          }
-        });
+        .catch(err => console.warn(`Failed to load event ${eventId}:`, err));
     }
 
     function initDashboard() {
@@ -1322,6 +1329,12 @@
         playerServerCounts[p.server] = (playerServerCounts[p.server] || 0) + 1;
         if (!p.server_rank) p.server_rank = playerServerCounts[p.server];
       });
+
+      const { all } = serverRoles();
+      if (!all.includes(currentAllianceServer)) currentAllianceServer = "all";
+      if (!all.includes(currentPlayerServer)) currentPlayerServer = "all";
+      document.getElementById("allyModal").classList.remove("open");
+      renderServerFilters();
 
       applyTranslations();
       renderHeroAndKPIs();
@@ -1347,15 +1360,27 @@
       document.getElementById("totalAlliancesVal").textContent = formatNumber(m.unique_alliances);
 
       const topP = eventData.rankings[0];
-      if (topP) {
-        document.getElementById("topCommanderVal").textContent = topP.commander;
-      }
+      document.getElementById("topCommanderVal").textContent = topP ? topP.commander : "—";
+      document.getElementById("topCommanderSub").textContent = topP
+        ? `${topP.alliance || "No Alliance"} (${(topP.points / 1e6).toFixed(2)}M pts)` : "";
 
-      // Server Breakdown
+      // Server Breakdown (s117* ids = home server, s119* ids = opponent, s113 bar = all cross-server)
+      const roles = serverRoles();
       const servers = (m && m.servers) || {};
-      const s117 = servers["117"] || { points: 0, point_share_pct: 0, players: 0 };
-      const s119 = servers["119"] || { points: 0, point_share_pct: 0, players: 0 };
-      const s113 = servers["113"] || { points: 0, point_share_pct: 0, players: 0 };
+      const empty = { points: 0, point_share_pct: 0, players: 0 };
+      const s117 = servers[roles.home] || empty;
+      const s119 = servers[roles.opp] || empty;
+      const s113 = roles.others.reduce((acc, k) => ({
+        points: acc.points + (servers[k].points || 0),
+        players: acc.players + (servers[k].players || 0),
+        point_share_pct: +(acc.point_share_pct + (servers[k].point_share_pct || 0)).toFixed(2)
+      }), { ...empty });
+      const avg = s => s.players ? Math.round(s.points / s.players) : 0;
+
+      document.querySelectorAll(".srv-home-num").forEach(el => el.textContent = roles.home);
+      document.querySelectorAll(".srv-opp-num").forEach(el => el.textContent = roles.opp);
+      document.querySelectorAll(".srv-home-tag").forEach(el => el.textContent = "S" + roles.home);
+      document.querySelectorAll(".srv-opp-tag").forEach(el => el.textContent = "S" + roles.opp);
 
       document.getElementById("s119PtsHeader").textContent = `${(s119.points / 1e6).toFixed(1)}M (${s119.point_share_pct}%)`;
       document.getElementById("s117PtsHeader").textContent = `${(s117.points / 1e6).toFixed(1)}M (${s117.point_share_pct}%)`;
@@ -1366,12 +1391,16 @@
       document.getElementById("barS117").style.width = s117.point_share_pct + "%";
       document.getElementById("barS117").textContent = s117.point_share_pct + "%";
 
-      document.getElementById("barS113").style.width = Math.max(s113.point_share_pct, 1) + "%";
+      const barOther = document.getElementById("barS113");
+      barOther.style.display = s113.points > 0 ? "" : "none";
+      barOther.style.width = Math.max(s113.point_share_pct, 1) + "%";
+      barOther.textContent = s113.point_share_pct >= 3 ? s113.point_share_pct + "%" : "";
+      barOther.title = roles.others.map(k => `S${k}: ${servers[k].point_share_pct}%`).join(", ");
 
       // Overview Server Cards
       document.getElementById("s117TotalPts").textContent = formatNumber(s117.points);
       document.getElementById("s117Players").textContent = formatNumber(s117.players);
-      document.getElementById("s117AvgPts").textContent = formatNumber(Math.round(s117.points / s117.players));
+      document.getElementById("s117AvgPts").textContent = formatNumber(avg(s117));
 
       const s117Share = document.getElementById("s117SharePct");
       if (s117Share) s117Share.textContent = s117.point_share_pct + "%";
@@ -1380,7 +1409,7 @@
 
       document.getElementById("s119TotalPts").textContent = formatNumber(s119.points);
       document.getElementById("s119Players").textContent = formatNumber(s119.players);
-      document.getElementById("s119AvgPts").textContent = formatNumber(Math.round(s119.points / s119.players));
+      document.getElementById("s119AvgPts").textContent = formatNumber(avg(s119));
 
       const s119Share = document.getElementById("s119SharePct");
       if (s119Share) s119Share.textContent = s119.point_share_pct + "%";
@@ -1389,8 +1418,9 @@
     }
 
     function renderServerSpotlights() {
-      const s117Allies = eventData.alliances.filter(a => a.server === "117").slice(0, 10);
-      const s119Allies = eventData.alliances.filter(a => a.server === "119").slice(0, 10);
+      const { home, opp } = serverRoles();
+      const s117Allies = eventData.alliances.filter(a => a.server === home).slice(0, 10);
+      const s119Allies = eventData.alliances.filter(a => a.server === opp).slice(0, 10);
 
       const renderRows = (list, targetId) => {
         const body = document.getElementById(targetId);
@@ -1452,7 +1482,7 @@
             ${escapeHtml(a.alliance)}
           </td>
           <td>
-            <span class="server-pill ${a.server === '117' ? 'pill-117' : a.server === '119' ? 'pill-119' : 'pill-113'}">
+            <span class="server-pill ${pillClass(a.server)}">
               S${a.server}
             </span>
           </td>
@@ -1518,7 +1548,7 @@
           <td class="cmd-name">${escapeHtml(p.commander)}</td>
           <td style="color: var(--text-muted); cursor: pointer;" onclick="openAllianceModal('${escapeHtml(p.alliance)}')">${escapeHtml(p.alliance || 'None')}</td>
           <td>
-            <span class="server-pill ${p.server === '117' ? 'pill-117' : p.server === '119' ? 'pill-119' : 'pill-113'}">
+            <span class="server-pill ${pillClass(p.server)}">
               S${p.server}
             </span>
           </td>
@@ -1541,7 +1571,7 @@
       const ally = eventData.alliances.find(a => a.alliance === allyName);
       if (!ally) return;
 
-      const serverType = ally.server === '117' ? `(${t("home_label")})` : `(${t("visiting_label")})`;
+      const serverType = ally.server === serverRoles().home ? `(${t("home_label")})` : `(${t("visiting_label")})`;
       document.getElementById("modalAllyTitle").textContent = ally.alliance;
       document.getElementById("modalAllyServer").textContent = `Server ${ally.server} ${serverType}`;
       document.getElementById("modalMemberCount").textContent = formatNumber(ally.members_count);
@@ -1629,22 +1659,39 @@
       });
     });
 
-    document.querySelectorAll("[data-server]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll("[data-server]").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        currentAllianceServer = btn.dataset.server;
-        renderAlliancesTable();
-      });
+    // Server filter buttons are rebuilt per event from the servers present in its data
+    function renderServerFilters() {
+      const { all } = serverRoles();
+      const build = (containerId, attr, extraClass, current) => {
+        const box = document.getElementById(containerId);
+        box.querySelectorAll(`[${attr}]:not([${attr}="all"])`).forEach(b => b.remove());
+        all.forEach(srv => {
+          const b = document.createElement("button");
+          b.className = "filter-btn" + extraClass;
+          b.setAttribute(attr, srv);
+          b.textContent = `Server ${srv}`;
+          box.appendChild(b);
+        });
+        box.querySelectorAll(`[${attr}]`).forEach(b => b.classList.toggle("active", b.getAttribute(attr) === current));
+      };
+      build("allianceServerFilters", "data-server", "", currentAllianceServer);
+      build("playerServerFilters", "data-player-srv", " player-srv-filter", currentPlayerServer);
+    }
+
+    document.getElementById("allianceServerFilters").addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-server]");
+      if (!btn) return;
+      currentAllianceServer = btn.dataset.server;
+      document.querySelectorAll("#allianceServerFilters [data-server]").forEach(b => b.classList.toggle("active", b === btn));
+      renderAlliancesTable();
     });
 
-    document.querySelectorAll("[data-player-srv]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll("[data-player-srv]").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        currentPlayerServer = btn.dataset.playerSrv;
-        renderPlayersTable(true);
-      });
+    document.getElementById("playerServerFilters").addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-player-srv]");
+      if (!btn) return;
+      currentPlayerServer = btn.dataset.playerSrv;
+      document.querySelectorAll("#playerServerFilters [data-player-srv]").forEach(b => b.classList.toggle("active", b === btn));
+      renderPlayersTable(true);
     });
 
     document.getElementById("allianceSearch").addEventListener("input", (e) => {
@@ -1674,6 +1721,14 @@
 
     document.getElementById("eventSelect").addEventListener("change", (e) => {
       currentEventId = e.target.value;
+      // Server numbers mean different things per event (e.g. S113 opponent vs cross-server), so start unfiltered
+      currentAllianceServer = "all";
+      currentPlayerServer = "all";
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.set("event", currentEventId);
+        window.history.replaceState({}, "", url.toString());
+      } catch (err) {}
       loadEventData(currentEventId);
     });
 
