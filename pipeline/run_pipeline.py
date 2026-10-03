@@ -19,7 +19,7 @@ from typing import List, Dict, Optional, Any, Set, Tuple
 
 from cleaner import clean_player_record, validate_dataset, consolidate_alliance_variants
 from processor import publish_event
-from screenshots import staging_dir, archive_screenshots
+from screenshots import staging_dir, archive_screenshots, SERVER_TZ
 from frame_parser import parse_frame, FrameResult
 from merge import ObservationStore, merge_rank
 from apparatchik_control import monitoring_paused, ApparatchikError
@@ -377,8 +377,9 @@ def capture_leaderboard(
     finished_at = datetime.now().astimezone()
     print(f"\nExtraction completed in {time.time()-t_start:.1f}s. Captured {len(final_merged)} total ranks.")
     capture_info = {
-        "started_at": started_at.isoformat(timespec="seconds"),
-        "finished_at": finished_at.isoformat(timespec="seconds"),
+        "timezone": "server time (UTC-2)",
+        "started_at": started_at.astimezone(SERVER_TZ).isoformat(timespec="seconds"),
+        "finished_at": finished_at.astimezone(SERVER_TZ).isoformat(timespec="seconds"),
         "started_at_utc": started_at.astimezone(timezone.utc).isoformat(timespec="seconds"),
         "finished_at_utc": finished_at.astimezone(timezone.utc).isoformat(timespec="seconds"),
         "duration_seconds": round(time.time() - t_start, 1),

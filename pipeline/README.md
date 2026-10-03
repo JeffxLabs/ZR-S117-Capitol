@@ -93,7 +93,7 @@ git push origin main
 * **`vision_ocr.swift`**: High-performance Swift worker using Apple's `VNRecognizeTextRequest` (`Vision` framework) for sub-300ms multilingual character recognition.
 * **`cleaner.py`**: Handles OCR text normalization, bracket repairs, server tag detection, and mathematical data integrity verification.
 * **`processor.py`**: Builds alliance rosters, aggregates server statistics, creates spreadsheet CSVs, JSON data models, and registers events into the GitHub Pages site manifest.
-* **`events/<id>/capture.json`**: Written after a live capture with the start/end time (local and UTC), duration, frame count and device. It is kept in the repo for record-keeping and is not loaded or shown by the dashboard. Reprocessing with `--from-file` leaves it unchanged.
+* **`events/<id>/capture.json`**: Written after a live capture with the start/end time in server time (UTC-2, the in-game "State Time") and UTC, duration, frame count and device. It is kept in the repo for record-keeping and is not loaded or shown by the dashboard. Reprocessing with `--from-file` leaves it unchanged.
 * **`screenshots.py`** / **`events/<id>/screenshots/`**: Every capture frame is saved full-size to `~/Library/Caches/s117-zroute-captures/<id>/` and compressed (720px WebP, ~50 KB) into `events/<id>/screenshots/`, listed in `capture.json`. Not shown on the dashboard.
 * **`tools/install_cleanup_agent.sh`**: Installs a LaunchAgent that deletes the local full-size frames after 3 days (`sh tools/install_cleanup_agent.sh [days]`, `--uninstall` to remove). Compressed copies in the repo are kept.
 

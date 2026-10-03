@@ -11,7 +11,10 @@ The local staging copies are deleted after a few days by the cleanup agent
 import os
 import shutil
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+
+# Game server time (shown in-game as "State Time"); capture times are recorded in it.
+SERVER_TZ = timezone(timedelta(hours=-2), "server (UTC-2)")
 
 LOCAL_CAPTURE_DIR = os.path.expanduser("~/Library/Caches/s117-zroute-captures")
 WIDTH = 720
@@ -49,7 +52,7 @@ def archive_screenshots(sources, repo_event_dir, subdir="screenshots"):
     entries = []
     for src, name, kind in sources:
         st = os.stat(src)
-        taken = datetime.fromtimestamp(st.st_mtime).astimezone()
+        taken = datetime.fromtimestamp(st.st_mtime, SERVER_TZ)
         dest = _compress_one(src, os.path.join(out_dir, name))
         entries.append({
             "file": os.path.relpath(dest, repo_event_dir),
