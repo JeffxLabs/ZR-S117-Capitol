@@ -142,6 +142,7 @@
     .tabs-bar { position: sticky; top: var(--sticky-top, var(--header-h)); z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); }
     .tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
     .tabs::-webkit-scrollbar { display: none; }
+    @media (max-width: 520px) { .tabs { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); padding-right: 36px; } }
     .tab { flex: none; scroll-snap-align: start; background: none; border: 0; border-bottom: 2px solid transparent; padding: 14px 14px 12px; font-weight: 600; color: var(--text-2); cursor: pointer; white-space: nowrap; }
     .tab:hover { color: var(--text); }
     .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--home-ink); }
@@ -151,7 +152,19 @@
     /* Cards, tiles, sections */
     .grid { display: grid; gap: 12px; }
     .tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); }
-    .two { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+    .two { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+    /* Headline tiles: widths follow content (big total, short counts, name) */
+    .kpis { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr) auto auto minmax(0, 1.1fr); }
+    .kpis > :nth-child(2), .kpis > :nth-child(3) { min-width: 110px; }
+    .kpis > :nth-child(2) .tile-label, .kpis > :nth-child(3) .tile-label { white-space: nowrap; }
+    .kpis .tile-value { white-space: nowrap; font-size: clamp(20px, 3vw, 30px); }
+    .kpis .tile-value.name { overflow: hidden; text-overflow: ellipsis; font-size: clamp(18px, 2.4vw, 24px); }
+    @media (max-width: 640px) {
+      .kpis { grid-template-columns: 1fr 1fr; }
+      .kpis > :nth-child(1), .kpis > :nth-child(4) { grid-column: 1 / -1; }
+      .kpis .tile-value { font-size: clamp(22px, 7vw, 28px); }
+      .kpis .tile-value.name { font-size: 22px; }
+    }
     .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; min-width: 0; color: var(--text); }
     .card h2, .card h3 { margin: 0 0 12px; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-2); }
     button.card { font: inherit; width: 100%; }
@@ -270,7 +283,7 @@
     .drawer .tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
     .drawer .tile-value { font-size: clamp(18px, 5vw, 22px); white-space: nowrap; }
     .drawer .card { padding: 14px; }
-    @media (max-width: 600px) { .drawer { border-left: 0; } }
+    @media (max-width: 760px) { .drawer { width: 100vw; border-left: 0; } }
 
     footer { border-top: 1px solid var(--line); padding-top: 20px; padding-bottom: calc(28px + env(safe-area-inset-bottom)); color: var(--text-3); font-size: 13px; }
     footer .langs { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 10px; }
@@ -708,7 +721,7 @@
         <button class="link-btn" data-goto="alliances" data-server="${esc(srv)}">${esc(t("view_all"))} →</button></div>`;
     };
     document.getElementById("view-overview").innerHTML =
-      `<div class="grid tiles">${tiles}</div>${balance}
+      `<div class="kpis">${tiles}</div>${balance}
        <div class="grid two section">${card(r.home, home, "home", r.homeRole)}${card(r.opp, opp, "opp", r.oppRole)}</div>
        <div class="grid two section">${topList(r.home, "home")}${topList(r.opp, "opp")}</div>`;
   }
