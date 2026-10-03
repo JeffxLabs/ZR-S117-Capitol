@@ -216,6 +216,8 @@
     .sub { display: block; font-size: 12.5px; color: var(--text-3); font-weight: 400; }
     .rank-cell { white-space: nowrap; }
     .ov-tip { cursor: help; text-decoration: underline dotted; text-decoration-color: var(--line-3); text-underline-offset: 3px; }
+    /* Touch screens: no hover, so the bracketed rank is tappable (bigger target, clearer underline) */
+    @media (hover: none) { .ov-tip { text-decoration-color: var(--text-3); padding: 6px 4px; margin: -6px -4px; } }
     .rank-cell .overall { color: var(--text-3); font-size: 12.5px; margin-left: 4px; }
     .more-row { display: flex; justify-content: center; padding: 14px; border-top: 1px solid var(--line); }
     .show-sm { display: none; }
@@ -471,7 +473,7 @@
 
   // ---------- small render helpers ----------
   // Bracketed number = overall rank across all servers (hover explains it)
-  const overall = (r, cls = "overall", style = "") => `<span class="${cls} ov-tip"${style ? ` style="${style}"` : ""} title="${esc(t("overall_tip"))}">(${r})</span>`;
+  const overall = (r, cls = "overall", style = "") => `<span class="${cls} ov-tip" tabindex="0" role="button"${style ? ` style="${style}"` : ""} title="${esc(t("overall_tip"))}" aria-label="${esc(t("overall_short", { n: r }))}">(${r})</span>`;
   const rankClass = r => r === 1 ? "m1" : r === 2 ? "m2" : r === 3 ? "m3" : "";
   function deltaHtml(cur, prev, { compact = false } = {}) {
     if (prev == null || cur == null) return "";
@@ -1039,7 +1041,18 @@
   gsr.addEventListener("click", e => { const b = e.target.closest(".sr-item"); if (b) pickSearch(+b.dataset.i); });
 
   // ---------- delegated interactions ----------
+  // Tap/click/Enter on a bracketed rank shows its explanation (phones have no hover)
+  let ovTimer;
+  function showOverallTip(el) {
+    const r = el.getBoundingClientRect();
+    showTip(esc(t("overall_tip")), r.left - 12, r.top);
+    clearTimeout(ovTimer); ovTimer = setTimeout(hideTip, 2500);
+  }
+  window.addEventListener("scroll", () => { clearTimeout(ovTimer); hideTip(); }, { passive: true, capture: true });
   document.addEventListener("click", e => {
+    const ov = e.target.closest(".ov-tip");
+    if (ov) { e.preventDefault(); showOverallTip(ov); return; }   // don't open the row's profile
+    if (tip.style.display === "block" && !e.target.closest(".chart")) hideTip();
     if (!e.target.closest(".search")) closeSearch();
     const c = e.target.closest("[data-open-c]"); if (c) { openCommander(c.dataset.openC); return; }
     const a = e.target.closest("[data-open-a]"); if (a) { openAlliance(a.dataset.openA); return; }
@@ -1051,6 +1064,7 @@
   });
   document.addEventListener("keydown", e => {
     if (e.key === "Escape" && drawer.classList.contains("open")) closeDrawer();
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches(".ov-tip")) { e.preventDefault(); showOverallTip(e.target); return; }
     if ((e.key === "Enter" || e.key === " ") && e.target.matches("tr[data-open-c], tr[data-open-a]")) { e.preventDefault(); e.target.click(); }
   });
   document.getElementById("drawerClose").addEventListener("click", () => closeDrawer());
