@@ -11,9 +11,14 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <!-- Offline/Local Fallback Scripts -->
-  <script src="events/i18n.js?v=20260919c"></script>
-  <script src="events/manifest.js?v=20260919c"></script>
-  <script src="events/2026-09-19-s117-vs-s119/event_data.js?v=20260919c"></script>
+  <script src="events/i18n.js?v=20261003a"></script>
+  <script src="events/manifest.js?v=20261003a"></script>
+  <script>
+    // Preload every event listed in the manifest (offline/file:// support); new events need no edits here.
+    (window.EVENTS_MANIFEST || []).forEach(function (ev) {
+      document.write('<script src="events/' + ev.id + '/event_data.js?v=' + ev.date + '"><\/script>');
+    });
+  </script>
   <style>
     :root {
       --bg-dark: #070a12;
@@ -730,9 +735,7 @@
       <div class="header-controls">
         <div class="event-selector-wrap">
           <label for="eventSelect" style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 600;" data-i18n="event_label">Event:</label>
-          <select id="eventSelect" class="event-select">
-            <option value="2026-09-19-s117-vs-s119" data-i18n="event_option_1">2026-09-19: Capitol War (S117 vs S119)</option>
-          </select>
+          <select id="eventSelect" class="event-select"></select>
         </div>
         <div class="lang-selector-wrap">
           <select id="langSelect" class="lang-select" aria-label="Language">
@@ -1097,7 +1100,23 @@
 
   <script>
     // State
-    let currentEventId = "2026-09-19-s117-vs-s119";
+    const EVENT_LIST = (window.EVENTS_MANIFEST || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+    const requestedEvent = new URLSearchParams(location.search).get("event");
+    let currentEventId = (EVENT_LIST.find(e => e.id === requestedEvent) || EVENT_LIST[0] || { id: "2026-09-19-s117-vs-s119" }).id;
+
+    function populateEventSelect() {
+      const sel = document.getElementById("eventSelect");
+      if (!sel) return;
+      const tpl = t("event_option_1") || "2026-09-19: Capitol War (S117 vs S119)";
+      sel.innerHTML = "";
+      EVENT_LIST.forEach(ev => {
+        const o = document.createElement("option");
+        o.value = ev.id;
+        o.textContent = tpl.replace("2026-09-19", ev.date).replace("S117", "S" + ev.home_server).replace("S119", "S" + ev.opponent_server);
+        sel.appendChild(o);
+      });
+      sel.value = currentEventId;
+    }
     let eventData = { meta: {}, alliances: [], rankings: [] };
     let playerPage = 1;
     const PLAYERS_PER_PAGE = 100;
@@ -1221,6 +1240,7 @@
 
     function applyTranslations() {
       document.documentElement.lang = currentLang;
+      populateEventSelect();
       document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
         const val = t(key);
