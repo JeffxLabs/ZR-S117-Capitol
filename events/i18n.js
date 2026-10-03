@@ -118,7 +118,11 @@ window.I18N = {
     "copy_link": "Copy link",
     "link_copied": "Link copied",
     "overall_tip": "Overall rank, all servers",
-    "overall_short": "#{n} overall"
+    "overall_short": "#{n} overall",
+    "vs_prev_day": "vs {date} ({day})",
+    "compare_note_prev": "Changes compare with the previous Capitol Conquest day: {date} ({day}).",
+    "compare_note_side": "This event was on the other side ({day}), so point levels differ.",
+    "side_summary_note": "Attacking and defending days run at different point levels; compare like with like."
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -238,7 +242,11 @@ window.I18N = {
     "copy_link": "Copier le lien",
     "link_copied": "Lien copié",
     "overall_tip": "Rang général, tous serveurs",
-    "overall_short": "#{n} au général"
+    "overall_short": "#{n} au général",
+    "vs_prev_day": "vs {date} ({day})",
+    "compare_note_prev": "Les variations comparent avec la précédente Conquête du Capitole : {date} ({day}).",
+    "compare_note_side": "Cet événement était un {day} : les niveaux de points diffèrent.",
+    "side_summary_note": "Les jours d'attaque et de défense n'ont pas le même niveau de points ; comparez à camp égal."
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -358,7 +366,11 @@ window.I18N = {
     "copy_link": "Копировать ссылку",
     "link_copied": "Ссылка скопирована",
     "overall_tip": "Общее место, все серверы",
-    "overall_short": "#{n} в общем"
+    "overall_short": "#{n} в общем",
+    "vs_prev_day": "к {date} ({day})",
+    "compare_note_prev": "Изменения — относительно предыдущего дня Захвата Капитолия: {date} ({day}).",
+    "compare_note_side": "Это событие — {day}, поэтому уровень очков отличается.",
+    "side_summary_note": "В дни атаки и обороны уровень очков разный; сравнивайте однотипные дни."
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -478,7 +490,11 @@ window.I18N = {
     "copy_link": "Bağlantıyı kopyala",
     "link_copied": "Bağlantı kopyalandı",
     "overall_tip": "Genel sıra, tüm sunucular",
-    "overall_short": "genel #{n}"
+    "overall_short": "genel #{n}",
+    "vs_prev_day": "{date} karşısında ({day})",
+    "compare_note_prev": "Değişimler önceki Başkent Fethi günüyle karşılaştırılır: {date} ({day}).",
+    "compare_note_side": "Bu etkinlik bir {day} idi; puan seviyeleri farklıdır.",
+    "side_summary_note": "Saldırı ve savunma günlerinde puan seviyeleri farklıdır; benzer günleri karşılaştırın."
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -598,7 +614,11 @@ window.I18N = {
     "copy_link": "Kopiuj link",
     "link_copied": "Skopiowano link",
     "overall_tip": "Miejsce ogólne, wszystkie serwery",
-    "overall_short": "#{n} ogólnie"
+    "overall_short": "#{n} ogólnie",
+    "vs_prev_day": "vs {date} ({day})",
+    "compare_note_prev": "Zmiany porównywane z poprzednim dniem Podboju Kapitolu: {date} ({day}).",
+    "compare_note_side": "To wydarzenie to {day}, więc poziom punktów jest inny.",
+    "side_summary_note": "Dni ataku i obrony mają różny poziom punktów; porównuj podobne dni."
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -718,7 +738,11 @@ window.I18N = {
     "copy_link": "Copiar enlace",
     "link_copied": "Enlace copiado",
     "overall_tip": "Puesto general, todos los servidores",
-    "overall_short": "#{n} general"
+    "overall_short": "#{n} general",
+    "vs_prev_day": "vs {date} ({day})",
+    "compare_note_prev": "Los cambios se comparan con la anterior Conquista del Capitolio: {date} ({day}).",
+    "compare_note_side": "Este evento fue un {day}, así que el nivel de puntos difiere.",
+    "side_summary_note": "Los días de ataque y de defensa tienen niveles de puntos distintos; compara días equivalentes."
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -838,7 +862,11 @@ window.I18N = {
     "copy_link": "Copiar ligação",
     "link_copied": "Ligação copiada",
     "overall_tip": "Posição geral, todos os servidores",
-    "overall_short": "#{n} geral"
+    "overall_short": "#{n} geral",
+    "vs_prev_day": "vs {date} ({day})",
+    "compare_note_prev": "As variações comparam com a Conquista do Capitólio anterior: {date} ({day}).",
+    "compare_note_side": "Este evento foi um {day}, por isso o nível de pontos difere.",
+    "side_summary_note": "Dias de ataque e de defesa têm níveis de pontos diferentes; compare dias equivalentes."
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -958,7 +986,11 @@ window.I18N = {
     "copy_link": "Link kopieren",
     "link_copied": "Link kopiert",
     "overall_tip": "Gesamtrang, alle Server",
-    "overall_short": "#{n} gesamt"
+    "overall_short": "#{n} gesamt",
+    "vs_prev_day": "ggü. {date} ({day})",
+    "compare_note_prev": "Änderungen beziehen sich auf den vorherigen Kapitol-Eroberungstag: {date} ({day}).",
+    "compare_note_side": "Dieses Event war ein {day}, daher unterscheidet sich das Punkteniveau.",
+    "side_summary_note": "Angriffs- und Verteidigungstage haben unterschiedliche Punkteniveaus; Gleiches mit Gleichem vergleichen."
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -1078,7 +1110,11 @@ window.I18N = {
     "copy_link": "링크 복사",
     "link_copied": "링크 복사됨",
     "overall_tip": "전체 순위 (모든 서버)",
-    "overall_short": "전체 #{n}"
+    "overall_short": "전체 #{n}",
+    "vs_prev_day": "{date} 대비 ({day})",
+    "compare_note_prev": "변화는 이전 캐피톨 정복일과 비교합니다: {date} ({day}).",
+    "compare_note_side": "이번 이벤트는 {day}이므로 포인트 수준이 다릅니다.",
+    "side_summary_note": "공격일과 수비일은 포인트 수준이 다르므로 같은 유형끼리 비교하세요."
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -1198,7 +1234,11 @@ window.I18N = {
     "copy_link": "复制链接",
     "link_copied": "链接已复制",
     "overall_tip": "总排名（所有服务器）",
-    "overall_short": "总排名 #{n}"
+    "overall_short": "总排名 #{n}",
+    "vs_prev_day": "对比 {date}（{day}）",
+    "compare_note_prev": "变化与上一个国会大厦征服日比较：{date}（{day}）。",
+    "compare_note_side": "本次活动是{day}，积分水平不同。",
+    "side_summary_note": "进攻日和防守日的积分水平不同，请同类比较。"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};

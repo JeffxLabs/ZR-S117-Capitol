@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="events/i18n.js?v=db7185c9a9"></script>
+  <script src="events/i18n.js?v=57c2433766"></script>
   <script src="events/manifest.js?v=1b0547f6eb"></script>
   <script>
     // Preload every event in the manifest (offline/file:// support); new events need no edits here.
@@ -420,21 +420,17 @@
     const r = roles(m);
     return String(server) === r.home ? r.homeRole : String(server) === r.opp ? r.oppRole : null;
   }
-  // Points run systematically higher or lower on attacking vs defending days, so points-based changes
-  // only compare with the most recent earlier event where that server fought on the SAME side.
-  // Rank/position changes (relative within a day) compare with the immediately previous event.
-  function sameSideBaseline(eventId, server) {
-    const i = EVENTS.findIndex(e => e.id === eventId); if (i < 0) return null;
-    const side = sideOf(EVENTS[i], server); if (!side) return null;
-    for (let j = i - 1; j >= 0; j--) if (store[EVENTS[j].id] && sideOf(EVENTS[j], server) === side) return EVENTS[j];
-    return null;
+  // Changes always compare with the previously logged Capitol Conquest day. Attacking and defending
+  // days run at different point levels, so every comparison names the side of the day it compares with.
+  function compareBaseline(eventId) {
+    const prev = prevEventOf(eventId);
+    return prev && store[prev.id] ? prev : null;
   }
   const dayWord = side => side ? t("day_" + side) : "";
-  function vsSameSide(eventId, server, base) {
-    const side = sideOf(EVENTS.find(e => e.id === eventId) || {}, server);
-    if (!side) return "";
-    // Without a same-side baseline the tile simply shows no comparison line
-    return base ? `<span class="dim">${esc(t("vs_last_day", { day: dayWord(side), date: fmtDateShort(base.date) }))}</span>` : "";
+  function vsLabel(eventId, server, base) {
+    if (!base) return "";
+    const side = sideOf(base, server);
+    return `<span class="dim">${esc(t("vs_prev_day", { date: fmtDateShort(base.date), day: side ? dayWord(side) : "—" }))}</span>`;
   }
   const sideHtml = side => side ? `<span class="side"><span aria-hidden="true">${roleIcon(side)}</span>${esc(t("role_" + side))}</span>` : "";
   const sideShort = side => side ? `${roleIcon(side)} ${t("role_" + side)}` : "";
@@ -655,12 +651,12 @@
   // ---------- overview ----------
   function renderOverview() {
     const d = ev(), m = d.meta, r = roles();
-    const base = sameSideBaseline(state.eventId, r.home), pm = base && store[base.id].meta;
+    const base = compareBaseline(state.eventId), pm = base && store[base.id].meta;
     const servers = m.servers || {};
     const empty = { points: 0, players: 0, point_share_pct: 0 };
     const home = servers[r.home] || empty, opp = servers[r.opp] || empty;
     const others = r.others.reduce((a, k) => ({ points: a.points + servers[k].points, pct: a.pct + servers[k].point_share_pct }), { points: 0, pct: 0 });
-    const vsPrev = vsSameSide(state.eventId, r.home, base);
+    const vsPrev = vsLabel(state.eventId, r.home, base);
     const top = d.rankings[0];
     const tiles = [
       tile(t("kpi_points"), fmt(m.total_points), pm ? `${deltaHtml(m.total_points, pm.total_points, { compact: true })} ${vsPrev}` : vsPrev),
@@ -683,14 +679,15 @@
     const card = (srv, s, cls, role) => {
       const topA = d.alliances.find(a => a.server === srv);
       const avg = s.players ? Math.round(s.points / s.players) : 0;
-      const sBase = sameSideBaseline(state.eventId, srv), sm = sBase && store[sBase.id].meta;
+      // Only compare a server with the previous event if it fought on a side there (not as a few cross-server players)
+      const sBase = compareBaseline(state.eventId), sm = sBase && sideOf(sBase, srv) && store[sBase.id].meta;
       const prevS = sm && sm.servers && sm.servers[srv];
       return `<div class="card server-card ${cls}">
         <h3><span>${esc(t("server_n", { n: srv }))}${role ? ` · ${esc(t("role_" + role))}` : ""}</span>${serverPill(srv)}</h3>
         <div class="stats">
           <div class="stat"><div class="l">${esc(t("total_points"))}</div><div class="v num">${fmt(s.points)}</div><div class="l">${esc(t("share_of_points", { p: fmtPct(s.point_share_pct / 100) }))}</div></div>
           <div class="stat"><div class="l">${esc(t("participants"))}</div><div class="v num">${fmt(s.players)}</div><div class="l">${esc(t("share_of_roster", { p: fmtPct(m.total_players ? s.players / m.total_players : 0) }))}</div></div>
-          <div class="stat"><div class="l">${esc(t("avg_per_player"))}</div><div class="v num">${fmt(avg)}</div>${prevS && prevS.players ? `<div class="l">${deltaHtml(avg, Math.round(prevS.points / prevS.players), { compact: true })} ${vsSameSide(state.eventId, srv, sBase)}</div>` : ""}</div>
+          <div class="stat"><div class="l">${esc(t("avg_per_player"))}</div><div class="v num">${fmt(avg)}</div>${prevS && prevS.players ? `<div class="l">${deltaHtml(avg, Math.round(prevS.points / prevS.players), { compact: true })} ${vsLabel(state.eventId, srv, sBase)}</div>` : ""}</div>
           <div class="stat"><div class="l">${esc(t("top_alliance"))}</div>${topA ? `<button class="link-btn" style="color:var(--gold);font-weight:650;text-decoration:none;padding:0;font-size:17px;text-align:left" data-open-a="${esc(aKey(topA))}">${esc(topA.alliance)}</button><div class="l num">${fmtCompact(topA.total_points)} ${esc(t("pts"))}</div>` : "—"}</div>
         </div></div>`;
     };
@@ -724,14 +721,14 @@
   }
   function prevNote() {
     const prev = prevEventOf(state.eventId); if (!prev || !store[prev.id]) return "";
-    const r = roles(), side = sideOf(EVENTS.find(e => e.id === state.eventId), r.home), base = sameSideBaseline(state.eventId, r.home);
-    const pts = base ? t("compare_note_pts", { day: dayWord(side), date: fmtDate(base.date) }) : t("compare_note_none", { day: dayWord(side) });
-    const rank = t("compare_note_rank", { date: fmtDate(prev.date), day: dayWord(sideOf(prev, r.home)) });
-    return `<p class="note" style="margin:0 0 10px">S${esc(r.home)}: ${esc(pts)} ${esc(rank)}</p>`;
+    const r = roles(), side = sideOf(EVENTS.find(e => e.id === state.eventId), r.home), prevSide = sideOf(prev, r.home);
+    let txt = t("compare_note_prev", { date: fmtDate(prev.date), day: dayWord(prevSide) });
+    if (side && prevSide && side !== prevSide) txt += " " + t("compare_note_side", { day: dayWord(side) });
+    return `<p class="note" style="margin:0 0 10px">S${esc(r.home)}: ${esc(txt)}</p>`;
   }
   // Points change for an entity against its same-side baseline (empty when there is none)
   function sameSidePointsDelta(byEvKind, key, server, value, field) {
-    const base = sameSideBaseline(state.eventId, server); if (!base || !index) return "";
+    const base = compareBaseline(state.eventId); if (!base || !index) return "";
     const v = (index[byEvKind][key] || {})[base.id];
     return v ? deltaHtml(value, v[field], { compact: true }) : "";
   }
@@ -826,7 +823,7 @@
     const valRow = (label, vals) => `<tr><td>${esc(label)}</td>${vals.map(v => `<td class="r num">${fmt(v)}</td>`).join("")}</tr>`;
 
     const lastId = loaded[loaded.length - 1].id;
-    const baseE = sameSideBaseline(lastId, homeSrv), baseIdx = baseE ? loaded.findIndex(e => e.id === baseE.id) : -1;
+    const baseE = compareBaseline(lastId), baseIdx = baseE ? loaded.findIndex(e => e.id === baseE.id) : -1;
     const lastSide = sideOf(loaded[loaded.length - 1], homeSrv);
     const bySide = ["attacking", "defending"].map(side => {
       const evs = loaded.filter(e => sideOf(e, e.home_server) === side);
@@ -857,9 +854,9 @@
       <div class="card section"><h2>${esc(t("trends_by_side", { home: homeSrv }))}</h2>
         <div class="table-wrap" style="border:0"><table><thead><tr><th>${esc(t("col_side"))}</th><th class="r">${esc(t("side_events"))}</th><th class="r">${esc(t("total_points"))}</th><th class="r">${esc(t("participants"))}</th><th class="r hide-sm">${esc(t("avg_per_player"))}</th></tr></thead>
         <tbody>${bySide.map(b => `<tr><td>${sideHtml(b.side)}</td><td class="r num">${fmt(b.n)}</td><td class="r num">${b.pts != null ? fmt(b.pts) : "—"}</td><td class="r num">${b.ppl != null ? fmt(b.ppl) : "—"}</td><td class="r num hide-sm">${b.per != null ? fmt(b.per) : "—"}</td></tr>`).join("")}</tbody></table></div>
-        <p class="note">${esc(baseE ? t("compare_note_pts", { day: dayWord(lastSide), date: fmtDate(baseE.date) }) : t("compare_note_none", { day: dayWord(lastSide) }))}</p></div>
+        <p class="note">${esc(t("side_summary_note"))}</p></div>
       <div class="card section trend-card"><h2>${esc(t("trends_top_alliances", { home: homeSrv }))}</h2>
-        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_alliance"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_pts_same_side"))}</th></tr></thead><tbody>
+        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_alliance"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead><tbody>
         ${allyRows.map(r => { const a = r.vals[r.vals.length - 1], b = baseIdx >= 0 ? r.vals[baseIdx] : null;
           return `<tr class="clickable" data-open-a="${esc(r.k)}" tabindex="0"><td class="name-cell">${esc(r.name)}</td>${r.vals.map(v => v == null ? `<td class="r dim">—</td>` :
           `<td class="r num">${fmtCompact(v)}<span class="inline-bar"><span style="width:${(v / maxA * 100).toFixed(1)}%;background:var(--home)"></span></span></td>`).join("")}
@@ -948,8 +945,8 @@
     document.getElementById("drawerBody").innerHTML = `
       <div class="grid tiles">
         ${tile(t("this_event"), cur ? `#${cur.server_rank} ${overall(cur.rank, "dim", "font-size:15px")}` : "—", cur ? (prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : esc(t("col_server_rank"))) : esc(t("not_placed")))}
-        ${tile(t("col_points"), cur ? fmt(cur.points) : "—", cur ? (() => { const b = sameSideBaseline(state.eventId, any.server), bv = b && byEv[b.id];
-            return EVENTS.length > 1 ? `${bv ? deltaHtml(cur.points, bv.points, { compact: true }) + " " : ""}${vsSameSide(state.eventId, any.server, bv ? b : null)}` : ""; })() : "")}
+        ${tile(t("col_points"), cur ? fmt(cur.points) : "—", cur ? (() => { const b = compareBaseline(state.eventId), bv = b && byEv[b.id];
+            return bv ? `${deltaHtml(cur.points, bv.points, { compact: true })} ${vsLabel(state.eventId, any.server, b)}` : ""; })() : "")}
         ${tile(t("col_share"), share || "—", "")}
         ${tile(t("events_played"), `${played.length} / ${hist.length}`, best ? `${esc(t("best_rank"))}: #${best}` : "")}
         ${sideTiles(sideAverages(hist, any.server, v => v.points))}
@@ -982,7 +979,7 @@
     document.getElementById("drawerBody").innerHTML = `
       <div class="grid tiles">
         ${tile(t("this_event"), cur ? `#${cur.server_rank} ${overall(cur.rank, "dim", "font-size:15px")}` : "—", cur && prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : "")}
-        ${(() => { const b = sameSideBaseline(state.eventId, any.server), bv = b && byEv[b.id], note = EVENTS.length > 1 ? vsSameSide(state.eventId, any.server, bv ? b : null) : "";
+        ${(() => { const b = compareBaseline(state.eventId), bv = b && byEv[b.id], note = bv ? vsLabel(state.eventId, any.server, b) : "";
           const sub = (field, compact) => cur ? `${bv ? deltaHtml(cur[field], bv[field], { compact }) + " " : ""}${note}` : "";
           return tile(t("col_total"), cur ? fmt(cur.total_points) : "—", sub("total_points", true))
             + tile(t("col_members"), cur ? fmt(cur.members_count) : "—", sub("members_count", false))
