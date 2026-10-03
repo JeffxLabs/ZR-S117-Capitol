@@ -2,1800 +2,931 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S117 Z Route: Redemption — Capitol Event War Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <title>S117 Capitol War Intel</title>
+  <meta name="description" content="Capitol War rankings, alliances and cross-event trends for Server 117 in Z Route: Redemption.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <!-- Offline/Local Fallback Scripts -->
-  <script src="events/i18n.js?v=20261003a"></script>
-  <script src="events/manifest.js?v=20261003a"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="events/i18n.js?v=20261003b"></script>
+  <script src="events/manifest.js?v=20261003b"></script>
   <script>
-    // Preload every event listed in the manifest (offline/file:// support); new events need no edits here.
+    // Preload every event in the manifest (offline/file:// support); new events need no edits here.
     (window.EVENTS_MANIFEST || []).forEach(function (ev) {
-      document.write('<script src="events/' + ev.id + '/event_data.js?v=' + ev.date + '"><\/script>');
+      document.write('<script src="events/' + ev.id + '/event_data.js?v=' + ev.date + 'b"><\/script>');
     });
   </script>
   <style>
+    /* OLED theme: true black canvas, near-black surfaces, hairline borders, no glows */
     :root {
-      --bg-dark: #070a12;
-      --bg-card: #0e1424;
-      --bg-card-hover: #151d32;
-      --bg-card-alt: #121a2d;
-      --border-color: #1f2a44;
-      --border-light: #2b395c;
-      --text-main: #f1f5f9;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
-      --s117-cyan: #06b6d4;
-      --s117-glow: rgba(6, 182, 212, 0.2);
-      --s119-rose: #f43f5e;
-      --s119-glow: rgba(244, 63, 94, 0.2);
-      --s113-purple: #a855f7;
-      --gold: #f59e0b;
-      --silver: #94a3b8;
-      --bronze: #d97706;
-      --accent: #38bdf8;
-      --font-display: 'Chakra Petch', sans-serif;
-      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
+      color-scheme: dark;
+      --bg: #000000;
+      --surface: #0a0a0a;
+      --surface-2: #121212;
+      --line: #1f1f1f;
+      --line-2: #2e2e2e;
+      --text: #f2f2f2;
+      --text-2: #a3a3a3;
+      --text-3: #6e6e6e;
+      /* series marks (validated on #000: lightness band, chroma, CVD, contrast) */
+      --home: #1aa3c2;
+      --opp: #e5484d;
+      --cross: #9b7bea;
+      /* chrome accents for text-sized UI (pills, headings) */
+      --home-ink: #5fd0e8;
+      --opp-ink: #ff8a8e;
+      --cross-ink: #c3b1f6;
+      --gold: #f5b942;
+      --up: #3fb950;
+      --down: #f0605a;
+      --radius: 10px;
+      --header-h: 56px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-display: 'Chakra Petch', var(--font);
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: var(--font-body);
-      line-height: 1.5;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden;
+      margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 var(--font);
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    }
+    a { color: var(--home-ink); }
+    button, input, select { font: inherit; color: inherit; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding-left: clamp(12px, 3vw, 24px); padding-right: clamp(12px, 3vw, 24px); }
+    .num { font-variant-numeric: tabular-nums; }
+    .muted { color: var(--text-2); }
+    .dim { color: var(--text-3); }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    :focus-visible { outline: 2px solid var(--home-ink); outline-offset: 2px; border-radius: 4px; }
+
+    /* Header */
+    .site-header { position: sticky; top: 0; z-index: 40; background: rgba(0,0,0,.92); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+    .header-row { display: flex; align-items: center; gap: 10px 12px; min-height: var(--header-h); flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); min-width: 0; flex: 1 1 auto; }
+    .brand-mark { width: 32px; height: 32px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--line-2); display: grid; place-items: center; font: 700 14px var(--font-display); color: var(--home-ink); flex: none; }
+    .brand-text { min-width: 0; display: block; }
+    .brand-name { display: block; font: 700 16px/1.15 var(--font-display); letter-spacing: .02em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .brand-sub { display: block; font-size: 12px; color: var(--text-3); }
+    .controls { display: flex; gap: 8px; align-items: center; flex: 0 1 auto; min-width: 0; }
+    .select, .input {
+      height: 38px; background: var(--surface); border: 1px solid var(--line-2); border-radius: 8px; padding: 0 12px; color: var(--text); min-width: 0;
+    }
+    .select { padding-right: 30px; appearance: none; -webkit-appearance: none; cursor: pointer; max-width: 100%; text-overflow: ellipsis;
+      background-image: linear-gradient(45deg, transparent 50%, var(--text-2) 50%), linear-gradient(135deg, var(--text-2) 50%, transparent 50%);
+      background-position: calc(100% - 16px) 16px, calc(100% - 11px) 16px; background-size: 5px 5px; background-repeat: no-repeat; }
+    .select:hover, .input:hover { border-color: #3d3d3d; }
+    .search { position: relative; }
+    .search .input { width: clamp(200px, 22vw, 300px); padding-left: 34px; }
+    .search svg { position: absolute; left: 11px; top: 11px; color: var(--text-3); pointer-events: none; }
+    .search-results { position: absolute; top: 44px; right: 0; min-width: 100%; width: max(100%, 340px); max-width: calc(100vw - 24px); background: var(--surface); border: 1px solid var(--line-2); border-radius: 10px; padding: 6px; display: none; z-index: 60; max-height: 60vh; overflow: auto; }
+    .search-results.open { display: block; }
+    .sr-item { display: flex; gap: 10px; align-items: center; width: 100%; padding: 8px 10px; border-radius: 6px; background: none; border: 0; text-align: left; cursor: pointer; }
+    .sr-item[aria-selected="true"], .sr-item:hover { background: var(--surface-2); }
+    .sr-kind { font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; margin-left: auto; flex: none; }
+    @media (max-width: 860px) {
+      .controls { flex: 1 1 100%; flex-wrap: wrap; }
+      .search { flex: 1 1 100%; }
+      .search .input { width: 100%; }
+      .search-results { left: 0; right: 0; width: auto; }
+      #eventSelect { flex: 1 1 0; }
+      #langSelect { flex: 0 0 auto; }
+      .brand-sub { display: none; }
     }
 
-    /* Top Nav */
-    header {
-      background: rgba(14, 20, 36, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      padding: 0.75rem 1.5rem;
-    }
+    /* Event bar & tabs */
+    .event-bar { padding-top: clamp(18px, 3vw, 28px); padding-bottom: 14px; }
+    .event-title { font: 700 clamp(22px, 4vw, 32px)/1.15 var(--font-display); text-transform: uppercase; letter-spacing: .01em; margin: 0 0 10px; overflow-wrap: anywhere; }
+    .event-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .pill { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 600; border: 1px solid var(--line-2); color: var(--text-2); white-space: nowrap; background: none; }
+    .pill-home { color: var(--home-ink); border-color: rgba(26,163,194,.45); }
+    .pill-opp { color: var(--opp-ink); border-color: rgba(229,72,77,.45); }
+    .pill-cross { color: var(--cross-ink); border-color: rgba(155,123,234,.45); }
+    .pill-xs { font-size: 11px; padding: 0 6px; margin-right: 4px; vertical-align: 1px; }
+    .pill-new { color: var(--gold); border-color: rgba(245,185,66,.4); font-size: 11px; padding: 1px 7px; }
+    .tabs-bar { position: sticky; top: var(--sticky-top, var(--header-h)); z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); }
+    .tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab { flex: none; scroll-snap-align: start; background: none; border: 0; border-bottom: 2px solid transparent; padding: 14px 14px 12px; font-weight: 600; color: var(--text-2); cursor: pointer; white-space: nowrap; }
+    .tab:hover { color: var(--text); }
+    .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--home-ink); }
+    main { padding-top: 20px; padding-bottom: 48px; }
+    .view[hidden] { display: none; }
 
-    .header-inner {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
+    /* Cards, tiles, sections */
+    .grid { display: grid; gap: 12px; }
+    .tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); }
+    .two { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; min-width: 0; color: var(--text); }
+    .card h2, .card h3 { margin: 0 0 12px; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-2); }
+    button.card { font: inherit; width: 100%; }
+    button.card:hover { border-color: var(--line-2); background: var(--surface-2); }
+    .section { margin-top: 16px; }
+    .tile-label { font-size: 13px; color: var(--text-2); }
+    .tile-value { font-size: clamp(20px, 5.2vw, 30px); font-weight: 650; letter-spacing: -.01em; margin: 4px 0 2px; overflow-wrap: anywhere; line-height: 1.2; }
+    .tile-value.name { color: var(--gold); font-size: clamp(18px, 4.6vw, 24px); }
+    .tile-sub { font-size: 13px; color: var(--text-3); }
+    .delta { font-size: 13px; font-weight: 600; white-space: nowrap; }
+    .delta.up { color: var(--up); } .delta.down { color: var(--down); } .delta.flat { color: var(--text-3); }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
+    /* Points balance meter */
+    .balance-legend { display: flex; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; margin-bottom: 10px; font-size: 14px; }
+    .key { display: inline-flex; align-items: center; gap: 8px; }
+    .key i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; flex: none; }
+    .meter { display: flex; height: 14px; gap: 2px; border-radius: 4px; overflow: hidden; background: var(--surface-2); }
+    .meter span { display: block; height: 100%; }
 
-    .badge-radar {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 2rem;
-      height: 2rem;
-      background: linear-gradient(135deg, #0284c7, #0369a1);
-      border-radius: 0.5rem;
-      color: #fff;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1rem;
-      box-shadow: 0 0 15px var(--s117-glow);
-    }
+    /* Server cards */
+    .server-card { border-left: 3px solid var(--line-2); }
+    .server-card.home { border-left-color: var(--home); }
+    .server-card.opp { border-left-color: var(--opp); }
+    .server-card h3 { display: flex; justify-content: space-between; align-items: center; gap: 8px; color: var(--text); font-size: 14px; }
+    .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 16px; }
+    .stat .v { font-size: 20px; font-weight: 650; overflow-wrap: anywhere; }
+    .stat .l { font-size: 12.5px; color: var(--text-3); }
 
-    .brand-title {
-      font-family: var(--font-display);
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #fff;
-    }
+    /* Ranked lists (top 10) */
+    .rank-list { list-style: none; margin: 0 0 6px; padding: 0; }
+    .rank-list li button { display: grid; grid-template-columns: 2.6em minmax(0, 1fr) auto; gap: 4px 10px; align-items: center; width: 100%; padding: 8px 4px; background: none; border: 0; border-top: 1px solid var(--line); text-align: left; cursor: pointer; }
+    .rank-list li:first-child button { border-top: 0; }
+    .rank-list li button:hover { background: var(--surface-2); }
+    .rank-list .bar { grid-column: 2 / 4; height: 4px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
+    .rank-list .bar span { display: block; height: 100%; border-radius: 0 2px 2px 0; }
+    .rk { font-weight: 650; color: var(--text-2); }
+    .rk.m1 { color: var(--gold); } .rk.m2 { color: #cfd6de; } .rk.m3 { color: #d9935b; }
+    .ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 
-    .brand-subtitle {
-      font-size: 0.75rem;
-      color: var(--text-dim);
-      letter-spacing: 0.05em;
-    }
-
-    .header-controls {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-
-    .event-selector-wrap,
-    .lang-selector-wrap {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .event-select,
-    .lang-select {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      color: var(--text-main);
-      padding: 0.45rem 0.75rem;
-      border-radius: 0.375rem;
-      font-family: var(--font-body);
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .event-select:focus,
-    .lang-select:focus {
-      border-color: var(--accent);
-    }
-
-    /* Container */
-    main {
-      flex: 1;
-      max-width: 1400px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-
-    /* Hero Banner */
-    .hero {
-      background: linear-gradient(180deg, #0f172a 0%, #090d16 100%);
-      border: 1px solid var(--border-color);
-      border-radius: 0.75rem;
-      padding: 1.75rem;
-      margin-bottom: 1.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at 50% 30%, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .hero-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-title {
-      font-family: var(--font-display);
-      font-size: 1.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      color: #fff;
-    }
-
-    .hero-desc {
-      color: var(--text-muted);
-      font-size: 0.925rem;
-      margin-top: 0.25rem;
-    }
-
-    .hero-tags {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .tag-badge {
-      font-size: 0.75rem;
-      font-family: var(--font-mono);
-      font-weight: 600;
-      padding: 0.25rem 0.6rem;
-      border-radius: 9999px;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .tag-home {
-      background: rgba(6, 182, 212, 0.15);
-      color: #22d3ee;
-      border: 1px solid rgba(6, 182, 212, 0.3);
-    }
-
-    .tag-visiting {
-      background: rgba(244, 63, 94, 0.15);
-      color: #fb7185;
-      border: 1px solid rgba(244, 63, 94, 0.3);
-    }
-
-    /* Key Stats Grid */
-    .kpi-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .kpi-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 0.5rem;
-      padding: 1.1rem;
-      position: relative;
-      transition: transform 0.2s, border-color 0.2s;
-    }
-
-    .kpi-card:hover {
-      border-color: var(--border-light);
-      transform: translateY(-2px);
-    }
-
-    .kpi-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-dim);
-      margin-bottom: 0.25rem;
-    }
-
-    .kpi-val {
-      font-family: var(--font-mono);
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    .kpi-sub {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-top: 0.25rem;
-    }
-
-    /* War Balance Meter */
-    .war-meter-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 0.5rem;
-      padding: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .war-meter-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.75rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    .bar-container {
-      height: 1.5rem;
-      border-radius: 0.375rem;
-      background: #1e293b;
-      overflow: hidden;
-      display: flex;
-      position: relative;
-    }
-
-    .bar-seg {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #fff;
-      transition: width 0.6s ease;
-    }
-
-    .seg-s119 {
-      background: linear-gradient(90deg, #e11d48, #f43f5e);
-    }
-
-    .seg-s117 {
-      background: linear-gradient(90deg, #0891b2, #06b6d4);
-    }
-
-    .seg-s113 {
-      background: linear-gradient(90deg, #9333ea, #a855f7);
-    }
-
-    /* Tabs */
-    .tabs-nav {
-      display: flex;
-      gap: 0.5rem;
-      border-bottom: 1px solid var(--border-color);
-      margin-bottom: 1.5rem;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-
-    .tab-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      font-family: var(--font-display);
-      font-size: 0.95rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      padding: 0.75rem 1.25rem;
-      cursor: pointer;
-      position: relative;
-      white-space: nowrap;
-      transition: color 0.2s;
-    }
-
-    .tab-btn:hover {
-      color: #fff;
-    }
-
-    .tab-btn.active {
-      color: var(--accent);
-    }
-
-    .tab-btn.active::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: var(--accent);
-      box-shadow: 0 0 10px var(--accent);
-    }
-
-    /* Toolbar / Filters */
-    .toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-    }
-
-    .search-box {
-      flex: 1;
-      min-width: 240px;
-      max-width: 400px;
-      position: relative;
-    }
-
-    .search-input {
-      width: 100%;
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-radius: 0.375rem;
-      padding: 0.5rem 0.9rem;
-      color: #fff;
-      font-size: 0.875rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .search-input:focus {
-      border-color: var(--accent);
-    }
-
-    .filter-group {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .filter-btn {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      color: var(--text-muted);
-      padding: 0.45rem 0.85rem;
-      border-radius: 0.375rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .filter-btn:hover {
-      border-color: var(--border-light);
-      color: #fff;
-    }
-
-    .filter-btn.active {
-      background: rgba(56, 189, 248, 0.15);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    .btn-download {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: #1e293b;
-      border: 1px solid var(--border-light);
-      color: #fff;
-      padding: 0.45rem 0.85rem;
-      border-radius: 0.375rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-
-    .btn-download:hover {
-      background: #334155;
-    }
+    /* Toolbars & segmented controls */
+    .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+    .toolbar .input { flex: 1 1 220px; max-width: 360px; }
+    .segmented { display: inline-flex; border: 1px solid var(--line-2); border-radius: 8px; overflow: hidden; max-width: 100%; }
+    .segmented button { background: none; border: 0; padding: 8px 12px; color: var(--text-2); cursor: pointer; font-weight: 600; font-size: 13.5px; white-space: nowrap; }
+    .segmented button + button { border-left: 1px solid var(--line-2); }
+    .segmented button[aria-pressed="true"] { background: var(--surface-2); color: var(--text); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 38px; padding: 0 14px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600; font-size: 13.5px; cursor: pointer; }
+    .btn:hover { border-color: #3d3d3d; background: var(--surface-2); }
+    .count { margin-left: auto; color: var(--text-2); font-size: 13.5px; }
+    @media (max-width: 720px) { .toolbar .input { max-width: none; flex-basis: 100%; } .count { margin-left: 0; } }
 
     /* Tables */
-    .table-container {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 0.5rem;
-      overflow-x: auto;
-      margin-bottom: 1.5rem;
+    .table-wrap { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th { text-align: left; font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--text-3); padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr.clickable { cursor: pointer; }
+    tbody tr.clickable:hover td { background: var(--surface-2); }
+    .r { text-align: right; }
+    .name-cell { font-weight: 600; overflow-wrap: anywhere; }
+    .sub { display: block; font-size: 12.5px; color: var(--text-3); font-weight: 400; }
+    .rank-cell { white-space: nowrap; }
+    .rank-cell .overall { color: var(--text-3); font-size: 12.5px; margin-left: 4px; }
+    .more-row { display: flex; justify-content: center; padding: 14px; border-top: 1px solid var(--line); }
+    .show-sm { display: none; }
+    @media (max-width: 720px) {
+      .hide-sm { display: none !important; }
+      .show-sm { display: inline; }
+      th, td { padding: 9px 10px; }
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 0.875rem;
-    }
+    /* Charts */
+    .chart { width: 100%; position: relative; }
+    .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .chart .grid-line { stroke: var(--line); stroke-width: 1; }
+    .chart text { fill: var(--text-2); font-size: 12px; font-family: var(--font); }
+    .chart .axis-label { fill: var(--text-3); font-size: 11.5px; }
+    .chart .cap { fill: var(--text); font-weight: 600; }
+    .chart .hit { fill: transparent; }
+    .chart .hit:focus { outline: none; }
+    .chart .bar-group:hover .bar-mark, .chart .hit:focus + .bar-mark { opacity: .8; }
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--text-2); margin: 0 0 8px; }
+    .tooltip { position: fixed; z-index: 80; pointer-events: none; background: #161616; border: 1px solid var(--line-2); border-radius: 8px; padding: 8px 10px; font-size: 13px; line-height: 1.4; max-width: 260px; display: none; }
+    .chart-table { margin-top: 10px; }
+    .link-btn { background: none; border: 0; color: var(--text-2); cursor: pointer; padding: 6px 0; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
+    .trend-table .name-cell { min-width: 8.5em; overflow-wrap: normal; word-break: normal; }
+    @media (max-width: 720px) { .trend-card { padding: 14px 10px; } }
+    .inline-bar { display: block; height: 4px; margin-top: 4px; background: var(--surface-2); border-radius: 2px; min-width: 48px; }
+    .inline-bar span { display: block; height: 100%; border-radius: 0 2px 2px 0; }
 
-    th {
-      background: #0b1120;
-      color: var(--text-dim);
-      font-family: var(--font-display);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--border-color);
-      font-weight: 600;
-      user-select: none;
-      cursor: pointer;
-    }
+    /* Profile drawer / sheet */
+    .scrim { position: fixed; inset: 0; background: rgba(0,0,0,.72); z-index: 70; display: none; }
+    .scrim.open { display: block; }
+    .drawer { position: fixed; z-index: 75; top: 0; right: 0; bottom: 0; width: min(580px, 100vw); background: var(--bg); border-left: 1px solid var(--line-2);
+      transform: translateX(100%); transition: transform .2s ease; display: flex; flex-direction: column; visibility: hidden; }
+    .drawer.open { transform: none; visibility: visible; }
+    .drawer-head { display: flex; gap: 12px; align-items: flex-start; padding: 16px; padding-top: calc(16px + env(safe-area-inset-top)); border-bottom: 1px solid var(--line); }
+    .drawer-head h2 { margin: 0; font: 700 22px/1.2 var(--font-display); overflow-wrap: anywhere; }
+    .drawer-kind { font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: .08em; }
+    .drawer-body { overflow-y: auto; padding: 16px; display: grid; gap: 14px; align-content: start; padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+    .icon-btn { margin-left: auto; width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); cursor: pointer; display: grid; place-items: center; flex: none; }
+    .drawer .tiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+    .drawer .tile-value { font-size: 22px; white-space: nowrap; }
+    @media (max-width: 600px) { .drawer { border-left: 0; } }
 
-    th:hover {
-      color: var(--text-main);
-    }
-
-    td {
-      padding: 0.65rem 1rem;
-      border-bottom: 1px solid rgba(31, 42, 68, 0.6);
-      color: var(--text-main);
-      vertical-align: middle;
-    }
-
-    tr:hover td {
-      background: var(--bg-card-hover);
-    }
-
-    .rank-cell {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      white-space: nowrap;
-      min-width: 4.8rem;
-    }
-
-    .dual-rank-cell {
-      display: inline-flex;
-      align-items: baseline;
-      gap: 0.25rem;
-    }
-
-    .rank-primary {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-
-    .rank-secondary {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      font-weight: 500;
-    }
-
-    .medal-1 { color: var(--gold); }
-    .medal-2 { color: var(--silver); }
-    .medal-3 { color: var(--bronze); }
-
-    .cmd-name {
-      font-weight: 600;
-      color: #fff;
-    }
-
-    .pts-cell {
-      font-family: var(--font-mono);
-      font-weight: 600;
-      text-align: right;
-      color: #f8fafc;
-    }
-
-    .server-pill {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 0.15rem 0.45rem;
-      border-radius: 0.25rem;
-      display: inline-block;
-    }
-
-    .pill-117 {
-      background: rgba(6, 182, 212, 0.15);
-      color: #22d3ee;
-      border: 1px solid rgba(6, 182, 212, 0.3);
-    }
-
-    .pill-119 {
-      background: rgba(244, 63, 94, 0.15);
-      color: #fb7185;
-      border: 1px solid rgba(244, 63, 94, 0.3);
-    }
-
-    .pill-113 {
-      background: rgba(168, 85, 247, 0.15);
-      color: #c084fc;
-      border: 1px solid rgba(168, 85, 247, 0.3);
-    }
-
-    /* High-performance deferred rendering for heavy table rows */
-    .deferred-row {
-      content-visibility: auto;
-      contain-intrinsic-size: auto none auto 44px;
-    }
-
-    /* Modal / Alliance Drawer */
-    .modal-backdrop {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(4px);
-      z-index: 100;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-
-    .modal-backdrop.open {
-      display: flex;
-    }
-
-    .modal-panel {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-radius: 0.75rem;
-      width: 100%;
-      max-width: 720px;
-      max-height: 85vh;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
-
-    .modal-header {
-      padding: 1.25rem 1.5rem;
-      border-bottom: 1px solid var(--border-color);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .modal-title {
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-
-    .modal-close {
-      background: transparent;
-      border: none;
-      color: var(--text-dim);
-      font-size: 1.5rem;
-      cursor: pointer;
-      line-height: 1;
-    }
-
-    .modal-close:hover {
-      color: #fff;
-    }
-
-    .modal-body {
-      padding: 1.5rem;
-      overflow-y: auto;
-      flex: 1;
-    }
-
-    .ally-stats-mini {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.75rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .ally-stat-box {
-      background: #090d16;
-      border: 1px solid var(--border-color);
-      border-radius: 0.375rem;
-      padding: 0.75rem;
-      text-align: center;
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--text-dim);
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    .lang-links {
-      margin-top: 0.75rem;
-      font-size: 0.8rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem 1rem;
-    }
-
-    .lang-link {
-      color: var(--text-dim) !important;
-      text-decoration: none;
-      transition: color 0.15s ease;
-      cursor: pointer;
-    }
-
-    .lang-link:hover {
-      color: #fff !important;
-      text-decoration: underline;
-    }
-
-    .lang-link.active {
-      color: var(--accent) !important;
-      font-weight: 700;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .event-selector-wrap {
-        width: 100%;
-      }
-      .event-select {
-        width: 100%;
-      }
-      .hero-title {
-        font-size: 1.35rem;
-      }
-      .kpi-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+    footer { border-top: 1px solid var(--line); padding-top: 20px; padding-bottom: calc(28px + env(safe-area-inset-bottom)); color: var(--text-3); font-size: 13px; }
+    footer .langs { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 10px; }
+    footer .langs button { background: none; border: 0; padding: 4px 0; color: var(--text-2); cursor: pointer; }
+    footer .langs button[aria-current="true"] { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+    .note { font-size: 13px; color: var(--text-3); margin: 8px 0 0; }
+    @media (prefers-reduced-motion: reduce) { .drawer { transition: none; } }
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="header-inner">
-      <div class="brand">
-        <div class="badge-radar">ZR</div>
-        <div>
-          <div class="brand-title" data-i18n="brand_title">Z Route: Redemption — S117 Intel</div>
-          <div class="brand-subtitle" data-i18n="brand_subtitle">Capitol War & Cross-Server Event Analytics</div>
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-row">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">ZR</span>
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand_title">Z Route: Redemption — S117 Intel</span>
+          <span class="brand-sub" data-i18n="brand_subtitle">Capitol War analytics</span>
+        </span>
+      </a>
+      <div class="controls">
+        <div class="search" role="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="globalSearch" class="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-controls="searchResults" aria-expanded="false" data-i18n-ph="search_ph" data-i18n-aria="search_ph" placeholder="Search commanders or alliances">
+          <div id="searchResults" class="search-results" role="listbox"></div>
         </div>
-      </div>
-      <div class="header-controls">
-        <div class="event-selector-wrap">
-          <label for="eventSelect" style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); font-weight: 600;" data-i18n="event_label">Event:</label>
-          <select id="eventSelect" class="event-select"></select>
-        </div>
-        <div class="lang-selector-wrap">
-          <select id="langSelect" class="lang-select" aria-label="Language">
-            <option value="en">🇬🇧 English</option>
-            <option value="fr">🇫🇷 Français</option>
-            <option value="ru">🇷🇺 Русский</option>
-            <option value="tr">🇹🇷 Türkçe</option>
-            <option value="pl">🇵🇱 Polski</option>
-            <option value="es">🇪🇸 Español</option>
-            <option value="pt">🇵🇹 Português</option>
-            <option value="de">🇩🇪 Deutsch</option>
-            <option value="ko">🇰🇷 한국어</option>
-            <option value="ja">🇯🇵 日本語</option>
-            <option value="zh">🇨🇳 简体中文</option>
-          </select>
-        </div>
+        <label class="sr-only" for="eventSelect" data-i18n="event_label">Event</label>
+        <select id="eventSelect" class="select"></select>
+        <label class="sr-only" for="langSelect" data-i18n="language_label">Language</label>
+        <select id="langSelect" class="select"></select>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Header -->
-    <section class="hero">
-      <div class="hero-header">
-        <div>
-          <h1 class="hero-title" id="eventTitle" data-i18n="event_title">Capitol War: Server 117 vs Server 119</h1>
-          <p class="hero-desc" id="eventDesc" data-i18n="hero_desc">Full event rankings, alliance participation, and server-vs-server battlefield performance.</p>
-        </div>
-        <div class="hero-tags">
-          <span class="tag-badge tag-home" id="tagHome" data-i18n="tag_home">🛡️ S117 (Home Server)</span>
-          <span class="tag-badge tag-visiting" id="tagVisiting" data-i18n="tag_visiting">⚔️ S119 (Visiting)</span>
-        </div>
-      </div>
-
-      <!-- KPI Summary Cards -->
-      <div class="kpi-grid">
-        <div class="kpi-card">
-          <div class="kpi-label" data-i18n="kpi_total_points">Total War Points</div>
-          <div class="kpi-val" id="totalPointsVal">773,073,925</div>
-          <div class="kpi-sub" data-i18n="kpi_total_points_sub">Across all battle participants</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-label" data-i18n="kpi_total_commanders">Total Commanders</div>
-          <div class="kpi-val" id="totalPlayersVal">1,398</div>
-          <div class="kpi-sub" data-i18n="kpi_total_commanders_sub">100% extracted leaderboard</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-label" data-i18n="kpi_alliances_deployed">Alliances Deployed</div>
-          <div class="kpi-val" id="totalAlliancesVal">156</div>
-          <div class="kpi-sub" data-i18n="kpi_alliances_deployed_sub">S117, S119 & Cross-Server</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-label" data-i18n="kpi_top_contributor">#1 Top Contributor</div>
-          <div class="kpi-val" id="topCommanderVal" style="color: var(--gold); font-size: 1.35rem;">TheRequiem</div>
-          <div class="kpi-sub" id="topCommanderSub">[P1MP] JU1CE (16.65M pts)</div>
-        </div>
-      </div>
-
-      <!-- Server vs Server Battle Balance -->
-      <div class="war-meter-card">
-        <div class="war-meter-header">
-          <span style="color: #22d3ee;"><span class="srv-home-icon">🛡️</span> Server <span class="srv-home-num">117</span>: <span id="s117PtsHeader">270.6M (35.0%)</span></span>
-          <span id="pointsDominanceLabel" style="color: var(--text-dim); font-size: 0.8rem; text-transform: uppercase;" data-i18n="points_dominance">Points Dominance</span>
-          <span style="color: #fb7185;"><span class="srv-opp-icon">⚔️</span> Server <span class="srv-opp-num">119</span>: <span id="s119PtsHeader">500.2M (64.7%)</span></span>
-        </div>
-        <div class="bar-container">
-          <div class="bar-seg seg-s117" id="barS117" style="width: 35.0%;">35.0%</div>
-          <div class="bar-seg seg-s119" id="barS119" style="width: 64.7%;">64.7%</div>
-          <div class="bar-seg seg-s113" id="barS113" style="width: 0.3%;">0.3%</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Navigation Tabs -->
-    <div class="tabs-nav">
-      <button class="tab-btn active" data-tab="tab-overview" data-i18n="tab_overview">Overview & Server Breakdown</button>
-      <button class="tab-btn" data-tab="tab-alliances" data-i18n="tab_alliances">Alliance Leaderboard</button>
-      <button class="tab-btn" data-tab="tab-players" data-i18n="tab_players">Commander Rankings</button>
-      <button class="tab-btn" data-tab="tab-export" data-i18n="tab_export">Data & Methodology</button>
-    </div>
-
-    <!-- TAB 1: OVERVIEW & SERVER BREAKDOWN -->
-    <section id="tab-overview" class="tab-content">
-      <div class="kpi-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 1.5rem;">
-        
-        <!-- S117 Home Server Card -->
-        <div class="kpi-card" style="border-left: 4px solid var(--s117-cyan);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <h3 id="s117ServerTitle" style="color: var(--s117-cyan); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;" data-i18n="server_117_title">Server 117 (Home)</h3>
-            <span class="server-pill pill-117 srv-home-tag">S117</span>
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem;">
-            <div>
-              <div class="kpi-label" data-i18n="card_total_points">Total Points</div>
-              <div class="kpi-val" style="font-size: 1.25rem;" id="s117TotalPts">270,561,864</div>
-              <div class="kpi-sub"><span id="s117SharePct">35.0%</span> <span data-i18n="war_share">War Share</span></div>
-            </div>
-            <div>
-              <div class="kpi-label" data-i18n="card_participants">Participants</div>
-              <div class="kpi-val" style="font-size: 1.25rem;" id="s117Players">881</div>
-              <div class="kpi-sub"><span id="s117RosterPct">63.0%</span> <span data-i18n="of_roster">of total roster</span></div>
-            </div>
-            <div>
-              <div class="kpi-label" data-i18n="card_avg_pts">Avg Pts / Player</div>
-              <div class="kpi-val" style="font-size: 1.25rem;" id="s117AvgPts">307,108</div>
-            </div>
-            <div>
-              <div class="kpi-label" data-i18n="card_top_alliance">Top Alliance</div>
-              <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);" id="s117TopAlly">[P1MP] JU1CE</div>
-              <div class="kpi-sub" id="s117TopAllyPts">96.46M Points</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- S119 Visiting Server Card -->
-        <div class="kpi-card" style="border-left: 4px solid var(--s119-rose);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <h3 id="s119ServerTitle" style="color: var(--s119-rose); font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;" data-i18n="server_119_title">Server 119 (Visiting)</h3>
-            <span class="server-pill pill-119 srv-opp-tag">S119</span>
-          </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem;">
-            <div>
-              <div class="kpi-label" data-i18n="card_total_points">Total Points</div>
-              <div class="kpi-val" style="font-size: 1.25rem;" id="s119TotalPts">500,233,739</div>
-              <div class="kpi-sub"><span id="s119SharePct">64.7%</span> <span data-i18n="war_share">War Share</span></div>
-            </div>
-            <div>
-              <div class="kpi-label" data-i18n="card_participants">Participants</div>
-              <div class="kpi-val" style="font-size: 1.25rem;" id="s119Players">498</div>
-              <div class="kpi-sub"><span id="s119RosterPct">35.6%</span> <span data-i18n="of_roster">of total roster</span></div>
-            </div>
-            <div>
-              <div class="kpi-label" data-i18n="card_avg_pts">Avg Pts / Player</div>
-              <div class="kpi-val" style="font-size: 1.25rem;" id="s119AvgPts">1,004,485</div>
-            </div>
-            <div>
-              <div class="kpi-label" data-i18n="card_top_alliance">Top Alliance</div>
-              <div class="kpi-val" style="font-size: 1.1rem; color: var(--gold);" id="s119TopAlly">[DOOM] Armageddon</div>
-              <div class="kpi-sub" id="s119TopAllyPts">90.72M Points</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Alliance Spotlight Tables -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 1.5rem;">
-        
-        <!-- S117 Top Alliances -->
-        <div class="table-container">
-          <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s117-cyan);" data-i18n="top10_s117">Top 10 Server 117 Alliances</h4>
-            <span class="server-pill pill-117" data-i18n="home_label" data-role-of="home">Home</span>
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th style="width: 5.2rem;" data-i18n="col_rank">Rank</th>
-                <th data-i18n="col_alliance">Alliance</th>
-                <th style="text-align: right;" data-i18n="col_members">Members</th>
-                <th style="text-align: right;" data-i18n="col_total_points">Total Points</th>
-                <th style="text-align: right;" data-i18n="col_avg_player">Avg / Player</th>
-              </tr>
-            </thead>
-            <tbody id="s117TopAlliesBody"></tbody>
-          </table>
-        </div>
-
-        <!-- S119 Top Alliances -->
-        <div class="table-container">
-          <div style="padding: 1rem; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
-            <h4 style="font-family: var(--font-display); font-size: 0.95rem; text-transform: uppercase; color: var(--s119-rose);" data-i18n="top10_s119">Top 10 Server 119 Alliances</h4>
-            <span class="server-pill pill-119" data-i18n="visiting_label" data-role-of="opp">Visiting</span>
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th style="width: 5.2rem;" data-i18n="col_rank">Rank</th>
-                <th data-i18n="col_alliance">Alliance</th>
-                <th style="text-align: right;" data-i18n="col_members">Members</th>
-                <th style="text-align: right;" data-i18n="col_total_points">Total Points</th>
-                <th style="text-align: right;" data-i18n="col_avg_player">Avg / Player</th>
-              </tr>
-            </thead>
-            <tbody id="s119TopAlliesBody"></tbody>
-          </table>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- TAB 2: ALLIANCE LEADERBOARD -->
-    <section id="tab-alliances" class="tab-content" style="display: none;">
-      <div class="toolbar">
-        <div class="search-box">
-          <input type="text" id="allianceSearch" class="search-input" placeholder="Search alliance name or tag..." data-i18n-ph="search_alliance_ph">
-        </div>
-        <div class="filter-group" id="allianceServerFilters">
-          <button class="filter-btn active" data-server="all" data-i18n="filter_all_servers">All Servers</button>
-        </div>
-        <a href="data/alliance_summary.csv" download data-event-file="alliances.csv" class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
-      </div>
-
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th id="allianceRankHeader" style="min-width: 5.5rem;" data-sort="rank" data-i18n="col_rank">Rank ⬍</th>
-              <th data-sort="alliance" data-i18n="col_alliance">Alliance ⬍</th>
-              <th data-sort="server" data-i18n="col_server">Server ⬍</th>
-              <th data-sort="members" style="text-align: right;" data-i18n="card_participants">Participants ⬍</th>
-              <th data-sort="points" style="text-align: right;" data-i18n="col_total_points">Total Points ⬍</th>
-              <th data-sort="avg" style="text-align: right;" data-i18n="col_avg_player">Avg / Player ⬍</th>
-              <th data-i18n="col_top_commander">Top Commander</th>
-              <th style="text-align: center;" data-i18n="col_action">Action</th>
-            </tr>
-          </thead>
-          <tbody id="allianceTableBody"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- TAB 3: COMMANDER RANKINGS -->
-    <section id="tab-players" class="tab-content" style="display: none;">
-      <div class="toolbar">
-        <div class="search-box">
-          <input type="text" id="playerSearch" class="search-input" placeholder="Search player name or alliance..." data-i18n-ph="search_player_ph">
-        </div>
-        <div class="filter-group" id="playerServerFilters">
-          <button class="filter-btn player-srv-filter active" data-player-srv="all" data-i18n="filter_all_servers">All Servers</button>
-        </div>
-        <div style="font-size: 0.85rem; color: var(--text-muted);">
-          <span data-i18n="showing_text">Showing</span> <span id="filteredPlayerCount" style="color: #fff; font-weight: 700;">1,398</span> <span data-i18n="commanders_word">commanders</span>
-        </div>
-        <a href="data/capitol_event_rankings.csv" download data-event-file="rankings.csv" class="btn-download" data-i18n="download_csv">📥 Download CSV</a>
-      </div>
-
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th id="playerRankHeader" style="min-width: 5.5rem;" data-psort="rank" data-i18n="col_rank">Rank ⬍</th>
-              <th data-psort="commander" data-i18n="col_commander">Commander ⬍</th>
-              <th data-psort="alliance" data-i18n="col_alliance">Alliance ⬍</th>
-              <th data-psort="server" data-i18n="col_server">Server ⬍</th>
-              <th style="text-align: right;" data-psort="points" data-i18n="col_points">Points ⬍</th>
-            </tr>
-          </thead>
-          <tbody id="playerTableBody"></tbody>
-        </table>
-      </div>
-      <div id="loadMoreContainer" style="text-align: center; padding: 1rem;">
-        <button id="loadMoreBtn" class="filter-btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;" data-i18n="load_more_btn">Load More Commanders</button>
-      </div>
-    </section>
-
-    <!-- TAB 4: EXPORT & METHODOLOGY -->
-    <section id="tab-export" class="tab-content" style="display: none;">
-      <div class="kpi-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 2rem;">
-        
-        <div class="kpi-card">
-          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent);" data-i18n="exp_csv_title">📊 Complete CSV Roster</h4>
-          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_csv_desc">Spreadsheet containing all 1,398 commanders with ranks, names, alliances, and point scores.</p>
-          <a href="data/capitol_event_rankings.csv" download data-event-file="rankings.csv" class="btn-download">Download rankings.csv</a>
-        </div>
-
-        <div class="kpi-card">
-          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--gold);" data-i18n="exp_json_title">📦 Structured JSON Dataset</h4>
-          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_json_desc">Machine-readable JSON dataset for analytical pipelines, solvers, and simulation models.</p>
-          <a href="data/capitol_event_rankings.json" download data-event-file="rankings.json" class="btn-download">Download rankings.json</a>
-        </div>
-
-        <div class="kpi-card">
-          <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--s117-cyan);" data-i18n="exp_allies_title">🛡️ Alliance Standings CSV</h4>
-          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;" data-i18n="exp_allies_desc">Alliance level aggregations including total points, member counts, and average points per player.</p>
-          <a href="data/alliance_summary.csv" download data-event-file="alliances.csv" class="btn-download">Download alliance_summary.csv</a>
-        </div>
-
-      </div>
-
-      <div class="hero">
-        <h3 style="font-family: var(--font-display); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 0.75rem;" data-i18n="exp_method_title">Data Extraction Methodology</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem;" data-i18n="exp_method_p1">
-          The Capitol War event leaderboard was captured directly from <strong>BlueStacks Air (Android 13 Tiramisu on Apple Silicon)</strong> using a fully automated ADB pipeline paired with on-device hardware-accelerated machine vision.
-        </p>
-        <ul style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.8; margin-left: 1.5rem;">
-          <li data-i18n="exp_feat_1">ADB Framebuffer Streaming: High-speed screencaps via adb exec-out screencap -p directly to memory.</li>
-          <li data-i18n="exp_feat_2">Apple Vision Framework: Native Swift worker utilizing VNRecognizeTextRequest on Apple Neural Engine for sub-300ms multilingual OCR (English, Russian Cyrillic, Korean, French accents).</li>
-          <li data-i18n="exp_feat_3">Asynchronous Pipelining: Swipes executed concurrently in worker threads during OCR inference, achieving a sustained rate of ~1.03s per frame.</li>
-          <li data-i18n="exp_feat_4">Sliding Overlap Window: Every rank is seen in multiple consecutive frames, verified against strict monotonic point ordering (points[N] &le; points[N-1]) to guarantee 100% data integrity across all 1,398 entries.</li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Alliance Detail Modal -->
-  <div id="allyModal" class="modal-backdrop">
-    <div class="modal-panel">
-      <div class="modal-header">
-        <div>
-          <div id="modalAllyTitle" class="modal-title">[P1MP] JU1CE</div>
-          <div id="modalAllyServer" style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.2rem;">Server 117 (Home Server)</div>
-        </div>
-        <button id="modalCloseBtn" class="modal-close">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div class="ally-stats-mini">
-          <div class="ally-stat-box">
-            <div class="kpi-label" data-i18n="modal_members">Members</div>
-            <div id="modalMemberCount" class="kpi-val" style="font-size: 1.2rem;">50</div>
-          </div>
-          <div class="ally-stat-box">
-            <div class="kpi-label" data-i18n="modal_total_pts">Total Points</div>
-            <div id="modalTotalPts" class="kpi-val" style="font-size: 1.2rem;">96,460,732</div>
-          </div>
-          <div class="ally-stat-box">
-            <div class="kpi-label" data-i18n="modal_avg_pts">Avg Pts / Player</div>
-            <div id="modalAvgPts" class="kpi-val" style="font-size: 1.2rem;">1,929,214</div>
-          </div>
-        </div>
-        <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.5rem;" data-i18n="modal_roster_title">Participating Roster</div>
-        <div class="table-container" style="max-height: 380px; overflow-y: auto;">
-          <table>
-            <thead>
-              <tr>
-                <th style="width: 5.2rem;" data-i18n="col_rank">Rank</th>
-                <th data-i18n="col_commander">Commander</th>
-                <th style="text-align: right;" data-i18n="col_points">Points</th>
-                <th style="text-align: right;" data-i18n="modal_col_contrib" title="Percentage of this alliance's total points">% Contrib</th>
-              </tr>
-            </thead>
-            <tbody id="modalRosterBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+  <div class="wrap event-bar">
+    <h1 class="event-title" id="eventTitle">Capitol War</h1>
+    <div class="event-meta" id="eventMeta"></div>
   </div>
 
+  <nav class="tabs-bar" aria-label="Sections">
+    <div class="wrap tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" data-tab="overview" data-i18n="tab_overview">Overview</button>
+      <button class="tab" role="tab" data-tab="alliances" data-i18n="tab_alliances">Alliances</button>
+      <button class="tab" role="tab" data-tab="commanders" data-i18n="tab_commanders">Commanders</button>
+      <button class="tab" role="tab" data-tab="trends" data-i18n="tab_trends">Trends</button>
+      <button class="tab" role="tab" data-tab="data" data-i18n="tab_data">Data</button>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="view" id="view-overview" role="tabpanel"></section>
+    <section class="view" id="view-alliances" role="tabpanel" hidden></section>
+    <section class="view" id="view-commanders" role="tabpanel" hidden></section>
+    <section class="view" id="view-trends" role="tabpanel" hidden></section>
+    <section class="view" id="view-data" role="tabpanel" hidden></section>
+  </main>
+
   <footer>
-    <p><span data-i18n="footer_text">Z Route: Redemption Capitol War Event Intelligence • Server 117 • Maintained by</span> <a href="https://github.com/JeffxLabs" target="_blank">JeffxLabs</a></p>
-    <div class="lang-links">
-      <a href="?lang=en" class="lang-link" data-lang="en">🇬🇧 English</a>
-      <a href="?lang=fr" class="lang-link" data-lang="fr">🇫🇷 Français</a>
-      <a href="?lang=ru" class="lang-link" data-lang="ru">🇷🇺 Русский</a>
-      <a href="?lang=tr" class="lang-link" data-lang="tr">🇹🇷 Türkçe</a>
-      <a href="?lang=pl" class="lang-link" data-lang="pl">🇵🇱 Polski</a>
-      <a href="?lang=es" class="lang-link" data-lang="es">🇪🇸 Español</a>
-      <a href="?lang=pt" class="lang-link" data-lang="pt">🇵🇹 Português</a>
-      <a href="?lang=de" class="lang-link" data-lang="de">🇩🇪 Deutsch</a>
-      <a href="?lang=ko" class="lang-link" data-lang="ko">🇰🇷 한국어</a>
-      <a href="?lang=ja" class="lang-link" data-lang="ja">🇯🇵 日本語</a>
-      <a href="?lang=zh" class="lang-link" data-lang="zh">🇨🇳 简体中文</a>
+    <div class="wrap">
+      <span data-i18n="footer">Z Route: Redemption Capitol War intelligence · Server 117 · maintained by</span>
+      <a href="https://github.com/JeffxLabs" target="_blank" rel="noopener">JeffxLabs</a>
+      <div class="langs" id="footerLangs"></div>
     </div>
   </footer>
 
-  <script>
-    // State
-    const EVENT_LIST = (window.EVENTS_MANIFEST || []).slice().sort((a, b) => b.date.localeCompare(a.date));
-    const requestedEvent = new URLSearchParams(location.search).get("event");
-    let currentEventId = (EVENT_LIST.find(e => e.id === requestedEvent) || EVENT_LIST[0] || { id: "2026-09-19-s117-vs-s119" }).id;
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+    <div class="drawer-head">
+      <div style="min-width:0">
+        <div class="drawer-kind" id="drawerKind"></div>
+        <h2 id="drawerTitle"></h2>
+        <div class="event-meta" id="drawerMeta" style="margin-top:8px"></div>
+      </div>
+      <button class="icon-btn" id="drawerClose" data-i18n-aria="close" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+  </aside>
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
 
-    function populateEventSelect() {
-      const sel = document.getElementById("eventSelect");
-      if (!sel) return;
-      const tpl = t("event_option_1") || "2026-09-19: Capitol War (S117 vs S119)";
-      sel.innerHTML = "";
-      EVENT_LIST.forEach(ev => {
-        const o = document.createElement("option");
-        o.value = ev.id;
-        o.textContent = tpl.replace("2026-09-19", ev.date).replace("S117", "S" + ev.home_server).replace("S119", "S" + ev.opponent_server);
-        sel.appendChild(o);
+<script>
+(function () {
+  "use strict";
+  // ---------- state ----------
+  const I18N = window.I18N || { en: {} };
+  const EVENTS = (window.EVENTS_MANIFEST || []).slice().sort((a, b) => a.date.localeCompare(b.date)); // oldest first
+  const params = new URLSearchParams(location.search);
+  const state = {
+    lang: "en", eventId: null, tab: "overview",
+    allyServer: "all", allyQuery: "",
+    cmdServer: "all", cmdQuery: "", cmdLimit: 100,
+    trendsTable: {}, profile: null,
+  };
+  const store = {};         // eventId -> {meta, alliances, rankings}
+  let index = null;         // cross-event lookups, built once every event is loaded
+
+  // ---------- i18n & formatting ----------
+  function t(key, vars) {
+    let s = (I18N[state.lang] && I18N[state.lang][key]) || (I18N.en && I18N.en[key]) || key;
+    if (vars) s = s.replace(/\{(\w+)\}/g, (m, k) => (vars[k] !== undefined ? vars[k] : m));
+    return s;
+  }
+  const locale = () => (window.LANG_LOCALES || {})[state.lang] || "en-US";
+  const fmt = n => (n == null || isNaN(n)) ? "—" : new Intl.NumberFormat(locale()).format(n);
+  const fmtCompact = n => new Intl.NumberFormat(locale(), { notation: "compact", maximumFractionDigits: Math.abs(n) >= 1e6 ? 2 : 1 }).format(n);
+  const fmtPct = (n, d = 1) => new Intl.NumberFormat(locale(), { style: "percent", maximumFractionDigits: d, minimumFractionDigits: d }).format(n);
+  const fmtDate = iso => new Intl.DateTimeFormat(locale(), { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(iso + "T00:00:00Z"));
+  const fmtDateShort = iso => new Intl.DateTimeFormat(locale(), { month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(iso + "T00:00:00Z"));
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const nameKey = s => String(s || "").normalize("NFKC").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase();
+  const isUnreadable = s => /^\(name unreadable/.test(s || "");
+  const displayName = s => isUnreadable(s) ? t("name_unreadable") : s;
+
+  function detectLanguage() {
+    const fromUrl = (params.get("lang") || params.get("l") || "").toLowerCase().split(/[-_]/)[0];
+    if (I18N[fromUrl]) return fromUrl;
+    try { const saved = localStorage.getItem("s117.lang"); if (saved && I18N[saved]) return saved; } catch (e) {}
+    for (const l of (navigator.languages || [navigator.language || "en"])) {
+      const code = String(l).toLowerCase().split(/[-_]/)[0];
+      if (I18N[code]) return code;
+    }
+    return "en";
+  }
+
+  // ---------- event roles ----------
+  const ev = () => store[state.eventId] || { meta: {}, alliances: [], rankings: [] };
+  function roles(meta) {
+    meta = meta || ev().meta;
+    const home = String(meta.home_server || "117"), opp = String(meta.opponent_server || "");
+    const homeRole = meta.home_role || null;
+    const oppRole = homeRole ? (homeRole === "defending" ? "attacking" : "defending") : null;
+    const others = Object.keys(meta.servers || {}).filter(s => s !== home && s !== opp).sort();
+    return { home, opp, homeRole, oppRole, others };
+  }
+  function serverClass(server, meta) {
+    const r = roles(meta);
+    return String(server) === r.home ? "home" : String(server) === r.opp ? "opp" : "cross";
+  }
+  const serverColor = (server, meta) => ({ home: "#1aa3c2", opp: "#e5484d", cross: "#9b7bea" })[serverClass(server, meta)];
+  const serverPill = (server, meta, xs) => `<span class="pill pill-${serverClass(server, meta)}${xs ? " pill-xs" : ""}">S${esc(server)}</span>`;
+  const roleIcon = role => role === "defending" ? "🛡️" : "⚔️";
+
+  // ---------- data loading & cross-event index ----------
+  function loadEvent(id) {
+    if (store[id]) return Promise.resolve(store[id]);
+    const v = window["EVENT_" + id.replace(/-/g, "_")];
+    if (v) { store[id] = v; return Promise.resolve(v); }
+    return Promise.all(["event.json", "alliances.json", "rankings.json"].map(f => fetch(`events/${id}/${f}`).then(r => r.json())))
+      .then(([meta, alliances, rankings]) => (store[id] = { meta, alliances, rankings }));
+  }
+  const prevEventOf = id => { const i = EVENTS.findIndex(e => e.id === id); return i > 0 ? EVENTS[i - 1] : null; };
+  // Commanders match across events by server + name (ignoring decorative symbols); alliances by server + tag
+  const cKey = p => `${p.server}|${nameKey(p.commander)}`;
+  const aKey = a => `${a.server}|${(a.tag || a.alliance || "").toLowerCase()}`;
+  const allyTag = s => { const m = /^\[([^\]]+)\]/.exec(s || ""); return m ? m[1] : ""; };
+
+  function buildIndex() {
+    const idx = { c: {}, a: {} };
+    for (const e of EVENTS) {
+      const d = store[e.id]; if (!d) continue;
+      for (const p of d.rankings) {
+        if (isUnreadable(p.commander)) continue;
+        (idx.c[cKey(p)] = idx.c[cKey(p)] || {})[e.id] = p;
+      }
+      for (const a of d.alliances) (idx.a[aKey(a)] = idx.a[aKey(a)] || {})[e.id] = a;
+    }
+    return idx;
+  }
+  const allyOfPlayer = (p, eventId) => store[eventId].alliances.find(a => a.alliance === p.alliance && a.server === p.server) || null;
+
+  // ---------- small render helpers ----------
+  const rankClass = r => r === 1 ? "m1" : r === 2 ? "m2" : r === 3 ? "m3" : "";
+  function deltaHtml(cur, prev, { compact = false } = {}) {
+    if (prev == null || cur == null) return "";
+    const d = cur - prev;
+    const cls = d === 0 ? "flat" : d > 0 ? "up" : "down";
+    const arrow = d === 0 ? "■" : d > 0 ? "▲" : "▼";
+    const txt = d === 0 ? "0" : (compact ? fmtCompact(Math.abs(d)) : fmt(Math.abs(d)));
+    return `<span class="delta ${cls}">${arrow} ${txt}</span>`;
+  }
+  function rankMoveHtml(curRank, prevRank, visibleLabel) {
+    if (prevRank == null) return `<span class="pill pill-new">${esc(t("new_badge"))}</span>`;
+    const d = prevRank - curRank;
+    if (d === 0) return visibleLabel ? `<span class="delta flat">■ ${esc(t("no_change"))}</span>`
+      : `<span class="delta flat" title="${esc(t("no_change"))}">■<span class="sr-only">${esc(t("no_change"))}</span></span>`;
+    if (visibleLabel) return `<span class="delta ${d > 0 ? "up" : "down"}">${d > 0 ? "▲" : "▼"} ${esc(d > 0 ? t("moved_up", { n: d }) : t("moved_down", { n: -d }))}</span>`;
+    const label = d > 0 ? t("moved_up", { n: d }) : t("moved_down", { n: -d });
+    return `<span class="delta ${d > 0 ? "up" : "down"}" title="${esc(label)}"><span aria-hidden="true">${d > 0 ? "▲" : "▼"} ${fmt(Math.abs(d))}</span><span class="sr-only">${esc(label)}</span></span>`;
+  }
+  const tile = (label, value, sub, cls = "") =>
+    `<div class="card"><div class="tile-label">${esc(label)}</div><div class="tile-value ${cls}">${value}</div><div class="tile-sub">${sub || ""}</div></div>`;
+
+  // ---------- charts (inline SVG: one axis, thin marks, hover + focus tooltips) ----------
+  const tip = document.getElementById("tooltip");
+  function showTip(html, x, y) {
+    tip.innerHTML = html; tip.style.display = "block";
+    const r = tip.getBoundingClientRect();
+    tip.style.left = Math.min(window.innerWidth - r.width - 8, Math.max(8, x + 12)) + "px";
+    tip.style.top = Math.max(8, y - r.height - 12) + "px";
+  }
+  const hideTip = () => { tip.style.display = "none"; };
+  function niceMax(v) {
+    if (v <= 0) return 1;
+    const p = Math.pow(10, Math.floor(Math.log10(v))), n = v / p;
+    return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * p;
+  }
+  function barPath(x, y, w, h, r) {   // 4px rounded data-end, square at the baseline
+    r = Math.min(r, w / 2, h);
+    return `M${x},${y + h}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h}Z`;
+  }
+  /** Grouped column chart. groups: [{label, sub}]; series: [{label, color, values, tips}] */
+  function columnChart(el, groups, series, { height = 230 } = {}) {
+    const W = Math.max(260, Math.floor(el.clientWidth || 600)), H = height;
+    const m = { l: 50, r: 8, t: 22, b: groups.some(g => g.sub) ? 40 : 26 };
+    const pw = W - m.l - m.r, ph = H - m.t - m.b;
+    const max = niceMax(Math.max(0, ...series.flatMap(s => s.values.filter(v => v != null))) * 1.08);
+    const band = pw / groups.length, gap = 2;
+    const bw = Math.min(24, Math.max(6, (band * 0.62 - gap * (series.length - 1)) / series.length));
+    const y = v => m.t + ph - (v / max) * ph;
+    let svg = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true">`;
+    for (let i = 0; i <= 4; i++) {
+      const v = max * i / 4, yy = y(v);
+      svg += `<line class="grid-line" x1="${m.l}" x2="${W - m.r}" y1="${yy}" y2="${yy}"/><text class="axis-label" x="${m.l - 8}" y="${yy + 4}" text-anchor="end">${esc(fmtCompact(v))}</text>`;
+    }
+    // Selective labels: every cap for a single short series, otherwise only the latest group
+    const labelCap = gi => series.length === 1 ? groups.length <= 6 : gi === groups.length - 1;
+    groups.forEach((g, gi) => {
+      const gx = m.l + band * gi + (band - (bw * series.length + gap * (series.length - 1))) / 2;
+      series.forEach((s, si) => {
+        const v = s.values[gi]; if (v == null) return;
+        const x = gx + si * (bw + gap), yy = y(v), h = Math.max(1, m.t + ph - yy);
+        const tipHtml = s.tips ? s.tips[gi] : `<b>${esc(s.label)}</b><br>${esc(g.label)}: ${esc(fmt(v))}`;
+        svg += `<g class="bar-group"><rect class="hit" x="${x - 4}" y="${m.t}" width="${bw + 8}" height="${ph}" tabindex="0" data-tip="${esc(tipHtml)}"></rect>`;
+        svg += `<path class="bar-mark" d="${barPath(x, yy, bw, h, 4)}" fill="${s.color}"/></g>`;
+        // A cap label is drawn only where it fits over its own bar; the tooltip and data table carry the rest
+        const capText = fmtCompact(v), capW = capText.length * 6.8;
+        if (labelCap(gi) && (series.length === 1 || capW <= bw + gap + 2)) svg += `<text class="cap" x="${x + bw / 2}" y="${yy - 6}" text-anchor="middle">${esc(capText)}</text>`;
       });
-      sel.value = currentEventId;
-    }
-    let eventData = { meta: {}, alliances: [], rankings: [] };
-    let playerPage = 1;
-    const PLAYERS_PER_PAGE = 100;
-    let currentAllianceFilter = "all";
-    let currentAllianceServer = "all";
-    let currentPlayerServer = "all";
-    let allianceSearchQuery = "";
-    let playerSearchQuery = "";
-    let currentLang = "en";
-    let loadToken = 0;
-
-    // Server roles for the active event: home, opponent, and any cross-server participants.
-    function serverRoles() {
-      const m = eventData.meta || {};
-      const home = String(m.home_server || "117");
-      const opp = String(m.opponent_server || "119");
-      const others = Object.keys(m.servers || {}).filter(s => s !== home && s !== opp).sort();
-      return { home, opp, others, all: [home, opp, ...others] };
-    }
-
-    // "defending" / "attacking" for a server in the active event (null for cross-server or unknown)
-    function roleOf(server) {
-      const { home, opp } = serverRoles();
-      const homeRole = (eventData.meta || {}).home_role;
-      if (!homeRole) return null;
-      const oppRole = homeRole === "defending" ? "attacking" : "defending";
-      return server === home ? homeRole : server === opp ? oppRole : null;
-    }
-
-    function roleIcon(role, fallback) {
-      return role === "defending" ? "🛡️" : role === "attacking" ? "⚔️" : fallback;
-    }
-
-    // Replace Home/Visiting wording with the event's Defending/Attacking roles
-    function applyRoleLabels() {
-      const { home, opp } = serverRoles();
-      const homeRole = roleOf(home), oppRole = roleOf(opp);
-      document.querySelectorAll(".srv-home-icon").forEach(el => el.textContent = roleIcon(homeRole, "🛡️"));
-      document.querySelectorAll(".srv-opp-icon").forEach(el => el.textContent = roleIcon(oppRole, "⚔️"));
-      if (!homeRole) return;
-      const withRole = (str, role) => (str || "").replace(/\(([^()]*)\)\s*$/, `(${t("role_" + role)})`);
-      document.getElementById("tagHome").textContent = `${roleIcon(homeRole)} S${home} (${t("role_" + homeRole)})`;
-      document.getElementById("tagVisiting").textContent = `${roleIcon(oppRole)} S${opp} (${t("role_" + oppRole)})`;
-      const homeTitle = document.getElementById("s117ServerTitle");
-      const oppTitle = document.getElementById("s119ServerTitle");
-      homeTitle.textContent = withRole(homeTitle.textContent, homeRole);
-      oppTitle.textContent = withRole(oppTitle.textContent, oppRole);
-      document.querySelectorAll("[data-role-of]").forEach(el => {
-        el.textContent = t("role_" + (el.dataset.roleOf === "home" ? homeRole : oppRole));
-      });
-    }
-
-    // Translated copy quotes the first event's 1,398 commanders; show the active event's count
-    function localizeCounts(str) {
-      const n = (eventData.meta || {}).total_players;
-      if (!str || !n) return str;
-      return str.replace(/1[,.\s\u00a0\u202f]?398/g, formatNumber(n));
-    }
-
-    function pillClass(server) {
-      const { home, opp } = serverRoles();
-      return server === home ? "pill-117" : server === opp ? "pill-119" : "pill-113";
-    }
-
-    // Translations are written for S117 vs S119; rewrite those numbers for the active event.
-    function localizeServers(str) {
-      if (!str) return str;
-      const { home, opp } = serverRoles();
-      return str.replace(/(?<!\d)(117|119)(?!\d)/g, n => n === "117" ? home : opp);
-    }
-
-    // Localization & URL helpers
-    function getRequestedLanguage() {
-      // 1. Check URL query params: ?lang=fr or ?l=fr
-      try {
-        const params = new URLSearchParams(window.location.search);
-        const qLang = params.get("lang") || params.get("l");
-        if (qLang) {
-          const code = qLang.trim().toLowerCase().split(/[-_]/)[0];
-          if (window.I18N && window.I18N[code]) return code;
-        }
-      } catch (e) {}
-
-      // 2. Check URL hash: #lang=fr, #/fr, #fr
-      try {
-        const rawHash = (window.location.hash || "").replace(/^#\/?/, "").toLowerCase();
-        const hashMatch = rawHash.match(/(?:lang=)?([a-z]{2})/);
-        if (hashMatch && window.I18N && window.I18N[hashMatch[1]]) {
-          return hashMatch[1];
-        }
-      } catch (e) {}
-
-      // 3. Check localStorage
-      try {
-        const saved = localStorage.getItem("zr_lang");
-        if (saved && window.I18N && window.I18N[saved]) return saved;
-      } catch (e) {}
-
-      // 4. Check navigator languages
-      try {
-        const navLangs = navigator.languages || [navigator.language || navigator.userLanguage || "en"];
-        for (const l of navLangs) {
-          if (!l) continue;
-          const code = l.toLowerCase().split(/[-_]/)[0];
-          if (window.I18N && window.I18N[code]) return code;
-        }
-      } catch (e) {}
-
-      return "en";
-    }
-
-    function initLanguage() {
-      const initialLang = getRequestedLanguage();
-      setLanguage(initialLang, false);
-
-      // Listen for browser navigation (back/forward) or hash changes
-      window.addEventListener("popstate", () => {
-        const lang = getRequestedLanguage();
-        if (lang !== currentLang) {
-          setLanguage(lang, false);
-        }
-      });
-      window.addEventListener("hashchange", () => {
-        const lang = getRequestedLanguage();
-        if (lang !== currentLang) {
-          setLanguage(lang, false);
-        }
-      });
-    }
-
-    function setLanguage(lang, updateUrl = true) {
-      if (!window.I18N || !window.I18N[lang]) return;
-      currentLang = lang;
-      window.currentLang = lang;
-      try {
-        localStorage.setItem("zr_lang", lang);
-      } catch (e) {}
-
-      // Sync select dropdown
-      const select = document.getElementById("langSelect");
-      if (select && select.value !== lang) {
-        select.value = lang;
-      }
-
-      // Update active state on footer language links
-      document.querySelectorAll(".lang-link").forEach(a => {
-        if (a.dataset.lang === lang) {
-          a.classList.add("active");
-        } else {
-          a.classList.remove("active");
-        }
-      });
-
-      // Update URL query parameter without page reload
-      if (updateUrl && window.history && window.history.replaceState) {
-        try {
-          const url = new URL(window.location.href);
-          url.searchParams.set("lang", lang);
-          window.history.replaceState({}, "", url.toString());
-        } catch (e) {}
-      }
-
-      applyTranslations();
-      if (eventData && eventData.alliances && eventData.alliances.length) {
-        renderHeroAndKPIs();
-        renderServerSpotlights();
-        renderAlliancesTable();
-        renderPlayersTable(false);
-      }
-    }
-    window.setLanguage = setLanguage;
-
-    function t(key) {
-      if (window.I18N && window.I18N[currentLang] && window.I18N[currentLang][key]) {
-        return window.I18N[currentLang][key];
-      }
-      if (window.I18N && window.I18N["en"] && window.I18N["en"][key]) {
-        return window.I18N["en"][key];
-      }
-      return key;
-    }
-
-    function applyTranslations() {
-      document.documentElement.lang = currentLang;
-      populateEventSelect();
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        const val = localizeCounts(localizeServers(t(key)));
-        if (val) el.textContent = val;
-      });
-      document.querySelectorAll("[data-i18n-ph]").forEach(el => {
-        const key = el.getAttribute("data-i18n-ph");
-        const val = t(key);
-        if (val) el.placeholder = val;
-      });
-
-      // Synchronize eventTitle with localized template if available
-      const eventTitleEl = document.getElementById("eventTitle");
-      if (eventTitleEl) {
-        const m = eventData.meta || {};
-        const homeSrv = m.home_server || "117";
-        const oppSrv = m.opponent_server || "119";
-        const titleTpl = t("event_title_template");
-        if (titleTpl && titleTpl.includes("{home}")) {
-          eventTitleEl.textContent = titleTpl.replace("{home}", homeSrv).replace("{opp}", oppSrv);
-        } else if (t("event_title")) {
-          eventTitleEl.textContent = t("event_title");
-        }
-      }
-
-      applyRoleLabels();
-      if (eventData.meta && eventData.meta.id) {
-        document.querySelectorAll("[data-event-file]").forEach(a => {
-          a.href = `events/${eventData.meta.id}/${a.dataset.eventFile}`;
-          a.setAttribute("download", `${eventData.meta.id}-${a.dataset.eventFile}`);
-        });
-      }
-
-      // Update page title
-      document.title = `${localizeServers(t("brand_title"))} — ${(eventTitleEl && eventTitleEl.textContent) || "Capitol War"}`;
-    }
-
-    function formatNumber(num) {
-      const locale = (window.LANG_LOCALES && window.LANG_LOCALES[currentLang]) || undefined;
-      return (num || 0).toLocaleString(locale);
-    }
-
-    // Load data
-    function loadEventData(eventId) {
-      // Check if preloaded in window (offline/file:// support)
-      const token = ++loadToken;
-      const varName = "EVENT_" + eventId.replace(/-/g, "_");
-      if (window[varName]) {
-        eventData = window[varName];
-        initDashboard();
-        return;
-      }
-
-      // Otherwise fetch via HTTP into a fresh object so other events' data is never overwritten
-      Promise.all([
-        fetch(`events/${eventId}/event.json`).then(r => r.json()),
-        fetch(`events/${eventId}/alliances.json`).then(r => r.json()),
-        fetch(`events/${eventId}/rankings.json`).then(r => r.json())
-      ])
-        .then(([meta, alliances, rankings]) => {
-          if (token !== loadToken) return; // a newer selection superseded this load
-          eventData = window[varName] = { meta, alliances, rankings };
-          initDashboard();
-        })
-        .catch(err => console.warn(`Failed to load event ${eventId}:`, err));
-    }
-
-    function initDashboard() {
-      // Ensure server_rank is assigned for all alliances and rankings
-      const allyServerCounts = {};
-      eventData.alliances.forEach(a => {
-        allyServerCounts[a.server] = (allyServerCounts[a.server] || 0) + 1;
-        if (!a.server_rank) a.server_rank = allyServerCounts[a.server];
-      });
-
-      const playerServerCounts = {};
-      eventData.rankings.forEach(p => {
-        playerServerCounts[p.server] = (playerServerCounts[p.server] || 0) + 1;
-        if (!p.server_rank) p.server_rank = playerServerCounts[p.server];
-      });
-
-      const { all } = serverRoles();
-      if (!all.includes(currentAllianceServer)) currentAllianceServer = "all";
-      if (!all.includes(currentPlayerServer)) currentPlayerServer = "all";
-      document.getElementById("allyModal").classList.remove("open");
-      renderServerFilters();
-
-      applyTranslations();
-      renderHeroAndKPIs();
-      renderServerSpotlights();
-      renderAlliancesTable();
-      renderPlayersTable(true);
-    }
-
-    function renderHeroAndKPIs() {
-      const m = eventData.meta || {};
-      const homeSrv = m.home_server || "117";
-      const oppSrv = m.opponent_server || "119";
-      const titleTpl = t("event_title_template");
-      if (titleTpl && titleTpl.includes("{home}")) {
-        document.getElementById("eventTitle").textContent = titleTpl.replace("{home}", homeSrv).replace("{opp}", oppSrv);
-      } else if (t("event_title")) {
-        document.getElementById("eventTitle").textContent = t("event_title");
-      } else {
-        document.getElementById("eventTitle").textContent = m.title || "Capitol War";
-      }
-      document.getElementById("totalPointsVal").textContent = formatNumber(m.total_points);
-      document.getElementById("totalPlayersVal").textContent = formatNumber(m.total_players);
-      document.getElementById("totalAlliancesVal").textContent = formatNumber(m.unique_alliances);
-
-      const topP = eventData.rankings[0];
-      document.getElementById("topCommanderVal").textContent = topP ? topP.commander : "—";
-      document.getElementById("topCommanderSub").textContent = topP
-        ? `${topP.alliance || "No Alliance"} (${(topP.points / 1e6).toFixed(2)}M pts)` : "";
-
-      // Server Breakdown (s117* ids = home server, s119* ids = opponent, s113 bar = all cross-server)
-      const roles = serverRoles();
-      const servers = (m && m.servers) || {};
-      const empty = { points: 0, point_share_pct: 0, players: 0 };
-      const s117 = servers[roles.home] || empty;
-      const s119 = servers[roles.opp] || empty;
-      const s113 = roles.others.reduce((acc, k) => ({
-        points: acc.points + (servers[k].points || 0),
-        players: acc.players + (servers[k].players || 0),
-        point_share_pct: +(acc.point_share_pct + (servers[k].point_share_pct || 0)).toFixed(2)
-      }), { ...empty });
-      const avg = s => s.players ? Math.round(s.points / s.players) : 0;
-
-      document.querySelectorAll(".srv-home-num").forEach(el => el.textContent = roles.home);
-      document.querySelectorAll(".srv-opp-num").forEach(el => el.textContent = roles.opp);
-      document.querySelectorAll(".srv-home-tag").forEach(el => el.textContent = "S" + roles.home);
-      document.querySelectorAll(".srv-opp-tag").forEach(el => el.textContent = "S" + roles.opp);
-
-      document.getElementById("s119PtsHeader").textContent = `${(s119.points / 1e6).toFixed(1)}M (${s119.point_share_pct}%)`;
-      document.getElementById("s117PtsHeader").textContent = `${(s117.points / 1e6).toFixed(1)}M (${s117.point_share_pct}%)`;
-
-      document.getElementById("barS119").style.width = s119.point_share_pct + "%";
-      document.getElementById("barS119").textContent = s119.point_share_pct + "%";
-
-      document.getElementById("barS117").style.width = s117.point_share_pct + "%";
-      document.getElementById("barS117").textContent = s117.point_share_pct + "%";
-
-      const barOther = document.getElementById("barS113");
-      barOther.style.display = s113.points > 0 ? "" : "none";
-      barOther.style.width = Math.max(s113.point_share_pct, 1) + "%";
-      barOther.textContent = s113.point_share_pct >= 3 ? s113.point_share_pct + "%" : "";
-      barOther.title = roles.others.map(k => `S${k}: ${servers[k].point_share_pct}%`).join(", ");
-
-      // Overview Server Cards
-      document.getElementById("s117TotalPts").textContent = formatNumber(s117.points);
-      document.getElementById("s117Players").textContent = formatNumber(s117.players);
-      document.getElementById("s117AvgPts").textContent = formatNumber(avg(s117));
-
-      const s117Share = document.getElementById("s117SharePct");
-      if (s117Share) s117Share.textContent = s117.point_share_pct + "%";
-      const s117Roster = document.getElementById("s117RosterPct");
-      if (s117Roster && m.total_players) s117Roster.textContent = ((s117.players / m.total_players) * 100).toFixed(1) + "%";
-
-      document.getElementById("s119TotalPts").textContent = formatNumber(s119.points);
-      document.getElementById("s119Players").textContent = formatNumber(s119.players);
-      document.getElementById("s119AvgPts").textContent = formatNumber(avg(s119));
-
-      const topAlly = srv => eventData.alliances.find(a => a.server === srv);
-      [["s117", roles.home], ["s119", roles.opp]].forEach(([slot, srv]) => {
-        const a = topAlly(srv);
-        document.getElementById(slot + "TopAlly").textContent = a ? a.alliance : "—";
-        document.getElementById(slot + "TopAllyPts").textContent = a ? `${(a.total_points / 1e6).toFixed(2)}M Points` : "";
-      });
-
-      const s119Share = document.getElementById("s119SharePct");
-      if (s119Share) s119Share.textContent = s119.point_share_pct + "%";
-      const s119Roster = document.getElementById("s119RosterPct");
-      if (s119Roster && m.total_players) s119Roster.textContent = ((s119.players / m.total_players) * 100).toFixed(1) + "%";
-    }
-
-    function renderServerSpotlights() {
-      const { home, opp } = serverRoles();
-      const s117Allies = eventData.alliances.filter(a => a.server === home).slice(0, 10);
-      const s119Allies = eventData.alliances.filter(a => a.server === opp).slice(0, 10);
-
-      const renderRows = (list, targetId) => {
-        const body = document.getElementById(targetId);
-        body.innerHTML = list.map((a, idx) => `
-          <tr>
-            <td class="rank-cell">
-              <div class="dual-rank-cell">
-                <span class="rank-primary ${idx === 0 ? 'medal-1' : idx === 1 ? 'medal-2' : idx === 2 ? 'medal-3' : ''}">#${idx + 1}</span>
-                <span class="rank-secondary">(${a.rank})</span>
-              </div>
-            </td>
-            <td style="font-weight: 600; cursor: pointer; color: var(--accent);" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">${escapeHtml(a.alliance)}</td>
-            <td style="text-align: right; font-family: var(--font-mono);">${formatNumber(a.members_count)}</td>
-            <td class="pts-cell">${formatNumber(a.total_points)}</td>
-            <td style="text-align: right; font-family: var(--font-mono); color: var(--text-muted);">${formatNumber(a.avg_points)}</td>
-          </tr>
-        `).join("");
-      };
-
-      renderRows(s117Allies, "s117TopAlliesBody");
-      renderRows(s119Allies, "s119TopAlliesBody");
-    }
-
-    function renderAlliancesTable() {
-      const body = document.getElementById("allianceTableBody");
-      const rankTh = document.getElementById("allianceRankHeader");
-      const isFiltered = currentAllianceServer !== "all";
-
-      if (rankTh) {
-        rankTh.textContent = isFiltered ? `S${currentAllianceServer} ${t("col_rank")} ⬍` : `${t("col_rank")} ⬍`;
-      }
-
-      let list = eventData.alliances;
-
-      if (isFiltered) {
-        list = list.filter(a => a.server === currentAllianceServer);
-      }
-
-      if (allianceSearchQuery) {
-        const q = allianceSearchQuery.toLowerCase();
-        list = list.filter(a => a.alliance.toLowerCase().includes(q) || a.tag.toLowerCase().includes(q));
-      }
-
-      body.innerHTML = list.map(a => {
-        const sRank = a.server_rank || a.rank;
-        const rankDisplay = isFiltered ? `
-          <div class="dual-rank-cell">
-            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">#${sRank}</span>
-            <span class="rank-secondary">(${a.rank})</span>
-          </div>
-        ` : `
-          <span class="rank-primary ${a.rank === 1 ? 'medal-1' : a.rank === 2 ? 'medal-2' : a.rank === 3 ? 'medal-3' : ''}">#${a.rank}</span>
-        `;
-
-        return `
-        <tr>
-          <td class="rank-cell">${rankDisplay}</td>
-          <td style="font-weight: 600; cursor: pointer; color: #fff;" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">
-            ${escapeHtml(a.alliance)}
-          </td>
-          <td>
-            <span class="server-pill ${pillClass(a.server)}">
-              S${a.server}
-            </span>
-          </td>
-          <td style="text-align: right; font-family: var(--font-mono);">${formatNumber(a.members_count)}</td>
-          <td class="pts-cell">${formatNumber(a.total_points)}</td>
-          <td style="text-align: right; font-family: var(--font-mono); color: var(--text-muted);">${formatNumber(a.avg_points)}</td>
-          <td>
-            <span style="font-weight: 500;">${escapeHtml(a.top_commander)}</span>
-            <span style="font-size: 0.75rem; color: var(--text-dim);">(${formatNumber(a.top_points)})</span>
-          </td>
-          <td style="text-align: center;">
-            <button class="filter-btn" style="padding: 0.2rem 0.6rem; font-size: 0.75rem;" onclick="openAllianceModal('${escapeHtml(a.alliance)}')">${t("view_roster")}</button>
-          </td>
-        </tr>
-      `;}).join("");
-    }
-
-    function getFilteredPlayers() {
-      let list = eventData.rankings;
-
-      if (currentPlayerServer !== "all") {
-        list = list.filter(p => p.server === currentPlayerServer);
-      }
-
-      if (playerSearchQuery) {
-        const q = playerSearchQuery.toLowerCase();
-        list = list.filter(p => p.commander.toLowerCase().includes(q) || p.alliance.toLowerCase().includes(q));
-      }
-
-      return list;
-    }
-
-    function renderPlayersTable(resetPage = false) {
-      if (resetPage) playerPage = 1;
-      const body = document.getElementById("playerTableBody");
-      const pRankTh = document.getElementById("playerRankHeader");
-      const isFiltered = currentPlayerServer !== "all";
-
-      if (pRankTh) {
-        pRankTh.textContent = isFiltered ? `S${currentPlayerServer} ${t("col_rank")} ⬍` : `${t("col_rank")} ⬍`;
-      }
-
-      const filtered = getFilteredPlayers();
-      const countEl = document.getElementById("filteredPlayerCount");
-      if (countEl) countEl.textContent = formatNumber(filtered.length);
-
-      const itemsToShow = filtered.slice(0, playerPage * PLAYERS_PER_PAGE);
-
-      body.innerHTML = itemsToShow.map(p => {
-        const sRank = p.server_rank || p.rank;
-        const rankDisplay = isFiltered ? `
-          <div class="dual-rank-cell">
-            <span class="rank-primary ${sRank === 1 ? 'medal-1' : sRank === 2 ? 'medal-2' : sRank === 3 ? 'medal-3' : ''}">#${sRank}</span>
-            <span class="rank-secondary">(${p.rank})</span>
-          </div>
-        ` : `
-          <span class="rank-primary ${p.rank === 1 ? 'medal-1' : p.rank === 2 ? 'medal-2' : p.rank === 3 ? 'medal-3' : ''}">#${p.rank}</span>
-        `;
-
-        return `
-        <tr class="deferred-row">
-          <td class="rank-cell">${rankDisplay}</td>
-          <td class="cmd-name">${escapeHtml(p.commander)}</td>
-          <td style="color: var(--text-muted); cursor: pointer;" onclick="openAllianceModal('${escapeHtml(p.alliance)}')">${escapeHtml(p.alliance || 'None')}</td>
-          <td>
-            <span class="server-pill ${pillClass(p.server)}">
-              S${p.server}
-            </span>
-          </td>
-          <td class="pts-cell">${formatNumber(p.points)}</td>
-        </tr>
-      `;}).join("");
-
-      const loadMoreBtn = document.getElementById("loadMoreBtn");
-      if (loadMoreBtn) {
-        if (itemsToShow.length >= filtered.length) {
-          loadMoreBtn.style.display = "none";
-        } else {
-          loadMoreBtn.style.display = "inline-block";
-          loadMoreBtn.textContent = `${t("load_more_btn")} (${formatNumber(itemsToShow.length)} / ${formatNumber(filtered.length)})`;
-        }
-      }
-    }
-
-    function openAllianceModal(allyName) {
-      const ally = eventData.alliances.find(a => a.alliance === allyName);
-      if (!ally) return;
-
-      const allyRole = roleOf(ally.server);
-      const serverType = allyRole ? `(${t("role_" + allyRole)})`
-        : ally.server === serverRoles().home ? `(${t("home_label")})` : `(${t("visiting_label")})`;
-      document.getElementById("modalAllyTitle").textContent = ally.alliance;
-      document.getElementById("modalAllyServer").textContent = `Server ${ally.server} ${serverType}`;
-      document.getElementById("modalMemberCount").textContent = formatNumber(ally.members_count);
-      document.getElementById("modalTotalPts").textContent = formatNumber(ally.total_points);
-      document.getElementById("modalAvgPts").textContent = formatNumber(ally.avg_points);
-
-      const rosterBody = document.getElementById("modalRosterBody");
-      rosterBody.innerHTML = ally.members.map((m, idx) => {
-        let pctDisplay = "0.0%";
-        let rawPct = 0;
-        if (ally.total_points > 0 && m.points > 0) {
-          rawPct = (m.points / ally.total_points) * 100;
-          pctDisplay = rawPct < 0.05 ? "<0.1%" : rawPct.toFixed(1) + "%";
-        }
-        return `
-          <tr>
-            <td class="rank-cell">
-              <div class="dual-rank-cell">
-                <span class="rank-primary ${idx === 0 ? 'medal-1' : idx === 1 ? 'medal-2' : idx === 2 ? 'medal-3' : ''}">#${idx + 1}</span>
-                <span class="rank-secondary">(${m.rank})</span>
-              </div>
-            </td>
-            <td class="cmd-name">${escapeHtml(m.commander)}</td>
-            <td class="pts-cell">${formatNumber(m.points)}</td>
-            <td style="text-align: right; font-family: var(--font-mono); color: var(--text-dim);" title="${formatNumber(m.points)} / ${formatNumber(ally.total_points)} points (${rawPct.toFixed(2)}%)">${pctDisplay}</td>
-          </tr>
-        `;
-      }).join("");
-
-      document.getElementById("allyModal").classList.add("open");
-    }
-
-    function escapeHtml(str) {
-      return (str || '').replace(/[&<>'"]/g, 
-        tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag));
-    }
-
-    // Tab Navigation & URL Sync
-    function switchTab(tabId, updateUrl = true) {
-      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-      document.querySelectorAll(".tab-content").forEach(c => c.style.display = "none");
-      const targetBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
-      if (targetBtn) targetBtn.classList.add("active");
-      const targetContent = document.getElementById(tabId);
-      if (targetContent) targetContent.style.display = "block";
-
-      if (updateUrl && window.history && window.history.replaceState) {
-        try {
-          const url = new URL(window.location.href);
-          const shortTab = tabId.replace("tab-", "");
-          if (shortTab === "overview") {
-            url.searchParams.delete("tab");
-          } else {
-            url.searchParams.set("tab", shortTab);
-          }
-          window.history.replaceState({}, "", url.toString());
-        } catch (e) {}
-      }
-    }
-
-    function initTabsFromUrl() {
-      try {
-        const params = new URLSearchParams(window.location.search);
-        const qTab = params.get("tab");
-        const hash = (window.location.hash || "").replace(/^#/, "");
-        const tabName = qTab || (hash.startsWith("tab-") ? hash.replace("tab-", "") : null);
-        if (tabName) {
-          const targetTabId = tabName.startsWith("tab-") ? tabName : `tab-${tabName}`;
-          switchTab(targetTabId, false);
-        }
-      } catch (e) {}
-    }
-
-    // Event Listeners
-    document.querySelectorAll(".tab-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        switchTab(btn.dataset.tab, true);
-      });
+      const cx = m.l + band * gi + band / 2;
+      svg += `<text x="${cx}" y="${H - m.b + 16}" text-anchor="middle">${esc(g.label)}</text>`;
+      if (g.sub) svg += `<text class="axis-label" x="${cx}" y="${H - m.b + 31}" text-anchor="middle">${esc(g.sub)}</text>`;
     });
-
-    document.querySelectorAll(".lang-link").forEach(link => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        setLanguage(link.dataset.lang, true);
-      });
+    el.innerHTML = svg + `</svg>`;
+    el.querySelectorAll(".hit").forEach(h => {
+      const show = e => { const r = h.getBoundingClientRect(); showTip(h.dataset.tip, e ? e.clientX : r.left + r.width / 2, e ? e.clientY : r.top + 20); };
+      h.addEventListener("mousemove", show); h.addEventListener("focus", () => show());
+      h.addEventListener("mouseleave", hideTip); h.addEventListener("blur", hideTip);
     });
+  }
+  const legendHtml = items => `<div class="legend">${items.map(i => `<span class="key"><i style="background:${i.color}"></i>${esc(i.label)}</span>`).join("")}</div>`;
+  const charts = [];
+  function registerChart(el, fn) { charts.push({ el, fn }); fn(); }
+  let resizeTimer, lastW = window.innerWidth;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => { measureHeader(); if (window.innerWidth !== lastW) { lastW = window.innerWidth; charts.forEach(c => document.body.contains(c.el) && c.fn()); } }, 150);
+  });
+  function measureHeader() {
+    const h = document.getElementById("siteHeader").offsetHeight;
+    document.documentElement.style.setProperty("--sticky-top", h + "px");
+  }
 
-    // Server filter buttons are rebuilt per event from the servers present in its data
-    function renderServerFilters() {
-      const { all } = serverRoles();
-      const build = (containerId, attr, extraClass, current) => {
-        const box = document.getElementById(containerId);
-        box.querySelectorAll(`[${attr}]:not([${attr}="all"])`).forEach(b => b.remove());
-        all.forEach(srv => {
-          const b = document.createElement("button");
-          b.className = "filter-btn" + extraClass;
-          b.setAttribute(attr, srv);
-          b.textContent = `Server ${srv}`;
-          box.appendChild(b);
-        });
-        box.querySelectorAll(`[${attr}]`).forEach(b => b.classList.toggle("active", b.getAttribute(attr) === current));
-      };
-      build("allianceServerFilters", "data-server", "", currentAllianceServer);
-      build("playerServerFilters", "data-player-srv", " player-srv-filter", currentPlayerServer);
+  // ---------- header, event bar, tabs ----------
+  function applyStaticText() {
+    document.documentElement.lang = state.lang;
+    document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+    document.querySelectorAll("[data-i18n-aria]").forEach(el => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
+    const names = window.LANG_NAMES || {};
+    document.getElementById("langSelect").innerHTML = Object.keys(I18N).map(l => `<option value="${l}" ${l === state.lang ? "selected" : ""}>${esc(names[l] || l)}</option>`).join("");
+    document.getElementById("footerLangs").innerHTML = Object.keys(I18N).map(l => `<button type="button" lang="${l}" data-lang="${l}" aria-current="${l === state.lang}">${esc(names[l] || l)}</button>`).join("");
+    document.getElementById("eventSelect").innerHTML = EVENTS.slice().reverse().map(e =>
+      `<option value="${e.id}" ${e.id === state.eventId ? "selected" : ""}>${esc(t("event_option", { date: fmtDate(e.date), home: e.home_server, opp: e.opponent_server }))}</option>`).join("");
+    measureHeader();
+  }
+  function renderEventBar() {
+    const m = ev().meta, r = roles();
+    const title = t("event_title", { home: r.home, opp: r.opp });
+    document.getElementById("eventTitle").textContent = title;
+    document.title = `${title} · ${t("brand_short")}`;
+    const parts = [`<span class="pill">${esc(fmtDate(m.date || state.eventId.slice(0, 10)))}</span>`];
+    if (r.homeRole) {
+      parts.push(`<span class="pill pill-home"><span aria-hidden="true">${roleIcon(r.homeRole)}</span> S${esc(r.home)} · ${esc(t("role_" + r.homeRole))}</span>`);
+      parts.push(`<span class="pill pill-opp"><span aria-hidden="true">${roleIcon(r.oppRole)}</span> S${esc(r.opp)} · ${esc(t("role_" + r.oppRole))}</span>`);
     }
+    document.getElementById("eventMeta").innerHTML = parts.join("");
+  }
+  function setTab(tab, sync = true) {
+    state.tab = tab;
+    document.querySelectorAll(".tab").forEach(b => { const on = b.dataset.tab === tab; b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1; });
+    document.querySelectorAll(".view").forEach(v => { v.hidden = v.id !== "view-" + tab; });
+    renderTab();
+    if (sync) syncUrl();
+  }
+  function syncUrl() {
+    try {
+      const u = new URL(location.href);
+      u.searchParams.set("event", state.eventId);
+      state.tab === "overview" ? u.searchParams.delete("tab") : u.searchParams.set("tab", state.tab);
+      u.searchParams.set("lang", state.lang);
+      u.searchParams.delete("c"); u.searchParams.delete("a"); u.searchParams.delete("l");
+      if (state.profile) u.searchParams.set(state.profile.type, state.profile.key);
+      history.replaceState(null, "", u);
+    } catch (e) {}
+  }
 
-    document.getElementById("allianceServerFilters").addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-server]");
-      if (!btn) return;
-      currentAllianceServer = btn.dataset.server;
-      document.querySelectorAll("#allianceServerFilters [data-server]").forEach(b => b.classList.toggle("active", b === btn));
-      renderAlliancesTable();
-    });
+  // ---------- overview ----------
+  function renderOverview() {
+    const d = ev(), m = d.meta, r = roles(), prev = prevEventOf(state.eventId), pm = prev && store[prev.id] && store[prev.id].meta;
+    const servers = m.servers || {};
+    const empty = { points: 0, players: 0, point_share_pct: 0 };
+    const home = servers[r.home] || empty, opp = servers[r.opp] || empty;
+    const others = r.others.reduce((a, k) => ({ points: a.points + servers[k].points, pct: a.pct + servers[k].point_share_pct }), { points: 0, pct: 0 });
+    const vsPrev = pm ? `<span class="dim">${esc(t("vs_prev", { date: fmtDateShort(pm.date) }))}</span>` : `<span class="dim">${esc(t("first_event"))}</span>`;
+    const top = d.rankings[0];
+    const tiles = [
+      tile(t("kpi_points"), fmt(m.total_points), pm ? `${deltaHtml(m.total_points, pm.total_points, { compact: true })} ${vsPrev}` : vsPrev),
+      tile(t("kpi_commanders"), fmt(m.total_players), pm ? `${deltaHtml(m.total_players, pm.total_players)} ${vsPrev}` : vsPrev),
+      tile(t("kpi_alliances"), fmt(m.unique_alliances), pm ? `${deltaHtml(m.unique_alliances, pm.unique_alliances)} ${vsPrev}` : vsPrev),
+      top ? `<button class="card" style="text-align:left;cursor:pointer" data-open-c="${esc(cKey(top))}"><div class="tile-label">${esc(t("kpi_top"))}</div><div class="tile-value name">${esc(displayName(top.commander))}</div><div class="tile-sub">${esc(top.alliance || "")} · <span class="num">${fmt(top.points)}</span> ${esc(t("pts"))}</div></button>` : "",
+    ].join("");
 
-    document.getElementById("playerServerFilters").addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-player-srv]");
-      if (!btn) return;
-      currentPlayerServer = btn.dataset.playerSrv;
-      document.querySelectorAll("#playerServerFilters [data-player-srv]").forEach(b => b.classList.toggle("active", b === btn));
-      renderPlayersTable(true);
-    });
+    const seg = (pct, color) => pct > 0 ? `<span style="width:${pct}%;background:${color}"></span>` : "";
+    const balance = `<div class="card section"><h2>${esc(t("balance_title"))}</h2>
+      <div class="balance-legend">
+        <span class="key"><i style="background:var(--home)"></i>S${esc(r.home)} <b class="num">${fmtCompact(home.points)}</b> <span class="muted num">${fmtPct(home.point_share_pct / 100)}</span></span>
+        ${others.points > 0 ? `<span class="key"><i style="background:var(--cross)"></i>${esc(t("role_cross"))} <span class="muted num">${fmtPct(others.pct / 100)}</span></span>` : ""}
+        <span class="key"><i style="background:var(--opp)"></i>S${esc(r.opp)} <b class="num">${fmtCompact(opp.points)}</b> <span class="muted num">${fmtPct(opp.point_share_pct / 100)}</span></span>
+      </div>
+      <div class="meter" role="img" aria-label="S${esc(r.home)} ${fmtPct(home.point_share_pct / 100)} · S${esc(r.opp)} ${fmtPct(opp.point_share_pct / 100)}">
+        ${seg(home.point_share_pct, "var(--home)")}${seg(others.pct, "var(--cross)")}${seg(opp.point_share_pct, "var(--opp)")}
+      </div></div>`;
 
-    document.getElementById("allianceSearch").addEventListener("input", (e) => {
-      allianceSearchQuery = e.target.value.trim();
-      renderAlliancesTable();
-    });
+    const card = (srv, s, cls, role) => {
+      const topA = d.alliances.find(a => a.server === srv);
+      const avg = s.players ? Math.round(s.points / s.players) : 0;
+      const prevS = pm && pm.servers && pm.servers[srv];
+      return `<div class="card server-card ${cls}">
+        <h3><span>${esc(t("server_n", { n: srv }))}${role ? ` · ${esc(t("role_" + role))}` : ""}</span>${serverPill(srv)}</h3>
+        <div class="stats">
+          <div class="stat"><div class="l">${esc(t("total_points"))}</div><div class="v num">${fmt(s.points)}</div><div class="l">${esc(t("share_of_points", { p: fmtPct(s.point_share_pct / 100) }))}</div></div>
+          <div class="stat"><div class="l">${esc(t("participants"))}</div><div class="v num">${fmt(s.players)}</div><div class="l">${esc(t("share_of_roster", { p: fmtPct(m.total_players ? s.players / m.total_players : 0) }))}</div></div>
+          <div class="stat"><div class="l">${esc(t("avg_per_player"))}</div><div class="v num">${fmt(avg)}</div>${prevS && prevS.players ? `<div class="l">${deltaHtml(avg, Math.round(prevS.points / prevS.players), { compact: true })} ${vsPrev}</div>` : ""}</div>
+          <div class="stat"><div class="l">${esc(t("top_alliance"))}</div>${topA ? `<button class="link-btn" style="color:var(--gold);font-weight:650;text-decoration:none;padding:0;font-size:17px;text-align:left" data-open-a="${esc(aKey(topA))}">${esc(topA.alliance)}</button><div class="l num">${fmtCompact(topA.total_points)} ${esc(t("pts"))}</div>` : "—"}</div>
+        </div></div>`;
+    };
+    const topList = (srv, cls) => {
+      const list = d.alliances.filter(a => a.server === srv).slice(0, 10);
+      const max = list.length ? list[0].total_points : 1;
+      return `<div class="card"><h2>${esc(t("top10_server", { n: srv }))}</h2><ol class="rank-list">${list.map((a, i) => `
+        <li><button data-open-a="${esc(aKey(a))}">
+          <span class="rk ${rankClass(i + 1)}">#${i + 1}</span>
+          <span class="ellipsis"><b>${esc(a.alliance)}</b> <span class="dim">· ${fmt(a.members_count)}</span></span>
+          <span class="num">${fmt(a.total_points)}</span>
+          <span class="bar"><span style="width:${(a.total_points / max * 100).toFixed(1)}%;background:var(--${cls})"></span></span>
+        </button></li>`).join("")}</ol>
+        <button class="link-btn" data-goto="alliances" data-server="${esc(srv)}">${esc(t("view_all"))} →</button></div>`;
+    };
+    document.getElementById("view-overview").innerHTML =
+      `<div class="grid tiles">${tiles}</div>${balance}
+       <div class="grid two section">${card(r.home, home, "home", r.homeRole)}${card(r.opp, opp, "opp", r.oppRole)}</div>
+       <div class="grid two section">${topList(r.home, "home")}${topList(r.opp, "opp")}</div>`;
+  }
 
-    document.getElementById("playerSearch").addEventListener("input", (e) => {
-      playerSearchQuery = e.target.value.trim();
-      renderPlayersTable(true);
-    });
+  // ---------- alliances ----------
+  function serverFilter(current, attr) {
+    const r = roles();
+    const opts = ["all", r.home, r.opp, ...r.others].filter(Boolean);
+    return `<div class="segmented" role="group" aria-label="${esc(t("col_server"))}">${opts.map(s => `<button type="button" ${attr}="${esc(s)}" aria-pressed="${current === s}">${s === "all" ? esc(t("all_servers")) : "S" + esc(s)}</button>`).join("")}</div>`;
+  }
+  function liveFilter(id, onChange) {
+    const qi = document.getElementById(id);
+    qi.addEventListener("input", () => { const v = qi.value, pos = qi.selectionStart; onChange(v.trim()); const n = document.getElementById(id); n.focus(); n.setSelectionRange(pos, pos); });
+  }
+  function renderAlliances() {
+    const d = ev(), prev = prevEventOf(state.eventId), pd = prev && store[prev.id];
+    const q = state.allyQuery.toLowerCase(), filtered = state.allyServer !== "all";
+    const list = d.alliances.filter(a => (!filtered || a.server === state.allyServer) && (!q || a.alliance.toLowerCase().includes(q)));
+    const prevA = a => (pd && index) ? (index.a[aKey(a)] || {})[prev.id] : null;
+    const rows = list.map(a => {
+      const p = prevA(a), rk = filtered ? a.server_rank : a.rank;
+      return `<tr class="clickable" data-open-a="${esc(aKey(a))}" tabindex="0">
+        <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? `<span class="overall">(${a.rank})</span>` : ""}</td>
+        <td class="name-cell">${esc(a.alliance)}<span class="sub"><span class="show-sm">${serverPill(a.server, null, true)}<span class="num">${fmt(a.members_count)}</span> · </span>${esc(displayName(a.top_commander))}</span></td>
+        <td class="hide-sm">${serverPill(a.server)}</td>
+        <td class="r num hide-sm">${fmt(a.members_count)}</td>
+        <td class="r num"><b>${fmt(a.total_points)}</b>${pd ? `<span class="sub">${p ? deltaHtml(a.total_points, p.total_points, { compact: true }) : `<span class="pill pill-new">${esc(t("new_badge"))}</span>`}</span>` : ""}</td>
+        <td class="r num hide-sm">${fmt(a.avg_points)}</td>
+        <td class="r hide-sm">${pd ? (p ? rankMoveHtml(a.rank, p.rank) : "") : "—"}</td>
+      </tr>`;
+    }).join("");
+    document.getElementById("view-alliances").innerHTML = `
+      <div class="toolbar">
+        <input class="input" type="search" id="allyQuery" value="${esc(state.allyQuery)}" placeholder="${esc(t("filter_alliances_ph"))}" aria-label="${esc(t("filter_alliances_ph"))}">
+        ${serverFilter(state.allyServer, "data-ally-srv")}
+        <span class="count">${esc(t("showing_alliances", { n: fmt(list.length) }))}</span>
+        <a class="btn" href="events/${esc(state.eventId)}/alliances.csv" download="${esc(state.eventId)}-alliances.csv">${esc(t("download_csv"))}</a>
+      </div>
+      ${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
+      <div class="table-wrap"><table>
+        <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_alliance"))}</th><th class="hide-sm">${esc(t("col_server"))}</th>
+        <th class="r hide-sm">${esc(t("col_members"))}</th><th class="r">${esc(t("col_total"))}</th><th class="r hide-sm">${esc(t("col_avg"))}</th><th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead>
+        <tbody>${rows}</tbody></table></div>`;
+    liveFilter("allyQuery", v => { state.allyQuery = v; renderAlliances(); });
+  }
 
-    document.getElementById("loadMoreBtn").addEventListener("click", () => {
-      playerPage++;
-      renderPlayersTable(false);
-    });
+  // ---------- commanders ----------
+  function renderCommanders() {
+    const d = ev(), prev = prevEventOf(state.eventId), pd = prev && store[prev.id];
+    const q = state.cmdQuery.toLowerCase(), filtered = state.cmdServer !== "all";
+    const list = d.rankings.filter(p => (!filtered || p.server === state.cmdServer) && (!q || (p.commander || "").toLowerCase().includes(q) || (p.alliance || "").toLowerCase().includes(q)));
+    const shown = list.slice(0, state.cmdLimit);
+    const rows = shown.map(p => {
+      const pp = (pd && index) ? (index.c[cKey(p)] || {})[prev.id] : null;
+      const rk = filtered ? p.server_rank : p.rank;
+      return `<tr class="clickable" data-open-c="${esc(cKey(p))}" tabindex="0">
+        <td class="rank-cell"><span class="rk ${rankClass(rk)}">#${rk}</span>${filtered ? `<span class="overall">(${p.rank})</span>` : ""}</td>
+        <td class="name-cell">${esc(displayName(p.commander))}<span class="sub"><span class="show-sm">${serverPill(p.server, null, true)}</span>${esc(p.alliance || "")}</span></td>
+        <td class="hide-sm">${serverPill(p.server)}</td>
+        <td class="r num"><b>${fmt(p.points)}</b>${pd ? `<span class="sub"><span class="hide-sm">${pp ? deltaHtml(p.points, pp.points, { compact: true }) : ""}</span><span class="show-sm">${rankMoveHtml(p.rank, pp ? pp.rank : null)}</span></span>` : ""}</td>
+        <td class="r hide-sm">${pd ? rankMoveHtml(p.rank, pp ? pp.rank : null) : "—"}</td>
+      </tr>`;
+    }).join("");
+    document.getElementById("view-commanders").innerHTML = `
+      <div class="toolbar">
+        <input class="input" type="search" id="cmdQuery" value="${esc(state.cmdQuery)}" placeholder="${esc(t("filter_commanders_ph"))}" aria-label="${esc(t("filter_commanders_ph"))}">
+        ${serverFilter(state.cmdServer, "data-cmd-srv")}
+        <span class="count">${esc(t("showing_commanders", { n: fmt(list.length) }))}</span>
+        <a class="btn" href="events/${esc(state.eventId)}/rankings.csv" download="${esc(state.eventId)}-rankings.csv">${esc(t("download_csv"))}</a>
+      </div>
+      ${filtered ? `<p class="note" style="margin:0 0 10px">${esc(t("rank_hint"))}</p>` : ""}
+      <div class="table-wrap"><table>
+        <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_commander"))}</th><th class="hide-sm">${esc(t("col_server"))}</th>
+        <th class="r">${esc(t("col_points"))}</th><th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead>
+        <tbody>${rows}</tbody></table>
+        ${list.length > shown.length ? `<div class="more-row"><button class="btn" id="cmdMore">${esc(t("load_more"))} · ${fmt(shown.length)} / ${fmt(list.length)}</button></div>` : ""}
+      </div>`;
+    liveFilter("cmdQuery", v => { state.cmdQuery = v; state.cmdLimit = 100; renderCommanders(); });
+    const more = document.getElementById("cmdMore");
+    if (more) more.addEventListener("click", () => { state.cmdLimit += 200; renderCommanders(); });
+  }
 
-    document.getElementById("modalCloseBtn").addEventListener("click", () => {
-      document.getElementById("allyModal").classList.remove("open");
-    });
+  // ---------- trends (longitudinal) ----------
+  function renderTrends() {
+    const el = document.getElementById("view-trends");
+    const loaded = EVENTS.filter(e => store[e.id]);
+    if (loaded.length < 2 || !index) {
+      el.innerHTML = `<div class="card"><p class="muted" style="margin:0">${esc(t("trends_need_two"))}</p></div>`;
+      return;
+    }
+    const groups = loaded.map(e => ({ label: fmtDateShort(e.date), sub: `vs S${e.opponent_server}` }));
+    const homeSrv = String(loaded[loaded.length - 1].home_server || "117");
+    const S = e => store[e.id].meta.servers || {};
+    const series = (srvOf, field) => loaded.map(e => (S(e)[srvOf(e)] || {})[field] || 0);
+    const homePts = series(e => e.home_server, "points"), oppPts = series(e => e.opponent_server, "points");
+    const homeN = series(e => e.home_server, "players"), oppN = series(e => e.opponent_server, "players");
+    const tips = (srvOf, vals) => loaded.map((e, i) => `<b>S${esc(srvOf(e))}</b> · ${esc(fmtDate(e.date))}<br><span class="num">${esc(fmt(vals[i]))}</span>`);
+    const homeLabel = t("legend_home", { n: homeSrv }), oppLabel = t("legend_opponent");
+    const legend = legendHtml([{ color: "var(--home)", label: homeLabel }, { color: "var(--opp)", label: oppLabel }]);
+    const evHead = loaded.map(e => `<th class="r">${esc(fmtDateShort(e.date))}<span class="sub" style="text-transform:none;letter-spacing:0">vs S${esc(e.opponent_server)}</span></th>`).join("");
+    const dataTable = (key, rowsHtml) => `<div class="chart-table" ${state.trendsTable[key] ? "" : "hidden"}><div class="table-wrap"><table><thead><tr><th>${esc(t("col_server"))}</th>${evHead}</tr></thead><tbody>${rowsHtml}</tbody></table></div></div>
+      <button class="link-btn" data-toggle-table="${key}" aria-expanded="${!!state.trendsTable[key]}">${esc(state.trendsTable[key] ? t("hide_table") : t("show_table"))}</button>`;
+    const valRow = (label, vals) => `<tr><td>${esc(label)}</td>${vals.map(v => `<td class="r num">${fmt(v)}</td>`).join("")}</tr>`;
 
-    document.getElementById("allyModal").addEventListener("click", (e) => {
-      if (e.target === document.getElementById("allyModal")) {
-        document.getElementById("allyModal").classList.remove("open");
-      }
-    });
+    const lastId = loaded[loaded.length - 1].id;
+    const allyRows = Object.entries(index.a).filter(([k, byEv]) => k.startsWith(homeSrv + "|") && !Object.values(byEv).some(a => a.alliance === "No Alliance")).map(([k, byEv]) => {
+      const vals = loaded.map(e => byEv[e.id] ? byEv[e.id].total_points : null);
+      const ref = byEv[lastId] || Object.values(byEv).pop();
+      return { k, name: ref.alliance, vals };
+    }).sort((a, b) => (b.vals[b.vals.length - 1] || 0) - (a.vals[a.vals.length - 1] || 0) || (b.vals[b.vals.length - 2] || 0) - (a.vals[a.vals.length - 2] || 0)).slice(0, 15);
+    const maxA = Math.max(1, ...allyRows.flatMap(r => r.vals.filter(v => v != null)));
 
-    document.getElementById("eventSelect").addEventListener("change", (e) => {
-      currentEventId = e.target.value;
-      // Server numbers mean different things per event (e.g. S113 opponent vs cross-server), so start unfiltered
-      currentAllianceServer = "all";
-      currentPlayerServer = "all";
-      try {
-        const url = new URL(window.location.href);
-        url.searchParams.set("event", currentEventId);
-        window.history.replaceState({}, "", url.toString());
-      } catch (err) {}
-      loadEventData(currentEventId);
-    });
+    const cmdRows = Object.entries(index.c).filter(([k]) => k.startsWith(homeSrv + "|")).map(([k, byEv]) => {
+      const cells = loaded.map(e => byEv[e.id] || null);
+      return { k, cells, ref: cells[cells.length - 1] || cells.filter(Boolean).pop(), n: cells.filter(Boolean).length };
+    }).filter(r => r.n >= 2).sort((a, b) => ((b.cells[b.cells.length - 1] || {}).points || 0) - ((a.cells[a.cells.length - 1] || {}).points || 0)).slice(0, 25);
 
-    document.getElementById("langSelect").addEventListener("change", (e) => {
-      setLanguage(e.target.value, true);
-    });
+    el.innerHTML = `
+      <p class="note" style="margin:0 0 12px">${esc(t("events_n", { n: loaded.length }))} · ${esc(t("trends_note"))}</p>
+      <div class="grid two">
+        <div class="card"><h2>${esc(t("trends_server_points"))}</h2>${legend}<div class="chart" id="chPts"></div>
+          ${dataTable("pts", valRow(homeLabel, homePts) + valRow(oppLabel, oppPts))}</div>
+        <div class="card"><h2>${esc(t("trends_participation"))}</h2>${legend}<div class="chart" id="chN"></div>
+          ${dataTable("n", valRow(homeLabel, homeN) + valRow(oppLabel, oppN))}</div>
+      </div>
+      <div class="card section trend-card"><h2>${esc(t("trends_top_alliances", { home: homeSrv }))}</h2>
+        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_alliance"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead><tbody>
+        ${allyRows.map(r => { const a = r.vals[r.vals.length - 1], b = r.vals[r.vals.length - 2];
+          return `<tr class="clickable" data-open-a="${esc(r.k)}" tabindex="0"><td class="name-cell">${esc(r.name)}</td>${r.vals.map(v => v == null ? `<td class="r dim">—</td>` :
+          `<td class="r num">${fmtCompact(v)}<span class="inline-bar"><span style="width:${(v / maxA * 100).toFixed(1)}%;background:var(--home)"></span></span></td>`).join("")}
+          <td class="r hide-sm">${a != null && b != null ? deltaHtml(a, b, { compact: true }) : (a != null ? `<span class="pill pill-new">${esc(t("new_badge"))}</span>` : "")}</td></tr>`; }).join("")}
+        </tbody></table></div></div>
+      <div class="card section trend-card"><h2>${esc(t("trends_top_commanders", { home: homeSrv }))}</h2>
+        <div class="table-wrap" style="border:0"><table class="trend-table"><thead><tr><th>${esc(t("col_commander"))}</th>${evHead}<th class="r hide-sm">${esc(t("col_change"))}</th></tr></thead><tbody>
+        ${cmdRows.map(r => { const a = r.cells[r.cells.length - 1], b = r.cells[r.cells.length - 2];
+          return `<tr class="clickable" data-open-c="${esc(r.k)}" tabindex="0"><td class="name-cell">${esc(r.ref.commander)}<span class="sub">${esc(r.ref.alliance || "")}</span></td>
+          ${r.cells.map(c => c ? `<td class="r num">${fmtCompact(c.points)}<span class="sub">#${c.rank}</span></td>` : `<td class="r dim">${esc(t("not_placed"))}</td>`).join("")}
+          <td class="r hide-sm">${a && b ? rankMoveHtml(a.rank, b.rank) : ""}</td></tr>`; }).join("")}
+        </tbody></table></div></div>`;
+    const ch = (id, h, o) => registerChart(document.getElementById(id), () => columnChart(document.getElementById(id), groups,
+      [{ label: homeLabel, color: "#1aa3c2", values: h, tips: tips(e => e.home_server, h) },
+       { label: oppLabel, color: "#e5484d", values: o, tips: tips(e => e.opponent_server, o) }]));
+    ch("chPts", homePts, oppPts);
+    ch("chN", homeN, oppN);
+  }
 
-    // Initialize
-    initLanguage();
-    initTabsFromUrl();
-    loadEventData(currentEventId);
-  </script>
+  // ---------- data ----------
+  function renderData() {
+    const id = esc(state.eventId);
+    document.getElementById("view-data").innerHTML = `
+      <div class="grid two">
+        <div class="card"><h2>${esc(t("data_title"))}</h2>
+          <div class="grid" style="gap:8px">
+            <a class="btn" href="events/${id}/rankings.csv" download="${id}-rankings.csv">${esc(t("dl_rankings_csv"))}</a>
+            <a class="btn" href="events/${id}/rankings.json" download="${id}-rankings.json">${esc(t("dl_rankings_json"))}</a>
+            <a class="btn" href="events/${id}/alliances.csv" download="${id}-alliances.csv">${esc(t("dl_alliances_csv"))}</a>
+          </div></div>
+        <div class="card"><h2>${esc(t("method_title"))}</h2><p class="muted" style="margin:0">${esc(t("method_p1"))}</p></div>
+      </div>`;
+  }
+
+  // ---------- profiles (drawer on desktop, full-screen sheet on phones) ----------
+  const drawer = document.getElementById("drawer"), scrim = document.getElementById("scrim");
+  let lastFocus = null;
+  function openDrawer() {
+    if (!drawer.classList.contains("open")) lastFocus = document.activeElement;
+    drawer.classList.add("open"); scrim.classList.add("open"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    drawer.querySelector(".drawer-body").scrollTop = 0;
+    setTimeout(() => document.getElementById("drawerClose").focus({ preventScroll: true }), 30);
+  }
+  function closeDrawer() {
+    drawer.classList.remove("open"); scrim.classList.remove("open"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = ""; state.profile = null; hideTip(); syncUrl();
+    if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
+  }
+  const loadedEvents = () => EVENTS.filter(e => store[e.id]);
+  function historyChart(el, hist, label, color, valueOf, tipOf) {
+    registerChart(el, () => columnChart(el, hist.map(h => ({ label: fmtDateShort(h.e.date), sub: `vs S${h.e.opponent_server}` })),
+      [{ label, color, values: hist.map(h => h.v ? valueOf(h.v) : null), tips: hist.map(h => h.v ? tipOf(h) : "") }], { height: 200 }));
+  }
+  function openCommander(key) {
+    const byEv = (index && index.c[key]) || {};
+    const cur = byEv[state.eventId] || ev().rankings.find(p => cKey(p) === key);
+    const any = cur || Object.values(byEv).pop();
+    if (!any) return;
+    state.profile = { type: "c", key }; syncUrl();
+    document.getElementById("drawerKind").textContent = t("profile_commander");
+    document.getElementById("drawerTitle").textContent = displayName(any.commander);
+    const allyK = aKey({ server: any.server, tag: allyTag(any.alliance), alliance: any.alliance });
+    document.getElementById("drawerMeta").innerHTML = `${serverPill(any.server)} ${any.alliance ? `<button class="pill" data-open-a="${esc(allyK)}" style="cursor:pointer">${esc(any.alliance)}</button>` : ""}`;
+    const hist = loadedEvents().map(e => ({ e, v: byEv[e.id] || (e.id === state.eventId ? cur : null) || null }));
+    const played = hist.filter(h => h.v);
+    const best = played.length ? Math.min(...played.map(h => h.v.rank)) : null;
+    let share = "";
+    if (cur) { const a = allyOfPlayer(cur, state.eventId); if (a && a.total_points) share = fmtPct(cur.points / a.total_points); }
+    const prevE = prevEventOf(state.eventId), prevV = prevE ? byEv[prevE.id] : null;
+    document.getElementById("drawerBody").innerHTML = `
+      <div class="grid tiles">
+        ${tile(t("this_event"), cur ? `#${cur.server_rank} <span class="dim" style="font-size:15px">(${cur.rank})</span>` : "—", cur ? (prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : esc(t("col_server_rank"))) : esc(t("not_placed")))}
+        ${tile(t("col_points"), cur ? fmt(cur.points) : "—", cur && prevV ? deltaHtml(cur.points, prevV.points, { compact: true }) : "")}
+        ${tile(t("col_share"), share || "—", "")}
+        ${tile(t("events_played"), `${played.length} / ${hist.length}`, best ? `${esc(t("best_rank"))}: #${best}` : "")}
+      </div>
+      <div class="card"><h3>${esc(t("history_points"))}</h3><div class="chart" id="chHist"></div></div>
+      <div class="card" style="padding:0"><div class="table-wrap" style="border:0"><table>
+        <thead><tr><th>${esc(t("col_event"))}</th><th class="r">${esc(t("col_rank"))}</th><th class="r">${esc(t("col_points"))}</th><th class="hide-sm">${esc(t("col_alliance"))}</th></tr></thead>
+        <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td>
+          ${h.v ? `<td class="r num">#${h.v.server_rank} <span class="dim">(${h.v.rank})</span></td><td class="r num">${fmt(h.v.points)}</td><td class="hide-sm">${esc(h.v.alliance || "")}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody>
+      </table></div></div>`;
+    openDrawer();
+    historyChart(document.getElementById("chHist"), hist, displayName(any.commander), serverColor(any.server), v => v.points,
+      h => `<b>${esc(fmtDate(h.e.date))}</b><br>#${h.v.server_rank} (${h.v.rank}) · ${esc(fmt(h.v.points))} ${esc(t("pts"))}`);
+  }
+  function openAlliance(key) {
+    const byEv = (index && index.a[key]) || {};
+    const cur = byEv[state.eventId] || ev().alliances.find(a => aKey(a) === key);
+    const any = cur || Object.values(byEv).pop();
+    if (!any) return;
+    state.profile = { type: "a", key }; syncUrl();
+    document.getElementById("drawerKind").textContent = t("profile_alliance");
+    document.getElementById("drawerTitle").textContent = any.alliance;
+    document.getElementById("drawerMeta").innerHTML = serverPill(any.server);
+    const hist = loadedEvents().map(e => ({ e, v: byEv[e.id] || (e.id === state.eventId ? cur : null) || null }));
+    const prevE = prevEventOf(state.eventId), prevV = prevE ? byEv[prevE.id] : null;
+    const prevRankOf = m => { if (!prevE || !index) return null; const p = (index.c[cKey({ server: any.server, commander: m.commander })] || {})[prevE.id]; return p ? p.rank : null; };
+    document.getElementById("drawerBody").innerHTML = `
+      <div class="grid tiles">
+        ${tile(t("this_event"), cur ? `#${cur.server_rank} <span class="dim" style="font-size:15px">(${cur.rank})</span>` : "—", cur && prevE ? rankMoveHtml(cur.rank, prevV ? prevV.rank : null, true) : "")}
+        ${tile(t("col_total"), cur ? fmt(cur.total_points) : "—", cur && prevV ? deltaHtml(cur.total_points, prevV.total_points, { compact: true }) : "")}
+        ${tile(t("col_members"), cur ? fmt(cur.members_count) : "—", cur && prevV ? deltaHtml(cur.members_count, prevV.members_count) : "")}
+        ${tile(t("col_avg"), cur ? fmt(cur.avg_points) : "—", cur && prevV ? deltaHtml(cur.avg_points, prevV.avg_points, { compact: true }) : "")}
+      </div>
+      <div class="card"><h3>${esc(t("history_alliance_points"))}</h3><div class="chart" id="chHist"></div></div>
+      ${cur ? `<div class="card" style="padding:0"><h3 style="padding:14px 14px 0">${esc(t("roster_title"))}</h3><div class="table-wrap" style="border:0"><table>
+        <thead><tr><th>${esc(t("col_rank"))}</th><th>${esc(t("col_commander"))}</th><th class="r">${esc(t("col_points"))}</th>${prevE ? `<th class="r">${esc(t("col_change"))}</th>` : ""}</tr></thead>
+        <tbody>${cur.members.map((m, i) => `<tr class="clickable" data-open-c="${esc(cKey({ server: any.server, commander: m.commander }))}" tabindex="0">
+          <td class="rank-cell"><span class="rk ${rankClass(i + 1)}">#${i + 1}</span><span class="overall">(${m.rank})</span></td>
+          <td class="name-cell">${esc(displayName(m.commander))}</td>
+          <td class="r num">${fmt(m.points)}<span class="sub" title="${esc(t("col_share"))}">${cur.total_points ? (m.points / cur.total_points < 0.0005 ? "&lt;0.1%" : fmtPct(m.points / cur.total_points)) : ""}</span></td>
+          ${prevE ? `<td class="r">${rankMoveHtml(m.rank, prevRankOf(m))}</td>` : ""}</tr>`).join("")}</tbody></table></div></div>` : ""}`;
+    openDrawer();
+    historyChart(document.getElementById("chHist"), hist, any.alliance, serverColor(any.server), v => v.total_points,
+      h => `<b>${esc(fmtDate(h.e.date))}</b><br>#${h.v.server_rank} (${h.v.rank}) · ${esc(fmt(h.v.total_points))} ${esc(t("pts"))}<br>${esc(t("col_members"))}: ${esc(fmt(h.v.members_count))}`);
+  }
+
+  // ---------- global search ----------
+  const gs = document.getElementById("globalSearch"), gsr = document.getElementById("searchResults");
+  let gsItems = [], gsSel = -1;
+  function closeSearch() { gsr.classList.remove("open"); gs.setAttribute("aria-expanded", "false"); }
+  function renderSearch() {
+    const q = gs.value.trim().toLowerCase();
+    if (!q) { closeSearch(); return; }
+    const d = ev();
+    const cmds = d.rankings.filter(p => (p.commander || "").toLowerCase().includes(q)).slice(0, 6)
+      .map(p => ({ type: "c", key: cKey(p), label: displayName(p.commander), server: p.server, extra: `#${p.rank} · ${p.alliance || ""}` }));
+    const allies = d.alliances.filter(a => a.alliance.toLowerCase().includes(q)).slice(0, 4)
+      .map(a => ({ type: "a", key: aKey(a), label: a.alliance, server: a.server, extra: `#${a.rank} · ${fmtCompact(a.total_points)}` }));
+    gsItems = [...cmds, ...allies]; gsSel = gsItems.length ? 0 : -1;
+    gsr.innerHTML = gsItems.length ? gsItems.map((it, i) => `<button type="button" class="sr-item" role="option" id="sr-${i}" aria-selected="${i === gsSel}" data-i="${i}">${serverPill(it.server)}<span class="ellipsis"><b>${esc(it.label)}</b> <span class="dim">${esc(it.extra)}</span></span><span class="sr-kind">${esc(t(it.type === "c" ? "profile_commander" : "profile_alliance"))}</span></button>`).join("")
+      : `<div class="dim" style="padding:10px">${esc(t("search_none"))}</div>`;
+    gsr.classList.add("open"); gs.setAttribute("aria-expanded", "true");
+  }
+  function pickSearch(i) {
+    const it = gsItems[i]; if (!it) return;
+    gs.value = ""; closeSearch(); gs.blur();
+    it.type === "c" ? openCommander(it.key) : openAlliance(it.key);
+  }
+  gs.addEventListener("input", renderSearch);
+  gs.addEventListener("keydown", e => {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault(); if (!gsItems.length) return;
+      gsSel = (gsSel + (e.key === "ArrowDown" ? 1 : -1) + gsItems.length) % gsItems.length;
+      gsr.querySelectorAll(".sr-item").forEach((b, i) => b.setAttribute("aria-selected", i === gsSel));
+      gs.setAttribute("aria-activedescendant", "sr-" + gsSel);
+    } else if (e.key === "Enter") { e.preventDefault(); pickSearch(gsSel); }
+    else if (e.key === "Escape") { gs.value = ""; closeSearch(); }
+  });
+  gsr.addEventListener("click", e => { const b = e.target.closest(".sr-item"); if (b) pickSearch(+b.dataset.i); });
+
+  // ---------- delegated interactions ----------
+  document.addEventListener("click", e => {
+    if (!e.target.closest(".search")) closeSearch();
+    const c = e.target.closest("[data-open-c]"); if (c) { openCommander(c.dataset.openC); return; }
+    const a = e.target.closest("[data-open-a]"); if (a) { openAlliance(a.dataset.openA); return; }
+    const g = e.target.closest("[data-goto]"); if (g) { if (g.dataset.server) state.allyServer = g.dataset.server; setTab(g.dataset.goto); document.querySelector(".tabs-bar").scrollIntoView({ block: "start" }); return; }
+    const as = e.target.closest("[data-ally-srv]"); if (as) { state.allyServer = as.dataset.allySrv; renderAlliances(); return; }
+    const cs = e.target.closest("[data-cmd-srv]"); if (cs) { state.cmdServer = cs.dataset.cmdSrv; state.cmdLimit = 100; renderCommanders(); return; }
+    const tt = e.target.closest("[data-toggle-table]"); if (tt) { state.trendsTable[tt.dataset.toggleTable] = !state.trendsTable[tt.dataset.toggleTable]; renderTrends(); return; }
+    const fl = e.target.closest("#footerLangs [data-lang]"); if (fl) setLanguage(fl.dataset.lang);
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && drawer.classList.contains("open")) closeDrawer();
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches("tr[data-open-c], tr[data-open-a]")) { e.preventDefault(); e.target.click(); }
+  });
+  document.getElementById("drawerClose").addEventListener("click", closeDrawer);
+  scrim.addEventListener("click", closeDrawer);
+  document.getElementById("tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (b) setTab(b.dataset.tab); });
+  document.getElementById("tabs").addEventListener("keydown", e => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    const tabs = [...document.querySelectorAll(".tab")], i = tabs.findIndex(b => b.dataset.tab === state.tab);
+    const n = tabs[(i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length];
+    setTab(n.dataset.tab); n.focus();
+  });
+  document.getElementById("eventSelect").addEventListener("change", e => selectEvent(e.target.value));
+  document.getElementById("langSelect").addEventListener("change", e => setLanguage(e.target.value));
+
+  function setLanguage(lang) {
+    if (!I18N[lang]) return;
+    state.lang = lang;
+    try { localStorage.setItem("s117.lang", lang); } catch (e) {}
+    const profile = state.profile;
+    renderAll();
+    if (profile) (profile.type === "c" ? openCommander : openAlliance)(profile.key);
+  }
+  function selectEvent(id) {
+    state.eventId = id; state.allyServer = "all"; state.cmdServer = "all"; state.cmdLimit = 100;
+    if (drawer.classList.contains("open")) closeDrawer();
+    loadEvent(id).then(renderAll);
+  }
+  function renderTab() {
+    charts.length = 0;
+    ({ overview: renderOverview, alliances: renderAlliances, commanders: renderCommanders, trends: renderTrends, data: renderData }[state.tab] || renderOverview)();
+  }
+  function renderAll() { applyStaticText(); renderEventBar(); setTab(state.tab, false); syncUrl(); }
+
+  // ---------- boot ----------
+  state.lang = detectLanguage();
+  const latest = EVENTS[EVENTS.length - 1];
+  state.eventId = (EVENTS.find(e => e.id === params.get("event")) || latest || {}).id;
+  const aliases = { players: "commanders", export: "data" }, qTab = aliases[params.get("tab")] || params.get("tab");
+  state.tab = ["overview", "alliances", "commanders", "trends", "data"].includes(qTab) ? qTab : "overview";
+  if (!state.eventId) { document.getElementById("view-overview").textContent = "No events published yet."; return; }
+  loadEvent(state.eventId).then(() => {
+    renderAll();
+    return Promise.all(EVENTS.map(e => loadEvent(e.id).catch(() => null)));
+  }).then(() => {
+    index = buildIndex();
+    renderTab();   // vs-previous deltas and trends need every event
+    const c = params.get("c"), a = params.get("a");
+    if (c) openCommander(c); else if (a) openAlliance(a);
+  });
+})();
+</script>
 </body>
 </html>
