@@ -1,0 +1,23 @@
+{
+  "event_id": "2026-09-19-s117-vs-s119",
+  "passes": [
+    {
+      "started_at": "2026-09-19T12:34:01-04:00",
+      "finished_at": "2026-09-19T12:38:33-04:00",
+      "started_at_utc": "2026-09-19T16:34:01+00:00",
+      "finished_at_utc": "2026-09-19T16:38:33+00:00",
+      "duration_seconds": 272,
+      "note": "Main pass from rank 1."
+    },
+    {
+      "started_at": "2026-09-19T12:43:35-04:00",
+      "finished_at": "2026-09-19T12:44:36-04:00",
+      "started_at_utc": "2026-09-19T16:43:35+00:00",
+      "finished_at_utc": "2026-09-19T16:44:36+00:00",
+      "duration_seconds": 61,
+      "note": "Tail pass completing the list to rank 1,398."
+    }
+  ],
+  "method": "Earlier extract_rankings.py ADB capture (BlueStacks) + Apple Vision OCR",
+  "timestamp_source": "Reconstructed from capture frame file times (frame_*.png, tail_frame_*.png) in the original capture session's scratch folder; consistent with commits 9de6e0e (12:40:03 EDT) and 65f9dd2 (12:44:55 EDT)."
+}

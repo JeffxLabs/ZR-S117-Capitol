@@ -1,0 +1,19 @@
+{
+  "event_id": "2026-10-03-s117-vs-s113",
+  "passes": [
+    {
+      "started_at": "2026-10-03T11:10:44-04:00",
+      "finished_at": "2026-10-03T11:13:14-04:00",
+      "started_at_utc": "2026-10-03T15:10:44+00:00",
+      "finished_at_utc": "2026-10-03T15:13:14+00:00",
+      "duration_seconds": 151.1,
+      "frames": 136,
+      "device": "127.0.0.1:5565",
+      "entries_captured": 629,
+      "note": "Full leaderboard pass, ranks 1-630."
+    }
+  ],
+  "method": "pipeline/run_pipeline.py live ADB capture (BlueStacks) + Apple Vision OCR",
+  "manual_corrections": "Ranks 1-3, 6 and 51 and malformed alliance tags corrected from on-screen reads between 11:10 and ~12:10 EDT the same day.",
+  "timestamp_source": "Reconstructed from capture frame file times (pipeline/scratch/frame_*.png) and the run log."
+}

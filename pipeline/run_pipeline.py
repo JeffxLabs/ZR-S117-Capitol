@@ -14,6 +14,7 @@ import shutil
 import argparse
 import subprocess
 import threading
+from datetime import datetime, timezone
 from cleaner import clean_player_record, validate_dataset, consolidate_alliance_variants
 from processor import publish_event
 
@@ -151,6 +152,7 @@ def capture_leaderboard(adb, device, max_frames=450):
     os.makedirs(SCRATCH_DIR, exist_ok=True)
     print("\nStarting high-speed pipelined leaderboard extraction...")
     t_start = time.time()
+    started_at = datetime.now().astimezone()
     
     data_dict = {}
     last_frame_ranks = ()
@@ -213,8 +215,30 @@ def capture_leaderboard(adb, device, max_frames=450):
 
     sorted_ranks = sorted(data_dict.keys())
     raw_results = [data_dict[r] for r in sorted_ranks]
+    finished_at = datetime.now().astimezone()
     print(f"\nExtraction completed in {time.time()-t_start:.1f}s. Captured {len(raw_results)} total entries.")
-    return raw_results
+    capture_info = {
+        "started_at": started_at.isoformat(timespec="seconds"),
+        "finished_at": finished_at.isoformat(timespec="seconds"),
+        "started_at_utc": started_at.astimezone(timezone.utc).isoformat(timespec="seconds"),
+        "finished_at_utc": finished_at.astimezone(timezone.utc).isoformat(timespec="seconds"),
+        "duration_seconds": round(time.time() - t_start, 1),
+        "frames": frame + 1,
+        "device": device,
+        "entries_captured": len(raw_results),
+    }
+    return raw_results, capture_info
+
+def write_capture_record(event_id, capture_info):
+    """Store capture timing next to the event data. Not referenced by index.html, so it is
+    kept in the repo without being shown on the GitHub Pages dashboard."""
+    path = os.path.join(BASE_DIR, "events", event_id, "capture.json")
+    record = {"event_id": event_id, "passes": [capture_info],
+              "method": "pipeline/run_pipeline.py live ADB capture (BlueStacks) + Apple Vision OCR"}
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(record, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    print(f"Capture timestamp recorded: {path}")
 
 def main():
     parser = argparse.ArgumentParser(description="Capitol War Ranking Pipeline for Z Route: Redemption")
@@ -232,6 +256,7 @@ def main():
     title = f"Capitol War: Server {args.home} vs Server {args.opponent}"
 
     raw_records = []
+    capture_info = None
     if args.from_file:
         print(f"Loading existing raw records from: {args.from_file}")
         with open(args.from_file, "r", encoding="utf-8") as f:
@@ -248,7 +273,7 @@ def main():
         if not args.no_rewind:
             scroll_to_top(adb, device)
 
-        raw_records = capture_leaderboard(adb, device)
+        raw_records, capture_info = capture_leaderboard(adb, device)
 
     # 1. Clean and normalize
     print("\nCleaning records and resolving OCR normalizations...")
@@ -276,6 +301,10 @@ def main():
         players=cleaned_records,
         home_role=args.home_role
     )
+    if capture_info:
+        write_capture_record(event_id, capture_info)
+    else:
+        print("Reprocessed from file: existing capture.json (if any) left unchanged.")
 
     print("\n" + "=" * 80)
     print(f" CAPITOL WAR EVENT PUBLISHED: {title}")
