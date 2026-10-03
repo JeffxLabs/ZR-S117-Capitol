@@ -237,24 +237,27 @@ def _visible_ranks(adb, device, ocr_worker, path):
     return [r["rank"] for r in res.rows if r["complete"]]
 
 
-def seek_rank(adb, device, ocr_worker, frames_dir, target_rank, max_moves=30):
+def seek_rank(adb, device, ocr_worker, frames_dir, target_rank, max_moves=45):
     """Scroll until target_rank is fully visible (not at the very top/bottom edge).
     Closed loop: re-reads the visible ranks after every move, so no exact calibration is needed."""
     for move in range(max_moves):
         vis = _visible_ranks(adb, device, ocr_worker, os.path.join(frames_dir, f"repair_seek_{target_rank}_{move:02d}.png"))
         if not vis:
-            return False
+            time.sleep(1.0)  # still scrolling / momentarily unreadable: look again
+            continue
         lo, hi = min(vis), max(vis)
         if lo < target_rank < hi or (target_rank <= 3 and lo <= target_rank):
             return True
         center = (lo + hi) / 2.0
         delta = target_rank - center
         if abs(delta) > 40:
-            # Long jump: fast fling (moves many rows); fine positioning follows
-            if delta > 0:
-                subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "1650", "540", "450", "150"])
-            else:
-                subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "450", "540", "1650", "150"])
+            # Long jump: fast flings (each moves many rows); fine positioning follows
+            for _ in range(3 if abs(delta) > 250 else 1):
+                if delta > 0:
+                    subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "1650", "540", "450", "150"])
+                else:
+                    subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "450", "540", "1650", "150"])
+                time.sleep(0.25)
             time.sleep(1.2)
         else:
             px = int(min(1100, max(200, abs(delta) * ROW_PX)))
@@ -278,7 +281,11 @@ def repair_ranks(
     and add fresh observations (rank numbers re-fitted per frame, no window filter)."""
     all_repaired: Set[int] = set()
     for round_idx in range(1, max_rounds + 1):
-        problems = find_problem_ranks(obs_store.merge_all())
+        merged_now = obs_store.merge_all()
+        problems = find_problem_ranks(merged_now)
+        if round_idx == 1:
+            singles = [m["rank"] for m in merged_now if m["diagnostics"]["n_clean"] == 1]
+            problems = sorted(set(problems) | set(singles))
         if not problems:
             print(f"Repair round {round_idx}: all ranks clean and consistent.")
             break
@@ -331,6 +338,12 @@ def capture_leaderboard(
         res = capture_frame_with_banner_mitigation(
             adb, device, ocr_worker, img_path, cur_max, obs_store, base_name
         )
+        if frame == 0:
+            # Medal rows (1-3) leave the screen on the first swipe: give them a second clean read
+            time.sleep(0.5)
+            again = f"frame_{frame_count:04d}_b.png"
+            capture_frame_with_banner_mitigation(adb, device, ocr_worker, os.path.join(frames_dir, again),
+                                                 cur_max, obs_store, again)
 
         # Trigger swipe
         swipe_thread = threading.Thread(target=swipe_async, args=(adb, device, swipe_px))
@@ -418,12 +431,23 @@ def generate_qa_report(
 
     monotonic_passed = (len(monotonic_violations) == 0)
 
+    # The leaderboard can still move during a capture: the same player at two ranks means rows shifted
+    from merge import name_key
+    by_name: Dict[str, List[int]] = {}
+    for rec in merged_records:
+        k = name_key(rec.get("commander") or "")
+        if k and not rec.get("diagnostics", {}).get("name_unreadable"):
+            by_name.setdefault(f"{k}|{rec.get('alliance')}", []).append(rec["rank"])
+    duplicate_players = sorted(v for v in by_name.values() if len(v) > 1)
+    names_unreadable = sorted(r for r, rec in ranks_by_num.items()
+                              if rec.get("diagnostics", {}).get("name_unreadable"))
+
     # Banner frames count
     banner_frames_count = 0
     if obs_store:
         banner_frames_count = sum(1 for f in obs_store.get_raw_observations() if f.get("banner_detected"))
 
-    passed = (len(missing) == 0 and len(unresolved) == 0 and monotonic_passed)
+    passed = (len(missing) == 0 and len(unresolved) == 0 and monotonic_passed and not duplicate_players)
 
     report = {
         "event_id": event_id,
@@ -434,6 +458,8 @@ def generate_qa_report(
         "ranks_unresolved": sorted(list(set(unresolved))),
         "ranks_single_clean": sorted(single_clean),
         "banner_frames_count": banner_frames_count,
+        "duplicate_players": duplicate_players,
+        "names_unreadable": names_unreadable,
         "monotonic_check": {
             "passed": monotonic_passed,
             "violations_count": len(monotonic_violations),

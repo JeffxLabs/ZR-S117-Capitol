@@ -13,7 +13,7 @@ from typing import List, Dict, Optional, Tuple, Any
 PITCH = 0.0927           # Row pitch (~178 px on 1920h)
 HEADER_Y = 0.865        # Screen header cutoff
 FOOTER_Y = 0.050        # Screen footer cutoff
-EDGE_TOP_Y = 0.845      # Slot centers above this have commander cut off by header
+EDGE_TOP_Y = 0.830      # Slot centers above this can have the commander line cut off by the header
 EDGE_BOT_Y = 0.080      # Slot centers below this have server/alliance cut off by footer
 
 # Banner detection band constants
@@ -257,7 +257,14 @@ def parse_frame(items: List[Dict[str, Any]], prev_max_rank: Optional[int] = None
 
         # Edge cutoff: top rows missing commander, bottom rows missing server/alliance
         is_edge_cutoff = (cy > EDGE_TOP_Y or cy < EDGE_BOT_Y)
-        complete = bool(commander and points_val is not None and not is_edge_cutoff)
+        # First line looks like an alliance tag: at the screen edge the name line was cut off
+        # (incomplete); inside the list the name is unreadable to OCR (e.g. circled letters
+        # like Ⓚⓐⓣⓒⓗ), so keep the row's points/alliance/server and leave the name empty.
+        name_unreadable = False
+        if commander.startswith("[") and not alliance and not is_edge_cutoff:
+            alliance, commander, name_unreadable = commander, "", True
+        complete = bool((commander or name_unreadable) and points_val is not None and not is_edge_cutoff
+                        and not (commander.startswith("[") and not alliance))
 
         # Banner overlap check
         tainted = False
@@ -274,6 +281,7 @@ def parse_frame(items: List[Dict[str, Any]], prev_max_rank: Optional[int] = None
             tainted=tainted,
             complete=complete
         ))
+        rows[-1]["name_unreadable"] = name_unreadable
 
     return FrameResult(
         rows=rows,

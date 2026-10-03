@@ -13,7 +13,7 @@ PIPELINE_DIR = os.path.dirname(TESTS_DIR)
 if PIPELINE_DIR not in sys.path:
     sys.path.insert(0, PIPELINE_DIR)
 
-from merge import ObservationStore, merge_rank
+from merge import ObservationStore, merge_rank, name_key
 
 
 class TestMerge(unittest.TestCase):
@@ -205,6 +205,36 @@ class TestServerVote(unittest.TestCase):
         base = {"rank": 7, "commander": "A", "alliance": "[X] Y", "points": 100, "complete": True, "tainted": False, "y": 0.4}
         obs = [dict(base, server=None), dict(base, server=None), dict(base, server="113")]
         self.assertIsNone(merge_rank(7, obs)["server"])
+
+
+class TestDecoratedNames(unittest.TestCase):
+    def test_decorations_do_not_block_majority(self):
+        """Rank 40 on 2026-10-03: OCR read the decorated name differently each time."""
+        base = {"rank": 40, "alliance": "[GDI] GolgDiggers", "points": 1589980, "server": None,
+                "complete": True, "tainted": False, "y": 0.4}
+        obs = [dict(base, commander=c) for c in ("«МАУИ", "•МАУИ*", "Ж МАУИХ", "МАУИ*")]
+        m = merge_rank(40, obs)
+        self.assertEqual(name_key(m["commander"]), "мауи")
+        self.assertGreaterEqual(m["diagnostics"]["agreement"]["commander"], 0.75)
+
+
+class TestNameEdgeCases(unittest.TestCase):
+    base = {"alliance": "[ALM] AlrightArmy", "points": 1562684, "server": "113",
+            "complete": True, "tainted": False, "y": 0.4}
+
+    def test_one_misread_trailing_character_still_agrees(self):
+        """Rank 45 on 2026-10-03: the decorative last character was read as a different letter."""
+        obs = [dict(self.base, rank=45, commander=c) for c in ("ЛисёнаФ", "Лисёнас", "Лисёна.")]
+        m = merge_rank(45, obs)
+        self.assertTrue(m["commander"].startswith("Лисёна"))
+        self.assertGreater(m["diagnostics"]["agreement"]["commander"], 0.5)
+
+    def test_unreadable_name_keeps_points(self):
+        """Rank 355 on 2026-10-03: a name in circled letters (Ⓚⓐⓣⓒⓗ) returns no OCR text."""
+        obs = [dict(self.base, rank=355, commander="", name_unreadable=True, points=243952) for _ in range(2)]
+        m = merge_rank(355, obs)
+        self.assertEqual(m["points"], 243952)
+        self.assertTrue(m["diagnostics"]["name_unreadable"])
 
 if __name__ == "__main__":
     unittest.main()

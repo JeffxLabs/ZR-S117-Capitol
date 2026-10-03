@@ -147,5 +147,40 @@ class TestFrameParser(unittest.TestCase):
         self.assertEqual(cleaned["alliance"], "[GDI] GolgDiggers")
 
 
+
+class TestEdgeRows(unittest.TestCase):
+    def test_row_under_header_with_cut_name_is_incomplete(self):
+        """Rank 45 on 2026-10-03: row centre at y=0.838, name line hidden by the header, so the
+        alliance line was read as the commander. Such rows must be marked incomplete."""
+        items = [
+            {"text": "[ALM] AlrightArmy", "x": 0.35, "y": 0.836, "width": 0.28, "height": 0.022, "confidence": 1},
+            {"text": "1,562,684", "x": 0.77, "y": 0.838, "width": 0.14, "height": 0.026, "confidence": 1},
+            {"text": "45", "x": 0.06, "y": 0.840, "width": 0.06, "height": 0.026, "confidence": 1},
+            {"text": "S113", "x": 0.35, "y": 0.814, "width": 0.08, "height": 0.017, "confidence": 1},
+            {"text": "MrFirst1", "x": 0.36, "y": 0.768, "width": 0.15, "height": 0.022, "confidence": 1},
+            {"text": "[GDI] GolgDiggers", "x": 0.35, "y": 0.742, "width": 0.28, "height": 0.022, "confidence": 1},
+            {"text": "1,562,420", "x": 0.77, "y": 0.745, "width": 0.14, "height": 0.026, "confidence": 1},
+            {"text": "46", "x": 0.06, "y": 0.747, "width": 0.06, "height": 0.026, "confidence": 1},
+        ]
+        rows = {r.rank: r for r in parse_frame(items).rows}
+        self.assertFalse(rows[45].complete)
+        self.assertTrue(rows[46].complete)
+
+
+class TestUnreadableName(unittest.TestCase):
+    def test_interior_row_with_tag_first_is_unreadable_name(self):
+        items = [
+            {"text": "[0BS] ZeroBullsht", "x": 0.35, "y": 0.55, "width": 0.27, "height": 0.022, "confidence": 1},
+            {"text": "S113", "x": 0.35, "y": 0.527, "width": 0.08, "height": 0.017, "confidence": 1},
+            {"text": "243,952", "x": 0.77, "y": 0.547, "width": 0.14, "height": 0.026, "confidence": 1},
+            {"text": "355", "x": 0.05, "y": 0.549, "width": 0.1, "height": 0.026, "confidence": 1},
+        ]
+        row = parse_frame(items).rows[0]
+        self.assertTrue(row.complete)
+        self.assertEqual(row.commander, "")
+        self.assertEqual(row.alliance, "[0BS] ZeroBullsht")
+        self.assertEqual(row.server, "113")
+        self.assertTrue(row["name_unreadable"])
+
 if __name__ == "__main__":
     unittest.main()
