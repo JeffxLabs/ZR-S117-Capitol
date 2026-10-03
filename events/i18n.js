@@ -122,7 +122,8 @@ window.I18N = {
     "vs_prev_day": "vs {date} ({day})",
     "compare_note_prev": "Changes compare with the previous Capitol Conquest day: {date} ({day}).",
     "compare_note_side": "This event was on the other side ({day}), so point levels differ.",
-    "side_summary_note": "Attacking and defending days run at different point levels; compare like with like."
+    "side_summary_note": "Attacking and defending days run at different point levels; compare like with like.",
+    "history_alliance_players": "Players by event"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -246,7 +247,8 @@ window.I18N = {
     "vs_prev_day": "vs {date} ({day})",
     "compare_note_prev": "Les variations comparent avec la précédente Conquête du Capitole : {date} ({day}).",
     "compare_note_side": "Cet événement était un {day} : les niveaux de points diffèrent.",
-    "side_summary_note": "Les jours d'attaque et de défense n'ont pas le même niveau de points ; comparez à camp égal."
+    "side_summary_note": "Les jours d'attaque et de défense n'ont pas le même niveau de points ; comparez à camp égal.",
+    "history_alliance_players": "Joueurs par événement"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -370,7 +372,8 @@ window.I18N = {
     "vs_prev_day": "к {date} ({day})",
     "compare_note_prev": "Изменения — относительно предыдущего дня Захвата Капитолия: {date} ({day}).",
     "compare_note_side": "Это событие — {day}, поэтому уровень очков отличается.",
-    "side_summary_note": "В дни атаки и обороны уровень очков разный; сравнивайте однотипные дни."
+    "side_summary_note": "В дни атаки и обороны уровень очков разный; сравнивайте однотипные дни.",
+    "history_alliance_players": "Игроки по событиям"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -494,7 +497,8 @@ window.I18N = {
     "vs_prev_day": "{date} karşısında ({day})",
     "compare_note_prev": "Değişimler önceki Başkent Fethi günüyle karşılaştırılır: {date} ({day}).",
     "compare_note_side": "Bu etkinlik bir {day} idi; puan seviyeleri farklıdır.",
-    "side_summary_note": "Saldırı ve savunma günlerinde puan seviyeleri farklıdır; benzer günleri karşılaştırın."
+    "side_summary_note": "Saldırı ve savunma günlerinde puan seviyeleri farklıdır; benzer günleri karşılaştırın.",
+    "history_alliance_players": "Etkinliğe göre oyuncular"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -618,7 +622,8 @@ window.I18N = {
     "vs_prev_day": "vs {date} ({day})",
     "compare_note_prev": "Zmiany porównywane z poprzednim dniem Podboju Kapitolu: {date} ({day}).",
     "compare_note_side": "To wydarzenie to {day}, więc poziom punktów jest inny.",
-    "side_summary_note": "Dni ataku i obrony mają różny poziom punktów; porównuj podobne dni."
+    "side_summary_note": "Dni ataku i obrony mają różny poziom punktów; porównuj podobne dni.",
+    "history_alliance_players": "Gracze według wydarzeń"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -742,7 +747,8 @@ window.I18N = {
     "vs_prev_day": "vs {date} ({day})",
     "compare_note_prev": "Los cambios se comparan con la anterior Conquista del Capitolio: {date} ({day}).",
     "compare_note_side": "Este evento fue un {day}, así que el nivel de puntos difiere.",
-    "side_summary_note": "Los días de ataque y de defensa tienen niveles de puntos distintos; compara días equivalentes."
+    "side_summary_note": "Los días de ataque y de defensa tienen niveles de puntos distintos; compara días equivalentes.",
+    "history_alliance_players": "Jugadores por evento"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -866,7 +872,8 @@ window.I18N = {
     "vs_prev_day": "vs {date} ({day})",
     "compare_note_prev": "As variações comparam com a Conquista do Capitólio anterior: {date} ({day}).",
     "compare_note_side": "Este evento foi um {day}, por isso o nível de pontos difere.",
-    "side_summary_note": "Dias de ataque e de defesa têm níveis de pontos diferentes; compare dias equivalentes."
+    "side_summary_note": "Dias de ataque e de defesa têm níveis de pontos diferentes; compare dias equivalentes.",
+    "history_alliance_players": "Jogadores por evento"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -990,7 +997,8 @@ window.I18N = {
     "vs_prev_day": "ggü. {date} ({day})",
     "compare_note_prev": "Änderungen beziehen sich auf den vorherigen Kapitol-Eroberungstag: {date} ({day}).",
     "compare_note_side": "Dieses Event war ein {day}, daher unterscheidet sich das Punkteniveau.",
-    "side_summary_note": "Angriffs- und Verteidigungstage haben unterschiedliche Punkteniveaus; Gleiches mit Gleichem vergleichen."
+    "side_summary_note": "Angriffs- und Verteidigungstage haben unterschiedliche Punkteniveaus; Gleiches mit Gleichem vergleichen.",
+    "history_alliance_players": "Spieler pro Event"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -1114,7 +1122,8 @@ window.I18N = {
     "vs_prev_day": "{date} 대비 ({day})",
     "compare_note_prev": "변화는 이전 캐피톨 정복일과 비교합니다: {date} ({day}).",
     "compare_note_side": "이번 이벤트는 {day}이므로 포인트 수준이 다릅니다.",
-    "side_summary_note": "공격일과 수비일은 포인트 수준이 다르므로 같은 유형끼리 비교하세요."
+    "side_summary_note": "공격일과 수비일은 포인트 수준이 다르므로 같은 유형끼리 비교하세요.",
+    "history_alliance_players": "이벤트별 참가 인원"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -1238,7 +1247,8 @@ window.I18N = {
     "vs_prev_day": "对比 {date}（{day}）",
     "compare_note_prev": "变化与上一个国会大厦征服日比较：{date}（{day}）。",
     "compare_note_side": "本次活动是{day}，积分水平不同。",
-    "side_summary_note": "进攻日和防守日的积分水平不同，请同类比较。"
+    "side_summary_note": "进攻日和防守日的积分水平不同，请同类比较。",
+    "history_alliance_players": "各活动参与人数"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};

@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="events/i18n.js?v=57c2433766"></script>
+  <script src="events/i18n.js?v=1259fd564a"></script>
   <script src="events/manifest.js?v=8ae1bb5ccb"></script>
   <script>
     // Preload every event in the manifest (offline/file:// support); new events need no edits here.
@@ -907,11 +907,11 @@
     if (lastFocus && document.body.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
   }
   const loadedEvents = () => EVENTS.filter(e => store[e.id]);
-  function historyChart(el, hist, label, color, valueOf, tipOf, server, sub2Of) {
+  function historyChart(el, hist, label, color, valueOf, tipOf, server, sub2Of, height = 210) {
     registerChart(el, () => columnChart(el, hist.map(h => ({ label: fmtDateShort(h.e.date), sub: `${sideShort(sideOf(h.e, server))} · vs S${h.e.opponent_server}`,
                                                            sub2: sub2Of && h.v ? sub2Of(h.v) : "" })),
       [{ label, color, values: hist.map(h => h.v ? valueOf(h.v) : null), tips: hist.map(h => h.v ? tipOf(h) : ""),
-         hatch: hist.map(h => sideOf(h.e, server) === "defending") }], { height: 210 }));
+         hatch: hist.map(h => sideOf(h.e, server) === "defending") }], { height }));
   }
   // Average of a value per side across the events played
   function sideAverages(hist, server, valueOf) {
@@ -987,6 +987,7 @@
         ${sideTiles(sideAverages(hist, any.server, v => v.total_points))}
       </div>
       <div class="card"><h3>${esc(t("history_alliance_points"))}</h3>${sideKey()}<div class="chart" id="chHist"></div>
+        <h3 style="margin-top:16px">${esc(t("history_alliance_players"))}</h3><div class="chart" id="chPlayers"></div>
         <div class="table-wrap" style="border:0;margin-top:8px"><table><thead><tr><th>${esc(t("col_event"))}</th><th>${esc(t("col_side"))}</th><th class="r">${esc(t("col_rank"))}</th><th class="r">${esc(t("col_total"))}</th><th class="r hide-sm">${esc(t("col_members"))}</th></tr></thead>
         <tbody>${hist.slice().reverse().map(h => `<tr><td>${esc(fmtDate(h.e.date))}<span class="sub">vs S${esc(h.e.opponent_server)}</span></td><td>${sideHtml(sideOf(h.e, any.server))}</td>
           ${h.v ? `<td class="r num">#${h.v.server_rank} ${overall(h.v.rank, "dim")}</td><td class="r num">${fmt(h.v.total_points)}</td><td class="r num hide-sm">${fmt(h.v.members_count)}</td>` : `<td class="r dim" colspan="3">${esc(t("not_placed"))}</td>`}</tr>`).join("")}</tbody></table></div></div>
@@ -1001,7 +1002,10 @@
     openDrawer();
     historyChart(document.getElementById("chHist"), hist, any.alliance, serverColor(any.server), v => v.total_points,
       h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>vs S${esc(h.e.opponent_server)} · #${h.v.server_rank} (${esc(t("overall_short", { n: h.v.rank }))})<br>${esc(fmt(h.v.total_points))} ${esc(t("pts"))} · ${esc(t("players_n", { n: fmt(h.v.members_count) }))}`,
-      any.server, v => t("players_n", { n: fmt(v.members_count) }));
+      any.server);
+    historyChart(document.getElementById("chPlayers"), hist, any.alliance, serverColor(any.server), v => v.members_count,
+      h => `<b>${esc(fmtDate(h.e.date))}</b> · ${esc(sideShort(sideOf(h.e, any.server)))}<br>${esc(t("players_n", { n: fmt(h.v.members_count) }))}`,
+      any.server, null, 160);
   }
 
   // ---------- global search ----------
