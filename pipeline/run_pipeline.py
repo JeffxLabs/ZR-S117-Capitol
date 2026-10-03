@@ -20,7 +20,7 @@ from typing import List, Dict, Optional, Any, Set, Tuple
 from cleaner import clean_player_record, validate_dataset, consolidate_alliance_variants
 from processor import publish_event
 from screenshots import staging_dir, archive_screenshots, SERVER_TZ
-from frame_parser import parse_frame, FrameResult
+from frame_parser import parse_frame, FrameResult, find_banner_close, is_rankings_list
 from merge import ObservationStore, merge_rank
 from apparatchik_control import monitoring_paused, ApparatchikError
 from navigation import Navigator, NavigationError
@@ -174,7 +174,32 @@ def capture_frame_with_banner_mitigation(
     res = parse_frame(items, prev_max_rank=prev_max)
     obs_store.add_frame(base_name, res)
 
-    # Banner mitigation: if banner_detected and any tainted slot, wait 1.5 s and re-capture (up to 4 retries / ~6 s)
+    # Banner mitigation 1: tap the banner's close X, then confirm we are still on the Rankings list
+    close_btn = find_banner_close(items)
+    if close_btn is not None:
+        x = int((close_btn["x"] + close_btn["width"] / 2) * 1080)
+        y = int((1 - (close_btn["y"] + close_btn["height"] / 2)) * 1920)
+        print(f" [banner in {base_name}] tapping its close X at ({x},{y})")
+        subprocess.run([adb, "-s", device, "shell", "input", "tap", str(x), str(y)])
+        time.sleep(0.6)
+        prefix = base_name.rsplit(".", 1)[0]
+        after_base = f"{prefix}_banner_closed.png"
+        after_img = os.path.join(os.path.dirname(img_path), after_base)
+        screencap(adb, device, after_img)
+        after_items = ocr_worker.process(after_img)
+        if not is_rankings_list(after_items):
+            # The banner had already gone and the tap opened something else: back out once
+            print(" tap left the Rankings list; pressing back")
+            subprocess.run([adb, "-s", device, "shell", "input", "keyevent", "4"])
+            time.sleep(1.0)
+            screencap(adb, device, after_img)
+            after_items = ocr_worker.process(after_img)
+            if not is_rankings_list(after_items):
+                raise RuntimeError("Lost the Rankings list after closing a notification banner")
+        res = parse_frame(after_items, prev_max_rank=prev_max)
+        obs_store.add_frame(after_base, res)
+
+    # Banner mitigation 2: if a banner is still there (no X readable), wait 1.5 s and re-capture (up to 4 retries)
     if res.banner_detected and any(r["tainted"] for r in res.rows):
         print(f" [banner detected in {base_name}] waiting 1.5s for banner to clear...")
         prefix = base_name.rsplit(".", 1)[0]

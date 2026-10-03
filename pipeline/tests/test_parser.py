@@ -182,5 +182,20 @@ class TestUnreadableName(unittest.TestCase):
         self.assertEqual(row.server, "113")
         self.assertTrue(row["name_unreadable"])
 
+
+class TestBannerClose(unittest.TestCase):
+    def test_close_x_found_only_on_banner_frames(self):
+        from frame_parser import find_banner_close, is_rankings_list
+        def load(n):
+            with open(os.path.join(FIXTURES_DIR, n), encoding="utf-8") as f:
+                return json.load(f)
+        x = find_banner_close(load("1003_b401.json"))
+        self.assertIsNotNone(x)
+        cx, cy = (x["x"] + x["width"] / 2) * 1080, (1 - (x["y"] + x["height"] / 2)) * 1920
+        self.assertTrue(900 < cx < 1000 and 360 < cy < 440, (cx, cy))
+        for clean in ("1003_r51.json", "1003_d450.json", "1003_frame_0.json"):
+            self.assertIsNone(find_banner_close(load(clean)), clean)
+        self.assertTrue(is_rankings_list(load("1003_b401.json")))
+
 if __name__ == "__main__":
     unittest.main()

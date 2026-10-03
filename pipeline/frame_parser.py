@@ -132,6 +132,20 @@ def detect_banner(items: List[Dict[str, Any]], med_h: float) -> Tuple[bool, Opti
     return False, None
 
 
+def find_banner_close(items: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    """The banner's close button: a lone X/x/×/✕ at the right edge inside the banner band."""
+    for it in items:
+        if (it["text"].strip() in ("X", "x", "×", "✕", "✖") and it["x"] > 0.78
+                and BANNER_BAND_MIN <= it["y"] <= BANNER_BAND_MAX):
+            return it
+    return None
+
+
+def is_rankings_list(items: List[Dict[str, Any]]) -> bool:
+    texts = {it["text"].strip() for it in items}
+    return "RANKINGS" in texts and "Commander" in texts and "Points" in texts
+
+
 def parse_frame(items: List[Dict[str, Any]], prev_max_rank: Optional[int] = None) -> FrameResult:
     """Parse raw Apple Vision OCR items into structured player rows.
 
