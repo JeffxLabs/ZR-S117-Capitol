@@ -9,7 +9,8 @@ window.EVENTS_MANIFEST = [
     "total_players": 630,
     "total_points": 324735064,
     "top_alliance": "[P1MP] JU1CE",
-    "top_commander": "TheRequiem"
+    "top_commander": "TheRequiem",
+    "data_version": "7c3bdb64ff"
   },
   {
     "id": "2026-09-19-s117-vs-s119",
@@ -21,6 +22,7 @@ window.EVENTS_MANIFEST = [
     "total_players": 1398,
     "total_points": 773073925,
     "top_alliance": "[P1MP] JU1CE",
-    "top_commander": "TheRequiem"
+    "top_commander": "TheRequiem",
+    "data_version": "ec3c2305cc"
   }
 ];

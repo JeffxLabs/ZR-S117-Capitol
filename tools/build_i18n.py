@@ -357,3 +357,9 @@ with open(path, "w", encoding="utf-8") as f:
     f.write(f"window.LANG_LOCALES = {json.dumps(LOCALES, ensure_ascii=False)};\n")
     f.write(f"window.LANG_NAMES = {json.dumps(NAMES, ensure_ascii=False)};\n")
 print(f"wrote {path}: {len(out)} languages x {len(KEYS)} keys")
+
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from stamp_assets import stamp
+stamp()
+print("stamped asset versions (cache-busting)")

@@ -12,12 +12,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="events/i18n.js?v=20261003b"></script>
-  <script src="events/manifest.js?v=20261003b"></script>
+  <script src="events/i18n.js?v=db7185c9a9"></script>
+  <script src="events/manifest.js?v=1b0547f6eb"></script>
   <script>
     // Preload every event in the manifest (offline/file:// support); new events need no edits here.
     (window.EVENTS_MANIFEST || []).forEach(function (ev) {
-      document.write('<script src="events/' + ev.id + '/event_data.js?v=' + ev.date + 'b"><\/script>');
+      document.write('<script src="events/' + ev.id + '/event_data.js?v=' + (ev.data_version || ev.date) + '"><\/script>');
     });
   </script>
   <style>
@@ -372,7 +372,8 @@
 
   // ---------- i18n & formatting ----------
   function t(key, vars) {
-    let s = (I18N[state.lang] && I18N[state.lang][key]) || (I18N.en && I18N.en[key]) || key;
+    // Never show a raw key: missing strings render empty (asset versions are content-hashed, so this is a safety net)
+    let s = (I18N[state.lang] && I18N[state.lang][key]) || (I18N.en && I18N.en[key]) || "";
     if (vars) s = s.replace(/\{(\w+)\}/g, (m, k) => (vars[k] !== undefined ? vars[k] : m));
     return s;
   }

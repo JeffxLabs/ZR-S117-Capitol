@@ -194,4 +194,10 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
     with open(os.path.join(BASE_DIR, "events", "manifest.js"), "w", encoding="utf-8") as mfjs:
         mfjs.write(f"window.EVENTS_MANIFEST = {json.dumps(manifest, indent=2, ensure_ascii=False)};\n")
 
+    # Cache-busting: content-hash versions for the dashboard's script URLs
+    import sys
+    sys.path.insert(0, os.path.join(BASE_DIR, "tools"))
+    from stamp_assets import stamp
+    stamp()
+
     return event_meta, alliances
