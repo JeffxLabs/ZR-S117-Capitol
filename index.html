@@ -663,9 +663,9 @@
     const vsPrev = vsLabel(state.eventId, r.home, base);
     const top = d.rankings[0];
     const tiles = [
-      tile(t("kpi_points"), fmt(m.total_points), pm ? `${deltaHtml(m.total_points, pm.total_points, { compact: true })} ${vsPrev}` : vsPrev),
-      tile(t("kpi_commanders"), fmt(m.total_players), pm ? `${deltaHtml(m.total_players, pm.total_players)} ${vsPrev}` : vsPrev),
-      tile(t("kpi_alliances"), fmt(m.unique_alliances), pm ? `${deltaHtml(m.unique_alliances, pm.unique_alliances)} ${vsPrev}` : vsPrev),
+      tile(t("kpi_points"), fmt(m.total_points), ""),
+      tile(t("kpi_commanders"), fmt(m.total_players), ""),
+      tile(t("kpi_alliances"), fmt(m.unique_alliances), ""),
       top ? `<button class="card" style="text-align:left;cursor:pointer" data-open-c="${esc(cKey(top))}"><div class="tile-label">${esc(t("kpi_top"))}</div><div class="tile-value name">${esc(displayName(top.commander))}</div><div class="tile-sub">${esc(top.alliance || "")} · <span class="num">${fmt(top.points)}</span> ${esc(t("pts"))}</div></button>` : "",
     ].join("");
 
