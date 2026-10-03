@@ -124,7 +124,12 @@ window.I18N = {
     "compare_note_side": "This event was on the other side ({day}), so point levels differ.",
     "side_summary_note": "Attacking and defending days run at different point levels; compare like with like.",
     "history_alliance_players": "Players by event",
-    "back_to": "Back to {name}"
+    "back_to": "Back to {name}",
+    "skip_to_content": "Skip to content",
+    "sr_up": "increase of {n}",
+    "sr_down": "decrease of {n}",
+    "sr_same": "no change",
+    "search_results_n": "{n} results"
   },
   "fr": {
     "brand_title": "Z Route: Redemption — Renseignement S117",
@@ -250,7 +255,12 @@ window.I18N = {
     "compare_note_side": "Cet événement était un {day} : les niveaux de points diffèrent.",
     "side_summary_note": "Les jours d'attaque et de défense n'ont pas le même niveau de points ; comparez à camp égal.",
     "history_alliance_players": "Joueurs par événement",
-    "back_to": "Retour à {name}"
+    "back_to": "Retour à {name}",
+    "skip_to_content": "Aller au contenu",
+    "sr_up": "hausse de {n}",
+    "sr_down": "baisse de {n}",
+    "sr_same": "inchangé",
+    "search_results_n": "{n} résultats"
   },
   "ru": {
     "brand_title": "Z Route: Redemption — Разведка S117",
@@ -376,7 +386,12 @@ window.I18N = {
     "compare_note_side": "Это событие — {day}, поэтому уровень очков отличается.",
     "side_summary_note": "В дни атаки и обороны уровень очков разный; сравнивайте однотипные дни.",
     "history_alliance_players": "Игроки по событиям",
-    "back_to": "Назад: {name}"
+    "back_to": "Назад: {name}",
+    "skip_to_content": "Перейти к содержимому",
+    "sr_up": "рост на {n}",
+    "sr_down": "снижение на {n}",
+    "sr_same": "без изменений",
+    "search_results_n": "Результатов: {n}"
   },
   "tr": {
     "brand_title": "Z Route: Redemption — S117 İstihbarat",
@@ -502,7 +517,12 @@ window.I18N = {
     "compare_note_side": "Bu etkinlik bir {day} idi; puan seviyeleri farklıdır.",
     "side_summary_note": "Saldırı ve savunma günlerinde puan seviyeleri farklıdır; benzer günleri karşılaştırın.",
     "history_alliance_players": "Etkinliğe göre oyuncular",
-    "back_to": "{name} sayfasına dön"
+    "back_to": "{name} sayfasına dön",
+    "skip_to_content": "İçeriğe geç",
+    "sr_up": "{n} artış",
+    "sr_down": "{n} azalış",
+    "sr_same": "değişiklik yok",
+    "search_results_n": "{n} sonuç"
   },
   "pl": {
     "brand_title": "Z Route: Redemption — Wywiad S117",
@@ -628,7 +648,12 @@ window.I18N = {
     "compare_note_side": "To wydarzenie to {day}, więc poziom punktów jest inny.",
     "side_summary_note": "Dni ataku i obrony mają różny poziom punktów; porównuj podobne dni.",
     "history_alliance_players": "Gracze według wydarzeń",
-    "back_to": "Wróć do {name}"
+    "back_to": "Wróć do {name}",
+    "skip_to_content": "Przejdź do treści",
+    "sr_up": "wzrost o {n}",
+    "sr_down": "spadek o {n}",
+    "sr_same": "bez zmian",
+    "search_results_n": "Wyniki: {n}"
   },
   "es": {
     "brand_title": "Z Route: Redemption — Inteligencia S117",
@@ -754,7 +779,12 @@ window.I18N = {
     "compare_note_side": "Este evento fue un {day}, así que el nivel de puntos difiere.",
     "side_summary_note": "Los días de ataque y de defensa tienen niveles de puntos distintos; compara días equivalentes.",
     "history_alliance_players": "Jugadores por evento",
-    "back_to": "Volver a {name}"
+    "back_to": "Volver a {name}",
+    "skip_to_content": "Saltar al contenido",
+    "sr_up": "aumento de {n}",
+    "sr_down": "descenso de {n}",
+    "sr_same": "sin cambios",
+    "search_results_n": "{n} resultados"
   },
   "pt": {
     "brand_title": "Z Route: Redemption — Inteligência S117",
@@ -880,7 +910,12 @@ window.I18N = {
     "compare_note_side": "Este evento foi um {day}, por isso o nível de pontos difere.",
     "side_summary_note": "Dias de ataque e de defesa têm níveis de pontos diferentes; compare dias equivalentes.",
     "history_alliance_players": "Jogadores por evento",
-    "back_to": "Voltar a {name}"
+    "back_to": "Voltar a {name}",
+    "skip_to_content": "Saltar para o conteúdo",
+    "sr_up": "aumento de {n}",
+    "sr_down": "descida de {n}",
+    "sr_same": "sem alteração",
+    "search_results_n": "{n} resultados"
   },
   "de": {
     "brand_title": "Z Route: Redemption — S117 Aufklärung",
@@ -1006,7 +1041,12 @@ window.I18N = {
     "compare_note_side": "Dieses Event war ein {day}, daher unterscheidet sich das Punkteniveau.",
     "side_summary_note": "Angriffs- und Verteidigungstage haben unterschiedliche Punkteniveaus; Gleiches mit Gleichem vergleichen.",
     "history_alliance_players": "Spieler pro Event",
-    "back_to": "Zurück zu {name}"
+    "back_to": "Zurück zu {name}",
+    "skip_to_content": "Zum Inhalt springen",
+    "sr_up": "Anstieg um {n}",
+    "sr_down": "Rückgang um {n}",
+    "sr_same": "unverändert",
+    "search_results_n": "{n} Ergebnisse"
   },
   "ko": {
     "brand_title": "Z Route: Redemption — S117 인텔",
@@ -1132,7 +1172,12 @@ window.I18N = {
     "compare_note_side": "이번 이벤트는 {day}이므로 포인트 수준이 다릅니다.",
     "side_summary_note": "공격일과 수비일은 포인트 수준이 다르므로 같은 유형끼리 비교하세요.",
     "history_alliance_players": "이벤트별 참가 인원",
-    "back_to": "{name}(으)로 돌아가기"
+    "back_to": "{name}(으)로 돌아가기",
+    "skip_to_content": "본문으로 건너뛰기",
+    "sr_up": "{n} 증가",
+    "sr_down": "{n} 감소",
+    "sr_same": "변동 없음",
+    "search_results_n": "결과 {n}개"
   },
   "zh": {
     "brand_title": "Z Route: Redemption — S117 情报",
@@ -1258,7 +1303,12 @@ window.I18N = {
     "compare_note_side": "本次活动是{day}，积分水平不同。",
     "side_summary_note": "进攻日和防守日的积分水平不同，请同类比较。",
     "history_alliance_players": "各活动参与人数",
-    "back_to": "返回 {name}"
+    "back_to": "返回 {name}",
+    "skip_to_content": "跳到主要内容",
+    "sr_up": "增加 {n}",
+    "sr_down": "减少 {n}",
+    "sr_same": "无变化",
+    "search_results_n": "{n} 个结果"
   }
 };
 window.LANG_LOCALES = {"en": "en-US", "fr": "fr-FR", "ru": "ru-RU", "tr": "tr-TR", "pl": "pl-PL", "es": "es-ES", "pt": "pt-PT", "de": "de-DE", "ko": "ko-KR", "zh": "zh-CN"};
