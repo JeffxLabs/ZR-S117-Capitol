@@ -16,7 +16,7 @@ import run_pipeline as pipeline
 from merge import ObservationStore
 from processor import write_event_outputs
 from cleaner import clean_records
-from screenshots import archive_screenshots
+from screenshots import archive_screenshots, select_screenshots_to_archive
 
 
 class TestBottomDetection(unittest.TestCase):
@@ -236,6 +236,34 @@ class TestScreenshotTimes(unittest.TestCase):
             entries = archive_screenshots([("unused.png", "player_01", "player-screenshot", taken)], tmp)
             self.assertEqual(entries[0]["taken_at"], "2026-10-10T12:50:59-02:00")
             self.assertEqual(entries[0]["kind"], "player-screenshot")
+
+    def test_archive_selection_keeps_two_terminal_stalls_and_drops_seek_frames(self):
+        def frame(name, ranks):
+            return {"frame": name, "rows": [{"rank": rank} for rank in ranks]}
+
+        frame_info = [
+            frame("frame_0001.png", range(1, 10)),
+            frame("frame_0001_b.png", range(1, 10)),
+            frame("frame_0002.png", range(2, 11)),
+            frame("frame_0003.png", range(3, 12)),
+            frame("frame_0003_banner_retry_1.png", range(3, 12)),
+            frame("frame_0004.png", range(3, 12)),
+            frame("frame_0005.png", range(3, 12)),
+            frame("frame_0006.png", range(3, 12)),
+            frame("frame_0007.png", range(3, 12)),
+        ]
+        filenames = [
+            "frame_0001.png", "frame_0001_b.png", "frame_0002.png", "frame_0003.png",
+            "frame_0003_banner_retry_1.png", "frame_0004.png", "frame_0005.png",
+            "frame_0006.png", "frame_0007.png", "repair_seek_33_000.png",
+            "repair_r1_rank_33_shot_1.png", "nav_rankings.png", "verify_top_1.png",
+        ]
+        selected = select_screenshots_to_archive(filenames, frame_info)
+        self.assertEqual(selected, [
+            "frame_0001.png", "frame_0001_b.png", "frame_0002.png", "frame_0003.png",
+            "frame_0003_banner_retry_1.png", "frame_0006.png", "frame_0007.png",
+            "repair_r1_rank_33_shot_1.png", "nav_rankings.png", "verify_top_1.png",
+        ])
 
     def test_capture_record_deduplicates_screenshots_by_file_latest_wins(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -17,11 +17,11 @@ import contextlib
 import tempfile
 import re
 from datetime import datetime, timezone
-from typing import List, Dict, Optional, Any, Set, Tuple
+from typing import List, Dict, Optional, Any, Set, Tuple, Callable
 
 from cleaner import clean_player_record, clean_records, validate_dataset
 from processor import publish_event, write_event_outputs
-from screenshots import staging_dir, archive_screenshots, SERVER_TZ
+from screenshots import staging_dir, archive_screenshots, select_screenshots_to_archive, SERVER_TZ
 from frame_parser import parse_frame, FrameResult, find_banner_close, is_rankings_list
 from merge import ObservationStore, name_key
 from apparatchik_control import monitoring_paused, ApparatchikError
@@ -256,6 +256,8 @@ def find_problem_ranks(merged_records: List[Dict[str, Any]]) -> List[int]:
 
 
 ROW_PX = 140  # approx. list movement per row for a controlled 400 ms swipe (calibrated live)
+MAX_SEEK_MOVES = 120
+MAX_FLINGS_PER_MOVE = 8
 
 
 def _visible_ranks(adb, device, ocr_worker, path):
@@ -264,36 +266,151 @@ def _visible_ranks(adb, device, ocr_worker, path):
     return [r["rank"] for r in res.rows if r["complete"]]
 
 
-def seek_rank(adb, device, ocr_worker, frames_dir, target_rank, max_moves=45):
-    """Scroll until target_rank is fully visible (not at the very top/bottom edge).
-    Closed loop: re-reads the visible ranks after every move, so no exact calibration is needed."""
-    for move in range(max_moves):
-        vis = _visible_ranks(adb, device, ocr_worker, os.path.join(frames_dir, f"repair_seek_{target_rank}_{move:02d}.png"))
-        if not vis:
-            time.sleep(1.0)  # still scrolling / momentarily unreadable: look again
+def _seek_succeeded(visible, target_rank):
+    if not visible:
+        return False
+    lo, hi = min(visible), max(visible)
+    return lo < target_rank < hi or (target_rank <= 3 and lo == 1 and target_rank in visible)
+
+
+def seek_rank_with_controls(
+    target_rank: int,
+    read_visible: Callable[[], List[int]],
+    fling: Callable[[str, int], None],
+    drag: Callable[[str, int], None],
+    rewind_to_top: Callable[[], None],
+    max_moves: Optional[int] = None,
+    row_px: int = ROW_PX,
+    max_flings_per_move: int = MAX_FLINGS_PER_MOVE,
+) -> bool:
+    """Seek using injected device controls, with every move checked against OCR.
+
+    Directions are in leaderboard order: ``down`` moves toward larger ranks and
+    ``up`` toward smaller ranks. ``max_moves`` counts checked move groups; each
+    fling group is itself capped by ``max_flings_per_move``.
+    """
+    visible = sorted(set(read_visible() or []))
+    reads = 1
+    center = (min(visible) + max(visible)) / 2.0 if visible else None
+    initial_distance = abs(target_rank - center) if center is not None else target_rank
+    move_budget = max_moves if max_moves is not None else min(
+        MAX_SEEK_MOVES, 20 + int(math.ceil(initial_distance / 10.0)))
+    read_budget = max(3, move_budget * 3)
+    moves = 0
+    fling_estimate = 15.0
+    fling_samples = 0
+    pending_fling = None
+    rewind_attempted = False
+    fine_after_rewind = False
+
+    while moves < move_budget and reads <= read_budget:
+        if not visible:
+            time.sleep(0.25)
+            visible = sorted(set(read_visible() or []))
+            reads += 1
             continue
-        lo, hi = min(vis), max(vis)
-        if lo < target_rank < hi or (target_rank <= 3 and lo <= target_rank):
+
+        center = (min(visible) + max(visible)) / 2.0
+        if pending_fling is not None:
+            previous_center, fling_count = pending_fling
+            sample = abs(center - previous_center) / fling_count
+            sample = min(45.0, max(3.0, sample))
+            fling_samples += 1
+            fling_estimate += (sample - fling_estimate) / fling_samples
+            pending_fling = None
+
+        if _seek_succeeded(visible, target_rank):
             return True
-        center = (lo + hi) / 2.0
+
         delta = target_rank - center
-        if abs(delta) > 40:
-            # Long jump: fast flings (each moves many rows); fine positioning follows
-            for _ in range(3 if abs(delta) > 250 else 1):
-                if delta > 0:
-                    subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "1650", "540", "450", "150"])
-                else:
-                    subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "450", "540", "1650", "150"])
-                time.sleep(0.25)
-            time.sleep(1.2)
+        if (not rewind_attempted and target_rank <= 60 and abs(delta) > 120):
+            rewind_attempted = True
+            rewind_to_top()
+            moves += 1
+            fine_after_rewind = True
+            pending_fling = None
+            visible = sorted(set(read_visible() or []))
+            reads += 1
+            continue
+
+        direction = "down" if delta > 0 else "up"
+        if fine_after_rewind or abs(delta) <= 40:
+            px = int(min(1100, max(row_px, abs(delta) * row_px)))
+            drag(direction, px)
+            moves += 1
         else:
-            px = int(min(1100, max(200, abs(delta) * ROW_PX)))
-            if delta > 0:
-                subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "1500", "540", str(1500 - px), "400"])
-            else:
-                subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "400", "540", str(400 + px), "400"])
-            time.sleep(0.5)
-    return False
+            count = min(max_flings_per_move, max(1, int(math.ceil(abs(delta) / fling_estimate))))
+            fling(direction, count)
+            moves += 1
+            pending_fling = (center, count)
+
+        visible = sorted(set(read_visible() or []))
+        reads += 1
+
+    return _seek_succeeded(visible, target_rank)
+
+
+def seek_rank(adb, device, ocr_worker, frames_dir, target_rank, max_moves=None):
+    """ADB adapter for the injected, closed-loop rank seeker."""
+    read_count = 0
+
+    def read_visible():
+        nonlocal read_count
+        path = os.path.join(frames_dir, f"repair_seek_{target_rank}_{read_count:03d}.png")
+        read_count += 1
+        return _visible_ranks(adb, device, ocr_worker, path)
+
+    def fling(direction, count):
+        start_y, end_y = (1650, 450) if direction == "down" else (450, 1650)
+        for _ in range(count):
+            subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", str(start_y),
+                            "540", str(end_y), "150"])
+            time.sleep(0.25)
+        time.sleep(0.4)
+
+    def drag(direction, px):
+        if direction == "down":
+            start_y, end_y = 1500, 1500 - px
+        else:
+            start_y, end_y = 400, 400 + px
+        subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", str(start_y),
+                        "540", str(end_y), "400"])
+        time.sleep(0.5)
+
+    try:
+        return seek_rank_with_controls(
+            target_rank, read_visible, fling, drag,
+            lambda: scroll_to_top_verified(adb, device, ocr_worker, frames_dir),
+            max_moves=max_moves,
+        )
+    except RuntimeError as e:  # a failed rewind fails this seek, not the whole run
+        print(f"  seek to rank {target_rank} aborted: {e}")
+        return False
+
+
+def plan_repair_targets(target_ranks, current_center=None, top_cutoff=60):
+    """Visit ordinary targets by nearest travel, then the top batch in rank order."""
+    pending = sorted({rank for rank in target_ranks if rank > top_cutoff})
+    top_targets = sorted({rank for rank in target_ranks if rank <= top_cutoff})
+    order = []
+    position = current_center
+    while pending:
+        if position is None:
+            target = pending[-1]
+        else:
+            target = min(pending, key=lambda rank: (abs(rank - position), -rank))
+        order.append(target)
+        pending.remove(target)
+        position = target
+    return order + top_targets
+
+
+def _latest_visible_center(obs_store):
+    for frame in reversed(obs_store.get_raw_observations()):
+        ranks = [row["rank"] for row in frame.get("rows", []) if row.get("complete")]
+        if ranks:
+            return (min(ranks) + max(ranks)) / 2.0
+    return None
 
 
 def repair_ranks(
@@ -318,7 +435,8 @@ def repair_ranks(
             break
         print(f"\nRepair round {round_idx}/{max_rounds}: {len(problems)} ranks to recheck: {problems[:20]}")
         covered: Set[int] = set()
-        for target_rank in problems:
+        ordered_problems = plan_repair_targets(problems, _latest_visible_center(obs_store))
+        for target_rank in ordered_problems:
             if target_rank in covered:
                 continue
             all_repaired.add(target_rank)
@@ -766,6 +884,7 @@ def main(argv=None):
     if capture_info:
         kinds = {"frame_": "capture-frame", "repair_": "repair", "verify_top_": "rewind-check", "nav_": "navigation"}
         frames = sorted(f for f in os.listdir(frames_dir) if f.endswith(".png") and f.startswith(tuple(kinds)))
+        frames = select_screenshots_to_archive(frames, obs_store.get_raw_observations())
         sources = [(os.path.join(frames_dir, f), f[:-4], next(k for p, k in kinds.items() if f.startswith(p))) for f in frames]
         capture_info["matchup"] = detected
     sources.extend(early_sources)

@@ -3,12 +3,14 @@
 Screenshot archiving for Capitol War captures.
 
 Full-resolution frames are written to a local staging folder outside the repo
-(LOCAL_CAPTURE_DIR/<event_id>/). After a capture they are compressed to 720px-wide
-WebP (~50 KB each, still readable) into events/<event_id>/screenshots/ for the record.
-The local staging copies are deleted after a few days by the cleanup agent
+(LOCAL_CAPTURE_DIR/<event_id>/). Selected frames are compressed to 720px-wide WebP
+(~50 KB each, still readable) into events/<event_id>/screenshots/ for the record.
+Repair-seek frames stay local, and only two terminal no-new-rank capture frames are
+archived. The local staging copies are deleted after a few days by the cleanup agent
 (tools/install_cleanup_agent.sh). The dashboard never loads these files.
 """
 import os
+import re
 import shutil
 import subprocess
 from datetime import datetime, timedelta, timezone
@@ -19,6 +21,7 @@ SERVER_TZ = timezone(timedelta(hours=-2), "server (UTC-2)")
 LOCAL_CAPTURE_DIR = os.path.expanduser("~/Library/Caches/s117-zroute-captures")
 WIDTH = 720
 QUALITY = 70
+MAIN_CAPTURE_FRAME = re.compile(r"frame_\d{4}\.png$")
 
 
 def staging_dir(event_id):
@@ -38,6 +41,41 @@ def _compress_one(src, dest_base):
                         "--resampleWidth", str(WIDTH), src, "--out", dest],
                        check=True, stdout=subprocess.DEVNULL)
     return dest
+
+
+def select_screenshots_to_archive(filenames, frame_info):
+    """Select source basenames to archive, retaining only two terminal stall frames.
+
+    ``frame_info`` is the ordered list of raw observation frame records. Rank ids
+    are accumulated in that order, so a main capture frame with no previously
+    unseen rows can be recognized as part of the terminal bottom stall.
+    Repair-seek frames are navigation-only and always stay in the local cache.
+    """
+    candidates = list(filenames)
+    seen_ranks = set()
+    new_ranks_by_frame = {}
+    for frame in frame_info or []:
+        frame_name = os.path.basename(frame.get("frame", ""))
+        ranks = {row.get("rank") for row in frame.get("rows", [])
+                 if isinstance(row.get("rank"), int)}
+        if MAIN_CAPTURE_FRAME.fullmatch(frame_name):
+            new_ranks_by_frame[frame_name] = ranks - seen_ranks
+        seen_ranks.update(ranks)
+
+    main_frames = sorted(
+        os.path.basename(name) for name in candidates
+        if MAIN_CAPTURE_FRAME.fullmatch(os.path.basename(name))
+    )
+    terminal_stalls = []
+    for frame_name in reversed(main_frames):
+        if frame_name not in new_ranks_by_frame or new_ranks_by_frame[frame_name]:
+            break
+        terminal_stalls.append(frame_name)
+    discard_stalls = set(terminal_stalls[2:])
+
+    return [name for name in candidates
+            if not os.path.basename(name).startswith("repair_seek_")
+            and os.path.basename(name) not in discard_stalls]
 
 
 def archive_screenshots(sources, repo_event_dir, subdir="screenshots"):
