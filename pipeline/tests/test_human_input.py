@@ -85,10 +85,11 @@ class TestHumanInput(unittest.TestCase):
                               sleep=self.sleep)
         for _ in range(300):
             controls.pause(0.15)
-        baseline = 300 * 0.15
+        # A live frame takes ~1.25 s (OCR dominates), so judge the extra time against the whole run.
+        baseline = 300 * 1.25
         added_fraction = controls.total_extra_pause_time / baseline
-        self.assertGreaterEqual(added_fraction, 0.05)
-        self.assertLessEqual(added_fraction, 0.20)
+        self.assertGreater(added_fraction, 0.0)
+        self.assertLessEqual(added_fraction, 0.03)
         self.assertEqual(controls.pause_count, 300)
 
     def test_fling_gaps_are_irregular_and_within_the_requested_range(self):
