@@ -2886,10 +2886,10 @@
     "end": "2026-10-10T13:07:14-02:00"
   },
   "top_ranks_source": {
-    "ranks": "1-114",
-    "source": "13 in-game Rankings screenshots taken by a player right after the battle ended (screenshots/player_top114_*.webp), 2026-10-10T12:50:59-02:00 to 2026-10-10T12:51:50-02:00 server time, OCR'd with the pipeline parser and names checked by eye",
-    "why": "Earliest record of the final standings, before anyone could add points after the battle. Rank order and points for 1-114 come from these screenshots.",
-    "after_rank_114": "Ranks 115+ come from the pipeline capture (window above). Players not in the screenshot top 114 who had passed rank 114's score by capture time (padded after the battle) are listed from rank 115 with their capture-time points: ZadrotAli, BearSnork, T-800-, NAGIBATOR9000, ооооомакарена, ReKt, AlexZeban777. This is the only place points are not in descending order (rank 114 -> 115)."
+    "ranks": "1-30",
+    "source": "In-game Rankings screenshots taken by a player right after the battle ended (screenshots/player_top114_*.webp, 2026-10-10T12:50:59-02:00 to 12:51:50 server time; ranks 1-30 are on the first four). OCR'd with the pipeline parser, names checked by eye.",
+    "why": "Earliest record of the final standings, before anyone could add points after the battle. Rank order and points for 1-30 come from these screenshots.",
+    "after_rank_30": "Ranks 31+ come from the pipeline capture (capture_window_server_time). The screenshots also cover ranks 31-114, but using them there would conflict with players who passed those scores after the battle, so the cutoff is rank 30, the largest with no such conflict. Points are in descending order throughout."
   },
-  "manual_corrections": "Names fixed from screenshots: Ilyha54rus, V-ŘΔPŦØŘ, V-style, IxSAWxI, CLOWNado¿ (S119, struck-through/stylized names misread by OCR) and ẌūℒἰGẳ₦ka (rank 588, the one rank the capture QA left unresolved; points and alliance agreed in all 7 reads)."
+  "manual_corrections": "All risky rows (OCR disagreement, struck-through S119 [CLAV] names, stylized/mixed-script names, odd alliance tags) were checked by eye against the capture frames. Names fixed: Ilyha54rus, V-ŘΔPŦØŘ, V-style, IxSAWxI, CLOWNado¿, •Fox🦊, pinkymii, Alice🖤, чилл, Jo69III, пекш, ❇ℝybsas❇, Натали🥰, ~°♡Brusnika♡°~, Пффффф, Squad00, Διονύσιος, ☠Лёха88☠, MõõnChïld, PycJlaH83, ツМотоИраツ, □□□□□□□□□□□□□ (the game itself renders this name as empty boxes), Commander2dRgK0d, штурмZ, AstralZ⋆☽◑○°, JSP💪, DuôNu₵, Commander2dI3bQF, crims0nSky, ẌūℒἰGẳ₦ka (rank 588, the one rank capture QA left unresolved). Alliances fixed: [COMI]->[COM] AmericanHeadquarter, 'UJQKI JQKKK'->[JQK] JQKKK, full-width brackets on [4wi] 华夏联盟Eternal, [IVIN] InvincibiliItaliani."
 }
