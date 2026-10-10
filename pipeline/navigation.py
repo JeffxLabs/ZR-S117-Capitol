@@ -24,6 +24,57 @@ class NavigationError(RuntimeError):
     pass
 
 
+def read_matchup(screen_items, home="117"):
+    """Read the two sides of the Conquest matchup by their on-screen positions."""
+    def half(item):
+        return int(item["x"] + item["width"] / 2 >= 0.5)
+
+    sides = {}
+    for item in screen_items:
+        role = re.fullmatch(r"\W*(Defender|Invader)\W*", item["text"].strip(), re.I)
+        if role:
+            side = half(item)
+            if side in sides:
+                return None
+            sides[side] = (item, "defending" if role.group(1).lower() == "defender" else "attacking")
+    if len(sides) != 2 or sides[0][1] == sides[1][1]:
+        return None
+
+    matchup_sides = []
+    for side, (label, role) in sides.items():
+        # The server is below its role label; lower-page player/server text is unrelated.
+        servers = []
+        for item in screen_items:
+            server = re.fullmatch(r"S\s*(\d{2,4})", item["text"].strip(), re.I)
+            if server and half(item) == side and 0 < label["y"] - item["y"] < 0.25:
+                servers.append((item, server.group(1)))
+        if not servers:
+            return None
+        servers.sort(key=lambda pair: pair[0]["y"], reverse=True)
+        if len(servers) > 1 and abs(servers[0][0]["y"] - servers[1][0]["y"]) < 0.02:
+            return None
+        server_item, server = servers[0]
+        results = {
+            item["text"].strip().lower() for item in screen_items
+            if half(item) == side and server_item["y"] <= item["y"] <= label["y"] + 0.03
+            and item["text"].strip().lower() in ("victory", "defeat")
+        }
+        matchup_sides.append((server, role, next(iter(results)) if len(results) == 1 else None))
+
+    home = str(home).removeprefix("S").removeprefix("s")
+    home_side = next((s for s in matchup_sides if s[0] == home), None)
+    opponent = next((s[0] for s in matchup_sides if s[0] != home), None)
+    if home_side is None or opponent is None:
+        return None
+    return {
+        "home_role": home_side[1],
+        "opponent": opponent,
+        "battle_over": any(re.fullmatch(r"Battle\s+Over", item["text"].strip(), re.I)
+                           for item in screen_items),
+        "home_result": home_side[2],
+    }
+
+
 class Screen:
     def __init__(self, items, width, height, path):
         self.items = items
@@ -57,11 +108,13 @@ class Screen:
 
 
 class Navigator:
-    def __init__(self, adb, device, shots_dir, log=print):
+    def __init__(self, adb, device, shots_dir, log=print, home="117"):
         self.adb = adb
         self.device = device
         self.shots_dir = shots_dir
         self.log = log
+        self.home = home
+        self.matchup = None
         self.step = 0
         os.makedirs(shots_dir, exist_ok=True)
 
@@ -157,6 +210,7 @@ class Navigator:
         s, btn = self._read_until("capitol_conquest", self.conquest_rankings_button)
         if not btn:
             raise NavigationError(f"'Rankings' button not found on the Capitol Conquest tab ({s.path})")
+        self.matchup = read_matchup(s.items, home=self.home)
         self.tap(s, btn, "Rankings", wait=3.0)
 
         s, ok = self._read_until("rankings", self.is_rankings)

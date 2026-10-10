@@ -78,12 +78,21 @@ git push origin main
 | Flag | Default | Description |
 | :--- | :---: | :--- |
 | `--date` | `Today` | Date of the Capitol event (`YYYY-MM-DD`). |
-| `--opponent` | `119` | Opponent server number (e.g. `119`, `120`). |
+| `--opponent` | Detected | Opponent server number; required with `--from-file` or `--no-navigate`. |
 | `--home` | `117` | Home server number (default: `117`). |
-| `--home-role` | *(required)* | `attacking` or `defending`: S117's side in this Capitol War. The opponent gets the other role. |
+| `--home-role` | Detected | `attacking` or `defending`; required with `--from-file` or `--no-navigate`. |
+| `--force-matchup` | False | Allow explicit opponent/role flags to disagree with the Conquest screen. |
 | `--device` | Auto | ADB device identifier (auto-detects BlueStacks). |
 | `--no-rewind` | False | Skip scrolling back to Rank 1 before starting. |
-| `--from-file` | None | Skip capture and reprocess an existing raw JSON file. |
+| `--from-file` | None | Reprocess rank records, including `events/<id>/capture_rankings.json`. |
+| `--early-screenshots DIR` | None | OCR and merge early phone screenshots; archive them as `player-screenshot`. |
+| `--early-cutoff N` | Auto | Use early ranks 1–N; auto selects the largest contiguous prefix without later overtakes. |
+| `--allow-incomplete` | False | Publish despite failed QA; otherwise save outputs in local staging and exit 1. |
+| `--nav-test` | False | Test navigation using a temporary screenshot directory, deleted afterwards. |
+| `--no-navigate` | False | Start on Rankings and stay there; supply both matchup flags. |
+| `--no-apparatchik` | False | Skip pausing/resuming Apparatchik monitoring. |
+| `--swipe-px` | `420` | Swipe distance in pixels. |
+| `--settle-sec` | `0.15` | Settle time after each swipe. |
 
 ---
 
@@ -93,8 +102,11 @@ git push origin main
 * **`vision_ocr.swift`**: High-performance Swift worker using Apple's `VNRecognizeTextRequest` (`Vision` framework) for sub-300ms multilingual character recognition.
 * **`cleaner.py`**: Handles OCR text normalization, bracket repairs, server tag detection, and mathematical data integrity verification.
 * **`processor.py`**: Builds alliance rosters, aggregates server statistics, creates spreadsheet CSVs, JSON data models, and registers events into the GitHub Pages site manifest.
-* **`events/<id>/capture.json`**: Written after a live capture with the start/end time in server time (UTC-2, the in-game "State Time") and UTC, duration, frame count and device. It is kept in the repo for record-keeping and is not loaded or shown by the dashboard. Reprocessing with `--from-file` leaves it unchanged.
-* **`screenshots.py`** / **`events/<id>/screenshots/`**: Every capture frame is saved full-size to `~/Library/Caches/s117-zroute-captures/<id>/` and compressed (720px WebP, ~50 KB) into `events/<id>/screenshots/`, listed in `capture.json`. Not shown on the dashboard.
+* **`early_screens.py`**: Fits phone OCR to the game column using Rankings headers and merges a safe early prefix, preserving capture names and identities.
+* **`known_names.py`** / **`data/name_overrides.json`** / **`data/alliance_overrides.json`**: Apply manual corrections automatically and report fuzzy commander or alliance candidates for review. Commander suggestions never rename records automatically; alliance tag suggestions are automatic only for variants seen at most twice with supporting current or prior-event evidence. Suggestions are printed and saved in `capture_qa.json` without failing QA.
+* **`events/<id>/capture_rankings.json`**: Keeps the capture's own cleaned rows before the early merge and new overrides, so reprocessing preserves the original scores/order.
+* **`events/<id>/capture.json`**: Written after a live capture with the start/end time in server time (UTC-2, the in-game "State Time") and UTC, duration, frame count and device. It is kept in the repo for record-keeping and is not loaded or shown by the dashboard. Reprocessing with `--from-file` preserves it; adding early screenshots records their provenance and time range.
+* **`screenshots.py`** / **`events/<id>/screenshots/`**: Every capture frame is saved full-size to `~/Library/Caches/s117-zroute-captures/<id>/` and compressed (720px WebP, ~50 KB) into `events/<id>/screenshots/`, listed in `capture.json`. Reprocessing deduplicates entries by file, keeping the latest metadata. Not shown on the dashboard.
 * **`tools/install_cleanup_agent.sh`**: Installs a LaunchAgent that deletes the local full-size frames after 3 days (`sh tools/install_cleanup_agent.sh [days]`, `--uninstall` to remove). Compressed copies in the repo are kept.
 
 ---
@@ -109,7 +121,8 @@ git push origin main
 * **Ranks skipping or bouncing:** Ensure the BlueStacks window is active and at 1080x1920 portrait resolution.
 * **Reprocessing without recapturing:** If you want to update alliance rules on an existing event without re-running ADB:
   ```sh
-  python3 pipeline/run_pipeline.py --from-file events/2026-09-19-s117-vs-s119/rankings.json
+  python3 pipeline/run_pipeline.py --date 2026-09-19 --opponent 119 --home-role defending \
+    --from-file events/2026-09-19-s117-vs-s119/capture_rankings.json
   ```
 
 ---
@@ -124,17 +137,17 @@ python3 pipeline/apparatchik_control.py status
 
 Then a full run is just:
 ```sh
-python3 pipeline/run_pipeline.py --opponent 113 --home-role attacking
+python3 pipeline/run_pipeline.py
+# Optional: --early-screenshots /path/to/player/screenshots
 ```
 It will:
 1. Pause Apparatchik monitoring with a timed safety pause (about 2x the expected run time). If you had already paused it yourself, it stays paused and is not resumed.
-2. Back out of whatever is open, then tap **Expedition Frenzy**, the **Capitol Conquest** tab, then **Rankings** (each label found by OCR).
+2. Back out of whatever is open, then tap **Expedition Frenzy**, the **Capitol Conquest** tab, then **Rankings**. Read the home role, opponent and result from the Conquest screen. Missing detections require explicit flags; conflicting flags require `--force-matchup`. Navigation frames start under `<date>-pending` until the event id is known.
 3. Rewind to rank 1 (checked against real rank digits), then capture with overlapping swipes. Rank numbers come from where each row sits on screen, and every reading of every rank is kept and voted on.
-4. Handle the notification banner: it always appears at the same screen height. Rows under it are marked unreliable and never outvote clean reads, and the frame is re-captured after the banner clears.
+4. Stop after four frames without a new highest rank (above rank 50), or the existing repeated-frame stop. Print a full progress line every 25 frames. Handle the notification banner: it always appears at the same screen height. Rows under it are marked unreliable and never outvote clean reads, and the frame is re-captured after the banner clears.
 5. Repair pass: scroll back to any missing, conflicting or out-of-order rank and re-read it (up to 2 rounds).
 6. Back out to the world map and tap **RETURN TO CITY**, then resume Apparatchik straight away (the timed pause is only a fallback if the pipeline crashes).
-7. Write `events/<id>/capture_qa.json` and exit non-zero if any rank is missing or unresolved (`--allow-incomplete` overrides).
+7. Optionally merge early screenshot order and scores, then clean with alliance evidence and manual overrides. Fuzzy commander and alliance matches are listed for review in `capture_qa.json` and printed without failing QA. Screenshot times come from `Screenshot_YYYYMMDD_HHMMSS*` in local time, or mtime, and are recorded in server time.
+8. Check capture QA and final dataset integrity before publishing. On failure, write the would-be event assets, `capture_rankings.json`, and `capture_qa.json` to the printed staging path, leave the site untouched, and exit 1 (`--allow-incomplete` overrides). On success, publish and retain the capture's own data and early-screenshot provenance.
 
-Other flags: `--no-apparatchik` (do not pause/resume), `--no-navigate` (Rankings already open; stay there), `--swipe-px` (default 420), `--settle-sec`.
-
-Tests (no emulator needed; real OCR fixtures checked against the verified 2026-10-03 data): `cd pipeline && python3 -m unittest discover -s tests -v`
+Tests (no emulator needed; precomputed OCR fixtures checked against verified 2026-10-03 and 2026-10-10 data): `cd pipeline && python3 -m unittest discover -s tests -v`

@@ -93,8 +93,7 @@ class TestCleaner(unittest.TestCase):
         self.assertEqual(re_cleaned["rank"], 50)
         self.assertEqual(re_cleaned["commander"], "CleanedCommander")
 
-    def test_alliance_normalization_map_applied(self):
-        """Known OCR look-alike alliance typos in ALLIANCE_NORMALIZATION_MAP are fixed."""
+    def test_tag_confusable_alliance_waits_for_current_or_prior_evidence(self):
         rec = {
             "rank": 100,
             "commander": "ZeroPlayer",
@@ -103,8 +102,8 @@ class TestCleaner(unittest.TestCase):
             "points": 100000
         }
         cleaned = clean_player_record(rec, home_server="117")
-        self.assertEqual(cleaned["alliance"], "[0BS] ZeroBullsht")
-        self.assertEqual(cleaned["alliance_tag"], "0BS")
+        self.assertEqual(cleaned["alliance"], "[OBS] ZeroBullsht")
+        self.assertEqual(cleaned["alliance_tag"], "OBS")
 
     def test_consolidate_alliance_variants(self):
         """Variants differing only by lookalike characters are merged into the most frequent."""

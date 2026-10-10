@@ -10,9 +10,10 @@ from collections import defaultdict, Counter
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def publish_event(event_id, title, date_str, home_server, opponent_server, players, home_role="defending"):
+def write_event_outputs(event_dir, event_id, title, date_str, home_server, opponent_server, players, home_role="defending"):
+    """Write event assets to an explicit directory, without updating the site."""
+    players = [dict(p) for p in players]
     opp_role = "attacking" if home_role == "defending" else "defending"
-    event_dir = os.path.join(BASE_DIR, "events", event_id)
     os.makedirs(event_dir, exist_ok=True)
 
     alliance_map = defaultdict(lambda: {
@@ -29,7 +30,7 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
     for p in players:
         full_ally = p["alliance"]
         srv = p["server"]
-        pts = p["points"]
+        pts = p["points"] or 0
 
         alliance_map[full_ally]["tag"] = p["alliance_tag"]
         alliance_map[full_ally]["name"] = p["alliance_name"]
@@ -46,7 +47,7 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
         server_totals[srv]["players"] += 1
         server_totals[srv]["points"] += pts
 
-    total_pts = sum(p["points"] for p in players)
+    total_pts = sum(p["points"] or 0 for p in players)
 
     alliances = []
     for ally_name, data in alliance_map.items():
@@ -137,6 +138,17 @@ def publish_event(event_id, title, date_str, home_server, opponent_server, playe
         f.write(f"  alliances: {json.dumps(alliances, ensure_ascii=False)},\n")
         f.write(f"  rankings: {json.dumps(players, ensure_ascii=False)}\n")
         f.write("};\n")
+
+    return event_meta, alliances
+
+
+def publish_event(event_id, title, date_str, home_server, opponent_server, players, home_role="defending"):
+    event_dir = os.path.join(BASE_DIR, "events", event_id)
+    event_meta, alliances = write_event_outputs(
+        event_dir, event_id, title, date_str, home_server, opponent_server, players, home_role)
+    with open(os.path.join(event_dir, "rankings.json"), encoding="utf-8") as f:
+        players = json.load(f)
+    total_pts = event_meta["total_points"]
 
     # Load Manifest
     manifest_path = os.path.join(BASE_DIR, "events", "manifest.json")

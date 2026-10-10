@@ -14,14 +14,16 @@ import argparse
 import subprocess
 import threading
 import contextlib
+import tempfile
+import re
 from datetime import datetime, timezone
 from typing import List, Dict, Optional, Any, Set, Tuple
 
-from cleaner import clean_player_record, validate_dataset, consolidate_alliance_variants
-from processor import publish_event
+from cleaner import clean_player_record, clean_records, validate_dataset
+from processor import publish_event, write_event_outputs
 from screenshots import staging_dir, archive_screenshots, SERVER_TZ
 from frame_parser import parse_frame, FrameResult, find_banner_close, is_rankings_list
-from merge import ObservationStore, merge_rank
+from merge import ObservationStore, name_key
 from apparatchik_control import monitoring_paused, ApparatchikError
 from navigation import Navigator, NavigationError
 import math
@@ -332,6 +334,14 @@ def repair_ranks(
     return obs_store.merge_all(), all_repaired
 
 
+def bottom_reached(previous_max, current_max, stalled_frames, frame_ranks, last_frame_ranks, identical_frames):
+    """Return the stop decision and updated counters, allowing rank OCR jitter."""
+    stalled_frames = stalled_frames + 1 if current_max <= previous_max else 0
+    identical_frames = identical_frames + 1 if frame_ranks and frame_ranks == last_frame_ranks else 0
+    stop = current_max > 50 and (stalled_frames >= 4 or identical_frames >= 5)
+    return stop, stalled_frames, identical_frames
+
+
 def capture_leaderboard(
     adb,
     device,
@@ -350,6 +360,8 @@ def capture_leaderboard(
     obs_store = ObservationStore()
     last_frame_ranks = ()
     stuck_count = 0
+    stalled_frames = 0
+    highest_rank = 0
     frame_count = 0
 
     for frame in range(max_frames):
@@ -380,18 +392,21 @@ def capture_leaderboard(
         time.sleep(settle_sec)
 
         cur_max = max(obs_store.observations_by_rank.keys()) if obs_store.observations_by_rank else 0
-        sys.stdout.write(f"\r[Frame {frame_count:3d}] Highest Rank: {cur_max:4d} | Total Obs: {sum(len(v) for v in obs_store.observations_by_rank.values()):4d} | Rate: {(time.time()-t_start)/frame_count:.2f}s/frame")
+        status = (f"[Frame {frame_count:3d}] Highest Rank: {cur_max:4d} | "
+                  f"Total Obs: {sum(len(v) for v in obs_store.observations_by_rank.values()):4d} | "
+                  f"Rate: {(time.time()-t_start)/frame_count:.2f}s/frame")
+        sys.stdout.write("\r" + status)
+        if frame_count % 25 == 0:
+            print("\n" + status)
         sys.stdout.flush()
 
-        # Check for bottom termination using fitted ranks
-        if frame_ranks == last_frame_ranks and len(frame_ranks) > 0 and cur_max > 50:
-            stuck_count += 1
-            if stuck_count >= 5:
-                print(f"\nLeaderboard bottom detected at Rank {cur_max}!")
-                break
-        else:
-            stuck_count = 0
-            last_frame_ranks = frame_ranks
+        stop, stalled_frames, stuck_count = bottom_reached(
+            highest_rank, cur_max, stalled_frames, frame_ranks, last_frame_ranks, stuck_count)
+        highest_rank = max(highest_rank, cur_max)
+        last_frame_ranks = frame_ranks
+        if stop:
+            print(f"\nLeaderboard bottom detected at Rank {cur_max}!")
+            break
 
     # Main pass merge
     initial_merged = obs_store.merge_all()
@@ -473,7 +488,7 @@ def generate_qa_report(
     if obs_store:
         banner_frames_count = sum(1 for f in obs_store.get_raw_observations() if f.get("banner_detected"))
 
-    passed = (len(missing) == 0 and len(unresolved) == 0 and monotonic_passed and not duplicate_players)
+    passed = (total_ranks > 0 and len(missing) == 0 and len(unresolved) == 0 and monotonic_passed and not duplicate_players)
 
     report = {
         "event_id": event_id,
@@ -494,13 +509,6 @@ def generate_qa_report(
         "passed": passed
     }
 
-    qa_path = os.path.join(BASE_DIR, "events", event_id, "capture_qa.json")
-    os.makedirs(os.path.dirname(qa_path), exist_ok=True)
-    with open(qa_path, "w", encoding="utf-8") as f:
-        json.dump(report, f, indent=2, ensure_ascii=False)
-        f.write("\n")
-    print(f"Capture QA report saved: {qa_path}")
-
     return report
 
 
@@ -517,101 +525,177 @@ def estimate_pause_minutes():
     return int(math.ceil(expected_sec * 2 / 60.0)) + 5
 
 
-def write_capture_record(event_id, capture_info, screenshots=None):
-    path = os.path.join(BASE_DIR, "events", event_id, "capture.json")
-    record = {
-        "event_id": event_id,
-        "passes": [capture_info],
-        "method": "pipeline/run_pipeline.py live ADB capture (BlueStacks) + Apple Vision OCR"
-    }
-    if screenshots:
-        record["screenshots"] = screenshots
+def write_json(path, data):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(record, f, indent=2, ensure_ascii=False)
+        json.dump(data, f, indent=2, ensure_ascii=False)
         f.write("\n")
-    print(f"Capture timestamp recorded: {path}")
 
 
-def main():
+def write_capture_record(event_id, capture_info, screenshots=None, early=None, event_dir=None):
+    event_dir = event_dir or os.path.join(BASE_DIR, "events", event_id)
+    path = os.path.join(event_dir, "capture.json")
+    if capture_info:
+        record = {
+            "event_id": event_id,
+            "passes": [capture_info],
+            "method": "pipeline/run_pipeline.py live ADB capture (BlueStacks) + Apple Vision OCR"
+        }
+    elif os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            record = json.load(f)
+    else:
+        record = {"event_id": event_id, "passes": [], "method": "reprocessed from file"}
+    existing_screenshots = record.get("screenshots", [])
+    if existing_screenshots or screenshots:
+        merged_screenshots = []
+        positions = {}
+        for item in [*existing_screenshots, *(screenshots or [])]:
+            file_name = item.get("file")
+            if file_name is None:
+                merged_screenshots.append(item)
+            elif file_name in positions:
+                merged_screenshots[positions[file_name]] = item
+            else:
+                positions[file_name] = len(merged_screenshots)
+                merged_screenshots.append(item)
+        record["screenshots"] = merged_screenshots
+    if early is not None:
+        record["early_screenshots"] = early
+    write_json(path, record)
+    print(f"Capture record saved: {path}")
+
+
+def resolve_matchup(opponent, home_role, detected, force=False):
+    """Resolve optional flags and reject disagreements with the Conquest screen."""
+    for field, given in (("opponent", opponent), ("home_role", home_role)):
+        actual = detected.get(field) if detected else None
+        flag = "--" + field.replace("_", "-")
+        if given is None and actual is None:
+            raise ValueError(f"Could not read matchup: provide {flag} (required with --no-navigate).")
+        if given is not None and actual is not None and given != actual and not force:
+            raise ValueError(f"{flag} {given!r} disagrees with detected {actual!r}; "
+                             "check the matchup or use --force-matchup.")
+    return opponent or detected["opponent"], home_role or detected["home_role"]
+
+
+def screenshot_time(path):
+    """Phone screenshot filenames use local time; fall back to file modification time."""
+    match = re.search(r"Screenshot_(\d{8})_(\d{6})", os.path.basename(path))
+    if match:
+        try:
+            return datetime.strptime("".join(match.groups()), "%Y%m%d%H%M%S").astimezone()
+        except ValueError:
+            pass
+    return datetime.fromtimestamp(os.path.getmtime(path)).astimezone()
+
+
+def load_early_screens(directory):
+    from early_screens import parse_early_screens
+    extensions = (".png", ".jpg", ".jpeg", ".webp", ".heic", ".tif", ".tiff", ".bmp")
+    files = [os.path.join(directory, f) for f in os.listdir(directory)
+             if f.lower().endswith(extensions) and os.path.isfile(os.path.join(directory, f))]
+    files.sort(key=lambda p: (screenshot_time(p), p))
+    if not files:
+        raise ValueError(f"No early screenshot images found in {directory}")
+    check_and_compile_ocr()
+    worker = OCRWorker(OCR_BIN)
+    try:
+        rows = parse_early_screens([worker.process(p) for p in files])
+    finally:
+        worker.close()
+    times = [screenshot_time(p).astimezone(SERVER_TZ).isoformat(timespec="seconds") for p in files]
+    sources = [(p, f"player_{i:02d}", "player-screenshot", screenshot_time(p))
+               for i, p in enumerate(files, 1)]
+    return rows, sources, {"started_at": min(times), "finished_at": max(times)}
+
+
+def main(argv=None):
     parser = argparse.ArgumentParser(description="Capitol War Ranking Pipeline for Z Route: Redemption")
     parser.add_argument("--date", default=datetime.now().strftime("%Y-%m-%d"), help="Event date (YYYY-MM-DD)")
     parser.add_argument("--home", default="117", help="Home server number (default: 117)")
-    parser.add_argument("--opponent", default="119", help="Opponent server number (default: 119)")
-    parser.add_argument("--home-role", required=True, choices=["attacking", "defending"],
-                        help="Whether the home server is attacking or defending the Capitol this event")
+    parser.add_argument("--opponent", help="Opponent server (default: detected from Capitol Conquest)")
+    parser.add_argument("--home-role", choices=["attacking", "defending"],
+                        help="Home server role (default: detected from Capitol Conquest)")
+    parser.add_argument("--force-matchup", action="store_true", help="Allow flags to override the detected matchup")
+    parser.add_argument("--early-screenshots", metavar="DIR", help="Merge early player screenshot images")
+    parser.add_argument("--early-cutoff", type=int, help="Early rank cutoff (default: largest clean cutoff)")
     parser.add_argument("--device", default=None, help="ADB device ID (default: auto-detect)")
     parser.add_argument("--no-rewind", action="store_true", help="Skip scrolling back to top")
-    parser.add_argument("--from-file", default=None, help="Skip capture and process from existing raw JSON file")
+    parser.add_argument("--from-file", default=None, help="Reprocess raw JSON or capture_rankings.json")
     parser.add_argument("--swipe-px", type=int, default=420, help="Swipe distance in pixels (default: 420)")
-    parser.add_argument("--settle-sec", type=float, default=0.15, help="Settle time after swipe in seconds (default: 0.15)")
-    parser.add_argument("--allow-incomplete", action="store_true", help="Allow pipeline to succeed even if QA validation fails")
-    parser.add_argument("--no-apparatchik", action="store_true",
-                        help="Do not pause/resume Apparatchik monitoring (only if it is not driving this emulator)")
-    parser.add_argument("--nav-test", action="store_true",
-                        help="Only test navigation: pause Apparatchik, open the Rankings list, return to the city, resume")
-    parser.add_argument("--no-navigate", action="store_true",
-                        help="Assume the Rankings list is already open and do not return to the city afterwards")
-    args = parser.parse_args()
-
-    event_id = f"{args.date}-s{args.home}-vs-s{args.opponent}"
-    title = f"Capitol War: Server {args.home} vs Server {args.opponent}"
-
-    raw_records = []
-    capture_info = None
-    obs_store = None
-    repaired_ranks: Set[int] = set()
-    frames_dir = staging_dir(event_id)
+    parser.add_argument("--settle-sec", type=float, default=0.15, help="Settle time after swipe (default: 0.15)")
+    parser.add_argument("--allow-incomplete", action="store_true", help="Publish even if QA validation fails")
+    parser.add_argument("--no-apparatchik", action="store_true", help="Do not pause/resume Apparatchik monitoring")
+    parser.add_argument("--nav-test", action="store_true", help="Only navigate to Rankings and return to city")
+    parser.add_argument("--no-navigate", action="store_true", help="Rankings already open; stay there afterwards")
+    args = parser.parse_args(argv)
+    if args.from_file and (not args.opponent or not args.home_role):
+        parser.error("--from-file requires --opponent and --home-role")
+    if args.early_cutoff is not None and (not args.early_screenshots or args.early_cutoff < 0):
+        parser.error("--early-cutoff requires --early-screenshots and must be non-negative")
 
     if args.nav_test:
         adb = find_adb()
+        if not adb:
+            parser.error("adb binary not found")
         check_and_compile_ocr()
         device = args.device or auto_detect_device(adb)
         try:
-            with (contextlib.nullcontext() if args.no_apparatchik else monitoring_paused(10)):
-                nav = Navigator(adb, device, frames_dir)
-                try:
-                    nav.go_to_rankings()
-                    print("Navigation test: Rankings list reached.")
-                finally:
-                    nav.return_to_city()
+            with tempfile.TemporaryDirectory(prefix="capitol-nav-test-") as shots_dir:
+                with (contextlib.nullcontext() if args.no_apparatchik else monitoring_paused(10)):
+                    nav = Navigator(adb, device, shots_dir, home=args.home)
+                    try:
+                        nav.go_to_rankings()
+                        print(f"Navigation test: Rankings list reached; matchup: {nav.matchup}")
+                    finally:
+                        nav.return_to_city()
         except (ApparatchikError, NavigationError) as e:
-            print(f"Error: {e}")
-            sys.exit(1)
+            parser.exit(1, f"Error: {e}\n")
         return
 
+    capture_info = None
+    obs_store = None
+    repaired_ranks: Set[int] = set()
+    frames_dir = None
+    detected = None
     if args.from_file:
         print(f"Loading existing raw records from: {args.from_file}")
-        with open(args.from_file, "r", encoding="utf-8") as f:
+        with open(args.from_file, encoding="utf-8") as f:
             raw_records = json.load(f)
     else:
+        if args.no_navigate:
+            try:
+                resolve_matchup(args.opponent, args.home_role, None)
+            except ValueError as e:
+                parser.error(str(e))
         adb = find_adb()
         if not adb:
-            print("Error: adb binary not found. Please install Android platform-tools.")
-            sys.exit(1)
+            parser.error("adb binary not found. Please install Android platform-tools.")
         check_and_compile_ocr()
         device = args.device or auto_detect_device(adb)
         print(f"Connected to device: {device}")
-
-        for old in os.listdir(frames_dir):
-            if old.endswith(".png") and old.startswith(("frame_", "repair_", "verify_top_", "nav_")):
-                os.remove(os.path.join(frames_dir, old))
-
-        pause_minutes = estimate_pause_minutes()
-        pause_ctx = contextlib.nullcontext() if args.no_apparatchik else monitoring_paused(pause_minutes)
+        frames_dir = tempfile.mkdtemp(prefix="run-", dir=staging_dir(f"{args.date}-pending"))
+        pause_ctx = contextlib.nullcontext() if args.no_apparatchik else monitoring_paused(estimate_pause_minutes())
         try:
             with pause_ctx:
-                nav = Navigator(adb, device, frames_dir)
+                nav = Navigator(adb, device, frames_dir, home=args.home)
                 ocr_worker = OCRWorker(OCR_BIN)
                 try:
                     if not args.no_navigate:
                         nav.go_to_rankings()
+                        detected = nav.matchup
+                    args.opponent, args.home_role = resolve_matchup(
+                        args.opponent, args.home_role, detected, args.force_matchup)
+                    event_id = f"{args.date}-s{args.home}-vs-s{args.opponent}"
+                    destination = os.path.join(staging_dir(event_id), os.path.basename(frames_dir))
+                    shutil.move(frames_dir, destination)
+                    frames_dir = destination
+                    nav.shots_dir = frames_dir
                     if not args.no_rewind:
                         scroll_to_top_verified(adb, device, ocr_worker, frames_dir)
                     raw_records, capture_info, obs_store, repaired_ranks = capture_leaderboard(
-                        adb, device, frames_dir, ocr_worker,
-                        swipe_px=args.swipe_px,
-                        settle_sec=args.settle_sec
-                    )
+                        adb, device, frames_dir, ocr_worker, swipe_px=args.swipe_px, settle_sec=args.settle_sec)
                 finally:
                     ocr_worker.close()
                     if not args.no_navigate:
@@ -619,86 +703,78 @@ def main():
                             nav.return_to_city()
                         except NavigationError as e:
                             print(f"WARNING: {e}")
-        except (ApparatchikError, NavigationError) as e:
-            print(f"Error: {e}")
-            sys.exit(1)
+        except (ApparatchikError, NavigationError, ValueError) as e:
+            parser.exit(1, f"Error: {e}\n")
+        write_json(os.path.join(frames_dir, "raw_observations.json"), obs_store.get_raw_observations())
 
-        # Save raw_observations.json to staging_dir
-        raw_obs_path = os.path.join(frames_dir, "raw_observations.json")
-        with open(raw_obs_path, "w", encoding="utf-8") as rf:
-            json.dump(obs_store.get_raw_observations(), rf, indent=2, ensure_ascii=False)
-        print(f"Raw observations saved: {raw_obs_path}")
-
-    # Capture QA only applies to a live capture (a --from-file reprocess has no per-frame readings)
-    qa_report = generate_qa_report(event_id, obs_store, raw_records, repaired_ranks) if obs_store else {"passed": True}
-
-    # 1. Clean and normalize (carrying server explicitly)
+    event_id = f"{args.date}-s{args.home}-vs-s{args.opponent}"
+    title = f"Capitol War: Server {args.home} vs Server {args.opponent}"
     print("\nCleaning records and resolving OCR normalizations...")
-    cleaned_records = [clean_player_record(r, home_server=args.home, visiting_server=args.opponent) for r in raw_records]
-    for variant, canonical, n in consolidate_alliance_variants(cleaned_records):
-        print(f"  [alliance merge] {variant!r} -> {canonical!r} ({n} rows)")
+    capture_records = [clean_player_record(r, home_server=args.home, visiting_server=args.opponent) for r in raw_records]
+    records = [dict(r, diagnostics=raw.get("diagnostics", {})) for r, raw in zip(capture_records, raw_records)]
+    early_provenance = None
+    early_sources = []
+    if args.early_screenshots:
+        from early_screens import max_clean_cutoff, merge_early
+        try:
+            early_rows, early_sources, time_range = load_early_screens(args.early_screenshots)
+            early_rows = [dict(clean_player_record(r, args.home, args.opponent), diagnostics=r.get("diagnostics", {}))
+                          for r in early_rows]
+            cutoff = args.early_cutoff if args.early_cutoff is not None else max_clean_cutoff(early_rows, records, name_key)
+            records, early_provenance = merge_early(early_rows, records, cutoff, time_range=time_range)
+            print(f"Early screenshots: using ranks 1–{cutoff}.")
+        except ValueError as e:
+            parser.exit(1, f"Error: {e}\n")
 
-    # 2. Validate integrity
+    cleaned_records, changes, reviews = clean_records(
+        records, args.home, args.opponent, event_id=event_id, base_dir=BASE_DIR, include_reviews=True)
+    for change in changes:
+        print(f"  [{change['field']}] rank {change['rank']}: {change['before']!r} -> {change['after']!r} ({change['reason']})")
+    for review_type in ("name_review", "alliance_review"):
+        for review in reviews[review_type]:
+            print(f"  [{review_type}] rank {review['rank']} (S{review.get('server', '')}): "
+                  f"{review['observed']!r} ~ {review['known']!r} ({review['alliance']})")
+    qa_report = generate_qa_report(event_id, obs_store, raw_records, repaired_ranks) if obs_store else {"event_id": event_id, "passed": True}
     errors = validate_dataset(cleaned_records)
+    qa_report["validation_errors"] = errors
+    qa_report["applied_changes"] = changes
+    qa_report.update(reviews)
+    qa_report["passed"] = qa_report["passed"] and not errors and bool(cleaned_records)
     if errors:
-        print("\n[WARNING] Dataset validation notes:")
         for err in errors:
-            print(f"  - {err}")
-    else:
-        print("Data integrity check: 100% PASSED (0 missing ranks, monotonic points verified).")
+            print(f"  [QA] {err}")
 
-    # 3. Publish event & update GitHub Pages
+    if not qa_report["passed"] and not args.allow_incomplete:
+        frames_dir = frames_dir or tempfile.mkdtemp(prefix="reprocess-", dir=staging_dir(event_id))
+        write_event_outputs(frames_dir, event_id, title, args.date, args.home, args.opponent, cleaned_records, args.home_role)
+        write_json(os.path.join(frames_dir, "capture_rankings.json"), capture_records)
+        write_json(os.path.join(frames_dir, "capture_qa.json"), qa_report)
+        if capture_info or early_provenance is not None:
+            write_capture_record(event_id, capture_info, early=early_provenance, event_dir=frames_dir)
+        print(f"QA failed; outputs saved for review in {frames_dir}. Nothing published.")
+        parser.exit(1)
+
     print(f"\nPublishing event '{event_id}'...")
-    meta, alliances = publish_event(
-        event_id=event_id,
-        title=title,
-        date_str=args.date,
-        home_server=args.home,
-        opponent_server=args.opponent,
-        players=cleaned_records,
-        home_role=args.home_role
-    )
+    meta, alliances = publish_event(event_id, title, args.date, args.home, args.opponent, cleaned_records, args.home_role)
+    event_dir = os.path.join(BASE_DIR, "events", event_id)
+    # Reprocessing published rankings must not overwrite an existing original capture.
+    capture_path = os.path.join(event_dir, "capture_rankings.json")
+    if capture_info or not os.path.exists(capture_path):
+        write_json(capture_path, capture_records)
+    write_json(os.path.join(event_dir, "capture_qa.json"), qa_report)
+    sources = []
     if capture_info:
         kinds = {"frame_": "capture-frame", "repair_": "repair", "verify_top_": "rewind-check", "nav_": "navigation"}
         frames = sorted(f for f in os.listdir(frames_dir) if f.endswith(".png") and f.startswith(tuple(kinds)))
-        print(f"Archiving {len(frames)} compressed screenshots to events/{event_id}/screenshots/ ...")
-        shots = archive_screenshots(
-            [(os.path.join(frames_dir, f), f[:-4], next(k for p, k in kinds.items() if f.startswith(p))) for f in frames],
-            os.path.join(BASE_DIR, "events", event_id))
-        write_capture_record(event_id, capture_info, shots)
-        print(f"Full-size frames kept locally in {frames_dir} (auto-deleted after a few days by the cleanup agent).")
-    else:
-        print("Reprocessed from file: existing capture.json (if any) left unchanged.")
-
-    print("\n" + "=" * 80)
-    print(f" CAPITOL WAR EVENT PUBLISHED: {title}")
-    print("=" * 80)
-    print(f" Total Commanders: {meta['total_players']:,}")
-    print(f" Total War Points: {meta['total_points']:,}")
-    print(f" Total Alliances:  {meta['unique_alliances']:,}")
-    print(f" Top Alliance:     {alliances[0]['alliance']} ({alliances[0]['members_count']} members, {alliances[0]['total_points']:,} pts)")
-    print("=" * 80)
-    print(f"\nAssets written to:")
-    print(f"  - events/{event_id}/")
-    print(f"  - data/capitol_event_rankings.csv")
-    print(f"  - data/capitol_event_rankings.json")
-    print("\nTo push changes to GitHub Pages:")
-    print("  git add . && git commit -m 'feat: update event rankings' && git push origin main\n")
-
-    # Exit non-zero if QA failed and --allow-incomplete is not set
-    if not qa_report["passed"]:
-        print("!" * 80)
-        print(" [WARNING] CAPTURE QA INTEGRITY CHECK FAILED:")
-        if qa_report["missing_ranks"]:
-            print(f"  - Missing ranks: {qa_report['missing_ranks'][:15]}")
-        if qa_report["ranks_unresolved"]:
-            print(f"  - Unresolved conflicts/tainted at ranks: {qa_report['ranks_unresolved'][:15]}")
-        if not qa_report["monotonic_check"]["passed"]:
-            print(f"  - Monotonic points violations: {qa_report['monotonic_check']['violations_count']}")
-        print("!" * 80)
-        if not args.allow_incomplete:
-            print("Aborting because --allow-incomplete was not specified.")
-            sys.exit(1)
+        sources = [(os.path.join(frames_dir, f), f[:-4], next(k for p, k in kinds.items() if f.startswith(p))) for f in frames]
+        capture_info["matchup"] = detected
+    sources.extend(early_sources)
+    shots = archive_screenshots(sources, event_dir) if sources else []
+    if capture_info or early_provenance is not None:
+        write_capture_record(event_id, capture_info, shots, early_provenance)
+    print(f"Published {title}: {meta['total_players']:,} commanders, {meta['total_points']:,} points, {meta['unique_alliances']:,} alliances.")
+    if frames_dir:
+        print(f"Full-size frames kept locally in {frames_dir}.")
 
 
 if __name__ == "__main__":

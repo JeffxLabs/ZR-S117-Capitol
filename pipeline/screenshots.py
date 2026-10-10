@@ -43,16 +43,17 @@ def _compress_one(src, dest_base):
 def archive_screenshots(sources, repo_event_dir, subdir="screenshots"):
     """Compress each source image into <repo_event_dir>/<subdir>/.
 
-    sources: list of (path, name, kind) where name is the output basename (no extension)
+    sources: list of (path, name, kind[, taken_at]) where name is the output basename (no extension)
     and kind is a short label such as "capture-frame" or "verification".
     Returns manifest entries: [{file, kind, taken_at}] ordered by capture time.
     """
     out_dir = os.path.join(repo_event_dir, subdir)
     os.makedirs(out_dir, exist_ok=True)
     entries = []
-    for src, name, kind in sources:
-        st = os.stat(src)
-        taken = datetime.fromtimestamp(st.st_mtime, SERVER_TZ)
+    for source in sources:
+        src, name, kind = source[:3]
+        taken = (source[3].astimezone(SERVER_TZ) if len(source) > 3
+                 else datetime.fromtimestamp(os.stat(src).st_mtime, SERVER_TZ))
         dest = _compress_one(src, os.path.join(out_dir, name))
         entries.append({
             "file": os.path.relpath(dest, repo_event_dir),
