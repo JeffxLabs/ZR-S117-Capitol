@@ -84,6 +84,7 @@ git push origin main
 | `--force-matchup` | False | Allow explicit opponent/role flags to disagree with the Conquest screen. |
 | `--device` | Auto | ADB device identifier (auto-detects BlueStacks). |
 | `--no-rewind` | False | Skip scrolling back to Rank 1 before starting. |
+| `--no-humanize` | False | Disable input jitter and variable pauses; use the exact legacy input and timing. |
 | `--from-file` | None | Reprocess rank records, including `events/<id>/capture_rankings.json`. |
 | `--early-screenshots DIR` | None | OCR and merge early phone screenshots; archive them as `player-screenshot`. |
 | `--early-cutoff N` | Auto | Use early ranks 1–N; auto selects the largest contiguous prefix without later overtakes. |
@@ -93,6 +94,8 @@ git push origin main
 | `--no-apparatchik` | False | Skip pausing/resuming Apparatchik monitoring. |
 | `--swipe-px` | `420` | Swipe distance in pixels. |
 | `--settle-sec` | `0.15` | Settle time after each swipe. |
+
+Live runs humanize taps and swipes with small bounded jitter and vary pause timing while preserving capture overlap and seek accuracy. Use `--no-humanize` for exact legacy input and fixed delays; each live run prints whether humanized input was enabled and its total extra pause time.
 
 ---
 

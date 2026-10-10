@@ -79,6 +79,32 @@ class TestMatchupFlags(unittest.TestCase):
         stage.assert_not_called()
 
 
+class TestHumanInputSummary(unittest.TestCase):
+    def test_live_run_failure_still_prints_human_input_summary(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            def stage(event_id):
+                folder = root / "staging" / event_id
+                folder.mkdir(parents=True, exist_ok=True)
+                return str(folder)
+
+            output = io.StringIO()
+            with patch.object(pipeline, "staging_dir", side_effect=stage), \
+                    patch.object(pipeline, "find_adb", return_value="mock-adb"), \
+                    patch.object(pipeline, "check_and_compile_ocr"), \
+                    patch.object(pipeline, "auto_detect_device", return_value="mock-device"), \
+                    patch.object(pipeline, "Navigator"), \
+                    patch.object(pipeline, "OCRWorker"), \
+                    patch.object(pipeline, "scroll_to_top_verified", side_effect=RuntimeError("rewind failed")), \
+                    contextlib.redirect_stdout(output):
+                with self.assertRaisesRegex(RuntimeError, "rewind failed"):
+                    pipeline.main(["--date", "2026-10-10", "--opponent", "119", "--home-role", "defending",
+                                   "--no-navigate", "--no-humanize", "--no-apparatchik"])
+
+            self.assertIn("Humanized input off; total extra pause time: 0.0s.", output.getvalue())
+
+
 class TestPublicationGate(unittest.TestCase):
     def run_mock_capture(self, root, rows, extra=()):
         def stage(event_id):

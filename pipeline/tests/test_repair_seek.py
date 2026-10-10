@@ -3,6 +3,7 @@ import random
 import sys
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import run_pipeline as pipeline
@@ -70,6 +71,29 @@ class TestInjectedRepairSeeking(unittest.TestCase):
         device.top = 0
         self.assertTrue(pipeline.seek_rank_with_controls(
             1, device.read_visible, device.fling, device.drag, device.rewind_to_top))
+
+    def test_adb_adapter_accepts_fake_human_input(self):
+        device = SimulatedList(seed=20261010)
+
+        class FakeHumanInput:
+            def swipe(self, x1, y1, x2, y2, duration_ms, **kwargs):
+                direction = "down" if y1 > y2 else "up"
+                if duration_ms == 150:
+                    device.fling(direction, 1)
+                else:
+                    device.drag(direction, abs(y2 - y1))
+
+            def fling_gap(self):
+                pass
+
+            def pause(self, _seconds):
+                pass
+
+        with patch.object(pipeline, "_visible_ranks", side_effect=lambda *args: device.read_visible()), \
+                patch.object(pipeline, "scroll_to_top_verified",
+                             side_effect=lambda *args, **kwargs: device.rewind_to_top()):
+            self.assertTrue(pipeline.seek_rank("adb", "device", None, ".", 33,
+                                               human_input=FakeHumanInput()))
 
 
 if __name__ == "__main__":

@@ -13,7 +13,7 @@ import os
 import re
 import struct
 import subprocess
-import time
+from human_input import HumanInput
 
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
 OCR_BIN = os.path.join(PIPELINE_DIR, "vision_ocr")
@@ -108,12 +108,13 @@ class Screen:
 
 
 class Navigator:
-    def __init__(self, adb, device, shots_dir, log=print, home="117"):
+    def __init__(self, adb, device, shots_dir, log=print, home="117", human_input=None):
         self.adb = adb
         self.device = device
         self.shots_dir = shots_dir
         self.log = log
         self.home = home
+        self.human_input = human_input if human_input is not None else HumanInput(adb, device)
         self.matchup = None
         self.step = 0
         os.makedirs(shots_dir, exist_ok=True)
@@ -136,13 +137,13 @@ class Navigator:
     def tap(self, screen, item, what, wait=2.0):
         x, y = screen.center_px(item)
         self.log(f"  tap {what!r} at ({x},{y})")
-        self._adb("shell", "input", "tap", str(x), str(y), check=True)
-        time.sleep(wait)
+        self.human_input.tap(x, y, check=True)
+        self.human_input.pause(wait)
 
     def back(self, wait=1.5):
         self.log("  back")
-        self._adb("shell", "input", "keyevent", BACK_KEY, check=True)
-        time.sleep(wait)
+        self.human_input.back(check=True)
+        self.human_input.pause(wait)
 
     # ----- screen classification -----
     @staticmethod
@@ -187,7 +188,7 @@ class Navigator:
             found = check(s)
             if found:
                 return s, found
-            time.sleep(wait)
+            self.human_input.pause(wait)
         return s, None
 
     def go_to_rankings(self):

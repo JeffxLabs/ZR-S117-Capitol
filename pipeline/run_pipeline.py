@@ -26,6 +26,7 @@ from frame_parser import parse_frame, FrameResult, find_banner_close, is_ranking
 from merge import ObservationStore, name_key
 from apparatchik_control import monitoring_paused, ApparatchikError
 from navigation import Navigator, NavigationError
+from human_input import HumanInput
 import math
 
 PIPELINE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -128,14 +129,17 @@ def screencap(adb, device, dest_path):
         subprocess.run([adb, "-s", device, "exec-out", "screencap", "-p"], stdout=f)
 
 
-def scroll_to_top_verified(adb, device, ocr_worker: OCRWorker, staging_folder: str, max_retries: int = 5):
+def scroll_to_top_verified(adb, device, ocr_worker: OCRWorker, staging_folder: str, max_retries: int = 5,
+                           human_input: Optional[HumanInput] = None):
     """Rewind rankings to the top and verify via OCR that Rank 1 is at the top slot."""
+    if human_input is None:
+        human_input = HumanInput(adb, device)
     print("Rewinding rankings to the top (Rank 1)...")
     for attempt in range(1, max_retries + 1):
         for _ in range(12):
-            subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", "500", "540", "1750", "180"])
-            time.sleep(0.2)
-        time.sleep(1.2)
+            human_input.swipe(540, 500, 540, 1750, 180)
+            human_input.pause(0.2)
+        human_input.pause(1.2)
 
         verify_img = os.path.join(staging_folder, f"verify_top_{attempt}.png")
         screencap(adb, device, verify_img)
@@ -155,10 +159,12 @@ def scroll_to_top_verified(adb, device, ocr_worker: OCRWorker, staging_folder: s
     raise RuntimeError("Verification failed: Unable to confirm leaderboard top (Rank 1) after rewinding.")
 
 
-def swipe_async(adb, device, swipe_px: int = 420):
+def swipe_async(adb, device, swipe_px: int = 420, human_input: Optional[HumanInput] = None):
+    if human_input is None:
+        human_input = HumanInput(adb, device)
     y_start = 1350
     y_end = max(100, y_start - swipe_px)
-    subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", str(y_start), "540", str(y_end), "400"])
+    human_input.swipe(540, y_start, 540, y_end, 400)
 
 
 def capture_frame_with_banner_mitigation(
@@ -168,9 +174,12 @@ def capture_frame_with_banner_mitigation(
     img_path: str,
     prev_max: Optional[int],
     obs_store: ObservationStore,
-    base_name: str
+    base_name: str,
+    human_input: Optional[HumanInput] = None,
 ) -> FrameResult:
     """Capture a screenshot, run OCR, parse rows, and retry if notification banner is active."""
+    if human_input is None:
+        human_input = HumanInput(adb, device)
     screencap(adb, device, img_path)
     items = ocr_worker.process(img_path)
     res = parse_frame(items, prev_max_rank=prev_max)
@@ -182,8 +191,8 @@ def capture_frame_with_banner_mitigation(
         x = int((close_btn["x"] + close_btn["width"] / 2) * 1080)
         y = int((1 - (close_btn["y"] + close_btn["height"] / 2)) * 1920)
         print(f" [banner in {base_name}] tapping its close X at ({x},{y})")
-        subprocess.run([adb, "-s", device, "shell", "input", "tap", str(x), str(y)])
-        time.sleep(0.6)
+        human_input.tap(x, y, jitter_px=6, max_offset=6)
+        human_input.pause(0.6)
         prefix = base_name.rsplit(".", 1)[0]
         after_base = f"{prefix}_banner_closed.png"
         after_img = os.path.join(os.path.dirname(img_path), after_base)
@@ -192,8 +201,8 @@ def capture_frame_with_banner_mitigation(
         if not is_rankings_list(after_items):
             # The banner had already gone and the tap opened something else: back out once
             print(" tap left the Rankings list; pressing back")
-            subprocess.run([adb, "-s", device, "shell", "input", "keyevent", "4"])
-            time.sleep(1.0)
+            human_input.back()
+            human_input.pause(1.0)
             screencap(adb, device, after_img)
             after_items = ocr_worker.process(after_img)
             if not is_rankings_list(after_items):
@@ -207,7 +216,7 @@ def capture_frame_with_banner_mitigation(
         prefix = base_name.rsplit(".", 1)[0]
         dir_name = os.path.dirname(img_path)
         for retry in range(1, 5):
-            time.sleep(1.5)
+            human_input.pause(1.5)
             retry_base = f"{prefix}_banner_retry_{retry}.png"
             retry_img = os.path.join(dir_name, retry_base)
             screencap(adb, device, retry_img)
@@ -282,6 +291,7 @@ def seek_rank_with_controls(
     max_moves: Optional[int] = None,
     row_px: int = ROW_PX,
     max_flings_per_move: int = MAX_FLINGS_PER_MOVE,
+    pause: Callable[[float], None] = time.sleep,
 ) -> bool:
     """Seek using injected device controls, with every move checked against OCR.
 
@@ -305,7 +315,7 @@ def seek_rank_with_controls(
 
     while moves < move_budget and reads <= read_budget:
         if not visible:
-            time.sleep(0.25)
+            pause(0.25)
             visible = sorted(set(read_visible() or []))
             reads += 1
             continue
@@ -350,8 +360,10 @@ def seek_rank_with_controls(
     return _seek_succeeded(visible, target_rank)
 
 
-def seek_rank(adb, device, ocr_worker, frames_dir, target_rank, max_moves=None):
+def seek_rank(adb, device, ocr_worker, frames_dir, target_rank, max_moves=None, human_input=None):
     """ADB adapter for the injected, closed-loop rank seeker."""
+    if human_input is None:
+        human_input = HumanInput(adb, device)
     read_count = 0
 
     def read_visible():
@@ -363,25 +375,25 @@ def seek_rank(adb, device, ocr_worker, frames_dir, target_rank, max_moves=None):
     def fling(direction, count):
         start_y, end_y = (1650, 450) if direction == "down" else (450, 1650)
         for _ in range(count):
-            subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", str(start_y),
-                            "540", str(end_y), "150"])
-            time.sleep(0.25)
-        time.sleep(0.4)
+            human_input.swipe(540, start_y, 540, end_y, 150)
+            human_input.fling_gap()
+        human_input.pause(0.4)
 
     def drag(direction, px):
         if direction == "down":
             start_y, end_y = 1500, 1500 - px
         else:
             start_y, end_y = 400, 400 + px
-        subprocess.run([adb, "-s", device, "shell", "input", "swipe", "540", str(start_y),
-                        "540", str(end_y), "400"])
-        time.sleep(0.5)
+        human_input.swipe(540, start_y, 540, end_y, 400, distance_jitter=0.04)
+        human_input.pause(0.5)
 
     try:
         return seek_rank_with_controls(
             target_rank, read_visible, fling, drag,
-            lambda: scroll_to_top_verified(adb, device, ocr_worker, frames_dir),
+            lambda: scroll_to_top_verified(adb, device, ocr_worker, frames_dir,
+                                           human_input=human_input),
             max_moves=max_moves,
+            pause=human_input.pause,
         )
     except RuntimeError as e:  # a failed rewind fails this seek, not the whole run
         print(f"  seek to rank {target_rank} aborted: {e}")
@@ -419,10 +431,13 @@ def repair_ranks(
     ocr_worker: OCRWorker,
     obs_store: ObservationStore,
     frames_dir: str,
-    max_rounds: int = 2
+    max_rounds: int = 2,
+    human_input: Optional[HumanInput] = None,
 ) -> Tuple[List[Dict[str, Any]], Set[int]]:
     """Revisit ranks that are missing, have no clean read, conflict, or break the point ordering,
     and add fresh observations (rank numbers re-fitted per frame, no window filter)."""
+    if human_input is None:
+        human_input = HumanInput(adb, device)
     all_repaired: Set[int] = set()
     for round_idx in range(1, max_rounds + 1):
         merged_now = obs_store.merge_all()
@@ -440,15 +455,15 @@ def repair_ranks(
             if target_rank in covered:
                 continue
             all_repaired.add(target_rank)
-            if not seek_rank(adb, device, ocr_worker, frames_dir, target_rank):
+            if not seek_rank(adb, device, ocr_worker, frames_dir, target_rank, human_input=human_input):
                 print(f"  could not bring rank {target_rank} on screen")
                 continue
             for shot in range(1, 3):
                 name = f"repair_r{round_idx}_rank_{target_rank}_shot_{shot}.png"
                 res = capture_frame_with_banner_mitigation(adb, device, ocr_worker, os.path.join(frames_dir, name),
-                                                           None, obs_store, name)
+                                                           None, obs_store, name, human_input=human_input)
                 covered.update(r["rank"] for r in res.rows if r["complete"] and not r["tainted"])
-                time.sleep(0.3)
+                human_input.pause(0.3)
     return obs_store.merge_all(), all_repaired
 
 
@@ -467,9 +482,12 @@ def capture_leaderboard(
     ocr_worker: OCRWorker,
     swipe_px: int = 420,
     settle_sec: float = 0.15,
-    max_frames: int = 450
+    max_frames: int = 450,
+    human_input: Optional[HumanInput] = None,
 ) -> Tuple[List[Dict[str, Any]], Dict[str, Any], ObservationStore, Set[int]]:
     """Extract leaderboard ranks using multi-observation streaming and voting."""
+    if human_input is None:
+        human_input = HumanInput(adb, device)
     os.makedirs(frames_dir, exist_ok=True)
     print("\nStarting hardened leaderboard extraction with multi-observation voting...")
     t_start = time.time()
@@ -491,23 +509,23 @@ def capture_leaderboard(
 
         # Capture and mitigate banner
         res = capture_frame_with_banner_mitigation(
-            adb, device, ocr_worker, img_path, cur_max, obs_store, base_name
+            adb, device, ocr_worker, img_path, cur_max, obs_store, base_name, human_input=human_input
         )
         if frame == 0:
             # Medal rows (1-3) leave the screen on the first swipe: give them a second clean read
-            time.sleep(0.5)
+            human_input.pause(0.5)
             again = f"frame_{frame_count:04d}_b.png"
             capture_frame_with_banner_mitigation(adb, device, ocr_worker, os.path.join(frames_dir, again),
-                                                 cur_max, obs_store, again)
+                                                 cur_max, obs_store, again, human_input=human_input)
 
         # Trigger swipe
-        swipe_thread = threading.Thread(target=swipe_async, args=(adb, device, swipe_px))
+        swipe_thread = threading.Thread(target=swipe_async, args=(adb, device, swipe_px, human_input))
         swipe_thread.start()
 
         frame_ranks = tuple(sorted(r["rank"] for r in res.rows if r["complete"]))
 
         swipe_thread.join()
-        time.sleep(settle_sec)
+        human_input.pause(settle_sec)
 
         cur_max = max(obs_store.observations_by_rank.keys()) if obs_store.observations_by_rank else 0
         status = (f"[Frame {frame_count:3d}] Highest Rank: {cur_max:4d} | "
@@ -530,7 +548,8 @@ def capture_leaderboard(
     initial_merged = obs_store.merge_all()
 
     # Repair pass
-    final_merged, repaired_ranks = repair_ranks(adb, device, ocr_worker, obs_store, frames_dir)
+    final_merged, repaired_ranks = repair_ranks(adb, device, ocr_worker, obs_store, frames_dir,
+                                                human_input=human_input)
 
     finished_at = datetime.now().astimezone()
     print(f"\nExtraction completed in {time.time()-t_start:.1f}s. Captured {len(final_merged)} total ranks.")
@@ -740,6 +759,7 @@ def main(argv=None):
     parser.add_argument("--early-cutoff", type=int, help="Early rank cutoff (default: largest clean cutoff)")
     parser.add_argument("--device", default=None, help="ADB device ID (default: auto-detect)")
     parser.add_argument("--no-rewind", action="store_true", help="Skip scrolling back to top")
+    parser.add_argument("--no-humanize", action="store_true", help="Use exact legacy input and pause timing")
     parser.add_argument("--from-file", default=None, help="Reprocess raw JSON or capture_rankings.json")
     parser.add_argument("--swipe-px", type=int, default=420, help="Swipe distance in pixels (default: 420)")
     parser.add_argument("--settle-sec", type=float, default=0.15, help="Settle time after swipe (default: 0.15)")
@@ -753,23 +773,41 @@ def main(argv=None):
     if args.early_cutoff is not None and (not args.early_screenshots or args.early_cutoff < 0):
         parser.error("--early-cutoff requires --early-screenshots and must be non-negative")
 
+    human_input = None
+    human_summary_printed = False
+
+    def print_human_input_summary():
+        nonlocal human_summary_printed
+        if human_input is None or human_summary_printed:
+            return
+        extra_time = max(0.0, human_input.total_extra_pause_time)
+        state = "on" if human_input.enabled else "off"
+        print(f"Humanized input {state}; total extra pause time: {extra_time:.1f}s.")
+        human_summary_printed = True
+
     if args.nav_test:
         adb = find_adb()
         if not adb:
             parser.error("adb binary not found")
         check_and_compile_ocr()
         device = args.device or auto_detect_device(adb)
+        human_input = HumanInput(adb, device, enabled=not args.no_humanize)
         try:
             with tempfile.TemporaryDirectory(prefix="capitol-nav-test-") as shots_dir:
                 with (contextlib.nullcontext() if args.no_apparatchik else monitoring_paused(10)):
-                    nav = Navigator(adb, device, shots_dir, home=args.home)
+                    nav = Navigator(adb, device, shots_dir, home=args.home, human_input=human_input)
                     try:
                         nav.go_to_rankings()
                         print(f"Navigation test: Rankings list reached; matchup: {nav.matchup}")
                     finally:
                         nav.return_to_city()
         except (ApparatchikError, NavigationError) as e:
+            print_human_input_summary()
             parser.exit(1, f"Error: {e}\n")
+        except BaseException:
+            print_human_input_summary()
+            raise
+        print_human_input_summary()
         return
 
     capture_info = None
@@ -792,12 +830,13 @@ def main(argv=None):
             parser.error("adb binary not found. Please install Android platform-tools.")
         check_and_compile_ocr()
         device = args.device or auto_detect_device(adb)
+        human_input = HumanInput(adb, device, enabled=not args.no_humanize)
         print(f"Connected to device: {device}")
         frames_dir = tempfile.mkdtemp(prefix="run-", dir=staging_dir(f"{args.date}-pending"))
         pause_ctx = contextlib.nullcontext() if args.no_apparatchik else monitoring_paused(estimate_pause_minutes())
         try:
             with pause_ctx:
-                nav = Navigator(adb, device, frames_dir, home=args.home)
+                nav = Navigator(adb, device, frames_dir, home=args.home, human_input=human_input)
                 ocr_worker = OCRWorker(OCR_BIN)
                 try:
                     if not args.no_navigate:
@@ -811,9 +850,10 @@ def main(argv=None):
                     frames_dir = destination
                     nav.shots_dir = frames_dir
                     if not args.no_rewind:
-                        scroll_to_top_verified(adb, device, ocr_worker, frames_dir)
+                        scroll_to_top_verified(adb, device, ocr_worker, frames_dir, human_input=human_input)
                     raw_records, capture_info, obs_store, repaired_ranks = capture_leaderboard(
-                        adb, device, frames_dir, ocr_worker, swipe_px=args.swipe_px, settle_sec=args.settle_sec)
+                        adb, device, frames_dir, ocr_worker, swipe_px=args.swipe_px, settle_sec=args.settle_sec,
+                        human_input=human_input)
                 finally:
                     ocr_worker.close()
                     if not args.no_navigate:
@@ -822,7 +862,11 @@ def main(argv=None):
                         except NavigationError as e:
                             print(f"WARNING: {e}")
         except (ApparatchikError, NavigationError, ValueError) as e:
+            print_human_input_summary()
             parser.exit(1, f"Error: {e}\n")
+        except BaseException:
+            print_human_input_summary()
+            raise
         write_json(os.path.join(frames_dir, "raw_observations.json"), obs_store.get_raw_observations())
 
     event_id = f"{args.date}-s{args.home}-vs-s{args.opponent}"
@@ -842,6 +886,7 @@ def main(argv=None):
             records, early_provenance = merge_early(early_rows, records, cutoff, time_range=time_range)
             print(f"Early screenshots: using ranks 1–{cutoff}.")
         except ValueError as e:
+            print_human_input_summary()
             parser.exit(1, f"Error: {e}\n")
 
     cleaned_records, changes, reviews = clean_records(
@@ -870,6 +915,7 @@ def main(argv=None):
         if capture_info or early_provenance is not None:
             write_capture_record(event_id, capture_info, early=early_provenance, event_dir=frames_dir)
         print(f"QA failed; outputs saved for review in {frames_dir}. Nothing published.")
+        print_human_input_summary()
         parser.exit(1)
 
     print(f"\nPublishing event '{event_id}'...")
@@ -894,6 +940,7 @@ def main(argv=None):
     print(f"Published {title}: {meta['total_players']:,} commanders, {meta['total_points']:,} points, {meta['unique_alliances']:,} alliances.")
     if frames_dir:
         print(f"Full-size frames kept locally in {frames_dir}.")
+    print_human_input_summary()
 
 
 if __name__ == "__main__":
