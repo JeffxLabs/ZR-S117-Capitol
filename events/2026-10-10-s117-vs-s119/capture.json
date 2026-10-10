@@ -1,0 +1,2895 @@
+{
+  "event_id": "2026-10-10-s117-vs-s119",
+  "passes": [
+    {
+      "timezone": "server time (UTC-2)",
+      "started_at": "2026-10-10T12:54:22-02:00",
+      "finished_at": "2026-10-10T13:07:15-02:00",
+      "started_at_utc": "2026-10-10T14:54:22+00:00",
+      "finished_at_utc": "2026-10-10T15:07:15+00:00",
+      "duration_seconds": 772.6,
+      "frames": 285,
+      "device": "127.0.0.1:5565",
+      "entries_captured": 908
+    }
+  ],
+  "method": "pipeline/run_pipeline.py live ADB capture (BlueStacks) + Apple Vision OCR",
+  "screenshots": [
+    {
+      "file": "screenshots/player_top114_01.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:50:59-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_02.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:04-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_03.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:09-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_04.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:13-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_05.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:17-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_06.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:23-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_07.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:26-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_08.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:29-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_09.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:33-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_10.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:37-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_11.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:41-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_12.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:45-02:00"
+    },
+    {
+      "file": "screenshots/player_top114_13.webp",
+      "kind": "player-screenshot",
+      "taken_at": "2026-10-10T12:51:50-02:00"
+    },
+    {
+      "file": "screenshots/nav_01_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:53:54-02:00"
+    },
+    {
+      "file": "screenshots/nav_02_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:53:56-02:00"
+    },
+    {
+      "file": "screenshots/nav_03_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:53:59-02:00"
+    },
+    {
+      "file": "screenshots/nav_04_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:54:01-02:00"
+    },
+    {
+      "file": "screenshots/nav_05_main.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:54:02-02:00"
+    },
+    {
+      "file": "screenshots/nav_06_expedition_frenzy.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:54:07-02:00"
+    },
+    {
+      "file": "screenshots/nav_07_capitol_conquest.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:54:11-02:00"
+    },
+    {
+      "file": "screenshots/nav_08_rankings.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T12:54:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0001.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:22-02:00"
+    },
+    {
+      "file": "screenshots/verify_top_1.webp",
+      "kind": "rewind-check",
+      "taken_at": "2026-10-10T12:54:22-02:00"
+    },
+    {
+      "file": "screenshots/frame_0001_b.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0002.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0002_banner_retry_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0002_banner_retry_2.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:29-02:00"
+    },
+    {
+      "file": "screenshots/frame_0003.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:30-02:00"
+    },
+    {
+      "file": "screenshots/frame_0003_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0004.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0005.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0006.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0007.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:36-02:00"
+    },
+    {
+      "file": "screenshots/frame_0008.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:37-02:00"
+    },
+    {
+      "file": "screenshots/frame_0009.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0010.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0011.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:40-02:00"
+    },
+    {
+      "file": "screenshots/frame_0012.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0013.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0014.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:44-02:00"
+    },
+    {
+      "file": "screenshots/frame_0015.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0016.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:46-02:00"
+    },
+    {
+      "file": "screenshots/frame_0017.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0018.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0019.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:49-02:00"
+    },
+    {
+      "file": "screenshots/frame_0020.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0021.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0022.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:53-02:00"
+    },
+    {
+      "file": "screenshots/frame_0023.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0024.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0025.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:56-02:00"
+    },
+    {
+      "file": "screenshots/frame_0026.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0027.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:54:59-02:00"
+    },
+    {
+      "file": "screenshots/frame_0028.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0029.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:01-02:00"
+    },
+    {
+      "file": "screenshots/frame_0030.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0031.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0032.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0033.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0034.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0035.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:08-02:00"
+    },
+    {
+      "file": "screenshots/frame_0036.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0037.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0038.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0039.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:13-02:00"
+    },
+    {
+      "file": "screenshots/frame_0040.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0041.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:15-02:00"
+    },
+    {
+      "file": "screenshots/frame_0042.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0043.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:17-02:00"
+    },
+    {
+      "file": "screenshots/frame_0044.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0045.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:19-02:00"
+    },
+    {
+      "file": "screenshots/frame_0046.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:20-02:00"
+    },
+    {
+      "file": "screenshots/frame_0047.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:22-02:00"
+    },
+    {
+      "file": "screenshots/frame_0048.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0049.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0050.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0051.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:26-02:00"
+    },
+    {
+      "file": "screenshots/frame_0052.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0053.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:29-02:00"
+    },
+    {
+      "file": "screenshots/frame_0054.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:30-02:00"
+    },
+    {
+      "file": "screenshots/frame_0055.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0056.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0057.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0058.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:34-02:00"
+    },
+    {
+      "file": "screenshots/frame_0059.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0060.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:37-02:00"
+    },
+    {
+      "file": "screenshots/frame_0061.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0062.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0063.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:40-02:00"
+    },
+    {
+      "file": "screenshots/frame_0064.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0065.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:42-02:00"
+    },
+    {
+      "file": "screenshots/frame_0066.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0067.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0068.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:46-02:00"
+    },
+    {
+      "file": "screenshots/frame_0069.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0070.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0071.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:49-02:00"
+    },
+    {
+      "file": "screenshots/frame_0072.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:50-02:00"
+    },
+    {
+      "file": "screenshots/frame_0073.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0074.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:53-02:00"
+    },
+    {
+      "file": "screenshots/frame_0075.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0076.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0077.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:56-02:00"
+    },
+    {
+      "file": "screenshots/frame_0078.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0079.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:55:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0080.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0081.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:01-02:00"
+    },
+    {
+      "file": "screenshots/frame_0082.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0083.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0084.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0085.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:05-02:00"
+    },
+    {
+      "file": "screenshots/frame_0086.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0087.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:08-02:00"
+    },
+    {
+      "file": "screenshots/frame_0088.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0089.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0090.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0091.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:12-02:00"
+    },
+    {
+      "file": "screenshots/frame_0092.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:13-02:00"
+    },
+    {
+      "file": "screenshots/frame_0093.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0094.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0095.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:17-02:00"
+    },
+    {
+      "file": "screenshots/frame_0096.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0097.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:19-02:00"
+    },
+    {
+      "file": "screenshots/frame_0098.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:20-02:00"
+    },
+    {
+      "file": "screenshots/frame_0099.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:21-02:00"
+    },
+    {
+      "file": "screenshots/frame_0100.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0101.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0102.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0103.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:26-02:00"
+    },
+    {
+      "file": "screenshots/frame_0104.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0105.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:28-02:00"
+    },
+    {
+      "file": "screenshots/frame_0106.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:30-02:00"
+    },
+    {
+      "file": "screenshots/frame_0107.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0108.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0109.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0110.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:34-02:00"
+    },
+    {
+      "file": "screenshots/frame_0111.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0112.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:36-02:00"
+    },
+    {
+      "file": "screenshots/frame_0113.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0114.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0115.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:40-02:00"
+    },
+    {
+      "file": "screenshots/frame_0116.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0117.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:42-02:00"
+    },
+    {
+      "file": "screenshots/frame_0118.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0119.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:44-02:00"
+    },
+    {
+      "file": "screenshots/frame_0120.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:46-02:00"
+    },
+    {
+      "file": "screenshots/frame_0121.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0122.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0123.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:49-02:00"
+    },
+    {
+      "file": "screenshots/frame_0124.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:50-02:00"
+    },
+    {
+      "file": "screenshots/frame_0125.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0126.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0127.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0128.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0129.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:56-02:00"
+    },
+    {
+      "file": "screenshots/frame_0130.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0131.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0132.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:56:59-02:00"
+    },
+    {
+      "file": "screenshots/frame_0133.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0134.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0135.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0136.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0137.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:05-02:00"
+    },
+    {
+      "file": "screenshots/frame_0138.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0139.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0140.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0141.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0142.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0143.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:12-02:00"
+    },
+    {
+      "file": "screenshots/frame_0143_banner_retry_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0143_banner_retry_2.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0143_banner_retry_3.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0143_banner_retry_4.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:20-02:00"
+    },
+    {
+      "file": "screenshots/frame_0144.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:21-02:00"
+    },
+    {
+      "file": "screenshots/frame_0144_banner_retry_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0144_banner_retry_2.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0144_banner_retry_3.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0144_banner_retry_4.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:29-02:00"
+    },
+    {
+      "file": "screenshots/frame_0145.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0146.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0146_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0147.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:34-02:00"
+    },
+    {
+      "file": "screenshots/frame_0147_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0148.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:37-02:00"
+    },
+    {
+      "file": "screenshots/frame_0149.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0150.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0151.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:40-02:00"
+    },
+    {
+      "file": "screenshots/frame_0152.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0153.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:42-02:00"
+    },
+    {
+      "file": "screenshots/frame_0154.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0155.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0156.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:46-02:00"
+    },
+    {
+      "file": "screenshots/frame_0157.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0157_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0157_banner_retry_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:50-02:00"
+    },
+    {
+      "file": "screenshots/frame_0158.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0159.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0160.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0161.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0162.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:56-02:00"
+    },
+    {
+      "file": "screenshots/frame_0163.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0164.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0165.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:57:59-02:00"
+    },
+    {
+      "file": "screenshots/frame_0166.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0167.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0168.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0169.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0170.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:05-02:00"
+    },
+    {
+      "file": "screenshots/frame_0171.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0172.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0173.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:08-02:00"
+    },
+    {
+      "file": "screenshots/frame_0174.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0175.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0176.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:12-02:00"
+    },
+    {
+      "file": "screenshots/frame_0177.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:13-02:00"
+    },
+    {
+      "file": "screenshots/frame_0178.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0179.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:15-02:00"
+    },
+    {
+      "file": "screenshots/frame_0180.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0181.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0181_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:19-02:00"
+    },
+    {
+      "file": "screenshots/frame_0182.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:20-02:00"
+    },
+    {
+      "file": "screenshots/frame_0183.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:21-02:00"
+    },
+    {
+      "file": "screenshots/frame_0184.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:22-02:00"
+    },
+    {
+      "file": "screenshots/frame_0185.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0186.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0187.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:26-02:00"
+    },
+    {
+      "file": "screenshots/frame_0188.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0189.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:28-02:00"
+    },
+    {
+      "file": "screenshots/frame_0190.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:29-02:00"
+    },
+    {
+      "file": "screenshots/frame_0191.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:30-02:00"
+    },
+    {
+      "file": "screenshots/frame_0192.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0193.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0194.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0195.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0196.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:36-02:00"
+    },
+    {
+      "file": "screenshots/frame_0197.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:37-02:00"
+    },
+    {
+      "file": "screenshots/frame_0198.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0199.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0200.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:40-02:00"
+    },
+    {
+      "file": "screenshots/frame_0201.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:42-02:00"
+    },
+    {
+      "file": "screenshots/frame_0202.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0203.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:44-02:00"
+    },
+    {
+      "file": "screenshots/frame_0204.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0205.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:46-02:00"
+    },
+    {
+      "file": "screenshots/frame_0206.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0207.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0208.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:50-02:00"
+    },
+    {
+      "file": "screenshots/frame_0209.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0210.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0211.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:53-02:00"
+    },
+    {
+      "file": "screenshots/frame_0212.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0213.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0214.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0215.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0216.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:58:59-02:00"
+    },
+    {
+      "file": "screenshots/frame_0217.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0218.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:01-02:00"
+    },
+    {
+      "file": "screenshots/frame_0219.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0220.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0221.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0221_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0222.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0223.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:08-02:00"
+    },
+    {
+      "file": "screenshots/frame_0224.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0225.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0226.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0227.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:12-02:00"
+    },
+    {
+      "file": "screenshots/frame_0228.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0229.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:15-02:00"
+    },
+    {
+      "file": "screenshots/frame_0230.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0231.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:17-02:00"
+    },
+    {
+      "file": "screenshots/frame_0232.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0233.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:19-02:00"
+    },
+    {
+      "file": "screenshots/frame_0234.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:20-02:00"
+    },
+    {
+      "file": "screenshots/frame_0235.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:22-02:00"
+    },
+    {
+      "file": "screenshots/frame_0236.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0237.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0238.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0239.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:26-02:00"
+    },
+    {
+      "file": "screenshots/frame_0240.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0241.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:28-02:00"
+    },
+    {
+      "file": "screenshots/frame_0242.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:30-02:00"
+    },
+    {
+      "file": "screenshots/frame_0243.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0244.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0245.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0246.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:34-02:00"
+    },
+    {
+      "file": "screenshots/frame_0247.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0248.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:36-02:00"
+    },
+    {
+      "file": "screenshots/frame_0249.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0250.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0251.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:40-02:00"
+    },
+    {
+      "file": "screenshots/frame_0252.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0253.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:42-02:00"
+    },
+    {
+      "file": "screenshots/frame_0254.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0255.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:44-02:00"
+    },
+    {
+      "file": "screenshots/frame_0256.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0257.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0258.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0259.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:49-02:00"
+    },
+    {
+      "file": "screenshots/frame_0260.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:50-02:00"
+    },
+    {
+      "file": "screenshots/frame_0261.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0262.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:53-02:00"
+    },
+    {
+      "file": "screenshots/frame_0263.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0264.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0265.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:56-02:00"
+    },
+    {
+      "file": "screenshots/frame_0266.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0267.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0268.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T12:59:59-02:00"
+    },
+    {
+      "file": "screenshots/frame_0269.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0270.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0271.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0272.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0273.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:05-02:00"
+    },
+    {
+      "file": "screenshots/frame_0274.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0275.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0276.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0277.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0278.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0279.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:12-02:00"
+    },
+    {
+      "file": "screenshots/frame_0280.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:13-02:00"
+    },
+    {
+      "file": "screenshots/frame_0281.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0282.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:15-02:00"
+    },
+    {
+      "file": "screenshots/frame_0283.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:17-02:00"
+    },
+    {
+      "file": "screenshots/frame_0284.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0285.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-10T13:00:19-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:20-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:23-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:26-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:30-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:33-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:36-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_06.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:39-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_07.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:42-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_08.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:46-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_09.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_10.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:52-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_11.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:55-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_12.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:00:58-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_13.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:01-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_14.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:05-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_15.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:08-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_16.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:11-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_17.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:14-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_18.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:18-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_19.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:21-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_20.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:24-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_21.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:27-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_22.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:30-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_23.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:33-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_24.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:37-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_25.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:40-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_26.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:43-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_27.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:46-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_28.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_29.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:53-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_30.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:55-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_31.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:57-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_32.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:01:59-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_33.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:01-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_34.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:04-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_35.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:06-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_36.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:08-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_37.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:10-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_38.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:12-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_39.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:15-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_40.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:17-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_41.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:19-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_42.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:21-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_43.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:23-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_33_44.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:25-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:28-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:30-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:32-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:34-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:36-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:38-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_06.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:39-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_37_07.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:41-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_37_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:42-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_37_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:42-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_64_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:43-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_64_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:45-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_64_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:46-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_64_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:48-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_64_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_64_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:50-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_64_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:51-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_69_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:52-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_69_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:53-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_69_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:54-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_69_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:54-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_92_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:55-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_92_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:57-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_92_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:02:58-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_92_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:00-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_92_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:00-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_92_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:01-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_121_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:02-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_121_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:03-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_121_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:05-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_121_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:06-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_121_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:07-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_121_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:08-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_149_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:09-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_149_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:10-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_149_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:12-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_149_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:12-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_149_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:13-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_169_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:14-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_169_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:15-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_169_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:17-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_169_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:17-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_169_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:18-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:19-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:21-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:23-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:26-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:28-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:29-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_06.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:31-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_07.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:32-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_265_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:34-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_265_08.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:34-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_265_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:35-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_274_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:36-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_274_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:37-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_274_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:38-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_274_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:39-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_294_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:40-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_294_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:41-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_294_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:43-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_294_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:43-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_294_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:44-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:45-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:47-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:51-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:54-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:56-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_06.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:03:58-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_07.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:00-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_08.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:02-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_09.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:05-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_10.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:07-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_11.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:09-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_12.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:11-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_13.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:13-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_14.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:15-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_15.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:16-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_16.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:18-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_17.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:19-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_524_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:21-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_524_18.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:21-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_524_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:22-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_528_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:23-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_528_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:24-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_528_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:25-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_528_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:26-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_537_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:27-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_537_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:28-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_537_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:29-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_537_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:29-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_538_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:30-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_538_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:32-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_538_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:32-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_538_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:33-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_586_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:41-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_586_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:42-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_638_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:43-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_638_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:45-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_638_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:46-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_638_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:48-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_638_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_638_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:50-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_638_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:51-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_638_shot_2_banner_retry_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:53-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_638_shot_2_banner_retry_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:55-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_638_shot_2_banner_retry_3.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:57-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_638_shot_2_banner_retry_4.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:04:59-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_657_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:00-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_657_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:01-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_657_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:03-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_657_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:03-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_657_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:04-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_662_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:05-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_662_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:06-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_662_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:07-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_662_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:08-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_680_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:12-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_680_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:13-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_713_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:14-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_713_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:15-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_713_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:17-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_713_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:18-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_713_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:19-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_713_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:19-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_722_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:20-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_722_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:22-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_722_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:22-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_722_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:23-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_789_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:24-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_789_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:26-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_789_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:28-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_789_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:30-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_789_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:31-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_789_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:33-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_789_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:33-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_789_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:34-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_806_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:35-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_806_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:36-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_806_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:38-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_806_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:38-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_806_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:39-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_861_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:40-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_861_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:42-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_861_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:44-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_861_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:46-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_861_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:47-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_861_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_861_06.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:50-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_861_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:51-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_861_shot_1_banner_closed.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:52-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_861_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:53-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_874_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:54-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_874_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:55-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_874_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:57-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_874_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:57-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_874_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:58-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:05:59-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:02-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:05-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:07-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:09-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:12-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_06.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:14-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_07.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:16-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_08.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:18-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_09.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:21-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_10.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:23-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_11.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:25-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_12.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:27-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_13.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:29-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_14.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:31-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_15.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:34-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_16.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:36-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_17.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:38-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_18.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:40-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_19.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:42-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_20.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:45-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_21.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:47-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_22.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_23.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:50-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_24.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:52-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_586_25.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:53-02:00"
+    },
+    {
+      "file": "screenshots/repair_r2_rank_586_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:54-02:00"
+    },
+    {
+      "file": "screenshots/repair_r2_rank_586_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:55-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_588_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:56-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_588_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:57-02:00"
+    },
+    {
+      "file": "screenshots/repair_r2_rank_588_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:58-02:00"
+    },
+    {
+      "file": "screenshots/repair_r2_rank_588_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:58-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_00.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:06:59-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_01.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:02-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_02.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:04-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_03.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:06-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_04.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:08-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_05.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:10-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_06.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:11-02:00"
+    },
+    {
+      "file": "screenshots/repair_r2_rank_680_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:13-02:00"
+    },
+    {
+      "file": "screenshots/repair_seek_680_07.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:13-02:00"
+    },
+    {
+      "file": "screenshots/repair_r2_rank_680_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-10T13:07:14-02:00"
+    },
+    {
+      "file": "screenshots/nav_09_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T13:07:15-02:00"
+    },
+    {
+      "file": "screenshots/nav_10_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T13:07:18-02:00"
+    },
+    {
+      "file": "screenshots/nav_11_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-10T13:07:20-02:00"
+    }
+  ],
+  "capture_window_server_time": {
+    "start": "2026-10-10T12:54:22-02:00",
+    "end": "2026-10-10T13:07:14-02:00"
+  },
+  "top_ranks_source": {
+    "ranks": "1-114",
+    "source": "13 in-game Rankings screenshots taken by a player right after the battle ended (screenshots/player_top114_*.webp), 2026-10-10T12:50:59-02:00 to 2026-10-10T12:51:50-02:00 server time, OCR'd with the pipeline parser and names checked by eye",
+    "why": "Earliest record of the final standings, before anyone could add points after the battle. Rank order and points for 1-114 come from these screenshots.",
+    "after_rank_114": "Ranks 115+ come from the pipeline capture (window above). Players not in the screenshot top 114 who had passed rank 114's score by capture time (padded after the battle) are listed from rank 115 with their capture-time points: ZadrotAli, BearSnork, T-800-, NAGIBATOR9000, ооооомакарена, ReKt, AlexZeban777. This is the only place points are not in descending order (rank 114 -> 115)."
+  },
+  "manual_corrections": "Names fixed from screenshots: Ilyha54rus, V-ŘΔPŦØŘ, V-style, IxSAWxI, CLOWNado¿ (S119, struck-through/stylized names misread by OCR) and ẌūℒἰGẳ₦ka (rank 588, the one rank the capture QA left unresolved; points and alliance agreed in all 7 reads)."
+}

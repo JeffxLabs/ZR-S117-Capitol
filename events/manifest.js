@@ -1,5 +1,18 @@
 window.EVENTS_MANIFEST = [
   {
+    "id": "2026-10-10-s117-vs-s119",
+    "title": "Capitol War: Server 117 vs Server 119",
+    "date": "2026-10-10",
+    "home_server": "117",
+    "opponent_server": "119",
+    "home_role": "defending",
+    "total_players": 908,
+    "total_points": 558811804,
+    "top_alliance": "[P1MP] JU1CE",
+    "top_commander": "Azethoth",
+    "data_version": "1a23a76ffc"
+  },
+  {
     "id": "2026-10-03-s117-vs-s113",
     "title": "Capitol War: Server 117 vs Server 113",
     "date": "2026-10-03",

@@ -1,0 +1,31 @@
+{
+  "id": "2026-10-10-s117-vs-s119",
+  "title": "Capitol War: Server 117 vs Server 119",
+  "date": "2026-10-10",
+  "home_server": "117",
+  "opponent_server": "119",
+  "home_role": "defending",
+  "total_players": 908,
+  "total_points": 558811804,
+  "unique_alliances": 111,
+  "servers": {
+    "117": {
+      "name": "Server 117 (Defending)",
+      "players": 464,
+      "points": 180704411,
+      "point_share_pct": 32.34
+    },
+    "119": {
+      "name": "Server 119 (Attacking)",
+      "players": 443,
+      "points": 378027866,
+      "point_share_pct": 67.65
+    },
+    "114": {
+      "name": "Server 114 (Cross-server)",
+      "players": 1,
+      "points": 79527,
+      "point_share_pct": 0.01
+    }
+  }
+}
