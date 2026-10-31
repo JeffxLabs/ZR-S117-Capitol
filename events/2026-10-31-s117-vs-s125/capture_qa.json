@@ -41,6 +41,13 @@
       "before": "[KRSJ KRATOS",
       "after": "[KRS] KRATOS",
       "reason": "bracket repair"
+    },
+    {
+      "rank": 3,
+      "field": "commander",
+      "before": "Хоумлэндер",
+      "after": "Jeff",
+      "reason": "manual override"
     }
   ],
   "name_review": [
