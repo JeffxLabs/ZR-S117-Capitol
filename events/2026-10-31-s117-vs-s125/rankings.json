@@ -1,0 +1,5212 @@
+[
+  {
+    "rank": 1,
+    "commander": "Nobodyhere",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 3937854,
+    "server_rank": 1
+  },
+  {
+    "rank": 2,
+    "commander": "Tony-Soprano",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 3414741,
+    "server_rank": 1
+  },
+  {
+    "rank": 3,
+    "commander": "Хоумлэндер",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2789514,
+    "server_rank": 2
+  },
+  {
+    "rank": 4,
+    "commander": "LeRoiChameau",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 2757899,
+    "server_rank": 3
+  },
+  {
+    "rank": 5,
+    "commander": "KarnagejL7",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 2614914,
+    "server_rank": 2
+  },
+  {
+    "rank": 6,
+    "commander": "RollingStoners",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2441893,
+    "server_rank": 4
+  },
+  {
+    "rank": 7,
+    "commander": "JimmyJam",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2432562,
+    "server_rank": 5
+  },
+  {
+    "rank": 8,
+    "commander": "Gamzee",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 2410058,
+    "server_rank": 3
+  },
+  {
+    "rank": 9,
+    "commander": "chauncey",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2371112,
+    "server_rank": 6
+  },
+  {
+    "rank": 10,
+    "commander": "ХесусХарисрама",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 2363596,
+    "server_rank": 7
+  },
+  {
+    "rank": 11,
+    "commander": "Badnews",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 2291309,
+    "server_rank": 4
+  },
+  {
+    "rank": 12,
+    "commander": "SnakeDoc",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 2204895,
+    "server_rank": 5
+  },
+  {
+    "rank": 13,
+    "commander": "SlaveOfMara",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 2146380,
+    "server_rank": 6
+  },
+  {
+    "rank": 14,
+    "commander": "TÜRKOĞLU-TÜRK",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 2121284,
+    "server_rank": 7
+  },
+  {
+    "rank": 15,
+    "commander": "Boomboomberry",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 2106924,
+    "server_rank": 8
+  },
+  {
+    "rank": 16,
+    "commander": "Shunter",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2079280,
+    "server_rank": 9
+  },
+  {
+    "rank": 17,
+    "commander": "alggagi",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2073130,
+    "server_rank": 10
+  },
+  {
+    "rank": 18,
+    "commander": "Queencard",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 2069288,
+    "server_rank": 11
+  },
+  {
+    "rank": 19,
+    "commander": "November13x2",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 2006461,
+    "server_rank": 8
+  },
+  {
+    "rank": 20,
+    "commander": "불휘이",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1962312,
+    "server_rank": 12
+  },
+  {
+    "rank": 21,
+    "commander": "Chickendog",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1954208,
+    "server_rank": 13
+  },
+  {
+    "rank": 22,
+    "commander": "Brody138",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1919036,
+    "server_rank": 14
+  },
+  {
+    "rank": 23,
+    "commander": "DrZombie",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 1867595,
+    "server_rank": 15
+  },
+  {
+    "rank": 24,
+    "commander": "BoredStiff",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1803464,
+    "server_rank": 16
+  },
+  {
+    "rank": 25,
+    "commander": "RiGG",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1776760,
+    "server_rank": 9
+  },
+  {
+    "rank": 26,
+    "commander": "TheRequiem",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1772072,
+    "server_rank": 17
+  },
+  {
+    "rank": 27,
+    "commander": "Bossman2",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1749010,
+    "server_rank": 18
+  },
+  {
+    "rank": 28,
+    "commander": "Elizasnopchenko",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1744718,
+    "server_rank": 19
+  },
+  {
+    "rank": 29,
+    "commander": "Гусb",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1706230,
+    "server_rank": 10
+  },
+  {
+    "rank": 30,
+    "commander": "MartyMar",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1706008,
+    "server_rank": 20
+  },
+  {
+    "rank": 31,
+    "commander": "DarkKnightD",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 1687183,
+    "server_rank": 11
+  },
+  {
+    "rank": 32,
+    "commander": "KILLABWOY2002",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1687074,
+    "server_rank": 21
+  },
+  {
+    "rank": 33,
+    "commander": "LeDartimus",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 1672162,
+    "server_rank": 12
+  },
+  {
+    "rank": 34,
+    "commander": "DtschHnyOnMySchn",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1661006,
+    "server_rank": 13
+  },
+  {
+    "rank": 35,
+    "commander": "LynxNM",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1637660,
+    "server_rank": 22
+  },
+  {
+    "rank": 36,
+    "commander": "I4MGROOT",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1634120,
+    "server_rank": 14
+  },
+  {
+    "rank": 37,
+    "commander": "potap666",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1633590,
+    "server_rank": 15
+  },
+  {
+    "rank": 38,
+    "commander": "VIKINGgamer",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1630602,
+    "server_rank": 23
+  },
+  {
+    "rank": 39,
+    "commander": "Himuraa",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1625082,
+    "server_rank": 16
+  },
+  {
+    "rank": 40,
+    "commander": "Zegion",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1621544,
+    "server_rank": 24
+  },
+  {
+    "rank": 41,
+    "commander": "Kate",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1616030,
+    "server_rank": 17
+  },
+  {
+    "rank": 42,
+    "commander": "LaMich",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1614492,
+    "server_rank": 25
+  },
+  {
+    "rank": 43,
+    "commander": "KOKRAN",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1606851,
+    "server_rank": 26
+  },
+  {
+    "rank": 44,
+    "commander": "Denissa-",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 1591743,
+    "server_rank": 27
+  },
+  {
+    "rank": 45,
+    "commander": "MrFirst1",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1591381,
+    "server_rank": 28
+  },
+  {
+    "rank": 46,
+    "commander": "Mistresss",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1591020,
+    "server_rank": 29
+  },
+  {
+    "rank": 47,
+    "commander": "And1go",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1587075,
+    "server_rank": 30
+  },
+  {
+    "rank": 48,
+    "commander": "EvelinaHot",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1585080,
+    "server_rank": 31
+  },
+  {
+    "rank": 49,
+    "commander": "WarEagleZ",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1576204,
+    "server_rank": 18
+  },
+  {
+    "rank": 50,
+    "commander": "JourneyRex",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1573330,
+    "server_rank": 32
+  },
+  {
+    "rank": 51,
+    "commander": "BallerShotCaller",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1558524,
+    "server_rank": 19
+  },
+  {
+    "rank": 52,
+    "commander": "Purr",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1545580,
+    "server_rank": 33
+  },
+  {
+    "rank": 53,
+    "commander": "Bad®Boy",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1532660,
+    "server_rank": 34
+  },
+  {
+    "rank": 54,
+    "commander": "RedSectorA",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 1528663,
+    "server_rank": 35
+  },
+  {
+    "rank": 55,
+    "commander": "Jony1°haish",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1524265,
+    "server_rank": 36
+  },
+  {
+    "rank": 56,
+    "commander": "DarkbossK",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1520082,
+    "server_rank": 37
+  },
+  {
+    "rank": 57,
+    "commander": "SexyCactus",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1511318,
+    "server_rank": 20
+  },
+  {
+    "rank": 58,
+    "commander": "дддимитриии",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1510972,
+    "server_rank": 38
+  },
+  {
+    "rank": 59,
+    "commander": "Konttologia",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1494841,
+    "server_rank": 21
+  },
+  {
+    "rank": 60,
+    "commander": "Василичз",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1492588,
+    "server_rank": 22
+  },
+  {
+    "rank": 61,
+    "commander": "EV1L",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1475270,
+    "server_rank": 23
+  },
+  {
+    "rank": 62,
+    "commander": "Konstantinos86",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1464112,
+    "server_rank": 39
+  },
+  {
+    "rank": 63,
+    "commander": "Coronicus",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1440846,
+    "server_rank": 24
+  },
+  {
+    "rank": 64,
+    "commander": "Gindzatw",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1411640,
+    "server_rank": 40
+  },
+  {
+    "rank": 65,
+    "commander": "B3N",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1410146,
+    "server_rank": 41
+  },
+  {
+    "rank": 66,
+    "commander": "275Alday",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1406032,
+    "server_rank": 42
+  },
+  {
+    "rank": 67,
+    "commander": "gobot",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1405271,
+    "server_rank": 43
+  },
+  {
+    "rank": 68,
+    "commander": "КОМБАЙН",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1404996,
+    "server_rank": 25
+  },
+  {
+    "rank": 69,
+    "commander": "Kkkxx",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1402098,
+    "server_rank": 44
+  },
+  {
+    "rank": 70,
+    "commander": "ViE",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1396175,
+    "server_rank": 45
+  },
+  {
+    "rank": 71,
+    "commander": "Kalissandre",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1393302,
+    "server_rank": 46
+  },
+  {
+    "rank": 72,
+    "commander": "Whiteline876",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1376861,
+    "server_rank": 47
+  },
+  {
+    "rank": 73,
+    "commander": "Cole64",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1373180,
+    "server_rank": 48
+  },
+  {
+    "rank": 74,
+    "commander": "AmadoR~DL",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1370846,
+    "server_rank": 26
+  },
+  {
+    "rank": 75,
+    "commander": "Rocketsauce",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1360450,
+    "server_rank": 49
+  },
+  {
+    "rank": 76,
+    "commander": "PathologicalWit",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1353852,
+    "server_rank": 27
+  },
+  {
+    "rank": 77,
+    "commander": "jf17",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1328445,
+    "server_rank": 50
+  },
+  {
+    "rank": 78,
+    "commander": "Kohmei",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 1286278,
+    "server_rank": 28
+  },
+  {
+    "rank": 79,
+    "commander": "Karakhan",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1278405,
+    "server_rank": 51
+  },
+  {
+    "rank": 80,
+    "commander": "TankSmoke",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1244668,
+    "server_rank": 29
+  },
+  {
+    "rank": 81,
+    "commander": "Stilinski",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1223959,
+    "server_rank": 30
+  },
+  {
+    "rank": 82,
+    "commander": "M1kky",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1213120,
+    "server_rank": 52
+  },
+  {
+    "rank": 83,
+    "commander": "Adhamgm990",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 1206392,
+    "server_rank": 31
+  },
+  {
+    "rank": 84,
+    "commander": "Jackel0357",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1187720,
+    "server_rank": 32
+  },
+  {
+    "rank": 85,
+    "commander": "LieveVan",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1177262,
+    "server_rank": 53
+  },
+  {
+    "rank": 86,
+    "commander": "Tiffanie-2",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1162980,
+    "server_rank": 54
+  },
+  {
+    "rank": 87,
+    "commander": "ragan",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 1152388,
+    "server_rank": 33
+  },
+  {
+    "rank": 88,
+    "commander": "AyeGee",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1151252,
+    "server_rank": 55
+  },
+  {
+    "rank": 89,
+    "commander": "Lenskyi",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1141278,
+    "server_rank": 56
+  },
+  {
+    "rank": 90,
+    "commander": "EnvyQ",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 1125862,
+    "server_rank": 34
+  },
+  {
+    "rank": 91,
+    "commander": "Poobee",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 1125294,
+    "server_rank": 35
+  },
+  {
+    "rank": 92,
+    "commander": "Steeetch",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1118886,
+    "server_rank": 57
+  },
+  {
+    "rank": 93,
+    "commander": "InvaderPimp",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1105195,
+    "server_rank": 58
+  },
+  {
+    "rank": 94,
+    "commander": "JoshRocky",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1102963,
+    "server_rank": 36
+  },
+  {
+    "rank": 95,
+    "commander": "~The-Joker~",
+    "alliance": "[UBC] UnboundClowns",
+    "alliance_tag": "UBC",
+    "alliance_name": "UnboundClowns",
+    "server": "125",
+    "points": 1099022,
+    "server_rank": 37
+  },
+  {
+    "rank": 96,
+    "commander": "Социк",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 1098293,
+    "server_rank": 59
+  },
+  {
+    "rank": 97,
+    "commander": "jayCeez",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1097558,
+    "server_rank": 38
+  },
+  {
+    "rank": 98,
+    "commander": "Retaliator",
+    "alliance": "[UBC] UnboundClowns",
+    "alliance_tag": "UBC",
+    "alliance_name": "UnboundClowns",
+    "server": "125",
+    "points": 1087849,
+    "server_rank": 39
+  },
+  {
+    "rank": 99,
+    "commander": "MiniPig65",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1080665,
+    "server_rank": 40
+  },
+  {
+    "rank": 100,
+    "commander": "Ma3afone",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1060454,
+    "server_rank": 60
+  },
+  {
+    "rank": 101,
+    "commander": "Jaz311",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 1060424,
+    "server_rank": 41
+  },
+  {
+    "rank": 102,
+    "commander": "DubsV2",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1047500,
+    "server_rank": 61
+  },
+  {
+    "rank": 103,
+    "commander": "Gendalf89",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1046916,
+    "server_rank": 42
+  },
+  {
+    "rank": 104,
+    "commander": "Mar€€€€€€€€€",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1045164,
+    "server_rank": 43
+  },
+  {
+    "rank": 105,
+    "commander": "BlueSmoke",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1042480,
+    "server_rank": 44
+  },
+  {
+    "rank": 106,
+    "commander": "MõonChild",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 1038472,
+    "server_rank": 62
+  },
+  {
+    "rank": 107,
+    "commander": "LONGSP1N3",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 1023934,
+    "server_rank": 45
+  },
+  {
+    "rank": 108,
+    "commander": "Rango46",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 1004890,
+    "server_rank": 63
+  },
+  {
+    "rank": 109,
+    "commander": "HakiM",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 1002118,
+    "server_rank": 46
+  },
+  {
+    "rank": 110,
+    "commander": "XFactor",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1001340,
+    "server_rank": 64
+  },
+  {
+    "rank": 111,
+    "commander": "Serg1700",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 999048,
+    "server_rank": 47
+  },
+  {
+    "rank": 112,
+    "commander": "ARKAN8",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 993934,
+    "server_rank": 65
+  },
+  {
+    "rank": 113,
+    "commander": "Hodjachij",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 990510,
+    "server_rank": 66
+  },
+  {
+    "rank": 114,
+    "commander": "FaceGoD",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 990428,
+    "server_rank": 48
+  },
+  {
+    "rank": 115,
+    "commander": "ItsNeekos",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 985380,
+    "server_rank": 49
+  },
+  {
+    "rank": 116,
+    "commander": "열혈꿀벌",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 979072,
+    "server_rank": 67
+  },
+  {
+    "rank": 117,
+    "commander": "B-RadWT",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 971305,
+    "server_rank": 50
+  },
+  {
+    "rank": 118,
+    "commander": "Rageroad",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 969753,
+    "server_rank": 68
+  },
+  {
+    "rank": 119,
+    "commander": "ivanpizdorvan",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 969092,
+    "server_rank": 69
+  },
+  {
+    "rank": 120,
+    "commander": "Mfsz81",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 967675,
+    "server_rank": 70
+  },
+  {
+    "rank": 121,
+    "commander": "BORZ-95",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 967004,
+    "server_rank": 71
+  },
+  {
+    "rank": 122,
+    "commander": "Donmoroccan",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 945388,
+    "server_rank": 72
+  },
+  {
+    "rank": 123,
+    "commander": "TerrapinStation",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 944631,
+    "server_rank": 51
+  },
+  {
+    "rank": 124,
+    "commander": "Aylinn",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 934031,
+    "server_rank": 73
+  },
+  {
+    "rank": 125,
+    "commander": "Seelow",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 933553,
+    "server_rank": 52
+  },
+  {
+    "rank": 126,
+    "commander": "Fuzzygonnagetya",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 930648,
+    "server_rank": 53
+  },
+  {
+    "rank": 127,
+    "commander": "MrWhiskey",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 923704,
+    "server_rank": 74
+  },
+  {
+    "rank": 128,
+    "commander": "CaptainHunter",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 923581,
+    "server_rank": 54
+  },
+  {
+    "rank": 129,
+    "commander": "Mr-Kaplan",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 896594,
+    "server_rank": 75
+  },
+  {
+    "rank": 130,
+    "commander": "아케론",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 889008,
+    "server_rank": 76
+  },
+  {
+    "rank": 131,
+    "commander": "Isadezi",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 886092,
+    "server_rank": 55
+  },
+  {
+    "rank": 132,
+    "commander": "alezar1",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 884428,
+    "server_rank": 56
+  },
+  {
+    "rank": 133,
+    "commander": "МеДеЯ",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 877647,
+    "server_rank": 77
+  },
+  {
+    "rank": 134,
+    "commander": "Guachin",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 875504,
+    "server_rank": 57
+  },
+  {
+    "rank": 135,
+    "commander": "CheckMateBB",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 873041,
+    "server_rank": 78
+  },
+  {
+    "rank": 136,
+    "commander": "Billiejack",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 869056,
+    "server_rank": 58
+  },
+  {
+    "rank": 137,
+    "commander": "Luke0727",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 868296,
+    "server_rank": 79
+  },
+  {
+    "rank": 138,
+    "commander": "InkedBabyeePIMP",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 850532,
+    "server_rank": 80
+  },
+  {
+    "rank": 139,
+    "commander": "-Akbar-",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 849855,
+    "server_rank": 81
+  },
+  {
+    "rank": 140,
+    "commander": "SadSquatch",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 841741,
+    "server_rank": 82
+  },
+  {
+    "rank": 141,
+    "commander": "Rubosh",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 834377,
+    "server_rank": 83
+  },
+  {
+    "rank": 142,
+    "commander": "JayTerror",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 833612,
+    "server_rank": 59
+  },
+  {
+    "rank": 143,
+    "commander": "MummaBear",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 816928,
+    "server_rank": 60
+  },
+  {
+    "rank": 144,
+    "commander": "HQB",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 816006,
+    "server_rank": 61
+  },
+  {
+    "rank": 145,
+    "commander": "R3ach3r",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 811198,
+    "server_rank": 62
+  },
+  {
+    "rank": 146,
+    "commander": "MrChwzBvrz",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 805279,
+    "server_rank": 63
+  },
+  {
+    "rank": 147,
+    "commander": "XsinX",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 792688,
+    "server_rank": 64
+  },
+  {
+    "rank": 148,
+    "commander": "uncleGray",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 782742,
+    "server_rank": 65
+  },
+  {
+    "rank": 149,
+    "commander": "iVãn4ik66",
+    "alliance": "[SkS] SilentKillerS",
+    "alliance_tag": "SkS",
+    "alliance_name": "SilentKillerS",
+    "server": "125",
+    "points": 781390,
+    "server_rank": 66
+  },
+  {
+    "rank": 150,
+    "commander": "次大Helen*，",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 779454,
+    "server_rank": 84
+  },
+  {
+    "rank": 151,
+    "commander": "Jan84",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 779109,
+    "server_rank": 67
+  },
+  {
+    "rank": 152,
+    "commander": "Zut-et-Zut",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 775013,
+    "server_rank": 85
+  },
+  {
+    "rank": 153,
+    "commander": "Leonida72",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 772907,
+    "server_rank": 86
+  },
+  {
+    "rank": 154,
+    "commander": "SkiFcheGG",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 772842,
+    "server_rank": 87
+  },
+  {
+    "rank": 155,
+    "commander": "Valll26",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 767990,
+    "server_rank": 88
+  },
+  {
+    "rank": 156,
+    "commander": "RedBeard502",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 763851,
+    "server_rank": 68
+  },
+  {
+    "rank": 157,
+    "commander": "EnolaCharlyze",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 759719,
+    "server_rank": 69
+  },
+  {
+    "rank": 158,
+    "commander": "KingCobra9",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 753186,
+    "server_rank": 70
+  },
+  {
+    "rank": 159,
+    "commander": "BarDak777",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 753082,
+    "server_rank": 89
+  },
+  {
+    "rank": 160,
+    "commander": "ChrisLau",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 751732,
+    "server_rank": 71
+  },
+  {
+    "rank": 161,
+    "commander": "Xaanthe",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 749779,
+    "server_rank": 72
+  },
+  {
+    "rank": 162,
+    "commander": "WARRIORSS",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 746410,
+    "server_rank": 90
+  },
+  {
+    "rank": 163,
+    "commander": "Badhead",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 745320,
+    "server_rank": 91
+  },
+  {
+    "rank": 164,
+    "commander": "Cheppe98",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 737013,
+    "server_rank": 73
+  },
+  {
+    "rank": 165,
+    "commander": "TonyOfKeith",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 720463,
+    "server_rank": 74
+  },
+  {
+    "rank": 166,
+    "commander": "YEAG3R",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 717718,
+    "server_rank": 92
+  },
+  {
+    "rank": 167,
+    "commander": "BiGxBanG",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 716303,
+    "server_rank": 75
+  },
+  {
+    "rank": 168,
+    "commander": "AVOKAT",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 713941,
+    "server_rank": 76
+  },
+  {
+    "rank": 169,
+    "commander": "OnlyEmpress",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 709836,
+    "server_rank": 77
+  },
+  {
+    "rank": 170,
+    "commander": "TeamGwada",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 709790,
+    "server_rank": 93
+  },
+  {
+    "rank": 171,
+    "commander": "Burtyboy",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 709140,
+    "server_rank": 94
+  },
+  {
+    "rank": 172,
+    "commander": "Qew",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 704114,
+    "server_rank": 95
+  },
+  {
+    "rank": 173,
+    "commander": "Guccy",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 702710,
+    "server_rank": 78
+  },
+  {
+    "rank": 174,
+    "commander": "Rzurzu",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 698828,
+    "server_rank": 96
+  },
+  {
+    "rank": 175,
+    "commander": "olezhan28",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 697398,
+    "server_rank": 79
+  },
+  {
+    "rank": 176,
+    "commander": "Parada",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 689260,
+    "server_rank": 97
+  },
+  {
+    "rank": 177,
+    "commander": "Daddy*",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 684482,
+    "server_rank": 80
+  },
+  {
+    "rank": 178,
+    "commander": "FallenReaper",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 679034,
+    "server_rank": 81
+  },
+  {
+    "rank": 179,
+    "commander": "archer339",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 674330,
+    "server_rank": 98
+  },
+  {
+    "rank": 180,
+    "commander": "Honeyamber",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 673422,
+    "server_rank": 99
+  },
+  {
+    "rank": 181,
+    "commander": "Gerila",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 668541,
+    "server_rank": 100
+  },
+  {
+    "rank": 182,
+    "commander": "smor",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 653123,
+    "server_rank": 82
+  },
+  {
+    "rank": 183,
+    "commander": "Disorder762",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 651350,
+    "server_rank": 101
+  },
+  {
+    "rank": 184,
+    "commander": "topher76",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 648812,
+    "server_rank": 102
+  },
+  {
+    "rank": 185,
+    "commander": "DeniDeVito",
+    "alliance": "[SRL] Призма",
+    "alliance_tag": "SRL",
+    "alliance_name": "Призма",
+    "server": "125",
+    "points": 647280,
+    "server_rank": 83
+  },
+  {
+    "rank": 186,
+    "commander": "ЭРЛАН",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 643128,
+    "server_rank": 84
+  },
+  {
+    "rank": 187,
+    "commander": "DANTES-INFERNO",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 638468,
+    "server_rank": 85
+  },
+  {
+    "rank": 188,
+    "commander": "moyanoo",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 636272,
+    "server_rank": 86
+  },
+  {
+    "rank": 189,
+    "commander": "Jayciem",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 631695,
+    "server_rank": 87
+  },
+  {
+    "rank": 190,
+    "commander": "okouioui",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 630762,
+    "server_rank": 103
+  },
+  {
+    "rank": 191,
+    "commander": "Kostayn7695",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 630060,
+    "server_rank": 104
+  },
+  {
+    "rank": 192,
+    "commander": "waltden",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 626650,
+    "server_rank": 88
+  },
+  {
+    "rank": 193,
+    "commander": "Mc1301",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 625252,
+    "server_rank": 105
+  },
+  {
+    "rank": 194,
+    "commander": "BlackEgg",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 618784,
+    "server_rank": 106
+  },
+  {
+    "rank": 195,
+    "commander": "evrenhalo",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 614030,
+    "server_rank": 107
+  },
+  {
+    "rank": 196,
+    "commander": "GpasPeur-2b",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 606286,
+    "server_rank": 108
+  },
+  {
+    "rank": 197,
+    "commander": "Joker25",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 603786,
+    "server_rank": 89
+  },
+  {
+    "rank": 198,
+    "commander": "RobboUK",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 603576,
+    "server_rank": 109
+  },
+  {
+    "rank": 199,
+    "commander": "NATOO",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 595820,
+    "server_rank": 110
+  },
+  {
+    "rank": 200,
+    "commander": "Zoryan",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 595652,
+    "server_rank": 111
+  },
+  {
+    "rank": 201,
+    "commander": "Godihug",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 591410,
+    "server_rank": 90
+  },
+  {
+    "rank": 202,
+    "commander": "Nerdynerdnerd",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 588411,
+    "server_rank": 91
+  },
+  {
+    "rank": 203,
+    "commander": "Fury73",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 587526,
+    "server_rank": 112
+  },
+  {
+    "rank": 204,
+    "commander": "Tyronekiller",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 581322,
+    "server_rank": 113
+  },
+  {
+    "rank": 205,
+    "commander": "nachoocarp",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 580883,
+    "server_rank": 114
+  },
+  {
+    "rank": 206,
+    "commander": "Ferein",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 579929,
+    "server_rank": 115
+  },
+  {
+    "rank": 207,
+    "commander": "KaRTaL60",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 578694,
+    "server_rank": 116
+  },
+  {
+    "rank": 208,
+    "commander": "ScreamingViking",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 576599,
+    "server_rank": 92
+  },
+  {
+    "rank": 209,
+    "commander": "laggingPotato",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 565640,
+    "server_rank": 117
+  },
+  {
+    "rank": 210,
+    "commander": "PreacheR",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 561876,
+    "server_rank": 118
+  },
+  {
+    "rank": 211,
+    "commander": "bankaiichigo",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 561802,
+    "server_rank": 119
+  },
+  {
+    "rank": 212,
+    "commander": "NoorNureke",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 554346,
+    "server_rank": 120
+  },
+  {
+    "rank": 213,
+    "commander": "Пастырь2",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 553368,
+    "server_rank": 121
+  },
+  {
+    "rank": 214,
+    "commander": "LadyDynamite",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 550547,
+    "server_rank": 93
+  },
+  {
+    "rank": 215,
+    "commander": "Hunter123",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 542438,
+    "server_rank": 122
+  },
+  {
+    "rank": 216,
+    "commander": "Pandemik",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 539773,
+    "server_rank": 94
+  },
+  {
+    "rank": 217,
+    "commander": "Casta",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 538278,
+    "server_rank": 123
+  },
+  {
+    "rank": 218,
+    "commander": "нахалёнок",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 538257,
+    "server_rank": 95
+  },
+  {
+    "rank": 219,
+    "commander": "Karinkasss",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 536504,
+    "server_rank": 124
+  },
+  {
+    "rank": 220,
+    "commander": "WalkerBait",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 534812,
+    "server_rank": 96
+  },
+  {
+    "rank": 221,
+    "commander": "Poooncho",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 531324,
+    "server_rank": 125
+  },
+  {
+    "rank": 222,
+    "commander": "Lilyisthatyou",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 529112,
+    "server_rank": 97
+  },
+  {
+    "rank": 223,
+    "commander": "GolferGirl124",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 526055,
+    "server_rank": 98
+  },
+  {
+    "rank": 224,
+    "commander": "Wattik",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 523688,
+    "server_rank": 99
+  },
+  {
+    "rank": 225,
+    "commander": "leavemebe",
+    "alliance": "[Usp] Captain",
+    "alliance_tag": "Usp",
+    "alliance_name": "Captain",
+    "server": "125",
+    "points": 522083,
+    "server_rank": 100
+  },
+  {
+    "rank": 226,
+    "commander": "Mastro",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 521866,
+    "server_rank": 126
+  },
+  {
+    "rank": 227,
+    "commander": "~FANT~",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 520863,
+    "server_rank": 101
+  },
+  {
+    "rank": 228,
+    "commander": "sPaRe-C",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 513794,
+    "server_rank": 102
+  },
+  {
+    "rank": 229,
+    "commander": "Skulldugger",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 513180,
+    "server_rank": 127
+  },
+  {
+    "rank": 230,
+    "commander": "Teamsneakeys",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 511789,
+    "server_rank": 128
+  },
+  {
+    "rank": 231,
+    "commander": "Slickback",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 508542,
+    "server_rank": 129
+  },
+  {
+    "rank": 232,
+    "commander": "Bahamut1",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 507856,
+    "server_rank": 130
+  },
+  {
+    "rank": 233,
+    "commander": "Desmos",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 506525,
+    "server_rank": 131
+  },
+  {
+    "rank": 234,
+    "commander": "KnifeT800",
+    "alliance": "[ERYY] Isdfsg",
+    "alliance_tag": "ERYY",
+    "alliance_name": "Isdfsg",
+    "server": "125",
+    "points": 501787,
+    "server_rank": 103
+  },
+  {
+    "rank": 235,
+    "commander": "CRITTER",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 495603,
+    "server_rank": 132
+  },
+  {
+    "rank": 236,
+    "commander": "FabioBZH29",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 492174,
+    "server_rank": 133
+  },
+  {
+    "rank": 237,
+    "commander": "~Nero~",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 488162,
+    "server_rank": 104
+  },
+  {
+    "rank": 238,
+    "commander": "Zealotam",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 487769,
+    "server_rank": 134
+  },
+  {
+    "rank": 239,
+    "commander": "Skitz0",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 487711,
+    "server_rank": 135
+  },
+  {
+    "rank": 240,
+    "commander": "Flying168",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 480974,
+    "server_rank": 136
+  },
+  {
+    "rank": 241,
+    "commander": "vicky*",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 472002,
+    "server_rank": 105
+  },
+  {
+    "rank": 242,
+    "commander": "ZhaNaRa",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 470851,
+    "server_rank": 137
+  },
+  {
+    "rank": 243,
+    "commander": "Rico295",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 470650,
+    "server_rank": 106
+  },
+  {
+    "rank": 244,
+    "commander": "CuteCat",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 468200,
+    "server_rank": 138
+  },
+  {
+    "rank": 245,
+    "commander": "GuruRoo",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 463278,
+    "server_rank": 107
+  },
+  {
+    "rank": 246,
+    "commander": "Abo'Naeem",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 463007,
+    "server_rank": 139
+  },
+  {
+    "rank": 247,
+    "commander": "Wokowoko",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 459900,
+    "server_rank": 108
+  },
+  {
+    "rank": 248,
+    "commander": "LokoFeN",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 459835,
+    "server_rank": 140
+  },
+  {
+    "rank": 249,
+    "commander": "SorryBis",
+    "alliance": "[SRL] Призма",
+    "alliance_tag": "SRL",
+    "alliance_name": "Призма",
+    "server": "125",
+    "points": 458856,
+    "server_rank": 109
+  },
+  {
+    "rank": 250,
+    "commander": "Limid",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 458707,
+    "server_rank": 110
+  },
+  {
+    "rank": 251,
+    "commander": "sweethoneyboy",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 455455,
+    "server_rank": 111
+  },
+  {
+    "rank": 252,
+    "commander": "Twiga",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 447947,
+    "server_rank": 141
+  },
+  {
+    "rank": 253,
+    "commander": "Sammy41",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 443670,
+    "server_rank": 142
+  },
+  {
+    "rank": 254,
+    "commander": "BelladonnaHunter",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 442360,
+    "server_rank": 112
+  },
+  {
+    "rank": 255,
+    "commander": "Green64",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 433386,
+    "server_rank": 143
+  },
+  {
+    "rank": 256,
+    "commander": "FerylWeaver",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 429222,
+    "server_rank": 144
+  },
+  {
+    "rank": 257,
+    "commander": "PhantomLord",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 425281,
+    "server_rank": 145
+  },
+  {
+    "rank": 258,
+    "commander": "Sergo164",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 422810,
+    "server_rank": 146
+  },
+  {
+    "rank": 259,
+    "commander": "Griffter",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 420164,
+    "server_rank": 147
+  },
+  {
+    "rank": 260,
+    "commander": "SuperNOVA",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 419053,
+    "server_rank": 113
+  },
+  {
+    "rank": 261,
+    "commander": "Virtz",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 415400,
+    "server_rank": 148
+  },
+  {
+    "rank": 262,
+    "commander": "Wilhelm*Tell",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 415092,
+    "server_rank": 114
+  },
+  {
+    "rank": 263,
+    "commander": "JimmyBlastYoAzz",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 414123,
+    "server_rank": 115
+  },
+  {
+    "rank": 264,
+    "commander": "dobrodey",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 412978,
+    "server_rank": 149
+  },
+  {
+    "rank": 265,
+    "commander": "doggiedog",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 410902,
+    "server_rank": 116
+  },
+  {
+    "rank": 266,
+    "commander": "norah92",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 409860,
+    "server_rank": 150
+  },
+  {
+    "rank": 267,
+    "commander": "QjustQ",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 409534,
+    "server_rank": 117
+  },
+  {
+    "rank": 268,
+    "commander": "Macedo87",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 407272,
+    "server_rank": 118
+  },
+  {
+    "rank": 269,
+    "commander": "Svensen003",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 407234,
+    "server_rank": 151
+  },
+  {
+    "rank": 270,
+    "commander": "hierquillo",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 406632,
+    "server_rank": 119
+  },
+  {
+    "rank": 271,
+    "commander": "Aibell666",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 401762,
+    "server_rank": 120
+  },
+  {
+    "rank": 272,
+    "commander": "Aybars1",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 401399,
+    "server_rank": 152
+  },
+  {
+    "rank": 273,
+    "commander": "DavidAames",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 399631,
+    "server_rank": 153
+  },
+  {
+    "rank": 274,
+    "commander": "CincyZack",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 398712,
+    "server_rank": 121
+  },
+  {
+    "rank": 275,
+    "commander": "Taniern",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 397030,
+    "server_rank": 154
+  },
+  {
+    "rank": 276,
+    "commander": "EricHsu",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 395190,
+    "server_rank": 122
+  },
+  {
+    "rank": 277,
+    "commander": "Crazy72",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 388804,
+    "server_rank": 123
+  },
+  {
+    "rank": 278,
+    "commander": "Juan29362",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 387975,
+    "server_rank": 155
+  },
+  {
+    "rank": 279,
+    "commander": "Sleezy",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 387881,
+    "server_rank": 124
+  },
+  {
+    "rank": 280,
+    "commander": "SargeantSmith",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 378586,
+    "server_rank": 125
+  },
+  {
+    "rank": 281,
+    "commander": "paulo5720",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 378171,
+    "server_rank": 156
+  },
+  {
+    "rank": 282,
+    "commander": "BHBH",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 376250,
+    "server_rank": 157
+  },
+  {
+    "rank": 283,
+    "commander": "Baddabing",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "125",
+    "points": 375113,
+    "server_rank": 126
+  },
+  {
+    "rank": 284,
+    "commander": "Серёга1901",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 371494,
+    "server_rank": 127
+  },
+  {
+    "rank": 285,
+    "commander": "Dantaliion",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 367920,
+    "server_rank": 128
+  },
+  {
+    "rank": 286,
+    "commander": "Julesp",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 364896,
+    "server_rank": 158
+  },
+  {
+    "rank": 287,
+    "commander": "Временной",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 360875,
+    "server_rank": 159
+  },
+  {
+    "rank": 288,
+    "commander": "Handy23",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 360096,
+    "server_rank": 129
+  },
+  {
+    "rank": 289,
+    "commander": "Crazylemon",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 359012,
+    "server_rank": 130
+  },
+  {
+    "rank": 290,
+    "commander": "Bada-Bing",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 351000,
+    "server_rank": 160
+  },
+  {
+    "rank": 291,
+    "commander": "mxc12",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 350542,
+    "server_rank": 131
+  },
+  {
+    "rank": 292,
+    "commander": "xX1x",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 344611,
+    "server_rank": 161
+  },
+  {
+    "rank": 293,
+    "commander": "WitcherGeralt",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 344017,
+    "server_rank": 132
+  },
+  {
+    "rank": 294,
+    "commander": "Cabbbb",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 342173,
+    "server_rank": 133
+  },
+  {
+    "rank": 295,
+    "commander": "Aytunç",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 339297,
+    "server_rank": 134
+  },
+  {
+    "rank": 296,
+    "commander": "Jawny",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 336912,
+    "server_rank": 135
+  },
+  {
+    "rank": 297,
+    "commander": "Старичек",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 336536,
+    "server_rank": 162
+  },
+  {
+    "rank": 298,
+    "commander": "Ozzymandias",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 335770,
+    "server_rank": 163
+  },
+  {
+    "rank": 299,
+    "commander": "ZombieKiller544",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 335700,
+    "server_rank": 164
+  },
+  {
+    "rank": 300,
+    "commander": "LorelynnDtrOfRR",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 327413,
+    "server_rank": 136
+  },
+  {
+    "rank": 301,
+    "commander": "nicolai009",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 321450,
+    "server_rank": 137
+  },
+  {
+    "rank": 302,
+    "commander": "Kaban13",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 320820,
+    "server_rank": 165
+  },
+  {
+    "rank": 303,
+    "commander": "Hopey",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 320521,
+    "server_rank": 138
+  },
+  {
+    "rank": 304,
+    "commander": "Quub",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 319079,
+    "server_rank": 139
+  },
+  {
+    "rank": 305,
+    "commander": "Bledny",
+    "alliance": "[SkS] SilentKillerS",
+    "alliance_tag": "SkS",
+    "alliance_name": "SilentKillerS",
+    "server": "125",
+    "points": 317912,
+    "server_rank": 140
+  },
+  {
+    "rank": 306,
+    "commander": "Sproelk",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 313288,
+    "server_rank": 166
+  },
+  {
+    "rank": 307,
+    "commander": "frëm",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 308159,
+    "server_rank": 141
+  },
+  {
+    "rank": 308,
+    "commander": "Derto",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 304935,
+    "server_rank": 142
+  },
+  {
+    "rank": 309,
+    "commander": "MajsterJoe",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 303561,
+    "server_rank": 167
+  },
+  {
+    "rank": 310,
+    "commander": "Shinjitsu",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 301190,
+    "server_rank": 168
+  },
+  {
+    "rank": 311,
+    "commander": "ARINOA",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 300706,
+    "server_rank": 143
+  },
+  {
+    "rank": 312,
+    "commander": "Vagar",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 272202,
+    "server_rank": 144
+  },
+  {
+    "rank": 313,
+    "commander": "Drekamaor",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 270174,
+    "server_rank": 169
+  },
+  {
+    "rank": 314,
+    "commander": "DIM6OSS",
+    "alliance": "[SkS] SilentKillerS",
+    "alliance_tag": "SkS",
+    "alliance_name": "SilentKillerS",
+    "server": "125",
+    "points": 266581,
+    "server_rank": 145
+  },
+  {
+    "rank": 315,
+    "commander": "We1s02",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 265144,
+    "server_rank": 170
+  },
+  {
+    "rank": 316,
+    "commander": "26Pers",
+    "alliance": "[SRL] Призма",
+    "alliance_tag": "SRL",
+    "alliance_name": "Призма",
+    "server": "125",
+    "points": 261392,
+    "server_rank": 146
+  },
+  {
+    "rank": 317,
+    "commander": "Sandu5502",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 260468,
+    "server_rank": 147
+  },
+  {
+    "rank": 318,
+    "commander": "Fomochka",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 256709,
+    "server_rank": 148
+  },
+  {
+    "rank": 319,
+    "commander": "KGM8386",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 253548,
+    "server_rank": 149
+  },
+  {
+    "rank": 320,
+    "commander": "Тиффани-",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 251740,
+    "server_rank": 171
+  },
+  {
+    "rank": 321,
+    "commander": "지하여장군totem",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 250690,
+    "server_rank": 172
+  },
+  {
+    "rank": 322,
+    "commander": "Malanthros",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 248453,
+    "server_rank": 150
+  },
+  {
+    "rank": 323,
+    "commander": "Stevie12345",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 247707,
+    "server_rank": 173
+  },
+  {
+    "rank": 324,
+    "commander": "*Jenna*",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 237161,
+    "server_rank": 151
+  },
+  {
+    "rank": 325,
+    "commander": "Emie",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 233083,
+    "server_rank": 152
+  },
+  {
+    "rank": 326,
+    "commander": "Elbosco",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 232404,
+    "server_rank": 174
+  },
+  {
+    "rank": 327,
+    "commander": "MasteRS",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 230255,
+    "server_rank": 175
+  },
+  {
+    "rank": 328,
+    "commander": "Rubinho2026",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 224888,
+    "server_rank": 153
+  },
+  {
+    "rank": 329,
+    "commander": "Shargaï",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 223880,
+    "server_rank": 154
+  },
+  {
+    "rank": 330,
+    "commander": "MiniCactus",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 222421,
+    "server_rank": 155
+  },
+  {
+    "rank": 331,
+    "commander": "EzhikR",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 218048,
+    "server_rank": 176
+  },
+  {
+    "rank": 332,
+    "commander": "Titania008",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 210646,
+    "server_rank": 177
+  },
+  {
+    "rank": 333,
+    "commander": "Calisabor",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 210018,
+    "server_rank": 156
+  },
+  {
+    "rank": 334,
+    "commander": "mazzyboy",
+    "alliance": "[UBC] UnboundClowns",
+    "alliance_tag": "UBC",
+    "alliance_name": "UnboundClowns",
+    "server": "125",
+    "points": 209492,
+    "server_rank": 157
+  },
+  {
+    "rank": 335,
+    "commander": "KEEFA",
+    "alliance": "[Usp] Captain",
+    "alliance_tag": "Usp",
+    "alliance_name": "Captain",
+    "server": "125",
+    "points": 208991,
+    "server_rank": 158
+  },
+  {
+    "rank": 336,
+    "commander": "inkskullz",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 208554,
+    "server_rank": 159
+  },
+  {
+    "rank": 337,
+    "commander": "NelBeck",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 208381,
+    "server_rank": 160
+  },
+  {
+    "rank": 338,
+    "commander": "Aminka07",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 204640,
+    "server_rank": 161
+  },
+  {
+    "rank": 339,
+    "commander": "Paul18",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 202686,
+    "server_rank": 178
+  },
+  {
+    "rank": 340,
+    "commander": "Ali83",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 199338,
+    "server_rank": 179
+  },
+  {
+    "rank": 341,
+    "commander": "ftht72",
+    "alliance": "[SkS] SilentKillerS",
+    "alliance_tag": "SkS",
+    "alliance_name": "SilentKillerS",
+    "server": "125",
+    "points": 198890,
+    "server_rank": 162
+  },
+  {
+    "rank": 342,
+    "commander": "jannu67",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 173134,
+    "server_rank": 163
+  },
+  {
+    "rank": 343,
+    "commander": "zebraone",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 170568,
+    "server_rank": 180
+  },
+  {
+    "rank": 344,
+    "commander": "GeneralNR1",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 169828,
+    "server_rank": 181
+  },
+  {
+    "rank": 345,
+    "commander": "priv8",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 169465,
+    "server_rank": 182
+  },
+  {
+    "rank": 346,
+    "commander": "Knfr",
+    "alliance": "[SkS] SilentKillerS",
+    "alliance_tag": "SkS",
+    "alliance_name": "SilentKillerS",
+    "server": "125",
+    "points": 165581,
+    "server_rank": 164
+  },
+  {
+    "rank": 347,
+    "commander": "borgesalx",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 164238,
+    "server_rank": 183
+  },
+  {
+    "rank": 348,
+    "commander": "DariaSaf",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 163744,
+    "server_rank": 165
+  },
+  {
+    "rank": 349,
+    "commander": "GhostStrydR",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 155448,
+    "server_rank": 166
+  },
+  {
+    "rank": 350,
+    "commander": "fatih882",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 154924,
+    "server_rank": 167
+  },
+  {
+    "rank": 351,
+    "commander": "Pasha64",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 154919,
+    "server_rank": 184
+  },
+  {
+    "rank": 352,
+    "commander": "Penguin3001",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 153261,
+    "server_rank": 185
+  },
+  {
+    "rank": 353,
+    "commander": "JOJOs",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 151698,
+    "server_rank": 186
+  },
+  {
+    "rank": 354,
+    "commander": "sesil34",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 151630,
+    "server_rank": 187
+  },
+  {
+    "rank": 355,
+    "commander": "KingOFaesthetics",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 147800,
+    "server_rank": 168
+  },
+  {
+    "rank": 356,
+    "commander": "alix13",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 146435,
+    "server_rank": 169
+  },
+  {
+    "rank": 357,
+    "commander": "LanMandragoran",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 142096,
+    "server_rank": 188
+  },
+  {
+    "rank": 358,
+    "commander": "Roachman1974",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 140714,
+    "server_rank": 170
+  },
+  {
+    "rank": 359,
+    "commander": "Anamorphose",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 138742,
+    "server_rank": 189
+  },
+  {
+    "rank": 360,
+    "commander": "Commander2uEuqEl",
+    "alliance": "[LegX] LuminousLegion",
+    "alliance_tag": "LegX",
+    "alliance_name": "LuminousLegion",
+    "server": "125",
+    "points": 135143,
+    "server_rank": 171
+  },
+  {
+    "rank": 361,
+    "commander": "잘하는데Adept",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 134497,
+    "server_rank": 190
+  },
+  {
+    "rank": 362,
+    "commander": "Тимур0101",
+    "alliance": "[Gop] ЭлитА",
+    "alliance_tag": "Gop",
+    "alliance_name": "ЭлитА",
+    "server": "125",
+    "points": 132046,
+    "server_rank": 172
+  },
+  {
+    "rank": 363,
+    "commander": "ASIFO1",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 128870,
+    "server_rank": 191
+  },
+  {
+    "rank": 364,
+    "commander": "Sultan101",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 121066,
+    "server_rank": 192
+  },
+  {
+    "rank": 365,
+    "commander": "comm7",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 116242,
+    "server_rank": 193
+  },
+  {
+    "rank": 366,
+    "commander": "Аннет",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 110510,
+    "server_rank": 173
+  },
+  {
+    "rank": 367,
+    "commander": "barónrojo",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 110298,
+    "server_rank": 174
+  },
+  {
+    "rank": 368,
+    "commander": "LaViking",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 109764,
+    "server_rank": 194
+  },
+  {
+    "rank": 369,
+    "commander": "HİLAL",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 109376,
+    "server_rank": 175
+  },
+  {
+    "rank": 370,
+    "commander": "dolph1261",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 107895,
+    "server_rank": 176
+  },
+  {
+    "rank": 371,
+    "commander": "Tony-Montana",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 105574,
+    "server_rank": 195
+  },
+  {
+    "rank": 372,
+    "commander": "Kiwigal",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 100000,
+    "server_rank": 196
+  },
+  {
+    "rank": 373,
+    "commander": "Orthega",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 98197,
+    "server_rank": 197
+  },
+  {
+    "rank": 374,
+    "commander": "Thirdspace",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 96666,
+    "server_rank": 198
+  },
+  {
+    "rank": 375,
+    "commander": "Mr2pufffzzz",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 95622,
+    "server_rank": 177
+  },
+  {
+    "rank": 376,
+    "commander": "Fransy",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 95000,
+    "server_rank": 199
+  },
+  {
+    "rank": 377,
+    "commander": "어쩔TV",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 94490,
+    "server_rank": 200
+  },
+  {
+    "rank": 378,
+    "commander": "DarkHorse21",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 94083,
+    "server_rank": 178
+  },
+  {
+    "rank": 379,
+    "commander": "Рэмми",
+    "alliance": "[SRL] Призмар",
+    "alliance_tag": "SRL",
+    "alliance_name": "Призмар",
+    "server": "125",
+    "points": 90000,
+    "server_rank": 179
+  },
+  {
+    "rank": 380,
+    "commander": "CactusBuddy",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 87975,
+    "server_rank": 180
+  },
+  {
+    "rank": 381,
+    "commander": "Wallyworld",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 85687,
+    "server_rank": 181
+  },
+  {
+    "rank": 382,
+    "commander": "JackSwallow",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 84454,
+    "server_rank": 182
+  },
+  {
+    "rank": 383,
+    "commander": "XũФїGắNka",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 82792,
+    "server_rank": 201
+  },
+  {
+    "rank": 384,
+    "commander": "Apparatchik",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 82004,
+    "server_rank": 202
+  },
+  {
+    "rank": 385,
+    "commander": "Commander-Ken",
+    "alliance": "[CVt] KKKKKK",
+    "alliance_tag": "CVt",
+    "alliance_name": "KKKKKK",
+    "server": "125",
+    "points": 81850,
+    "server_rank": 183
+  },
+  {
+    "rank": 386,
+    "commander": "владкмс",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 81722,
+    "server_rank": 203
+  },
+  {
+    "rank": 387,
+    "commander": "Shinoë",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 80000,
+    "server_rank": 204
+  },
+  {
+    "rank": 388,
+    "commander": "Smatchie",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 79770,
+    "server_rank": 184
+  },
+  {
+    "rank": 389,
+    "commander": "Sergun07",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 79725,
+    "server_rank": 185
+  },
+  {
+    "rank": 390,
+    "commander": "Mimmi88395",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 79402,
+    "server_rank": 186
+  },
+  {
+    "rank": 391,
+    "commander": "gelozs",
+    "alliance": "[SkS] SilentKillerS",
+    "alliance_tag": "SkS",
+    "alliance_name": "SilentKillerS",
+    "server": "125",
+    "points": 79044,
+    "server_rank": 187
+  },
+  {
+    "rank": 392,
+    "commander": "jompa",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 79000,
+    "server_rank": 188
+  },
+  {
+    "rank": 393,
+    "commander": "NellieMoon",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 77902,
+    "server_rank": 205
+  },
+  {
+    "rank": 394,
+    "commander": "ДжонниСинс",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 77418,
+    "server_rank": 206
+  },
+  {
+    "rank": 395,
+    "commander": "SamGoku",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 76566,
+    "server_rank": 189
+  },
+  {
+    "rank": 396,
+    "commander": "BiggBro",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 73354,
+    "server_rank": 207
+  },
+  {
+    "rank": 397,
+    "commander": "OMGitsRob",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 72084,
+    "server_rank": 190
+  },
+  {
+    "rank": 398,
+    "commander": "Зая",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 71921,
+    "server_rank": 191
+  },
+  {
+    "rank": 399,
+    "commander": "Iomarco",
+    "alliance": "[aask] AAskForce45",
+    "alliance_tag": "aask",
+    "alliance_name": "AAskForce45",
+    "server": "125",
+    "points": 71442,
+    "server_rank": 192
+  },
+  {
+    "rank": 400,
+    "commander": "Commander2qHcsz3",
+    "alliance": "[ZLD] ZombieLand",
+    "alliance_tag": "ZLD",
+    "alliance_name": "ZombieLand",
+    "server": "125",
+    "points": 71168,
+    "server_rank": 193
+  },
+  {
+    "rank": 401,
+    "commander": "navi82",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 70585,
+    "server_rank": 194
+  },
+  {
+    "rank": 402,
+    "commander": "Mad~Man",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 70000,
+    "server_rank": 208
+  },
+  {
+    "rank": 403,
+    "commander": "SDFX",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 69750,
+    "server_rank": 209
+  },
+  {
+    "rank": 404,
+    "commander": "KyzyaLakomkin",
+    "alliance": "[Myth] MythicLegions",
+    "alliance_tag": "Myth",
+    "alliance_name": "MythicLegions",
+    "server": "122",
+    "points": 68000,
+    "server_rank": 1
+  },
+  {
+    "rank": 405,
+    "commander": "undertaker37",
+    "alliance": "[BFC] CMBJX",
+    "alliance_tag": "BFC",
+    "alliance_name": "CMBJX",
+    "server": "125",
+    "points": 67310,
+    "server_rank": 195
+  },
+  {
+    "rank": 406,
+    "commander": "Commander2qdE9iJ",
+    "alliance": "[TIPT] tiptop",
+    "alliance_tag": "TIPT",
+    "alliance_name": "tiptop",
+    "server": "125",
+    "points": 66764,
+    "server_rank": 196
+  },
+  {
+    "rank": 407,
+    "commander": "ViperX",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 66706,
+    "server_rank": 210
+  },
+  {
+    "rank": 408,
+    "commander": "jamesbrand",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 62076,
+    "server_rank": 197
+  },
+  {
+    "rank": 409,
+    "commander": "Trenbolllon",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 61500,
+    "server_rank": 198
+  },
+  {
+    "rank": 410,
+    "commander": "anc",
+    "alliance": "[bfcc] CCWTN",
+    "alliance_tag": "bfcc",
+    "alliance_name": "CCWTN",
+    "server": "125",
+    "points": 61448,
+    "server_rank": 199
+  },
+  {
+    "rank": 411,
+    "commander": "Nathanjr",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 60689,
+    "server_rank": 200
+  },
+  {
+    "rank": 412,
+    "commander": "UYA",
+    "alliance": "[acd] attpb",
+    "alliance_tag": "acd",
+    "alliance_name": "attpb",
+    "server": "125",
+    "points": 60074,
+    "server_rank": 201
+  },
+  {
+    "rank": 413,
+    "commander": "mehfa",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 59789,
+    "server_rank": 202
+  },
+  {
+    "rank": 414,
+    "commander": "Su82",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 58950,
+    "server_rank": 203
+  },
+  {
+    "rank": 415,
+    "commander": "Lostsole",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 58597,
+    "server_rank": 211
+  },
+  {
+    "rank": 416,
+    "commander": "Fremo1",
+    "alliance": "Ugxb] fjxfjxdkhwfkbc",
+    "alliance_tag": "",
+    "alliance_name": "Ugxb] fjxfjxdkhwfkbc",
+    "server": "125",
+    "points": 58086,
+    "server_rank": 204
+  },
+  {
+    "rank": 417,
+    "commander": "ALTO",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 58028,
+    "server_rank": 212
+  },
+  {
+    "rank": 418,
+    "commander": "DarthZombie",
+    "alliance": "[IRC] IRONCLAD",
+    "alliance_tag": "IRC",
+    "alliance_name": "IRONCLAD",
+    "server": "125",
+    "points": 57600,
+    "server_rank": 205
+  },
+  {
+    "rank": 419,
+    "commander": "Commander2rChEER",
+    "alliance": "[ETMO] ÉtoileMontante",
+    "alliance_tag": "ETMO",
+    "alliance_name": "ÉtoileMontante",
+    "server": "125",
+    "points": 56884,
+    "server_rank": 206
+  },
+  {
+    "rank": 420,
+    "commander": "Strata",
+    "alliance": "[BIGD] InMemoryBigDikkDaddy",
+    "alliance_tag": "BIGD",
+    "alliance_name": "InMemoryBigDikkDaddy",
+    "server": "125",
+    "points": 56646,
+    "server_rank": 207
+  },
+  {
+    "rank": 421,
+    "commander": "Sincap",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 56290,
+    "server_rank": 208
+  },
+  {
+    "rank": 422,
+    "commander": "JYou",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 55320,
+    "server_rank": 209
+  },
+  {
+    "rank": 423,
+    "commander": "DeltaMike",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 54350,
+    "server_rank": 210
+  },
+  {
+    "rank": 424,
+    "commander": "Commander2tVpiLH",
+    "alliance": "[hea1] heav1",
+    "alliance_tag": "hea1",
+    "alliance_name": "heav1",
+    "server": "125",
+    "points": 53825,
+    "server_rank": 211
+  },
+  {
+    "rank": 425,
+    "commander": "Sunrayshadow",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 53616,
+    "server_rank": 212
+  },
+  {
+    "rank": 426,
+    "commander": "Kampfmaschine",
+    "alliance": "[STKL] stahlkoloss",
+    "alliance_tag": "STKL",
+    "alliance_name": "stahlkoloss",
+    "server": "125",
+    "points": 53544,
+    "server_rank": 213
+  },
+  {
+    "rank": 427,
+    "commander": "C-Eliteo",
+    "alliance": "[Myth] MythicLegions",
+    "alliance_tag": "Myth",
+    "alliance_name": "MythicLegions",
+    "server": "122",
+    "points": 52890,
+    "server_rank": 2
+  },
+  {
+    "rank": 428,
+    "commander": "IERN",
+    "alliance": "[BFC] CMBJX",
+    "alliance_tag": "BFC",
+    "alliance_name": "CMBJX",
+    "server": "125",
+    "points": 52853,
+    "server_rank": 214
+  },
+  {
+    "rank": 429,
+    "commander": "Commander2quYtfD",
+    "alliance": "[TU88] TheUniverse",
+    "alliance_tag": "TU88",
+    "alliance_name": "TheUniverse",
+    "server": "125",
+    "points": 51167,
+    "server_rank": 215
+  },
+  {
+    "rank": 430,
+    "commander": "Melfa",
+    "alliance": "[NeoS] NeoSupremos",
+    "alliance_tag": "NeoS",
+    "alliance_name": "NeoSupremos",
+    "server": "125",
+    "points": 50540,
+    "server_rank": 216
+  },
+  {
+    "rank": 431,
+    "commander": "Zlma95",
+    "alliance": "[SkS] SilentKillerS",
+    "alliance_tag": "SkS",
+    "alliance_name": "SilentKillerS",
+    "server": "125",
+    "points": 50525,
+    "server_rank": 217
+  },
+  {
+    "rank": 432,
+    "commander": "metiz",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 50380,
+    "server_rank": 218
+  },
+  {
+    "rank": 433,
+    "commander": "지공이",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 50307,
+    "server_rank": 213
+  },
+  {
+    "rank": 434,
+    "commander": "kocholo",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 50000,
+    "server_rank": 214
+  },
+  {
+    "rank": 435,
+    "commander": "Commander2tgp1md",
+    "alliance": "[TON] Tonna",
+    "alliance_tag": "TON",
+    "alliance_name": "Tonna",
+    "server": "125",
+    "points": 49649,
+    "server_rank": 219
+  },
+  {
+    "rank": 436,
+    "commander": "Nhra890",
+    "alliance": "[ANX] Anexia",
+    "alliance_tag": "ANX",
+    "alliance_name": "Anexia",
+    "server": "125",
+    "points": 49495,
+    "server_rank": 220
+  },
+  {
+    "rank": 437,
+    "commander": "Negan74",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 48388,
+    "server_rank": 215
+  },
+  {
+    "rank": 438,
+    "commander": "Aysenchik",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 45835,
+    "server_rank": 221
+  },
+  {
+    "rank": 439,
+    "commander": "TONTON",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 42564,
+    "server_rank": 216
+  },
+  {
+    "rank": 440,
+    "commander": "GHOST-RAF",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 42083,
+    "server_rank": 222
+  },
+  {
+    "rank": 441,
+    "commander": "Commander2suiYtT",
+    "alliance": "[RtMP] Eclipse0",
+    "alliance_tag": "RtMP",
+    "alliance_name": "Eclipse0",
+    "server": "125",
+    "points": 42000,
+    "server_rank": 223
+  },
+  {
+    "rank": 442,
+    "commander": "WuTangForver",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 41817,
+    "server_rank": 217
+  },
+  {
+    "rank": 443,
+    "commander": "ProfesserGarns",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 41091,
+    "server_rank": 224
+  },
+  {
+    "rank": 444,
+    "commander": "Bacardiloco",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 39500,
+    "server_rank": 218
+  },
+  {
+    "rank": 445,
+    "commander": "xlebyshek",
+    "alliance": "[ROCK] МОНОЛИТ",
+    "alliance_tag": "ROCK",
+    "alliance_name": "МОНОЛИТ",
+    "server": "125",
+    "points": 39150,
+    "server_rank": 225
+  },
+  {
+    "rank": 446,
+    "commander": "Flosymcha",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 38000,
+    "server_rank": 226
+  },
+  {
+    "rank": 447,
+    "commander": "Commander2t2XVyR",
+    "alliance": "[qF0] Sidekicks",
+    "alliance_tag": "qF0",
+    "alliance_name": "Sidekicks",
+    "server": "125",
+    "points": 37636,
+    "server_rank": 227
+  },
+  {
+    "rank": 448,
+    "commander": "wildslife",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 37532,
+    "server_rank": 228
+  },
+  {
+    "rank": 449,
+    "commander": "Zombikill",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 36780,
+    "server_rank": 229
+  },
+  {
+    "rank": 450,
+    "commander": "Commander2se6MOd",
+    "alliance": "[TvJ] SKT1126",
+    "alliance_tag": "TvJ",
+    "alliance_name": "SKT1126",
+    "server": "125",
+    "points": 35320,
+    "server_rank": 230
+  },
+  {
+    "rank": 451,
+    "commander": "CaptainSS",
+    "alliance": "[Usp] Captain",
+    "alliance_tag": "Usp",
+    "alliance_name": "Captain",
+    "server": "125",
+    "points": 35316,
+    "server_rank": 231
+  },
+  {
+    "rank": 452,
+    "commander": "kilmoger",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 35298,
+    "server_rank": 219
+  },
+  {
+    "rank": 453,
+    "commander": "Commander2rBKGV7",
+    "alliance": "[Gop] ЭлитА",
+    "alliance_tag": "Gop",
+    "alliance_name": "ЭлитА",
+    "server": "125",
+    "points": 35146,
+    "server_rank": 232
+  },
+  {
+    "rank": 454,
+    "commander": "Kelster",
+    "alliance": "[LFKG] LegendsFightTogether",
+    "alliance_tag": "LFKG",
+    "alliance_name": "LegendsFightTogether",
+    "server": "127",
+    "points": 34000,
+    "server_rank": 1
+  },
+  {
+    "rank": 455,
+    "commander": "Tavush",
+    "alliance": "[STIL] SteelEarth",
+    "alliance_tag": "STIL",
+    "alliance_name": "SteelEarth",
+    "server": "127",
+    "points": 34000,
+    "server_rank": 2
+  },
+  {
+    "rank": 456,
+    "commander": "Pauliewalnuts",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 33865,
+    "server_rank": 220
+  },
+  {
+    "rank": 457,
+    "commander": "scratchup",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 33600,
+    "server_rank": 221
+  },
+  {
+    "rank": 458,
+    "commander": "Wanderer1234",
+    "alliance": "[MGSA] HeavenandHell",
+    "alliance_tag": "MGSA",
+    "alliance_name": "HeavenandHell",
+    "server": "117",
+    "points": 30275,
+    "server_rank": 222
+  },
+  {
+    "rank": 459,
+    "commander": "yechedmattR",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 28500,
+    "server_rank": 233
+  },
+  {
+    "rank": 460,
+    "commander": "Skorp28rus",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 27392,
+    "server_rank": 223
+  },
+  {
+    "rank": 461,
+    "commander": "krados",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 27336,
+    "server_rank": 224
+  },
+  {
+    "rank": 462,
+    "commander": "vd-77",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 25985,
+    "server_rank": 234
+  },
+  {
+    "rank": 463,
+    "commander": "Dastigator",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 24740,
+    "server_rank": 225
+  },
+  {
+    "rank": 464,
+    "commander": "• МАУИ%",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 20640,
+    "server_rank": 226
+  },
+  {
+    "rank": 465,
+    "commander": "Sanosuke",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 20602,
+    "server_rank": 227
+  },
+  {
+    "rank": 466,
+    "commander": "killerguest03",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 20000,
+    "server_rank": 235
+  },
+  {
+    "rank": 467,
+    "commander": "Мявочка",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 19000,
+    "server_rank": 228
+  },
+  {
+    "rank": 468,
+    "commander": "HotLissa",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 19000,
+    "server_rank": 229
+  },
+  {
+    "rank": 469,
+    "commander": "DarelIDixon",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 17346,
+    "server_rank": 230
+  },
+  {
+    "rank": 470,
+    "commander": "watz",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 17040,
+    "server_rank": 236
+  },
+  {
+    "rank": 471,
+    "commander": "flix1946",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 17025,
+    "server_rank": 237
+  },
+  {
+    "rank": 472,
+    "commander": "DenDog",
+    "alliance": "[ROCK] МОНОЛИТ",
+    "alliance_tag": "ROCK",
+    "alliance_name": "МОНОЛИТ",
+    "server": "125",
+    "points": 17000,
+    "server_rank": 238
+  },
+  {
+    "rank": 473,
+    "commander": "Heringsfilet",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 16920,
+    "server_rank": 239
+  },
+  {
+    "rank": 474,
+    "commander": "heinzini",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 16920,
+    "server_rank": 240
+  },
+  {
+    "rank": 475,
+    "commander": "MeAgain",
+    "alliance": "[Kol] KillersOfIntent",
+    "alliance_tag": "Kol",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 16869,
+    "server_rank": 241
+  },
+  {
+    "rank": 476,
+    "commander": "TheOnlyNH3",
+    "alliance": "[STRs] STRIKERS",
+    "alliance_tag": "STRs",
+    "alliance_name": "STRIKERS",
+    "server": "125",
+    "points": 16760,
+    "server_rank": 242
+  },
+  {
+    "rank": 477,
+    "commander": "MIch",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 15243,
+    "server_rank": 243
+  },
+  {
+    "rank": 478,
+    "commander": "Eston-Kirouge",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 15040,
+    "server_rank": 244
+  },
+  {
+    "rank": 479,
+    "commander": "Mecsi07",
+    "alliance": "[jD5] Phantom",
+    "alliance_tag": "jD5",
+    "alliance_name": "Phantom",
+    "server": "125",
+    "points": 14000,
+    "server_rank": 245
+  },
+  {
+    "rank": 480,
+    "commander": "Tatato",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 12295,
+    "server_rank": 231
+  },
+  {
+    "rank": 481,
+    "commander": "ViCTOR",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 10000,
+    "server_rank": 232
+  },
+  {
+    "rank": 482,
+    "commander": "TOXA--",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 9500,
+    "server_rank": 246
+  },
+  {
+    "rank": 483,
+    "commander": "Freeman3333",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 9500,
+    "server_rank": 247
+  },
+  {
+    "rank": 484,
+    "commander": "Cayde",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 9500,
+    "server_rank": 233
+  },
+  {
+    "rank": 485,
+    "commander": "TR13",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 7756,
+    "server_rank": 234
+  },
+  {
+    "rank": 486,
+    "commander": "KaraKurt11",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 6075,
+    "server_rank": 248
+  },
+  {
+    "rank": 487,
+    "commander": "125CYPHER125",
+    "alliance": "[D3AD] Primordials",
+    "alliance_tag": "D3AD",
+    "alliance_name": "Primordials",
+    "server": "125",
+    "points": 3360,
+    "server_rank": 249
+  },
+  {
+    "rank": 488,
+    "commander": "akahe",
+    "alliance": "[XENO] Xenomorph",
+    "alliance_tag": "XENO",
+    "alliance_name": "Xenomorph",
+    "server": "125",
+    "points": 3160,
+    "server_rank": 250
+  },
+  {
+    "rank": 489,
+    "commander": "islasdom",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 3096,
+    "server_rank": 251
+  },
+  {
+    "rank": 490,
+    "commander": "chicity",
+    "alliance": "[IRC] IRONCLAD",
+    "alliance_tag": "IRC",
+    "alliance_name": "IRONCLAD",
+    "server": "125",
+    "points": 2637,
+    "server_rank": 252
+  },
+  {
+    "rank": 491,
+    "commander": "BeardedSwan",
+    "alliance": "[KoI] KillersOfIntent",
+    "alliance_tag": "KoI",
+    "alliance_name": "KillersOfIntent",
+    "server": "125",
+    "points": 1910,
+    "server_rank": 253
+  },
+  {
+    "rank": 492,
+    "commander": "Stu13",
+    "alliance": "[SRL] Призма",
+    "alliance_tag": "SRL",
+    "alliance_name": "Призма",
+    "server": "125",
+    "points": 1090,
+    "server_rank": 254
+  },
+  {
+    "rank": 493,
+    "commander": "MasterEce",
+    "alliance": "[DeBW] Bundeswehr",
+    "alliance_tag": "DeBW",
+    "alliance_name": "Bundeswehr",
+    "server": "125",
+    "points": 765,
+    "server_rank": 255
+  },
+  {
+    "rank": 494,
+    "commander": "Cba",
+    "alliance": "[RLLL] Retirementlegion",
+    "alliance_tag": "RLLL",
+    "alliance_name": "Retirementlegion",
+    "server": "125",
+    "points": 648,
+    "server_rank": 256
+  },
+  {
+    "rank": 495,
+    "commander": "Commander2qeiMhf",
+    "alliance": "[BBF] เพลิงเทพเจ้า",
+    "alliance_tag": "BBF",
+    "alliance_name": "เพลิงเทพเจ้า",
+    "server": "125",
+    "points": 637,
+    "server_rank": 257
+  },
+  {
+    "rank": 496,
+    "commander": "JazeBIA",
+    "alliance": "[IRC] IRONCLAD",
+    "alliance_tag": "IRC",
+    "alliance_name": "IRONCLAD",
+    "server": "125",
+    "points": 567,
+    "server_rank": 258
+  },
+  {
+    "rank": 497,
+    "commander": "LUGUS",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 297,
+    "server_rank": 259
+  },
+  {
+    "rank": 498,
+    "commander": "Mosp",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 297,
+    "server_rank": 260
+  },
+  {
+    "rank": 499,
+    "commander": "Commander2suMFLn",
+    "alliance": "[Apok] Apokalypse2026",
+    "alliance_tag": "Apok",
+    "alliance_name": "Apokalypse2026",
+    "server": "125",
+    "points": 264,
+    "server_rank": 261
+  },
+  {
+    "rank": 500,
+    "commander": "LiVeR",
+    "alliance": "[Maus] Mäuschen",
+    "alliance_tag": "Maus",
+    "alliance_name": "Mäuschen",
+    "server": "125",
+    "points": 264,
+    "server_rank": 262
+  },
+  {
+    "rank": 501,
+    "commander": "Auramaxxxing",
+    "alliance": "[ANX] Anexia",
+    "alliance_tag": "ANX",
+    "alliance_name": "Anexia",
+    "server": "125",
+    "points": 234,
+    "server_rank": 263
+  },
+  {
+    "rank": 502,
+    "commander": "Kiki008",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 218,
+    "server_rank": 235
+  },
+  {
+    "rank": 503,
+    "commander": "Dekoo",
+    "alliance": "[DLZ] DieLetzteZuflucht",
+    "alliance_tag": "DLZ",
+    "alliance_name": "DieLetzteZuflucht",
+    "server": "125",
+    "points": 198,
+    "server_rank": 264
+  },
+  {
+    "rank": 504,
+    "commander": "Marorsmd",
+    "alliance": "[usa1] usateam",
+    "alliance_tag": "usa1",
+    "alliance_name": "usateam",
+    "server": "125",
+    "points": 190,
+    "server_rank": 265
+  },
+  {
+    "rank": 505,
+    "commander": "Frullostyle",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 162,
+    "server_rank": 266
+  },
+  {
+    "rank": 506,
+    "commander": "electricghost",
+    "alliance": "[IRC] IRONCLAD",
+    "alliance_tag": "IRC",
+    "alliance_name": "IRONCLAD",
+    "server": "125",
+    "points": 144,
+    "server_rank": 267
+  },
+  {
+    "rank": 507,
+    "commander": "REZZ208",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 144,
+    "server_rank": 268
+  },
+  {
+    "rank": 508,
+    "commander": "mrjoker1993",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 120,
+    "server_rank": 236
+  },
+  {
+    "rank": 509,
+    "commander": "ForbiddenFruit",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 120,
+    "server_rank": 269
+  },
+  {
+    "rank": 510,
+    "commander": "SeriousSam1",
+    "alliance": "[Nyx] stayingactiveletsgoo",
+    "alliance_tag": "Nyx",
+    "alliance_name": "stayingactiveletsgoo",
+    "server": "125",
+    "points": 117,
+    "server_rank": 270
+  },
+  {
+    "rank": 511,
+    "commander": "Tkartal",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 117,
+    "server_rank": 271
+  },
+  {
+    "rank": 512,
+    "commander": "Ravleo",
+    "alliance": "[Usp] Captain",
+    "alliance_tag": "Usp",
+    "alliance_name": "Captain",
+    "server": "125",
+    "points": 117,
+    "server_rank": 272
+  },
+  {
+    "rank": 513,
+    "commander": "Commander2tyYXmt",
+    "alliance": "[ANX] Anexia",
+    "alliance_tag": "ANX",
+    "alliance_name": "Anexia",
+    "server": "125",
+    "points": 99,
+    "server_rank": 273
+  },
+  {
+    "rank": 514,
+    "commander": "Norway1",
+    "alliance": "[LOYL] LoylAfterDark",
+    "alliance_tag": "LOYL",
+    "alliance_name": "LoylAfterDark",
+    "server": "125",
+    "points": 90,
+    "server_rank": 274
+  },
+  {
+    "rank": 515,
+    "commander": "fer1021",
+    "alliance": "[Lms] losmarginados",
+    "alliance_tag": "Lms",
+    "alliance_name": "losmarginados",
+    "server": "125",
+    "points": 90,
+    "server_rank": 275
+  },
+  {
+    "rank": 516,
+    "commander": "Nikkitta",
+    "alliance": "[RaG] RaGnArOk",
+    "alliance_tag": "RaG",
+    "alliance_name": "RaGnArOk",
+    "server": "125",
+    "points": 81,
+    "server_rank": 276
+  },
+  {
+    "rank": 517,
+    "commander": "Commander2sWt0El",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "125",
+    "points": 54,
+    "server_rank": 277
+  },
+  {
+    "rank": 518,
+    "commander": "Bkue",
+    "alliance": "[DSX] Darkshadows",
+    "alliance_tag": "DSX",
+    "alliance_name": "Darkshadows",
+    "server": "125",
+    "points": 45,
+    "server_rank": 278
+  },
+  {
+    "rank": 519,
+    "commander": "Revererd1789",
+    "alliance": "[acd] attpb",
+    "alliance_tag": "acd",
+    "alliance_name": "attpb",
+    "server": "125",
+    "points": 45,
+    "server_rank": 279
+  },
+  {
+    "rank": 520,
+    "commander": "Guccirah",
+    "alliance": "[MNVL] Moonveil",
+    "alliance_tag": "MNVL",
+    "alliance_name": "Moonveil",
+    "server": "125",
+    "points": 45,
+    "server_rank": 280
+  },
+  {
+    "rank": 521,
+    "commander": "Commander2uhpTYh",
+    "alliance": "[BFC] CMBJX",
+    "alliance_tag": "BFC",
+    "alliance_name": "CMBJX",
+    "server": "125",
+    "points": 36,
+    "server_rank": 281
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "event_id": "2026-10-31-s117-vs-s125",
+  "total_ranks": 521,
+  "max_rank": 521,
+  "missing_ranks": [],
+  "ranks_repaired": [
+    18,
+    53,
+    99,
+    103,
+    115,
+    128,
+    152,
+    157,
+    182,
+    202,
+    230,
+    309,
+    384,
+    404,
+    479
+  ],
+  "ranks_unresolved": [],
+  "ranks_single_clean": [
+    182
+  ],
+  "banner_frames_count": 7,
+  "duplicate_players": [],
+  "names_unreadable": [],
+  "monotonic_check": {
+    "passed": true,
+    "violations_count": 0,
+    "violations": []
+  },
+  "passed": true,
+  "validation_errors": [],
+  "applied_changes": [
+    {
+      "rank": 439,
+      "field": "alliance",
+      "before": "[KRSJ KRATOS",
+      "after": "[KRS] KRATOS",
+      "reason": "bracket repair"
+    }
+  ],
+  "name_review": [
+    {
+      "rank": 106,
+      "server": "117",
+      "observed": "MõonChild",
+      "known": "MõõnChild",
+      "alliance": "[ALIN] Алина"
+    },
+    {
+      "rank": 383,
+      "server": "117",
+      "observed": "XũФїGắNka",
+      "known": "ХũФìGắNka",
+      "alliance": "[Bigg] Бароны"
+    },
+    {
+      "rank": 484,
+      "server": "117",
+      "observed": "Cayde",
+      "known": "Cayde6",
+      "alliance": "[HDG] HérosdeGuerre"
+    }
+  ],
+  "alliance_review": [
+    {
+      "rank": 36,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 49,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 61,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 80,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 117,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 146,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 158,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 169,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 216,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 228,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 265,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 289,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 312,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 381,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 392,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    },
+    {
+      "rank": 491,
+      "server": "125",
+      "observed": "[KoI] KillersOfIntent",
+      "known": "[Kol] KillersOfIntent",
+      "alliance": "KillersOfIntent"
+    }
+  ]
+}

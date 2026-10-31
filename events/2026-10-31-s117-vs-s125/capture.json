@@ -1,0 +1,950 @@
+{
+  "event_id": "2026-10-31-s117-vs-s125",
+  "passes": [
+    {
+      "timezone": "server time (UTC-2)",
+      "started_at": "2026-10-31T12:50:42-02:00",
+      "finished_at": "2026-10-31T12:55:34-02:00",
+      "started_at_utc": "2026-10-31T14:50:42+00:00",
+      "finished_at_utc": "2026-10-31T14:55:34+00:00",
+      "duration_seconds": 292.3,
+      "frames": 138,
+      "device": "127.0.0.1:5565",
+      "entries_captured": 521,
+      "matchup": {
+        "home_role": "attacking",
+        "opponent": "125",
+        "battle_over": true,
+        "home_result": "victory"
+      }
+    }
+  ],
+  "method": "pipeline/run_pipeline.py live ADB capture (BlueStacks) + Apple Vision OCR",
+  "screenshots": [
+    {
+      "file": "screenshots/nav_01_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:12-02:00"
+    },
+    {
+      "file": "screenshots/nav_02_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:15-02:00"
+    },
+    {
+      "file": "screenshots/nav_03_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:17-02:00"
+    },
+    {
+      "file": "screenshots/nav_04_main.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:18-02:00"
+    },
+    {
+      "file": "screenshots/nav_05_main.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:20-02:00"
+    },
+    {
+      "file": "screenshots/nav_06_expedition_frenzy.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:24-02:00"
+    },
+    {
+      "file": "screenshots/nav_07_capitol_conquest.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:29-02:00"
+    },
+    {
+      "file": "screenshots/nav_08_rankings.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:50:33-02:00"
+    },
+    {
+      "file": "screenshots/verify_top_1.webp",
+      "kind": "rewind-check",
+      "taken_at": "2026-10-31T12:50:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0001.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:42-02:00"
+    },
+    {
+      "file": "screenshots/frame_0001_b.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0002.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:44-02:00"
+    },
+    {
+      "file": "screenshots/frame_0003.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0004.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0005.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0006.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:49-02:00"
+    },
+    {
+      "file": "screenshots/frame_0007.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:50-02:00"
+    },
+    {
+      "file": "screenshots/frame_0008.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0009.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0010.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0011.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0012.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:56-02:00"
+    },
+    {
+      "file": "screenshots/frame_0013.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0014.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:50:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0015.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0016.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:01-02:00"
+    },
+    {
+      "file": "screenshots/frame_0017.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0018.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0019.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0020.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:05-02:00"
+    },
+    {
+      "file": "screenshots/frame_0021.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0022.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:08-02:00"
+    },
+    {
+      "file": "screenshots/frame_0023.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0024.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0025.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0026.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:13-02:00"
+    },
+    {
+      "file": "screenshots/frame_0027.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:15-02:00"
+    },
+    {
+      "file": "screenshots/frame_0028.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0029.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:17-02:00"
+    },
+    {
+      "file": "screenshots/frame_0030.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0031.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:20-02:00"
+    },
+    {
+      "file": "screenshots/frame_0032.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:21-02:00"
+    },
+    {
+      "file": "screenshots/frame_0033.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:22-02:00"
+    },
+    {
+      "file": "screenshots/frame_0034.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0035.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0036.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0037.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0038.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:28-02:00"
+    },
+    {
+      "file": "screenshots/frame_0039.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:29-02:00"
+    },
+    {
+      "file": "screenshots/frame_0040.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:30-02:00"
+    },
+    {
+      "file": "screenshots/frame_0041.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0042.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0043.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:34-02:00"
+    },
+    {
+      "file": "screenshots/frame_0044.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0045.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:37-02:00"
+    },
+    {
+      "file": "screenshots/frame_0046.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0047.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0048.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0049.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:42-02:00"
+    },
+    {
+      "file": "screenshots/frame_0050.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:43-02:00"
+    },
+    {
+      "file": "screenshots/frame_0051.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:44-02:00"
+    },
+    {
+      "file": "screenshots/frame_0052.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0052_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0053.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0054.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:49-02:00"
+    },
+    {
+      "file": "screenshots/frame_0055.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:50-02:00"
+    },
+    {
+      "file": "screenshots/frame_0056.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0057.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0058.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:53-02:00"
+    },
+    {
+      "file": "screenshots/frame_0059.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:56-02:00"
+    },
+    {
+      "file": "screenshots/frame_0060.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0061.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:58-02:00"
+    },
+    {
+      "file": "screenshots/frame_0062.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:51:59-02:00"
+    },
+    {
+      "file": "screenshots/frame_0063.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0064.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:01-02:00"
+    },
+    {
+      "file": "screenshots/frame_0065.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0065_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0066.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:05-02:00"
+    },
+    {
+      "file": "screenshots/frame_0067.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0068.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0069.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:08-02:00"
+    },
+    {
+      "file": "screenshots/frame_0070.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0071.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0072.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:12-02:00"
+    },
+    {
+      "file": "screenshots/frame_0073.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:13-02:00"
+    },
+    {
+      "file": "screenshots/frame_0074.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0075.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:15-02:00"
+    },
+    {
+      "file": "screenshots/frame_0076.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0077.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:17-02:00"
+    },
+    {
+      "file": "screenshots/frame_0078.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:18-02:00"
+    },
+    {
+      "file": "screenshots/frame_0079.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:19-02:00"
+    },
+    {
+      "file": "screenshots/frame_0079_banner_closed.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:21-02:00"
+    },
+    {
+      "file": "screenshots/frame_0080.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:22-02:00"
+    },
+    {
+      "file": "screenshots/frame_0081.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0082.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0083.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0084.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:26-02:00"
+    },
+    {
+      "file": "screenshots/frame_0085.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:27-02:00"
+    },
+    {
+      "file": "screenshots/frame_0086.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:28-02:00"
+    },
+    {
+      "file": "screenshots/frame_0087.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:30-02:00"
+    },
+    {
+      "file": "screenshots/frame_0088.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0089.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:32-02:00"
+    },
+    {
+      "file": "screenshots/frame_0090.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:33-02:00"
+    },
+    {
+      "file": "screenshots/frame_0091.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:34-02:00"
+    },
+    {
+      "file": "screenshots/frame_0092.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0093.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:37-02:00"
+    },
+    {
+      "file": "screenshots/frame_0094.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:38-02:00"
+    },
+    {
+      "file": "screenshots/frame_0095.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:39-02:00"
+    },
+    {
+      "file": "screenshots/frame_0096.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:40-02:00"
+    },
+    {
+      "file": "screenshots/frame_0097.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:41-02:00"
+    },
+    {
+      "file": "screenshots/frame_0098.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:44-02:00"
+    },
+    {
+      "file": "screenshots/frame_0099.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:45-02:00"
+    },
+    {
+      "file": "screenshots/frame_0099_banner_retry_1.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:47-02:00"
+    },
+    {
+      "file": "screenshots/frame_0100.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:48-02:00"
+    },
+    {
+      "file": "screenshots/frame_0101.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:49-02:00"
+    },
+    {
+      "file": "screenshots/frame_0102.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:51-02:00"
+    },
+    {
+      "file": "screenshots/frame_0103.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:52-02:00"
+    },
+    {
+      "file": "screenshots/frame_0104.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:54-02:00"
+    },
+    {
+      "file": "screenshots/frame_0105.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:55-02:00"
+    },
+    {
+      "file": "screenshots/frame_0106.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:57-02:00"
+    },
+    {
+      "file": "screenshots/frame_0107.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:52:59-02:00"
+    },
+    {
+      "file": "screenshots/frame_0108.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:00-02:00"
+    },
+    {
+      "file": "screenshots/frame_0109.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:01-02:00"
+    },
+    {
+      "file": "screenshots/frame_0110.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:02-02:00"
+    },
+    {
+      "file": "screenshots/frame_0111.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:03-02:00"
+    },
+    {
+      "file": "screenshots/frame_0112.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:04-02:00"
+    },
+    {
+      "file": "screenshots/frame_0113.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:06-02:00"
+    },
+    {
+      "file": "screenshots/frame_0114.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:07-02:00"
+    },
+    {
+      "file": "screenshots/frame_0115.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:08-02:00"
+    },
+    {
+      "file": "screenshots/frame_0116.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:09-02:00"
+    },
+    {
+      "file": "screenshots/frame_0117.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:10-02:00"
+    },
+    {
+      "file": "screenshots/frame_0118.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:11-02:00"
+    },
+    {
+      "file": "screenshots/frame_0119.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:13-02:00"
+    },
+    {
+      "file": "screenshots/frame_0120.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:14-02:00"
+    },
+    {
+      "file": "screenshots/frame_0121.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:15-02:00"
+    },
+    {
+      "file": "screenshots/frame_0122.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:16-02:00"
+    },
+    {
+      "file": "screenshots/frame_0123.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:17-02:00"
+    },
+    {
+      "file": "screenshots/frame_0124.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:19-02:00"
+    },
+    {
+      "file": "screenshots/frame_0125.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:20-02:00"
+    },
+    {
+      "file": "screenshots/frame_0126.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:21-02:00"
+    },
+    {
+      "file": "screenshots/frame_0127.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:22-02:00"
+    },
+    {
+      "file": "screenshots/frame_0128.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:23-02:00"
+    },
+    {
+      "file": "screenshots/frame_0129.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:24-02:00"
+    },
+    {
+      "file": "screenshots/frame_0130.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:25-02:00"
+    },
+    {
+      "file": "screenshots/frame_0131.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:26-02:00"
+    },
+    {
+      "file": "screenshots/frame_0132.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:28-02:00"
+    },
+    {
+      "file": "screenshots/frame_0133.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:29-02:00"
+    },
+    {
+      "file": "screenshots/frame_0134.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:31-02:00"
+    },
+    {
+      "file": "screenshots/frame_0137.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:35-02:00"
+    },
+    {
+      "file": "screenshots/frame_0138.webp",
+      "kind": "capture-frame",
+      "taken_at": "2026-10-31T12:53:36-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_479_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:53:44-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_479_shot_1_banner_closed.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:53:45-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_479_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:53:46-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_404_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:02-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_404_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:02-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_384_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:07-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_384_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:10-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_309_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:21-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_309_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:22-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_230_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:32-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_230_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:33-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_202_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:39-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_202_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:40-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_182_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:44-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_182_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:45-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_157_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:49-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_157_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:50-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_152_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:53-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_152_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:54:54-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_128_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:00-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_128_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:01-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_115_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:04-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_115_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:05-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_103_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:10-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_103_shot_1_banner_closed.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:12-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_103_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:12-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_99_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:15-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_99_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:16-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_18_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:26-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_18_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:26-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_53_shot_1.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:33-02:00"
+    },
+    {
+      "file": "screenshots/repair_r1_rank_53_shot_2.webp",
+      "kind": "repair",
+      "taken_at": "2026-10-31T12:55:33-02:00"
+    },
+    {
+      "file": "screenshots/nav_09_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:55:34-02:00"
+    },
+    {
+      "file": "screenshots/nav_10_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:55:37-02:00"
+    },
+    {
+      "file": "screenshots/nav_11_to_city.webp",
+      "kind": "navigation",
+      "taken_at": "2026-10-31T12:55:39-02:00"
+    }
+  ]
+}

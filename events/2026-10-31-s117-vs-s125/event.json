@@ -1,0 +1,37 @@
+{
+  "id": "2026-10-31-s117-vs-s125",
+  "title": "Capitol War: Server 117 vs Server 125",
+  "date": "2026-10-31",
+  "home_server": "117",
+  "opponent_server": "125",
+  "home_role": "attacking",
+  "total_players": 521,
+  "total_points": 311083607,
+  "unique_alliances": 63,
+  "servers": {
+    "125": {
+      "name": "Server 125 (Defending)",
+      "players": 281,
+      "points": 137357501,
+      "point_share_pct": 44.15
+    },
+    "117": {
+      "name": "Server 117 (Attacking)",
+      "players": 236,
+      "points": 173537216,
+      "point_share_pct": 55.78
+    },
+    "122": {
+      "name": "Server 122 (Cross-server)",
+      "players": 2,
+      "points": 120890,
+      "point_share_pct": 0.04
+    },
+    "127": {
+      "name": "Server 127 (Cross-server)",
+      "players": 2,
+      "points": 68000,
+      "point_share_pct": 0.02
+    }
+  }
+}
