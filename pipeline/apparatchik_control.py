@@ -158,6 +158,89 @@ def resume():
     return state()
 
 
+SETTINGS_FILE = os.path.expanduser("~/Library/Application Support/Apparatchik/settings.json")
+DEFAULT_WHITELIST_THRESHOLD_MILLIONS = 1.0
+
+
+def get_capitol_threshold_millions(settings_file=None):
+    """Return the Capitol War alliance whitelist point threshold in Millions (default 1.0M)."""
+    if is_installed_and_running():
+        try:
+            snap = _request("GET", "/v1/state")
+            val = snap.get("settings", {}).get("capitolWarThresholdMillions")
+            if isinstance(val, (int, float)) and val > 0:
+                return float(val)
+        except ApparatchikError:
+            pass
+    path = settings_file or SETTINGS_FILE
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        val = data.get("capitolWarThresholdMillions")
+        if isinstance(val, (int, float)) and val > 0:
+            return float(val)
+    except (OSError, json.JSONDecodeError):
+        pass
+    return DEFAULT_WHITELIST_THRESHOLD_MILLIONS
+
+
+def allowlist_tag(tag, allowed=True):
+    """Add or remove a single alliance tag on Apparatchik's allowlist via remote control."""
+    return _request("POST", "/v1/allowlist", {"tag": tag, "allowed": bool(allowed)})
+
+
+def sync_home_alliance_whitelist(alliances, home_server="117", threshold_millions=None, log=print):
+    """Add qualifying home server alliances (total_points >= threshold) to Apparatchik's whitelist."""
+    if threshold_millions is None:
+        threshold_millions = get_capitol_threshold_millions()
+    min_points = int(round(float(threshold_millions) * 1_000_000))
+    home_srv = str(home_server).lstrip("Ss")
+
+    qualifying_tags = []
+    seen = set()
+    for a in alliances:
+        srv = str(a.get("server", "")).lstrip("Ss")
+        tag = (a.get("tag") or "").strip()
+        pts = a.get("total_points") or 0
+        if srv == home_srv and tag and pts >= min_points and tag not in seen:
+            qualifying_tags.append(tag)
+            seen.add(tag)
+
+    if not qualifying_tags:
+        log(f"No home server (S{home_srv}) alliances reached the {threshold_millions:g}M point threshold.")
+        return []
+
+    if not is_installed_and_running():
+        log(f"Apparatchik is not running; skipping live whitelist update for {len(qualifying_tags)} qualifying tag(s): "
+            f"{', '.join(qualifying_tags)}")
+        return qualifying_tags
+
+    try:
+        snap = _request("GET", "/v1/state")
+        existing = {t.lower() for t in snap.get("settings", {}).get("allowedTags", [])}
+    except ApparatchikError as e:
+        log(f"WARNING: Could not read Apparatchik state for whitelist sync ({e}).")
+        return qualifying_tags
+
+    added = []
+    for tag in qualifying_tags:
+        if tag.lower() not in existing:
+            try:
+                allowlist_tag(tag, True)
+                added.append(tag)
+                existing.add(tag.lower())
+            except ApparatchikError as e:
+                log(f"WARNING: Could not whitelist tag [{tag}] in Apparatchik ({e}).")
+
+    if added:
+        log(f"Apparatchik whitelist (≥ {threshold_millions:g}M pts): added {len(added)} new S{home_srv} tag(s): {', '.join(added)} "
+            f"(all qualifying: {', '.join(qualifying_tags)}).")
+    else:
+        log(f"Apparatchik whitelist (≥ {threshold_millions:g}M pts): all {len(qualifying_tags)} qualifying S{home_srv} tag(s) "
+            f"already whitelisted ({', '.join(qualifying_tags)}).")
+    return qualifying_tags
+
+
 @contextmanager
 def monitoring_paused(minutes, log=print):
     """Pause Apparatchik monitoring for the capture and resume it as soon as the block exits.

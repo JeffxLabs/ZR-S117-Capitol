@@ -313,5 +313,61 @@ class TestScreenshotTimes(unittest.TestCase):
             self.assertEqual(screenshots[0], updated)
 
 
+class TestAutoUploadAndWhitelist(unittest.TestCase):
+    def test_sync_home_alliance_whitelist_adds_only_qualifying_home_tags(self):
+        import apparatchik_control as ac
+        alliances = [
+            {"tag": "P1MP", "server": "117", "total_points": 5_000_000},
+            {"tag": "UOU", "server": "117", "total_points": 1_200_000},
+            {"tag": "LOW", "server": "117", "total_points": 999_999},
+            {"tag": "OPP", "server": "121", "total_points": 10_000_000},
+            {"tag": "", "server": "117", "total_points": 2_000_000},
+        ]
+        added = []
+        with patch.object(ac, "is_installed_and_running", return_value=True), \
+             patch.object(ac, "_request", return_value={"settings": {"allowedTags": ["P1MP"], "capitolWarThresholdMillions": 1.0}}), \
+             patch.object(ac, "allowlist_tag", side_effect=lambda tag, allowed=True: added.append((tag, allowed))):
+            qualifying = ac.sync_home_alliance_whitelist(alliances, home_server="117", log=lambda *_: None)
+        self.assertEqual(qualifying, ["P1MP", "UOU"])
+        self.assertEqual(added, [("UOU", True)])
+
+    def test_threshold_reads_from_settings_file_and_defaults_to_one_million(self):
+        import apparatchik_control as ac
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+            json.dump({"capitolWarThresholdMillions": 2.5}, f)
+            tmp_path = f.name
+        try:
+            with patch.object(ac, "is_installed_and_running", return_value=False):
+                self.assertEqual(ac.get_capitol_threshold_millions(settings_file=tmp_path), 2.5)
+                self.assertEqual(ac.get_capitol_threshold_millions(settings_file=tmp_path + ".missing"), 1.0)
+        finally:
+            os.unlink(tmp_path)
+
+    def test_git_upload_commits_and_pushes_when_changes_staged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / ".git").mkdir()
+            (root / "events").mkdir()
+            (root / "data").mkdir()
+            (root / "index.html").write_text("<html></html>")
+            calls = []
+            def fake_run(cmd, **kwargs):
+                calls.append(cmd)
+                res = Mock()
+                res.returncode = 1 if "diff" in cmd else 0
+                return res
+            with patch("run_pipeline.subprocess.run", side_effect=fake_run):
+                uploaded = pipeline.git_upload_event(
+                    "2026-11-07-s117-vs-s121",
+                    {"total_players": 1178},
+                    repo_dir=str(root),
+                    log=lambda *_: None,
+                )
+            self.assertTrue(uploaded)
+            self.assertEqual(calls[0][:3], ["git", "add", "--"])
+            self.assertEqual(calls[2][:2], ["git", "commit"])
+            self.assertEqual(calls[3], ["git", "push", "origin", "main"])
+
+
 if __name__ == "__main__":
     unittest.main()

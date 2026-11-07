@@ -25,7 +25,7 @@ from processor import publish_event, write_event_outputs
 from screenshots import staging_dir, archive_screenshots, select_screenshots_to_archive, SERVER_TZ
 from frame_parser import parse_frame, FrameResult, find_banner_close, is_rankings_list
 from merge import ObservationStore, name_key
-from apparatchik_control import monitoring_paused, ApparatchikError
+from apparatchik_control import monitoring_paused, ApparatchikError, sync_home_alliance_whitelist
 from navigation import Navigator, NavigationError
 from human_input import HumanInput
 import math
@@ -749,6 +749,32 @@ def load_early_screens(directory):
     return rows, sources, {"started_at": min(times), "finished_at": max(times)}
 
 
+def git_upload_event(event_id: str, meta: Dict[str, Any], repo_dir: Optional[str] = None, log=print) -> bool:
+    """Commit and push published event files to GitHub Pages."""
+    repo_dir = repo_dir or BASE_DIR
+    if not os.path.isdir(os.path.join(repo_dir, ".git")):
+        return False
+    paths = [p for p in ("events", "data", "index.html") if os.path.exists(os.path.join(repo_dir, p))]
+    if not paths:
+        return False
+    try:
+        subprocess.run(["git", "add", "--", *paths], cwd=repo_dir, check=True, capture_output=True, text=True)
+        diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=repo_dir)
+        if diff.returncode == 0:
+            log("GitHub Pages: no new changes to commit.")
+            return False
+        total_players = meta.get("total_players", 0)
+        msg = f"feat(event): publish Capitol War {event_id} dataset ({total_players:,} commanders)"
+        subprocess.run(["git", "commit", "-m", msg], cwd=repo_dir, check=True, capture_output=True, text=True)
+        subprocess.run(["git", "push", "origin", "main"], cwd=repo_dir, check=True, capture_output=True, text=True)
+        log(f"Uploaded '{event_id}' to GitHub Pages (origin/main).")
+        return True
+    except subprocess.CalledProcessError as e:
+        err = (e.stderr or e.stdout or str(e)).strip()
+        log(f"WARNING: GitHub Pages upload failed: {err}")
+        return False
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Capitol War Ranking Pipeline for Z Route: Redemption")
     parser.add_argument("--date", default=datetime.now().strftime("%Y-%m-%d"), help="Event date (YYYY-MM-DD)")
@@ -767,6 +793,10 @@ def main(argv=None):
     parser.add_argument("--settle-sec", type=float, default=0.15, help="Settle time after swipe (default: 0.15)")
     parser.add_argument("--allow-incomplete", action="store_true", help="Publish even if QA validation fails")
     parser.add_argument("--no-apparatchik", action="store_true", help="Do not pause/resume Apparatchik monitoring")
+    parser.add_argument("--no-whitelist", action="store_true", help="Skip automatic Apparatchik whitelist update")
+    parser.add_argument("--whitelist-threshold-millions", type=float, default=None,
+                        help="Override Capitol War whitelist threshold in Millions (default: read from Apparatchik or 1.0M)")
+    parser.add_argument("--no-upload", action="store_true", help="Skip automatic git commit and push to GitHub Pages")
     parser.add_argument("--nav-test", action="store_true", help="Only navigate to Rankings and return to city")
     parser.add_argument("--no-navigate", action="store_true", help="Rankings already open; stay there afterwards")
     args = parser.parse_args(argv)
@@ -942,6 +972,14 @@ def main(argv=None):
     print(f"Published {title}: {meta['total_players']:,} commanders, {meta['total_points']:,} points, {meta['unique_alliances']:,} alliances.")
     if frames_dir:
         print(f"Full-size frames kept locally in {frames_dir}.")
+    if not args.no_apparatchik and not args.no_whitelist and os.path.isdir(os.path.join(BASE_DIR, ".git")):
+        sync_home_alliance_whitelist(
+            alliances,
+            home_server=args.home,
+            threshold_millions=args.whitelist_threshold_millions,
+        )
+    if not args.no_upload and os.path.isdir(os.path.join(BASE_DIR, ".git")):
+        git_upload_event(event_id, meta, repo_dir=BASE_DIR)
     print_human_input_summary()
 
 
