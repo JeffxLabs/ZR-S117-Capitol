@@ -7,6 +7,7 @@ geometric slot clustering, median rank offset fitting, and notification banner d
 """
 import re
 import statistics
+import unicodedata
 from typing import List, Dict, Optional, Tuple, Any
 
 # Geometric layout constants (normalized coordinates, 0-1, origin bottom-left)
@@ -173,18 +174,24 @@ def parse_frame(items: List[Dict[str, Any]], prev_max_rank: Optional[int] = None
 
     for it in items:
         x, y, w, h = it["x"], it["y"], it["width"], it["height"]
-        text = it["text"].strip()
+        text = unicodedata.normalize("NFKC", it["text"]).strip()
         if y > HEADER_Y or y < FOOTER_Y:
             continue
 
         clean_num = re.sub(r"[^\d]", "", text)
-        if x > 0.73 and clean_num:
-            val = int(clean_num)
-            anchors.append((y, "pts", val, it))
-            points_boxes.append((y, val, it))
-        elif x < 0.20 and text.isdigit():
-            val = int(text)
-            anchors.append((y, "rnk", val, it))
+        if x > 0.73 and clean_num and clean_num.isascii():
+            try:
+                val = int(clean_num)
+                anchors.append((y, "pts", val, it))
+                points_boxes.append((y, val, it))
+            except ValueError:
+                pass
+        elif x < 0.20 and text.isascii() and text.isdigit():
+            try:
+                val = int(text)
+                anchors.append((y, "rnk", val, it))
+            except ValueError:
+                pass
         elif 0.32 <= x <= 0.74:
             middle_boxes.append(it)
 

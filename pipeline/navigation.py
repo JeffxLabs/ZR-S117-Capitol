@@ -148,7 +148,7 @@ class Navigator:
     # ----- screen classification -----
     @staticmethod
     def is_rankings(s):
-        return s.has(r"^RANKINGS$") and s.find(r"^Commander$") and s.find(r"^Points$")
+        return s.has(r"^RANKINGS$") and s.find(r"^Points$") and (s.find(r"Commander") or s.find(r"^Ranking$"))
 
     @staticmethod
     def conquest_tab(s):
@@ -163,7 +163,7 @@ class Navigator:
 
     @staticmethod
     def expedition_icon(s):
-        return s.find(r"^Expedition(\s*Frenzy)?$", region=(0.6, 1.0, 0.0, 0.8))
+        return s.find(r"^Expeditio[nr](\s*Frenzy)?$", region=(0.6, 1.0, 0.0, 0.8))
 
     @staticmethod
     def exit_dialog_cancel(s):

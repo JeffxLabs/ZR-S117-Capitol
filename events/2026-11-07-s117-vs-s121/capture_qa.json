@@ -1,0 +1,613 @@
+{
+  "event_id": "2026-11-07-s117-vs-s121",
+  "total_ranks": 1120,
+  "max_rank": 1120,
+  "missing_ranks": [],
+  "ranks_repaired": [
+    9,
+    61,
+    86,
+    143,
+    168,
+    210,
+    256,
+    282,
+    319,
+    323,
+    387,
+    392,
+    401,
+    416,
+    436,
+    509,
+    544,
+    583,
+    586,
+    588,
+    644,
+    728,
+    737,
+    742,
+    800,
+    809,
+    813,
+    850,
+    861,
+    870,
+    981,
+    986,
+    1002,
+    1024,
+    1047,
+    1052,
+    1061,
+    1106,
+    1118
+  ],
+  "ranks_unresolved": [
+    586,
+    850
+  ],
+  "ranks_single_clean": [
+    210,
+    509,
+    544,
+    728,
+    800
+  ],
+  "banner_frames_count": 8,
+  "duplicate_players": [],
+  "names_unreadable": [],
+  "monotonic_check": {
+    "passed": true,
+    "violations_count": 0,
+    "violations": []
+  },
+  "passed": false,
+  "validation_errors": [],
+  "applied_changes": [
+    {
+      "rank": 19,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 29,
+      "field": "alliance",
+      "before": "JJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 35,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 63,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 70,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 82,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 83,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 152,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 167,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 185,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 201,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 207,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 209,
+      "field": "alliance",
+      "before": "JFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 243,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 261,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 267,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 279,
+      "field": "alliance",
+      "before": "JJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 288,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 299,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 354,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 356,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 357,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 362,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 366,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 369,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 381,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 383,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 385,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 391,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 399,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 401,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 404,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 413,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 425,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 436,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 439,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 465,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 498,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 519,
+      "field": "alliance",
+      "before": "[TІOX] ПоХуисты",
+      "after": "[TIOX] ПоХуисты",
+      "reason": "known alliance"
+    },
+    {
+      "rank": 521,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 526,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 565,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 590,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 600,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 669,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 697,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 765,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 815,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 817,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 829,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 847,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 855,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 856,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 881,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 891,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 893,
+      "field": "alliance",
+      "before": "[P1MPJJU1CE",
+      "after": "[P1MP] JU1CE",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 905,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 911,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 914,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 959,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 964,
+      "field": "alliance",
+      "before": "UFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 972,
+      "field": "alliance",
+      "before": "JJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 989,
+      "field": "alliance",
+      "before": "UJFD] JustForvarD",
+      "after": "[JFD] JustForvarD",
+      "reason": "bracket repair"
+    },
+    {
+      "rank": 1087,
+      "field": "alliance",
+      "before": "[TІOX] ПоХуисты",
+      "after": "[TIOX] ПоХуисты",
+      "reason": "known alliance"
+    }
+  ],
+  "name_review": [
+    {
+      "rank": 97,
+      "server": "117",
+      "observed": "Vall|26",
+      "known": "Valll26",
+      "alliance": "[GDI] GolgDiggers"
+    },
+    {
+      "rank": 161,
+      "server": "117",
+      "observed": "/Каратель/2",
+      "known": "/Каратель",
+      "alliance": "[ALIN] Алина"
+    },
+    {
+      "rank": 805,
+      "server": "113",
+      "observed": "w+zombiet＄",
+      "known": "＊十zombiet＊",
+      "alliance": "[RUS2] EMPIRE"
+    },
+    {
+      "rank": 979,
+      "server": "113",
+      "observed": "Varakyle4ka",
+      "known": "Varakyle4kaR",
+      "alliance": "[RUS2] EMPIRE"
+    },
+    {
+      "rank": 1002,
+      "server": "117",
+      "observed": "JSPEn",
+      "known": "JSP Eo",
+      "alliance": "[P2MP] NowaPolandia"
+    }
+  ],
+  "alliance_review": [
+    {
+      "rank": 148,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    },
+    {
+      "rank": 186,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    },
+    {
+      "rank": 258,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    },
+    {
+      "rank": 265,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    },
+    {
+      "rank": 478,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    },
+    {
+      "rank": 570,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    },
+    {
+      "rank": 719,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    },
+    {
+      "rank": 756,
+      "server": "121",
+      "observed": "[РAТb] МирныеВоины",
+      "known": "[РАТb] МирныеВоины",
+      "alliance": "МирныеВоины"
+    }
+  ]
+}

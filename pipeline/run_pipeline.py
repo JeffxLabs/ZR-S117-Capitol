@@ -16,6 +16,7 @@ import threading
 import contextlib
 import tempfile
 import re
+import unicodedata
 from datetime import datetime, timezone
 from typing import List, Dict, Optional, Any, Set, Tuple, Callable
 
@@ -148,7 +149,8 @@ def scroll_to_top_verified(adb, device, ocr_worker: OCRWorker, staging_folder: s
 
         # Confirm the top slot is rank 1 from real rank digits (a screen with no rank digits
         # would otherwise default to offset 1)
-        has_rank_digits = any(it["x"] < 0.20 and it["text"].strip().isdigit() and 0.05 < it["y"] < 0.865
+        has_rank_digits = any(it["x"] < 0.20 and unicodedata.normalize("NFKC", it["text"]).strip().isascii()
+                              and unicodedata.normalize("NFKC", it["text"]).strip().isdigit() and 0.05 < it["y"] < 0.865
                               for it in items)
         if has_rank_digits and frame_res.rows and frame_res.offset == 1 and frame_res.rows[0]["rank"] == 1:
             print(f"Leaderboard top verified at Rank 1 (attempt {attempt}).")
