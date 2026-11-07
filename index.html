@@ -557,7 +557,7 @@
   }
   // "Active players only": commanders with at least ACTIVE_MIN points. Point totals always stay true totals;
   // counts, averages per commander, rosters and member changes follow the toggle.
-  const ACTIVE_MIN = 10000;
+  const ACTIVE_MIN = 50000;
   const isActive = p => (p.points || 0) >= ACTIVE_MIN;
   function allyView(a) {
     if (!a || !state.activeOnly) return a;
