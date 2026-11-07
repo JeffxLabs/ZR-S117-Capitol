@@ -6,11 +6,11 @@ window.EVENTS_MANIFEST = [
     "home_server": "117",
     "opponent_server": "121",
     "home_role": "defending",
-    "total_players": 1120,
-    "total_points": 935487496,
+    "total_players": 1178,
+    "total_points": 1101342520,
     "top_alliance": "[P1MP] JU1CE",
     "top_commander": "RollingStoners",
-    "data_version": "ae0b21b142"
+    "data_version": "a426e8e629"
   },
   {
     "id": "2026-10-31-s117-vs-s125",
