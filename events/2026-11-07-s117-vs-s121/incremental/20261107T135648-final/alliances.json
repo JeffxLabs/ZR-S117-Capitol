@@ -1,0 +1,8958 @@
+[
+  {
+    "alliance": "[P1MP] JU1CE",
+    "tag": "P1MP",
+    "name": "JU1CE",
+    "server": "117",
+    "members_count": 50,
+    "total_points": 107268165,
+    "avg_points": 2145363,
+    "top_commander": "RollingStoners",
+    "top_points": 19419563,
+    "top_rank": 1,
+    "members": [
+      {
+        "rank": 1,
+        "commander": "RollingStoners",
+        "points": 19419563,
+        "server": "117"
+      },
+      {
+        "rank": 3,
+        "commander": "TheRequiem",
+        "points": 13864965,
+        "server": "117"
+      },
+      {
+        "rank": 4,
+        "commander": "ViE",
+        "points": 12852839,
+        "server": "117"
+      },
+      {
+        "rank": 6,
+        "commander": "Jeff",
+        "points": 5961530,
+        "server": "117"
+      },
+      {
+        "rank": 8,
+        "commander": "AyeGee",
+        "points": 5390061,
+        "server": "117"
+      },
+      {
+        "rank": 11,
+        "commander": "JimmyJam",
+        "points": 4875907,
+        "server": "117"
+      },
+      {
+        "rank": 26,
+        "commander": "alggagi",
+        "points": 3061457,
+        "server": "117"
+      },
+      {
+        "rank": 40,
+        "commander": "chauncey",
+        "points": 2572800,
+        "server": "117"
+      },
+      {
+        "rank": 64,
+        "commander": "Chickendog",
+        "points": 2255052,
+        "server": "117"
+      },
+      {
+        "rank": 90,
+        "commander": "Mgk-0G",
+        "points": 2066550,
+        "server": "117"
+      },
+      {
+        "rank": 137,
+        "commander": "InvaderPimp",
+        "points": 1787304,
+        "server": "117"
+      },
+      {
+        "rank": 144,
+        "commander": "ARKAN8",
+        "points": 1771410,
+        "server": "117"
+      },
+      {
+        "rank": 148,
+        "commander": "Cole64",
+        "points": 1763856,
+        "server": "117"
+      },
+      {
+        "rank": 154,
+        "commander": "Bad°Boy",
+        "points": 1747062,
+        "server": "117"
+      },
+      {
+        "rank": 184,
+        "commander": "Whiteline876",
+        "points": 1671767,
+        "server": "117"
+      },
+      {
+        "rank": 209,
+        "commander": "Elizasnopchenko",
+        "points": 1624472,
+        "server": "117"
+      },
+      {
+        "rank": 257,
+        "commander": "Kittanna",
+        "points": 1582381,
+        "server": "117"
+      },
+      {
+        "rank": 389,
+        "commander": "DarkTime66",
+        "points": 1451529,
+        "server": "117"
+      },
+      {
+        "rank": 404,
+        "commander": "InkedBabyeePIMP",
+        "points": 1322190,
+        "server": "117"
+      },
+      {
+        "rank": 407,
+        "commander": "laggingPotato",
+        "points": 1304897,
+        "server": "117"
+      },
+      {
+        "rank": 421,
+        "commander": "GrandmaFrog",
+        "points": 1211072,
+        "server": "117"
+      },
+      {
+        "rank": 425,
+        "commander": "NATOO",
+        "points": 1179362,
+        "server": "117"
+      },
+      {
+        "rank": 446,
+        "commander": "Brody138",
+        "points": 1082828,
+        "server": "117"
+      },
+      {
+        "rank": 447,
+        "commander": "Rango46",
+        "points": 1079704,
+        "server": "117"
+      },
+      {
+        "rank": 453,
+        "commander": "BoredStiff",
+        "points": 1071798,
+        "server": "117"
+      },
+      {
+        "rank": 454,
+        "commander": "Disorder762",
+        "points": 1067448,
+        "server": "117"
+      },
+      {
+        "rank": 461,
+        "commander": "Slickback",
+        "points": 1045239,
+        "server": "117"
+      },
+      {
+        "rank": 464,
+        "commander": "KaryLive",
+        "points": 1027040,
+        "server": "117"
+      },
+      {
+        "rank": 472,
+        "commander": "Shunter",
+        "points": 983988,
+        "server": "117"
+      },
+      {
+        "rank": 473,
+        "commander": "CuteCat",
+        "points": 979266,
+        "server": "117"
+      },
+      {
+        "rank": 479,
+        "commander": "KILLABWOY2002",
+        "points": 940425,
+        "server": "117"
+      },
+      {
+        "rank": 506,
+        "commander": "Tekinsoldier",
+        "points": 882981,
+        "server": "117"
+      },
+      {
+        "rank": 514,
+        "commander": "Konstantinos86",
+        "points": 855846,
+        "server": "117"
+      },
+      {
+        "rank": 529,
+        "commander": "B3N",
+        "points": 813311,
+        "server": "117"
+      },
+      {
+        "rank": 586,
+        "commander": "Gindzatw",
+        "points": 636437,
+        "server": "117"
+      },
+      {
+        "rank": 588,
+        "commander": "Agam0017",
+        "points": 632240,
+        "server": "117"
+      },
+      {
+        "rank": 603,
+        "commander": "BHBH",
+        "points": 593870,
+        "server": "117"
+      },
+      {
+        "rank": 642,
+        "commander": "Skitz0",
+        "points": 541648,
+        "server": "117"
+      },
+      {
+        "rank": 681,
+        "commander": "PhantomLord",
+        "points": 464718,
+        "server": "117"
+      },
+      {
+        "rank": 721,
+        "commander": "Tyronekiller",
+        "points": 391498,
+        "server": "117"
+      },
+      {
+        "rank": 768,
+        "commander": "skinnybigpoppa",
+        "points": 278969,
+        "server": "117"
+      },
+      {
+        "rank": 794,
+        "commander": "Green64",
+        "points": 227524,
+        "server": "117"
+      },
+      {
+        "rank": 808,
+        "commander": "YEAG3R",
+        "points": 204714,
+        "server": "117"
+      },
+      {
+        "rank": 818,
+        "commander": "Elmayo",
+        "points": 190303,
+        "server": "117"
+      },
+      {
+        "rank": 842,
+        "commander": "SadSquatch",
+        "points": 156036,
+        "server": "117"
+      },
+      {
+        "rank": 877,
+        "commander": "VikciN",
+        "points": 111000,
+        "server": "117"
+      },
+      {
+        "rank": 893,
+        "commander": "MrWhiskey",
+        "points": 96516,
+        "server": "117"
+      },
+      {
+        "rank": 938,
+        "commander": "PettyPandaPimp",
+        "points": 63410,
+        "server": "117"
+      },
+      {
+        "rank": 942,
+        "commander": "NickiV",
+        "points": 60240,
+        "server": "117"
+      },
+      {
+        "rank": 962,
+        "commander": "Paul18",
+        "points": 51142,
+        "server": "117"
+      }
+    ],
+    "rank": 1,
+    "server_rank": 1
+  },
+  {
+    "alliance": "[Irb] злыеРусскиемедведи",
+    "tag": "Irb",
+    "name": "злыеРусскиемедведи",
+    "server": "121",
+    "members_count": 61,
+    "total_points": 90184948,
+    "avg_points": 1478441,
+    "top_commander": "SuperBelka",
+    "top_points": 3552511,
+    "top_rank": 16,
+    "members": [
+      {
+        "rank": 16,
+        "commander": "SuperBelka",
+        "points": 3552511,
+        "server": "121"
+      },
+      {
+        "rank": 24,
+        "commander": "BlackPanther1",
+        "points": 3130741,
+        "server": "121"
+      },
+      {
+        "rank": 28,
+        "commander": "ToTTinI",
+        "points": 3053378,
+        "server": "121"
+      },
+      {
+        "rank": 30,
+        "commander": "Tanyakiev1981",
+        "points": 2929143,
+        "server": "121"
+      },
+      {
+        "rank": 32,
+        "commander": "MolchaliviBoB",
+        "points": 2842774,
+        "server": "121"
+      },
+      {
+        "rank": 42,
+        "commander": "FanFanTulip",
+        "points": 2545931,
+        "server": "121"
+      },
+      {
+        "rank": 44,
+        "commander": "UDanila",
+        "points": 2508302,
+        "server": "121"
+      },
+      {
+        "rank": 51,
+        "commander": "Tawcent",
+        "points": 2386791,
+        "server": "121"
+      },
+      {
+        "rank": 60,
+        "commander": "fonyy",
+        "points": 2305237,
+        "server": "121"
+      },
+      {
+        "rank": 66,
+        "commander": "IktusZ",
+        "points": 2238418,
+        "server": "121"
+      },
+      {
+        "rank": 67,
+        "commander": "ЗуБнАяПаСтА",
+        "points": 2234349,
+        "server": "117"
+      },
+      {
+        "rank": 74,
+        "commander": "shishiga",
+        "points": 2191625,
+        "server": "121"
+      },
+      {
+        "rank": 105,
+        "commander": "PROmanager",
+        "points": 1963384,
+        "server": "121"
+      },
+      {
+        "rank": 107,
+        "commander": "Lunis",
+        "points": 1928426,
+        "server": "121"
+      },
+      {
+        "rank": 110,
+        "commander": "Андропов",
+        "points": 1904203,
+        "server": "121"
+      },
+      {
+        "rank": 120,
+        "commander": "TRIBUNAL",
+        "points": 1861493,
+        "server": "121"
+      },
+      {
+        "rank": 128,
+        "commander": "Zevember",
+        "points": 1816540,
+        "server": "121"
+      },
+      {
+        "rank": 140,
+        "commander": "*WarQueen*",
+        "points": 1781153,
+        "server": "121"
+      },
+      {
+        "rank": 141,
+        "commander": "наебатор",
+        "points": 1777520,
+        "server": "121"
+      },
+      {
+        "rank": 143,
+        "commander": "*ALeX*",
+        "points": 1773039,
+        "server": "121"
+      },
+      {
+        "rank": 156,
+        "commander": "БезмолвныйЦарь",
+        "points": 1737644,
+        "server": "121"
+      },
+      {
+        "rank": 166,
+        "commander": "Freizy|*****|",
+        "points": 1708756,
+        "server": "121"
+      },
+      {
+        "rank": 178,
+        "commander": "phantomkun",
+        "points": 1683456,
+        "server": "121"
+      },
+      {
+        "rank": 190,
+        "commander": "Mopnex",
+        "points": 1650341,
+        "server": "121"
+      },
+      {
+        "rank": 193,
+        "commander": "Korifey",
+        "points": 1647719,
+        "server": "121"
+      },
+      {
+        "rank": 214,
+        "commander": "Tanyy",
+        "points": 1618054,
+        "server": "121"
+      },
+      {
+        "rank": 232,
+        "commander": "alexworld",
+        "points": 1603108,
+        "server": "121"
+      },
+      {
+        "rank": 237,
+        "commander": "Мюнхаузен",
+        "points": 1600707,
+        "server": "121"
+      },
+      {
+        "rank": 252,
+        "commander": "commanderX2Mk9XR",
+        "points": 1585690,
+        "server": "121"
+      },
+      {
+        "rank": 253,
+        "commander": "Осень",
+        "points": 1584770,
+        "server": "121"
+      },
+      {
+        "rank": 264,
+        "commander": "Rieas",
+        "points": 1579552,
+        "server": "121"
+      },
+      {
+        "rank": 265,
+        "commander": "sergey55",
+        "points": 1576965,
+        "server": "121"
+      },
+      {
+        "rank": 272,
+        "commander": "ТыЗнаешьМэри",
+        "points": 1571740,
+        "server": "121"
+      },
+      {
+        "rank": 322,
+        "commander": "DeaDok",
+        "points": 1530950,
+        "server": "121"
+      },
+      {
+        "rank": 335,
+        "commander": "KissTheCop",
+        "points": 1524382,
+        "server": "121"
+      },
+      {
+        "rank": 348,
+        "commander": "Kosmos007",
+        "points": 1518186,
+        "server": "121"
+      },
+      {
+        "rank": 349,
+        "commander": "DeViL",
+        "points": 1517943,
+        "server": "121"
+      },
+      {
+        "rank": 360,
+        "commander": "Doc51",
+        "points": 1510685,
+        "server": "121"
+      },
+      {
+        "rank": 385,
+        "commander": "ВЕДЬМА",
+        "points": 1462540,
+        "server": "121"
+      },
+      {
+        "rank": 386,
+        "commander": "Amur666",
+        "points": 1456349,
+        "server": "121"
+      },
+      {
+        "rank": 392,
+        "commander": "LucëNa",
+        "points": 1430686,
+        "server": "121"
+      },
+      {
+        "rank": 414,
+        "commander": "Sledopyt",
+        "points": 1258483,
+        "server": "121"
+      },
+      {
+        "rank": 432,
+        "commander": "РагнаР",
+        "points": 1152859,
+        "server": "121"
+      },
+      {
+        "rank": 439,
+        "commander": "Оргазм",
+        "points": 1112600,
+        "server": "121"
+      },
+      {
+        "rank": 442,
+        "commander": "Свирепый777*",
+        "points": 1099649,
+        "server": "121"
+      },
+      {
+        "rank": 468,
+        "commander": "commandpant",
+        "points": 1020596,
+        "server": "121"
+      },
+      {
+        "rank": 510,
+        "commander": "Marusy3332",
+        "points": 868339,
+        "server": "121"
+      },
+      {
+        "rank": 534,
+        "commander": "ViHishKO",
+        "points": 791846,
+        "server": "121"
+      },
+      {
+        "rank": 549,
+        "commander": "Роман-48",
+        "points": 747656,
+        "server": "121"
+      },
+      {
+        "rank": 567,
+        "commander": "Katanata",
+        "points": 692297,
+        "server": "121"
+      },
+      {
+        "rank": 645,
+        "commander": "Neistei",
+        "points": 538521,
+        "server": "121"
+      },
+      {
+        "rank": 833,
+        "commander": "simon1111",
+        "points": 171492,
+        "server": "121"
+      },
+      {
+        "rank": 839,
+        "commander": "Miragex1907",
+        "points": 162260,
+        "server": "121"
+      },
+      {
+        "rank": 841,
+        "commander": "Limmon",
+        "points": 157138,
+        "server": "121"
+      },
+      {
+        "rank": 847,
+        "commander": "Artemqqq",
+        "points": 151019,
+        "server": "121"
+      },
+      {
+        "rank": 887,
+        "commander": "КрК124rus",
+        "points": 101020,
+        "server": "121"
+      },
+      {
+        "rank": 900,
+        "commander": "Роxui32",
+        "points": 90414,
+        "server": "121"
+      },
+      {
+        "rank": 913,
+        "commander": "SexyWarrior",
+        "points": 81246,
+        "server": "121"
+      },
+      {
+        "rank": 927,
+        "commander": "NikA",
+        "points": 70230,
+        "server": "121"
+      },
+      {
+        "rank": 932,
+        "commander": "RumpiL",
+        "points": 68000,
+        "server": "121"
+      },
+      {
+        "rank": 1005,
+        "commander": "торгвар",
+        "points": 24102,
+        "server": "121"
+      }
+    ],
+    "rank": 2,
+    "server_rank": 1
+  },
+  {
+    "alliance": "[6EX] Регионы",
+    "tag": "6EX",
+    "name": "Регионы",
+    "server": "121",
+    "members_count": 69,
+    "total_points": 88545219,
+    "avg_points": 1283264,
+    "top_commander": "ЛьвицА",
+    "top_points": 2665213,
+    "top_rank": 37,
+    "members": [
+      {
+        "rank": 37,
+        "commander": "ЛьвицА",
+        "points": 2665213,
+        "server": "121"
+      },
+      {
+        "rank": 38,
+        "commander": "Eva-9",
+        "points": 2652594,
+        "server": "121"
+      },
+      {
+        "rank": 43,
+        "commander": "TacticianGudwin",
+        "points": 2513195,
+        "server": "121"
+      },
+      {
+        "rank": 61,
+        "commander": "uHkaccaTop",
+        "points": 2289252,
+        "server": "121"
+      },
+      {
+        "rank": 68,
+        "commander": "Тори323",
+        "points": 2218381,
+        "server": "121"
+      },
+      {
+        "rank": 71,
+        "commander": "Тут-и-там",
+        "points": 2200432,
+        "server": "121"
+      },
+      {
+        "rank": 75,
+        "commander": "VorteX",
+        "points": 2176178,
+        "server": "121"
+      },
+      {
+        "rank": 88,
+        "commander": "n9mo",
+        "points": 2072035,
+        "server": "121"
+      },
+      {
+        "rank": 89,
+        "commander": "Lakers08",
+        "points": 2068363,
+        "server": "121"
+      },
+      {
+        "rank": 92,
+        "commander": "Tmech",
+        "points": 2054175,
+        "server": "121"
+      },
+      {
+        "rank": 99,
+        "commander": "Vindol",
+        "points": 1995544,
+        "server": "121"
+      },
+      {
+        "rank": 121,
+        "commander": "westennZz",
+        "points": 1860374,
+        "server": "121"
+      },
+      {
+        "rank": 124,
+        "commander": "Vector777",
+        "points": 1828915,
+        "server": "121"
+      },
+      {
+        "rank": 126,
+        "commander": "СталкерБорланд",
+        "points": 1820340,
+        "server": "121"
+      },
+      {
+        "rank": 147,
+        "commander": "klemkatan",
+        "points": 1767440,
+        "server": "121"
+      },
+      {
+        "rank": 152,
+        "commander": "MrCatGav",
+        "points": 1755402,
+        "server": "121"
+      },
+      {
+        "rank": 153,
+        "commander": "Балашов1981",
+        "points": 1748563,
+        "server": "121"
+      },
+      {
+        "rank": 159,
+        "commander": "Джем-",
+        "points": 1730828,
+        "server": "121"
+      },
+      {
+        "rank": 179,
+        "commander": "Elavn",
+        "points": 1680780,
+        "server": "121"
+      },
+      {
+        "rank": 197,
+        "commander": "ColTT",
+        "points": 1638234,
+        "server": "121"
+      },
+      {
+        "rank": 200,
+        "commander": "Пётр125rus",
+        "points": 1635228,
+        "server": "121"
+      },
+      {
+        "rank": 229,
+        "commander": "Demon1984",
+        "points": 1605603,
+        "server": "121"
+      },
+      {
+        "rank": 240,
+        "commander": "КисЮлечка",
+        "points": 1599270,
+        "server": "121"
+      },
+      {
+        "rank": 256,
+        "commander": "1n0y",
+        "points": 1582860,
+        "server": "121"
+      },
+      {
+        "rank": 266,
+        "commander": "PutnikFe",
+        "points": 1576829,
+        "server": "121"
+      },
+      {
+        "rank": 273,
+        "commander": "Род369",
+        "points": 1570562,
+        "server": "121"
+      },
+      {
+        "rank": 280,
+        "commander": "vademon",
+        "points": 1556946,
+        "server": "121"
+      },
+      {
+        "rank": 282,
+        "commander": "Frankynstein",
+        "points": 1555872,
+        "server": "121"
+      },
+      {
+        "rank": 292,
+        "commander": "Oneby",
+        "points": 1548824,
+        "server": "121"
+      },
+      {
+        "rank": 303,
+        "commander": "-Evie-",
+        "points": 1540860,
+        "server": "121"
+      },
+      {
+        "rank": 309,
+        "commander": "СвятойБобр",
+        "points": 1536542,
+        "server": "121"
+      },
+      {
+        "rank": 327,
+        "commander": "СаМаЯ*vREDnaЯ*Я",
+        "points": 1525990,
+        "server": "121"
+      },
+      {
+        "rank": 328,
+        "commander": "Velaks",
+        "points": 1525856,
+        "server": "121"
+      },
+      {
+        "rank": 337,
+        "commander": "Maximus008",
+        "points": 1523605,
+        "server": "121"
+      },
+      {
+        "rank": 347,
+        "commander": "Pro100dok92",
+        "points": 1518673,
+        "server": "121"
+      },
+      {
+        "rank": 363,
+        "commander": "JuliaVorona",
+        "points": 1510024,
+        "server": "121"
+      },
+      {
+        "rank": 373,
+        "commander": "Kofabi",
+        "points": 1506474,
+        "server": "121"
+      },
+      {
+        "rank": 378,
+        "commander": "RyBezh2025",
+        "points": 1502528,
+        "server": "121"
+      },
+      {
+        "rank": 380,
+        "commander": "notaMИ",
+        "points": 1501040,
+        "server": "121"
+      },
+      {
+        "rank": 381,
+        "commander": "ХоТКOТТ",
+        "points": 1500158,
+        "server": "121"
+      },
+      {
+        "rank": 401,
+        "commander": "AndreWWka",
+        "points": 1347554,
+        "server": "121"
+      },
+      {
+        "rank": 435,
+        "commander": "Heat17",
+        "points": 1128487,
+        "server": "121"
+      },
+      {
+        "rank": 436,
+        "commander": "ivanst",
+        "points": 1122991,
+        "server": "121"
+      },
+      {
+        "rank": 445,
+        "commander": "Zoiii",
+        "points": 1087029,
+        "server": "121"
+      },
+      {
+        "rank": 458,
+        "commander": "nobsaibot",
+        "points": 1052716,
+        "server": "121"
+      },
+      {
+        "rank": 475,
+        "commander": "Dimanchik33",
+        "points": 967830,
+        "server": "121"
+      },
+      {
+        "rank": 500,
+        "commander": "Torik4",
+        "points": 889786,
+        "server": "121"
+      },
+      {
+        "rank": 523,
+        "commander": "Nadin13",
+        "points": 823868,
+        "server": "121"
+      },
+      {
+        "rank": 546,
+        "commander": "ЛЕОН777",
+        "points": 761435,
+        "server": "121"
+      },
+      {
+        "rank": 550,
+        "commander": "Aniki95",
+        "points": 745006,
+        "server": "121"
+      },
+      {
+        "rank": 553,
+        "commander": "PLAVNIK",
+        "points": 741670,
+        "server": "121"
+      },
+      {
+        "rank": 556,
+        "commander": "JajiK",
+        "points": 736348,
+        "server": "121"
+      },
+      {
+        "rank": 569,
+        "commander": "Доркель",
+        "points": 681654,
+        "server": "121"
+      },
+      {
+        "rank": 582,
+        "commander": "Вань",
+        "points": 648018,
+        "server": "121"
+      },
+      {
+        "rank": 594,
+        "commander": "VadimLK",
+        "points": 616758,
+        "server": "121"
+      },
+      {
+        "rank": 606,
+        "commander": "Ksyushawes",
+        "points": 590418,
+        "server": "121"
+      },
+      {
+        "rank": 679,
+        "commander": "Vovik100",
+        "points": 469176,
+        "server": "121"
+      },
+      {
+        "rank": 695,
+        "commander": "1VAN",
+        "points": 435341,
+        "server": "121"
+      },
+      {
+        "rank": 704,
+        "commander": "АльКап",
+        "points": 415219,
+        "server": "121"
+      },
+      {
+        "rank": 712,
+        "commander": "Merodeador",
+        "points": 401518,
+        "server": "121"
+      },
+      {
+        "rank": 782,
+        "commander": "Оглоб",
+        "points": 244865,
+        "server": "121"
+      },
+      {
+        "rank": 802,
+        "commander": "EvgeniySUT",
+        "points": 210567,
+        "server": "121"
+      },
+      {
+        "rank": 810,
+        "commander": "лихой1",
+        "points": 199163,
+        "server": "121"
+      },
+      {
+        "rank": 849,
+        "commander": "волк7",
+        "points": 147434,
+        "server": "121"
+      },
+      {
+        "rank": 860,
+        "commander": "BaksM",
+        "points": 130004,
+        "server": "121"
+      },
+      {
+        "rank": 865,
+        "commander": "Лаковая",
+        "points": 128074,
+        "server": "121"
+      },
+      {
+        "rank": 917,
+        "commander": "MisS",
+        "points": 77354,
+        "server": "121"
+      },
+      {
+        "rank": 967,
+        "commander": "FunnyRojer",
+        "points": 48890,
+        "server": "121"
+      },
+      {
+        "rank": 987,
+        "commander": "тремпель",
+        "points": 36064,
+        "server": "121"
+      }
+    ],
+    "rank": 3,
+    "server_rank": 2
+  },
+  {
+    "alliance": "[GDI] GolgDiggers",
+    "tag": "GDI",
+    "name": "GolgDiggers",
+    "server": "117",
+    "members_count": 42,
+    "total_points": 64864548,
+    "avg_points": 1544394,
+    "top_commander": "Tony-Soprano",
+    "top_points": 17193949,
+    "top_rank": 2,
+    "members": [
+      {
+        "rank": 2,
+        "commander": "Tony-Soprano",
+        "points": 17193949,
+        "server": "117"
+      },
+      {
+        "rank": 5,
+        "commander": "ArT-G",
+        "points": 6715242,
+        "server": "117"
+      },
+      {
+        "rank": 10,
+        "commander": "ХесусХарисрама",
+        "points": 5135648,
+        "server": "117"
+      },
+      {
+        "rank": 15,
+        "commander": "Queencard",
+        "points": 3612204,
+        "server": "117"
+      },
+      {
+        "rank": 17,
+        "commander": "SkiFcheGG",
+        "points": 3485432,
+        "server": "117"
+      },
+      {
+        "rank": 35,
+        "commander": "불휘이",
+        "points": 2759830,
+        "server": "117"
+      },
+      {
+        "rank": 111,
+        "commander": "Valll26",
+        "points": 1903443,
+        "server": "117"
+      },
+      {
+        "rank": 138,
+        "commander": "열혈꿀벌",
+        "points": 1786902,
+        "server": "117"
+      },
+      {
+        "rank": 244,
+        "commander": "VIKINGgamer",
+        "points": 1597214,
+        "server": "117"
+      },
+      {
+        "rank": 351,
+        "commander": "ASIFO1",
+        "points": 1515435,
+        "server": "117"
+      },
+      {
+        "rank": 371,
+        "commander": "ivanpizdorvan",
+        "points": 1506928,
+        "server": "117"
+      },
+      {
+        "rank": 396,
+        "commander": "Poooncho",
+        "points": 1398326,
+        "server": "117"
+      },
+      {
+        "rank": 413,
+        "commander": "Kaban13",
+        "points": 1262440,
+        "server": "117"
+      },
+      {
+        "rank": 437,
+        "commander": "XFactor",
+        "points": 1122744,
+        "server": "117"
+      },
+      {
+        "rank": 474,
+        "commander": "Stevie12345",
+        "points": 977466,
+        "server": "117"
+      },
+      {
+        "rank": 486,
+        "commander": "지공이",
+        "points": 922568,
+        "server": "117"
+      },
+      {
+        "rank": 499,
+        "commander": "gobot",
+        "points": 890170,
+        "server": "117"
+      },
+      {
+        "rank": 504,
+        "commander": "아케론",
+        "points": 884388,
+        "server": "117"
+      },
+      {
+        "rank": 527,
+        "commander": "We1s02",
+        "points": 815242,
+        "server": "117"
+      },
+      {
+        "rank": 533,
+        "commander": "Twiga",
+        "points": 794623,
+        "server": "117"
+      },
+      {
+        "rank": 537,
+        "commander": "BagiRa",
+        "points": 788876,
+        "server": "117"
+      },
+      {
+        "rank": 576,
+        "commander": "Fransy",
+        "points": 669050,
+        "server": "117"
+      },
+      {
+        "rank": 608,
+        "commander": "공공칠빵",
+        "points": 588440,
+        "server": "117"
+      },
+      {
+        "rank": 615,
+        "commander": "Rubosh",
+        "points": 577694,
+        "server": "117"
+      },
+      {
+        "rank": 633,
+        "commander": "Ma3afone",
+        "points": 551587,
+        "server": "117"
+      },
+      {
+        "rank": 638,
+        "commander": "comm7",
+        "points": 546162,
+        "server": "117"
+      },
+      {
+        "rank": 640,
+        "commander": "Bada-Bing",
+        "points": 543980,
+        "server": "117"
+      },
+      {
+        "rank": 651,
+        "commander": "sesil34",
+        "points": 522160,
+        "server": "117"
+      },
+      {
+        "rank": 668,
+        "commander": "Пастырь2",
+        "points": 493302,
+        "server": "117"
+      },
+      {
+        "rank": 673,
+        "commander": "tA•Nascentt",
+        "points": 482697,
+        "server": "117"
+      },
+      {
+        "rank": 684,
+        "commander": "Aybars1",
+        "points": 461133,
+        "server": "117"
+      },
+      {
+        "rank": 694,
+        "commander": "Burtyboy",
+        "points": 436457,
+        "server": "117"
+      },
+      {
+        "rank": 697,
+        "commander": "And1go",
+        "points": 427317,
+        "server": "117"
+      },
+      {
+        "rank": 708,
+        "commander": "ebish",
+        "points": 404006,
+        "server": "117"
+      },
+      {
+        "rank": 746,
+        "commander": "BlackEgg",
+        "points": 340319,
+        "server": "117"
+      },
+      {
+        "rank": 748,
+        "commander": "Steeetch",
+        "points": 335548,
+        "server": "117"
+      },
+      {
+        "rank": 832,
+        "commander": "Lostsole",
+        "points": 173541,
+        "server": "117"
+      },
+      {
+        "rank": 871,
+        "commander": "Butter-san",
+        "points": 122040,
+        "server": "117"
+      },
+      {
+        "rank": 907,
+        "commander": "Lenskyi",
+        "points": 85247,
+        "server": "117"
+      },
+      {
+        "rank": 1006,
+        "commander": "БАДРИ",
+        "points": 21080,
+        "server": "117"
+      },
+      {
+        "rank": 1021,
+        "commander": "Copilot",
+        "points": 10630,
+        "server": "117"
+      },
+      {
+        "rank": 1044,
+        "commander": "МАКАРОЕ",
+        "points": 3088,
+        "server": "117"
+      }
+    ],
+    "rank": 4,
+    "server_rank": 2
+  },
+  {
+    "alliance": "UFD] JustForvarD",
+    "tag": "",
+    "name": "UFD] JustForvarD",
+    "server": "121",
+    "members_count": 44,
+    "total_points": 60064486,
+    "avg_points": 1365101,
+    "top_commander": "SvetlanaK97",
+    "top_points": 3151839,
+    "top_rank": 23,
+    "members": [
+      {
+        "rank": 23,
+        "commander": "SvetlanaK97",
+        "points": 3151839,
+        "server": "121"
+      },
+      {
+        "rank": 41,
+        "commander": "LuckyLoo",
+        "points": 2554675,
+        "server": "121"
+      },
+      {
+        "rank": 77,
+        "commander": "Ademka",
+        "points": 2160950,
+        "server": "121"
+      },
+      {
+        "rank": 82,
+        "commander": "Donjeweler",
+        "points": 2119433,
+        "server": "121"
+      },
+      {
+        "rank": 93,
+        "commander": "Пуха",
+        "points": 2046401,
+        "server": "121"
+      },
+      {
+        "rank": 97,
+        "commander": "CHAHLIK",
+        "points": 2011876,
+        "server": "121"
+      },
+      {
+        "rank": 122,
+        "commander": "Nasgool",
+        "points": 1846035,
+        "server": "121"
+      },
+      {
+        "rank": 129,
+        "commander": "Afina197",
+        "points": 1804279,
+        "server": "121"
+      },
+      {
+        "rank": 135,
+        "commander": "century-child",
+        "points": 1788251,
+        "server": "121"
+      },
+      {
+        "rank": 142,
+        "commander": "Lector70",
+        "points": 1774085,
+        "server": "121"
+      },
+      {
+        "rank": 151,
+        "commander": "Братск",
+        "points": 1757039,
+        "server": "121"
+      },
+      {
+        "rank": 162,
+        "commander": "Kaktusik",
+        "points": 1721693,
+        "server": "121"
+      },
+      {
+        "rank": 182,
+        "commander": "airMAX",
+        "points": 1672936,
+        "server": "121"
+      },
+      {
+        "rank": 203,
+        "commander": "Greeffon",
+        "points": 1633455,
+        "server": "121"
+      },
+      {
+        "rank": 212,
+        "commander": "грызлик",
+        "points": 1619886,
+        "server": "121"
+      },
+      {
+        "rank": 218,
+        "commander": "Къярра",
+        "points": 1615146,
+        "server": "121"
+      },
+      {
+        "rank": 251,
+        "commander": "Ванько",
+        "points": 1586953,
+        "server": "121"
+      },
+      {
+        "rank": 259,
+        "commander": "Dizar777",
+        "points": 1582070,
+        "server": "121"
+      },
+      {
+        "rank": 294,
+        "commander": "МЕЛЕК",
+        "points": 1545868,
+        "server": "121"
+      },
+      {
+        "rank": 300,
+        "commander": "Шипулька",
+        "points": 1541740,
+        "server": "121"
+      },
+      {
+        "rank": 302,
+        "commander": "choogy",
+        "points": 1541043,
+        "server": "121"
+      },
+      {
+        "rank": 312,
+        "commander": "ДимооН",
+        "points": 1534654,
+        "server": "121"
+      },
+      {
+        "rank": 330,
+        "commander": "Miheichkbr",
+        "points": 1524999,
+        "server": "121"
+      },
+      {
+        "rank": 339,
+        "commander": "ASIDASID",
+        "points": 1522100,
+        "server": "121"
+      },
+      {
+        "rank": 344,
+        "commander": "Зелёный77",
+        "points": 1520303,
+        "server": "121"
+      },
+      {
+        "rank": 350,
+        "commander": "Lisicad",
+        "points": 1516879,
+        "server": "121"
+      },
+      {
+        "rank": 355,
+        "commander": "Kristofer115",
+        "points": 1512931,
+        "server": "121"
+      },
+      {
+        "rank": 357,
+        "commander": "JaVa73",
+        "points": 1512337,
+        "server": "121"
+      },
+      {
+        "rank": 383,
+        "commander": "Merijeyy",
+        "points": 1471166,
+        "server": "121"
+      },
+      {
+        "rank": 393,
+        "commander": "IGOR173",
+        "points": 1428201,
+        "server": "121"
+      },
+      {
+        "rank": 398,
+        "commander": "ХренВаМ",
+        "points": 1384370,
+        "server": "121"
+      },
+      {
+        "rank": 422,
+        "commander": "Ghost95",
+        "points": 1188729,
+        "server": "121"
+      },
+      {
+        "rank": 428,
+        "commander": "Basherrr",
+        "points": 1174120,
+        "server": "121"
+      },
+      {
+        "rank": 430,
+        "commander": "spartaque",
+        "points": 1162120,
+        "server": "121"
+      },
+      {
+        "rank": 497,
+        "commander": "Sega-29ru",
+        "points": 891570,
+        "server": "121"
+      },
+      {
+        "rank": 634,
+        "commander": "Baks51",
+        "points": 551256,
+        "server": "121"
+      },
+      {
+        "rank": 671,
+        "commander": "Saderin",
+        "points": 490350,
+        "server": "121"
+      },
+      {
+        "rank": 858,
+        "commander": "Radusha",
+        "points": 134920,
+        "server": "121"
+      },
+      {
+        "rank": 868,
+        "commander": "Tiberium54",
+        "points": 125444,
+        "server": "121"
+      },
+      {
+        "rank": 870,
+        "commander": "~~Valkyrja~~",
+        "points": 124407,
+        "server": "121"
+      },
+      {
+        "rank": 905,
+        "commander": "StasPointer",
+        "points": 87313,
+        "server": "121"
+      },
+      {
+        "rank": 941,
+        "commander": "Серёга-Серёга",
+        "points": 60424,
+        "server": "121"
+      },
+      {
+        "rank": 961,
+        "commander": "GROGOT",
+        "points": 51240,
+        "server": "121"
+      },
+      {
+        "rank": 1010,
+        "commander": "СКАРАБЕЙ",
+        "points": 19000,
+        "server": "121"
+      }
+    ],
+    "rank": 5,
+    "server_rank": 3
+  },
+  {
+    "alliance": "[FQS] Пандарены",
+    "tag": "FQS",
+    "name": "Пандарены",
+    "server": "121",
+    "members_count": 40,
+    "total_points": 57594519,
+    "avg_points": 1439862,
+    "top_commander": "Burn152",
+    "top_points": 4365640,
+    "top_rank": 12,
+    "members": [
+      {
+        "rank": 12,
+        "commander": "Burn152",
+        "points": 4365640,
+        "server": "121"
+      },
+      {
+        "rank": 31,
+        "commander": "Kisaru",
+        "points": 2864498,
+        "server": "121"
+      },
+      {
+        "rank": 50,
+        "commander": "ПаникаВРозовом",
+        "points": 2392720,
+        "server": "121"
+      },
+      {
+        "rank": 65,
+        "commander": "Venom75",
+        "points": 2241175,
+        "server": "121"
+      },
+      {
+        "rank": 78,
+        "commander": "Хрен-вам",
+        "points": 2157659,
+        "server": "121"
+      },
+      {
+        "rank": 87,
+        "commander": "Франкие",
+        "points": 2076548,
+        "server": "121"
+      },
+      {
+        "rank": 106,
+        "commander": "Adamantby",
+        "points": 1949150,
+        "server": "121"
+      },
+      {
+        "rank": 133,
+        "commander": "HulkMan",
+        "points": 1791582,
+        "server": "121"
+      },
+      {
+        "rank": 161,
+        "commander": "максим-максим",
+        "points": 1722119,
+        "server": "121"
+      },
+      {
+        "rank": 169,
+        "commander": "Кошке",
+        "points": 1702261,
+        "server": "121"
+      },
+      {
+        "rank": 176,
+        "commander": "163Mrak",
+        "points": 1690891,
+        "server": "121"
+      },
+      {
+        "rank": 187,
+        "commander": "-Дик-",
+        "points": 1667862,
+        "server": "121"
+      },
+      {
+        "rank": 196,
+        "commander": "Зомбомамонт",
+        "points": 1640548,
+        "server": "121"
+      },
+      {
+        "rank": 215,
+        "commander": "Submersed",
+        "points": 1616389,
+        "server": "121"
+      },
+      {
+        "rank": 235,
+        "commander": "fanik",
+        "points": 1602178,
+        "server": "121"
+      },
+      {
+        "rank": 238,
+        "commander": "-Леди-",
+        "points": 1599787,
+        "server": "121"
+      },
+      {
+        "rank": 243,
+        "commander": "Neadeckvat",
+        "points": 1597352,
+        "server": "121"
+      },
+      {
+        "rank": 255,
+        "commander": "malech",
+        "points": 1583255,
+        "server": "121"
+      },
+      {
+        "rank": 260,
+        "commander": "Vumate",
+        "points": 1581416,
+        "server": "121"
+      },
+      {
+        "rank": 276,
+        "commander": "Parker58",
+        "points": 1565107,
+        "server": "121"
+      },
+      {
+        "rank": 288,
+        "commander": "Vazan",
+        "points": 1553330,
+        "server": "121"
+      },
+      {
+        "rank": 301,
+        "commander": "ILNERO",
+        "points": 1541081,
+        "server": "121"
+      },
+      {
+        "rank": 305,
+        "commander": "JLyugJILu",
+        "points": 1539220,
+        "server": "121"
+      },
+      {
+        "rank": 310,
+        "commander": "МОРИАРТИ",
+        "points": 1535863,
+        "server": "121"
+      },
+      {
+        "rank": 341,
+        "commander": "Kirill22819",
+        "points": 1521738,
+        "server": "121"
+      },
+      {
+        "rank": 345,
+        "commander": "ДжониКувалда",
+        "points": 1519603,
+        "server": "121"
+      },
+      {
+        "rank": 368,
+        "commander": "Демеург",
+        "points": 1507899,
+        "server": "121"
+      },
+      {
+        "rank": 372,
+        "commander": "A444PK",
+        "points": 1506815,
+        "server": "121"
+      },
+      {
+        "rank": 455,
+        "commander": "Darall",
+        "points": 1062263,
+        "server": "121"
+      },
+      {
+        "rank": 471,
+        "commander": "Дед-Горыныч",
+        "points": 995963,
+        "server": "121"
+      },
+      {
+        "rank": 490,
+        "commander": "conzero",
+        "points": 913560,
+        "server": "121"
+      },
+      {
+        "rank": 532,
+        "commander": "Andreyka-26",
+        "points": 795261,
+        "server": "121"
+      },
+      {
+        "rank": 545,
+        "commander": "OrbitHrustiliano",
+        "points": 762112,
+        "server": "121"
+      },
+      {
+        "rank": 626,
+        "commander": "красное-белое",
+        "points": 560746,
+        "server": "121"
+      },
+      {
+        "rank": 706,
+        "commander": "Kris63",
+        "points": 412063,
+        "server": "121"
+      },
+      {
+        "rank": 766,
+        "commander": "Sasshik",
+        "points": 294131,
+        "server": "121"
+      },
+      {
+        "rank": 969,
+        "commander": "Alex1e",
+        "points": 48286,
+        "server": "121"
+      },
+      {
+        "rank": 970,
+        "commander": "Shoxka",
+        "points": 47248,
+        "server": "121"
+      },
+      {
+        "rank": 979,
+        "commander": "Anka96",
+        "points": 40700,
+        "server": "121"
+      },
+      {
+        "rank": 1000,
+        "commander": "Yonys",
+        "points": 28500,
+        "server": "121"
+      }
+    ],
+    "rank": 6,
+    "server_rank": 4
+  },
+  {
+    "alliance": "[XoX] iLLuMiNaTi",
+    "tag": "XoX",
+    "name": "iLLuMiNaTi",
+    "server": "121",
+    "members_count": 54,
+    "total_points": 57301662,
+    "avg_points": 1061141,
+    "top_commander": "ГэндальфБелый",
+    "top_points": 5621642,
+    "top_rank": 7,
+    "members": [
+      {
+        "rank": 7,
+        "commander": "ГэндальфБелый",
+        "points": 5621642,
+        "server": "121"
+      },
+      {
+        "rank": 54,
+        "commander": "RKKA64",
+        "points": 2372630,
+        "server": "121"
+      },
+      {
+        "rank": 59,
+        "commander": "Сволочья",
+        "points": 2308487,
+        "server": "121"
+      },
+      {
+        "rank": 69,
+        "commander": "MrNoBoDy",
+        "points": 2207598,
+        "server": "121"
+      },
+      {
+        "rank": 76,
+        "commander": "JK33",
+        "points": 2161461,
+        "server": "121"
+      },
+      {
+        "rank": 79,
+        "commander": "Рыжая01",
+        "points": 2135549,
+        "server": "121"
+      },
+      {
+        "rank": 83,
+        "commander": "Хренас2",
+        "points": 2111459,
+        "server": "121"
+      },
+      {
+        "rank": 115,
+        "commander": "Терёха",
+        "points": 1892933,
+        "server": "121"
+      },
+      {
+        "rank": 146,
+        "commander": "ArtKreis",
+        "points": 1769302,
+        "server": "121"
+      },
+      {
+        "rank": 246,
+        "commander": "BlackXmelb",
+        "points": 1595681,
+        "server": "121"
+      },
+      {
+        "rank": 248,
+        "commander": "theEvil",
+        "points": 1591286,
+        "server": "121"
+      },
+      {
+        "rank": 285,
+        "commander": "ПупсаДед",
+        "points": 1554205,
+        "server": "121"
+      },
+      {
+        "rank": 290,
+        "commander": "Ващенорм",
+        "points": 1551073,
+        "server": "121"
+      },
+      {
+        "rank": 295,
+        "commander": "Svetlanairkutsk",
+        "points": 1545709,
+        "server": "121"
+      },
+      {
+        "rank": 308,
+        "commander": "frrry",
+        "points": 1537378,
+        "server": "121"
+      },
+      {
+        "rank": 311,
+        "commander": "smileOFF",
+        "points": 1534951,
+        "server": "121"
+      },
+      {
+        "rank": 316,
+        "commander": "Alinessa",
+        "points": 1533804,
+        "server": "121"
+      },
+      {
+        "rank": 336,
+        "commander": "NST",
+        "points": 1524366,
+        "server": "121"
+      },
+      {
+        "rank": 343,
+        "commander": "gloomysoul",
+        "points": 1520712,
+        "server": "121"
+      },
+      {
+        "rank": 356,
+        "commander": "RamsaySnow",
+        "points": 1512627,
+        "server": "121"
+      },
+      {
+        "rank": 359,
+        "commander": "МаксимусМеридий",
+        "points": 1510750,
+        "server": "121"
+      },
+      {
+        "rank": 362,
+        "commander": "Red",
+        "points": 1510090,
+        "server": "121"
+      },
+      {
+        "rank": 402,
+        "commander": "prostoya",
+        "points": 1346036,
+        "server": "121"
+      },
+      {
+        "rank": 409,
+        "commander": "Aramus",
+        "points": 1290542,
+        "server": "121"
+      },
+      {
+        "rank": 423,
+        "commander": "|Gojo|Satoru|",
+        "points": 1186580,
+        "server": "121"
+      },
+      {
+        "rank": 457,
+        "commander": "Ragnar22",
+        "points": 1058432,
+        "server": "121"
+      },
+      {
+        "rank": 485,
+        "commander": "Dimaszzz",
+        "points": 924768,
+        "server": "121"
+      },
+      {
+        "rank": 498,
+        "commander": "Добрый",
+        "points": 890231,
+        "server": "121"
+      },
+      {
+        "rank": 502,
+        "commander": "kerbisss",
+        "points": 888331,
+        "server": "121"
+      },
+      {
+        "rank": 507,
+        "commander": "Просто-ник",
+        "points": 882692,
+        "server": "121"
+      },
+      {
+        "rank": 524,
+        "commander": "Caymann",
+        "points": 823318,
+        "server": "121"
+      },
+      {
+        "rank": 542,
+        "commander": "Kryk",
+        "points": 770471,
+        "server": "121"
+      },
+      {
+        "rank": 595,
+        "commander": "\"BLADE\"",
+        "points": 613699,
+        "server": "121"
+      },
+      {
+        "rank": 613,
+        "commander": "rusich77",
+        "points": 580657,
+        "server": "121"
+      },
+      {
+        "rank": 682,
+        "commander": "MAСKA73",
+        "points": 463414,
+        "server": "121"
+      },
+      {
+        "rank": 701,
+        "commander": "Shoma•",
+        "points": 417784,
+        "server": "121"
+      },
+      {
+        "rank": 723,
+        "commander": "JIus",
+        "points": 386594,
+        "server": "121"
+      },
+      {
+        "rank": 745,
+        "commander": "чупакабрак",
+        "points": 340640,
+        "server": "121"
+      },
+      {
+        "rank": 763,
+        "commander": "Latina1",
+        "points": 296125,
+        "server": "121"
+      },
+      {
+        "rank": 767,
+        "commander": "AnuSTanosA",
+        "points": 282308,
+        "server": "121"
+      },
+      {
+        "rank": 788,
+        "commander": "KoKa",
+        "points": 239575,
+        "server": "121"
+      },
+      {
+        "rank": 845,
+        "commander": "Евгениос313",
+        "points": 151615,
+        "server": "121"
+      },
+      {
+        "rank": 859,
+        "commander": "RSA777",
+        "points": 131318,
+        "server": "121"
+      },
+      {
+        "rank": 862,
+        "commander": "AE74",
+        "points": 128560,
+        "server": "121"
+      },
+      {
+        "rank": 895,
+        "commander": "vorona-2027",
+        "points": 95073,
+        "server": "121"
+      },
+      {
+        "rank": 898,
+        "commander": "Karlson116",
+        "points": 92348,
+        "server": "121"
+      },
+      {
+        "rank": 915,
+        "commander": "Antarezzz",
+        "points": 80468,
+        "server": "121"
+      },
+      {
+        "rank": 928,
+        "commander": "fketch",
+        "points": 70000,
+        "server": "121"
+      },
+      {
+        "rank": 936,
+        "commander": "66Воронб6",
+        "points": 66273,
+        "server": "121"
+      },
+      {
+        "rank": 948,
+        "commander": "Serжik",
+        "points": 56831,
+        "server": "121"
+      },
+      {
+        "rank": 971,
+        "commander": "Fastodah",
+        "points": 47176,
+        "server": "121"
+      },
+      {
+        "rank": 981,
+        "commander": "Lefort",
+        "points": 40400,
+        "server": "121"
+      },
+      {
+        "rank": 986,
+        "commander": "ЗлойДемон",
+        "points": 36120,
+        "server": "121"
+      },
+      {
+        "rank": 1009,
+        "commander": "ХанБатый",
+        "points": 19590,
+        "server": "121"
+      }
+    ],
+    "rank": 7,
+    "server_rank": 5
+  },
+  {
+    "alliance": "[BaR] Рюмочная18+",
+    "tag": "BaR",
+    "name": "Рюмочная18+",
+    "server": "121",
+    "members_count": 42,
+    "total_points": 53859319,
+    "avg_points": 1282364,
+    "top_commander": "Грушенька",
+    "top_points": 3254042,
+    "top_rank": 20,
+    "members": [
+      {
+        "rank": 20,
+        "commander": "Грушенька",
+        "points": 3254042,
+        "server": "121"
+      },
+      {
+        "rank": 29,
+        "commander": "-Шантарам-",
+        "points": 2944808,
+        "server": "121"
+      },
+      {
+        "rank": 34,
+        "commander": "КровавыйВолк",
+        "points": 2820108,
+        "server": "121"
+      },
+      {
+        "rank": 49,
+        "commander": "DizzyR",
+        "points": 2421347,
+        "server": "121"
+      },
+      {
+        "rank": 63,
+        "commander": "Кривбас",
+        "points": 2283434,
+        "server": "121"
+      },
+      {
+        "rank": 72,
+        "commander": "19Дар78",
+        "points": 2198949,
+        "server": "121"
+      },
+      {
+        "rank": 85,
+        "commander": "*Obsidian*",
+        "points": 2093718,
+        "server": "121"
+      },
+      {
+        "rank": 117,
+        "commander": "ROSALINDA",
+        "points": 1883438,
+        "server": "121"
+      },
+      {
+        "rank": 119,
+        "commander": "ЯдовитАя",
+        "points": 1875967,
+        "server": "121"
+      },
+      {
+        "rank": 191,
+        "commander": "Ненасытная",
+        "points": 1650020,
+        "server": "121"
+      },
+      {
+        "rank": 204,
+        "commander": "NoobasS",
+        "points": 1632890,
+        "server": "121"
+      },
+      {
+        "rank": 208,
+        "commander": "Vlad19892004",
+        "points": 1626414,
+        "server": "121"
+      },
+      {
+        "rank": 233,
+        "commander": "татарин070",
+        "points": 1602780,
+        "server": "121"
+      },
+      {
+        "rank": 269,
+        "commander": "SuroviyKrot",
+        "points": 1575240,
+        "server": "121"
+      },
+      {
+        "rank": 287,
+        "commander": "AlexVP",
+        "points": 1553610,
+        "server": "121"
+      },
+      {
+        "rank": 297,
+        "commander": "ЗАМА",
+        "points": 1543213,
+        "server": "121"
+      },
+      {
+        "rank": 315,
+        "commander": "Boss",
+        "points": 1534025,
+        "server": "121"
+      },
+      {
+        "rank": 318,
+        "commander": "сушист",
+        "points": 1533384,
+        "server": "121"
+      },
+      {
+        "rank": 331,
+        "commander": "MavRLos",
+        "points": 1524996,
+        "server": "121"
+      },
+      {
+        "rank": 333,
+        "commander": "БАЛДУБАН",
+        "points": 1524695,
+        "server": "121"
+      },
+      {
+        "rank": 342,
+        "commander": "МaСяНькА",
+        "points": 1521280,
+        "server": "121"
+      },
+      {
+        "rank": 346,
+        "commander": "Поем",
+        "points": 1519548,
+        "server": "121"
+      },
+      {
+        "rank": 358,
+        "commander": "FuckOFF",
+        "points": 1511850,
+        "server": "121"
+      },
+      {
+        "rank": 369,
+        "commander": "Сытый",
+        "points": 1507620,
+        "server": "121"
+      },
+      {
+        "rank": 420,
+        "commander": "Варенье",
+        "points": 1221450,
+        "server": "121"
+      },
+      {
+        "rank": 438,
+        "commander": "Sleepy1976",
+        "points": 1119120,
+        "server": "121"
+      },
+      {
+        "rank": 440,
+        "commander": "Кирра",
+        "points": 1112433,
+        "server": "121"
+      },
+      {
+        "rank": 492,
+        "commander": "BlackДог",
+        "points": 908491,
+        "server": "121"
+      },
+      {
+        "rank": 535,
+        "commander": "«Шум-",
+        "points": 791280,
+        "server": "121"
+      },
+      {
+        "rank": 575,
+        "commander": "ЯєГрут",
+        "points": 669812,
+        "server": "121"
+      },
+      {
+        "rank": 612,
+        "commander": "Sultan116",
+        "points": 581720,
+        "server": "121"
+      },
+      {
+        "rank": 691,
+        "commander": "владимиR",
+        "points": 442654,
+        "server": "121"
+      },
+      {
+        "rank": 703,
+        "commander": "льЮ",
+        "points": 416076,
+        "server": "121"
+      },
+      {
+        "rank": 733,
+        "commander": "elecom",
+        "points": 361884,
+        "server": "121"
+      },
+      {
+        "rank": 760,
+        "commander": "Farad",
+        "points": 302400,
+        "server": "121"
+      },
+      {
+        "rank": 777,
+        "commander": "Бас174",
+        "points": 256395,
+        "server": "121"
+      },
+      {
+        "rank": 806,
+        "commander": "~KorbenDallas~",
+        "points": 205990,
+        "server": "121"
+      },
+      {
+        "rank": 813,
+        "commander": "Juliette31",
+        "points": 195239,
+        "server": "121"
+      },
+      {
+        "rank": 968,
+        "commander": "Лисья-Богиня",
+        "points": 48604,
+        "server": "121"
+      },
+      {
+        "rank": 985,
+        "commander": "Евгеникус",
+        "points": 36160,
+        "server": "121"
+      },
+      {
+        "rank": 991,
+        "commander": "ProCrushtinator",
+        "points": 32190,
+        "server": "121"
+      },
+      {
+        "rank": 1008,
+        "commander": "БоЛтяра",
+        "points": 20045,
+        "server": "121"
+      }
+    ],
+    "rank": 8,
+    "server_rank": 6
+  },
+  {
+    "alliance": "[Mnt] Монолит",
+    "tag": "Mnt",
+    "name": "Монолит",
+    "server": "121",
+    "members_count": 39,
+    "total_points": 47393693,
+    "avg_points": 1215222,
+    "top_commander": "Zona161",
+    "top_points": 3459273,
+    "top_rank": 18,
+    "members": [
+      {
+        "rank": 18,
+        "commander": "Zona161",
+        "points": 3459273,
+        "server": "121"
+      },
+      {
+        "rank": 25,
+        "commander": "LuHell",
+        "points": 3101481,
+        "server": "121"
+      },
+      {
+        "rank": 101,
+        "commander": "olgaphil",
+        "points": 1987649,
+        "server": "121"
+      },
+      {
+        "rank": 114,
+        "commander": "Kotofei524",
+        "points": 1898597,
+        "server": "121"
+      },
+      {
+        "rank": 125,
+        "commander": "solop",
+        "points": 1820386,
+        "server": "121"
+      },
+      {
+        "rank": 130,
+        "commander": "trampampam",
+        "points": 1799608,
+        "server": "121"
+      },
+      {
+        "rank": 131,
+        "commander": "bes2026",
+        "points": 1799540,
+        "server": "121"
+      },
+      {
+        "rank": 134,
+        "commander": "MØRRA",
+        "points": 1790660,
+        "server": "121"
+      },
+      {
+        "rank": 136,
+        "commander": "rutolak",
+        "points": 1788244,
+        "server": "121"
+      },
+      {
+        "rank": 157,
+        "commander": "БрюлиК",
+        "points": 1735258,
+        "server": "121"
+      },
+      {
+        "rank": 173,
+        "commander": "KATAstrofa",
+        "points": 1695690,
+        "server": "121"
+      },
+      {
+        "rank": 174,
+        "commander": "Jastman",
+        "points": 1695086,
+        "server": "121"
+      },
+      {
+        "rank": 188,
+        "commander": "vitalinv",
+        "points": 1665959,
+        "server": "121"
+      },
+      {
+        "rank": 213,
+        "commander": "Maus",
+        "points": 1618450,
+        "server": "121"
+      },
+      {
+        "rank": 221,
+        "commander": "Ivanhgf",
+        "points": 1612284,
+        "server": "121"
+      },
+      {
+        "rank": 222,
+        "commander": "Axsend",
+        "points": 1611374,
+        "server": "121"
+      },
+      {
+        "rank": 225,
+        "commander": "ДедМазайй",
+        "points": 1607598,
+        "server": "121"
+      },
+      {
+        "rank": 239,
+        "commander": "Йодыч",
+        "points": 1599466,
+        "server": "121"
+      },
+      {
+        "rank": 314,
+        "commander": "WomenRu",
+        "points": 1534411,
+        "server": "121"
+      },
+      {
+        "rank": 321,
+        "commander": "Один",
+        "points": 1531214,
+        "server": "121"
+      },
+      {
+        "rank": 338,
+        "commander": "Nils28",
+        "points": 1523404,
+        "server": "121"
+      },
+      {
+        "rank": 390,
+        "commander": "Shokcpalish",
+        "points": 1436030,
+        "server": "121"
+      },
+      {
+        "rank": 397,
+        "commander": "esermon",
+        "points": 1397476,
+        "server": "121"
+      },
+      {
+        "rank": 429,
+        "commander": "РОМAH123RUS",
+        "points": 1173547,
+        "server": "121"
+      },
+      {
+        "rank": 463,
+        "commander": "Punk123",
+        "points": 1040969,
+        "server": "121"
+      },
+      {
+        "rank": 583,
+        "commander": "RedDevils",
+        "points": 645381,
+        "server": "121"
+      },
+      {
+        "rank": 621,
+        "commander": "Лунтик221",
+        "points": 570132,
+        "server": "121"
+      },
+      {
+        "rank": 670,
+        "commander": "Dimarik174",
+        "points": 490919,
+        "server": "121"
+      },
+      {
+        "rank": 705,
+        "commander": "HolyPants",
+        "points": 414939,
+        "server": "121"
+      },
+      {
+        "rank": 771,
+        "commander": "BigMadJoe",
+        "points": 272263,
+        "server": "121"
+      },
+      {
+        "rank": 803,
+        "commander": "игорья",
+        "points": 208420,
+        "server": "121"
+      },
+      {
+        "rank": 828,
+        "commander": "Darik9124R",
+        "points": 181660,
+        "server": "121"
+      },
+      {
+        "rank": 830,
+        "commander": "Axen",
+        "points": 180101,
+        "server": "121"
+      },
+      {
+        "rank": 831,
+        "commander": "218",
+        "points": 175380,
+        "server": "121"
+      },
+      {
+        "rank": 844,
+        "commander": "Galadriel-xxx",
+        "points": 151897,
+        "server": "121"
+      },
+      {
+        "rank": 925,
+        "commander": "Tatar80",
+        "points": 72124,
+        "server": "121"
+      },
+      {
+        "rank": 952,
+        "commander": "mondavoshka",
+        "points": 55392,
+        "server": "121"
+      },
+      {
+        "rank": 966,
+        "commander": "Александр7889",
+        "points": 50000,
+        "server": "121"
+      },
+      {
+        "rank": 1052,
+        "commander": "Vital033",
+        "points": 1431,
+        "server": "121"
+      }
+    ],
+    "rank": 9,
+    "server_rank": 7
+  },
+  {
+    "alliance": "[HDG] HérosdeGuerre",
+    "tag": "HDG",
+    "name": "HérosdeGuerre",
+    "server": "117",
+    "members_count": 47,
+    "total_points": 37284391,
+    "avg_points": 793284,
+    "top_commander": "M1kky",
+    "top_points": 3814656,
+    "top_rank": 14,
+    "members": [
+      {
+        "rank": 14,
+        "commander": "M1kky",
+        "points": 3814656,
+        "server": "117"
+      },
+      {
+        "rank": 21,
+        "commander": "Tiffanie-2",
+        "points": 3182192,
+        "server": "117"
+      },
+      {
+        "rank": 27,
+        "commander": "LynxNM",
+        "points": 3058435,
+        "server": "117"
+      },
+      {
+        "rank": 80,
+        "commander": "Donmoroccan",
+        "points": 2133068,
+        "server": "117"
+      },
+      {
+        "rank": 91,
+        "commander": "Kalissandre",
+        "points": 2059070,
+        "server": "117"
+      },
+      {
+        "rank": 150,
+        "commander": "Mr-Kaplan",
+        "points": 1759880,
+        "server": "117"
+      },
+      {
+        "rank": 194,
+        "commander": "WARRIORSS",
+        "points": 1647154,
+        "server": "117"
+      },
+      {
+        "rank": 299,
+        "commander": "Тиффани-",
+        "points": 1541811,
+        "server": "117"
+      },
+      {
+        "rank": 400,
+        "commander": "BarDak777",
+        "points": 1350210,
+        "server": "117"
+      },
+      {
+        "rank": 415,
+        "commander": "Hunter123",
+        "points": 1251371,
+        "server": "117"
+      },
+      {
+        "rank": 448,
+        "commander": "TeamGwada",
+        "points": 1079405,
+        "server": "117"
+      },
+      {
+        "rank": 452,
+        "commander": "Teamsneakeys",
+        "points": 1072774,
+        "server": "117"
+      },
+      {
+        "rank": 456,
+        "commander": "okouioui",
+        "points": 1058453,
+        "server": "117"
+      },
+      {
+        "rank": 491,
+        "commander": "GeneralNR1",
+        "points": 908905,
+        "server": "117"
+      },
+      {
+        "rank": 539,
+        "commander": "Titania008",
+        "points": 781994,
+        "server": "117"
+      },
+      {
+        "rank": 547,
+        "commander": "JourneyRex",
+        "points": 756856,
+        "server": "117"
+      },
+      {
+        "rank": 559,
+        "commander": "Tipiwis",
+        "points": 725039,
+        "server": "117"
+      },
+      {
+        "rank": 598,
+        "commander": "Shinoë",
+        "points": 606943,
+        "server": "117"
+      },
+      {
+        "rank": 599,
+        "commander": "Orthega",
+        "points": 605883,
+        "server": "117"
+      },
+      {
+        "rank": 610,
+        "commander": "Zut-et-Zut",
+        "points": 583082,
+        "server": "117"
+      },
+      {
+        "rank": 631,
+        "commander": "CheckMateBB",
+        "points": 555027,
+        "server": "117"
+      },
+      {
+        "rank": 637,
+        "commander": "KaRTaL60",
+        "points": 546277,
+        "server": "117"
+      },
+      {
+        "rank": 641,
+        "commander": "Earthmudo",
+        "points": 542383,
+        "server": "117"
+      },
+      {
+        "rank": 646,
+        "commander": "Bilette83",
+        "points": 532595,
+        "server": "117"
+      },
+      {
+        "rank": 655,
+        "commander": "ALTO",
+        "points": 520706,
+        "server": "117"
+      },
+      {
+        "rank": 663,
+        "commander": "kl0r3ll",
+        "points": 507677,
+        "server": "117"
+      },
+      {
+        "rank": 680,
+        "commander": "LaViking",
+        "points": 467165,
+        "server": "117"
+      },
+      {
+        "rank": 688,
+        "commander": "nightcrawler",
+        "points": 450024,
+        "server": "117"
+      },
+      {
+        "rank": 696,
+        "commander": "Anamorphose",
+        "points": 432121,
+        "server": "117"
+      },
+      {
+        "rank": 725,
+        "commander": "bankaiichigor",
+        "points": 383938,
+        "server": "117"
+      },
+      {
+        "rank": 728,
+        "commander": "Virtz",
+        "points": 378904,
+        "server": "117"
+      },
+      {
+        "rank": 759,
+        "commander": "kingston-b",
+        "points": 303212,
+        "server": "117"
+      },
+      {
+        "rank": 762,
+        "commander": "Kkkxx",
+        "points": 296240,
+        "server": "117"
+      },
+      {
+        "rank": 780,
+        "commander": "Parada",
+        "points": 248936,
+        "server": "117"
+      },
+      {
+        "rank": 807,
+        "commander": "Zombierob",
+        "points": 204895,
+        "server": "117"
+      },
+      {
+        "rank": 824,
+        "commander": "bloodtaxicab",
+        "points": 185316,
+        "server": "117"
+      },
+      {
+        "rank": 874,
+        "commander": "Drazic",
+        "points": 120000,
+        "server": "117"
+      },
+      {
+        "rank": 884,
+        "commander": "ViperX",
+        "points": 104923,
+        "server": "117"
+      },
+      {
+        "rank": 891,
+        "commander": "OhGodYes",
+        "points": 97637,
+        "server": "117"
+      },
+      {
+        "rank": 892,
+        "commander": "SB123",
+        "points": 96890,
+        "server": "117"
+      },
+      {
+        "rank": 896,
+        "commander": "Ferein",
+        "points": 94562,
+        "server": "117"
+      },
+      {
+        "rank": 916,
+        "commander": "Bacardiloco",
+        "points": 78605,
+        "server": "117"
+      },
+      {
+        "rank": 924,
+        "commander": "Prs",
+        "points": 72429,
+        "server": "117"
+      },
+      {
+        "rank": 963,
+        "commander": "MAG1",
+        "points": 50492,
+        "server": "117"
+      },
+      {
+        "rank": 989,
+        "commander": "Cayde6",
+        "points": 32573,
+        "server": "117"
+      },
+      {
+        "rank": 1043,
+        "commander": "Kiwigal",
+        "points": 3293,
+        "server": "117"
+      },
+      {
+        "rank": 1078,
+        "commander": "JOJOs",
+        "points": 390,
+        "server": "117"
+      }
+    ],
+    "rank": 10,
+    "server_rank": 3
+  },
+  {
+    "alliance": "[ONYX] OnyxEliteForce",
+    "tag": "ONYX",
+    "name": "OnyxEliteForce",
+    "server": "121",
+    "members_count": 34,
+    "total_points": 29582418,
+    "avg_points": 870071,
+    "top_commander": "Vampire |Rabbit",
+    "top_points": 2643698,
+    "top_rank": 39,
+    "members": [
+      {
+        "rank": 39,
+        "commander": "Vampire |Rabbit",
+        "points": 2643698,
+        "server": "121"
+      },
+      {
+        "rank": 45,
+        "commander": "•STURM•",
+        "points": 2507478,
+        "server": "121"
+      },
+      {
+        "rank": 70,
+        "commander": "-Nelegal-",
+        "points": 2201410,
+        "server": "121"
+      },
+      {
+        "rank": 164,
+        "commander": "Kapany3uk",
+        "points": 1713833,
+        "server": "121"
+      },
+      {
+        "rank": 172,
+        "commander": "DoofyGilmore",
+        "points": 1696384,
+        "server": "121"
+      },
+      {
+        "rank": 205,
+        "commander": "КикосИскалКокос",
+        "points": 1629590,
+        "server": "121"
+      },
+      {
+        "rank": 219,
+        "commander": "Katerinavoin",
+        "points": 1614431,
+        "server": "121"
+      },
+      {
+        "rank": 220,
+        "commander": "MaRiXyAnA",
+        "points": 1612554,
+        "server": "121"
+      },
+      {
+        "rank": 278,
+        "commander": "•Olenka•",
+        "points": 1560284,
+        "server": "121"
+      },
+      {
+        "rank": 284,
+        "commander": "Rina•",
+        "points": 1555318,
+        "server": "121"
+      },
+      {
+        "rank": 323,
+        "commander": "Зухрат",
+        "points": 1529959,
+        "server": "121"
+      },
+      {
+        "rank": 379,
+        "commander": "мИр",
+        "points": 1502079,
+        "server": "121"
+      },
+      {
+        "rank": 382,
+        "commander": "Gufyara",
+        "points": 1496381,
+        "server": "121"
+      },
+      {
+        "rank": 408,
+        "commander": "Polkovnik1626",
+        "points": 1304316,
+        "server": "121"
+      },
+      {
+        "rank": 568,
+        "commander": "Скорпион13",
+        "points": 683662,
+        "server": "121"
+      },
+      {
+        "rank": 602,
+        "commander": "АКОВ",
+        "points": 594942,
+        "server": "121"
+      },
+      {
+        "rank": 605,
+        "commander": "Ilmir2110",
+        "points": 591247,
+        "server": "121"
+      },
+      {
+        "rank": 647,
+        "commander": "Neodeks",
+        "points": 532198,
+        "server": "121"
+      },
+      {
+        "rank": 674,
+        "commander": "SpinOZA",
+        "points": 482619,
+        "server": "121"
+      },
+      {
+        "rank": 718,
+        "commander": "i-GØR",
+        "points": 395093,
+        "server": "121"
+      },
+      {
+        "rank": 731,
+        "commander": "Murad1666",
+        "points": 366105,
+        "server": "121"
+      },
+      {
+        "rank": 735,
+        "commander": "Alexis223",
+        "points": 357722,
+        "server": "121"
+      },
+      {
+        "rank": 798,
+        "commander": "Ludvin",
+        "points": 221642,
+        "server": "121"
+      },
+      {
+        "rank": 836,
+        "commander": "АкаунтВзломан",
+        "points": 168133,
+        "server": "121"
+      },
+      {
+        "rank": 861,
+        "commander": "Алга02",
+        "points": 129915,
+        "server": "121"
+      },
+      {
+        "rank": 875,
+        "commander": "Sergocap",
+        "points": 118883,
+        "server": "121"
+      },
+      {
+        "rank": 888,
+        "commander": "RaPira61rnd",
+        "points": 100024,
+        "server": "121"
+      },
+      {
+        "rank": 914,
+        "commander": "Заракки",
+        "points": 81208,
+        "server": "121"
+      },
+      {
+        "rank": 940,
+        "commander": "pasejdon",
+        "points": 61960,
+        "server": "121"
+      },
+      {
+        "rank": 984,
+        "commander": "Sergey1234567",
+        "points": 36430,
+        "server": "121"
+      },
+      {
+        "rank": 1001,
+        "commander": "•NJ•",
+        "points": 28500,
+        "server": "121"
+      },
+      {
+        "rank": 1002,
+        "commander": "marishka",
+        "points": 28500,
+        "server": "121"
+      },
+      {
+        "rank": 1004,
+        "commander": "Lagrasaverde",
+        "points": 26420,
+        "server": "121"
+      },
+      {
+        "rank": 1024,
+        "commander": "мужественный",
+        "points": 9500,
+        "server": "121"
+      }
+    ],
+    "rank": 11,
+    "server_rank": 8
+  },
+  {
+    "alliance": "[GRV] Dementia",
+    "tag": "GRV",
+    "name": "Dementia",
+    "server": "121",
+    "members_count": 33,
+    "total_points": 29001249,
+    "avg_points": 878825,
+    "top_commander": "Женя81",
+    "top_points": 1769628,
+    "top_rank": 145,
+    "members": [
+      {
+        "rank": 145,
+        "commander": "Женя81",
+        "points": 1769628,
+        "server": "121"
+      },
+      {
+        "rank": 158,
+        "commander": "GoSmile",
+        "points": 1730987,
+        "server": "121"
+      },
+      {
+        "rank": 165,
+        "commander": "Tugariin",
+        "points": 1709526,
+        "server": "121"
+      },
+      {
+        "rank": 177,
+        "commander": "MsЛюцифер",
+        "points": 1687526,
+        "server": "121"
+      },
+      {
+        "rank": 206,
+        "commander": "Shpak",
+        "points": 1629185,
+        "server": "121"
+      },
+      {
+        "rank": 207,
+        "commander": "Qvester",
+        "points": 1628723,
+        "server": "121"
+      },
+      {
+        "rank": 210,
+        "commander": "25ok",
+        "points": 1622294,
+        "server": "121"
+      },
+      {
+        "rank": 226,
+        "commander": "S1980",
+        "points": 1606401,
+        "server": "121"
+      },
+      {
+        "rank": 270,
+        "commander": "Léx",
+        "points": 1574110,
+        "server": "121"
+      },
+      {
+        "rank": 293,
+        "commander": "Быга",
+        "points": 1548310,
+        "server": "121"
+      },
+      {
+        "rank": 317,
+        "commander": "цугцванг",
+        "points": 1533732,
+        "server": "121"
+      },
+      {
+        "rank": 391,
+        "commander": "Melnikov",
+        "points": 1433546,
+        "server": "121"
+      },
+      {
+        "rank": 434,
+        "commander": "1forever",
+        "points": 1134775,
+        "server": "121"
+      },
+      {
+        "rank": 470,
+        "commander": "-Coffein-",
+        "points": 1009005,
+        "server": "121"
+      },
+      {
+        "rank": 518,
+        "commander": "AntMgn",
+        "points": 837723,
+        "server": "121"
+      },
+      {
+        "rank": 538,
+        "commander": "Kelfrin",
+        "points": 787665,
+        "server": "121"
+      },
+      {
+        "rank": 548,
+        "commander": "ГЮРЗА1988",
+        "points": 750206,
+        "server": "121"
+      },
+      {
+        "rank": 551,
+        "commander": "КаРательница",
+        "points": 745000,
+        "server": "121"
+      },
+      {
+        "rank": 629,
+        "commander": "Нагений",
+        "points": 556425,
+        "server": "121"
+      },
+      {
+        "rank": 677,
+        "commander": "Teddy-bear",
+        "points": 474127,
+        "server": "121"
+      },
+      {
+        "rank": 700,
+        "commander": "пахаб",
+        "points": 421694,
+        "server": "121"
+      },
+      {
+        "rank": 711,
+        "commander": "katerina22",
+        "points": 401921,
+        "server": "121"
+      },
+      {
+        "rank": 726,
+        "commander": "IFEDOR",
+        "points": 382496,
+        "server": "121"
+      },
+      {
+        "rank": 734,
+        "commander": "RykyUzzxXxR",
+        "points": 359563,
+        "server": "121"
+      },
+      {
+        "rank": 761,
+        "commander": "Стрелец41",
+        "points": 297843,
+        "server": "121"
+      },
+      {
+        "rank": 764,
+        "commander": "Куколка",
+        "points": 295138,
+        "server": "121"
+      },
+      {
+        "rank": 774,
+        "commander": "хабибуби",
+        "points": 268785,
+        "server": "121"
+      },
+      {
+        "rank": 781,
+        "commander": "саШаЛЮтик52",
+        "points": 245688,
+        "server": "121"
+      },
+      {
+        "rank": 805,
+        "commander": "Karolino4ka",
+        "points": 206106,
+        "server": "121"
+      },
+      {
+        "rank": 823,
+        "commander": "Pipish",
+        "points": 185722,
+        "server": "121"
+      },
+      {
+        "rank": 939,
+        "commander": "MAКCО",
+        "points": 62580,
+        "server": "121"
+      },
+      {
+        "rank": 943,
+        "commander": "Gogimat",
+        "points": 59819,
+        "server": "121"
+      },
+      {
+        "rank": 974,
+        "commander": "AURika",
+        "points": 45000,
+        "server": "121"
+      }
+    ],
+    "rank": 12,
+    "server_rank": 9
+  },
+  {
+    "alliance": "[KRS] KRATOS",
+    "tag": "KRS",
+    "name": "KRATOS",
+    "server": "117",
+    "members_count": 37,
+    "total_points": 26831769,
+    "avg_points": 725182,
+    "top_commander": "Rocketsauce",
+    "top_points": 2454460,
+    "top_rank": 47,
+    "members": [
+      {
+        "rank": 47,
+        "commander": "Rocketsauce",
+        "points": 2454460,
+        "server": "117"
+      },
+      {
+        "rank": 48,
+        "commander": "LeRoiChameau",
+        "points": 2429685,
+        "server": "117"
+      },
+      {
+        "rank": 86,
+        "commander": "LaMich",
+        "points": 2083662,
+        "server": "117"
+      },
+      {
+        "rank": 98,
+        "commander": "Purr",
+        "points": 2008385,
+        "server": "117"
+      },
+      {
+        "rank": 109,
+        "commander": "KOKRAN",
+        "points": 1910980,
+        "server": "117"
+      },
+      {
+        "rank": 241,
+        "commander": "GpasPeur-2b",
+        "points": 1599232,
+        "server": "117"
+      },
+      {
+        "rank": 268,
+        "commander": "topher76",
+        "points": 1576021,
+        "server": "117"
+      },
+      {
+        "rank": 403,
+        "commander": "Taniern",
+        "points": 1339213,
+        "server": "117"
+      },
+      {
+        "rank": 405,
+        "commander": "Lintark",
+        "points": 1318845,
+        "server": "117"
+      },
+      {
+        "rank": 410,
+        "commander": "Bossman2",
+        "points": 1290192,
+        "server": "117"
+      },
+      {
+        "rank": 511,
+        "commander": "paulo5720",
+        "points": 866771,
+        "server": "117"
+      },
+      {
+        "rank": 512,
+        "commander": "Ozzymandias",
+        "points": 864348,
+        "server": "117"
+      },
+      {
+        "rank": 517,
+        "commander": "Mastro",
+        "points": 841741,
+        "server": "117"
+      },
+      {
+        "rank": 540,
+        "commander": "KAYRON",
+        "points": 780013,
+        "server": "117"
+      },
+      {
+        "rank": 541,
+        "commander": "Casta",
+        "points": 771586,
+        "server": "117"
+      },
+      {
+        "rank": 587,
+        "commander": "FabioBZH29",
+        "points": 632440,
+        "server": "117"
+      },
+      {
+        "rank": 609,
+        "commander": "rbk2009",
+        "points": 584370,
+        "server": "117"
+      },
+      {
+        "rank": 611,
+        "commander": "Julesp",
+        "points": 582122,
+        "server": "117"
+      },
+      {
+        "rank": 650,
+        "commander": "DarkbossK",
+        "points": 526382,
+        "server": "117"
+      },
+      {
+        "rank": 659,
+        "commander": "Ugadawgs",
+        "points": 515053,
+        "server": "117"
+      },
+      {
+        "rank": 750,
+        "commander": "borgesalx",
+        "points": 330225,
+        "server": "117"
+      },
+      {
+        "rank": 811,
+        "commander": "DivineChaosArt",
+        "points": 197033,
+        "server": "117"
+      },
+      {
+        "rank": 825,
+        "commander": "Mc1301",
+        "points": 185022,
+        "server": "117"
+      },
+      {
+        "rank": 835,
+        "commander": "Louïc",
+        "points": 168871,
+        "server": "117"
+      },
+      {
+        "rank": 850,
+        "commander": "nachoocarp",
+        "points": 147024,
+        "server": "117"
+      },
+      {
+        "rank": 853,
+        "commander": "Elbosco",
+        "points": 144115,
+        "server": "117"
+      },
+      {
+        "rank": 856,
+        "commander": "PJA75",
+        "points": 135124,
+        "server": "117"
+      },
+      {
+        "rank": 857,
+        "commander": "Ardonel",
+        "points": 135084,
+        "server": "117"
+      },
+      {
+        "rank": 869,
+        "commander": "zebraone",
+        "points": 124523,
+        "server": "117"
+      },
+      {
+        "rank": 918,
+        "commander": "Leonida72",
+        "points": 76318,
+        "server": "117"
+      },
+      {
+        "rank": 930,
+        "commander": "Towels",
+        "points": 69800,
+        "server": "117"
+      },
+      {
+        "rank": 937,
+        "commander": "Bellaggio",
+        "points": 66260,
+        "server": "117"
+      },
+      {
+        "rank": 983,
+        "commander": "bruno74",
+        "points": 38484,
+        "server": "117"
+      },
+      {
+        "rank": 1007,
+        "commander": "Gribbs",
+        "points": 20360,
+        "server": "117"
+      },
+      {
+        "rank": 1011,
+        "commander": "guilegrand",
+        "points": 17548,
+        "server": "117"
+      },
+      {
+        "rank": 1081,
+        "commander": "LyansDaskans",
+        "points": 340,
+        "server": "117"
+      },
+      {
+        "rank": 1108,
+        "commander": "Makina68",
+        "points": 137,
+        "server": "117"
+      }
+    ],
+    "rank": 13,
+    "server_rank": 4
+  },
+  {
+    "alliance": "[РАТb] МирныеВоины",
+    "tag": "РАТb",
+    "name": "МирныеВоины",
+    "server": "121",
+    "members_count": 21,
+    "total_points": 26719943,
+    "avg_points": 1272378,
+    "top_commander": "ВИНДРОССЕЛЬ",
+    "top_points": 2371526,
+    "top_rank": 55,
+    "members": [
+      {
+        "rank": 55,
+        "commander": "ВИНДРОССЕЛЬ",
+        "points": 2371526,
+        "server": "121"
+      },
+      {
+        "rank": 227,
+        "commander": "Raketa31",
+        "points": 1605960,
+        "server": "121"
+      },
+      {
+        "rank": 230,
+        "commander": "Jacksonins",
+        "points": 1604876,
+        "server": "121"
+      },
+      {
+        "rank": 261,
+        "commander": "ТвойКотик",
+        "points": 1581150,
+        "server": "121"
+      },
+      {
+        "rank": 271,
+        "commander": "Lirikas",
+        "points": 1571794,
+        "server": "121"
+      },
+      {
+        "rank": 275,
+        "commander": "Емеля1995",
+        "points": 1567321,
+        "server": "121"
+      },
+      {
+        "rank": 291,
+        "commander": "Типа",
+        "points": 1549405,
+        "server": "121"
+      },
+      {
+        "rank": 298,
+        "commander": "Кристи333",
+        "points": 1542463,
+        "server": "121"
+      },
+      {
+        "rank": 313,
+        "commander": "DrKru",
+        "points": 1534464,
+        "server": "121"
+      },
+      {
+        "rank": 319,
+        "commander": "GaSHik",
+        "points": 1533336,
+        "server": "121"
+      },
+      {
+        "rank": 324,
+        "commander": "Элени",
+        "points": 1529911,
+        "server": "121"
+      },
+      {
+        "rank": 326,
+        "commander": "КАМА-ПУЛЯ",
+        "points": 1526364,
+        "server": "121"
+      },
+      {
+        "rank": 332,
+        "commander": "Vatkny",
+        "points": 1524940,
+        "server": "121"
+      },
+      {
+        "rank": 353,
+        "commander": "ALEXANDDR",
+        "points": 1514714,
+        "server": "121"
+      },
+      {
+        "rank": 366,
+        "commander": "ЛИЧ",
+        "points": 1509346,
+        "server": "121"
+      },
+      {
+        "rank": 466,
+        "commander": "Лэсси",
+        "points": 1025700,
+        "server": "121"
+      },
+      {
+        "rank": 571,
+        "commander": "Xenija",
+        "points": 675976,
+        "server": "121"
+      },
+      {
+        "rank": 669,
+        "commander": "UQcoldы",
+        "points": 491180,
+        "server": "121"
+      },
+      {
+        "rank": 744,
+        "commander": "Воин77",
+        "points": 344385,
+        "server": "121"
+      },
+      {
+        "rank": 922,
+        "commander": "пашок1000",
+        "points": 74522,
+        "server": "121"
+      },
+      {
+        "rank": 980,
+        "commander": "Ака23",
+        "points": 40610,
+        "server": "121"
+      }
+    ],
+    "rank": 14,
+    "server_rank": 10
+  },
+  {
+    "alliance": "[Bigg] Бароны",
+    "tag": "Bigg",
+    "name": "Бароны",
+    "server": "117",
+    "members_count": 33,
+    "total_points": 26071263,
+    "avg_points": 790038,
+    "top_commander": "Godfather°",
+    "top_points": 2673990,
+    "top_rank": 36,
+    "members": [
+      {
+        "rank": 36,
+        "commander": "Godfather°",
+        "points": 2673990,
+        "server": "117"
+      },
+      {
+        "rank": 62,
+        "commander": "Старичек",
+        "points": 2284051,
+        "server": "117"
+      },
+      {
+        "rank": 94,
+        "commander": "UsamaBogdanLaden",
+        "points": 2021569,
+        "server": "117"
+      },
+      {
+        "rank": 224,
+        "commander": "Karinkasss",
+        "points": 1607912,
+        "server": "117"
+      },
+      {
+        "rank": 352,
+        "commander": "L-first",
+        "points": 1515144,
+        "server": "117"
+      },
+      {
+        "rank": 384,
+        "commander": "Kostayn7695",
+        "points": 1467641,
+        "server": "117"
+      },
+      {
+        "rank": 387,
+        "commander": "StraPonASSa",
+        "points": 1452042,
+        "server": "117"
+      },
+      {
+        "rank": 394,
+        "commander": "LichKinG",
+        "points": 1423233,
+        "server": "117"
+      },
+      {
+        "rank": 419,
+        "commander": "dobrodey",
+        "points": 1225206,
+        "server": "117"
+      },
+      {
+        "rank": 441,
+        "commander": "Hodjachij",
+        "points": 1109406,
+        "server": "117"
+      },
+      {
+        "rank": 444,
+        "commander": "Aylinn",
+        "points": 1087927,
+        "server": "117"
+      },
+      {
+        "rank": 465,
+        "commander": "Karakhan",
+        "points": 1026111,
+        "server": "117"
+      },
+      {
+        "rank": 478,
+        "commander": "Rageroad",
+        "points": 948294,
+        "server": "117"
+      },
+      {
+        "rank": 488,
+        "commander": "SDFX",
+        "points": 920364,
+        "server": "117"
+      },
+      {
+        "rank": 501,
+        "commander": "BORZ-95",
+        "points": 888988,
+        "server": "117"
+      },
+      {
+        "rank": 531,
+        "commander": "Badhead",
+        "points": 798197,
+        "server": "117"
+      },
+      {
+        "rank": 580,
+        "commander": "kilmoger",
+        "points": 663482,
+        "server": "117"
+      },
+      {
+        "rank": 627,
+        "commander": "xx1x",
+        "points": 559605,
+        "server": "117"
+      },
+      {
+        "rank": 628,
+        "commander": "Бутрагенио",
+        "points": 559117,
+        "server": "117"
+      },
+      {
+        "rank": 658,
+        "commander": "XũФїGắNka",
+        "points": 517256,
+        "server": "117"
+      },
+      {
+        "rank": 662,
+        "commander": "Ceretadon",
+        "points": 509720,
+        "server": "117"
+      },
+      {
+        "rank": 790,
+        "commander": "дддимитриии",
+        "points": 234380,
+        "server": "117"
+      },
+      {
+        "rank": 829,
+        "commander": "VicTOR",
+        "points": 181061,
+        "server": "117"
+      },
+      {
+        "rank": 889,
+        "commander": "Otkir",
+        "points": 98330,
+        "server": "117"
+      },
+      {
+        "rank": 921,
+        "commander": "владкмс",
+        "points": 75125,
+        "server": "117"
+      },
+      {
+        "rank": 926,
+        "commander": "Misea007",
+        "points": 70349,
+        "server": "117"
+      },
+      {
+        "rank": 931,
+        "commander": "Sensei88",
+        "points": 69051,
+        "server": "117"
+      },
+      {
+        "rank": 973,
+        "commander": "danielraim",
+        "points": 46220,
+        "server": "117"
+      },
+      {
+        "rank": 993,
+        "commander": "Algerien19",
+        "points": 30890,
+        "server": "117"
+      },
+      {
+        "rank": 1029,
+        "commander": "EllieG",
+        "points": 5310,
+        "server": "117"
+      },
+      {
+        "rank": 1057,
+        "commander": "Анастэйша23",
+        "points": 1092,
+        "server": "117"
+      },
+      {
+        "rank": 1114,
+        "commander": "Venoma",
+        "points": 120,
+        "server": "117"
+      },
+      {
+        "rank": 1131,
+        "commander": "UZBEKISTAN26",
+        "points": 80,
+        "server": "117"
+      }
+    ],
+    "rank": 15,
+    "server_rank": 5
+  },
+  {
+    "alliance": "[RiFT] Bulwark",
+    "tag": "RiFT",
+    "name": "Bulwark",
+    "server": "121",
+    "members_count": 17,
+    "total_points": 21298641,
+    "avg_points": 1252861,
+    "top_commander": "Хан666",
+    "top_points": 2322819,
+    "top_rank": 58,
+    "members": [
+      {
+        "rank": 58,
+        "commander": "Хан666",
+        "points": 2322819,
+        "server": "121"
+      },
+      {
+        "rank": 73,
+        "commander": "Dimon125",
+        "points": 2194901,
+        "server": "121"
+      },
+      {
+        "rank": 81,
+        "commander": "Боромер",
+        "points": 2130080,
+        "server": "121"
+      },
+      {
+        "rank": 139,
+        "commander": "suveR",
+        "points": 1781177,
+        "server": "121"
+      },
+      {
+        "rank": 192,
+        "commander": "Davaynaberesh",
+        "points": 1649910,
+        "server": "121"
+      },
+      {
+        "rank": 201,
+        "commander": "YggSvidar",
+        "points": 1635210,
+        "server": "121"
+      },
+      {
+        "rank": 234,
+        "commander": "Maks2305",
+        "points": 1602694,
+        "server": "121"
+      },
+      {
+        "rank": 281,
+        "commander": "Некусанный",
+        "points": 1556899,
+        "server": "121"
+      },
+      {
+        "rank": 286,
+        "commander": "KarolinaX",
+        "points": 1553983,
+        "server": "121"
+      },
+      {
+        "rank": 417,
+        "commander": "Al-Sarkisov",
+        "points": 1235731,
+        "server": "121"
+      },
+      {
+        "rank": 554,
+        "commander": "Kaatyaa",
+        "points": 739428,
+        "server": "121"
+      },
+      {
+        "rank": 643,
+        "commander": "BatyaRF",
+        "points": 541129,
+        "server": "121"
+      },
+      {
+        "rank": 661,
+        "commander": "MacStar",
+        "points": 511403,
+        "server": "121"
+      },
+      {
+        "rank": 665,
+        "commander": "КомA",
+        "points": 503640,
+        "server": "121"
+      },
+      {
+        "rank": 666,
+        "commander": "RenDiks",
+        "points": 496049,
+        "server": "121"
+      },
+      {
+        "rank": 687,
+        "commander": "DePutoPadre",
+        "points": 450357,
+        "server": "121"
+      },
+      {
+        "rank": 720,
+        "commander": "meveric",
+        "points": 393231,
+        "server": "121"
+      }
+    ],
+    "rank": 16,
+    "server_rank": 11
+  },
+  {
+    "alliance": "[Arg0] Argonaut",
+    "tag": "Arg0",
+    "name": "Argonaut",
+    "server": "121",
+    "members_count": 19,
+    "total_points": 20027647,
+    "avg_points": 1054086,
+    "top_commander": "Kahka",
+    "top_points": 3175421,
+    "top_rank": 22,
+    "members": [
+      {
+        "rank": 22,
+        "commander": "Kahka",
+        "points": 3175421,
+        "server": "121"
+      },
+      {
+        "rank": 112,
+        "commander": "Инсайт",
+        "points": 1900152,
+        "server": "121"
+      },
+      {
+        "rank": 127,
+        "commander": "Артемий111",
+        "points": 1819514,
+        "server": "121"
+      },
+      {
+        "rank": 132,
+        "commander": "Лисичка",
+        "points": 1793321,
+        "server": "121"
+      },
+      {
+        "rank": 168,
+        "commander": "AndreyVER",
+        "points": 1705014,
+        "server": "121"
+      },
+      {
+        "rank": 211,
+        "commander": "Lin0593",
+        "points": 1620662,
+        "server": "121"
+      },
+      {
+        "rank": 325,
+        "commander": "Evgesha174",
+        "points": 1528069,
+        "server": "121"
+      },
+      {
+        "rank": 388,
+        "commander": "SuumCuique",
+        "points": 1451905,
+        "server": "121"
+      },
+      {
+        "rank": 482,
+        "commander": "OnlineDV",
+        "points": 929945,
+        "server": "121"
+      },
+      {
+        "rank": 574,
+        "commander": "prostoSerega",
+        "points": 670340,
+        "server": "121"
+      },
+      {
+        "rank": 589,
+        "commander": "ceme4ka22reg",
+        "points": 629150,
+        "server": "121"
+      },
+      {
+        "rank": 620,
+        "commander": "ЗлОдЕй",
+        "points": 570674,
+        "server": "121"
+      },
+      {
+        "rank": 672,
+        "commander": "Deltoroa",
+        "points": 485643,
+        "server": "121"
+      },
+      {
+        "rank": 702,
+        "commander": "DIIX",
+        "points": 416538,
+        "server": "121"
+      },
+      {
+        "rank": 722,
+        "commander": "ABC1234567890",
+        "points": 390827,
+        "server": "121"
+      },
+      {
+        "rank": 724,
+        "commander": "Pichupido",
+        "points": 384324,
+        "server": "121"
+      },
+      {
+        "rank": 749,
+        "commander": "PavelPERUN",
+        "points": 331004,
+        "server": "121"
+      },
+      {
+        "rank": 866,
+        "commander": "Vintal",
+        "points": 127144,
+        "server": "121"
+      },
+      {
+        "rank": 890,
+        "commander": "catwitcher",
+        "points": 98000,
+        "server": "121"
+      }
+    ],
+    "rank": 17,
+    "server_rank": 12
+  },
+  {
+    "alliance": "[FRE5] FreeRealms5",
+    "tag": "FRE5",
+    "name": "FreeRealms5",
+    "server": "121",
+    "members_count": 22,
+    "total_points": 19537976,
+    "avg_points": 888089,
+    "top_commander": "Mordor1388",
+    "top_points": 2377015,
+    "top_rank": 52,
+    "members": [
+      {
+        "rank": 52,
+        "commander": "Mordor1388",
+        "points": 2377015,
+        "server": "121"
+      },
+      {
+        "rank": 171,
+        "commander": "Brovkov94",
+        "points": 1699131,
+        "server": "121"
+      },
+      {
+        "rank": 250,
+        "commander": "Tomatik",
+        "points": 1587741,
+        "server": "121"
+      },
+      {
+        "rank": 279,
+        "commander": "SweetCandyy",
+        "points": 1558930,
+        "server": "121"
+      },
+      {
+        "rank": 283,
+        "commander": "Torrik",
+        "points": 1555696,
+        "server": "121"
+      },
+      {
+        "rank": 367,
+        "commander": "igore4ek88",
+        "points": 1508219,
+        "server": "121"
+      },
+      {
+        "rank": 370,
+        "commander": "Голодный",
+        "points": 1507598,
+        "server": "121"
+      },
+      {
+        "rank": 494,
+        "commander": "Бисмарк",
+        "points": 901956,
+        "server": "121"
+      },
+      {
+        "rank": 505,
+        "commander": "Мак84",
+        "points": 883509,
+        "server": "121"
+      },
+      {
+        "rank": 526,
+        "commander": "ФеяАвгуста2026",
+        "points": 816283,
+        "server": "121"
+      },
+      {
+        "rank": 528,
+        "commander": "скаюша",
+        "points": 814495,
+        "server": "121"
+      },
+      {
+        "rank": 555,
+        "commander": "Сонная",
+        "points": 736687,
+        "server": "121"
+      },
+      {
+        "rank": 560,
+        "commander": "gubernator",
+        "points": 722526,
+        "server": "121"
+      },
+      {
+        "rank": 593,
+        "commander": "nikoly",
+        "points": 619084,
+        "server": "121"
+      },
+      {
+        "rank": 639,
+        "commander": "Makarof31",
+        "points": 544989,
+        "server": "121"
+      },
+      {
+        "rank": 648,
+        "commander": "Sergei2609",
+        "points": 531710,
+        "server": "121"
+      },
+      {
+        "rank": 689,
+        "commander": "Dmitry-",
+        "points": 449336,
+        "server": "121"
+      },
+      {
+        "rank": 754,
+        "commander": "TEMA007",
+        "points": 313628,
+        "server": "121"
+      },
+      {
+        "rank": 797,
+        "commander": "ЗЛО666",
+        "points": 223251,
+        "server": "121"
+      },
+      {
+        "rank": 843,
+        "commander": "ツMamaStiflera",
+        "points": 153000,
+        "server": "121"
+      },
+      {
+        "rank": 1014,
+        "commander": "mashura2",
+        "points": 16680,
+        "server": "121"
+      },
+      {
+        "rank": 1015,
+        "commander": "ТермокоП196",
+        "points": 16512,
+        "server": "121"
+      }
+    ],
+    "rank": 18,
+    "server_rank": 13
+  },
+  {
+    "alliance": "[AZT] AntiZombieTeam",
+    "tag": "AZT",
+    "name": "AntiZombieTeam",
+    "server": "117",
+    "members_count": 35,
+    "total_points": 19473013,
+    "avg_points": 556371,
+    "top_commander": "Boomboomberry",
+    "top_points": 1923523,
+    "top_rank": 108,
+    "members": [
+      {
+        "rank": 108,
+        "commander": "Boomboomberry",
+        "points": 1923523,
+        "server": "117"
+      },
+      {
+        "rank": 180,
+        "commander": "LieveVan",
+        "points": 1680597,
+        "server": "117"
+      },
+      {
+        "rank": 228,
+        "commander": "LilD",
+        "points": 1605876,
+        "server": "117"
+      },
+      {
+        "rank": 427,
+        "commander": "kane09",
+        "points": 1174546,
+        "server": "117"
+      },
+      {
+        "rank": 449,
+        "commander": "jf17",
+        "points": 1074646,
+        "server": "117"
+      },
+      {
+        "rank": 450,
+        "commander": "Arpz",
+        "points": 1073584,
+        "server": "117"
+      },
+      {
+        "rank": 460,
+        "commander": "Honeyamber",
+        "points": 1049709,
+        "server": "117"
+      },
+      {
+        "rank": 462,
+        "commander": "지하여자군totem",
+        "points": 1041139,
+        "server": "117"
+      },
+      {
+        "rank": 477,
+        "commander": "evrenhalo",
+        "points": 953444,
+        "server": "117"
+      },
+      {
+        "rank": 496,
+        "commander": "Mfsz81",
+        "points": 893693,
+        "server": "117"
+      },
+      {
+        "rank": 513,
+        "commander": "어쩔TV",
+        "points": 857634,
+        "server": "117"
+      },
+      {
+        "rank": 515,
+        "commander": "Thirdspace",
+        "points": 845093,
+        "server": "117"
+      },
+      {
+        "rank": 558,
+        "commander": "priv8",
+        "points": 725796,
+        "server": "117"
+      },
+      {
+        "rank": 564,
+        "commander": "Cao골든야옹이",
+        "points": 699424,
+        "server": "117"
+      },
+      {
+        "rank": 644,
+        "commander": "hiroash240",
+        "points": 538954,
+        "server": "117"
+      },
+      {
+        "rank": 657,
+        "commander": "Bahar0690",
+        "points": 518061,
+        "server": "117"
+      },
+      {
+        "rank": 676,
+        "commander": "DubsV2",
+        "points": 474888,
+        "server": "117"
+      },
+      {
+        "rank": 729,
+        "commander": "MajsterJoe",
+        "points": 377678,
+        "server": "117"
+      },
+      {
+        "rank": 752,
+        "commander": "Sammy41",
+        "points": 325335,
+        "server": "117"
+      },
+      {
+        "rank": 758,
+        "commander": "JustMeWondering",
+        "points": 303615,
+        "server": "117"
+      },
+      {
+        "rank": 775,
+        "commander": "Yamen97",
+        "points": 263136,
+        "server": "117"
+      },
+      {
+        "rank": 787,
+        "commander": "mountaineer",
+        "points": 239958,
+        "server": "117"
+      },
+      {
+        "rank": 795,
+        "commander": "ZombieKiller544",
+        "points": 227331,
+        "server": "117"
+      },
+      {
+        "rank": 863,
+        "commander": "XJC",
+        "points": 128369,
+        "server": "117"
+      },
+      {
+        "rank": 864,
+        "commander": "ÑîĞHŤМĂŘÉ",
+        "points": 128197,
+        "server": "117"
+      },
+      {
+        "rank": 883,
+        "commander": "打怪獸Zero",
+        "points": 105052,
+        "server": "117"
+      },
+      {
+        "rank": 908,
+        "commander": "잘하는데Adept",
+        "points": 85217,
+        "server": "117"
+      },
+      {
+        "rank": 912,
+        "commander": "Penguin3001",
+        "points": 82040,
+        "server": "117"
+      },
+      {
+        "rank": 996,
+        "commander": "ChristIsKing4Ev",
+        "points": 30010,
+        "server": "117"
+      },
+      {
+        "rank": 998,
+        "commander": "Mad~Man",
+        "points": 29040,
+        "server": "117"
+      },
+      {
+        "rank": 1020,
+        "commander": "CPTRocketman",
+        "points": 10986,
+        "server": "117"
+      },
+      {
+        "rank": 1037,
+        "commander": "kocholo",
+        "points": 3882,
+        "server": "117"
+      },
+      {
+        "rank": 1056,
+        "commander": "Pauliewalnuts",
+        "points": 1140,
+        "server": "117"
+      },
+      {
+        "rank": 1062,
+        "commander": "NellieMoon",
+        "points": 780,
+        "server": "117"
+      },
+      {
+        "rank": 1067,
+        "commander": "TdoggTrav",
+        "points": 640,
+        "server": "117"
+      }
+    ],
+    "rank": 19,
+    "server_rank": 6
+  },
+  {
+    "alliance": "UJFD] JustForvarD",
+    "tag": "",
+    "name": "UJFD] JustForvarD",
+    "server": "121",
+    "members_count": 18,
+    "total_points": 19071084,
+    "avg_points": 1059504,
+    "top_commander": "Серафим666",
+    "top_points": 3373917,
+    "top_rank": 19,
+    "members": [
+      {
+        "rank": 19,
+        "commander": "Серафим666",
+        "points": 3373917,
+        "server": "121"
+      },
+      {
+        "rank": 96,
+        "commander": "Billy-Butcher",
+        "points": 2017503,
+        "server": "121"
+      },
+      {
+        "rank": 217,
+        "commander": "Shvilig",
+        "points": 1615180,
+        "server": "121"
+      },
+      {
+        "rank": 231,
+        "commander": "Вета1103",
+        "points": 1604500,
+        "server": "121"
+      },
+      {
+        "rank": 247,
+        "commander": "Ariel119",
+        "points": 1591667,
+        "server": "121"
+      },
+      {
+        "rank": 377,
+        "commander": "strategh",
+        "points": 1503349,
+        "server": "121"
+      },
+      {
+        "rank": 411,
+        "commander": "RxZr",
+        "points": 1280456,
+        "server": "121"
+      },
+      {
+        "rank": 426,
+        "commander": "Kobolid",
+        "points": 1176009,
+        "server": "121"
+      },
+      {
+        "rank": 481,
+        "commander": "Узурпаторёнок",
+        "points": 936180,
+        "server": "121"
+      },
+      {
+        "rank": 495,
+        "commander": "LIMB",
+        "points": 894390,
+        "server": "121"
+      },
+      {
+        "rank": 522,
+        "commander": "ВЗPЫB",
+        "points": 824873,
+        "server": "121"
+      },
+      {
+        "rank": 592,
+        "commander": "ASUY",
+        "points": 624106,
+        "server": "121"
+      },
+      {
+        "rank": 597,
+        "commander": "sirius17",
+        "points": 609680,
+        "server": "121"
+      },
+      {
+        "rank": 617,
+        "commander": "TURiST",
+        "points": 572624,
+        "server": "121"
+      },
+      {
+        "rank": 820,
+        "commander": "яЖорик",
+        "points": 189323,
+        "server": "121"
+      },
+      {
+        "rank": 878,
+        "commander": "Gariksso",
+        "points": 110860,
+        "server": "121"
+      },
+      {
+        "rank": 897,
+        "commander": "odissey",
+        "points": 93910,
+        "server": "121"
+      },
+      {
+        "rank": 957,
+        "commander": "MightyMario",
+        "points": 52557,
+        "server": "121"
+      }
+    ],
+    "rank": 20,
+    "server_rank": 14
+  },
+  {
+    "alliance": "[Sm20] Сменщики",
+    "tag": "Sm20",
+    "name": "Сменщики",
+    "server": "121",
+    "members_count": 12,
+    "total_points": 13189892,
+    "avg_points": 1099157,
+    "top_commander": "Jeck9",
+    "top_points": 2835518,
+    "top_rank": 33,
+    "members": [
+      {
+        "rank": 33,
+        "commander": "Jeck9",
+        "points": 2835518,
+        "server": "121"
+      },
+      {
+        "rank": 46,
+        "commander": "Maks080187",
+        "points": 2468917,
+        "server": "121"
+      },
+      {
+        "rank": 113,
+        "commander": "Сокол-007",
+        "points": 1898637,
+        "server": "121"
+      },
+      {
+        "rank": 149,
+        "commander": "Hawk197",
+        "points": 1762106,
+        "server": "121"
+      },
+      {
+        "rank": 274,
+        "commander": "Qor",
+        "points": 1567438,
+        "server": "121"
+      },
+      {
+        "rank": 577,
+        "commander": "MonomahFirst",
+        "points": 668960,
+        "server": "121"
+      },
+      {
+        "rank": 607,
+        "commander": "Shamil7777",
+        "points": 590256,
+        "server": "121"
+      },
+      {
+        "rank": 636,
+        "commander": "Ikar700",
+        "points": 547883,
+        "server": "121"
+      },
+      {
+        "rank": 756,
+        "commander": "Uchiha1Sasuke",
+        "points": 309890,
+        "server": "121"
+      },
+      {
+        "rank": 786,
+        "commander": "АНасРать78rus",
+        "points": 240000,
+        "server": "121"
+      },
+      {
+        "rank": 815,
+        "commander": "TIRRAN",
+        "points": 193287,
+        "server": "121"
+      },
+      {
+        "rank": 882,
+        "commander": "Fakirana",
+        "points": 107000,
+        "server": "121"
+      }
+    ],
+    "rank": 21,
+    "server_rank": 15
+  },
+  {
+    "alliance": "[SaFe] SafeHaven",
+    "tag": "SaFe",
+    "name": "SafeHaven",
+    "server": "121",
+    "members_count": 10,
+    "total_points": 12836833,
+    "avg_points": 1283683,
+    "top_commander": "PersonalJesus",
+    "top_points": 5315701,
+    "top_rank": 9,
+    "members": [
+      {
+        "rank": 9,
+        "commander": "PersonalJesus",
+        "points": 5315701,
+        "server": "121"
+      },
+      {
+        "rank": 104,
+        "commander": "ВредныйСтарыйДед",
+        "points": 1972568,
+        "server": "121"
+      },
+      {
+        "rank": 183,
+        "commander": "EvilNoob",
+        "points": 1672245,
+        "server": "121"
+      },
+      {
+        "rank": 365,
+        "commander": "Амиго74",
+        "points": 1509620,
+        "server": "121"
+      },
+      {
+        "rank": 525,
+        "commander": "LumiStar",
+        "points": 818074,
+        "server": "121"
+      },
+      {
+        "rank": 581,
+        "commander": "TimoshEV",
+        "points": 661998,
+        "server": "121"
+      },
+      {
+        "rank": 686,
+        "commander": "ГенералДнище",
+        "points": 455190,
+        "server": "121"
+      },
+      {
+        "rank": 800,
+        "commander": "вИТуся",
+        "points": 218337,
+        "server": "121"
+      },
+      {
+        "rank": 855,
+        "commander": "myrvin",
+        "points": 137332,
+        "server": "121"
+      },
+      {
+        "rank": 920,
+        "commander": "XOMA123554321",
+        "points": 75768,
+        "server": "121"
+      }
+    ],
+    "rank": 22,
+    "server_rank": 16
+  },
+  {
+    "alliance": "[РAТb] МирныеВоины",
+    "tag": "РAТb",
+    "name": "МирныеВоины",
+    "server": "121",
+    "members_count": 8,
+    "total_points": 11761952,
+    "avg_points": 1470244,
+    "top_commander": "~Nikitichek~",
+    "top_points": 2019085,
+    "top_rank": 95,
+    "members": [
+      {
+        "rank": 95,
+        "commander": "~Nikitichek~",
+        "points": 2019085,
+        "server": "121"
+      },
+      {
+        "rank": 185,
+        "commander": "SORVIGOLOVA",
+        "points": 1669199,
+        "server": "121"
+      },
+      {
+        "rank": 186,
+        "commander": "9xRa",
+        "points": 1668754,
+        "server": "121"
+      },
+      {
+        "rank": 242,
+        "commander": "Fly",
+        "points": 1597648,
+        "server": "121"
+      },
+      {
+        "rank": 249,
+        "commander": "HuggySWAGy",
+        "points": 1587914,
+        "server": "121"
+      },
+      {
+        "rank": 399,
+        "commander": "Crash555",
+        "points": 1353168,
+        "server": "121"
+      },
+      {
+        "rank": 406,
+        "commander": "ХЧЕБУРАТОРХ",
+        "points": 1310225,
+        "server": "121"
+      },
+      {
+        "rank": 630,
+        "commander": "Мастерица",
+        "points": 555959,
+        "server": "121"
+      }
+    ],
+    "rank": 23,
+    "server_rank": 17
+  },
+  {
+    "alliance": "[РАТЬ] МирныеВоины",
+    "tag": "РАТЬ",
+    "name": "МирныеВоины",
+    "server": "121",
+    "members_count": 6,
+    "total_points": 11360028,
+    "avg_points": 1893338,
+    "top_commander": "-NIK-",
+    "top_points": 4284618,
+    "top_rank": 13,
+    "members": [
+      {
+        "rank": 13,
+        "commander": "-NIK-",
+        "points": 4284618,
+        "server": "121"
+      },
+      {
+        "rank": 163,
+        "commander": "Dragman",
+        "points": 1717703,
+        "server": "121"
+      },
+      {
+        "rank": 189,
+        "commander": "boria",
+        "points": 1659998,
+        "server": "121"
+      },
+      {
+        "rank": 296,
+        "commander": "•Бебтия•",
+        "points": 1545384,
+        "server": "121"
+      },
+      {
+        "rank": 329,
+        "commander": "A9dr8y",
+        "points": 1525550,
+        "server": "121"
+      },
+      {
+        "rank": 591,
+        "commander": "Vinpi",
+        "points": 626775,
+        "server": "121"
+      }
+    ],
+    "rank": 24,
+    "server_rank": 18
+  },
+  {
+    "alliance": "[ALIN] Алина",
+    "tag": "ALIN",
+    "name": "Алина",
+    "server": "117",
+    "members_count": 15,
+    "total_points": 11314416,
+    "avg_points": 754294,
+    "top_commander": "-Каратель",
+    "top_points": 1633707,
+    "top_rank": 202,
+    "members": [
+      {
+        "rank": 202,
+        "commander": "-Каратель",
+        "points": 1633707,
+        "server": "117"
+      },
+      {
+        "rank": 223,
+        "commander": "MõõnChïld",
+        "points": 1609954,
+        "server": "117"
+      },
+      {
+        "rank": 245,
+        "commander": "Denissa-",
+        "points": 1596499,
+        "server": "117"
+      },
+      {
+        "rank": 503,
+        "commander": "Katundr",
+        "points": 887181,
+        "server": "117"
+      },
+      {
+        "rank": 530,
+        "commander": "scratchup",
+        "points": 803554,
+        "server": "117"
+      },
+      {
+        "rank": 561,
+        "commander": "Desmos",
+        "points": 710532,
+        "server": "117"
+      },
+      {
+        "rank": 578,
+        "commander": "Skorp28rus",
+        "points": 668633,
+        "server": "117"
+      },
+      {
+        "rank": 584,
+        "commander": "EDHILCOY",
+        "points": 637640,
+        "server": "117"
+      },
+      {
+        "rank": 596,
+        "commander": "NoorNureke",
+        "points": 612669,
+        "server": "117"
+      },
+      {
+        "rank": 622,
+        "commander": "Merelin76",
+        "points": 569641,
+        "server": "117"
+      },
+      {
+        "rank": 632,
+        "commander": "Шира76",
+        "points": 551910,
+        "server": "117"
+      },
+      {
+        "rank": 654,
+        "commander": "Zealotam",
+        "points": 520728,
+        "server": "117"
+      },
+      {
+        "rank": 757,
+        "commander": "1370zero",
+        "points": 308654,
+        "server": "117"
+      },
+      {
+        "rank": 851,
+        "commander": "IpMan187",
+        "points": 147000,
+        "server": "117"
+      },
+      {
+        "rank": 950,
+        "commander": "Shinjitsu",
+        "points": 56114,
+        "server": "117"
+      }
+    ],
+    "rank": 25,
+    "server_rank": 7
+  },
+  {
+    "alliance": "[BiTz] СвятыеГрешники",
+    "tag": "BiTz",
+    "name": "СвятыеГрешники",
+    "server": "121",
+    "members_count": 11,
+    "total_points": 10280815,
+    "avg_points": 934619,
+    "top_commander": "Veloura",
+    "top_points": 2104585,
+    "top_rank": 84,
+    "members": [
+      {
+        "rank": 84,
+        "commander": "Veloura",
+        "points": 2104585,
+        "server": "121"
+      },
+      {
+        "rank": 160,
+        "commander": "Alex-67",
+        "points": 1727757,
+        "server": "121"
+      },
+      {
+        "rank": 263,
+        "commander": "Atills",
+        "points": 1579750,
+        "server": "121"
+      },
+      {
+        "rank": 277,
+        "commander": "dimentr",
+        "points": 1560979,
+        "server": "121"
+      },
+      {
+        "rank": 374,
+        "commander": "Енотик-*:",
+        "points": 1504486,
+        "server": "121"
+      },
+      {
+        "rank": 516,
+        "commander": "666Грешник666",
+        "points": 843258,
+        "server": "121"
+      },
+      {
+        "rank": 717,
+        "commander": "Seregas",
+        "points": 397500,
+        "server": "121"
+      },
+      {
+        "rank": 741,
+        "commander": "ЧерныйПлащ",
+        "points": 346540,
+        "server": "121"
+      },
+      {
+        "rank": 904,
+        "commander": "Старшина58",
+        "points": 89740,
+        "server": "121"
+      },
+      {
+        "rank": 909,
+        "commander": "КотТок",
+        "points": 85064,
+        "server": "121"
+      },
+      {
+        "rank": 978,
+        "commander": "xam696",
+        "points": 41156,
+        "server": "121"
+      }
+    ],
+    "rank": 26,
+    "server_rank": 19
+  },
+  {
+    "alliance": "[RFa] RisenFromAshes",
+    "tag": "RFa",
+    "name": "RisenFromAshes",
+    "server": "121",
+    "members_count": 18,
+    "total_points": 9954965,
+    "avg_points": 553053,
+    "top_commander": "stayjeny",
+    "top_points": 1746422,
+    "top_rank": 155,
+    "members": [
+      {
+        "rank": 155,
+        "commander": "stayjeny",
+        "points": 1746422,
+        "server": "121"
+      },
+      {
+        "rank": 480,
+        "commander": "ICT",
+        "points": 938617,
+        "server": "121"
+      },
+      {
+        "rank": 487,
+        "commander": "Виктор55555",
+        "points": 920774,
+        "server": "121"
+      },
+      {
+        "rank": 544,
+        "commander": "Chocolate-1077",
+        "points": 765610,
+        "server": "121"
+      },
+      {
+        "rank": 557,
+        "commander": "Анюта",
+        "points": 731753,
+        "server": "121"
+      },
+      {
+        "rank": 585,
+        "commander": "ДенчикЗеленоград",
+        "points": 637281,
+        "server": "121"
+      },
+      {
+        "rank": 619,
+        "commander": "мадина05",
+        "points": 570839,
+        "server": "121"
+      },
+      {
+        "rank": 652,
+        "commander": "ZavoT",
+        "points": 521909,
+        "server": "121"
+      },
+      {
+        "rank": 660,
+        "commander": "Лекс4587",
+        "points": 513646,
+        "server": "121"
+      },
+      {
+        "rank": 693,
+        "commander": "Лагаю",
+        "points": 438855,
+        "server": "121"
+      },
+      {
+        "rank": 713,
+        "commander": "Юмо",
+        "points": 401512,
+        "server": "121"
+      },
+      {
+        "rank": 719,
+        "commander": "seregax88893",
+        "points": 394459,
+        "server": "121"
+      },
+      {
+        "rank": 730,
+        "commander": "дедсега",
+        "points": 372847,
+        "server": "121"
+      },
+      {
+        "rank": 755,
+        "commander": "Tample",
+        "points": 311169,
+        "server": "121"
+      },
+      {
+        "rank": 776,
+        "commander": "Тема774",
+        "points": 258711,
+        "server": "121"
+      },
+      {
+        "rank": 816,
+        "commander": "Мария0110",
+        "points": 192229,
+        "server": "121"
+      },
+      {
+        "rank": 834,
+        "commander": "арава",
+        "points": 170332,
+        "server": "121"
+      },
+      {
+        "rank": 933,
+        "commander": "миха26",
+        "points": 68000,
+        "server": "121"
+      }
+    ],
+    "rank": 27,
+    "server_rank": 20
+  },
+  {
+    "alliance": "[Kraf] Орден",
+    "tag": "Kraf",
+    "name": "Орден",
+    "server": "121",
+    "members_count": 7,
+    "total_points": 8056413,
+    "avg_points": 1150916,
+    "top_commander": "Kolizey4545",
+    "top_points": 1981281,
+    "top_rank": 102,
+    "members": [
+      {
+        "rank": 102,
+        "commander": "Kolizey4545",
+        "points": 1981281,
+        "server": "121"
+      },
+      {
+        "rank": 198,
+        "commander": "Никлас",
+        "points": 1636020,
+        "server": "121"
+      },
+      {
+        "rank": 262,
+        "commander": "Guantanomo",
+        "points": 1579800,
+        "server": "121"
+      },
+      {
+        "rank": 395,
+        "commander": "Сфинксз",
+        "points": 1420101,
+        "server": "121"
+      },
+      {
+        "rank": 467,
+        "commander": "wolfвoлK",
+        "points": 1024835,
+        "server": "121"
+      },
+      {
+        "rank": 732,
+        "commander": "десептикон",
+        "points": 364147,
+        "server": "121"
+      },
+      {
+        "rank": 964,
+        "commander": "termit1981",
+        "points": 50229,
+        "server": "121"
+      }
+    ],
+    "rank": 28,
+    "server_rank": 21
+  },
+  {
+    "alliance": "[P2MP] NowaPolandia",
+    "tag": "P2MP",
+    "name": "NowaPolandia",
+    "server": "117",
+    "members_count": 16,
+    "total_points": 8044615,
+    "avg_points": 502788,
+    "top_commander": "Yzjeyabella",
+    "top_points": 1090830,
+    "top_rank": 443,
+    "members": [
+      {
+        "rank": 443,
+        "commander": "Yzjeyabella",
+        "points": 1090830,
+        "server": "117"
+      },
+      {
+        "rank": 451,
+        "commander": "Rzurzu",
+        "points": 1072833,
+        "server": "117"
+      },
+      {
+        "rank": 484,
+        "commander": "Luke0727",
+        "points": 924958,
+        "server": "117"
+      },
+      {
+        "rank": 489,
+        "commander": "Kiki008",
+        "points": 913772,
+        "server": "117"
+      },
+      {
+        "rank": 562,
+        "commander": "Flying 168",
+        "points": 709622,
+        "server": "117"
+      },
+      {
+        "rank": 572,
+        "commander": "LINK",
+        "points": 673872,
+        "server": "117"
+      },
+      {
+        "rank": 573,
+        "commander": "RedSectorA",
+        "points": 671590,
+        "server": "117"
+      },
+      {
+        "rank": 623,
+        "commander": "DrZombie",
+        "points": 567650,
+        "server": "117"
+      },
+      {
+        "rank": 656,
+        "commander": "ThePunisher000",
+        "points": 518628,
+        "server": "117"
+      },
+      {
+        "rank": 699,
+        "commander": "antono1",
+        "points": 423208,
+        "server": "117"
+      },
+      {
+        "rank": 742,
+        "commander": "s7r3s",
+        "points": 345950,
+        "server": "117"
+      },
+      {
+        "rank": 873,
+        "commander": "warcoolcation",
+        "points": 121403,
+        "server": "117"
+      },
+      {
+        "rank": 1036,
+        "commander": "KILLMUNGER",
+        "points": 4413,
+        "server": "117"
+      },
+      {
+        "rank": 1038,
+        "commander": "JSPEo",
+        "points": 3573,
+        "server": "117"
+      },
+      {
+        "rank": 1054,
+        "commander": "Trickzor",
+        "points": 1242,
+        "server": "117"
+      },
+      {
+        "rank": 1058,
+        "commander": "Torro75",
+        "points": 1071,
+        "server": "117"
+      }
+    ],
+    "rank": 29,
+    "server_rank": 8
+  },
+  {
+    "alliance": "[TSK1] TÜRKİYEE",
+    "tag": "TSK1",
+    "name": "TÜRKİYEE",
+    "server": "121",
+    "members_count": 7,
+    "total_points": 7992010,
+    "avg_points": 1141715,
+    "top_commander": "KaraSULTAN",
+    "top_points": 2323532,
+    "top_rank": 57,
+    "members": [
+      {
+        "rank": 57,
+        "commander": "KaraSULTAN",
+        "points": 2323532,
+        "server": "121"
+      },
+      {
+        "rank": 181,
+        "commander": "Blackhan",
+        "points": 1675638,
+        "server": "121"
+      },
+      {
+        "rank": 334,
+        "commander": "AircraftEngineer",
+        "points": 1524597,
+        "server": "121"
+      },
+      {
+        "rank": 412,
+        "commander": "ygit",
+        "points": 1274760,
+        "server": "121"
+      },
+      {
+        "rank": 616,
+        "commander": "Thaiboem",
+        "points": 577010,
+        "server": "121"
+      },
+      {
+        "rank": 635,
+        "commander": "VedatÖKK1",
+        "points": 550063,
+        "server": "121"
+      },
+      {
+        "rank": 934,
+        "commander": "HÜMA",
+        "points": 66410,
+        "server": "121"
+      }
+    ],
+    "rank": 30,
+    "server_rank": 22
+  },
+  {
+    "alliance": "[GSS] Guess",
+    "tag": "GSS",
+    "name": "Guess",
+    "server": "121",
+    "members_count": 7,
+    "total_points": 7697176,
+    "avg_points": 1099596,
+    "top_commander": "Тюменскийтать",
+    "top_points": 1890058,
+    "top_rank": 116,
+    "members": [
+      {
+        "rank": 116,
+        "commander": "Тюменскийтать",
+        "points": 1890058,
+        "server": "121"
+      },
+      {
+        "rank": 289,
+        "commander": "Swarog26ru",
+        "points": 1552244,
+        "server": "121"
+      },
+      {
+        "rank": 307,
+        "commander": "Tiki01",
+        "points": 1537648,
+        "server": "121"
+      },
+      {
+        "rank": 354,
+        "commander": "ВаХтер",
+        "points": 1513609,
+        "server": "121"
+      },
+      {
+        "rank": 579,
+        "commander": "A117",
+        "points": 667191,
+        "server": "121"
+      },
+      {
+        "rank": 690,
+        "commander": "Вакси",
+        "points": 446426,
+        "server": "121"
+      },
+      {
+        "rank": 902,
+        "commander": "seregDESANTURA",
+        "points": 90000,
+        "server": "121"
+      }
+    ],
+    "rank": 31,
+    "server_rank": 23
+  },
+  {
+    "alliance": "[1Lr] resistencia",
+    "tag": "1Lr",
+    "name": "resistencia",
+    "server": "117",
+    "members_count": 15,
+    "total_points": 7648029,
+    "avg_points": 509868,
+    "top_commander": "toyyy",
+    "top_points": 2376306,
+    "top_rank": 53,
+    "members": [
+      {
+        "rank": 53,
+        "commander": "toyyy",
+        "points": 2376306,
+        "server": "117"
+      },
+      {
+        "rank": 418,
+        "commander": "sisso",
+        "points": 1228630,
+        "server": "117"
+      },
+      {
+        "rank": 469,
+        "commander": "Shannely",
+        "points": 1013609,
+        "server": "117"
+      },
+      {
+        "rank": 508,
+        "commander": "Saoryliu",
+        "points": 879284,
+        "server": "117"
+      },
+      {
+        "rank": 614,
+        "commander": "ArgFree",
+        "points": 579958,
+        "server": "117"
+      },
+      {
+        "rank": 685,
+        "commander": "CAZT",
+        "points": 458687,
+        "server": "117"
+      },
+      {
+        "rank": 707,
+        "commander": "bodybuilderMaufw",
+        "points": 411244,
+        "server": "117"
+      },
+      {
+        "rank": 784,
+        "commander": "UnManco",
+        "points": 240411,
+        "server": "117"
+      },
+      {
+        "rank": 785,
+        "commander": "Malisorn",
+        "points": 240365,
+        "server": "117"
+      },
+      {
+        "rank": 872,
+        "commander": "Watergate",
+        "points": 121819,
+        "server": "117"
+      },
+      {
+        "rank": 946,
+        "commander": "mcc3",
+        "points": 57068,
+        "server": "117"
+      },
+      {
+        "rank": 982,
+        "commander": "Kungfool",
+        "points": 40000,
+        "server": "117"
+      },
+      {
+        "rank": 1083,
+        "commander": "Yaguito713",
+        "points": 288,
+        "server": "117"
+      },
+      {
+        "rank": 1090,
+        "commander": "wingsuitkiller",
+        "points": 243,
+        "server": "117"
+      },
+      {
+        "rank": 1119,
+        "commander": "Azul1527",
+        "points": 117,
+        "server": "117"
+      }
+    ],
+    "rank": 32,
+    "server_rank": 9
+  },
+  {
+    "alliance": "[TiR] Вольные",
+    "tag": "TiR",
+    "name": "Вольные",
+    "server": "121",
+    "members_count": 6,
+    "total_points": 7428298,
+    "avg_points": 1238049,
+    "top_commander": "Lolo68",
+    "top_points": 1706638,
+    "top_rank": 167,
+    "members": [
+      {
+        "rank": 167,
+        "commander": "Lolo68",
+        "points": 1706638,
+        "server": "121"
+      },
+      {
+        "rank": 216,
+        "commander": "Istour97",
+        "points": 1616247,
+        "server": "121"
+      },
+      {
+        "rank": 258,
+        "commander": "IMAB",
+        "points": 1582260,
+        "server": "121"
+      },
+      {
+        "rank": 376,
+        "commander": "Хрупкий-Жук",
+        "points": 1503982,
+        "server": "121"
+      },
+      {
+        "rank": 543,
+        "commander": "Chamisko",
+        "points": 770209,
+        "server": "121"
+      },
+      {
+        "rank": 779,
+        "commander": "бадамбумбер",
+        "points": 248962,
+        "server": "121"
+      }
+    ],
+    "rank": 33,
+    "server_rank": 24
+  },
+  {
+    "alliance": "[BİTZ] СвятыеГрешники",
+    "tag": "BİTZ",
+    "name": "СвятыеГрешники",
+    "server": "121",
+    "members_count": 5,
+    "total_points": 6053733,
+    "avg_points": 1210746,
+    "top_commander": "LaceAndLead",
+    "top_points": 1700984,
+    "top_rank": 170,
+    "members": [
+      {
+        "rank": 170,
+        "commander": "LaceAndLead",
+        "points": 1700984,
+        "server": "121"
+      },
+      {
+        "rank": 195,
+        "commander": "-AL-",
+        "points": 1644022,
+        "server": "121"
+      },
+      {
+        "rank": 254,
+        "commander": "Veradht",
+        "points": 1584545,
+        "server": "121"
+      },
+      {
+        "rank": 601,
+        "commander": "эд73",
+        "points": 603040,
+        "server": "121"
+      },
+      {
+        "rank": 653,
+        "commander": "АлексПро",
+        "points": 521142,
+        "server": "121"
+      }
+    ],
+    "rank": 34,
+    "server_rank": 25
+  },
+  {
+    "alliance": "[EUR] Cвepxnew",
+    "tag": "EUR",
+    "name": "Cвepxnew",
+    "server": "121",
+    "members_count": 5,
+    "total_points": 5757041,
+    "avg_points": 1151408,
+    "top_commander": "EUR",
+    "top_points": 1694144,
+    "top_rank": 175,
+    "members": [
+      {
+        "rank": 175,
+        "commander": "EUR",
+        "points": 1694144,
+        "server": "121"
+      },
+      {
+        "rank": 306,
+        "commander": "Lilite",
+        "points": 1538382,
+        "server": "121"
+      },
+      {
+        "rank": 424,
+        "commander": "ZEZAR",
+        "points": 1181110,
+        "server": "121"
+      },
+      {
+        "rank": 431,
+        "commander": "Кромсай",
+        "points": 1153351,
+        "server": "121"
+      },
+      {
+        "rank": 819,
+        "commander": "Mimipini",
+        "points": 190054,
+        "server": "121"
+      }
+    ],
+    "rank": 35,
+    "server_rank": 26
+  },
+  {
+    "alliance": "[RLeg] RUSLegion",
+    "tag": "RLeg",
+    "name": "RUSLegion",
+    "server": "121",
+    "members_count": 8,
+    "total_points": 5380739,
+    "avg_points": 672592,
+    "top_commander": "Lxceros",
+    "top_points": 1504352,
+    "top_rank": 375,
+    "members": [
+      {
+        "rank": 375,
+        "commander": "Lxceros",
+        "points": 1504352,
+        "server": "121"
+      },
+      {
+        "rank": 519,
+        "commander": "Youngj",
+        "points": 834945,
+        "server": "121"
+      },
+      {
+        "rank": 520,
+        "commander": "kViki",
+        "points": 829746,
+        "server": "121"
+      },
+      {
+        "rank": 521,
+        "commander": "SergeyK-vrn",
+        "points": 828093,
+        "server": "121"
+      },
+      {
+        "rank": 710,
+        "commander": "Polli95",
+        "points": 403256,
+        "server": "121"
+      },
+      {
+        "rank": 737,
+        "commander": "СладкийОгурец",
+        "points": 355338,
+        "server": "121"
+      },
+      {
+        "rank": 738,
+        "commander": "Пехота123",
+        "points": 352060,
+        "server": "121"
+      },
+      {
+        "rank": 770,
+        "commander": "Мирария",
+        "points": 272949,
+        "server": "121"
+      }
+    ],
+    "rank": 36,
+    "server_rank": 27
+  },
+  {
+    "alliance": "[KNGS] Короли",
+    "tag": "KNGS",
+    "name": "Короли",
+    "server": "121",
+    "members_count": 4,
+    "total_points": 5203011,
+    "avg_points": 1300752,
+    "top_commander": "-MAGIC-",
+    "top_points": 1980756,
+    "top_rank": 103,
+    "members": [
+      {
+        "rank": 103,
+        "commander": "-MAGIC-",
+        "points": 1980756,
+        "server": "121"
+      },
+      {
+        "rank": 199,
+        "commander": "феникс111",
+        "points": 1635447,
+        "server": "121"
+      },
+      {
+        "rank": 267,
+        "commander": "нетфантазии",
+        "points": 1576250,
+        "server": "121"
+      },
+      {
+        "rank": 1022,
+        "commander": "юлиус",
+        "points": 10558,
+        "server": "121"
+      }
+    ],
+    "rank": 37,
+    "server_rank": 28
+  },
+  {
+    "alliance": "[TIOX] ПоХуисты",
+    "tag": "TIOX",
+    "name": "ПоХуисты",
+    "server": "117",
+    "members_count": 15,
+    "total_points": 4888148,
+    "avg_points": 325876,
+    "top_commander": "*Helen**",
+    "top_points": 926582,
+    "top_rank": 483,
+    "members": [
+      {
+        "rank": 483,
+        "commander": "*Helen**",
+        "points": 926582,
+        "server": "117"
+      },
+      {
+        "rank": 565,
+        "commander": "ВоДяНой",
+        "points": 697496,
+        "server": "117"
+      },
+      {
+        "rank": 570,
+        "commander": "Zoryan",
+        "points": 679782,
+        "server": "117"
+      },
+      {
+        "rank": 590,
+        "commander": "румпельштицхин",
+        "points": 627080,
+        "server": "117"
+      },
+      {
+        "rank": 678,
+        "commander": "Социк",
+        "points": 470030,
+        "server": "117"
+      },
+      {
+        "rank": 698,
+        "commander": "MAGZ",
+        "points": 426545,
+        "server": "117"
+      },
+      {
+        "rank": 769,
+        "commander": "MasteRS",
+        "points": 274809,
+        "server": "117"
+      },
+      {
+        "rank": 772,
+        "commander": "Ali83",
+        "points": 270092,
+        "server": "117"
+      },
+      {
+        "rank": 812,
+        "commander": "Muzika",
+        "points": 195600,
+        "server": "117"
+      },
+      {
+        "rank": 848,
+        "commander": "Alexei-pervui",
+        "points": 149452,
+        "server": "117"
+      },
+      {
+        "rank": 885,
+        "commander": "Ivanmask",
+        "points": 104006,
+        "server": "117"
+      },
+      {
+        "rank": 958,
+        "commander": "0202Rom",
+        "points": 52481,
+        "server": "117"
+      },
+      {
+        "rank": 1018,
+        "commander": "Вонгонк",
+        "points": 14100,
+        "server": "117"
+      },
+      {
+        "rank": 1134,
+        "commander": "Elkseur",
+        "points": 72,
+        "server": "117"
+      },
+      {
+        "rank": 1168,
+        "commander": "kuner",
+        "points": 21,
+        "server": "117"
+      }
+    ],
+    "rank": 38,
+    "server_rank": 10
+  },
+  {
+    "alliance": "[TSK1] TÜRKİYEe",
+    "tag": "TSK1",
+    "name": "TÜRKİYEe",
+    "server": "121",
+    "members_count": 3,
+    "total_points": 4720540,
+    "avg_points": 1573513,
+    "top_commander": "GEZGİN44",
+    "top_points": 2331426,
+    "top_rank": 56,
+    "members": [
+      {
+        "rank": 56,
+        "commander": "GEZGİN44",
+        "points": 2331426,
+        "server": "121"
+      },
+      {
+        "rank": 364,
+        "commander": "1982БЕК",
+        "points": 1509966,
+        "server": "121"
+      },
+      {
+        "rank": 509,
+        "commander": "Kraliçe1995",
+        "points": 879148,
+        "server": "121"
+      }
+    ],
+    "rank": 39,
+    "server_rank": 29
+  },
+  {
+    "alliance": "[WaRR] WarriorsOfRealms",
+    "tag": "WaRR",
+    "name": "WarriorsOfRealms",
+    "server": "121",
+    "members_count": 5,
+    "total_points": 3811640,
+    "avg_points": 762328,
+    "top_commander": "SofiBur",
+    "top_points": 1532881,
+    "top_rank": 320,
+    "members": [
+      {
+        "rank": 320,
+        "commander": "SofiBur",
+        "points": 1532881,
+        "server": "121"
+      },
+      {
+        "rank": 340,
+        "commander": "гомэр",
+        "points": 1521990,
+        "server": "121"
+      },
+      {
+        "rank": 716,
+        "commander": "ved21",
+        "points": 398500,
+        "server": "121"
+      },
+      {
+        "rank": 809,
+        "commander": "TheCOLLECTOR",
+        "points": 199532,
+        "server": "121"
+      },
+      {
+        "rank": 840,
+        "commander": "anabioz",
+        "points": 158737,
+        "server": "121"
+      }
+    ],
+    "rank": 40,
+    "server_rank": 30
+  },
+  {
+    "alliance": "[BİTz] СвятыеГрешники",
+    "tag": "BİTz",
+    "name": "СвятыеГрешники",
+    "server": "121",
+    "members_count": 4,
+    "total_points": 3629640,
+    "avg_points": 907410,
+    "top_commander": "DaXoK",
+    "top_points": 1601397,
+    "top_rank": 236,
+    "members": [
+      {
+        "rank": 236,
+        "commander": "DaXoK",
+        "points": 1601397,
+        "server": "121"
+      },
+      {
+        "rank": 361,
+        "commander": "«Турист•",
+        "points": 1510270,
+        "server": "121"
+      },
+      {
+        "rank": 683,
+        "commander": "TerryBrum",
+        "points": 461175,
+        "server": "121"
+      },
+      {
+        "rank": 949,
+        "commander": "хуба",
+        "points": 56798,
+        "server": "121"
+      }
+    ],
+    "rank": 41,
+    "server_rank": 31
+  },
+  {
+    "alliance": "[CORP] CORPORATION",
+    "tag": "CORP",
+    "name": "CORPORATION",
+    "server": "121",
+    "members_count": 6,
+    "total_points": 2593997,
+    "avg_points": 432332,
+    "top_commander": "yJIblбka",
+    "top_points": 959820,
+    "top_rank": 476,
+    "members": [
+      {
+        "rank": 476,
+        "commander": "yJIblбka",
+        "points": 959820,
+        "server": "121"
+      },
+      {
+        "rank": 566,
+        "commander": "Баламут27",
+        "points": 694225,
+        "server": "121"
+      },
+      {
+        "rank": 600,
+        "commander": "Фикусклан",
+        "points": 605120,
+        "server": "121"
+      },
+      {
+        "rank": 814,
+        "commander": "SerTer3",
+        "points": 193440,
+        "server": "121"
+      },
+      {
+        "rank": 910,
+        "commander": "Антон89",
+        "points": 84228,
+        "server": "121"
+      },
+      {
+        "rank": 945,
+        "commander": "OttomanEmpire01",
+        "points": 57164,
+        "server": "121"
+      }
+    ],
+    "rank": 42,
+    "server_rank": 32
+  },
+  {
+    "alliance": "[PICO] PINACOLADA",
+    "tag": "PICO",
+    "name": "PINACOLADA",
+    "server": "121",
+    "members_count": 3,
+    "total_points": 2575688,
+    "avg_points": 858562,
+    "top_commander": "Kukuruzka1996",
+    "top_points": 1881037,
+    "top_rank": 118,
+    "members": [
+      {
+        "rank": 118,
+        "commander": "Kukuruzka1996",
+        "points": 1881037,
+        "server": "121"
+      },
+      {
+        "rank": 736,
+        "commander": "Trentax",
+        "points": 356541,
+        "server": "121"
+      },
+      {
+        "rank": 747,
+        "commander": "Slodko",
+        "points": 338110,
+        "server": "121"
+      }
+    ],
+    "rank": 43,
+    "server_rank": 33
+  },
+  {
+    "alliance": "[KRS2] KRATO",
+    "tag": "KRS2",
+    "name": "KRATO",
+    "server": "117",
+    "members_count": 12,
+    "total_points": 2359681,
+    "avg_points": 196640,
+    "top_commander": "Nemesice",
+    "top_points": 1052071,
+    "top_rank": 459,
+    "members": [
+      {
+        "rank": 459,
+        "commander": "Nemesice",
+        "points": 1052071,
+        "server": "117"
+      },
+      {
+        "rank": 625,
+        "commander": "héro",
+        "points": 562323,
+        "server": "117"
+      },
+      {
+        "rank": 675,
+        "commander": "Renlo",
+        "points": 480923,
+        "server": "117"
+      },
+      {
+        "rank": 837,
+        "commander": "THAI",
+        "points": 162365,
+        "server": "117"
+      },
+      {
+        "rank": 929,
+        "commander": "guzi95",
+        "points": 69937,
+        "server": "117"
+      },
+      {
+        "rank": 994,
+        "commander": "Vovanuch",
+        "points": 30828,
+        "server": "117"
+      },
+      {
+        "rank": 1063,
+        "commander": "Commander2dvVyN7",
+        "points": 768,
+        "server": "117"
+      },
+      {
+        "rank": 1098,
+        "commander": "vano1984",
+        "points": 211,
+        "server": "117"
+      },
+      {
+        "rank": 1120,
+        "commander": "PriscilaBaum",
+        "points": 112,
+        "server": "117"
+      },
+      {
+        "rank": 1130,
+        "commander": "Commander2dMgU97",
+        "points": 80,
+        "server": "117"
+      },
+      {
+        "rank": 1156,
+        "commander": "Commander2efXbPn",
+        "points": 36,
+        "server": "117"
+      },
+      {
+        "rank": 1160,
+        "commander": "Toonite",
+        "points": 27,
+        "server": "117"
+      }
+    ],
+    "rank": 44,
+    "server_rank": 11
+  },
+  {
+    "alliance": "[RUS2] EMPIRE",
+    "tag": "RUS2",
+    "name": "EMPIRE",
+    "server": "113",
+    "members_count": 16,
+    "total_points": 2159763,
+    "avg_points": 134985,
+    "top_commander": "Supra13",
+    "top_points": 347075,
+    "top_rank": 740,
+    "members": [
+      {
+        "rank": 740,
+        "commander": "Supra13",
+        "points": 347075,
+        "server": "113"
+      },
+      {
+        "rank": 789,
+        "commander": "Sweetdream",
+        "points": 237880,
+        "server": "113"
+      },
+      {
+        "rank": 792,
+        "commander": "Dimas87",
+        "points": 229180,
+        "server": "113"
+      },
+      {
+        "rank": 801,
+        "commander": "BlackMarshal",
+        "points": 210872,
+        "server": "113"
+      },
+      {
+        "rank": 817,
+        "commander": "Ellie19",
+        "points": 191060,
+        "server": "113"
+      },
+      {
+        "rank": 822,
+        "commander": "電十z0mbiet串",
+        "points": 188040,
+        "server": "113"
+      },
+      {
+        "rank": 826,
+        "commander": "DarkeStrah",
+        "points": 184200,
+        "server": "113"
+      },
+      {
+        "rank": 894,
+        "commander": "gfif",
+        "points": 95846,
+        "server": "113"
+      },
+      {
+        "rank": 899,
+        "commander": "SK14",
+        "points": 91140,
+        "server": "113"
+      },
+      {
+        "rank": 901,
+        "commander": "ТЁМный",
+        "points": 90000,
+        "server": "113"
+      },
+      {
+        "rank": 903,
+        "commander": "Commair",
+        "points": 90000,
+        "server": "113"
+      },
+      {
+        "rank": 919,
+        "commander": "Castle777",
+        "points": 75800,
+        "server": "113"
+      },
+      {
+        "rank": 959,
+        "commander": "TheExorcist23",
+        "points": 52050,
+        "server": "113"
+      },
+      {
+        "rank": 988,
+        "commander": "Тенистая",
+        "points": 32960,
+        "server": "113"
+      },
+      {
+        "rank": 1003,
+        "commander": "LadyBlue1504",
+        "points": 28000,
+        "server": "113"
+      },
+      {
+        "rank": 1016,
+        "commander": "Varakyle4ka",
+        "points": 15660,
+        "server": "113"
+      }
+    ],
+    "rank": 45,
+    "server_rank": 1
+  },
+  {
+    "alliance": "[VFD] lesloupsblancs",
+    "tag": "VFD",
+    "name": "lesloupsblancs",
+    "server": "117",
+    "members_count": 11,
+    "total_points": 2048829,
+    "avg_points": 186257,
+    "top_commander": "james34",
+    "top_points": 593654,
+    "top_rank": 604,
+    "members": [
+      {
+        "rank": 604,
+        "commander": "james34",
+        "points": 593654,
+        "server": "117"
+      },
+      {
+        "rank": 667,
+        "commander": "chevaliernoir",
+        "points": 494115,
+        "server": "117"
+      },
+      {
+        "rank": 727,
+        "commander": "Catalya130925",
+        "points": 381037,
+        "server": "117"
+      },
+      {
+        "rank": 796,
+        "commander": "Danerys07",
+        "points": 226402,
+        "server": "117"
+      },
+      {
+        "rank": 852,
+        "commander": "pisi1",
+        "points": 145209,
+        "server": "117"
+      },
+      {
+        "rank": 880,
+        "commander": "Markkymark",
+        "points": 110281,
+        "server": "117"
+      },
+      {
+        "rank": 956,
+        "commander": "Laulau42",
+        "points": 53495,
+        "server": "117"
+      },
+      {
+        "rank": 975,
+        "commander": "Ipm",
+        "points": 44000,
+        "server": "117"
+      },
+      {
+        "rank": 1082,
+        "commander": "Commander2eAr7WB",
+        "points": 330,
+        "server": "117"
+      },
+      {
+        "rank": 1089,
+        "commander": "CFrG",
+        "points": 252,
+        "server": "117"
+      },
+      {
+        "rank": 1142,
+        "commander": "SavannahDreams",
+        "points": 54,
+        "server": "117"
+      }
+    ],
+    "rank": 46,
+    "server_rank": 12
+  },
+  {
+    "alliance": "[BaR] Рюмочная18†",
+    "tag": "BaR",
+    "name": "Рюмочная18†",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 1987764,
+    "avg_points": 1987764,
+    "top_commander": "100мат",
+    "top_points": 1987764,
+    "top_rank": 100,
+    "members": [
+      {
+        "rank": 100,
+        "commander": "100мат",
+        "points": 1987764,
+        "server": "121"
+      }
+    ],
+    "rank": 47,
+    "server_rank": 34
+  },
+  {
+    "alliance": "JJFD] JustForvarD",
+    "tag": "",
+    "name": "JJFD] JustForvarD",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 1836820,
+    "avg_points": 1836820,
+    "top_commander": "Miracleee",
+    "top_points": 1836820,
+    "top_rank": 123,
+    "members": [
+      {
+        "rank": 123,
+        "commander": "Miracleee",
+        "points": 1836820,
+        "server": "121"
+      }
+    ],
+    "rank": 48,
+    "server_rank": 35
+  },
+  {
+    "alliance": "[FOP] БРИГАДА",
+    "tag": "FOP",
+    "name": "БРИГАДА",
+    "server": "121",
+    "members_count": 2,
+    "total_points": 1747991,
+    "avg_points": 873995,
+    "top_commander": "Электрозаводская",
+    "top_points": 1539840,
+    "top_rank": 304,
+    "members": [
+      {
+        "rank": 304,
+        "commander": "Электрозаводская",
+        "points": 1539840,
+        "server": "121"
+      },
+      {
+        "rank": 804,
+        "commander": "Istrebitel-su27",
+        "points": 208151,
+        "server": "121"
+      }
+    ],
+    "rank": 49,
+    "server_rank": 36
+  },
+  {
+    "alliance": "[AOM] ArmyOfMinions",
+    "tag": "AOM",
+    "name": "ArmyOfMinions",
+    "server": "114",
+    "members_count": 9,
+    "total_points": 1681603,
+    "avg_points": 186844,
+    "top_commander": "Viktoriysssss201",
+    "top_points": 399960,
+    "top_rank": 714,
+    "members": [
+      {
+        "rank": 714,
+        "commander": "Viktoriysssss201",
+        "points": 399960,
+        "server": "114"
+      },
+      {
+        "rank": 743,
+        "commander": "ИНКВИЗИТОР",
+        "points": 344934,
+        "server": "114"
+      },
+      {
+        "rank": 773,
+        "commander": "Лис56",
+        "points": 268840,
+        "server": "114"
+      },
+      {
+        "rank": 799,
+        "commander": "Sandman",
+        "points": 220598,
+        "server": "114"
+      },
+      {
+        "rank": 827,
+        "commander": "VasiLisa",
+        "points": 184036,
+        "server": "114"
+      },
+      {
+        "rank": 867,
+        "commander": "Belverk",
+        "points": 127120,
+        "server": "114"
+      },
+      {
+        "rank": 947,
+        "commander": "FerdinantSt",
+        "points": 57000,
+        "server": "114"
+      },
+      {
+        "rank": 972,
+        "commander": "tymtyrum",
+        "points": 46670,
+        "server": "114"
+      },
+      {
+        "rank": 990,
+        "commander": "Arahont",
+        "points": 32445,
+        "server": "114"
+      }
+    ],
+    "rank": 50,
+    "server_rank": 1
+  },
+  {
+    "alliance": "[VIP] VirtusPro",
+    "tag": "VIP",
+    "name": "VirtusPro",
+    "server": "121",
+    "members_count": 5,
+    "total_points": 1597531,
+    "avg_points": 319506,
+    "top_commander": "Ромашка",
+    "top_points": 530387,
+    "top_rank": 649,
+    "members": [
+      {
+        "rank": 649,
+        "commander": "Ромашка",
+        "points": 530387,
+        "server": "121"
+      },
+      {
+        "rank": 715,
+        "commander": "e53",
+        "points": 399551,
+        "server": "121"
+      },
+      {
+        "rank": 753,
+        "commander": "VinticZ",
+        "points": 322714,
+        "server": "121"
+      },
+      {
+        "rank": 765,
+        "commander": "Musson",
+        "points": 294819,
+        "server": "121"
+      },
+      {
+        "rank": 965,
+        "commander": "Petkins",
+        "points": 50060,
+        "server": "121"
+      }
+    ],
+    "rank": 51,
+    "server_rank": 37
+  },
+  {
+    "alliance": "[DGe] DieGestrandeten",
+    "tag": "DGe",
+    "name": "DieGestrandeten",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 1304784,
+    "avg_points": 434928,
+    "top_commander": "StefanDe",
+    "top_points": 1150334,
+    "top_rank": 433,
+    "members": [
+      {
+        "rank": 433,
+        "commander": "StefanDe",
+        "points": 1150334,
+        "server": "117"
+      },
+      {
+        "rank": 879,
+        "commander": "MasterchiefDon",
+        "points": 110660,
+        "server": "117"
+      },
+      {
+        "rank": 976,
+        "commander": "Dima88",
+        "points": 43790,
+        "server": "117"
+      }
+    ],
+    "rank": 52,
+    "server_rank": 13
+  },
+  {
+    "alliance": "[UOU] Пендосы",
+    "tag": "UOU",
+    "name": "Пендосы",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 1249073,
+    "avg_points": 1249073,
+    "top_commander": "Хоумлендер",
+    "top_points": 1249073,
+    "top_rank": 416,
+    "members": [
+      {
+        "rank": 416,
+        "commander": "Хоумлендер",
+        "points": 1249073,
+        "server": "117"
+      }
+    ],
+    "rank": 53,
+    "server_rank": 14
+  },
+  {
+    "alliance": "[SLY] SLAYER",
+    "tag": "SLY",
+    "name": "SLAYER",
+    "server": "121",
+    "members_count": 3,
+    "total_points": 1081991,
+    "avg_points": 360663,
+    "top_commander": "шампиньен",
+    "top_points": 742213,
+    "top_rank": 552,
+    "members": [
+      {
+        "rank": 552,
+        "commander": "шампиньен",
+        "points": 742213,
+        "server": "121"
+      },
+      {
+        "rank": 821,
+        "commander": "ВикаВика",
+        "points": 188588,
+        "server": "121"
+      },
+      {
+        "rank": 846,
+        "commander": "SlidingSnail",
+        "points": 151190,
+        "server": "121"
+      }
+    ],
+    "rank": 54,
+    "server_rank": 38
+  },
+  {
+    "alliance": "[Otd] Otrada",
+    "tag": "Otd",
+    "name": "Otrada",
+    "server": "121",
+    "members_count": 2,
+    "total_points": 910432,
+    "avg_points": 455216,
+    "top_commander": "коть",
+    "top_points": 506735,
+    "top_rank": 664,
+    "members": [
+      {
+        "rank": 664,
+        "commander": "коть",
+        "points": 506735,
+        "server": "121"
+      },
+      {
+        "rank": 709,
+        "commander": "IgT",
+        "points": 403697,
+        "server": "121"
+      }
+    ],
+    "rank": 55,
+    "server_rank": 39
+  },
+  {
+    "alliance": "[PPUC] BLACKLISA",
+    "tag": "PPUC",
+    "name": "BLACKLISA",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 903340,
+    "avg_points": 903340,
+    "top_commander": "Commander2ISHstr",
+    "top_points": 903340,
+    "top_rank": 493,
+    "members": [
+      {
+        "rank": 493,
+        "commander": "Commander2ISHstr",
+        "points": 903340,
+        "server": "121"
+      }
+    ],
+    "rank": 56,
+    "server_rank": 40
+  },
+  {
+    "alliance": "[RBLi] Rébellion",
+    "tag": "RBLi",
+    "name": "Rébellion",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 789736,
+    "avg_points": 394868,
+    "top_commander": "1Евгений",
+    "top_points": 789700,
+    "top_rank": 536,
+    "members": [
+      {
+        "rank": 536,
+        "commander": "1Евгений",
+        "points": 789700,
+        "server": "117"
+      },
+      {
+        "rank": 1155,
+        "commander": "Commander2fZNo0J",
+        "points": 36,
+        "server": "117"
+      }
+    ],
+    "rank": 57,
+    "server_rank": 15
+  },
+  {
+    "alliance": "[SHE] ShadowLover",
+    "tag": "SHE",
+    "name": "ShadowLover",
+    "server": "117",
+    "members_count": 10,
+    "total_points": 716944,
+    "avg_points": 71694,
+    "top_commander": "cacarot",
+    "top_points": 349836,
+    "top_rank": 739,
+    "members": [
+      {
+        "rank": 739,
+        "commander": "cacarot",
+        "points": 349836,
+        "server": "117"
+      },
+      {
+        "rank": 793,
+        "commander": "BANJOMANJO",
+        "points": 229089,
+        "server": "117"
+      },
+      {
+        "rank": 923,
+        "commander": "CaptainC",
+        "points": 72830,
+        "server": "117"
+      },
+      {
+        "rank": 955,
+        "commander": "kizo",
+        "points": 54458,
+        "server": "117"
+      },
+      {
+        "rank": 1023,
+        "commander": "waldini",
+        "points": 10100,
+        "server": "117"
+      },
+      {
+        "rank": 1076,
+        "commander": "Commander2fY5Arz",
+        "points": 456,
+        "server": "117"
+      },
+      {
+        "rank": 1126,
+        "commander": "Commander2eIQPZ3",
+        "points": 90,
+        "server": "117"
+      },
+      {
+        "rank": 1141,
+        "commander": "Riaz",
+        "points": 60,
+        "server": "117"
+      },
+      {
+        "rank": 1170,
+        "commander": "Ramon87",
+        "points": 18,
+        "server": "117"
+      },
+      {
+        "rank": 1177,
+        "commander": "Commander2fYZTcV",
+        "points": 7,
+        "server": "117"
+      }
+    ],
+    "rank": 58,
+    "server_rank": 16
+  },
+  {
+    "alliance": "[KZ1] КомуннаZ1",
+    "tag": "KZ1",
+    "name": "КомуннаZ1",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 706412,
+    "avg_points": 706412,
+    "top_commander": "Пилот",
+    "top_points": 706412,
+    "top_rank": 563,
+    "members": [
+      {
+        "rank": 563,
+        "commander": "Пилот",
+        "points": 706412,
+        "server": "121"
+      }
+    ],
+    "rank": 59,
+    "server_rank": 41
+  },
+  {
+    "alliance": "[1313] песДАлис",
+    "tag": "1313",
+    "name": "песДАлис",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 571565,
+    "avg_points": 571565,
+    "top_commander": "Commander2m5v1up",
+    "top_points": 571565,
+    "top_rank": 618,
+    "members": [
+      {
+        "rank": 618,
+        "commander": "Commander2m5v1up",
+        "points": 571565,
+        "server": "121"
+      }
+    ],
+    "rank": 60,
+    "server_rank": 42
+  },
+  {
+    "alliance": "[AOMA] АкадемияАОМ",
+    "tag": "AOMA",
+    "name": "АкадемияАОМ",
+    "server": "114",
+    "members_count": 1,
+    "total_points": 564780,
+    "avg_points": 564780,
+    "top_commander": "Overlost",
+    "top_points": 564780,
+    "top_rank": 624,
+    "members": [
+      {
+        "rank": 624,
+        "commander": "Overlost",
+        "points": 564780,
+        "server": "114"
+      }
+    ],
+    "rank": 61,
+    "server_rank": 2
+  },
+  {
+    "alliance": "[ZhB] zumbihunters",
+    "tag": "ZhB",
+    "name": "zumbihunters",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 442259,
+    "avg_points": 221129,
+    "top_commander": "JOY-COBRA",
+    "top_points": 442224,
+    "top_rank": 692,
+    "members": [
+      {
+        "rank": 692,
+        "commander": "JOY-COBRA",
+        "points": 442224,
+        "server": "117"
+      },
+      {
+        "rank": 1158,
+        "commander": "gabivmc",
+        "points": 35,
+        "server": "117"
+      }
+    ],
+    "rank": 62,
+    "server_rank": 17
+  },
+  {
+    "alliance": "[ITK] Itaka",
+    "tag": "ITK",
+    "name": "Itaka",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 327554,
+    "avg_points": 327554,
+    "top_commander": "cabodavid",
+    "top_points": 327554,
+    "top_rank": 751,
+    "members": [
+      {
+        "rank": 751,
+        "commander": "cabodavid",
+        "points": 327554,
+        "server": "121"
+      }
+    ],
+    "rank": 63,
+    "server_rank": 43
+  },
+  {
+    "alliance": "[Tr1] TürkBirliğı",
+    "tag": "Tr1",
+    "name": "TürkBirliğı",
+    "server": "117",
+    "members_count": 7,
+    "total_points": 271934,
+    "avg_points": 38847,
+    "top_commander": "DrWave",
+    "top_points": 162284,
+    "top_rank": 838,
+    "members": [
+      {
+        "rank": 838,
+        "commander": "DrWave",
+        "points": 162284,
+        "server": "117"
+      },
+      {
+        "rank": 886,
+        "commander": "SezerDem41",
+        "points": 103877,
+        "server": "117"
+      },
+      {
+        "rank": 1034,
+        "commander": "Commander2eUqZkV",
+        "points": 4704,
+        "server": "117"
+      },
+      {
+        "rank": 1074,
+        "commander": "Commander2f6Syrj",
+        "points": 470,
+        "server": "117"
+      },
+      {
+        "rank": 1075,
+        "commander": "Striker4545",
+        "points": 459,
+        "server": "117"
+      },
+      {
+        "rank": 1121,
+        "commander": "Commander2dM6TZz",
+        "points": 104,
+        "server": "117"
+      },
+      {
+        "rank": 1157,
+        "commander": "EAGLESEKO",
+        "points": 36,
+        "server": "117"
+      }
+    ],
+    "rank": 64,
+    "server_rank": 18
+  },
+  {
+    "alliance": "[РАAТЬ] МирныеВоины",
+    "tag": "РАAТЬ",
+    "name": "МирныеВоины",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 251405,
+    "avg_points": 251405,
+    "top_commander": "Nastasia67",
+    "top_points": 251405,
+    "top_rank": 778,
+    "members": [
+      {
+        "rank": 778,
+        "commander": "Nastasia67",
+        "points": 251405,
+        "server": "121"
+      }
+    ],
+    "rank": 65,
+    "server_rank": 44
+  },
+  {
+    "alliance": "[ALM] AlrightArmy",
+    "tag": "ALM",
+    "name": "AlrightArmy",
+    "server": "113",
+    "members_count": 1,
+    "total_points": 241263,
+    "avg_points": 241263,
+    "top_commander": "Bakûr-Argeş",
+    "top_points": 241263,
+    "top_rank": 783,
+    "members": [
+      {
+        "rank": 783,
+        "commander": "Bakûr-Argeş",
+        "points": 241263,
+        "server": "113"
+      }
+    ],
+    "rank": 66,
+    "server_rank": 2
+  },
+  {
+    "alliance": "[mSMc] BLACKROSE1",
+    "tag": "mSMc",
+    "name": "BLACKROSE1",
+    "server": "121",
+    "members_count": 1,
+    "total_points": 231997,
+    "avg_points": 231997,
+    "top_commander": "ЭдуардХимки",
+    "top_points": 231997,
+    "top_rank": 791,
+    "members": [
+      {
+        "rank": 791,
+        "commander": "ЭдуардХимки",
+        "points": 231997,
+        "server": "121"
+      }
+    ],
+    "rank": 67,
+    "server_rank": 45
+  },
+  {
+    "alliance": "No Alliance",
+    "tag": "",
+    "name": "No Alliance",
+    "server": "117",
+    "members_count": 12,
+    "total_points": 161073,
+    "avg_points": 13422,
+    "top_commander": "KINGKOM",
+    "top_points": 141000,
+    "top_rank": 854,
+    "members": [
+      {
+        "rank": 854,
+        "commander": "KINGKOM",
+        "points": 141000,
+        "server": "117"
+      },
+      {
+        "rank": 1019,
+        "commander": "GunnerGat",
+        "points": 12434,
+        "server": "117"
+      },
+      {
+        "rank": 1035,
+        "commander": "malten",
+        "points": 4608,
+        "server": "117"
+      },
+      {
+        "rank": 1049,
+        "commander": "Commander2fYfnOl",
+        "points": 1884,
+        "server": "117"
+      },
+      {
+        "rank": 1064,
+        "commander": "Tempes",
+        "points": 702,
+        "server": "117"
+      },
+      {
+        "rank": 1107,
+        "commander": "Commander2eEEoxn",
+        "points": 147,
+        "server": "117"
+      },
+      {
+        "rank": 1109,
+        "commander": "Commander2ex0fXv",
+        "points": 130,
+        "server": "117"
+      },
+      {
+        "rank": 1124,
+        "commander": "Commander2ds50RD",
+        "points": 99,
+        "server": "117"
+      },
+      {
+        "rank": 1163,
+        "commander": "b2busy",
+        "points": 24,
+        "server": "117"
+      },
+      {
+        "rank": 1164,
+        "commander": "Commander2eU1nEN",
+        "points": 24,
+        "server": "117"
+      },
+      {
+        "rank": 1173,
+        "commander": "ffffddd4333",
+        "points": 14,
+        "server": "117"
+      },
+      {
+        "rank": 1178,
+        "commander": "Chowda",
+        "points": 7,
+        "server": "117"
+      }
+    ],
+    "rank": 68,
+    "server_rank": 19
+  },
+  {
+    "alliance": "[TopU] UkraineWillWin",
+    "tag": "TopU",
+    "name": "UkraineWillWin",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 115967,
+    "avg_points": 57983,
+    "top_commander": "Commander2g0ft89",
+    "top_points": 115427,
+    "top_rank": 876,
+    "members": [
+      {
+        "rank": 876,
+        "commander": "Commander2g0ft89",
+        "points": 115427,
+        "server": "117"
+      },
+      {
+        "rank": 1070,
+        "commander": "Commander2dyitaB",
+        "points": 540,
+        "server": "117"
+      }
+    ],
+    "rank": 69,
+    "server_rank": 20
+  },
+  {
+    "alliance": "[SMR] Самара163",
+    "tag": "SMR",
+    "name": "Самара163",
+    "server": "117",
+    "members_count": 8,
+    "total_points": 112617,
+    "avg_points": 14077,
+    "top_commander": "Commander2fXSsmh",
+    "top_points": 107297,
+    "top_rank": 881,
+    "members": [
+      {
+        "rank": 881,
+        "commander": "Commander2fXSsmh",
+        "points": 107297,
+        "server": "117"
+      },
+      {
+        "rank": 1032,
+        "commander": "Sandro12",
+        "points": 4753,
+        "server": "117"
+      },
+      {
+        "rank": 1101,
+        "commander": "Commander2fcRG4t",
+        "points": 177,
+        "server": "117"
+      },
+      {
+        "rank": 1116,
+        "commander": "Андербек2011",
+        "points": 119,
+        "server": "117"
+      },
+      {
+        "rank": 1127,
+        "commander": "FIFAUZ",
+        "points": 88,
+        "server": "117"
+      },
+      {
+        "rank": 1136,
+        "commander": "Commander2fuPNQN",
+        "points": 72,
+        "server": "117"
+      },
+      {
+        "rank": 1139,
+        "commander": "1345",
+        "points": 63,
+        "server": "117"
+      },
+      {
+        "rank": 1148,
+        "commander": "Ravshan5005",
+        "points": 48,
+        "server": "117"
+      }
+    ],
+    "rank": 70,
+    "server_rank": 21
+  },
+  {
+    "alliance": "[RD69] ROAD69",
+    "tag": "RD69",
+    "name": "ROAD69",
+    "server": "114",
+    "members_count": 2,
+    "total_points": 104000,
+    "avg_points": 52000,
+    "top_commander": "Tiki",
+    "top_points": 87000,
+    "top_rank": 906,
+    "members": [
+      {
+        "rank": 906,
+        "commander": "Tiki",
+        "points": 87000,
+        "server": "114"
+      },
+      {
+        "rank": 1012,
+        "commander": "chedreel",
+        "points": 17000,
+        "server": "114"
+      }
+    ],
+    "rank": 71,
+    "server_rank": 3
+  },
+  {
+    "alliance": "[DWD] DryWell",
+    "tag": "DWD",
+    "name": "DryWell",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 84933,
+    "avg_points": 28311,
+    "top_commander": "Dee9",
+    "top_points": 84049,
+    "top_rank": 911,
+    "members": [
+      {
+        "rank": 911,
+        "commander": "Dee9",
+        "points": 84049,
+        "server": "117"
+      },
+      {
+        "rank": 1068,
+        "commander": "Commander2ekd8Ed",
+        "points": 632,
+        "server": "117"
+      },
+      {
+        "rank": 1088,
+        "commander": "Downow",
+        "points": 252,
+        "server": "117"
+      }
+    ],
+    "rank": 72,
+    "server_rank": 22
+  },
+  {
+    "alliance": "[CK1] Crypt1cKnights",
+    "tag": "CK1",
+    "name": "Crypt1cKnights",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 66380,
+    "avg_points": 66380,
+    "top_commander": "Commander2f3spcV",
+    "top_points": 66380,
+    "top_rank": 935,
+    "members": [
+      {
+        "rank": 935,
+        "commander": "Commander2f3spcV",
+        "points": 66380,
+        "server": "117"
+      }
+    ],
+    "rank": 73,
+    "server_rank": 23
+  },
+  {
+    "alliance": "[ovo] Fatebound",
+    "tag": "ovo",
+    "name": "Fatebound",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 60650,
+    "avg_points": 20216,
+    "top_commander": "Commander2ds5dEp",
+    "top_points": 54506,
+    "top_rank": 953,
+    "members": [
+      {
+        "rank": 953,
+        "commander": "Commander2ds5dEp",
+        "points": 54506,
+        "server": "117"
+      },
+      {
+        "rank": 1027,
+        "commander": "vegasdpd",
+        "points": 6016,
+        "server": "117"
+      },
+      {
+        "rank": 1112,
+        "commander": "NBdndndnskd",
+        "points": 128,
+        "server": "117"
+      }
+    ],
+    "rank": 74,
+    "server_rank": 24
+  },
+  {
+    "alliance": "[Sp3r] Sparta2026",
+    "tag": "Sp3r",
+    "name": "Sparta2026",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 59423,
+    "avg_points": 59423,
+    "top_commander": "Commander2dyy2z3",
+    "top_points": 59423,
+    "top_rank": 944,
+    "members": [
+      {
+        "rank": 944,
+        "commander": "Commander2dyy2z3",
+        "points": 59423,
+        "server": "117"
+      }
+    ],
+    "rank": 75,
+    "server_rank": 25
+  },
+  {
+    "alliance": "[Mrtr] MERTER",
+    "tag": "Mrtr",
+    "name": "MERTER",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 55815,
+    "avg_points": 55815,
+    "top_commander": "Commander2fqrt2t",
+    "top_points": 55815,
+    "top_rank": 951,
+    "members": [
+      {
+        "rank": 951,
+        "commander": "Commander2fqrt2t",
+        "points": 55815,
+        "server": "117"
+      }
+    ],
+    "rank": 76,
+    "server_rank": 26
+  },
+  {
+    "alliance": "[RESH] Gshreh",
+    "tag": "RESH",
+    "name": "Gshreh",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 54464,
+    "avg_points": 54464,
+    "top_commander": "JohnyBravo",
+    "top_points": 54464,
+    "top_rank": 954,
+    "members": [
+      {
+        "rank": 954,
+        "commander": "JohnyBravo",
+        "points": 54464,
+        "server": "117"
+      }
+    ],
+    "rank": 77,
+    "server_rank": 27
+  },
+  {
+    "alliance": "[TWB] BMWMT",
+    "tag": "TWB",
+    "name": "BMWMT",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 51671,
+    "avg_points": 17223,
+    "top_commander": "Kingsguard",
+    "top_points": 51599,
+    "top_rank": 960,
+    "members": [
+      {
+        "rank": 960,
+        "commander": "Kingsguard",
+        "points": 51599,
+        "server": "117"
+      },
+      {
+        "rank": 1146,
+        "commander": "Commander2dJnCg5",
+        "points": 48,
+        "server": "117"
+      },
+      {
+        "rank": 1165,
+        "commander": "Commander2f45TRb",
+        "points": 24,
+        "server": "117"
+      }
+    ],
+    "rank": 78,
+    "server_rank": 28
+  },
+  {
+    "alliance": "[XAT] EUROMONEY",
+    "tag": "XAT",
+    "name": "EUROMONEY",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 43451,
+    "avg_points": 21725,
+    "top_commander": "nomi2026",
+    "top_points": 43431,
+    "top_rank": 977,
+    "members": [
+      {
+        "rank": 977,
+        "commander": "nomi2026",
+        "points": 43431,
+        "server": "117"
+      },
+      {
+        "rank": 1169,
+        "commander": "Commander2fStPY9",
+        "points": 20,
+        "server": "117"
+      }
+    ],
+    "rank": 79,
+    "server_rank": 29
+  },
+  {
+    "alliance": "[TLC] ThalassaCoven",
+    "tag": "TLC",
+    "name": "ThalassaCoven",
+    "server": "117",
+    "members_count": 6,
+    "total_points": 36892,
+    "avg_points": 6148,
+    "top_commander": "Cockroachx",
+    "top_points": 31480,
+    "top_rank": 992,
+    "members": [
+      {
+        "rank": 992,
+        "commander": "Cockroachx",
+        "points": 31480,
+        "server": "117"
+      },
+      {
+        "rank": 1031,
+        "commander": "strugglingtobe",
+        "points": 4959,
+        "server": "117"
+      },
+      {
+        "rank": 1100,
+        "commander": "Cordie",
+        "points": 180,
+        "server": "117"
+      },
+      {
+        "rank": 1111,
+        "commander": "Commander2exaOd7",
+        "points": 128,
+        "server": "117"
+      },
+      {
+        "rank": 1128,
+        "commander": "Commander2dTOxWB",
+        "points": 81,
+        "server": "117"
+      },
+      {
+        "rank": 1137,
+        "commander": "Commander2fHUnLD",
+        "points": 64,
+        "server": "117"
+      }
+    ],
+    "rank": 80,
+    "server_rank": 30
+  },
+  {
+    "alliance": "[7DS] Se7enDeàdlySins",
+    "tag": "7DS",
+    "name": "Se7enDeàdlySins",
+    "server": "117",
+    "members_count": 7,
+    "total_points": 33514,
+    "avg_points": 4787,
+    "top_commander": "commanderveerla",
+    "top_points": 29315,
+    "top_rank": 997,
+    "members": [
+      {
+        "rank": 997,
+        "commander": "commanderveerla",
+        "points": 29315,
+        "server": "117"
+      },
+      {
+        "rank": 1042,
+        "commander": "Winniethepooh",
+        "points": 3297,
+        "server": "117"
+      },
+      {
+        "rank": 1080,
+        "commander": "Timminger",
+        "points": 354,
+        "server": "117"
+      },
+      {
+        "rank": 1103,
+        "commander": "Iyy",
+        "points": 162,
+        "server": "117"
+      },
+      {
+        "rank": 1104,
+        "commander": "Cla",
+        "points": 162,
+        "server": "117"
+      },
+      {
+        "rank": 1106,
+        "commander": "Cecil-Jr",
+        "points": 152,
+        "server": "117"
+      },
+      {
+        "rank": 1135,
+        "commander": "PHILLYG",
+        "points": 72,
+        "server": "117"
+      }
+    ],
+    "rank": 81,
+    "server_rank": 31
+  },
+  {
+    "alliance": "[hel] helloo",
+    "tag": "hel",
+    "name": "helloo",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 32937,
+    "avg_points": 10979,
+    "top_commander": "Commander2dTD8pL",
+    "top_points": 30638,
+    "top_rank": 995,
+    "members": [
+      {
+        "rank": 995,
+        "commander": "Commander2dTD8pL",
+        "points": 30638,
+        "server": "117"
+      },
+      {
+        "rank": 1048,
+        "commander": "Donivan37",
+        "points": 2200,
+        "server": "117"
+      },
+      {
+        "rank": 1125,
+        "commander": "Commander2dG6Gah",
+        "points": 99,
+        "server": "117"
+      }
+    ],
+    "rank": 82,
+    "server_rank": 32
+  },
+  {
+    "alliance": "[Aria] ariaetsescompagon",
+    "tag": "Aria",
+    "name": "ariaetsescompagon",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 29000,
+    "avg_points": 29000,
+    "top_commander": "marie999",
+    "top_points": 29000,
+    "top_rank": 999,
+    "members": [
+      {
+        "rank": 999,
+        "commander": "marie999",
+        "points": 29000,
+        "server": "117"
+      }
+    ],
+    "rank": 83,
+    "server_rank": 33
+  },
+  {
+    "alliance": "[KAZ] KAZAKHSTAN",
+    "tag": "KAZ",
+    "name": "KAZAKHSTAN",
+    "server": "122",
+    "members_count": 1,
+    "total_points": 17000,
+    "avg_points": 17000,
+    "top_commander": "Womb4t369",
+    "top_points": 17000,
+    "top_rank": 1013,
+    "members": [
+      {
+        "rank": 1013,
+        "commander": "Womb4t369",
+        "points": 17000,
+        "server": "122"
+      }
+    ],
+    "rank": 84,
+    "server_rank": 1
+  },
+  {
+    "alliance": "[uakl] uukkl",
+    "tag": "uakl",
+    "name": "uukkl",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 15240,
+    "avg_points": 5080,
+    "top_commander": "Commander2fItneZ",
+    "top_points": 14496,
+    "top_rank": 1017,
+    "members": [
+      {
+        "rank": 1017,
+        "commander": "Commander2fItneZ",
+        "points": 14496,
+        "server": "117"
+      },
+      {
+        "rank": 1071,
+        "commander": "Aulreik",
+        "points": 520,
+        "server": "117"
+      },
+      {
+        "rank": 1096,
+        "commander": "shadowmoon03",
+        "points": 224,
+        "server": "117"
+      }
+    ],
+    "rank": 85,
+    "server_rank": 34
+  },
+  {
+    "alliance": "[UTS] upthescore",
+    "tag": "UTS",
+    "name": "upthescore",
+    "server": "117",
+    "members_count": 10,
+    "total_points": 13870,
+    "avg_points": 1387,
+    "top_commander": "damiebang",
+    "top_points": 8190,
+    "top_rank": 1025,
+    "members": [
+      {
+        "rank": 1025,
+        "commander": "damiebang",
+        "points": 8190,
+        "server": "117"
+      },
+      {
+        "rank": 1045,
+        "commander": "SuperMB",
+        "points": 3078,
+        "server": "117"
+      },
+      {
+        "rank": 1055,
+        "commander": "Commander2eCC4Hb",
+        "points": 1144,
+        "server": "117"
+      },
+      {
+        "rank": 1077,
+        "commander": "DexT",
+        "points": 441,
+        "server": "117"
+      },
+      {
+        "rank": 1087,
+        "commander": "Commander2dXgCwd",
+        "points": 252,
+        "server": "117"
+      },
+      {
+        "rank": 1092,
+        "commander": "krezia",
+        "points": 234,
+        "server": "117"
+      },
+      {
+        "rank": 1095,
+        "commander": "itsmesearsh",
+        "points": 225,
+        "server": "117"
+      },
+      {
+        "rank": 1117,
+        "commander": "Commander2dWWla5",
+        "points": 117,
+        "server": "117"
+      },
+      {
+        "rank": 1118,
+        "commander": "Commander2ehFKhn",
+        "points": 117,
+        "server": "117"
+      },
+      {
+        "rank": 1133,
+        "commander": "Commander2fIXWqF",
+        "points": 72,
+        "server": "117"
+      }
+    ],
+    "rank": 86,
+    "server_rank": 35
+  },
+  {
+    "alliance": "[PYZE] PYZDA",
+    "tag": "PYZE",
+    "name": "PYZDA",
+    "server": "117",
+    "members_count": 4,
+    "total_points": 13736,
+    "avg_points": 3434,
+    "top_commander": "Carterer",
+    "top_points": 5115,
+    "top_rank": 1030,
+    "members": [
+      {
+        "rank": 1030,
+        "commander": "Carterer",
+        "points": 5115,
+        "server": "117"
+      },
+      {
+        "rank": 1033,
+        "commander": "Mi4aeL",
+        "points": 4716,
+        "server": "117"
+      },
+      {
+        "rank": 1041,
+        "commander": "Commander2e3bw1v",
+        "points": 3330,
+        "server": "117"
+      },
+      {
+        "rank": 1069,
+        "commander": "Commander2eFQDK5",
+        "points": 575,
+        "server": "117"
+      }
+    ],
+    "rank": 87,
+    "server_rank": 36
+  },
+  {
+    "alliance": "[AADC] Tranquilityprevails",
+    "tag": "AADC",
+    "name": "Tranquilityprevails",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 8430,
+    "avg_points": 2810,
+    "top_commander": "Leech205",
+    "top_points": 8144,
+    "top_rank": 1026,
+    "members": [
+      {
+        "rank": 1026,
+        "commander": "Leech205",
+        "points": 8144,
+        "server": "117"
+      },
+      {
+        "rank": 1094,
+        "commander": "sawbridge",
+        "points": 226,
+        "server": "117"
+      },
+      {
+        "rank": 1140,
+        "commander": "Commander2fYcz3L",
+        "points": 60,
+        "server": "117"
+      }
+    ],
+    "rank": 88,
+    "server_rank": 37
+  },
+  {
+    "alliance": "[aWLO] 111AB",
+    "tag": "aWLO",
+    "name": "111AB",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 6268,
+    "avg_points": 2089,
+    "top_commander": "Commander2etcwMB",
+    "top_points": 5328,
+    "top_rank": 1028,
+    "members": [
+      {
+        "rank": 1028,
+        "commander": "Commander2etcwMB",
+        "points": 5328,
+        "server": "117"
+      },
+      {
+        "rank": 1065,
+        "commander": "Commander2fAzodD",
+        "points": 700,
+        "server": "117"
+      },
+      {
+        "rank": 1091,
+        "commander": "Commander2eTjfj7",
+        "points": 240,
+        "server": "117"
+      }
+    ],
+    "rank": 89,
+    "server_rank": 38
+  },
+  {
+    "alliance": "[D2D] DeadEndDynasty",
+    "tag": "D2D",
+    "name": "DeadEndDynasty",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 5177,
+    "avg_points": 1725,
+    "top_commander": "Commander2dWcNr7",
+    "top_points": 3408,
+    "top_rank": 1040,
+    "members": [
+      {
+        "rank": 1040,
+        "commander": "Commander2dWcNr7",
+        "points": 3408,
+        "server": "117"
+      },
+      {
+        "rank": 1059,
+        "commander": "Commander2fzp6uh",
+        "points": 985,
+        "server": "117"
+      },
+      {
+        "rank": 1061,
+        "commander": "RevolutionFR",
+        "points": 784,
+        "server": "117"
+      }
+    ],
+    "rank": 90,
+    "server_rank": 39
+  },
+  {
+    "alliance": "[DRKT] DarkKnightS",
+    "tag": "DRKT",
+    "name": "DarkKnightS",
+    "server": "117",
+    "members_count": 5,
+    "total_points": 3726,
+    "avg_points": 745,
+    "top_commander": "Brucaliffo69",
+    "top_points": 3519,
+    "top_rank": 1039,
+    "members": [
+      {
+        "rank": 1039,
+        "commander": "Brucaliffo69",
+        "points": 3519,
+        "server": "117"
+      },
+      {
+        "rank": 1132,
+        "commander": "Commander2fi0aY5",
+        "points": 75,
+        "server": "117"
+      },
+      {
+        "rank": 1138,
+        "commander": "Biondo",
+        "points": 63,
+        "server": "117"
+      },
+      {
+        "rank": 1149,
+        "commander": "tinieblas",
+        "points": 45,
+        "server": "117"
+      },
+      {
+        "rank": 1166,
+        "commander": "Commander2fFXfIV",
+        "points": 24,
+        "server": "117"
+      }
+    ],
+    "rank": 91,
+    "server_rank": 40
+  },
+  {
+    "alliance": "[QhiX] TürklerGeliyor",
+    "tag": "QhiX",
+    "name": "TürklerGeliyor",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 2600,
+    "avg_points": 2600,
+    "top_commander": "Commander2fDYE2F",
+    "top_points": 2600,
+    "top_rank": 1046,
+    "members": [
+      {
+        "rank": 1046,
+        "commander": "Commander2fDYE2F",
+        "points": 2600,
+        "server": "117"
+      }
+    ],
+    "rank": 92,
+    "server_rank": 41
+  },
+  {
+    "alliance": "[DIER] DieErlösten",
+    "tag": "DIER",
+    "name": "DieErlösten",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 2250,
+    "avg_points": 2250,
+    "top_commander": "taefn",
+    "top_points": 2250,
+    "top_rank": 1047,
+    "members": [
+      {
+        "rank": 1047,
+        "commander": "taefn",
+        "points": 2250,
+        "server": "117"
+      }
+    ],
+    "rank": 93,
+    "server_rank": 42
+  },
+  {
+    "alliance": "[FGTH] FunnyGTH",
+    "tag": "FGTH",
+    "name": "FunnyGTH",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 1711,
+    "avg_points": 570,
+    "top_commander": "Commander2f00oTz",
+    "top_points": 1593,
+    "top_rank": 1051,
+    "members": [
+      {
+        "rank": 1051,
+        "commander": "Commander2f00oTz",
+        "points": 1593,
+        "server": "117"
+      },
+      {
+        "rank": 1123,
+        "commander": "lycanthop",
+        "points": 100,
+        "server": "117"
+      },
+      {
+        "rank": 1172,
+        "commander": "Tum1225",
+        "points": 18,
+        "server": "117"
+      }
+    ],
+    "rank": 94,
+    "server_rank": 43
+  },
+  {
+    "alliance": "[CPU] CPUUUU",
+    "tag": "CPU",
+    "name": "CPUUUU",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 1656,
+    "avg_points": 1656,
+    "top_commander": "Commander2dx7LRH",
+    "top_points": 1656,
+    "top_rank": 1050,
+    "members": [
+      {
+        "rank": 1050,
+        "commander": "Commander2dx7LRH",
+        "points": 1656,
+        "server": "117"
+      }
+    ],
+    "rank": 95,
+    "server_rank": 44
+  },
+  {
+    "alliance": "[Cmds] Comandantes",
+    "tag": "Cmds",
+    "name": "Comandantes",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 1305,
+    "avg_points": 435,
+    "top_commander": "Commander2e5NXFj",
+    "top_points": 1242,
+    "top_rank": 1053,
+    "members": [
+      {
+        "rank": 1053,
+        "commander": "Commander2e5NXFj",
+        "points": 1242,
+        "server": "117"
+      },
+      {
+        "rank": 1154,
+        "commander": "Commander2dYOEQJ",
+        "points": 36,
+        "server": "117"
+      },
+      {
+        "rank": 1161,
+        "commander": "Commander2evZfCZ",
+        "points": 27,
+        "server": "117"
+      }
+    ],
+    "rank": 96,
+    "server_rank": 45
+  },
+  {
+    "alliance": "[HMK] HispaniaMagna",
+    "tag": "HMK",
+    "name": "HispaniaMagna",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 1157,
+    "avg_points": 578,
+    "top_commander": "Commander2fCPuDz",
+    "top_points": 674,
+    "top_rank": 1066,
+    "members": [
+      {
+        "rank": 1066,
+        "commander": "Commander2fCPuDz",
+        "points": 674,
+        "server": "117"
+      },
+      {
+        "rank": 1072,
+        "commander": "Commander2eAMtmj",
+        "points": 483,
+        "server": "117"
+      }
+    ],
+    "rank": 97,
+    "server_rank": 46
+  },
+  {
+    "alliance": "[Ktq] TheGoats",
+    "tag": "Ktq",
+    "name": "TheGoats",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 898,
+    "avg_points": 449,
+    "top_commander": "Orik",
+    "top_points": 880,
+    "top_rank": 1060,
+    "members": [
+      {
+        "rank": 1060,
+        "commander": "Orik",
+        "points": 880,
+        "server": "117"
+      },
+      {
+        "rank": 1171,
+        "commander": "Commander2dEOPAx",
+        "points": 18,
+        "server": "117"
+      }
+    ],
+    "rank": 98,
+    "server_rank": 47
+  },
+  {
+    "alliance": "[ERT] ERTTT",
+    "tag": "ERT",
+    "name": "ERTTT",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 855,
+    "avg_points": 285,
+    "top_commander": "82javi",
+    "top_points": 378,
+    "top_rank": 1079,
+    "members": [
+      {
+        "rank": 1079,
+        "commander": "82javi",
+        "points": 378,
+        "server": "117"
+      },
+      {
+        "rank": 1086,
+        "commander": "Giorjanny",
+        "points": 261,
+        "server": "117"
+      },
+      {
+        "rank": 1097,
+        "commander": "Fierrero",
+        "points": 216,
+        "server": "117"
+      }
+    ],
+    "rank": 99,
+    "server_rank": 48
+  },
+  {
+    "alliance": "[MMMC] Mdodmcj",
+    "tag": "MMMC",
+    "name": "Mdodmcj",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 480,
+    "avg_points": 480,
+    "top_commander": "fawadahsan",
+    "top_points": 480,
+    "top_rank": 1073,
+    "members": [
+      {
+        "rank": 1073,
+        "commander": "fawadahsan",
+        "points": 480,
+        "server": "117"
+      }
+    ],
+    "rank": 100,
+    "server_rank": 49
+  },
+  {
+    "alliance": "[VBD] VBDRFABA",
+    "tag": "VBD",
+    "name": "VBDRFABA",
+    "server": "117",
+    "members_count": 3,
+    "total_points": 408,
+    "avg_points": 136,
+    "top_commander": "SynnofMan",
+    "top_points": 279,
+    "top_rank": 1084,
+    "members": [
+      {
+        "rank": 1084,
+        "commander": "SynnofMan",
+        "points": 279,
+        "server": "117"
+      },
+      {
+        "rank": 1129,
+        "commander": "Commander2f1iwwl",
+        "points": 81,
+        "server": "117"
+      },
+      {
+        "rank": 1147,
+        "commander": "Commander2e1rnxz",
+        "points": 48,
+        "server": "117"
+      }
+    ],
+    "rank": 101,
+    "server_rank": 50
+  },
+  {
+    "alliance": "[KGLN] KillingLegion",
+    "tag": "KGLN",
+    "name": "KillingLegion",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 390,
+    "avg_points": 195,
+    "top_commander": "Raffaellsmourao",
+    "top_points": 270,
+    "top_rank": 1085,
+    "members": [
+      {
+        "rank": 1085,
+        "commander": "Raffaellsmourao",
+        "points": 270,
+        "server": "117"
+      },
+      {
+        "rank": 1115,
+        "commander": "Hurtalagist",
+        "points": 120,
+        "server": "117"
+      }
+    ],
+    "rank": 102,
+    "server_rank": 51
+  },
+  {
+    "alliance": "[HEII] DarkAl",
+    "tag": "HEII",
+    "name": "DarkAl",
+    "server": "117",
+    "members_count": 4,
+    "total_points": 266,
+    "avg_points": 66,
+    "top_commander": "Kazakh888",
+    "top_points": 126,
+    "top_rank": 1113,
+    "members": [
+      {
+        "rank": 1113,
+        "commander": "Kazakh888",
+        "points": 126,
+        "server": "117"
+      },
+      {
+        "rank": 1144,
+        "commander": "Ницша",
+        "points": 50,
+        "server": "117"
+      },
+      {
+        "rank": 1145,
+        "commander": "mrViktor",
+        "points": 50,
+        "server": "117"
+      },
+      {
+        "rank": 1152,
+        "commander": "Commander2gOn6eN",
+        "points": 40,
+        "server": "117"
+      }
+    ],
+    "rank": 103,
+    "server_rank": 52
+  },
+  {
+    "alliance": "[DSuN] Demonsun",
+    "tag": "DSuN",
+    "name": "Demonsun",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 234,
+    "avg_points": 234,
+    "top_commander": "Jake86",
+    "top_points": 234,
+    "top_rank": 1093,
+    "members": [
+      {
+        "rank": 1093,
+        "commander": "Jake86",
+        "points": 234,
+        "server": "117"
+      }
+    ],
+    "rank": 104,
+    "server_rank": 53
+  },
+  {
+    "alliance": "[piiu] yhyfjukus",
+    "tag": "piiu",
+    "name": "yhyfjukus",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 207,
+    "avg_points": 207,
+    "top_commander": "Commander2dpW5QF",
+    "top_points": 207,
+    "top_rank": 1099,
+    "members": [
+      {
+        "rank": 1099,
+        "commander": "Commander2dpW5QF",
+        "points": 207,
+        "server": "117"
+      }
+    ],
+    "rank": 105,
+    "server_rank": 54
+  },
+  {
+    "alliance": "[Coe] Albertofg",
+    "tag": "Coe",
+    "name": "Albertofg",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 171,
+    "avg_points": 171,
+    "top_commander": "Commander2ey7815",
+    "top_points": 171,
+    "top_rank": 1102,
+    "members": [
+      {
+        "rank": 1102,
+        "commander": "Commander2ey7815",
+        "points": 171,
+        "server": "117"
+      }
+    ],
+    "rank": 106,
+    "server_rank": 55
+  },
+  {
+    "alliance": "[oyif] yhyfjuk1",
+    "tag": "oyif",
+    "name": "yhyfjuk1",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 153,
+    "avg_points": 153,
+    "top_commander": "Commander2fKEDaJ",
+    "top_points": 153,
+    "top_rank": 1105,
+    "members": [
+      {
+        "rank": 1105,
+        "commander": "Commander2fKEDaJ",
+        "points": 153,
+        "server": "117"
+      }
+    ],
+    "rank": 107,
+    "server_rank": 56
+  },
+  {
+    "alliance": "[ZRS] ZRlastwar",
+    "tag": "ZRS",
+    "name": "ZRlastwar",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 130,
+    "avg_points": 130,
+    "top_commander": "MyDominion",
+    "top_points": 130,
+    "top_rank": 1110,
+    "members": [
+      {
+        "rank": 1110,
+        "commander": "MyDominion",
+        "points": 130,
+        "server": "117"
+      }
+    ],
+    "rank": 108,
+    "server_rank": 57
+  },
+  {
+    "alliance": "[VPL] VictoryProLeague",
+    "tag": "VPL",
+    "name": "VictoryProLeague",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 102,
+    "avg_points": 102,
+    "top_commander": "Commander2fWGnOd",
+    "top_points": 102,
+    "top_rank": 1122,
+    "members": [
+      {
+        "rank": 1122,
+        "commander": "Commander2fWGnOd",
+        "points": 102,
+        "server": "117"
+      }
+    ],
+    "rank": 109,
+    "server_rank": 58
+  },
+  {
+    "alliance": "[FALS] FallingStory",
+    "tag": "FALS",
+    "name": "FallingStory",
+    "server": "117",
+    "members_count": 2,
+    "total_points": 99,
+    "avg_points": 49,
+    "top_commander": "krolikzla",
+    "top_points": 54,
+    "top_rank": 1143,
+    "members": [
+      {
+        "rank": 1143,
+        "commander": "krolikzla",
+        "points": 54,
+        "server": "117"
+      },
+      {
+        "rank": 1151,
+        "commander": "Zfighterchi90",
+        "points": 45,
+        "server": "117"
+      }
+    ],
+    "rank": 110,
+    "server_rank": 59
+  },
+  {
+    "alliance": "[WZTX] KingThe",
+    "tag": "WZTX",
+    "name": "KingThe",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 45,
+    "avg_points": 45,
+    "top_commander": "GA-Thrawn",
+    "top_points": 45,
+    "top_rank": 1150,
+    "members": [
+      {
+        "rank": 1150,
+        "commander": "GA-Thrawn",
+        "points": 45,
+        "server": "117"
+      }
+    ],
+    "rank": 111,
+    "server_rank": 60
+  },
+  {
+    "alliance": "[Azt2] USAKKAA",
+    "tag": "Azt2",
+    "name": "USAKKAA",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 40,
+    "avg_points": 40,
+    "top_commander": "Commander2fTbASp",
+    "top_points": 40,
+    "top_rank": 1153,
+    "members": [
+      {
+        "rank": 1153,
+        "commander": "Commander2fTbASp",
+        "points": 40,
+        "server": "117"
+      }
+    ],
+    "rank": 112,
+    "server_rank": 61
+  },
+  {
+    "alliance": "[CBD] CBDDD",
+    "tag": "CBD",
+    "name": "CBDDD",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 30,
+    "avg_points": 30,
+    "top_commander": "Gnósticismo",
+    "top_points": 30,
+    "top_rank": 1159,
+    "members": [
+      {
+        "rank": 1159,
+        "commander": "Gnósticismo",
+        "points": 30,
+        "server": "117"
+      }
+    ],
+    "rank": 113,
+    "server_rank": 62
+  },
+  {
+    "alliance": "[usv] USAUUUUUUUUKU",
+    "tag": "usv",
+    "name": "USAUUUUUUUUKU",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 27,
+    "avg_points": 27,
+    "top_commander": "HDGW",
+    "top_points": 27,
+    "top_rank": 1162,
+    "members": [
+      {
+        "rank": 1162,
+        "commander": "HDGW",
+        "points": 27,
+        "server": "117"
+      }
+    ],
+    "rank": 114,
+    "server_rank": 63
+  },
+  {
+    "alliance": "[KPL6] newufh",
+    "tag": "KPL6",
+    "name": "newufh",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 24,
+    "avg_points": 24,
+    "top_commander": "Renchy",
+    "top_points": 24,
+    "top_rank": 1167,
+    "members": [
+      {
+        "rank": 1167,
+        "commander": "Renchy",
+        "points": 24,
+        "server": "117"
+      }
+    ],
+    "rank": 115,
+    "server_rank": 64
+  },
+  {
+    "alliance": "[Smps] SamaPoSebe",
+    "tag": "Smps",
+    "name": "SamaPoSebe",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 9,
+    "avg_points": 9,
+    "top_commander": "Ell",
+    "top_points": 9,
+    "top_rank": 1174,
+    "members": [
+      {
+        "rank": 1174,
+        "commander": "Ell",
+        "points": 9,
+        "server": "117"
+      }
+    ],
+    "rank": 116,
+    "server_rank": 65
+  },
+  {
+    "alliance": "[C4u] C4Urself",
+    "tag": "C4u",
+    "name": "C4Urself",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 8,
+    "avg_points": 8,
+    "top_commander": "C4Boom",
+    "top_points": 8,
+    "top_rank": 1175,
+    "members": [
+      {
+        "rank": 1175,
+        "commander": "C4Boom",
+        "points": 8,
+        "server": "117"
+      }
+    ],
+    "rank": 117,
+    "server_rank": 66
+  },
+  {
+    "alliance": "[FBL1] DVDVDVDA",
+    "tag": "FBL1",
+    "name": "DVDVDVDA",
+    "server": "117",
+    "members_count": 1,
+    "total_points": 8,
+    "avg_points": 8,
+    "top_commander": "Commander2fLpGFn",
+    "top_points": 8,
+    "top_rank": 1176,
+    "members": [
+      {
+        "rank": 1176,
+        "commander": "Commander2fLpGFn",
+        "points": 8,
+        "server": "117"
+      }
+    ],
+    "rank": 118,
+    "server_rank": 67
+  }
+]

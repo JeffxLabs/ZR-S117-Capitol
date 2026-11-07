@@ -10,7 +10,7 @@ from collections import defaultdict, Counter
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-def write_event_outputs(event_dir, event_id, title, date_str, home_server, opponent_server, players, home_role="defending"):
+def write_event_outputs(event_dir, event_id, title, date_str, home_server, opponent_server, players, home_role="defending", write_js=True):
     """Write event assets to an explicit directory, without updating the site."""
     players = [dict(p) for p in players]
     opp_role = "attacking" if home_role == "defending" else "defending"
@@ -131,15 +131,112 @@ def write_event_outputs(event_dir, event_id, title, date_str, home_server, oppon
         for a in alliances:
             writer.writerow([a["rank"], a["server_rank"], a["alliance"], f"S{a['server']}", a["members_count"], a["total_points"], a["avg_points"], a["top_commander"], a["top_points"]])
 
-    js_var = f"EVENT_{event_id.replace('-', '_')}"
-    with open(os.path.join(event_dir, "event_data.js"), "w", encoding="utf-8") as f:
-        f.write(f"window.{js_var} = {{\n")
-        f.write(f"  meta: {json.dumps(event_meta, ensure_ascii=False)},\n")
-        f.write(f"  alliances: {json.dumps(alliances, ensure_ascii=False)},\n")
-        f.write(f"  rankings: {json.dumps(players, ensure_ascii=False)}\n")
-        f.write("};\n")
+    if write_js:
+        js_var = f"EVENT_{event_id.replace('-', '_')}"
+        with open(os.path.join(event_dir, "event_data.js"), "w", encoding="utf-8") as f:
+            f.write(f"window.{js_var} = {{\n")
+            f.write(f"  meta: {json.dumps(event_meta, ensure_ascii=False)},\n")
+            f.write(f"  alliances: {json.dumps(alliances, ensure_ascii=False)},\n")
+            f.write(f"  rankings: {json.dumps(players, ensure_ascii=False)}\n")
+            f.write("};\n")
 
     return event_meta, alliances
+
+
+def save_incremental_scan(
+    event_id,
+    title,
+    date_str,
+    home_server,
+    opponent_server,
+    players,
+    home_role="defending",
+    scan_id=None,
+    capture_info=None,
+    capture_records=None,
+    qa_report=None,
+    scan_kind="incremental",
+    base_dir=None,
+):
+    """Save an internal incremental scan snapshot under events/<event_id>/incremental/<scan_id>/
+    and update events/<event_id>/incremental/index.json without modifying manifest.json or data/."""
+    base_dir = base_dir or BASE_DIR
+    if not scan_id:
+        ts_str = None
+        if capture_info:
+            ts_str = capture_info.get("finished_at") or capture_info.get("started_at")
+        if ts_str:
+            clean_ts = "".join(ch for ch in ts_str[:19] if ch.isdigit() or ch == "T")
+            scan_id = clean_ts or "scan"
+        else:
+            from datetime import datetime, timezone
+            scan_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+    inc_root = os.path.join(base_dir, "events", event_id, "incremental")
+    scan_dir = os.path.join(inc_root, scan_id)
+    event_meta, alliances = write_event_outputs(
+        scan_dir, event_id, title, date_str, home_server, opponent_server, players, home_role, write_js=False
+    )
+    if capture_records is not None:
+        with open(os.path.join(scan_dir, "capture_rankings.json"), "w", encoding="utf-8") as f:
+            json.dump(capture_records, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+    if qa_report is not None:
+        with open(os.path.join(scan_dir, "capture_qa.json"), "w", encoding="utf-8") as f:
+            json.dump(qa_report, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+    if capture_info is not None:
+        with open(os.path.join(scan_dir, "capture.json"), "w", encoding="utf-8") as f:
+            json.dump({
+                "event_id": event_id,
+                "scan_id": scan_id,
+                "scan_kind": scan_kind,
+                "passes": [capture_info],
+            }, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+
+    index_path = os.path.join(inc_root, "index.json")
+    scans = []
+    if os.path.exists(index_path):
+        try:
+            with open(index_path, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+                if isinstance(loaded, dict):
+                    scans = list(loaded.get("scans", []))
+                elif isinstance(loaded, list):
+                    scans = list(loaded)
+        except Exception:
+            scans = []
+
+    summary = {
+        "scan_id": scan_id,
+        "scan_kind": scan_kind,
+        "event_id": event_id,
+        "date": date_str,
+        "home_server": home_server,
+        "opponent_server": opponent_server,
+        "home_role": home_role,
+        "started_at": capture_info.get("started_at") if capture_info else None,
+        "finished_at": capture_info.get("finished_at") if capture_info else None,
+        "total_players": event_meta["total_players"],
+        "total_points": event_meta["total_points"],
+        "unique_alliances": event_meta["unique_alliances"],
+        "top_alliance": alliances[0]["alliance"] if alliances else "",
+        "top_commander": players[0]["commander"] if players else "",
+        "path": f"events/{event_id}/incremental/{scan_id}",
+    }
+    existing_idx = next((i for i, s in enumerate(scans) if s.get("scan_id") == scan_id), None)
+    if existing_idx is not None:
+        scans[existing_idx] = summary
+    else:
+        scans.append(summary)
+    scans.sort(key=lambda s: s.get("scan_id", ""))
+
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump({"event_id": event_id, "scans": scans}, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+    return event_meta, alliances, scan_dir
 
 
 def publish_event(event_id, title, date_str, home_server, opponent_server, players, home_role="defending"):

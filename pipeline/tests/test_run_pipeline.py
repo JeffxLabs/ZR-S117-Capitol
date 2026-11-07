@@ -172,6 +172,36 @@ class TestPublicationGate(unittest.TestCase):
             self.assertEqual(own[0]["points"], 100)
             self.assertNotIn("server_rank", own[0])
 
+    def test_incremental_scan_saves_internal_snapshot_without_publishing_to_site(self):
+        rows = [
+            {"rank": 1, "commander": "Alpha", "alliance": "[P1MP] JU1CE", "points": 2_000_000,
+             "server": "117", "diagnostics": {"n_clean": 2}},
+            {"rank": 2, "commander": "Bravo", "alliance": "[OPP] Enemy", "points": 1_000_000,
+             "server": "119", "diagnostics": {"n_clean": 2}},
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            code, published, _ = self.run_mock_capture(
+                root,
+                rows,
+                ["--incremental", "--scan-id", "20261010T100000"],
+            )
+            self.assertEqual(code, 0)
+            published.assert_not_called()
+            self.assertFalse((root / "events" / "manifest.json").exists())
+            self.assertFalse((root / "events" / "2026-10-10-s117-vs-s119" / "event_data.js").exists())
+            inc_dir = root / "events" / "2026-10-10-s117-vs-s119" / "incremental" / "20261010T100000"
+            self.assertTrue((inc_dir / "rankings.json").exists())
+            self.assertTrue((inc_dir / "alliances.json").exists())
+            self.assertTrue((inc_dir / "capture_rankings.json").exists())
+            self.assertTrue((inc_dir / "capture_qa.json").exists())
+            self.assertFalse((inc_dir / "event_data.js").exists())
+            idx = json.loads((inc_dir.parent / "index.json").read_text())
+            self.assertEqual(len(idx["scans"]), 1)
+            self.assertEqual(idx["scans"][0]["scan_id"], "20261010T100000")
+            self.assertEqual(idx["scans"][0]["scan_kind"], "incremental")
+            self.assertEqual(idx["scans"][0]["total_players"], 2)
+
     def test_empty_capture_fails_qa(self):
         self.assertFalse(pipeline.generate_qa_report("test", None, [], set())["passed"])
 

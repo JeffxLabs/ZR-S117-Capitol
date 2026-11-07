@@ -1,0 +1,28 @@
+{
+  "event_id": "2026-11-07-s117-vs-s121",
+  "total_ranks": 1120,
+  "max_rank": 1120,
+  "missing_ranks": [],
+  "ranks_repaired": [],
+  "ranks_unresolved": [
+    586,
+    850
+  ],
+  "ranks_single_clean": [
+    210,
+    509,
+    544,
+    728,
+    800
+  ],
+  "banner_frames_count": 8,
+  "duplicate_players": [],
+  "names_unreadable": [],
+  "monotonic_check": {
+    "passed": true,
+    "violations_count": 0,
+    "violations": []
+  },
+  "passed": false,
+  "validation_errors": []
+}

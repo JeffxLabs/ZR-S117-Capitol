@@ -1,0 +1,56 @@
+{
+  "event_id": "2026-11-07-s117-vs-s121",
+  "scans": [
+    {
+      "scan_id": "20261107T125122-pass1",
+      "scan_kind": "incremental",
+      "event_id": "2026-11-07-s117-vs-s121",
+      "date": "2026-11-07",
+      "home_server": "117",
+      "opponent_server": "121",
+      "home_role": "defending",
+      "started_at": "2026-11-07T12:51:22-02:00",
+      "finished_at": "2026-11-07T12:59:59-02:00",
+      "total_players": 1004,
+      "total_points": 703139262,
+      "unique_alliances": 104,
+      "top_alliance": "[P1MP] JU1CE",
+      "top_commander": "ViE",
+      "path": "events/2026-11-07-s117-vs-s121/incremental/20261107T125122-pass1"
+    },
+    {
+      "scan_id": "20261107T132419-pass2",
+      "scan_kind": "incremental",
+      "event_id": "2026-11-07-s117-vs-s121",
+      "date": "2026-11-07",
+      "home_server": "117",
+      "opponent_server": "121",
+      "home_role": "defending",
+      "started_at": "2026-11-07T13:24:19-02:00",
+      "finished_at": "2026-11-07T13:32:51-02:00",
+      "total_players": 1120,
+      "total_points": 935487496,
+      "unique_alliances": 108,
+      "top_alliance": "[P1MP] JU1CE",
+      "top_commander": "RollingStoners",
+      "path": "events/2026-11-07-s117-vs-s121/incremental/20261107T132419-pass2"
+    },
+    {
+      "scan_id": "20261107T135648-final",
+      "scan_kind": "final",
+      "event_id": "2026-11-07-s117-vs-s121",
+      "date": "2026-11-07",
+      "home_server": "117",
+      "opponent_server": "121",
+      "home_role": "defending",
+      "started_at": "2026-11-07T13:56:48-02:00",
+      "finished_at": "2026-11-07T14:07:38-02:00",
+      "total_players": 1178,
+      "total_points": 1101342520,
+      "unique_alliances": 118,
+      "top_alliance": "[P1MP] JU1CE",
+      "top_commander": "RollingStoners",
+      "path": "events/2026-11-07-s117-vs-s121/incremental/20261107T135648-final"
+    }
+  ]
+}

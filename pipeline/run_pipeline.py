@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from typing import List, Dict, Optional, Any, Set, Tuple, Callable
 
 from cleaner import clean_player_record, clean_records, validate_dataset
-from processor import publish_event, write_event_outputs
+from processor import publish_event, write_event_outputs, save_incremental_scan
 from screenshots import staging_dir, archive_screenshots, select_screenshots_to_archive, SERVER_TZ
 from frame_parser import parse_frame, FrameResult, find_banner_close, is_rankings_list
 from merge import ObservationStore, name_key
@@ -749,12 +749,23 @@ def load_early_screens(directory):
     return rows, sources, {"started_at": min(times), "finished_at": max(times)}
 
 
-def git_upload_event(event_id: str, meta: Dict[str, Any], repo_dir: Optional[str] = None, log=print) -> bool:
-    """Commit and push published event files to GitHub Pages."""
+def git_upload_event(
+    event_id: str,
+    meta: Dict[str, Any],
+    repo_dir: Optional[str] = None,
+    log=print,
+    incremental: bool = False,
+    scan_id: Optional[str] = None,
+) -> bool:
+    """Commit and push published event files (or incremental snapshot) to GitHub."""
     repo_dir = repo_dir or BASE_DIR
     if not os.path.isdir(os.path.join(repo_dir, ".git")):
         return False
-    paths = [p for p in ("events", "data", "index.html") if os.path.exists(os.path.join(repo_dir, p))]
+    if incremental:
+        inc_rel = os.path.join("events", event_id, "incremental")
+        paths = [inc_rel] if os.path.exists(os.path.join(repo_dir, inc_rel)) else []
+    else:
+        paths = [p for p in ("events", "data", "index.html") if os.path.exists(os.path.join(repo_dir, p))]
     if not paths:
         return False
     try:
@@ -764,10 +775,14 @@ def git_upload_event(event_id: str, meta: Dict[str, Any], repo_dir: Optional[str
             log("GitHub Pages: no new changes to commit.")
             return False
         total_players = meta.get("total_players", 0)
-        msg = f"feat(event): publish Capitol War {event_id} dataset ({total_players:,} commanders)"
+        if incremental:
+            label = f" ({scan_id})" if scan_id else ""
+            msg = f"chore(event): store Capitol War {event_id} incremental scan{label} ({total_players:,} commanders)"
+        else:
+            msg = f"feat(event): publish Capitol War {event_id} dataset ({total_players:,} commanders)"
         subprocess.run(["git", "commit", "-m", msg], cwd=repo_dir, check=True, capture_output=True, text=True)
         subprocess.run(["git", "push", "origin", "main"], cwd=repo_dir, check=True, capture_output=True, text=True)
-        log(f"Uploaded '{event_id}' to GitHub Pages (origin/main).")
+        log(f"Uploaded '{event_id}' ({'incremental' if incremental else 'final'}) to GitHub (origin/main).")
         return True
     except subprocess.CalledProcessError as e:
         err = (e.stderr or e.stdout or str(e)).strip()
@@ -797,6 +812,9 @@ def main(argv=None):
     parser.add_argument("--whitelist-threshold-millions", type=float, default=None,
                         help="Override Capitol War whitelist threshold in Millions (default: read from Apparatchik or 1.0M)")
     parser.add_argument("--no-upload", action="store_true", help="Skip automatic git commit and push to GitHub Pages")
+    parser.add_argument("--incremental", action="store_true",
+                        help="Store scan in events/<id>/incremental/ for internal reference without publishing to GitHub Pages")
+    parser.add_argument("--scan-id", default=None, help="Explicit scan identifier for incremental snapshot")
     parser.add_argument("--nav-test", action="store_true", help="Only navigate to Rankings and return to city")
     parser.add_argument("--no-navigate", action="store_true", help="Rankings already open; stay there afterwards")
     args = parser.parse_args(argv)
@@ -950,8 +968,57 @@ def main(argv=None):
         print_human_input_summary()
         parser.exit(1)
 
+    if args.incremental:
+        print(f"\nSaving incremental scan for '{event_id}' (internal reference only; not published to dashboard)...")
+        meta, alliances, scan_dir = save_incremental_scan(
+            event_id,
+            title,
+            args.date,
+            args.home,
+            args.opponent,
+            cleaned_records,
+            args.home_role,
+            scan_id=args.scan_id,
+            capture_info=capture_info,
+            capture_records=capture_records,
+            qa_report=qa_report,
+            scan_kind="incremental",
+            base_dir=BASE_DIR,
+        )
+        scan_id_used = os.path.basename(scan_dir)
+        print(f"Saved incremental scan '{scan_id_used}' in {scan_dir}: "
+              f"{meta['total_players']:,} commanders, {meta['total_points']:,} points, {meta['unique_alliances']:,} alliances.")
+        if frames_dir:
+            print(f"Full-size frames kept locally in {frames_dir}.")
+        if not args.no_apparatchik and not args.no_whitelist and os.path.isdir(os.path.join(BASE_DIR, ".git")):
+            sync_home_alliance_whitelist(
+                alliances,
+                home_server=args.home,
+                threshold_millions=args.whitelist_threshold_millions,
+            )
+        if not args.no_upload and os.path.isdir(os.path.join(BASE_DIR, ".git")):
+            git_upload_event(event_id, meta, repo_dir=BASE_DIR, incremental=True, scan_id=scan_id_used)
+        print_human_input_summary()
+        return
+
     print(f"\nPublishing event '{event_id}'...")
     meta, alliances = publish_event(event_id, title, args.date, args.home, args.opponent, cleaned_records, args.home_role)
+    if capture_info or args.scan_id:
+        save_incremental_scan(
+            event_id,
+            title,
+            args.date,
+            args.home,
+            args.opponent,
+            cleaned_records,
+            args.home_role,
+            scan_id=args.scan_id,
+            capture_info=capture_info,
+            capture_records=capture_records,
+            qa_report=qa_report,
+            scan_kind="final",
+            base_dir=BASE_DIR,
+        )
     event_dir = os.path.join(BASE_DIR, "events", event_id)
     # Reprocessing published rankings must not overwrite an existing original capture.
     capture_path = os.path.join(event_dir, "capture_rankings.json")

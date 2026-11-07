@@ -1,0 +1,11 @@
+{
+  "event_id": "2026-11-07-s117-vs-s121",
+  "scan_id": "20261107T132419-pass2",
+  "scan_kind": "incremental",
+  "passes": [
+    {
+      "started_at": "2026-11-07T13:24:19-02:00",
+      "finished_at": "2026-11-07T13:32:51-02:00"
+    }
+  ]
+}
