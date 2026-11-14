@@ -4,17 +4,199 @@
   "validation_errors": [],
   "applied_changes": [
     {
-      "rank": 373,
+      "rank": 10,
       "field": "alliance",
-      "before": "[PoS] КланСопраноАкадеміv|",
-      "after": "[PoS] КланСопраноАкадемІv|",
-      "reason": "known alliance"
+      "before": "[Ivl] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 11,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
+      "rank": 16,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадемІv|",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 47,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
+      "rank": 107,
+      "field": "alliance",
+      "before": "[Ivl] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 132,
+      "field": "alliance",
+      "before": "[lv|] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 140,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
+      "rank": 146,
+      "field": "alliance",
+      "before": "[lv|] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 150,
+      "field": "alliance",
+      "before": "[lv|] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 162,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
+      "rank": 191,
+      "field": "alliance",
+      "before": "[lv|] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 192,
+      "field": "alliance",
+      "before": "[lv|] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 204,
+      "field": "alliance",
+      "before": "[Ivl] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 212,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадемІv|",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 234,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадемІv|",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 258,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадемІvl",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 278,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
+      "rank": 299,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадемІvl",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 333,
+      "field": "alliance",
+      "before": "[Ivl] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 371,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
+      "rank": 422,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадеміvl",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 567,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадемІv|",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 612,
+      "field": "alliance",
+      "before": "[LiN] xXxLEGION×Xx",
+      "after": "[LiN] xXxLEGIONxXx",
+      "reason": "manual override"
+    },
+    {
+      "rank": 649,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадеміvl",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
+      "rank": 655,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
+      "rank": 672,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадеміvі",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
     },
     {
       "rank": 683,
       "field": "alliance",
       "before": "[KRS] KRATOSR",
       "after": "[KRS] KRATOS",
+      "reason": "manual override"
+    },
+    {
+      "rank": 687,
+      "field": "alliance",
+      "before": "[Ivl] Шабаш",
+      "after": "[lvl] Шабаш",
       "reason": "manual override"
     },
     {
@@ -25,11 +207,32 @@
       "reason": "known alliance"
     },
     {
+      "rank": 758,
+      "field": "alliance",
+      "before": "[lv|] Шабаш",
+      "after": "[lvl] Шабаш",
+      "reason": "manual override"
+    },
+    {
+      "rank": 776,
+      "field": "alliance",
+      "before": "[VaIX] Вальхалла",
+      "after": "[ValX] Вальхалла",
+      "reason": "manual override"
+    },
+    {
       "rank": 784,
       "field": "alliance",
       "before": "[T1OX] ПоХуисты",
       "after": "[TIOX] ПоХуисты",
       "reason": "known alliance"
+    },
+    {
+      "rank": 798,
+      "field": "alliance",
+      "before": "[LiN] ×XxLEGION×Xx",
+      "after": "[LiN] xXxLEGIONxXx",
+      "reason": "manual override"
     },
     {
       "rank": 822,
@@ -39,155 +242,112 @@
       "reason": "known alliance"
     },
     {
+      "rank": 33,
+      "field": "commander",
+      "before": "Harvěy",
+      "after": "☢Harvēy☢",
+      "reason": "manual override"
+    },
+    {
+      "rank": 116,
+      "field": "commander",
+      "before": "LVoiN",
+      "after": "🦊VoiN🦊",
+      "reason": "manual override"
+    },
+    {
+      "rank": 122,
+      "field": "commander",
+      "before": "Pazu+",
+      "after": "Pazu🦊",
+      "reason": "manual override"
+    },
+    {
+      "rank": 147,
+      "field": "commander",
+      "before": "AB*nnieA",
+      "after": "△B✳nnie△",
+      "reason": "manual override"
+    },
+    {
+      "rank": 203,
+      "field": "commander",
+      "before": "•Оленька?",
+      "after": "♡Оленька♡",
+      "reason": "manual override"
+    },
+    {
+      "rank": 219,
+      "field": "commander",
+      "before": "JSSTHEONER",
+      "after": "JSSTHEONE",
+      "reason": "manual override"
+    },
+    {
+      "rank": 291,
+      "field": "commander",
+      "before": "JARES",
+      "after": "√ ARES",
+      "reason": "manual override"
+    },
+    {
+      "rank": 326,
+      "field": "commander",
+      "before": "Лиссас",
+      "after": "Лисса🦊",
+      "reason": "manual override"
+    },
+    {
       "rank": 413,
       "field": "commander",
       "before": "MõõnChild",
       "after": "MõõnChïld",
       "reason": "manual override"
+    },
+    {
+      "rank": 421,
+      "field": "commander",
+      "before": "§Trombą",
+      "after": "♣Tromb♣",
+      "reason": "manual override"
+    },
+    {
+      "rank": 503,
+      "field": "commander",
+      "before": "ХũťїGắ$ka",
+      "after": "ẌūℒἰGẳ₦ka",
+      "reason": "manual override"
+    },
+    {
+      "rank": 545,
+      "field": "commander",
+      "before": "六大Helen*次",
+      "after": "☆★Helen★☆",
+      "reason": "manual override"
+    },
+    {
+      "rank": 619,
+      "field": "commander",
+      "before": "Vibe/?Vendetta",
+      "after": "Vibe🧨Vendetta",
+      "reason": "manual override"
+    },
+    {
+      "rank": 760,
+      "field": "commander",
+      "before": "JSPEC",
+      "after": "JSP💪",
+      "reason": "manual override"
     }
   ],
   "name_review": [
     {
-      "rank": 760,
+      "rank": 803,
       "server": "117",
-      "observed": "JSPEC",
-      "known": "JSP Eo",
-      "alliance": "[P2MP] NowaPolandia"
+      "observed": "Tatat0",
+      "known": "Tatato",
+      "alliance": "[HDG] HérosdeGuerre"
     }
   ],
-  "alliance_review": [
-    {
-      "rank": 10,
-      "server": "114",
-      "observed": "[Ivl] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 11,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    },
-    {
-      "rank": 47,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    },
-    {
-      "rank": 107,
-      "server": "114",
-      "observed": "[Ivl] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 132,
-      "server": "114",
-      "observed": "[lv|] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 140,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    },
-    {
-      "rank": 146,
-      "server": "114",
-      "observed": "[lv|] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 150,
-      "server": "114",
-      "observed": "[lv|] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 162,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    },
-    {
-      "rank": 191,
-      "server": "114",
-      "observed": "[lv|] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 192,
-      "server": "114",
-      "observed": "[lv|] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 204,
-      "server": "114",
-      "observed": "[Ivl] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 278,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    },
-    {
-      "rank": 333,
-      "server": "114",
-      "observed": "[Ivl] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 371,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    },
-    {
-      "rank": 655,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    },
-    {
-      "rank": 687,
-      "server": "114",
-      "observed": "[Ivl] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 758,
-      "server": "114",
-      "observed": "[lv|] Шабаш",
-      "known": "[lvl] Шабаш",
-      "alliance": "Шабаш"
-    },
-    {
-      "rank": 776,
-      "server": "114",
-      "observed": "[VaIX] Вальхалла",
-      "known": "[ValX] Вальхалла",
-      "alliance": "Вальхалла"
-    }
-  ]
+  "alliance_review": []
 }
