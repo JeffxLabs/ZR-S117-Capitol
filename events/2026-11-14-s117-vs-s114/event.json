@@ -5,26 +5,26 @@
   "home_server": "117",
   "opponent_server": "114",
   "home_role": "defending",
-  "total_players": 908,
-  "total_points": 885358027,
+  "total_players": 894,
+  "total_points": 868252856,
   "unique_alliances": 99,
   "servers": {
     "117": {
       "name": "Server 117 (Defending)",
-      "players": 393,
-      "points": 254436041,
-      "point_share_pct": 28.74
+      "players": 391,
+      "points": 249404655,
+      "point_share_pct": 28.72
     },
     "114": {
       "name": "Server 114 (Attacking)",
-      "players": 508,
-      "points": 630882241,
-      "point_share_pct": 71.26
+      "players": 497,
+      "points": 618813006,
+      "point_share_pct": 71.27
     },
     "119": {
       "name": "Server 119 (Cross-server)",
-      "players": 3,
-      "points": 35350,
+      "players": 2,
+      "points": 30800,
       "point_share_pct": 0.0
     },
     "128": {
