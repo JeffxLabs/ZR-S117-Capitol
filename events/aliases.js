@@ -4,4 +4,5 @@
 //   "117|newname": "117|oldname",
 window.PLAYER_ALIASES = {
   "117|denissa": "117|διονύσιος",
+  "117|josephseed": "117|διονύσιος",
 };
