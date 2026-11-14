@@ -1,5 +1,18 @@
 window.EVENTS_MANIFEST = [
   {
+    "id": "2026-11-14-s117-vs-s114",
+    "title": "Capitol War: Server 117 vs Server 114",
+    "date": "2026-11-14",
+    "home_server": "117",
+    "opponent_server": "114",
+    "home_role": "defending",
+    "total_players": 894,
+    "total_points": 868252856,
+    "top_alliance": "[P1MP] JU1CE",
+    "top_commander": "Tony-Soprano",
+    "data_version": "052db3113a"
+  },
+  {
     "id": "2026-11-07-s117-vs-s121",
     "title": "Capitol War: Server 117 vs Server 121",
     "date": "2026-11-07",

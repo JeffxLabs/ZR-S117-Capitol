@@ -1,0 +1,186 @@
+{
+  "event_id": "2026-11-14-s117-vs-s114",
+  "passed": true,
+  "validation_errors": [],
+  "applied_changes": [
+    {
+      "rank": 373,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадеміv|",
+      "after": "[PoS] КланСопраноАкадемІv|",
+      "reason": "known alliance"
+    },
+    {
+      "rank": 750,
+      "field": "alliance",
+      "before": "[LiN] XXxLEGIONxXx",
+      "after": "[LiN] xXxLEGIONxXx",
+      "reason": "known alliance"
+    },
+    {
+      "rank": 784,
+      "field": "alliance",
+      "before": "[T1OX] ПоХуисты",
+      "after": "[TIOX] ПоХуисты",
+      "reason": "known alliance"
+    },
+    {
+      "rank": 822,
+      "field": "alliance",
+      "before": "[HElI] DarkAl",
+      "after": "[HEII] DarkAl",
+      "reason": "known alliance"
+    },
+    {
+      "rank": 413,
+      "field": "commander",
+      "before": "MõõnChild",
+      "after": "MõõnChïld",
+      "reason": "manual override"
+    }
+  ],
+  "name_review": [
+    {
+      "rank": 760,
+      "server": "117",
+      "observed": "JSPEC",
+      "known": "JSP Eo",
+      "alliance": "[P2MP] NowaPolandia"
+    }
+  ],
+  "alliance_review": [
+    {
+      "rank": 10,
+      "server": "114",
+      "observed": "[Ivl] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 11,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    },
+    {
+      "rank": 47,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    },
+    {
+      "rank": 107,
+      "server": "114",
+      "observed": "[Ivl] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 132,
+      "server": "114",
+      "observed": "[lv|] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 140,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    },
+    {
+      "rank": 146,
+      "server": "114",
+      "observed": "[lv|] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 150,
+      "server": "114",
+      "observed": "[lv|] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 162,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    },
+    {
+      "rank": 191,
+      "server": "114",
+      "observed": "[lv|] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 192,
+      "server": "114",
+      "observed": "[lv|] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 204,
+      "server": "114",
+      "observed": "[Ivl] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 278,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    },
+    {
+      "rank": 333,
+      "server": "114",
+      "observed": "[Ivl] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 371,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    },
+    {
+      "rank": 655,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    },
+    {
+      "rank": 687,
+      "server": "114",
+      "observed": "[Ivl] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 758,
+      "server": "114",
+      "observed": "[lv|] Шабаш",
+      "known": "[lvl] Шабаш",
+      "alliance": "Шабаш"
+    },
+    {
+      "rank": 776,
+      "server": "114",
+      "observed": "[VaIX] Вальхалла",
+      "known": "[ValX] Вальхалла",
+      "alliance": "Вальхалла"
+    }
+  ]
+}
