@@ -11,6 +11,13 @@
       "reason": "known alliance"
     },
     {
+      "rank": 683,
+      "field": "alliance",
+      "before": "[KRS] KRATOSR",
+      "after": "[KRS] KRATOS",
+      "reason": "manual override"
+    },
+    {
       "rank": 750,
       "field": "alliance",
       "before": "[LiN] XXxLEGIONxXx",
