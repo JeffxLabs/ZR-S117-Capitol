@@ -144,6 +144,13 @@
       "reason": "manual override"
     },
     {
+      "rank": 373,
+      "field": "alliance",
+      "before": "[PoS] КланСопраноАкадеміv|",
+      "after": "[PoS] КланСопраноАкадемlvl",
+      "reason": "manual override"
+    },
+    {
       "rank": 422,
       "field": "alliance",
       "before": "[PoS] КланСопраноАкадеміvl",

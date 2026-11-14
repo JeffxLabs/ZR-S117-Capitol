@@ -4420,6 +4420,82 @@
     "server_rank": 16
   },
   {
+    "alliance": "[PoS] КланСопраноАкадемlvl",
+    "tag": "PoS",
+    "name": "КланСопраноАкадемlvl",
+    "server": "114",
+    "members_count": 10,
+    "total_points": 11951611,
+    "avg_points": 1195161,
+    "top_commander": "NoBrakes",
+    "top_points": 2864820,
+    "top_rank": 16,
+    "members": [
+      {
+        "rank": 16,
+        "commander": "NoBrakes",
+        "points": 2864820,
+        "server": "114"
+      },
+      {
+        "rank": 212,
+        "commander": "Gobbi",
+        "points": 1564684,
+        "server": "114"
+      },
+      {
+        "rank": 234,
+        "commander": "Санятоворотов",
+        "points": 1550086,
+        "server": "114"
+      },
+      {
+        "rank": 258,
+        "commander": "деградируй Про",
+        "points": 1538270,
+        "server": "114"
+      },
+      {
+        "rank": 299,
+        "commander": "Dmitry1568",
+        "points": 1515687,
+        "server": "114"
+      },
+      {
+        "rank": 373,
+        "commander": "Vas13",
+        "points": 1175778,
+        "server": "114"
+      },
+      {
+        "rank": 422,
+        "commander": "Raguel",
+        "points": 891250,
+        "server": "114"
+      },
+      {
+        "rank": 567,
+        "commander": "слесарюга",
+        "points": 447485,
+        "server": "114"
+      },
+      {
+        "rank": 649,
+        "commander": "Стари4ок",
+        "points": 233892,
+        "server": "114"
+      },
+      {
+        "rank": 672,
+        "commander": "АиДвЮбкЕ",
+        "points": 169659,
+        "server": "114"
+      }
+    ],
+    "rank": 23,
+    "server_rank": 17
+  },
+  {
     "alliance": "[AOMA] АкадемияАОМ",
     "tag": "AOMA",
     "name": "АкадемияАОМ",
@@ -4471,76 +4547,6 @@
         "rank": 450,
         "commander": "штопор",
         "points": 786290,
-        "server": "114"
-      }
-    ],
-    "rank": 23,
-    "server_rank": 17
-  },
-  {
-    "alliance": "[PoS] КланСопраноАкадемlvl",
-    "tag": "PoS",
-    "name": "КланСопраноАкадемlvl",
-    "server": "114",
-    "members_count": 9,
-    "total_points": 10775833,
-    "avg_points": 1197314,
-    "top_commander": "NoBrakes",
-    "top_points": 2864820,
-    "top_rank": 16,
-    "members": [
-      {
-        "rank": 16,
-        "commander": "NoBrakes",
-        "points": 2864820,
-        "server": "114"
-      },
-      {
-        "rank": 212,
-        "commander": "Gobbi",
-        "points": 1564684,
-        "server": "114"
-      },
-      {
-        "rank": 234,
-        "commander": "Санятоворотов",
-        "points": 1550086,
-        "server": "114"
-      },
-      {
-        "rank": 258,
-        "commander": "деградируй Про",
-        "points": 1538270,
-        "server": "114"
-      },
-      {
-        "rank": 299,
-        "commander": "Dmitry1568",
-        "points": 1515687,
-        "server": "114"
-      },
-      {
-        "rank": 422,
-        "commander": "Raguel",
-        "points": 891250,
-        "server": "114"
-      },
-      {
-        "rank": 567,
-        "commander": "слесарюга",
-        "points": 447485,
-        "server": "114"
-      },
-      {
-        "rank": 649,
-        "commander": "Стари4ок",
-        "points": 233892,
-        "server": "114"
-      },
-      {
-        "rank": 672,
-        "commander": "АиДвЮбкЕ",
-        "points": 169659,
         "server": "114"
       }
     ],
@@ -5512,28 +5518,6 @@
     "server_rank": 27
   },
   {
-    "alliance": "[PoS] КланСопраноАкадеміv|",
-    "tag": "PoS",
-    "name": "КланСопраноАкадеміv|",
-    "server": "114",
-    "members_count": 1,
-    "total_points": 1175778,
-    "avg_points": 1175778,
-    "top_commander": "Vas13",
-    "top_points": 1175778,
-    "top_rank": 373,
-    "members": [
-      {
-        "rank": 373,
-        "commander": "Vas13",
-        "points": 1175778,
-        "server": "114"
-      }
-    ],
-    "rank": 41,
-    "server_rank": 28
-  },
-  {
     "alliance": "[KRS2] KRATO",
     "tag": "KRS2",
     "name": "KRATO",
@@ -5570,7 +5554,7 @@
         "server": "117"
       }
     ],
-    "rank": 42,
+    "rank": 41,
     "server_rank": 14
   },
   {
@@ -5592,7 +5576,7 @@
         "server": "117"
       }
     ],
-    "rank": 43,
+    "rank": 42,
     "server_rank": 15
   },
   {
@@ -5614,7 +5598,7 @@
         "server": "117"
       }
     ],
-    "rank": 44,
+    "rank": 43,
     "server_rank": 16
   },
   {
@@ -5636,8 +5620,8 @@
         "server": "114"
       }
     ],
-    "rank": 45,
-    "server_rank": 29
+    "rank": 44,
+    "server_rank": 28
   },
   {
     "alliance": "[UTS] upthescore",
@@ -5682,7 +5666,7 @@
         "server": "117"
       }
     ],
-    "rank": 46,
+    "rank": 45,
     "server_rank": 17
   },
   {
@@ -5710,7 +5694,7 @@
         "server": "117"
       }
     ],
-    "rank": 47,
+    "rank": 46,
     "server_rank": 18
   },
   {
@@ -5738,7 +5722,7 @@
         "server": "117"
       }
     ],
-    "rank": 48,
+    "rank": 47,
     "server_rank": 19
   },
   {
@@ -5760,7 +5744,7 @@
         "server": "117"
       }
     ],
-    "rank": 49,
+    "rank": 48,
     "server_rank": 20
   },
   {
@@ -5788,7 +5772,7 @@
         "server": "117"
       }
     ],
-    "rank": 50,
+    "rank": 49,
     "server_rank": 21
   },
   {
@@ -5810,7 +5794,7 @@
         "server": "117"
       }
     ],
-    "rank": 51,
+    "rank": 50,
     "server_rank": 22
   },
   {
@@ -5832,7 +5816,7 @@
         "server": "117"
       }
     ],
-    "rank": 52,
+    "rank": 51,
     "server_rank": 23
   },
   {
@@ -5860,7 +5844,7 @@
         "server": "117"
       }
     ],
-    "rank": 53,
+    "rank": 52,
     "server_rank": 24
   },
   {
@@ -5882,7 +5866,7 @@
         "server": "117"
       }
     ],
-    "rank": 54,
+    "rank": 53,
     "server_rank": 25
   },
   {
@@ -5928,7 +5912,7 @@
         "server": "117"
       }
     ],
-    "rank": 55,
+    "rank": 54,
     "server_rank": 26
   },
   {
@@ -5956,7 +5940,7 @@
         "server": "119"
       }
     ],
-    "rank": 56,
+    "rank": 55,
     "server_rank": 1
   },
   {
@@ -5996,7 +5980,7 @@
         "server": "117"
       }
     ],
-    "rank": 57,
+    "rank": 56,
     "server_rank": 27
   },
   {
@@ -6018,7 +6002,7 @@
         "server": "117"
       }
     ],
-    "rank": 58,
+    "rank": 57,
     "server_rank": 28
   },
   {
@@ -6040,7 +6024,7 @@
         "server": "117"
       }
     ],
-    "rank": 59,
+    "rank": 58,
     "server_rank": 29
   },
   {
@@ -6062,7 +6046,7 @@
         "server": "128"
       }
     ],
-    "rank": 60,
+    "rank": 59,
     "server_rank": 1
   },
   {
@@ -6084,7 +6068,7 @@
         "server": "117"
       }
     ],
-    "rank": 61,
+    "rank": 60,
     "server_rank": 30
   },
   {
@@ -6106,7 +6090,7 @@
         "server": "128"
       }
     ],
-    "rank": 62,
+    "rank": 61,
     "server_rank": 2
   },
   {
@@ -6128,7 +6112,7 @@
         "server": "117"
       }
     ],
-    "rank": 63,
+    "rank": 62,
     "server_rank": 31
   },
   {
@@ -6150,7 +6134,7 @@
         "server": "117"
       }
     ],
-    "rank": 64,
+    "rank": 63,
     "server_rank": 32
   },
   {
@@ -6178,7 +6162,7 @@
         "server": "117"
       }
     ],
-    "rank": 65,
+    "rank": 64,
     "server_rank": 33
   },
   {
@@ -6200,7 +6184,7 @@
         "server": "115"
       }
     ],
-    "rank": 66,
+    "rank": 65,
     "server_rank": 1
   },
   {
@@ -6222,7 +6206,7 @@
         "server": "117"
       }
     ],
-    "rank": 67,
+    "rank": 66,
     "server_rank": 34
   },
   {
@@ -6244,7 +6228,7 @@
         "server": "120"
       }
     ],
-    "rank": 68,
+    "rank": 67,
     "server_rank": 1
   },
   {
@@ -6272,7 +6256,7 @@
         "server": "117"
       }
     ],
-    "rank": 69,
+    "rank": 68,
     "server_rank": 35
   },
   {
@@ -6294,7 +6278,7 @@
         "server": "117"
       }
     ],
-    "rank": 70,
+    "rank": 69,
     "server_rank": 36
   },
   {
@@ -6316,7 +6300,7 @@
         "server": "117"
       }
     ],
-    "rank": 71,
+    "rank": 70,
     "server_rank": 37
   },
   {
@@ -6374,7 +6358,7 @@
         "server": "117"
       }
     ],
-    "rank": 72,
+    "rank": 71,
     "server_rank": 38
   },
   {
@@ -6396,7 +6380,7 @@
         "server": "117"
       }
     ],
-    "rank": 73,
+    "rank": 72,
     "server_rank": 39
   },
   {
@@ -6418,7 +6402,7 @@
         "server": "117"
       }
     ],
-    "rank": 74,
+    "rank": 73,
     "server_rank": 40
   },
   {
@@ -6446,7 +6430,7 @@
         "server": "117"
       }
     ],
-    "rank": 75,
+    "rank": 74,
     "server_rank": 41
   },
   {
@@ -6474,7 +6458,7 @@
         "server": "117"
       }
     ],
-    "rank": 76,
+    "rank": 75,
     "server_rank": 42
   },
   {
@@ -6502,7 +6486,7 @@
         "server": "117"
       }
     ],
-    "rank": 77,
+    "rank": 76,
     "server_rank": 43
   },
   {
@@ -6524,7 +6508,7 @@
         "server": "117"
       }
     ],
-    "rank": 78,
+    "rank": 77,
     "server_rank": 44
   },
   {
@@ -6552,7 +6536,7 @@
         "server": "117"
       }
     ],
-    "rank": 79,
+    "rank": 78,
     "server_rank": 45
   },
   {
@@ -6574,7 +6558,7 @@
         "server": "117"
       }
     ],
-    "rank": 80,
+    "rank": 79,
     "server_rank": 46
   },
   {
@@ -6596,7 +6580,7 @@
         "server": "117"
       }
     ],
-    "rank": 81,
+    "rank": 80,
     "server_rank": 47
   },
   {
@@ -6618,7 +6602,7 @@
         "server": "117"
       }
     ],
-    "rank": 82,
+    "rank": 81,
     "server_rank": 48
   },
   {
@@ -6640,7 +6624,7 @@
         "server": "117"
       }
     ],
-    "rank": 83,
+    "rank": 82,
     "server_rank": 49
   },
   {
@@ -6662,7 +6646,7 @@
         "server": "117"
       }
     ],
-    "rank": 84,
+    "rank": 83,
     "server_rank": 50
   },
   {
@@ -6684,7 +6668,7 @@
         "server": "117"
       }
     ],
-    "rank": 85,
+    "rank": 84,
     "server_rank": 51
   },
   {
@@ -6706,7 +6690,7 @@
         "server": "117"
       }
     ],
-    "rank": 86,
+    "rank": 85,
     "server_rank": 52
   },
   {
@@ -6728,7 +6712,7 @@
         "server": "117"
       }
     ],
-    "rank": 87,
+    "rank": 86,
     "server_rank": 53
   },
   {
@@ -6750,7 +6734,7 @@
         "server": "117"
       }
     ],
-    "rank": 88,
+    "rank": 87,
     "server_rank": 54
   },
   {
@@ -6772,7 +6756,7 @@
         "server": "117"
       }
     ],
-    "rank": 89,
+    "rank": 88,
     "server_rank": 55
   },
   {
@@ -6794,7 +6778,7 @@
         "server": "117"
       }
     ],
-    "rank": 90,
+    "rank": 89,
     "server_rank": 56
   },
   {
@@ -6816,7 +6800,7 @@
         "server": "117"
       }
     ],
-    "rank": 91,
+    "rank": 90,
     "server_rank": 57
   }
 ]
