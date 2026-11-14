@@ -190,7 +190,7 @@ def allowlist_tag(tag, allowed=True):
 
 
 def sync_home_alliance_whitelist(alliances, home_server="117", threshold_millions=None, log=print):
-    """Add qualifying home server alliances (total_points >= threshold) to Apparatchik's whitelist."""
+    """Sync Apparatchik's whitelist to qualifying home server alliances (total_points >= threshold)."""
     if threshold_millions is None:
         threshold_millions = get_capitol_threshold_millions()
     min_points = int(round(float(threshold_millions) * 1_000_000))
@@ -217,10 +217,13 @@ def sync_home_alliance_whitelist(alliances, home_server="117", threshold_million
 
     try:
         snap = _request("GET", "/v1/state")
-        existing = {t.lower() for t in snap.get("settings", {}).get("allowedTags", [])}
+        existing_tags = list(snap.get("settings", {}).get("allowedTags", []))
+        existing = {t.lower() for t in existing_tags}
     except ApparatchikError as e:
         log(f"WARNING: Could not read Apparatchik state for whitelist sync ({e}).")
         return qualifying_tags
+
+    qualifying_lower = {t.lower() for t in qualifying_tags}
 
     added = []
     for tag in qualifying_tags:
@@ -232,12 +235,26 @@ def sync_home_alliance_whitelist(alliances, home_server="117", threshold_million
             except ApparatchikError as e:
                 log(f"WARNING: Could not whitelist tag [{tag}] in Apparatchik ({e}).")
 
+    removed = []
+    for tag in existing_tags:
+        if tag.lower() not in qualifying_lower:
+            try:
+                allowlist_tag(tag, False)
+                removed.append(tag)
+            except ApparatchikError as e:
+                log(f"WARNING: Could not remove tag [{tag}] from Apparatchik whitelist ({e}).")
+
+    changes = []
     if added:
-        log(f"Apparatchik whitelist (≥ {threshold_millions:g}M pts): added {len(added)} new S{home_srv} tag(s): {', '.join(added)} "
+        changes.append(f"added {len(added)} ({(', '.join(added))})")
+    if removed:
+        changes.append(f"removed {len(removed)} ({(', '.join(removed))})")
+    if changes:
+        log(f"Apparatchik whitelist (≥ {threshold_millions:g}M pts): {'; '.join(changes)} "
             f"(all qualifying: {', '.join(qualifying_tags)}).")
     else:
         log(f"Apparatchik whitelist (≥ {threshold_millions:g}M pts): all {len(qualifying_tags)} qualifying S{home_srv} tag(s) "
-            f"already whitelisted ({', '.join(qualifying_tags)}).")
+            f"already synced ({', '.join(qualifying_tags)}).")
     return qualifying_tags
 
 

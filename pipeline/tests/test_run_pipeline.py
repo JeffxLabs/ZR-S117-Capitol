@@ -355,11 +355,11 @@ class TestAutoUploadAndWhitelist(unittest.TestCase):
         ]
         added = []
         with patch.object(ac, "is_installed_and_running", return_value=True), \
-             patch.object(ac, "_request", return_value={"settings": {"allowedTags": ["P1MP"], "capitolWarThresholdMillions": 1.0}}), \
+             patch.object(ac, "_request", return_value={"settings": {"allowedTags": ["P1MP", "LOW", "GONE"], "capitolWarThresholdMillions": 1.0}}), \
              patch.object(ac, "allowlist_tag", side_effect=lambda tag, allowed=True: added.append((tag, allowed))):
             qualifying = ac.sync_home_alliance_whitelist(alliances, home_server="117", log=lambda *_: None)
         self.assertEqual(qualifying, ["P1MP", "UOU"])
-        self.assertEqual(added, [("UOU", True)])
+        self.assertEqual(added, [("UOU", True), ("LOW", False), ("GONE", False)])
 
     def test_threshold_reads_from_settings_file_and_defaults_to_one_million(self):
         import apparatchik_control as ac
