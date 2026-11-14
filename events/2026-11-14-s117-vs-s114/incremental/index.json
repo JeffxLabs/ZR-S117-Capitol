@@ -1,0 +1,22 @@
+{
+  "event_id": "2026-11-14-s117-vs-s114",
+  "scans": [
+    {
+      "scan_id": "20261114T153517Z",
+      "scan_kind": "incremental",
+      "event_id": "2026-11-14-s117-vs-s114",
+      "date": "2026-11-14",
+      "home_server": "117",
+      "opponent_server": "114",
+      "home_role": "defending",
+      "started_at": null,
+      "finished_at": null,
+      "total_players": 894,
+      "total_points": 868252856,
+      "unique_alliances": 99,
+      "top_alliance": "[P1MP] JU1CE",
+      "top_commander": "Tony-Soprano",
+      "path": "events/2026-11-14-s117-vs-s114/incremental/20261114T153517Z"
+    }
+  ]
+}

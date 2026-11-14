@@ -1,0 +1,8048 @@
+[
+  {
+    "rank": 1,
+    "commander": "Tony-Soprano",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 19520153
+  },
+  {
+    "rank": 2,
+    "commander": "RollingStoners",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 13539595
+  },
+  {
+    "rank": 3,
+    "commander": "TheRequiem",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 9056385
+  },
+  {
+    "rank": 4,
+    "commander": "Tiffanie-2",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 5520392
+  },
+  {
+    "rank": 5,
+    "commander": "Tuvanis",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 5310871
+  },
+  {
+    "rank": 6,
+    "commander": "JimmyJam",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 4428076
+  },
+  {
+    "rank": 7,
+    "commander": "ChefBaron",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 4194622
+  },
+  {
+    "rank": 8,
+    "commander": "TonyDtffDt",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 4108173
+  },
+  {
+    "rank": 9,
+    "commander": "ViE",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 4066613
+  },
+  {
+    "rank": 10,
+    "commander": "ТРАКТОРИСТ",
+    "alliance": "[Ivl] Шабаш",
+    "alliance_tag": "Ivl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 3286600
+  },
+  {
+    "rank": 11,
+    "commander": "cegar23",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 3154930
+  },
+  {
+    "rank": 12,
+    "commander": "Baba~Jaga~Jaga",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 3036472
+  },
+  {
+    "rank": 13,
+    "commander": "fLoVer",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 3021517
+  },
+  {
+    "rank": 14,
+    "commander": "shvabroid",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 2895765
+  },
+  {
+    "rank": 15,
+    "commander": "ViSobol",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 2869020
+  },
+  {
+    "rank": 16,
+    "commander": "NoBrakes",
+    "alliance": "[PoS] КланСопраноАкадемІv|",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадемІv|",
+    "server": "114",
+    "points": 2864820
+  },
+  {
+    "rank": 17,
+    "commander": "Superpasha",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 2803770
+  },
+  {
+    "rank": 18,
+    "commander": "ХесусХарисрама",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 2800412
+  },
+  {
+    "rank": 19,
+    "commander": "Sofiaaaaaaa",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 2594727
+  },
+  {
+    "rank": 20,
+    "commander": "Eldagrim",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2543809
+  },
+  {
+    "rank": 21,
+    "commander": "FerdinantSt",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 2530632
+  },
+  {
+    "rank": 22,
+    "commander": "chauncey",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2484652
+  },
+  {
+    "rank": 23,
+    "commander": "AyeGee",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 2481108
+  },
+  {
+    "rank": 24,
+    "commander": "purga",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 2471940
+  },
+  {
+    "rank": 25,
+    "commander": "Psixopat001",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 2467317
+  },
+  {
+    "rank": 26,
+    "commander": "сопрано2",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 2415015
+  },
+  {
+    "rank": 27,
+    "commander": "Zondercomander",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 2382876
+  },
+  {
+    "rank": 28,
+    "commander": "Jamalka",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 2379478
+  },
+  {
+    "rank": 29,
+    "commander": "Мирло",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 2375185
+  },
+  {
+    "rank": 30,
+    "commander": "ВИЗЯ",
+    "alliance": "[AOMA] АкадемияАОМ",
+    "alliance_tag": "AOMA",
+    "alliance_name": "АкадемияАОМ",
+    "server": "114",
+    "points": 2368212
+  },
+  {
+    "rank": 31,
+    "commander": "Kalissandre",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 2344991
+  },
+  {
+    "rank": 32,
+    "commander": "Саня198448912",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 2344952
+  },
+  {
+    "rank": 33,
+    "commander": "Harvěy",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 2325036
+  },
+  {
+    "rank": 34,
+    "commander": "Skizz",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 2302832
+  },
+  {
+    "rank": 35,
+    "commander": "XFactor",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 2289679
+  },
+  {
+    "rank": 36,
+    "commander": "M1kky",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 2272004
+  },
+  {
+    "rank": 37,
+    "commander": "Rastafari666",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 2243175
+  },
+  {
+    "rank": 38,
+    "commander": "Азаокномвесна",
+    "alliance": "[LMM] Лемма",
+    "alliance_tag": "LMM",
+    "alliance_name": "Лемма",
+    "server": "114",
+    "points": 2243171
+  },
+  {
+    "rank": 39,
+    "commander": "•Valli•",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 2238790
+  },
+  {
+    "rank": 40,
+    "commander": "Vivald",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 2229194
+  },
+  {
+    "rank": 41,
+    "commander": "вестготов",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 2206450
+  },
+  {
+    "rank": 42,
+    "commander": "Гремлинн",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 2164840
+  },
+  {
+    "rank": 43,
+    "commander": "Pipsworm",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 2160628
+  },
+  {
+    "rank": 44,
+    "commander": "Rzurzu",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 2141150
+  },
+  {
+    "rank": 45,
+    "commander": "ПивОзавр",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 2133004
+  },
+  {
+    "rank": 46,
+    "commander": "Aleksandra651378",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 2099142
+  },
+  {
+    "rank": 47,
+    "commander": "Poillia",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 2097758
+  },
+  {
+    "rank": 48,
+    "commander": "Лışichką",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 2068877
+  },
+  {
+    "rank": 49,
+    "commander": "BPH136",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 2054177
+  },
+  {
+    "rank": 50,
+    "commander": "SILICA",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 2052312
+  },
+  {
+    "rank": 51,
+    "commander": "netdream",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 2049067
+  },
+  {
+    "rank": 52,
+    "commander": "Annettt",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 2039925
+  },
+  {
+    "rank": 53,
+    "commander": "VasiLisa",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 2034755
+  },
+  {
+    "rank": 54,
+    "commander": "tamzzz",
+    "alliance": "[2077] CyberpunkEdgerunne",
+    "alliance_tag": "2077",
+    "alliance_name": "CyberpunkEdgerunne",
+    "server": "114",
+    "points": 2033671
+  },
+  {
+    "rank": 55,
+    "commander": "Godfather°",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 2032452
+  },
+  {
+    "rank": 56,
+    "commander": "Vreneya",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 2020807
+  },
+  {
+    "rank": 57,
+    "commander": "UsamaBogdanLaden",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1989626
+  },
+  {
+    "rank": 58,
+    "commander": "КофейныйФилин",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1955210
+  },
+  {
+    "rank": 59,
+    "commander": "Shunter",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1937022
+  },
+  {
+    "rank": 60,
+    "commander": "Тим1",
+    "alliance": "[BLAA] BLACKROSE",
+    "alliance_tag": "BLAA",
+    "alliance_name": "BLACKROSE",
+    "server": "114",
+    "points": 1937008
+  },
+  {
+    "rank": 61,
+    "commander": "Паша69",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1927514
+  },
+  {
+    "rank": 62,
+    "commander": "shakalaka",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1927395
+  },
+  {
+    "rank": 63,
+    "commander": "Guide1986",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1920003
+  },
+  {
+    "rank": 64,
+    "commander": "Helena®",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1919839
+  },
+  {
+    "rank": 65,
+    "commander": "ychg",
+    "alliance": "[AOMA] АкадемияАОМ",
+    "alliance_tag": "AOMA",
+    "alliance_name": "АкадемияАОМ",
+    "server": "114",
+    "points": 1913732
+  },
+  {
+    "rank": 66,
+    "commander": "şıkriyanur",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1888206
+  },
+  {
+    "rank": 67,
+    "commander": "ВаРвар001",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1884840
+  },
+  {
+    "rank": 68,
+    "commander": "Smolechka",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1881702
+  },
+  {
+    "rank": 69,
+    "commander": "Queencard",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1878998
+  },
+  {
+    "rank": 70,
+    "commander": "Колян22",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1862557
+  },
+  {
+    "rank": 71,
+    "commander": "Базик",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1854728
+  },
+  {
+    "rank": 72,
+    "commander": "Vlart",
+    "alliance": "[LoLp] lolPhoenixlol",
+    "alliance_tag": "LoLp",
+    "alliance_name": "lolPhoenixlol",
+    "server": "114",
+    "points": 1848504
+  },
+  {
+    "rank": 73,
+    "commander": "Viktoriysssss201",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1833270
+  },
+  {
+    "rank": 74,
+    "commander": "VIKING78",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1829021
+  },
+  {
+    "rank": 75,
+    "commander": "SLANA",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1822975
+  },
+  {
+    "rank": 76,
+    "commander": "Бика",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1814098
+  },
+  {
+    "rank": 77,
+    "commander": "Gutt",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1812215
+  },
+  {
+    "rank": 78,
+    "commander": "SkiFcheGG",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1805346
+  },
+  {
+    "rank": 79,
+    "commander": "PopchikFM",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1802840
+  },
+  {
+    "rank": 80,
+    "commander": "PegasPro",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1796725
+  },
+  {
+    "rank": 81,
+    "commander": "IronMeridian",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1787642
+  },
+  {
+    "rank": 82,
+    "commander": "Эльь",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1783240
+  },
+  {
+    "rank": 83,
+    "commander": "ZonderWoman",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1782176
+  },
+  {
+    "rank": 84,
+    "commander": "BJlampo4ka",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1779010
+  },
+  {
+    "rank": 85,
+    "commander": "Seren4ek",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1774415
+  },
+  {
+    "rank": 86,
+    "commander": "ОСКВЕРНИТЕЛЬ",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1772839
+  },
+  {
+    "rank": 87,
+    "commander": "СерёгаВumer84",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1772774
+  },
+  {
+    "rank": 88,
+    "commander": "Balda696",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1770628
+  },
+  {
+    "rank": 89,
+    "commander": "Билл707",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1765856
+  },
+  {
+    "rank": 90,
+    "commander": "Whiteline876",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1758920
+  },
+  {
+    "rank": 91,
+    "commander": "ГВС",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1752862
+  },
+  {
+    "rank": 92,
+    "commander": "Archibaldmm",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1751920
+  },
+  {
+    "rank": 93,
+    "commander": "UNNNSTOOOPABLE",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1751498
+  },
+  {
+    "rank": 94,
+    "commander": "IS777",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1747458
+  },
+  {
+    "rank": 95,
+    "commander": "понторезка",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1737022
+  },
+  {
+    "rank": 96,
+    "commander": "Mr-Kaplan",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1735663
+  },
+  {
+    "rank": 97,
+    "commander": "ReinekeFox",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1731615
+  },
+  {
+    "rank": 98,
+    "commander": "Прокст",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1726758
+  },
+  {
+    "rank": 99,
+    "commander": "MaximOlegovich",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1726033
+  },
+  {
+    "rank": 100,
+    "commander": "maxmara",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1721498
+  },
+  {
+    "rank": 101,
+    "commander": "easyman",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1719496
+  },
+  {
+    "rank": 102,
+    "commander": "LynxNM1",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1718438
+  },
+  {
+    "rank": 103,
+    "commander": "Kris174",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1717680
+  },
+  {
+    "rank": 104,
+    "commander": "КАНЦЛЕР",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1717536
+  },
+  {
+    "rank": 105,
+    "commander": "Oleg7717",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1714274
+  },
+  {
+    "rank": 106,
+    "commander": "JosephSeed",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 1713238
+  },
+  {
+    "rank": 107,
+    "commander": "ЯКуТ",
+    "alliance": "[Ivl] Шабаш",
+    "alliance_tag": "Ivl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1711193
+  },
+  {
+    "rank": 108,
+    "commander": "bondaralex74",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1709055
+  },
+  {
+    "rank": 109,
+    "commander": "Irritator",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1701824
+  },
+  {
+    "rank": 110,
+    "commander": "Chuvachok",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1697152
+  },
+  {
+    "rank": 111,
+    "commander": "Boomboomberry",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1694782
+  },
+  {
+    "rank": 112,
+    "commander": "Belverk",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1693029
+  },
+  {
+    "rank": 113,
+    "commander": "Ирифрин",
+    "alliance": "[AOMA] АкадемияАОМ",
+    "alliance_tag": "AOMA",
+    "alliance_name": "АкадемияАОМ",
+    "server": "114",
+    "points": 1690436
+  },
+  {
+    "rank": 114,
+    "commander": "StrangerBIN",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1689331
+  },
+  {
+    "rank": 115,
+    "commander": "kombatr",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1687784
+  },
+  {
+    "rank": 116,
+    "commander": "LVoiN",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1687138
+  },
+  {
+    "rank": 117,
+    "commander": "hisage",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1686014
+  },
+  {
+    "rank": 118,
+    "commander": "Леха38",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1685420
+  },
+  {
+    "rank": 119,
+    "commander": "VeID",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1684694
+  },
+  {
+    "rank": 120,
+    "commander": "Overlost",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1677410
+  },
+  {
+    "rank": 121,
+    "commander": "Terran1983",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1674613
+  },
+  {
+    "rank": 122,
+    "commander": "Pazu+",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1673240
+  },
+  {
+    "rank": 123,
+    "commander": "kaliban",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1669822
+  },
+  {
+    "rank": 124,
+    "commander": "SHUMA-S",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1669541
+  },
+  {
+    "rank": 125,
+    "commander": "Серега1385",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1668510
+  },
+  {
+    "rank": 126,
+    "commander": "Mun777",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1665150
+  },
+  {
+    "rank": 127,
+    "commander": "ALEXSANDRAfx",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1661541
+  },
+  {
+    "rank": 128,
+    "commander": "123Агата",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1660737
+  },
+  {
+    "rank": 129,
+    "commander": "ХатульМадан",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1660360
+  },
+  {
+    "rank": 130,
+    "commander": "Покатаю",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1655830
+  },
+  {
+    "rank": 131,
+    "commander": "Dargoo",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1652587
+  },
+  {
+    "rank": 132,
+    "commander": "Cofra",
+    "alliance": "[lv|] Шабаш",
+    "alliance_tag": "lv|",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1651828
+  },
+  {
+    "rank": 133,
+    "commander": "Nas225",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1649726
+  },
+  {
+    "rank": 134,
+    "commander": "EvilSpirit58",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1647989
+  },
+  {
+    "rank": 135,
+    "commander": "BраTapb",
+    "alliance": "[LMM] Лемма",
+    "alliance_tag": "LMM",
+    "alliance_name": "Лемма",
+    "server": "114",
+    "points": 1647925
+  },
+  {
+    "rank": 136,
+    "commander": "KnoT",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1645760
+  },
+  {
+    "rank": 137,
+    "commander": "SpartacRUS",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1645513
+  },
+  {
+    "rank": 138,
+    "commander": "Chickendog",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1643886
+  },
+  {
+    "rank": 139,
+    "commander": "Jeff",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1643758
+  },
+  {
+    "rank": 140,
+    "commander": "PablicWarrior",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1642422
+  },
+  {
+    "rank": 141,
+    "commander": "VoldyMar",
+    "alliance": "[LMM] Лемма",
+    "alliance_tag": "LMM",
+    "alliance_name": "Лемма",
+    "server": "114",
+    "points": 1641127
+  },
+  {
+    "rank": 142,
+    "commander": "Bad°Boy",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1637126
+  },
+  {
+    "rank": 143,
+    "commander": "JakeV",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1631948
+  },
+  {
+    "rank": 144,
+    "commander": "KAS-178",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1631013
+  },
+  {
+    "rank": 145,
+    "commander": "TemaParusKing",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1630861
+  },
+  {
+    "rank": 146,
+    "commander": "GreenPantherJS",
+    "alliance": "[lv|] Шабаш",
+    "alliance_tag": "lv|",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1629706
+  },
+  {
+    "rank": 147,
+    "commander": "AB*nnieA",
+    "alliance": "[715k] ChikatiloProdaction",
+    "alliance_tag": "715k",
+    "alliance_name": "ChikatiloProdaction",
+    "server": "114",
+    "points": 1628926
+  },
+  {
+    "rank": 148,
+    "commander": "LegioNep",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1627994
+  },
+  {
+    "rank": 149,
+    "commander": "tymtyrum",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1626638
+  },
+  {
+    "rank": 150,
+    "commander": "ilyuhaa",
+    "alliance": "[lv|] Шабаш",
+    "alliance_tag": "lv|",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1625313
+  },
+  {
+    "rank": 151,
+    "commander": "БляДинка",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1624884
+  },
+  {
+    "rank": 152,
+    "commander": "Покер®",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1623274
+  },
+  {
+    "rank": 153,
+    "commander": "StraPonASSa",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1623140
+  },
+  {
+    "rank": 154,
+    "commander": "МИТЯЙ-КА",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 1622715
+  },
+  {
+    "rank": 155,
+    "commander": "Donmoroccan",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1622454
+  },
+  {
+    "rank": 156,
+    "commander": "ARKAN8",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1620466
+  },
+  {
+    "rank": 157,
+    "commander": "Sadnes",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1615650
+  },
+  {
+    "rank": 158,
+    "commander": "Димас21к",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1614532
+  },
+  {
+    "rank": 159,
+    "commander": "djager",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1613962
+  },
+  {
+    "rank": 160,
+    "commander": "Мясояд",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1613040
+  },
+  {
+    "rank": 161,
+    "commander": "Телепупсик",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1613020
+  },
+  {
+    "rank": 162,
+    "commander": "Jukě",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1612983
+  },
+  {
+    "rank": 163,
+    "commander": "ratgo",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1611990
+  },
+  {
+    "rank": 164,
+    "commander": "Karamos",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1607116
+  },
+  {
+    "rank": 165,
+    "commander": "лирик78",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1606633
+  },
+  {
+    "rank": 166,
+    "commander": "СказкА",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1605780
+  },
+  {
+    "rank": 167,
+    "commander": "Stavr'",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1604890
+  },
+  {
+    "rank": 168,
+    "commander": "VITO",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1604580
+  },
+  {
+    "rank": 169,
+    "commander": "Sindel",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1603664
+  },
+  {
+    "rank": 170,
+    "commander": "iol",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1603593
+  },
+  {
+    "rank": 171,
+    "commander": "Zanyatoi",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1599793
+  },
+  {
+    "rank": 172,
+    "commander": "серг23487",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1599353
+  },
+  {
+    "rank": 173,
+    "commander": "misha133",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1598822
+  },
+  {
+    "rank": 174,
+    "commander": "Хоробора",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 1598304
+  },
+  {
+    "rank": 175,
+    "commander": "Piton111",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1598036
+  },
+  {
+    "rank": 176,
+    "commander": "DoktorZlo1",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1597395
+  },
+  {
+    "rank": 177,
+    "commander": "MaKswert",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1596874
+  },
+  {
+    "rank": 178,
+    "commander": "Marlena88",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1595920
+  },
+  {
+    "rank": 179,
+    "commander": "АРХАНГЕЛРусь",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1595832
+  },
+  {
+    "rank": 180,
+    "commander": "Михарус",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1594757
+  },
+  {
+    "rank": 181,
+    "commander": "svetLana1905",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1592909
+  },
+  {
+    "rank": 182,
+    "commander": "BlackPanther",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1592732
+  },
+  {
+    "rank": 183,
+    "commander": "Aaalesha",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1592689
+  },
+  {
+    "rank": 184,
+    "commander": "dgaru",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1592350
+  },
+  {
+    "rank": 185,
+    "commander": "Docent28",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1589248
+  },
+  {
+    "rank": 186,
+    "commander": "AngelinaV",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1587615
+  },
+  {
+    "rank": 187,
+    "commander": "НедоКонь",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1584668
+  },
+  {
+    "rank": 188,
+    "commander": "Kиsa",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1582806
+  },
+  {
+    "rank": 189,
+    "commander": "Шамиль05",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1582621
+  },
+  {
+    "rank": 190,
+    "commander": "Друид74",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1581410
+  },
+  {
+    "rank": 191,
+    "commander": "Odens1",
+    "alliance": "[lv|] Шабаш",
+    "alliance_tag": "lv|",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1581166
+  },
+  {
+    "rank": 192,
+    "commander": "Ulia0505",
+    "alliance": "[lv|] Шабаш",
+    "alliance_tag": "lv|",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1580880
+  },
+  {
+    "rank": 193,
+    "commander": "Ляся-03",
+    "alliance": "[LoLp] lolPhoenixlol",
+    "alliance_tag": "LoLp",
+    "alliance_name": "lolPhoenixlol",
+    "server": "114",
+    "points": 1580403
+  },
+  {
+    "rank": 194,
+    "commander": "XXxARTYRxXx",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1580367
+  },
+  {
+    "rank": 195,
+    "commander": "escapism",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1579832
+  },
+  {
+    "rank": 196,
+    "commander": "ФЛОТ",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1578452
+  },
+  {
+    "rank": 197,
+    "commander": "Злёлик",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1578218
+  },
+  {
+    "rank": 198,
+    "commander": "Purr",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1578013
+  },
+  {
+    "rank": 199,
+    "commander": "Стефа",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1575680
+  },
+  {
+    "rank": 200,
+    "commander": "КаРиЦа",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1575352
+  },
+  {
+    "rank": 201,
+    "commander": "alggagi",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1575190
+  },
+  {
+    "rank": 202,
+    "commander": "Valery5",
+    "alliance": "[ZeVS] Versuszombies",
+    "alliance_tag": "ZeVS",
+    "alliance_name": "Versuszombies",
+    "server": "114",
+    "points": 1574595
+  },
+  {
+    "rank": 203,
+    "commander": "•Оленька?",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1573464
+  },
+  {
+    "rank": 204,
+    "commander": "TheLittleWitch",
+    "alliance": "[Ivl] Шабаш",
+    "alliance_tag": "Ivl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1572540
+  },
+  {
+    "rank": 205,
+    "commander": "Alex-rnd",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1569800
+  },
+  {
+    "rank": 206,
+    "commander": "Unsparkble",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1569120
+  },
+  {
+    "rank": 207,
+    "commander": "Minnk",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1568010
+  },
+  {
+    "rank": 208,
+    "commander": "Lillianes",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1567581
+  },
+  {
+    "rank": 209,
+    "commander": "VOLNA",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1567358
+  },
+  {
+    "rank": 210,
+    "commander": "vasek2006",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1566282
+  },
+  {
+    "rank": 211,
+    "commander": "Giorgio85",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1565141
+  },
+  {
+    "rank": 212,
+    "commander": "Gobbi",
+    "alliance": "[PoS] КланСопраноАкадемІv|",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадемІv|",
+    "server": "114",
+    "points": 1564684
+  },
+  {
+    "rank": 213,
+    "commander": "jufro",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1562997
+  },
+  {
+    "rank": 214,
+    "commander": "Lisik1997",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1561820
+  },
+  {
+    "rank": 215,
+    "commander": "NoobSlayer777",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1561793
+  },
+  {
+    "rank": 216,
+    "commander": "НеСвятойОтец",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1560194
+  },
+  {
+    "rank": 217,
+    "commander": "KseniyaSm",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1559715
+  },
+  {
+    "rank": 218,
+    "commander": "Zava22",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1559160
+  },
+  {
+    "rank": 219,
+    "commander": "JSSTHEONER",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1559104
+  },
+  {
+    "rank": 220,
+    "commander": "StiPerm",
+    "alliance": "[BOSK] Zzzzzzz",
+    "alliance_tag": "BOSK",
+    "alliance_name": "Zzzzzzz",
+    "server": "114",
+    "points": 1558370
+  },
+  {
+    "rank": 221,
+    "commander": "Oks0308",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1558281
+  },
+  {
+    "rank": 222,
+    "commander": "Zmeeed",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1557969
+  },
+  {
+    "rank": 223,
+    "commander": "Lala034",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1557750
+  },
+  {
+    "rank": 224,
+    "commander": "уроган",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1556800
+  },
+  {
+    "rank": 225,
+    "commander": "Turistvadu",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1555722
+  },
+  {
+    "rank": 226,
+    "commander": "Tiger878",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1555278
+  },
+  {
+    "rank": 227,
+    "commander": "Ahilles83",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1555184
+  },
+  {
+    "rank": 228,
+    "commander": "JeDiFoX",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1554913
+  },
+  {
+    "rank": 229,
+    "commander": "andrei82",
+    "alliance": "[LMM] Лемма",
+    "alliance_tag": "LMM",
+    "alliance_name": "Лемма",
+    "server": "114",
+    "points": 1554009
+  },
+  {
+    "rank": 230,
+    "commander": "VIKINGgamer",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1553259
+  },
+  {
+    "rank": 231,
+    "commander": "Скуф159",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1552960
+  },
+  {
+    "rank": 232,
+    "commander": "TellNova",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1550471
+  },
+  {
+    "rank": 233,
+    "commander": "AleKC",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1550250
+  },
+  {
+    "rank": 234,
+    "commander": "Санятоворотов",
+    "alliance": "[PoS] КланСопраноАкадемІv|",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадемІv|",
+    "server": "114",
+    "points": 1550086
+  },
+  {
+    "rank": 235,
+    "commander": "almoren",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1548823
+  },
+  {
+    "rank": 236,
+    "commander": "Валериас",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1548211
+  },
+  {
+    "rank": 237,
+    "commander": "Niksavets",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1547596
+  },
+  {
+    "rank": 238,
+    "commander": "Лунница",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1546592
+  },
+  {
+    "rank": 239,
+    "commander": "Бигбэг",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1545553
+  },
+  {
+    "rank": 240,
+    "commander": "Павел87",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1545505
+  },
+  {
+    "rank": 241,
+    "commander": "СелимБосс",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1544414
+  },
+  {
+    "rank": 242,
+    "commander": "ДиняВагон",
+    "alliance": "[AOMA] АкадемияАОМ",
+    "alliance_tag": "AOMA",
+    "alliance_name": "АкадемияАОМ",
+    "server": "114",
+    "points": 1544289
+  },
+  {
+    "rank": 243,
+    "commander": "SamBuLka",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1544168
+  },
+  {
+    "rank": 244,
+    "commander": "Вазон",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1543390
+  },
+  {
+    "rank": 245,
+    "commander": "Akellla",
+    "alliance": "[ZeVS] Versuszombies",
+    "alliance_tag": "ZeVS",
+    "alliance_name": "Versuszombies",
+    "server": "114",
+    "points": 1542535
+  },
+  {
+    "rank": 246,
+    "commander": "Ant1988",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1542350
+  },
+  {
+    "rank": 247,
+    "commander": "Vyacheslav742",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1542275
+  },
+  {
+    "rank": 248,
+    "commander": "Трулала",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1542028
+  },
+  {
+    "rank": 249,
+    "commander": "Rock-n-Roll",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 1541871
+  },
+  {
+    "rank": 250,
+    "commander": "-Александрович",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1541110
+  },
+  {
+    "rank": 251,
+    "commander": "no-name-20016",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1540428
+  },
+  {
+    "rank": 252,
+    "commander": "krezyBoy",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1540120
+  },
+  {
+    "rank": 253,
+    "commander": "ShadNaraK1",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1539746
+  },
+  {
+    "rank": 254,
+    "commander": "Sanil",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1539339
+  },
+  {
+    "rank": 255,
+    "commander": "Daenerys37",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1538969
+  },
+  {
+    "rank": 256,
+    "commander": "БУМ-БУМ",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1538765
+  },
+  {
+    "rank": 257,
+    "commander": "D1ssBalanz",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1538319
+  },
+  {
+    "rank": 258,
+    "commander": "(name unreadable by OCR)",
+    "alliance": "[PoS] КланСопраноАкадемІvl",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадемІvl",
+    "server": "114",
+    "points": 1538270
+  },
+  {
+    "rank": 259,
+    "commander": "Патрон",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1536882
+  },
+  {
+    "rank": 260,
+    "commander": "Severe14",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1536498
+  },
+  {
+    "rank": 261,
+    "commander": "Adasko49",
+    "alliance": "[POLA] POZYTYWNI",
+    "alliance_tag": "POLA",
+    "alliance_name": "POZYTYWNI",
+    "server": "114",
+    "points": 1535130
+  },
+  {
+    "rank": 262,
+    "commander": "YuriiUA",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1533983
+  },
+  {
+    "rank": 263,
+    "commander": "Тюбик35",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1533770
+  },
+  {
+    "rank": 264,
+    "commander": "ГуДрон",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1533585
+  },
+  {
+    "rank": 265,
+    "commander": "열혈꿀벌",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1533420
+  },
+  {
+    "rank": 266,
+    "commander": "MysteryTR",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1533210
+  },
+  {
+    "rank": 267,
+    "commander": "СиHибоJI",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1531211
+  },
+  {
+    "rank": 268,
+    "commander": "-Паладин-",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1530666
+  },
+  {
+    "rank": 269,
+    "commander": "Гожик",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1530643
+  },
+  {
+    "rank": 270,
+    "commander": "DUREX18cm",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1529777
+  },
+  {
+    "rank": 271,
+    "commander": "HaTuK",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1529578
+  },
+  {
+    "rank": 272,
+    "commander": "Gandonio",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1529325
+  },
+  {
+    "rank": 273,
+    "commander": "FuriWarrior",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1529047
+  },
+  {
+    "rank": 274,
+    "commander": "Deimos",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1528388
+  },
+  {
+    "rank": 275,
+    "commander": "TvinkI",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1528018
+  },
+  {
+    "rank": 276,
+    "commander": "+Koт",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1527530
+  },
+  {
+    "rank": 277,
+    "commander": "IpatNeDolzhno",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1526408
+  },
+  {
+    "rank": 278,
+    "commander": "ХХOC",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1526217
+  },
+  {
+    "rank": 279,
+    "commander": "korwin12",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1525760
+  },
+  {
+    "rank": 280,
+    "commander": "Drovosek123",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1525699
+  },
+  {
+    "rank": 281,
+    "commander": "Максим222",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1525480
+  },
+  {
+    "rank": 282,
+    "commander": "ВиКинг®",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1524090
+  },
+  {
+    "rank": 283,
+    "commander": "Закон",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1523666
+  },
+  {
+    "rank": 284,
+    "commander": "Lenor27",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1523610
+  },
+  {
+    "rank": 285,
+    "commander": "Кабельщик",
+    "alliance": "[AOMA] АкадемияАОМ",
+    "alliance_tag": "AOMA",
+    "alliance_name": "АкадемияАОМ",
+    "server": "114",
+    "points": 1523100
+  },
+  {
+    "rank": 286,
+    "commander": "Ленусечка",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1521168
+  },
+  {
+    "rank": 287,
+    "commander": "Ирина1759",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1520867
+  },
+  {
+    "rank": 288,
+    "commander": "Чернокнижник",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1520540
+  },
+  {
+    "rank": 289,
+    "commander": "John-Wick",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1519988
+  },
+  {
+    "rank": 290,
+    "commander": "Klaydexx",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1519646
+  },
+  {
+    "rank": 291,
+    "commander": "JARES",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 1518856
+  },
+  {
+    "rank": 292,
+    "commander": "justAlilHope",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1518802
+  },
+  {
+    "rank": 293,
+    "commander": "FartyBraty",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1517821
+  },
+  {
+    "rank": 294,
+    "commander": "Maryboss",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1517163
+  },
+  {
+    "rank": 295,
+    "commander": "MariG",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1516924
+  },
+  {
+    "rank": 296,
+    "commander": "PunkTaker",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1516820
+  },
+  {
+    "rank": 297,
+    "commander": "РОМКА",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1516477
+  },
+  {
+    "rank": 298,
+    "commander": "TITANIT",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1516397
+  },
+  {
+    "rank": 299,
+    "commander": "Dmitry1568",
+    "alliance": "[PoS] КланСопраноАкадемІvl",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадемІvl",
+    "server": "117",
+    "points": 1515687
+  },
+  {
+    "rank": 300,
+    "commander": "ДедУля",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1514650
+  },
+  {
+    "rank": 301,
+    "commander": "ЕбашДоТалого",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1514582
+  },
+  {
+    "rank": 302,
+    "commander": "Asia",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1514166
+  },
+  {
+    "rank": 303,
+    "commander": "ПозывнойZять",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1514080
+  },
+  {
+    "rank": 304,
+    "commander": "CLAY01",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1513735
+  },
+  {
+    "rank": 305,
+    "commander": "Кефир52rus",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1513511
+  },
+  {
+    "rank": 306,
+    "commander": "ELCapo",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1513459
+  },
+  {
+    "rank": 307,
+    "commander": "ZlayaYasya",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1513105
+  },
+  {
+    "rank": 308,
+    "commander": "Mihailll",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1512298
+  },
+  {
+    "rank": 309,
+    "commander": "Pollins",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1511680
+  },
+  {
+    "rank": 310,
+    "commander": "WeXis",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1510950
+  },
+  {
+    "rank": 311,
+    "commander": "•@@MaxVlasovooo",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1510700
+  },
+  {
+    "rank": 312,
+    "commander": "ОСержико",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1510044
+  },
+  {
+    "rank": 313,
+    "commander": "BigBoor",
+    "alliance": "[LMM] Лемма",
+    "alliance_tag": "LMM",
+    "alliance_name": "Лемма",
+    "server": "114",
+    "points": 1509570
+  },
+  {
+    "rank": 314,
+    "commander": "АнтониоГансалес",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1509066
+  },
+  {
+    "rank": 315,
+    "commander": "Tarzego",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1508823
+  },
+  {
+    "rank": 316,
+    "commander": "Вараввара",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1508401
+  },
+  {
+    "rank": 317,
+    "commander": "Antares2001",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1507990
+  },
+  {
+    "rank": 318,
+    "commander": "nikotinn05",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1507922
+  },
+  {
+    "rank": 319,
+    "commander": "Чиzzzz",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1507712
+  },
+  {
+    "rank": 320,
+    "commander": "ЧёрнаяРомашка",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1507201
+  },
+  {
+    "rank": 321,
+    "commander": "ЮЛЮСИК",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1506363
+  },
+  {
+    "rank": 322,
+    "commander": "Shelechka",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1505762
+  },
+  {
+    "rank": 323,
+    "commander": "DJON134X",
+    "alliance": "[LoLp] lolPhoenixlol",
+    "alliance_tag": "LoLp",
+    "alliance_name": "lolPhoenixlol",
+    "server": "114",
+    "points": 1505299
+  },
+  {
+    "rank": 324,
+    "commander": "дрищ",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1505104
+  },
+  {
+    "rank": 325,
+    "commander": "~Фиалочка~",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1505020
+  },
+  {
+    "rank": 326,
+    "commander": "Лиссас",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1504515
+  },
+  {
+    "rank": 327,
+    "commander": "FBI07",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1502728
+  },
+  {
+    "rank": 328,
+    "commander": "Voin-new",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 1502322
+  },
+  {
+    "rank": 329,
+    "commander": "Francuz1987",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1502204
+  },
+  {
+    "rank": 330,
+    "commander": "-Sakura-",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1501652
+  },
+  {
+    "rank": 331,
+    "commander": "rbt",
+    "alliance": "[AOMA] АкадемияАОМ",
+    "alliance_tag": "AOMA",
+    "alliance_name": "АкадемияАОМ",
+    "server": "114",
+    "points": 1501480
+  },
+  {
+    "rank": 332,
+    "commander": "таня234321",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1501458
+  },
+  {
+    "rank": 333,
+    "commander": "КypеНueYбuBaeT",
+    "alliance": "[Ivl] Шабаш",
+    "alliance_tag": "Ivl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 1500569
+  },
+  {
+    "rank": 334,
+    "commander": "SalamoN",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1497381
+  },
+  {
+    "rank": 335,
+    "commander": "ArinaMarina",
+    "alliance": "[ZeVS] Versuszombies",
+    "alliance_tag": "ZeVS",
+    "alliance_name": "Versuszombies",
+    "server": "114",
+    "points": 1476633
+  },
+  {
+    "rank": 336,
+    "commander": "XDOZERX",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1476215
+  },
+  {
+    "rank": 337,
+    "commander": "25метров",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1455387
+  },
+  {
+    "rank": 338,
+    "commander": "Karinkasss",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1437440
+  },
+  {
+    "rank": 339,
+    "commander": "Серёженька",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 1433449
+  },
+  {
+    "rank": 340,
+    "commander": "Lyolia",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1416796
+  },
+  {
+    "rank": 341,
+    "commander": "alexmenn",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1400440
+  },
+  {
+    "rank": 342,
+    "commander": "WLD",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1388960
+  },
+  {
+    "rank": 343,
+    "commander": "StefanDe",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 1388836
+  },
+  {
+    "rank": 344,
+    "commander": "war114",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 1380374
+  },
+  {
+    "rank": 345,
+    "commander": "275Alday",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1370016
+  },
+  {
+    "rank": 346,
+    "commander": "Catstail",
+    "alliance": "[LoLp] lolPhoenixlol",
+    "alliance_tag": "LoLp",
+    "alliance_name": "lolPhoenixlol",
+    "server": "114",
+    "points": 1347924
+  },
+  {
+    "rank": 347,
+    "commander": "Kostayn7695",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1335951
+  },
+  {
+    "rank": 348,
+    "commander": "VALL",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1332530
+  },
+  {
+    "rank": 349,
+    "commander": "BORZ-95",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1322409
+  },
+  {
+    "rank": 350,
+    "commander": "Yuliya-",
+    "alliance": "[2077] CyberpunkEdgerunne",
+    "alliance_tag": "2077",
+    "alliance_name": "CyberpunkEdgerunne",
+    "server": "114",
+    "points": 1300140
+  },
+  {
+    "rank": 351,
+    "commander": "学BuTeKy",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1294352
+  },
+  {
+    "rank": 352,
+    "commander": "And1go",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1291183
+  },
+  {
+    "rank": 353,
+    "commander": "LeRoiChameau",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1288720
+  },
+  {
+    "rank": 354,
+    "commander": "АндрейМ1989",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1288036
+  },
+  {
+    "rank": 355,
+    "commander": "okouioui",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1284340
+  },
+  {
+    "rank": 356,
+    "commander": "Badhead",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1281522
+  },
+  {
+    "rank": 357,
+    "commander": "AxelB",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1270490
+  },
+  {
+    "rank": 358,
+    "commander": "BarDak777",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1267912
+  },
+  {
+    "rank": 359,
+    "commander": "Hodjachij",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1261170
+  },
+  {
+    "rank": 360,
+    "commander": "дддимитриии",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1259900
+  },
+  {
+    "rank": 361,
+    "commander": "ivanpizdorvan",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1254390
+  },
+  {
+    "rank": 362,
+    "commander": "Хельга82",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 1241022
+  },
+  {
+    "rank": 363,
+    "commander": "13Li31",
+    "alliance": "[2077] CyberpunkEdgerunne",
+    "alliance_tag": "2077",
+    "alliance_name": "CyberpunkEdgerunne",
+    "server": "114",
+    "points": 1239621
+  },
+  {
+    "rank": 364,
+    "commander": "Tigrenochek666",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1237820
+  },
+  {
+    "rank": 365,
+    "commander": "Доминантка",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1236107
+  },
+  {
+    "rank": 366,
+    "commander": "InvaderPimp",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1233310
+  },
+  {
+    "rank": 367,
+    "commander": "topher76",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1232745
+  },
+  {
+    "rank": 368,
+    "commander": "JourneyRexR",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1231612
+  },
+  {
+    "rank": 369,
+    "commander": "zombarikvnature",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 1229312
+  },
+  {
+    "rank": 370,
+    "commander": "Крусник•",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1224623
+  },
+  {
+    "rank": 371,
+    "commander": "Vitoria555",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1216790
+  },
+  {
+    "rank": 372,
+    "commander": "PROZERPINA",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 1200884
+  },
+  {
+    "rank": 373,
+    "commander": "Vas13",
+    "alliance": "[PoS] КланСопраноАкадеміv|",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадеміv|",
+    "server": "114",
+    "points": 1175778
+  },
+  {
+    "rank": 374,
+    "commander": "Кузьмичь",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 1166206
+  },
+  {
+    "rank": 375,
+    "commander": "Kaban13",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1159396
+  },
+  {
+    "rank": 376,
+    "commander": "지공이",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1156220
+  },
+  {
+    "rank": 377,
+    "commander": "SAMAEL",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1151278
+  },
+  {
+    "rank": 378,
+    "commander": "Qew",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1148999
+  },
+  {
+    "rank": 379,
+    "commander": "Старичек",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 1137630
+  },
+  {
+    "rank": 380,
+    "commander": "Panason1c",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1136570
+  },
+  {
+    "rank": 381,
+    "commander": "Hugomugo",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1136530
+  },
+  {
+    "rank": 382,
+    "commander": "KaryLive",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1129543
+  },
+  {
+    "rank": 383,
+    "commander": "KOKRAN",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1106329
+  },
+  {
+    "rank": 384,
+    "commander": "ArturUrm",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 1105358
+  },
+  {
+    "rank": 385,
+    "commander": "InkedBabyeePIMP",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1102004
+  },
+  {
+    "rank": 386,
+    "commander": "Twiga",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1100743
+  },
+  {
+    "rank": 387,
+    "commander": "Mgk-0G",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1090115
+  },
+  {
+    "rank": 388,
+    "commander": "SIDR",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 1085035
+  },
+  {
+    "rank": 389,
+    "commander": "raiyu",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 1084707
+  },
+  {
+    "rank": 390,
+    "commander": "Austen",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 1069972
+  },
+  {
+    "rank": 391,
+    "commander": "BAGİRA",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1067970
+  },
+  {
+    "rank": 392,
+    "commander": "Leningrad0110",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1066630
+  },
+  {
+    "rank": 393,
+    "commander": "puhljarbeauty",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 1064600
+  },
+  {
+    "rank": 394,
+    "commander": "Mfsz81",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1059415
+  },
+  {
+    "rank": 395,
+    "commander": "ВЕТЕр",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1053990
+  },
+  {
+    "rank": 396,
+    "commander": "Weteran218",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 1052280
+  },
+  {
+    "rank": 397,
+    "commander": "LaMich",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 1044124
+  },
+  {
+    "rank": 398,
+    "commander": "sesil34",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1034256
+  },
+  {
+    "rank": 399,
+    "commander": "Dinusik",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 1028685
+  },
+  {
+    "rank": 400,
+    "commander": "Gindzatw",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1025780
+  },
+  {
+    "rank": 401,
+    "commander": "NATOO",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 1022906
+  },
+  {
+    "rank": 402,
+    "commander": "Azazel'",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 1016990
+  },
+  {
+    "rank": 403,
+    "commander": "Leva42",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 1014971
+  },
+  {
+    "rank": 404,
+    "commander": "alreyar",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 1012430
+  },
+  {
+    "rank": 405,
+    "commander": "불휘이",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 996124
+  },
+  {
+    "rank": 406,
+    "commander": "evrenhalo",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 993854
+  },
+  {
+    "rank": 407,
+    "commander": "Aylinn",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 986996
+  },
+  {
+    "rank": 408,
+    "commander": "SDFX",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 977465
+  },
+  {
+    "rank": 409,
+    "commander": "ХОМА",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 974360
+  },
+  {
+    "rank": 410,
+    "commander": "Taniern",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 963814
+  },
+  {
+    "rank": 411,
+    "commander": "Reverber",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 950681
+  },
+  {
+    "rank": 412,
+    "commander": "Rocketsauce",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 936830
+  },
+  {
+    "rank": 413,
+    "commander": "MõõnChild",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 932408
+  },
+  {
+    "rank": 414,
+    "commander": "Bossman2",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 929210
+  },
+  {
+    "rank": 415,
+    "commander": "Rageroad",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 925750
+  },
+  {
+    "rank": 416,
+    "commander": "toyyy",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 919969
+  },
+  {
+    "rank": 417,
+    "commander": "Cole64",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 913680
+  },
+  {
+    "rank": 418,
+    "commander": "кіM",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 913180
+  },
+  {
+    "rank": 419,
+    "commander": "Brody138",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 911692
+  },
+  {
+    "rank": 420,
+    "commander": "Хоумлендер",
+    "alliance": "[UOU] Пендосы",
+    "alliance_tag": "UOU",
+    "alliance_name": "Пендосы",
+    "server": "117",
+    "points": 909071
+  },
+  {
+    "rank": 421,
+    "commander": "§Trombą",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 901780
+  },
+  {
+    "rank": 422,
+    "commander": "Raguel",
+    "alliance": "[PoS] КланСопраноАкадеміvl",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадеміvl",
+    "server": "114",
+    "points": 891250
+  },
+  {
+    "rank": 423,
+    "commander": "Disorder762",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 884730
+  },
+  {
+    "rank": 424,
+    "commander": "ЭСМИНЕЦ",
+    "alliance": "[LMM] Лемма",
+    "alliance_tag": "LMM",
+    "alliance_name": "Лемма",
+    "server": "114",
+    "points": 880810
+  },
+  {
+    "rank": 425,
+    "commander": "Djkrol1k",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 879522
+  },
+  {
+    "rank": 426,
+    "commander": "Анн88",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 876086
+  },
+  {
+    "rank": 427,
+    "commander": "Nik090",
+    "alliance": "[LoLp] lolPhoenixlol",
+    "alliance_tag": "LoLp",
+    "alliance_name": "lolPhoenixlol",
+    "server": "114",
+    "points": 873039
+  },
+  {
+    "rank": 428,
+    "commander": "ВРОЗЫСКЕ",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 872922
+  },
+  {
+    "rank": 429,
+    "commander": "Ozzymandias",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 862843
+  },
+  {
+    "rank": 430,
+    "commander": "PARAZIT1",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 862010
+  },
+  {
+    "rank": 431,
+    "commander": "SadSquatch",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 853180
+  },
+  {
+    "rank": 432,
+    "commander": "ArgFree",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 852219
+  },
+  {
+    "rank": 433,
+    "commander": "JaMatty",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 838316
+  },
+  {
+    "rank": 434,
+    "commander": "KILLABWOY2002",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 834368
+  },
+  {
+    "rank": 435,
+    "commander": "Pernatic",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 831289
+  },
+  {
+    "rank": 436,
+    "commander": "SB123",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 825822
+  },
+  {
+    "rank": 437,
+    "commander": "WarDog00",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 823770
+  },
+  {
+    "rank": 438,
+    "commander": "LieveVan",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 817194
+  },
+  {
+    "rank": 439,
+    "commander": "PZDC12",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 816500
+  },
+  {
+    "rank": 440,
+    "commander": "BlackEgg",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 814566
+  },
+  {
+    "rank": 441,
+    "commander": "БАБА-ЯГА2",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 814550
+  },
+  {
+    "rank": 442,
+    "commander": "EDHILCOY",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 811662
+  },
+  {
+    "rank": 443,
+    "commander": "Yzjeyabella",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 807089
+  },
+  {
+    "rank": 444,
+    "commander": "Shannely",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 806017
+  },
+  {
+    "rank": 445,
+    "commander": "Zealotam",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 805013
+  },
+  {
+    "rank": 446,
+    "commander": "TimoXa09",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 803770
+  },
+  {
+    "rank": 447,
+    "commander": "dobrodey",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 794955
+  },
+  {
+    "rank": 448,
+    "commander": "xx1x",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 792939
+  },
+  {
+    "rank": 449,
+    "commander": "VyXo",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 790830
+  },
+  {
+    "rank": 450,
+    "commander": "штопор",
+    "alliance": "[AOMA] АкадемияАОМ",
+    "alliance_tag": "AOMA",
+    "alliance_name": "АкадемияАОМ",
+    "server": "114",
+    "points": 786290
+  },
+  {
+    "rank": 451,
+    "commander": "Tews",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 785300
+  },
+  {
+    "rank": 452,
+    "commander": "Хорват",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 783608
+  },
+  {
+    "rank": 453,
+    "commander": "aaao",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 783327
+  },
+  {
+    "rank": 454,
+    "commander": "DrZombie",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 781842
+  },
+  {
+    "rank": 455,
+    "commander": "PreacheR",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 778179
+  },
+  {
+    "rank": 456,
+    "commander": "tonyy123",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 774438
+  },
+  {
+    "rank": 457,
+    "commander": "Tekinsoldier",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 772729
+  },
+  {
+    "rank": 458,
+    "commander": "laggingPotato",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 771910
+  },
+  {
+    "rank": 459,
+    "commander": "DarkbossK",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 770562
+  },
+  {
+    "rank": 460,
+    "commander": "jf17",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 768807
+  },
+  {
+    "rank": 461,
+    "commander": "Zut-et-Zut",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 758501
+  },
+  {
+    "rank": 462,
+    "commander": "blob",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 757928
+  },
+  {
+    "rank": 463,
+    "commander": "DaniirinaCat",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 757900
+  },
+  {
+    "rank": 464,
+    "commander": "Mc1301",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 755910
+  },
+  {
+    "rank": 465,
+    "commander": "TonyLoco",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 753380
+  },
+  {
+    "rank": 466,
+    "commander": "AnnStark",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 750820
+  },
+  {
+    "rank": 467,
+    "commander": "АндрОйд",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 738598
+  },
+  {
+    "rank": 468,
+    "commander": "Bloodsaga",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 725596
+  },
+  {
+    "rank": 469,
+    "commander": "BHBH",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 723605
+  },
+  {
+    "rank": 470,
+    "commander": "Lapinio",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 722567
+  },
+  {
+    "rank": 471,
+    "commander": "grek1091",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 720554
+  },
+  {
+    "rank": 472,
+    "commander": "Antontermoxl",
+    "alliance": "[LoLp] lolPhoenixlol",
+    "alliance_tag": "LoLp",
+    "alliance_name": "lolPhoenixlol",
+    "server": "114",
+    "points": 717173
+  },
+  {
+    "rank": 473,
+    "commander": "TeamGwada",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 713938
+  },
+  {
+    "rank": 474,
+    "commander": "RobboUK",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 713670
+  },
+  {
+    "rank": 475,
+    "commander": "borgesalx",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 712106
+  },
+  {
+    "rank": 476,
+    "commander": "zloizayac",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 711530
+  },
+  {
+    "rank": 477,
+    "commander": "Aybars1",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 707186
+  },
+  {
+    "rank": 478,
+    "commander": "СаймонФеникс",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 701288
+  },
+  {
+    "rank": 479,
+    "commander": "Yamen97",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 698212
+  },
+  {
+    "rank": 480,
+    "commander": "владкмс",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 696096
+  },
+  {
+    "rank": 481,
+    "commander": "partizan93",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 691532
+  },
+  {
+    "rank": 482,
+    "commander": "atheist",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 684746
+  },
+  {
+    "rank": 483,
+    "commander": "Skitz0",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 682664
+  },
+  {
+    "rank": 484,
+    "commander": "Tyronekiller",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 676246
+  },
+  {
+    "rank": 485,
+    "commander": "Casta",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 667796
+  },
+  {
+    "rank": 486,
+    "commander": "VicTOR",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 666413
+  },
+  {
+    "rank": 487,
+    "commander": "WARRIORSS",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 665304
+  },
+  {
+    "rank": 488,
+    "commander": "Alex0510",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 664150
+  },
+  {
+    "rank": 489,
+    "commander": "LanaAdam",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 657469
+  },
+  {
+    "rank": 490,
+    "commander": "Jony1°haish",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 652572
+  },
+  {
+    "rank": 491,
+    "commander": "Türkbirliği1453",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 645683
+  },
+  {
+    "rank": 492,
+    "commander": "We1s02",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 635620
+  },
+  {
+    "rank": 493,
+    "commander": "Teamsneakeys",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 623838
+  },
+  {
+    "rank": 494,
+    "commander": "Honeyamber",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 618670
+  },
+  {
+    "rank": 495,
+    "commander": "Merelin76",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 616792
+  },
+  {
+    "rank": 496,
+    "commander": "Anamorphose",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 611492
+  },
+  {
+    "rank": 497,
+    "commander": "james34",
+    "alliance": "[VFD] lesloupsblancs",
+    "alliance_tag": "VFD",
+    "alliance_name": "lesloupsblancs",
+    "server": "117",
+    "points": 604594
+  },
+  {
+    "rank": 498,
+    "commander": "Sproelk",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 604405
+  },
+  {
+    "rank": 499,
+    "commander": "Maff-544",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 603669
+  },
+  {
+    "rank": 500,
+    "commander": "ПалкавВодец",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 602597
+  },
+  {
+    "rank": 501,
+    "commander": "88lelik88",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 599790
+  },
+  {
+    "rank": 502,
+    "commander": "Hunter123",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 597621
+  },
+  {
+    "rank": 503,
+    "commander": "ХũťїGắ$ka",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 596275
+  },
+  {
+    "rank": 504,
+    "commander": "archer339",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 589298
+  },
+  {
+    "rank": 505,
+    "commander": "Luke0727",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 588760
+  },
+  {
+    "rank": 506,
+    "commander": "Poooncho",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 586772
+  },
+  {
+    "rank": 507,
+    "commander": "Vadim-msk",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 584762
+  },
+  {
+    "rank": 508,
+    "commander": "Skorp28rus",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 579242
+  },
+  {
+    "rank": 509,
+    "commander": "Grandpaowl",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 578838
+  },
+  {
+    "rank": 510,
+    "commander": "Silvestet",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 575282
+  },
+  {
+    "rank": 511,
+    "commander": "Leonida72",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 575244
+  },
+  {
+    "rank": 512,
+    "commander": "MaxSmile",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 570403
+  },
+  {
+    "rank": 513,
+    "commander": "Rubosh",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 570130
+  },
+  {
+    "rank": 514,
+    "commander": "Бутрагенио",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 570116
+  },
+  {
+    "rank": 515,
+    "commander": "mcc3",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 569016
+  },
+  {
+    "rank": 516,
+    "commander": "Bahar0690",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 568208
+  },
+  {
+    "rank": 517,
+    "commander": "Fury73",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 567708
+  },
+  {
+    "rank": 518,
+    "commander": "ВоДяНой",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 566237
+  },
+  {
+    "rank": 519,
+    "commander": "아케론",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 564140
+  },
+  {
+    "rank": 520,
+    "commander": "Mastro",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 563074
+  },
+  {
+    "rank": 521,
+    "commander": "H4RDY",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 560680
+  },
+  {
+    "rank": 522,
+    "commander": "SUNDUK1985",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 553390
+  },
+  {
+    "rank": 523,
+    "commander": "ДимаК84",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 552602
+  },
+  {
+    "rank": 524,
+    "commander": "LilD",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 550243
+  },
+  {
+    "rank": 525,
+    "commander": "ЧеГеварА",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 550110
+  },
+  {
+    "rank": 526,
+    "commander": "Muzika",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 549758
+  },
+  {
+    "rank": 527,
+    "commander": "жнец-13",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 548640
+  },
+  {
+    "rank": 528,
+    "commander": "GpasPeur-2b",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 543912
+  },
+  {
+    "rank": 529,
+    "commander": "Virtz",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 540500
+  },
+  {
+    "rank": 530,
+    "commander": "chedreel",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 540410
+  },
+  {
+    "rank": 531,
+    "commander": "Sanosuke",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 533660
+  },
+  {
+    "rank": 532,
+    "commander": "chevaliernoir",
+    "alliance": "[VFD] lesloupsblancs",
+    "alliance_tag": "VFD",
+    "alliance_name": "lesloupsblancs",
+    "server": "117",
+    "points": 528144
+  },
+  {
+    "rank": 533,
+    "commander": "Konstantinos86",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 526130
+  },
+  {
+    "rank": 534,
+    "commander": "Maiki74",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 521724
+  },
+  {
+    "rank": 535,
+    "commander": "MeXanic",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 521532
+  },
+  {
+    "rank": 536,
+    "commander": "экстрим",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 521350
+  },
+  {
+    "rank": 537,
+    "commander": "Kittanna",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 515678
+  },
+  {
+    "rank": 538,
+    "commander": "scratchup",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 511350
+  },
+  {
+    "rank": 539,
+    "commander": "nachoocarp",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 510783
+  },
+  {
+    "rank": 540,
+    "commander": "Социк",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 508814
+  },
+  {
+    "rank": 541,
+    "commander": "cacarot",
+    "alliance": "[SHE] ShadowLover",
+    "alliance_tag": "SHE",
+    "alliance_name": "ShadowLover",
+    "server": "117",
+    "points": 508750
+  },
+  {
+    "rank": 542,
+    "commander": "Полутон",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 508370
+  },
+  {
+    "rank": 543,
+    "commander": "LeChU",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 508245
+  },
+  {
+    "rank": 544,
+    "commander": "Changnoi",
+    "alliance": "[SHE] ShadowLover",
+    "alliance_tag": "SHE",
+    "alliance_name": "ShadowLover",
+    "server": "117",
+    "points": 505371
+  },
+  {
+    "rank": 545,
+    "commander": "六大Helen*次",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 502267
+  },
+  {
+    "rank": 546,
+    "commander": "KAYRON",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 496504
+  },
+  {
+    "rank": 547,
+    "commander": "Alonso17",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 495720
+  },
+  {
+    "rank": 548,
+    "commander": "булавка",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 495408
+  },
+  {
+    "rank": 549,
+    "commander": "Slickback",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 494588
+  },
+  {
+    "rank": 550,
+    "commander": "JOY-COBRA",
+    "alliance": "[A013] ALIANÇA013",
+    "alliance_tag": "A013",
+    "alliance_name": "ALIANÇA013",
+    "server": "117",
+    "points": 490236
+  },
+  {
+    "rank": 551,
+    "commander": "РукиНеИзПлеч",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 487645
+  },
+  {
+    "rank": 552,
+    "commander": "Whisperer",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 486632
+  },
+  {
+    "rank": 553,
+    "commander": "Ceretadon",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 486344
+  },
+  {
+    "rank": 554,
+    "commander": "1сталкер",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 483874
+  },
+  {
+    "rank": 555,
+    "commander": "Kosht83",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 483738
+  },
+  {
+    "rank": 556,
+    "commander": "Elizasnopchenko",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 480640
+  },
+  {
+    "rank": 557,
+    "commander": "FrauLynn",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 475458
+  },
+  {
+    "rank": 558,
+    "commander": "Шира76",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 475004
+  },
+  {
+    "rank": 559,
+    "commander": "FabioBZH29",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 471224
+  },
+  {
+    "rank": 560,
+    "commander": "지하여자군totem",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 470786
+  },
+  {
+    "rank": 561,
+    "commander": "bankaiichigo",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 466051
+  },
+  {
+    "rank": 562,
+    "commander": "румпельштицхин",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 464215
+  },
+  {
+    "rank": 563,
+    "commander": "Sergey2408",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 460840
+  },
+  {
+    "rank": 564,
+    "commander": "T92",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 458586
+  },
+  {
+    "rank": 565,
+    "commander": "Garik1500800",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 449392
+  },
+  {
+    "rank": 566,
+    "commander": "Cao골든야옹이",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 448270
+  },
+  {
+    "rank": 567,
+    "commander": "слесарюга",
+    "alliance": "[PoS] КланСопраноАкадемІv|",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадемІv|",
+    "server": "114",
+    "points": 447485
+  },
+  {
+    "rank": 568,
+    "commander": "6RH%",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 442200
+  },
+  {
+    "rank": 569,
+    "commander": "Джимис",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 438970
+  },
+  {
+    "rank": 570,
+    "commander": "Нагибач",
+    "alliance": "[IVI] простые",
+    "alliance_tag": "IVI",
+    "alliance_name": "простые",
+    "server": "114",
+    "points": 437460
+  },
+  {
+    "rank": 571,
+    "commander": "Arpz",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 436889
+  },
+  {
+    "rank": 572,
+    "commander": "Дед-88-91",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 435457
+  },
+  {
+    "rank": 573,
+    "commander": "CheckMateBB",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 420212
+  },
+  {
+    "rank": 574,
+    "commander": "Svensen003",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 418945
+  },
+  {
+    "rank": 575,
+    "commander": "Dogboy",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 415110
+  },
+  {
+    "rank": 576,
+    "commander": "LynxNM",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 414446
+  },
+  {
+    "rank": 577,
+    "commander": "raiplay",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 413980
+  },
+  {
+    "rank": 578,
+    "commander": "CAZT",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 411203
+  },
+  {
+    "rank": 579,
+    "commander": "Jakson87",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 407530
+  },
+  {
+    "rank": 580,
+    "commander": "Renlo",
+    "alliance": "[KRS2] KRATO",
+    "alliance_tag": "KRS2",
+    "alliance_name": "KRATO",
+    "server": "117",
+    "points": 401865
+  },
+  {
+    "rank": 581,
+    "commander": "Ma3afone",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 400850
+  },
+  {
+    "rank": 582,
+    "commander": "Bilette83",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 399510
+  },
+  {
+    "rank": 583,
+    "commander": "MasterchiefDon",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 397407
+  },
+  {
+    "rank": 584,
+    "commander": "Reginacom",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 396119
+  },
+  {
+    "rank": 585,
+    "commander": "MooooneD",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 395290
+  },
+  {
+    "rank": 586,
+    "commander": "сектор23",
+    "alliance": "[BLAA] BLACKROSE",
+    "alliance_tag": "BLAA",
+    "alliance_name": "BLACKROSE",
+    "server": "114",
+    "points": 394402
+  },
+  {
+    "rank": 587,
+    "commander": "CRITTER",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 394223
+  },
+  {
+    "rank": 588,
+    "commander": "камтех",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 391090
+  },
+  {
+    "rank": 589,
+    "commander": "Julesp",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 390803
+  },
+  {
+    "rank": 590,
+    "commander": "СМЕРТНИК",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 388004
+  },
+  {
+    "rank": 591,
+    "commander": "김아무개",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 386370
+  },
+  {
+    "rank": 592,
+    "commander": "symolan",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 380470
+  },
+  {
+    "rank": 593,
+    "commander": "Nyata55",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 380295
+  },
+  {
+    "rank": 594,
+    "commander": "Puzdrik",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 379630
+  },
+  {
+    "rank": 595,
+    "commander": "Catalya130925",
+    "alliance": "[VFD] lesloupsblancs",
+    "alliance_tag": "VFD",
+    "alliance_name": "lesloupsblancs",
+    "server": "117",
+    "points": 372633
+  },
+  {
+    "rank": 596,
+    "commander": "Commander2asALIK",
+    "alliance": "[CZE] CzechCorp",
+    "alliance_tag": "CZE",
+    "alliance_name": "CzechCorp",
+    "server": "114",
+    "points": 371820
+  },
+  {
+    "rank": 597,
+    "commander": "Danerys07",
+    "alliance": "[VFD] lesloupsblancs",
+    "alliance_tag": "VFD",
+    "alliance_name": "lesloupsblancs",
+    "server": "117",
+    "points": 368595
+  },
+  {
+    "rank": 598,
+    "commander": "Fransy",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 368560
+  },
+  {
+    "rank": 599,
+    "commander": "Louïc",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 368174
+  },
+  {
+    "rank": 600,
+    "commander": "Макс-ТМБ",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 365090
+  },
+  {
+    "rank": 601,
+    "commander": "555fil777",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 363596
+  },
+  {
+    "rank": 602,
+    "commander": "kolunya85",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 363314
+  },
+  {
+    "rank": 603,
+    "commander": "Романыч-Люберцы",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 356361
+  },
+  {
+    "rank": 604,
+    "commander": "SURVIVORS",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 355709
+  },
+  {
+    "rank": 605,
+    "commander": "Викториииис",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 355480
+  },
+  {
+    "rank": 606,
+    "commander": "AlikaCeleste",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 343612
+  },
+  {
+    "rank": 607,
+    "commander": "крмандор",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 341895
+  },
+  {
+    "rank": 608,
+    "commander": "MAGz",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 338653
+  },
+  {
+    "rank": 609,
+    "commander": "waldini",
+    "alliance": "[SHE] ShadowLover",
+    "alliance_tag": "SHE",
+    "alliance_name": "ShadowLover",
+    "server": "117",
+    "points": 336799
+  },
+  {
+    "rank": 610,
+    "commander": "어쩔TV",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 334369
+  },
+  {
+    "rank": 611,
+    "commander": "ThePunisher000",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 331435
+  },
+  {
+    "rank": 612,
+    "commander": "PaNIC",
+    "alliance": "[LiN] xXxLEGION×Xx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGION×Xx",
+    "server": "114",
+    "points": 330664
+  },
+  {
+    "rank": 613,
+    "commander": "GrandmaFrog",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 328720
+  },
+  {
+    "rank": 614,
+    "commander": "PIRA",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 328394
+  },
+  {
+    "rank": 615,
+    "commander": "Rutaa",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 326467
+  },
+  {
+    "rank": 616,
+    "commander": "DivineChaosArt",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 325929
+  },
+  {
+    "rank": 617,
+    "commander": "공공칠빵",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 320858
+  },
+  {
+    "rank": 618,
+    "commander": "zebraone",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 317764
+  },
+  {
+    "rank": 619,
+    "commander": "Vibe/?Vendetta",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 317144
+  },
+  {
+    "rank": 620,
+    "commander": "Garyt",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 317040
+  },
+  {
+    "rank": 621,
+    "commander": "Rango46",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 314780
+  },
+  {
+    "rank": 622,
+    "commander": "rbk2009",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 311497
+  },
+  {
+    "rank": 623,
+    "commander": "RavenFall",
+    "alliance": "[KRS2] KRATO",
+    "alliance_tag": "KRS2",
+    "alliance_name": "KRATO",
+    "server": "117",
+    "points": 308932
+  },
+  {
+    "rank": 624,
+    "commander": "IlyaVeps",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 306347
+  },
+  {
+    "rank": 625,
+    "commander": "Dave1709",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 304062
+  },
+  {
+    "rank": 626,
+    "commander": "Aqayev•S•",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 299540
+  },
+  {
+    "rank": 627,
+    "commander": "antono1",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 298627
+  },
+  {
+    "rank": 628,
+    "commander": "HAMMERS",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 292016
+  },
+  {
+    "rank": 629,
+    "commander": "softy",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 286725
+  },
+  {
+    "rank": 630,
+    "commander": "1370zero",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 286168
+  },
+  {
+    "rank": 631,
+    "commander": "lukyluke33",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 280553
+  },
+  {
+    "rank": 632,
+    "commander": "Kiki008",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 279600
+  },
+  {
+    "rank": 633,
+    "commander": "CaptainC",
+    "alliance": "[SHE] ShadowLover",
+    "alliance_tag": "SHE",
+    "alliance_name": "ShadowLover",
+    "server": "117",
+    "points": 275357
+  },
+  {
+    "rank": 634,
+    "commander": "Пастырь2",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 274676
+  },
+  {
+    "rank": 635,
+    "commander": "bawwawwaw",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 273100
+  },
+  {
+    "rank": 636,
+    "commander": "damiebang",
+    "alliance": "[UTS] upthescore",
+    "alliance_tag": "UTS",
+    "alliance_name": "upthescore",
+    "server": "117",
+    "points": 265889
+  },
+  {
+    "rank": 637,
+    "commander": "мехтех",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 262102
+  },
+  {
+    "rank": 638,
+    "commander": "Пьяныйеж",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 257710
+  },
+  {
+    "rank": 639,
+    "commander": "haron74",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 256584
+  },
+  {
+    "rank": 640,
+    "commander": "vovafaik",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 251140
+  },
+  {
+    "rank": 641,
+    "commander": "Ронни11",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 250000
+  },
+  {
+    "rank": 642,
+    "commander": "ebish",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 243929
+  },
+  {
+    "rank": 643,
+    "commander": "Drazic",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 243756
+  },
+  {
+    "rank": 644,
+    "commander": "héro",
+    "alliance": "[KRS2] KRATO",
+    "alliance_tag": "KRS2",
+    "alliance_name": "KRATO",
+    "server": "117",
+    "points": 243706
+  },
+  {
+    "rank": 645,
+    "commander": "CanoPop",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 240024
+  },
+  {
+    "rank": 646,
+    "commander": "Вован52",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 235970
+  },
+  {
+    "rank": 647,
+    "commander": "/Каратель/",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 234617
+  },
+  {
+    "rank": 648,
+    "commander": "ComandanteMike",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 234418
+  },
+  {
+    "rank": 649,
+    "commander": "Стари4ок",
+    "alliance": "[PoS] КланСопраноАкадеміvl",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадеміvl",
+    "server": "114",
+    "points": 233892
+  },
+  {
+    "rank": 650,
+    "commander": "NoorNureke",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 232970
+  },
+  {
+    "rank": 651,
+    "commander": "гансс",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 229042
+  },
+  {
+    "rank": 652,
+    "commander": "Бегущий",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 228560
+  },
+  {
+    "rank": 653,
+    "commander": "LanMandragoran",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 228464
+  },
+  {
+    "rank": 654,
+    "commander": "Commander2fAk3K5",
+    "alliance": "[ERT] ERTTT",
+    "alliance_tag": "ERT",
+    "alliance_name": "ERTTT",
+    "server": "117",
+    "points": 223398
+  },
+  {
+    "rank": 655,
+    "commander": "DiHome",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 220680
+  },
+  {
+    "rank": 656,
+    "commander": "Tishka93",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 219903
+  },
+  {
+    "rank": 657,
+    "commander": "BagiRa",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 216221
+  },
+  {
+    "rank": 658,
+    "commander": "Parada",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 209275
+  },
+  {
+    "rank": 659,
+    "commander": "loize",
+    "alliance": "[NoVa] NovaVanguard",
+    "alliance_tag": "NoVa",
+    "alliance_name": "NovaVanguard",
+    "server": "114",
+    "points": 207260
+  },
+  {
+    "rank": 660,
+    "commander": "Lenskyi",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 206541
+  },
+  {
+    "rank": 661,
+    "commander": "Malisorn",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 195274
+  },
+  {
+    "rank": 662,
+    "commander": "pisi1",
+    "alliance": "[VFD] lesloupsblancs",
+    "alliance_tag": "VFD",
+    "alliance_name": "lesloupsblancs",
+    "server": "117",
+    "points": 192474
+  },
+  {
+    "rank": 663,
+    "commander": "KDE",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 191830
+  },
+  {
+    "rank": 664,
+    "commander": "КАЗУС",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 191600
+  },
+  {
+    "rank": 665,
+    "commander": "CommanderMicha",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 188905
+  },
+  {
+    "rank": 666,
+    "commander": "ИНСУРГЕНТ",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 186385
+  },
+  {
+    "rank": 667,
+    "commander": "Siremath",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 186018
+  },
+  {
+    "rank": 668,
+    "commander": "DimMmaN",
+    "alliance": "[BOSK] Zzzzzzz",
+    "alliance_tag": "BOSK",
+    "alliance_name": "Zzzzzzz",
+    "server": "114",
+    "points": 181234
+  },
+  {
+    "rank": 669,
+    "commander": "Commander2dpW5QF",
+    "alliance": "[piiu] yhyfjukus",
+    "alliance_tag": "piiu",
+    "alliance_name": "yhyfjukus",
+    "server": "117",
+    "points": 181114
+  },
+  {
+    "rank": 670,
+    "commander": "NickiV",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 176400
+  },
+  {
+    "rank": 671,
+    "commander": "NeoANUBIS",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 173410
+  },
+  {
+    "rank": 672,
+    "commander": "АиДвЮбкЕ",
+    "alliance": "[PoS] КланСопраноАкадеміvі",
+    "alliance_tag": "PoS",
+    "alliance_name": "КланСопраноАкадеміvі",
+    "server": "114",
+    "points": 169659
+  },
+  {
+    "rank": 673,
+    "commander": "klkl",
+    "alliance": "[190] CandyClub",
+    "alliance_tag": "190",
+    "alliance_name": "CandyClub",
+    "server": "117",
+    "points": 169396
+  },
+  {
+    "rank": 674,
+    "commander": "norah92",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 167126
+  },
+  {
+    "rank": 675,
+    "commander": "Ferein",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 166023
+  },
+  {
+    "rank": 676,
+    "commander": "mikolka333",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 159463
+  },
+  {
+    "rank": 677,
+    "commander": "Analbrutal",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 157200
+  },
+  {
+    "rank": 678,
+    "commander": "Marcel189",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 156830
+  },
+  {
+    "rank": 679,
+    "commander": "Yunri",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 155765
+  },
+  {
+    "rank": 680,
+    "commander": "Prs",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 143448
+  },
+  {
+    "rank": 681,
+    "commander": "JOHN24",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 141724
+  },
+  {
+    "rank": 682,
+    "commander": "sarkaobbra",
+    "alliance": "[ALIN] Алина",
+    "alliance_tag": "ALIN",
+    "alliance_name": "Алина",
+    "server": "117",
+    "points": 141172
+  },
+  {
+    "rank": 683,
+    "commander": "DOM64",
+    "alliance": "[KRS] KRATOSR",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOSR",
+    "server": "117",
+    "points": 136172
+  },
+  {
+    "rank": 684,
+    "commander": "Kiryammm",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 132434
+  },
+  {
+    "rank": 685,
+    "commander": "кенисошелсума",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 130957
+  },
+  {
+    "rank": 686,
+    "commander": "Колька666",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 127980
+  },
+  {
+    "rank": 687,
+    "commander": "Penetrator30",
+    "alliance": "[Ivl] Шабаш",
+    "alliance_tag": "Ivl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 127770
+  },
+  {
+    "rank": 688,
+    "commander": "esmile",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 124184
+  },
+  {
+    "rank": 689,
+    "commander": "Makina68",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 118466
+  },
+  {
+    "rank": 690,
+    "commander": "Misea007",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 118070
+  },
+  {
+    "rank": 691,
+    "commander": "Sonjablonde",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 115510
+  },
+  {
+    "rank": 692,
+    "commander": "XJC",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 114472
+  },
+  {
+    "rank": 693,
+    "commander": "VasinSM",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 112320
+  },
+  {
+    "rank": 694,
+    "commander": "DubsV2",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 110000
+  },
+  {
+    "rank": 695,
+    "commander": "kocholo",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 109172
+  },
+  {
+    "rank": 696,
+    "commander": "Maihealu",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 108072
+  },
+  {
+    "rank": 697,
+    "commander": "Artjoker",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 103419
+  },
+  {
+    "rank": 698,
+    "commander": "Юлька-Пулька",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 102652
+  },
+  {
+    "rank": 699,
+    "commander": "잘하는데Adept",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 102361
+  },
+  {
+    "rank": 700,
+    "commander": "Тигррр08",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 102179
+  },
+  {
+    "rank": 701,
+    "commander": "JoesCastle",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 100242
+  },
+  {
+    "rank": 702,
+    "commander": "глухарь1",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 100000
+  },
+  {
+    "rank": 703,
+    "commander": "Green64",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 97875
+  },
+  {
+    "rank": 704,
+    "commander": "°Безликий",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 95762
+  },
+  {
+    "rank": 705,
+    "commander": "VikciN",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 95700
+  },
+  {
+    "rank": 706,
+    "commander": "Gromimolniyaaa",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 92424
+  },
+  {
+    "rank": 707,
+    "commander": "sedOFF",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 92050
+  },
+  {
+    "rank": 708,
+    "commander": "ведьмочка-",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 90000
+  },
+  {
+    "rank": 709,
+    "commander": "josedavid",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 89200
+  },
+  {
+    "rank": 710,
+    "commander": "Djeddak",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 89050
+  },
+  {
+    "rank": 711,
+    "commander": "Dimas50",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 87446
+  },
+  {
+    "rank": 712,
+    "commander": "ЕгоКотейшество",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 86889
+  },
+  {
+    "rank": 713,
+    "commander": "bloodtaxicab",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 85283
+  },
+  {
+    "rank": 714,
+    "commander": "ViperX",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 84516
+  },
+  {
+    "rank": 715,
+    "commander": "Fors1234",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 82835
+  },
+  {
+    "rank": 716,
+    "commander": "lokozet",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 82804
+  },
+  {
+    "rank": 717,
+    "commander": "Bacardiloco",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 82337
+  },
+  {
+    "rank": 718,
+    "commander": "Tiki",
+    "alliance": "[RD69] ROAD69",
+    "alliance_tag": "RD69",
+    "alliance_name": "ROAD69",
+    "server": "114",
+    "points": 80741
+  },
+  {
+    "rank": 719,
+    "commander": "curbyinc",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 80245
+  },
+  {
+    "rank": 720,
+    "commander": "Iruha",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 80054
+  },
+  {
+    "rank": 721,
+    "commander": "Sammy41",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 79870
+  },
+  {
+    "rank": 722,
+    "commander": "2aToEVk",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 78966
+  },
+  {
+    "rank": 723,
+    "commander": "Riaz",
+    "alliance": "[SHE] ShadowLover",
+    "alliance_tag": "SHE",
+    "alliance_name": "ShadowLover",
+    "server": "117",
+    "points": 75968
+  },
+  {
+    "rank": 724,
+    "commander": "Dimon400",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 75721
+  },
+  {
+    "rank": 725,
+    "commander": "Салют5",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 75248
+  },
+  {
+    "rank": 726,
+    "commander": "LaViking",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 75189
+  },
+  {
+    "rank": 727,
+    "commander": "toufik",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 74940
+  },
+  {
+    "rank": 728,
+    "commander": "СЕРЬІЙ",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 72932
+  },
+  {
+    "rank": 729,
+    "commander": "BaNaNka",
+    "alliance": "[ArX] Архангелы",
+    "alliance_tag": "ArX",
+    "alliance_name": "Архангелы",
+    "server": "114",
+    "points": 72410
+  },
+  {
+    "rank": 730,
+    "commander": "Sweatybollocks",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 72120
+  },
+  {
+    "rank": 731,
+    "commander": "mikens",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 71541
+  },
+  {
+    "rank": 732,
+    "commander": "Lars75",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 71477
+  },
+  {
+    "rank": 733,
+    "commander": "Kev60110",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 70581
+  },
+  {
+    "rank": 734,
+    "commander": "ravanan",
+    "alliance": "[mvEp] Viva4ever",
+    "alliance_tag": "mvEp",
+    "alliance_name": "Viva4ever",
+    "server": "117",
+    "points": 69833
+  },
+  {
+    "rank": 735,
+    "commander": "Римус",
+    "alliance": "[2077] CyberpunkEdgerunne",
+    "alliance_tag": "2077",
+    "alliance_name": "CyberpunkEdgerunne",
+    "server": "117",
+    "points": 68756
+  },
+  {
+    "rank": 736,
+    "commander": "sergey1990",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 65550
+  },
+  {
+    "rank": 737,
+    "commander": "Ден-1983",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 64483
+  },
+  {
+    "rank": 738,
+    "commander": "demidrol",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 63375
+  },
+  {
+    "rank": 739,
+    "commander": "Cockroachx",
+    "alliance": "[TLC] ThalassaCoven",
+    "alliance_tag": "TLC",
+    "alliance_name": "ThalassaCoven",
+    "server": "117",
+    "points": 61775
+  },
+  {
+    "rank": 740,
+    "commander": "Sergeiii",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 58840
+  },
+  {
+    "rank": 741,
+    "commander": "KaRTaL60",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 58666
+  },
+  {
+    "rank": 742,
+    "commander": "BanGbOOmbAdABOOM",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 58330
+  },
+  {
+    "rank": 743,
+    "commander": "mixMaksoon",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 57800
+  },
+  {
+    "rank": 744,
+    "commander": "GA-Thrawn",
+    "alliance": "[WZTX] KingThe",
+    "alliance_tag": "WZTX",
+    "alliance_name": "KingThe",
+    "server": "117",
+    "points": 56792
+  },
+  {
+    "rank": 745,
+    "commander": "Earthmudo",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 56702
+  },
+  {
+    "rank": 746,
+    "commander": "praxtor",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 56689
+  },
+  {
+    "rank": 747,
+    "commander": "-Vixen-",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 55466
+  },
+  {
+    "rank": 748,
+    "commander": "priv8",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 55344
+  },
+  {
+    "rank": 749,
+    "commander": "Александр147",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 55266
+  },
+  {
+    "rank": 750,
+    "commander": "КАЛЕВАЛА",
+    "alliance": "[LiN] XXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "XXxLEGIONxXx",
+    "server": "114",
+    "points": 55180
+  },
+  {
+    "rank": 751,
+    "commander": "IrishCelt",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "117",
+    "points": 55170
+  },
+  {
+    "rank": 752,
+    "commander": "CFrG",
+    "alliance": "[VFD] lesloupsblancs",
+    "alliance_tag": "VFD",
+    "alliance_name": "lesloupsblancs",
+    "server": "117",
+    "points": 54725
+  },
+  {
+    "rank": 753,
+    "commander": "salida07",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 54602
+  },
+  {
+    "rank": 754,
+    "commander": "Negan74",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 54588
+  },
+  {
+    "rank": 755,
+    "commander": "Commander2eo7mBv",
+    "alliance": "[Sp3r] Sparta2026",
+    "alliance_tag": "Sp3r",
+    "alliance_name": "Sparta2026",
+    "server": "117",
+    "points": 54426
+  },
+  {
+    "rank": 756,
+    "commander": "JennyLove",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 53240
+  },
+  {
+    "rank": 757,
+    "commander": "CPTRocketman",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 52930
+  },
+  {
+    "rank": 758,
+    "commander": "SergeiSpb39",
+    "alliance": "[lv|] Шабаш",
+    "alliance_tag": "lv|",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 52620
+  },
+  {
+    "rank": 759,
+    "commander": "iMar",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 51540
+  },
+  {
+    "rank": 760,
+    "commander": "JSPEC",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 50760
+  },
+  {
+    "rank": 761,
+    "commander": "MoneD",
+    "alliance": "[RuFd] RunFlat",
+    "alliance_tag": "RuFd",
+    "alliance_name": "RunFlat",
+    "server": "114",
+    "points": 50490
+  },
+  {
+    "rank": 762,
+    "commander": "•YaGa«",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 50441
+  },
+  {
+    "rank": 763,
+    "commander": "выпмелОрк",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 50030
+  },
+  {
+    "rank": 764,
+    "commander": "Bada-Bing",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 49670
+  },
+  {
+    "rank": 765,
+    "commander": "وس وس",
+    "alliance": "[UTS] upthescore",
+    "alliance_tag": "UTS",
+    "alliance_name": "upthescore",
+    "server": "117",
+    "points": 49475
+  },
+  {
+    "rank": 766,
+    "commander": "Suzanna669",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 48675
+  },
+  {
+    "rank": 767,
+    "commander": "Paul18",
+    "alliance": "[P1MP] JU1CE",
+    "alliance_tag": "P1MP",
+    "alliance_name": "JU1CE",
+    "server": "117",
+    "points": 47393
+  },
+  {
+    "rank": 768,
+    "commander": "Shinoë",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 47152
+  },
+  {
+    "rank": 769,
+    "commander": "SezerDem41",
+    "alliance": "[Tr1] TürkBirliğı",
+    "alliance_tag": "Tr1",
+    "alliance_name": "TürkBirliğı",
+    "server": "117",
+    "points": 45800
+  },
+  {
+    "rank": 770,
+    "commander": "Хеви-метал",
+    "alliance": "[RiM] БессмертныйЛегион",
+    "alliance_tag": "RiM",
+    "alliance_name": "БессмертныйЛегион",
+    "server": "114",
+    "points": 40850
+  },
+  {
+    "rank": 771,
+    "commander": "-Akbar-",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 40160
+  },
+  {
+    "rank": 772,
+    "commander": "Горах",
+    "alliance": "[ZeVS] Versuszombies",
+    "alliance_tag": "ZeVS",
+    "alliance_name": "Versuszombies",
+    "server": "114",
+    "points": 39973
+  },
+  {
+    "rank": 773,
+    "commander": "bruno74",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 37982
+  },
+  {
+    "rank": 774,
+    "commander": "Algerien19",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 36500
+  },
+  {
+    "rank": 775,
+    "commander": "ALTO",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 35944
+  },
+  {
+    "rank": 776,
+    "commander": "Erik59",
+    "alliance": "[VaIX] Вальхалла",
+    "alliance_tag": "VaIX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 34040
+  },
+  {
+    "rank": 777,
+    "commander": "Саня25rus",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 32440
+  },
+  {
+    "rank": 778,
+    "commander": "JasonVoorhees",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 30000
+  },
+  {
+    "rank": 779,
+    "commander": "wolk666",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 30000
+  },
+  {
+    "rank": 780,
+    "commander": "CBOShnik71",
+    "alliance": "[ZoV7] ZVeri",
+    "alliance_tag": "ZoV7",
+    "alliance_name": "ZVeri",
+    "server": "114",
+    "points": 30000
+  },
+  {
+    "rank": 781,
+    "commander": "mc4198",
+    "alliance": "[ValX] Вальхалла",
+    "alliance_tag": "ValX",
+    "alliance_name": "Вальхалла",
+    "server": "114",
+    "points": 29940
+  },
+  {
+    "rank": 782,
+    "commander": "Commander2dpH6Gp",
+    "alliance": "[HEII] DarkAl",
+    "alliance_tag": "HEII",
+    "alliance_name": "DarkAl",
+    "server": "117",
+    "points": 29525
+  },
+  {
+    "rank": 783,
+    "commander": "Namezida",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 29378
+  },
+  {
+    "rank": 784,
+    "commander": "Alexei-pervui",
+    "alliance": "[T1OX] ПоХуисты",
+    "alliance_tag": "T1OX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 29100
+  },
+  {
+    "rank": 785,
+    "commander": "Dism",
+    "alliance": "[LiN] xXxLEGIONxXx",
+    "alliance_tag": "LiN",
+    "alliance_name": "xXxLEGIONxXx",
+    "server": "114",
+    "points": 28500
+  },
+  {
+    "rank": 786,
+    "commander": "Arizonia",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 28500
+  },
+  {
+    "rank": 787,
+    "commander": "Salva-Toro",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 27065
+  },
+  {
+    "rank": 788,
+    "commander": "andryst",
+    "alliance": "[lvl] Шабаш",
+    "alliance_tag": "lvl",
+    "alliance_name": "Шабаш",
+    "server": "114",
+    "points": 26660
+  },
+  {
+    "rank": 789,
+    "commander": "King0926",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 26220
+  },
+  {
+    "rank": 790,
+    "commander": "Gus89",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 23801
+  },
+  {
+    "rank": 791,
+    "commander": "Inpush",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "server": "119",
+    "points": 20840
+  },
+  {
+    "rank": 792,
+    "commander": "Sensei88",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 19500
+  },
+  {
+    "rank": 793,
+    "commander": "Liana88",
+    "alliance": "[AOM] ArmyOfMinions",
+    "alliance_tag": "AOM",
+    "alliance_name": "ArmyOfMinions",
+    "server": "114",
+    "points": 19000
+  },
+  {
+    "rank": 794,
+    "commander": "TRi",
+    "alliance": "[AvaL] AvaLon",
+    "alliance_tag": "AvaL",
+    "alliance_name": "AvaLon",
+    "server": "114",
+    "points": 18045
+  },
+  {
+    "rank": 795,
+    "commander": "Ugadawgs",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 17425
+  },
+  {
+    "rank": 796,
+    "commander": "anahtar",
+    "alliance": "[RaC] КрасноеЯблоко",
+    "alliance_tag": "RaC",
+    "alliance_name": "КрасноеЯблоко",
+    "server": "114",
+    "points": 17250
+  },
+  {
+    "rank": 797,
+    "commander": "Cramou",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 17157
+  },
+  {
+    "rank": 798,
+    "commander": "Webzar",
+    "alliance": "[LiN] ×XxLEGION×Xx",
+    "alliance_tag": "LiN",
+    "alliance_name": "×XxLEGION×Xx",
+    "server": "114",
+    "points": 16498
+  },
+  {
+    "rank": 799,
+    "commander": "Kanto",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 15809
+  },
+  {
+    "rank": 800,
+    "commander": "престидижитатор",
+    "alliance": "[RusV] RussianVersion",
+    "alliance_tag": "RusV",
+    "alliance_name": "RussianVersion",
+    "server": "114",
+    "points": 15730
+  },
+  {
+    "rank": 801,
+    "commander": "PJA75",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 15324
+  },
+  {
+    "rank": 802,
+    "commander": "Cervántes",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 11136
+  },
+  {
+    "rank": 803,
+    "commander": "Tatato",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 10650
+  },
+  {
+    "rank": 804,
+    "commander": "ASIFO1",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 10630
+  },
+  {
+    "rank": 805,
+    "commander": "L-first",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 10420
+  },
+  {
+    "rank": 806,
+    "commander": "Гессху",
+    "alliance": "[DOOM] Armageddon",
+    "alliance_tag": "DOOM",
+    "alliance_name": "Armageddon",
+    "server": "119",
+    "points": 9960
+  },
+  {
+    "rank": 807,
+    "commander": "Thirdspace",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 9500
+  },
+  {
+    "rank": 808,
+    "commander": "34savages",
+    "alliance": "[P2MP] NowaPolandia",
+    "alliance_tag": "P2MP",
+    "alliance_name": "NowaPolandia",
+    "server": "117",
+    "points": 8785
+  },
+  {
+    "rank": 809,
+    "commander": "guilegrand",
+    "alliance": "[KRS] KRATOS",
+    "alliance_tag": "KRS",
+    "alliance_name": "KRATOS",
+    "server": "117",
+    "points": 7180
+  },
+  {
+    "rank": 810,
+    "commander": "Commander2fYybwV",
+    "alliance": "[SMY] SileentMajority",
+    "alliance_tag": "SMY",
+    "alliance_name": "SileentMajority",
+    "server": "117",
+    "points": 6991
+  },
+  {
+    "rank": 811,
+    "commander": "Ali83",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 5662
+  },
+  {
+    "rank": 812,
+    "commander": "Commander2f9EflP",
+    "alliance": "[ZhB] zumbihunters",
+    "alliance_tag": "ZhB",
+    "alliance_name": "zumbihunters",
+    "server": "117",
+    "points": 5624
+  },
+  {
+    "rank": 813,
+    "commander": "Roky22",
+    "alliance": "[SHE] ShadowLover",
+    "alliance_tag": "SHE",
+    "alliance_name": "ShadowLover",
+    "server": "117",
+    "points": 4332
+  },
+  {
+    "rank": 814,
+    "commander": "YUTAOKKOTSU",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 3110
+  },
+  {
+    "rank": 815,
+    "commander": "Karakhan",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 3050
+  },
+  {
+    "rank": 816,
+    "commander": "tommoam",
+    "alliance": "[QWER] 가나디유치원",
+    "alliance_tag": "QWER",
+    "alliance_name": "가나디유치원",
+    "server": "117",
+    "points": 2939
+  },
+  {
+    "rank": 817,
+    "commander": "Физрук56",
+    "alliance": "[715A] Akadem715",
+    "alliance_tag": "715A",
+    "alliance_name": "Akadem715",
+    "server": "114",
+    "points": 2800
+  },
+  {
+    "rank": 818,
+    "commander": "Sthimbana",
+    "alliance": "[SHE] ShadowLover",
+    "alliance_tag": "SHE",
+    "alliance_name": "ShadowLover",
+    "server": "117",
+    "points": 2303
+  },
+  {
+    "rank": 819,
+    "commander": "ERY",
+    "alliance": "[DRMT] DreamTeamUnforgiven",
+    "alliance_tag": "DRMT",
+    "alliance_name": "DreamTeamUnforgiven",
+    "server": "128",
+    "points": 2220
+  },
+  {
+    "rank": 820,
+    "commander": "Notatechie",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 1570
+  },
+  {
+    "rank": 821,
+    "commander": "Commander2fbUwqp",
+    "alliance": "[ZhB] zumbihunters",
+    "alliance_tag": "ZhB",
+    "alliance_name": "zumbihunters",
+    "server": "117",
+    "points": 1440
+  },
+  {
+    "rank": 822,
+    "commander": "Commander2gOn6eN",
+    "alliance": "[HElI] DarkAl",
+    "alliance_tag": "HElI",
+    "alliance_name": "DarkAl",
+    "server": "117",
+    "points": 1372
+  },
+  {
+    "rank": 823,
+    "commander": "Временной",
+    "alliance": "[GDI] GolgDiggers",
+    "alliance_tag": "GDI",
+    "alliance_name": "GolgDiggers",
+    "server": "117",
+    "points": 1000
+  },
+  {
+    "rank": 824,
+    "commander": "Ffsdcoigh",
+    "alliance": "[NoVo] Novicki",
+    "alliance_tag": "NoVo",
+    "alliance_name": "Novicki",
+    "server": "114",
+    "points": 930
+  },
+  {
+    "rank": 825,
+    "commander": "Commander2fTbASp",
+    "alliance": "[Azt2] USAKKAA",
+    "alliance_tag": "Azt2",
+    "alliance_name": "USAKKAA",
+    "server": "117",
+    "points": 880
+  },
+  {
+    "rank": 826,
+    "commander": "Maltese",
+    "alliance": "[MVPs] TheAVENGERS",
+    "alliance_tag": "MVPs",
+    "alliance_name": "TheAVENGERS",
+    "server": "128",
+    "points": 864
+  },
+  {
+    "rank": 827,
+    "commander": "JëriiiÜÉу",
+    "alliance": "[BYQ] USASKK",
+    "alliance_tag": "BYQ",
+    "alliance_name": "USASKK",
+    "server": "117",
+    "points": 856
+  },
+  {
+    "rank": 828,
+    "commander": "hellfest",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 840
+  },
+  {
+    "rank": 829,
+    "commander": "쩰1234",
+    "alliance": "[Skr] southkorea",
+    "alliance_tag": "Skr",
+    "alliance_name": "southkorea",
+    "server": "117",
+    "points": 816
+  },
+  {
+    "rank": 830,
+    "commander": "ELCHO",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 810
+  },
+  {
+    "rank": 831,
+    "commander": "беркут79",
+    "alliance": "[HEII] DarkAl",
+    "alliance_tag": "HEII",
+    "alliance_name": "DarkAl",
+    "server": "117",
+    "points": 790
+  },
+  {
+    "rank": 832,
+    "commander": "Commander2dYZLcp",
+    "alliance": "[ERT] ERTTT",
+    "alliance_tag": "ERT",
+    "alliance_name": "ERTTT",
+    "server": "117",
+    "points": 738
+  },
+  {
+    "rank": 833,
+    "commander": "Kant063",
+    "alliance": "[Rpd] RPoliceDepartment",
+    "alliance_tag": "Rpd",
+    "alliance_name": "RPoliceDepartment",
+    "server": "115",
+    "points": 690
+  },
+  {
+    "rank": 834,
+    "commander": "Dropbear007",
+    "alliance": "[VBD] VBDRFABA",
+    "alliance_tag": "VBD",
+    "alliance_name": "VBDRFABA",
+    "server": "117",
+    "points": 675
+  },
+  {
+    "rank": 835,
+    "commander": "Одинокий-Кот",
+    "alliance": "[SBXY] SBMRX1",
+    "alliance_tag": "SBXY",
+    "alliance_name": "SBMRX1",
+    "server": "117",
+    "points": 640
+  },
+  {
+    "rank": 836,
+    "commander": "Brakeoff",
+    "alliance": "[GOW] GhostOfWar",
+    "alliance_tag": "GOW",
+    "alliance_name": "GhostOfWar",
+    "server": "120",
+    "points": 621
+  },
+  {
+    "rank": 837,
+    "commander": "Киса",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 600
+  },
+  {
+    "rank": 838,
+    "commander": "MrHysteria",
+    "alliance": "[LoLp] lolPhoenixlol",
+    "alliance_tag": "LoLp",
+    "alliance_name": "lolPhoenixlol",
+    "server": "114",
+    "points": 594
+  },
+  {
+    "rank": 839,
+    "commander": "Nikolo",
+    "alliance": "[KRS2] KRATO",
+    "alliance_tag": "KRS2",
+    "alliance_name": "KRATO",
+    "server": "117",
+    "points": 540
+  },
+  {
+    "rank": 840,
+    "commander": "Commander2ezuwoB",
+    "alliance": "[Dali] ELmaestroDalvin",
+    "alliance_tag": "Dali",
+    "alliance_name": "ELmaestroDalvin",
+    "server": "117",
+    "points": 496
+  },
+  {
+    "rank": 841,
+    "commander": "UnNam3d",
+    "alliance": "[XAT] EUROMONEY",
+    "alliance_tag": "XAT",
+    "alliance_name": "EUROMONEY",
+    "server": "117",
+    "points": 480
+  },
+  {
+    "rank": 842,
+    "commander": "leebee72",
+    "alliance": "[7DS] Se7enDeàdlySins",
+    "alliance_tag": "7DS",
+    "alliance_name": "Se7enDeàdlySins",
+    "server": "117",
+    "points": 480
+  },
+  {
+    "rank": 843,
+    "commander": "MajsterJoe",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 450
+  },
+  {
+    "rank": 844,
+    "commander": "Madsx",
+    "alliance": "[UTS] upthescore",
+    "alliance_tag": "UTS",
+    "alliance_name": "upthescore",
+    "server": "117",
+    "points": 448
+  },
+  {
+    "rank": 845,
+    "commander": "ToneV",
+    "alliance": "[AZT] AntiZombieTeam",
+    "alliance_tag": "AZT",
+    "alliance_name": "AntiZombieTeam",
+    "server": "117",
+    "points": 430
+  },
+  {
+    "rank": 846,
+    "commander": "Commander2fKEDaJ",
+    "alliance": "[oyif] yhyfjuk1",
+    "alliance_tag": "oyif",
+    "alliance_name": "yhyfjuk1",
+    "server": "117",
+    "points": 384
+  },
+  {
+    "rank": 847,
+    "commander": "Korrrrrrrr",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 380
+  },
+  {
+    "rank": 848,
+    "commander": "Renchy",
+    "alliance": "[KPL6] newufh",
+    "alliance_tag": "KPL6",
+    "alliance_name": "newufh",
+    "server": "117",
+    "points": 350
+  },
+  {
+    "rank": 849,
+    "commander": "바람부는날",
+    "alliance": "[Gogo] 저랑고고하실분",
+    "alliance_tag": "Gogo",
+    "alliance_name": "저랑고고하실분",
+    "server": "117",
+    "points": 333
+  },
+  {
+    "rank": 850,
+    "commander": "Reidid",
+    "alliance": "[DRKT] DarkKnightS",
+    "alliance_tag": "DRKT",
+    "alliance_name": "DarkKnightS",
+    "server": "117",
+    "points": 324
+  },
+  {
+    "rank": 851,
+    "commander": "5кузенЭдмунда",
+    "alliance": "[715] team715",
+    "alliance_tag": "715",
+    "alliance_name": "team715",
+    "server": "114",
+    "points": 320
+  },
+  {
+    "rank": 852,
+    "commander": "gabivmc",
+    "alliance": "[ZhB] zumbihunters",
+    "alliance_tag": "ZhB",
+    "alliance_name": "zumbihunters",
+    "server": "117",
+    "points": 261
+  },
+  {
+    "rank": 853,
+    "commander": "Luffy15",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "117",
+    "points": 210
+  },
+  {
+    "rank": 854,
+    "commander": "Commander2fY1i3r",
+    "alliance": "[MMMC] Mdodmcj",
+    "alliance_tag": "MMMC",
+    "alliance_name": "Mdodmcj",
+    "server": "117",
+    "points": 198
+  },
+  {
+    "rank": 855,
+    "commander": "WinCountry",
+    "alliance": "[CK1] Crypt1cKnights",
+    "alliance_tag": "CK1",
+    "alliance_name": "Crypt1cKnights",
+    "server": "117",
+    "points": 162
+  },
+  {
+    "rank": 856,
+    "commander": "Frantor",
+    "alliance": "[Sp3r] Sparta2026",
+    "alliance_tag": "Sp3r",
+    "alliance_name": "Sparta2026",
+    "server": "117",
+    "points": 162
+  },
+  {
+    "rank": 857,
+    "commander": "bansei",
+    "alliance": "[SILA] Живые",
+    "alliance_tag": "SILA",
+    "alliance_name": "Живые",
+    "server": "117",
+    "points": 162
+  },
+  {
+    "rank": 858,
+    "commander": "Denchikdeni",
+    "alliance": "[HEII] DarkAl",
+    "alliance_tag": "HEII",
+    "alliance_name": "DarkAl",
+    "server": "117",
+    "points": 153
+  },
+  {
+    "rank": 859,
+    "commander": "PatrickPTY",
+    "alliance": "[KGLN] KillingLegion",
+    "alliance_tag": "KGLN",
+    "alliance_name": "KillingLegion",
+    "server": "117",
+    "points": 144
+  },
+  {
+    "rank": 860,
+    "commander": "алехич",
+    "alliance": "[SILA] Живые",
+    "alliance_tag": "SILA",
+    "alliance_name": "Живые",
+    "server": "117",
+    "points": 140
+  },
+  {
+    "rank": 861,
+    "commander": "Commander2fHgiTb",
+    "alliance": "[ZhB] zumbihunters",
+    "alliance_tag": "ZhB",
+    "alliance_name": "zumbihunters",
+    "server": "117",
+    "points": 112
+  },
+  {
+    "rank": 862,
+    "commander": "Commander2eTt2FT",
+    "alliance": "[Ktq] TheGoats",
+    "alliance_tag": "Ktq",
+    "alliance_name": "TheGoats",
+    "server": "117",
+    "points": 110
+  },
+  {
+    "rank": 863,
+    "commander": "AntiTrump",
+    "alliance": "[uakl] uukkl",
+    "alliance_tag": "uakl",
+    "alliance_name": "uukkl",
+    "server": "117",
+    "points": 99
+  },
+  {
+    "rank": 864,
+    "commander": "Commander2fEkV0h",
+    "alliance": "[UTS] upthescore",
+    "alliance_tag": "UTS",
+    "alliance_name": "upthescore",
+    "server": "117",
+    "points": 80
+  },
+  {
+    "rank": 865,
+    "commander": "Jro1",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "117",
+    "points": 80
+  },
+  {
+    "rank": 866,
+    "commander": "BlackNGold69",
+    "alliance": "[piiu] yhyfjukus",
+    "alliance_tag": "piiu",
+    "alliance_name": "yhyfjukus",
+    "server": "117",
+    "points": 70
+  },
+  {
+    "rank": 867,
+    "commander": "Commander2fOvq17",
+    "alliance": "[mvEp] Viva4ever",
+    "alliance_tag": "mvEp",
+    "alliance_name": "Viva4ever",
+    "server": "117",
+    "points": 60
+  },
+  {
+    "rank": 868,
+    "commander": "MyDominion",
+    "alliance": "[ZRS] ZRlastwar",
+    "alliance_tag": "ZRS",
+    "alliance_name": "ZRlastwar",
+    "server": "117",
+    "points": 56
+  },
+  {
+    "rank": 869,
+    "commander": "BayMacK",
+    "alliance": "[ATV] AllThingsVoid",
+    "alliance_tag": "ATV",
+    "alliance_name": "AllThingsVoid",
+    "server": "117",
+    "points": 54
+  },
+  {
+    "rank": 870,
+    "commander": "Demagorgon",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "117",
+    "points": 54
+  },
+  {
+    "rank": 871,
+    "commander": "Heavyscrum",
+    "alliance": "[TWB] BMWMT",
+    "alliance_tag": "TWB",
+    "alliance_name": "BMWMT",
+    "server": "117",
+    "points": 45
+  },
+  {
+    "rank": 872,
+    "commander": "Ekdv",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "117",
+    "points": 45
+  },
+  {
+    "rank": 873,
+    "commander": "Commander2erxKKN",
+    "alliance": "[UTS] upthescore",
+    "alliance_tag": "UTS",
+    "alliance_name": "upthescore",
+    "server": "117",
+    "points": 40
+  },
+  {
+    "rank": 874,
+    "commander": "Rbspace454",
+    "alliance": "[VBD] VBDRFABA",
+    "alliance_tag": "VBD",
+    "alliance_name": "VBDRFABA",
+    "server": "117",
+    "points": 40
+  },
+  {
+    "rank": 875,
+    "commander": "OhGodYes",
+    "alliance": "[HDG] HérosdeGuerre",
+    "alliance_tag": "HDG",
+    "alliance_name": "HérosdeGuerre",
+    "server": "117",
+    "points": 40
+  },
+  {
+    "rank": 876,
+    "commander": "Raffaellsmourao",
+    "alliance": "[KGLN] KillingLegion",
+    "alliance_tag": "KGLN",
+    "alliance_name": "KillingLegion",
+    "server": "117",
+    "points": 36
+  },
+  {
+    "rank": 877,
+    "commander": "mrViktor",
+    "alliance": "[HEII] DarkAl",
+    "alliance_tag": "HEII",
+    "alliance_name": "DarkAl",
+    "server": "117",
+    "points": 32
+  },
+  {
+    "rank": 878,
+    "commander": "Goyito",
+    "alliance": "[1Lr] resistencia",
+    "alliance_tag": "1Lr",
+    "alliance_name": "resistencia",
+    "server": "117",
+    "points": 30
+  },
+  {
+    "rank": 879,
+    "commander": "Commander2fBbtuB",
+    "alliance": "[Dali] ELmaestroDalvin",
+    "alliance_tag": "Dali",
+    "alliance_name": "ELmaestroDalvin",
+    "server": "117",
+    "points": 27
+  },
+  {
+    "rank": 880,
+    "commander": "rompetotona",
+    "alliance": "[DRKT] DarkKnightS",
+    "alliance_tag": "DRKT",
+    "alliance_name": "DarkKnightS",
+    "server": "117",
+    "points": 20
+  },
+  {
+    "rank": 881,
+    "commander": "Commander2fXSsmh",
+    "alliance": "[SMR] Самара163",
+    "alliance_tag": "SMR",
+    "alliance_name": "Самара163",
+    "server": "117",
+    "points": 20
+  },
+  {
+    "rank": 882,
+    "commander": "Commander2dSkSgt",
+    "alliance": "[2kk] afwff",
+    "alliance_tag": "2kk",
+    "alliance_name": "afwff",
+    "server": "117",
+    "points": 18
+  },
+  {
+    "rank": 883,
+    "commander": "ZhaNaRa",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 18
+  },
+  {
+    "rank": 884,
+    "commander": "Commander2dsTgyh",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "117",
+    "points": 16
+  },
+  {
+    "rank": 885,
+    "commander": "Schubertsky",
+    "alliance": "[DGe] DieGestrandeten",
+    "alliance_tag": "DGe",
+    "alliance_name": "DieGestrandeten",
+    "server": "117",
+    "points": 10
+  },
+  {
+    "rank": 886,
+    "commander": "Мегахит",
+    "alliance": "[Bigg] Бароны",
+    "alliance_tag": "Bigg",
+    "alliance_name": "Бароны",
+    "server": "117",
+    "points": 10
+  },
+  {
+    "rank": 887,
+    "commander": "Horonitel",
+    "alliance": "[TIOX] ПоХуисты",
+    "alliance_tag": "TIOX",
+    "alliance_name": "ПоХуисты",
+    "server": "117",
+    "points": 10
+  },
+  {
+    "rank": 888,
+    "commander": "Commander2f4bmHH",
+    "alliance": "[hel] helloo",
+    "alliance_tag": "hel",
+    "alliance_name": "helloo",
+    "server": "117",
+    "points": 10
+  },
+  {
+    "rank": 889,
+    "commander": "Commander2dUapkF",
+    "alliance": "[DSuN] Demonsun",
+    "alliance_tag": "DSuN",
+    "alliance_name": "Demonsun",
+    "server": "117",
+    "points": 9
+  },
+  {
+    "rank": 890,
+    "commander": "Commander2eX2zHv",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "117",
+    "points": 9
+  },
+  {
+    "rank": 891,
+    "commander": "Commander2eQSyvr",
+    "alliance": "[Gogo] 저랑고고하실분",
+    "alliance_tag": "Gogo",
+    "alliance_name": "저랑고고하실분",
+    "server": "117",
+    "points": 9
+  },
+  {
+    "rank": 892,
+    "commander": "Commander2eTIQZf",
+    "alliance": "No Alliance",
+    "alliance_tag": "",
+    "alliance_name": "No Alliance",
+    "server": "117",
+    "points": 8
+  },
+  {
+    "rank": 893,
+    "commander": "Commander2fGIXZH",
+    "alliance": "[Coe] Albertofg",
+    "alliance_tag": "Coe",
+    "alliance_name": "Albertofg",
+    "server": "117",
+    "points": 8
+  },
+  {
+    "rank": 894,
+    "commander": "мырат",
+    "alliance": "[TopU] UkraineWillWin",
+    "alliance_tag": "TopU",
+    "alliance_name": "UkraineWillWin",
+    "server": "117",
+    "points": 8
+  }
+]
